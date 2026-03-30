@@ -1,5 +1,5 @@
 ---
-title: Inline-level content
+title: Nội dung cấp inline
 slug: Glossary/Inline-level_content
 page-type: glossary-definition
 sidebar: glossarysidebar

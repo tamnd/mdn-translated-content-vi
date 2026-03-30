@@ -1,5 +1,5 @@
 ---
-title: Packet
+title: Gói tin
 slug: Glossary/Packet
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -33,7 +33,7 @@ Khi định tuyến gói mạng, cần có hai địa chỉ mạng: địa chỉ
 
 Payload là dữ liệu được truyền thay mặt cho một ứng dụng. Nó thường có độ dài biến đổi, tối đa theo giới hạn được đặt bởi giao thức mạng và đôi khi là thiết bị trên đường truyền.
 
-## Tài liệu tham khảo
+## Xem thêm
 
 - [Network packet](https://en.wikipedia.org/wiki/Network_packet)
 - [Hop (networking)](<https://en.wikipedia.org/wiki/Hop_(networking)>)

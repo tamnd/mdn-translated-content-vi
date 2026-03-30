@@ -1,5 +1,5 @@
 ---
-title: Strict mode
+title: Chế độ nghiêm ngặt
 slug: Glossary/Strict_mode
 page-type: glossary-definition
 sidebar: glossarysidebar

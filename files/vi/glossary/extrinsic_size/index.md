@@ -1,5 +1,5 @@
 ---
-title: Extrinsic size
+title: Kích thước ngoại lai
 slug: Glossary/Extrinsic_size
 page-type: glossary-definition
 sidebar: glossarysidebar

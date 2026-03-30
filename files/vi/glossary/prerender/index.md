@@ -1,5 +1,5 @@
 ---
-title: Prerender
+title: Kết xuất trước
 slug: Glossary/Prerender
 page-type: glossary-definition
 sidebar: glossarysidebar

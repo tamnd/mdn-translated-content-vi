@@ -1,5 +1,5 @@
 ---
-title: Guaranteed-invalid value
+title: Giá trị không hợp lệ đảm bảo
 slug: Glossary/guaranteed_invalid_value
 page-type: glossary-definition
 sidebar: glossarysidebar

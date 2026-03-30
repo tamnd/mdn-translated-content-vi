@@ -1,5 +1,5 @@
 ---
-title: Computer programming
+title: Lập trình máy tính
 slug: Glossary/Computer_Programming
 page-type: glossary-definition
 sidebar: glossarysidebar

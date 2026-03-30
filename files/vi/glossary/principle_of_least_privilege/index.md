@@ -1,5 +1,5 @@
 ---
-title: Principle of least privilege
+title: Nguyên tắc đặc quyền tối thiểu
 slug: Glossary/Principle_of_least_privilege
 page-type: glossary-definition
 sidebar: glossarysidebar

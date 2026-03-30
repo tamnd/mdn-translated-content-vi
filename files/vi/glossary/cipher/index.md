@@ -1,5 +1,5 @@
 ---
-title: Cipher
+title: Mật mã
 slug: Glossary/Cipher
 page-type: glossary-definition
 sidebar: glossarysidebar

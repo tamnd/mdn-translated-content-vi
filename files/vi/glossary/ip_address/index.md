@@ -1,5 +1,5 @@
 ---
-title: IP Address
+title: Địa chỉ IP
 slug: Glossary/IP_Address
 page-type: glossary-definition
 sidebar: glossarysidebar

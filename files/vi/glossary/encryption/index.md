@@ -1,5 +1,5 @@
 ---
-title: Encryption
+title: Mã hóa
 slug: Glossary/Encryption
 page-type: glossary-definition
 sidebar: glossarysidebar

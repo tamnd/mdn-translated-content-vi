@@ -1,5 +1,5 @@
 ---
-title: Composite operation
+title: Phép tổng hợp
 slug: Glossary/Composite_operation
 page-type: glossary-definition
 sidebar: glossarysidebar

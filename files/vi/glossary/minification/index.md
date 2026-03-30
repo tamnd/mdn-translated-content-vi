@@ -1,5 +1,5 @@
 ---
-title: Minification
+title: Thu nhỏ mã
 slug: Glossary/Minification
 page-type: glossary-definition
 sidebar: glossarysidebar

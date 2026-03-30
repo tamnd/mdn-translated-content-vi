@@ -1,5 +1,5 @@
 ---
-title: Static typing
+title: Định kiểu tĩnh
 slug: Glossary/Static_typing
 page-type: glossary-definition
 sidebar: glossarysidebar

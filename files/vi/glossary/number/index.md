@@ -1,5 +1,5 @@
 ---
-title: Number
+title: Số
 slug: Glossary/Number
 page-type: glossary-definition
 sidebar: glossarysidebar

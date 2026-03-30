@@ -1,5 +1,5 @@
 ---
-title: Conditional
+title: Điều kiện
 slug: Glossary/Conditional
 page-type: glossary-definition
 sidebar: glossarysidebar

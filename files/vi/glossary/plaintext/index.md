@@ -1,5 +1,5 @@
 ---
-title: Plaintext
+title: Văn bản thuần
 slug: Glossary/Plaintext
 page-type: glossary-definition
 sidebar: glossarysidebar

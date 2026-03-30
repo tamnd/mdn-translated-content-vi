@@ -1,5 +1,5 @@
 ---
-title: Federated identity
+title: Nhận dạng liên kết
 slug: Glossary/Federated_identity
 page-type: glossary-definition
 sidebar: glossarysidebar

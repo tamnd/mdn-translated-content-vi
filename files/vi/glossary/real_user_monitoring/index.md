@@ -1,5 +1,5 @@
 ---
-title: Real User Monitoring (RUM)
+title: Giám sát người dùng thực (RUM)
 slug: Glossary/Real_User_Monitoring
 page-type: glossary-definition
 sidebar: glossarysidebar

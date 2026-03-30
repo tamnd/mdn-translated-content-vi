@@ -1,5 +1,5 @@
 ---
-title: Lazy load
+title: Tải lười biếng
 slug: Glossary/Lazy_load
 page-type: glossary-definition
 sidebar: glossarysidebar

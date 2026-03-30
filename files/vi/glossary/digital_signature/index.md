@@ -1,5 +1,5 @@
 ---
-title: Digital signature
+title: Chữ ký số
 slug: Glossary/Digital_signature
 page-type: glossary-definition
 sidebar: glossarysidebar

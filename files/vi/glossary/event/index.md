@@ -1,5 +1,5 @@
 ---
-title: Event
+title: Sự kiện
 slug: Glossary/Event
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Array
+title: Mảng
 slug: Glossary/Array
 page-type: glossary-definition
 sidebar: glossarysidebar

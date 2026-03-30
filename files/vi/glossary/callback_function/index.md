@@ -1,11 +1,11 @@
 ---
-title: Callback function
+title: Hàm gọi lại
 slug: Glossary/Callback_function
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Hàm callback** là một hàm được truyền vào một hàm khác như một đối số, sau đó được gọi bên trong hàm bên ngoài để hoàn thành một quy trình hoặc hành động nào đó.
+**Hàm gọi lại** (callback) là một hàm được truyền vào một hàm khác như một đối số, sau đó được gọi bên trong hàm bên ngoài để hoàn thành một quy trình hoặc hành động nào đó.
 
 Người dùng API dựa trên callback viết một hàm được truyền vào API. Nhà cung cấp API (được gọi là _caller_ - người gọi) nhận hàm và gọi lại (hoặc thực thi) hàm đó tại một thời điểm nào đó bên trong thân của caller. Caller chịu trách nhiệm truyền đúng các tham số vào hàm callback. Caller cũng có thể mong đợi một giá trị trả về cụ thể từ hàm callback, được sử dụng để hướng dẫn thêm hành vi của caller.
 

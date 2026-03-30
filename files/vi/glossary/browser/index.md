@@ -1,5 +1,5 @@
 ---
-title: Browser
+title: Trình duyệt
 slug: Glossary/Browser
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Snap positions
+title: Vị trí giật
 slug: Glossary/Snap_positions
 page-type: glossary-definition
 sidebar: glossarysidebar

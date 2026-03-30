@@ -1,5 +1,5 @@
 ---
-title: Secure context
+title: Ngữ cảnh bảo mật
 slug: Glossary/Secure_Context
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Markup
+title: Đánh dấu
 slug: Glossary/Markup
 page-type: glossary-definition
 sidebar: glossarysidebar

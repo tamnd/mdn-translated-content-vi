@@ -1,5 +1,5 @@
 ---
-title: Secure Sockets Layer (SSL)
+title: SSL
 slug: Glossary/SSL
 page-type: glossary-definition
 sidebar: glossarysidebar

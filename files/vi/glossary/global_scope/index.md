@@ -1,5 +1,5 @@
 ---
-title: Global scope
+title: Phạm vi toàn cục
 slug: Glossary/Global_scope
 page-type: glossary-definition
 sidebar: glossarysidebar

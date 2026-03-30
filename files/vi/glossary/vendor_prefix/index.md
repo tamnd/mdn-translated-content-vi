@@ -1,5 +1,5 @@
 ---
-title: Vendor prefix
+title: Tiền tố nhà cung cấp
 slug: Glossary/Vendor_Prefix
 page-type: glossary-definition
 sidebar: glossarysidebar

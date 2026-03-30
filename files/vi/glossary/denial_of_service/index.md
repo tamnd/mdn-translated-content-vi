@@ -1,5 +1,5 @@
 ---
-title: Denial of Service (DoS)
+title: Từ chối dịch vụ (DoS)
 slug: Glossary/Denial_of_Service
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Static method
+title: Phương thức tĩnh
 slug: Glossary/Static_method
 page-type: glossary-definition
 sidebar: glossarysidebar

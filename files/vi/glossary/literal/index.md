@@ -1,5 +1,5 @@
 ---
-title: Literal
+title: Giá trị trực tiếp
 slug: Glossary/Literal
 page-type: glossary-definition
 sidebar: glossarysidebar

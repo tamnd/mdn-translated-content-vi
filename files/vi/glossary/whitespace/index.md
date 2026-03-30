@@ -1,5 +1,5 @@
 ---
-title: Whitespace
+title: Khoảng trắng
 slug: Glossary/Whitespace
 page-type: glossary-definition
 sidebar: glossarysidebar

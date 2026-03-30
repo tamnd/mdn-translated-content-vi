@@ -1,5 +1,5 @@
 ---
-title: Payload header
+title: Header nội dung
 slug: Glossary/Payload_header
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Type coercion
+title: Ép kiểu
 slug: Glossary/Type_coercion
 page-type: glossary-definition
 sidebar: glossarysidebar

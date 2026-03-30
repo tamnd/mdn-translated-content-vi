@@ -1,5 +1,5 @@
 ---
-title: Value
+title: Giá trị
 slug: Glossary/Value
 page-type: glossary-definition
 sidebar: glossarysidebar

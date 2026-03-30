@@ -1,5 +1,5 @@
 ---
-title: Host
+title: Máy chủ
 slug: Glossary/Host
 page-type: glossary-definition
 sidebar: glossarysidebar

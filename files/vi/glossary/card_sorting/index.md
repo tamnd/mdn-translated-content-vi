@@ -1,5 +1,5 @@
 ---
-title: Card sorting
+title: Phân loại thẻ
 slug: Glossary/Card_sorting
 page-type: glossary-definition
 sidebar: glossarysidebar

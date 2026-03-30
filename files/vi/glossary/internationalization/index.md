@@ -1,5 +1,5 @@
 ---
-title: Internationalization (i18n)
+title: Quốc tế hóa (i18n)
 slug: Glossary/Internationalization
 page-type: glossary-definition
 sidebar: glossarysidebar

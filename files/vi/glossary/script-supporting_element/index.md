@@ -1,5 +1,5 @@
 ---
-title: Script-supporting element
+title: Phần tử hỗ trợ script
 slug: Glossary/Script-supporting_element
 page-type: glossary-definition
 sidebar: glossarysidebar

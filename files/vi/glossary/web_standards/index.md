@@ -1,5 +1,5 @@
 ---
-title: Web standards
+title: Tiêu chuẩn web
 slug: Glossary/Web_standards
 page-type: glossary-definition
 sidebar: glossarysidebar

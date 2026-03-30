@@ -1,5 +1,5 @@
 ---
-title: Grid Row
+title: Hàng grid
 slug: Glossary/Grid_Row
 page-type: glossary-definition
 sidebar: glossarysidebar

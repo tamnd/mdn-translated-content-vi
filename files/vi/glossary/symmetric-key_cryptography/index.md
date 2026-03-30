@@ -1,5 +1,5 @@
 ---
-title: Symmetric-key cryptography
+title: Mật mã khóa đối xứng
 slug: Glossary/Symmetric-key_cryptography
 page-type: glossary-definition
 sidebar: glossarysidebar

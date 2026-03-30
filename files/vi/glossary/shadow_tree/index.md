@@ -1,5 +1,5 @@
 ---
-title: Shadow tree
+title: Cây shadow
 slug: Glossary/Shadow_tree
 page-type: glossary-definition
 sidebar: glossarysidebar

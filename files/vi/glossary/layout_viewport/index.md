@@ -1,5 +1,5 @@
 ---
-title: Layout viewport
+title: Vùng nhìn bố cục
 slug: Glossary/Layout_viewport
 page-type: glossary-definition
 sidebar: glossarysidebar

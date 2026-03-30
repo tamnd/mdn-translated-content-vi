@@ -1,5 +1,5 @@
 ---
-title: Social engineering
+title: Kỹ nghệ xã hội
 slug: Glossary/Social_engineering
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Void element
+title: Phần tử void
 slug: Glossary/Void_element
 page-type: glossary-definition
 sidebar: glossarysidebar

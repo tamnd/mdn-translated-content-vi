@@ -1,5 +1,5 @@
 ---
-title: Fallback alignment
+title: Căn chỉnh dự phòng
 slug: Glossary/Fallback_Alignment
 page-type: glossary-definition
 sidebar: glossarysidebar

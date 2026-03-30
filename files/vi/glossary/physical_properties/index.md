@@ -1,5 +1,5 @@
 ---
-title: Physical properties
+title: Thuộc tính vật lý
 slug: Glossary/Physical_properties
 page-type: glossary-definition
 sidebar: glossarysidebar

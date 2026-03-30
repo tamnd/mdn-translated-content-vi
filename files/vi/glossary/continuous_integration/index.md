@@ -1,5 +1,5 @@
 ---
-title: Continuous integration
+title: Tích hợp liên tục
 slug: Glossary/Continuous_integration
 page-type: glossary-definition
 sidebar: glossarysidebar

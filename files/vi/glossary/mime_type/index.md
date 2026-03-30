@@ -1,5 +1,5 @@
 ---
-title: MIME type
+title: Kiểu MIME
 slug: Glossary/MIME_type
 page-type: glossary-definition
 sidebar: glossarysidebar

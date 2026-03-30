@@ -1,5 +1,5 @@
 ---
-title: Type conversion
+title: Chuyển đổi kiểu
 slug: Glossary/Type_Conversion
 page-type: glossary-definition
 sidebar: glossarysidebar

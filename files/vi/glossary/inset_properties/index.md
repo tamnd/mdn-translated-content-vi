@@ -1,5 +1,5 @@
 ---
-title: Inset properties
+title: Thuộc tính inset
 slug: Glossary/Inset_properties
 page-type: glossary-definition
 sidebar: glossarysidebar

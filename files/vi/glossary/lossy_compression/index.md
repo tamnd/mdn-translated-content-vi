@@ -1,5 +1,5 @@
 ---
-title: Lossy compression
+title: Nén có mất dữ liệu
 slug: Glossary/Lossy_compression
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Cryptography
+title: Mật mã học
 slug: Glossary/Cryptography
 page-type: glossary-definition
 sidebar: glossarysidebar

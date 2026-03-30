@@ -1,5 +1,5 @@
 ---
-title: Replay attack
+title: Tấn công phát lại
 slug: Glossary/Replay_attack
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Interpolation
+title: Nội suy
 slug: Glossary/Interpolation
 page-type: glossary-definition
 sidebar: glossarysidebar

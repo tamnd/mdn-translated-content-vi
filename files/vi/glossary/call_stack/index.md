@@ -1,11 +1,11 @@
 ---
-title: Call stack
+title: Ngăn xếp lời gọi
 slug: Glossary/Call_stack
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Call stack** (ngăn xếp lời gọi) là một cơ chế dành cho trình thông dịch (như trình thông dịch JavaScript trong trình duyệt web) để theo dõi vị trí của nó trong một script có gọi nhiều {{glossary("function", "hàm")}} — hàm nào đang được chạy và hàm nào được gọi từ bên trong hàm đó, v.v.
+**Ngăn xếp lời gọi** (call stack) là một cơ chế dành cho trình thông dịch (như trình thông dịch JavaScript trong trình duyệt web) để theo dõi vị trí của nó trong một script có gọi nhiều {{glossary("function", "hàm")}} — hàm nào đang được chạy và hàm nào được gọi từ bên trong hàm đó, v.v.
 
 - Khi một script gọi một hàm, trình thông dịch thêm nó vào call stack rồi bắt đầu thực thi hàm.
 - Bất kỳ hàm nào được gọi bởi hàm đó đều được thêm vào call stack ở phía trên, và chạy khi đến nơi các lời gọi của chúng được thực hiện.

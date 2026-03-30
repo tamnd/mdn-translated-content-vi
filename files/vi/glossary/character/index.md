@@ -1,5 +1,5 @@
 ---
-title: Character
+title: Ký tự
 slug: Glossary/Character
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Instance
+title: Thực thể
 slug: Glossary/Instance
 page-type: glossary-definition
 sidebar: glossarysidebar

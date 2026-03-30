@@ -1,5 +1,5 @@
 ---
-title: Hash function
+title: Hàm băm
 slug: Glossary/Hash_function
 page-type: glossary-definition
 sidebar: glossarysidebar

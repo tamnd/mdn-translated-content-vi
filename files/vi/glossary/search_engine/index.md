@@ -1,5 +1,5 @@
 ---
-title: Search engine
+title: Công cụ tìm kiếm
 slug: Glossary/Search_engine
 page-type: glossary-definition
 sidebar: glossarysidebar

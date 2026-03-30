@@ -1,5 +1,5 @@
 ---
-title: Cross Axis
+title: Trục chéo
 slug: Glossary/Cross_Axis
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Identity provider (IdP)
+title: Nhà cung cấp danh tính
 slug: Glossary/Identity_provider
 page-type: glossary-definition
 sidebar: glossarysidebar

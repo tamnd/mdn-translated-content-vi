@@ -1,5 +1,5 @@
 ---
-title: Router
+title: Bộ định tuyến
 slug: Glossary/Router
 page-type: glossary-definition
 sidebar: glossarysidebar

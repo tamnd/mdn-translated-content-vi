@@ -1,5 +1,5 @@
 ---
-title: Leading
+title: Khoảng cách dòng
 slug: Glossary/Leading
 page-type: glossary-definition
 sidebar: glossarysidebar

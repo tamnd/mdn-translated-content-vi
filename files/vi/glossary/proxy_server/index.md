@@ -1,5 +1,5 @@
 ---
-title: Proxy server
+title: Máy chủ proxy
 slug: Glossary/Proxy_server
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,11 +1,11 @@
 ---
-title: Caret
+title: Con trỏ văn bản
 slug: Glossary/Caret
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Caret** (đôi khi được gọi là "con trỏ văn bản") là một chỉ báo được hiển thị trên màn hình để chỉ ra nơi văn bản nhập vào sẽ được chèn vào.
+**Con trỏ văn bản** (caret) là một chỉ báo được hiển thị trên màn hình để chỉ ra nơi văn bản nhập vào sẽ được chèn vào.
 
 Hầu hết các giao diện người dùng biểu thị caret bằng một đường thẳng đứng mỏng hoặc một hộp có kích thước bằng ký tự nhấp nháy, nhưng điều này có thể thay đổi. Điểm trong văn bản này được gọi là **điểm chèn**. Từ "caret" phân biệt điểm chèn văn bản với con trỏ chuột.
 

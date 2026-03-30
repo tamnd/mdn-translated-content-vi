@@ -1,5 +1,5 @@
 ---
-title: Protocol
+title: Giao thức
 slug: Glossary/Protocol
 page-type: glossary-definition
 sidebar: glossarysidebar

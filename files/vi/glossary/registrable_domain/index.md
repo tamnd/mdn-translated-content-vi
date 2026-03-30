@@ -1,5 +1,5 @@
 ---
-title: Registrable domain
+title: Miền có thể đăng ký
 slug: Glossary/Registrable_domain
 page-type: glossary-definition
 sidebar: glossarysidebar

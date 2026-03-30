@@ -1,5 +1,5 @@
 ---
-title: Sloppy mode
+title: Chế độ lỏng lẻo
 slug: Glossary/Sloppy_mode
 page-type: glossary-definition
 sidebar: glossarysidebar

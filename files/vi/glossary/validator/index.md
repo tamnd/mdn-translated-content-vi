@@ -1,5 +1,5 @@
 ---
-title: Validator
+title: Trình xác nhận
 slug: Glossary/Validator
 page-type: glossary-definition
 sidebar: glossarysidebar

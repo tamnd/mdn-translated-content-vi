@@ -1,5 +1,5 @@
 ---
-title: Color space
+title: Không gian màu
 slug: Glossary/Color_space
 page-type: glossary-definition
 sidebar: glossarysidebar

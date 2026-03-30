@@ -626,608 +626,608 @@ Glossary terms are short (1-3 paragraphs). They are ideal for first-time contrib
 
 Vietnamese title used in each translated page. Useful when writing or reviewing other translations that cross-reference a glossary term.
 
-| Term (slug)                      | Title in vi translation              |
-| -------------------------------- | ------------------------------------ |
-| abstraction                      | Abstraction                          |
-| accent                           | Accent                               |
-| accessibility                    | Accessibility                        |
-| accessibility_tree               | Accessibility tree                   |
-| accessible_description           | Accessible description               |
-| accessible_name                  | Accessible name                      |
-| adobe_flash                      | Adobe Flash                          |
-| advance_measure                  | Advance measure                      |
-| ajax                             | Ajax                                 |
-| algorithm                        | Algorithm                            |
-| alignment_container              | Alignment container                  |
-| alignment_subject                | Alignment subject                    |
-| alpha                            | Alpha (alpha channel)                |
-| alpn                             | ALPN                                 |
-| api                              | API                                  |
-| apple_safari                     | Apple Safari                         |
-| application_context              | Application context                  |
-| argument                         | Argument                             |
-| aria                             | ARIA                                 |
-| arpa                             | ARPA                                 |
-| arpanet                          | ARPANET                              |
-| array                            | Array                                |
-| ascii                            | ASCII                                |
-| aspect_ratio                     | Aspect ratio                         |
-| asynchronous                     | Asynchronous                         |
-| atag                             | ATAG                                 |
-| attribute                        | Attribute                            |
-| authentication                   | Authentication                       |
-| authenticator                    | Authenticator                        |
-| bandwidth                        | Bandwidth                            |
-| base64                           | Base64                               |
-| baseline                         | Baseline                             |
-| bcp_47_language_tag              | BCP 47 language tag                  |
-| beacon                           | Beacon                               |
-| bezier_curve                     | Bezier curve                         |
-| bfcache                          | bfcache                              |
-| bidi                             | BiDi                                 |
-| bigint                           | BigInt                               |
-| binding                          | Binding                              |
-| bitwise_flags                    | Bitwise flags                        |
-| blink                            | Blink                                |
-| blink_element                    | blink element                        |
-| block                            | Block                                |
-| block_cipher_mode_of_operation   | Block cipher mode of operation       |
-| block-level_content              | Block-level content                  |
-| boolean                          | Boolean                              |
-| bounding_box                     | Bounding box                         |
-| breadcrumb                       | Breadcrumb                           |
-| brotli_compression               | Brotli compression                   |
-| browser                          | Browser                              |
-| browsing_context                 | Browsing context                     |
-| buffer                           | Buffer                               |
-| bun                              | Bun                                  |
-| cache                            | Cache                                |
-| cacheable                        | Cacheable                            |
-| caldav                           | CalDAV                               |
-| call_stack                       | Call stack                           |
-| callback_function                | Callback function                    |
-| camel_case                       | Camel case                           |
-| canonical_order                  | Canonical order                      |
-| canvas                           | Canvas                               |
-| card_sorting                     | Card sorting                         |
-| carddav                          | CardDAV                              |
-| caret                            | Caret                                |
-| cdn                              | CDN                                  |
-| certificate_authority            | Certificate authority                |
-| certified                        | Certified                            |
-| challenge                        | Challenge-response authentication    |
-| character                        | Character                            |
-| character_encoding               | Character encoding                   |
-| character_reference              | Character reference                  |
-| character_set                    | Character set                        |
-| chrome                           | Chrome                               |
-| cia                              | CIA                                  |
-| cipher                           | Cipher                               |
-| cipher_suite                     | Cipher suite                         |
-| ciphertext                       | Ciphertext                           |
-| class                            | Class                                |
-| closure                          | Closure                              |
-| cloud                            | Cloud                                |
-| cloud_computing                  | Cloud computing                      |
-| cls                              | Cumulative Layout Shift (CLS)        |
-| cms                              | CMS                                  |
-| code_point                       | Code point                           |
-| code_splitting                   | Code splitting                       |
-| code_unit                        | Code unit                            |
-| codec                            | Codec                                |
-| color_space                      | Color space                          |
-| color_wheel                      | Color wheel                          |
-| compile                          | Compile                              |
-| compile_time                     | Compile time                         |
-| composite_operation              | Composite operation                  |
-| compression_dictionary_transport | Compression Dictionary Transport     |
-| computer_programming             | Computer programming                 |
-| conditional                      | Conditional                          |
-| constant                         | Constant                             |
-| constructor                      | Constructor                          |
-| content_header                   | Content header                       |
-| continuous_integration           | Continuous integration               |
-| continuous_media                 | Continuous media                     |
-| control_flow                     | Control flow                         |
-| cookie                           | Cookie                               |
-| copyleft                         | Copyleft                             |
-| cors                             | CORS                                 |
-| cors-safelisted_request_header   | CORS-safelisted request header       |
-| cors-safelisted_response_header  | CORS-safelisted response header      |
-| crawler                          | Crawler                              |
-| credential                       | Credential                           |
-| crlf                             | CRLF                                 |
-| cross_axis                       | Cross Axis                           |
-| cross-site_scripting             | Cross-site scripting (XSS)           |
-| crud                             | CRUD                                 |
-| cryptanalysis                    | Cryptanalysis                        |
-| cryptography                     | Cryptography                         |
-| csp                              | CSP                                  |
-| csr                              | Client-side rendering (CSR)          |
-| csrf                             | Cross-site request forgery (CSRF)    |
-| css                              | CSS                                  |
-| css_descriptor                   | Descriptor (CSS)                     |
-| css_pixel                        | CSS pixel                            |
-| css_preprocessor                 | CSS preprocessor                     |
-| css_selector                     | Selector (CSS)                       |
-| cssom                            | CSS Object Model (CSSOM)             |
-| data_structure                   | Data structure                       |
-| database                         | Database                             |
-| debounce                         | Debounce                             |
-| decryption                       | Decryption                           |
-| deep_copy                        | Deep copy                            |
-| delta                            | Delta                                |
-| denial_of_service                | Denial of Service (DoS)              |
-| deno                             | Deno                                 |
-| deserialization                  | Deserialization                      |
-| developer_tools                  | Developer tools                      |
-| device_pixel                     | Device pixel                         |
-| digital_certificate              | Digital certificate                  |
-| digital_signature                | Digital signature                    |
-| distributed_denial_of_service    | Distributed Denial of Service (DDoS) |
-| dmz                              | DMZ                                  |
-| dns                              | DNS                                  |
-| doctype                          | Doctype                              |
-| document_directive               | Document directive                   |
-| document_environment             | Document environment                 |
-| dom                              | DOM (Document Object Model)          |
-| domain                           | Domain                               |
-| domain_name                      | Domain name                          |
-| domain_sharding                  | Domain sharding                      |
-| dominator                        | Dominator                            |
-| dsl                              | DSL                                  |
-| dtls                             | DTLS                                 |
-| dtmf                             | DTMF                                 |
-| dynamic_typing                   | Dynamic typing                       |
-| ecma                             | ECMA                                 |
-| ecmascript                       | ECMAScript                           |
-| effective_connection_type        | Effective connection type            |
-| element                          | Element                              |
-| encapsulation                    | Encapsulation                        |
-| encryption                       | Encryption                           |
-| endianness                       | Endianness                           |
-| engine                           | Engine                               |
-| entity                           | Entity                               |
-| entity_header                    | Entity header                        |
-| enumerated                       | Enumerated                           |
-| escape_character                 | Escape character                     |
-| event                            | Event                                |
-| exception                        | Exception                            |
-| exif                             | EXIF                                 |
-| expando                          | Expando                              |
-| extrinsic_size                   | Extrinsic size                       |
-| fallback_alignment               | Fallback alignment                   |
-| falsy                            | Falsy                                |
-| favicon                          | Favicon                              |
-| federated_identity               | Federated identity                   |
-| fetch_directive                  | Fetch directive                      |
-| fetch_metadata_request_header    | Fetch metadata request header        |
-| fingerprinting                   | Fingerprinting                       |
-| firefox_os                       | Firefox OS                           |
-| firewall                         | Firewall                             |
-| first_contentful_paint           | First Contentful Paint (FCP)         |
-| first_cpu_idle                   | First CPU idle                       |
-| first_input_delay                | First Input Delay (FID)              |
-| first_meaningful_paint           | First Meaningful Paint (FMP)         |
-| first_paint                      | First Paint (FP)                     |
-| first-class_function             | Ham hang nhat (First-class function) |
-| flex                             | Flex                                 |
-| flex_container                   | Flex container                       |
-| flex_item                        | Flex item                            |
-| flexbox                          | Flexbox                              |
-| flow_relative_values             | Flow relative values                 |
-| forbidden_request_header         | Forbidden request header             |
-| forbidden_response_header_name   | Forbidden response header name       |
-| fork                             | Fork                                 |
-| fps                              | Frame rate (FPS)                     |
-| fragmentainer                    | Fragmentainer                        |
-| ftp                              | FTP                                  |
-| ftu                              | FTU                                  |
-| function                         | Function                             |
-| fuzzing                          | Fuzz testing                         |
-| gamut                            | Gamut                                |
-| garbage_collection               | Garbage collection                   |
-| gecko                            | Gecko                                |
-| general_header                   | General header                       |
-| gif                              | GIF                                  |
-| git                              | Git                                  |
-| global_object                    | Global object                        |
-| global_scope                     | Global scope                         |
-| global_variable                  | Global variable                      |
-| glyph                            | Glyph                                |
-| google_chrome                    | Google Chrome                        |
-| gpl                              | GPL                                  |
-| gpu                              | GPU                                  |
-| graceful_degradation             | Graceful degradation                 |
-| grid                             | Grid                                 |
-| grid_areas                       | Grid areas                           |
-| grid_axis                        | Grid Axis                            |
-| grid_cell                        | Grid Cell                            |
-| grid_column                      | Grid Column                          |
-| grid_container                   | Grid container                       |
-| grid_lines                       | Grid lines                           |
-| grid_row                         | Grid Row                             |
-| grid_tracks                      | Grid Tracks                          |
-| guaranteed_invalid_value         | Guaranteed-invalid value             |
-| gutters                          | Gutters                              |
-| gzip_compression                 | gzip compression                     |
-| hash_function                    | Hash function                        |
-| hash_routing                     | Hash routing                         |
-| head                             | Head                                 |
-| head_of_line_blocking            | Head-of-line blocking                |
-| high-level_programming_language  | High-level programming language      |
-| hmac                             | HMAC                                 |
-| hoisting                         | Hoisting                             |
-| host                             | Host                                 |
-| hotlink                          | Hotlink                              |
-| houdini                          | Houdini                              |
-| hpkp                             | HPKP                                 |
-| hsts                             | HSTS                                 |
-| html                             | HTML                                 |
-| html_color_codes                 | HTML color codes                     |
-| html5                            | HTML5                                |
-| http                             | HTTP                                 |
-| http_2                           | HTTP/2                               |
-| http_3                           | HTTP/3                               |
-| http_content                     | HTTP content                         |
-| http_header                      | HTTP header                          |
-| https                            | HTTPS                                |
-| https_rr                         | HTTPS RR                             |
-| hyperlink                        | Sieu lien ket (Hyperlink)            |
-| hypertext                        | Sieu van ban (Hypertext)             |
-| iana                             | IANA                                 |
-| icann                            | ICANN                                |
-| ice                              | ICE                                  |
-| ide                              | IDE                                  |
-| idempotent                       | Idempotent                           |
-| identifier                       | Identifier                           |
-| identity_provider                | Identity provider (IdP)              |
-| idl                              | IDL                                  |
-| ietf                             | IETF                                 |
-| iife                             | IIFE                                 |
-| imap                             | IMAP                                 |
-| immutable                        | Immutable                            |
-| indexeddb                        | IndexedDB                            |
-| information_architecture         | Information architecture             |
-| inheritance                      | Inheritance                          |
-| ink_overflow                     | Ink overflow                         |
-| inline-level_content             | Inline-level content                 |
-| input_method_editor              | Input method editor                  |
-| inset_properties                 | Inset properties                     |
-| instance                         | Instance                             |
-| interaction_to_next_paint        | Interaction to Next Paint (INP)      |
-| internationalization             | Internationalization (i18n)          |
-| internet                         | Internet                             |
-| interpolation                    | Interpolation                        |
-| intrinsic_size                   | Intrinsic size                       |
-| invariant                        | Invariant                            |
-| ip_address                       | IP Address                           |
-| ipv4                             | IPv4                                 |
-| ipv6                             | IPv6                                 |
-| irc                              | IRC                                  |
-| iso                              | ISO                                  |
-| isp                              | ISP                                  |
-| itu                              | ITU                                  |
-| jank                             | Jank                                 |
-| java                             | Java                                 |
-| javascript                       | JavaScript                           |
-| jitter                           | Jitter                               |
-| jpeg                             | JPEG                                 |
-| json                             | JSON                                 |
-| json_type_representation         | JSON type representation             |
-| just_in_time_compilation         | Just-In-Time Compilation (JIT)       |
-| kebab_case                       | Kebab case                           |
-| key                              | Key                                  |
-| keyword                          | Keyword                              |
-| khronos                          | The Khronos Group                    |
-| largest_contentful_paint         | Largest Contentful Paint (LCP)       |
-| latency                          | Latency                              |
-| layout_mode                      | Layout mode                          |
-| layout_viewport                  | Layout viewport                      |
-| lazy_load                        | Lazy load                            |
-| leading                          | Leading                              |
-| lgpl                             | LGPL                                 |
-| ligature                         | Ligature                             |
-| literal                          | Literal                              |
-| local_scope                      | Local scope                          |
-| local_variable                   | Local variable                       |
-| locale                           | Locale                               |
-| localization                     | Localization                         |
-| logical_properties               | Logical properties                   |
-| long_task                        | Long task                            |
-| loop                             | Loop                                 |
-| lossless_compression             | Lossless compression                 |
-| lossy_compression                | Lossy compression                    |
-| ltr                              | LTR (Left To Right)                  |
-| main_axis                        | Main axis                            |
-| main_thread                      | Main thread                          |
-| markup                           | Markup                               |
-| mathml                           | MathML                               |
-| media                            | Media                                |
-| media_query                      | Media query                          |
-| metadata                         | Metadata                             |
-| method                           | Method                               |
-| microsoft_edge                   | Microsoft Edge                       |
-| microsoft_internet_explorer      | Microsoft Internet Explorer          |
-| middleware                       | Middleware                           |
-| mime                             | MIME                                 |
-| mime_type                        | MIME type                            |
-| minification                     | Minification                         |
-| mitm                             | MitM                                 |
-| mixin                            | Mixin                                |
-| mobile_first                     | Mobile first                         |
-| modem                            | Modem                                |
-| modularity                       | Modularity                           |
-| mozilla_firefox                  | Mozilla Firefox                      |
-| multi-factor_authentication      | Multi-factor authentication          |
-| mutable                          | Mutable                              |
-| mvc                              | MVC                                  |
-| namespace                        | Namespace                            |
-| nan                              | NaN                                  |
-| nat                              | NAT                                  |
-| native                           | Native                               |
-| navigation_directive             | Navigation directive                 |
-| netscape_navigator               | Netscape Navigator                   |
-| network_throttling               | Network throttling                   |
-| nntp                             | NNTP                                 |
-| node                             | Node                                 |
-| node.js                          | Node.js                              |
-| non-normative                    | Non-normative                        |
-| nonce                            | Nonce                                |
-| normative                        | Normative                            |
-| null                             | Null                                 |
-| nullish                          | Nullish value                        |
-| number                           | Number                               |
-| object                           | Object                               |
-| object_reference                 | Object reference                     |
-| oop                              | OOP                                  |
-| opengl                           | OpenGL                               |
-| openssl                          | OpenSSL                              |
-| opera_browser                    | Opera browser                        |
-| operand                          | Operand                              |
-| operator                         | Operator                             |
-| origin                           | Origin                               |
-| ota                              | OTA                                  |
-| owasp                            | OWASP                                |
-| p2p                              | P2P                                  |
-| pac                              | PAC                                  |
-| packet                           | Packet                               |
-| page_load_time                   | Page load time                       |
-| page_prediction                  | Page prediction                      |
-| parameter                        | Parameter                            |
-| parent_object                    | Parent object                        |
-| parse                            | Parse                                |
-| parser                           | Parser                               |
-| payload_body                     | Payload body                         |
-| payload_header                   | Payload header                       |
-| pdf                              | PDF                                  |
-| perceived_performance            | Perceived performance                |
-| percent-encoding                 | Percent-encoding                     |
-| php                              | PHP                                  |
-| physical_properties              | Physical properties                  |
-| pixel                            | Pixel                                |
-| placeholder_names                | Placeholder names                    |
-| plaintext                        | Plaintext                            |
-| plugin                           | Plugin                               |
-| png                              | PNG                                  |
-| polyfill                         | Polyfill                             |
-| polymorphism                     | Polymorphism                         |
-| pop                              | POP3                                 |
-| port                             | Port                                 |
-| prefetch                         | Prefetch                             |
-| preflight_request                | Preflight request                    |
-| prerender                        | Prerender                            |
-| presto                           | Presto                               |
-| primitive                        | Primitive                            |
-| principle_of_least_privilege     | Principle of least privilege         |
-| privileged                       | Privileged                           |
-| privileged_code                  | Privileged code                      |
-| progressive_enhancement          | Progressive enhancement              |
-| progressive_web_apps             | Progressive web applications (PWAs)  |
-| promise                          | Promise                              |
-| property                         | Property                             |
-| protocol                         | Protocol                             |
-| prototype                        | Prototype                            |
-| prototype-based_programming      | Prototype-based programming          |
-| proxy_server                     | Proxy server                         |
-| pseudo-class                     | Pseudo-class                         |
-| pseudo-element                   | Pseudo-element                       |
-| pseudocode                       | Pseudocode                           |
-| public-key_cryptography          | Public-key cryptography              |
-| python                           | Python                               |
-| quality_values                   | Quality values                       |
-| quaternion                       | Quaternion                           |
-| quic                             | QUIC                                 |
-| rail                             | RAIL                                 |
-| raster_image                     | Raster image                         |
-| rate_limit                       | Rate limit                           |
-| rdf                              | RDF                                  |
-| reading_order                    | Reading order                        |
-| real_user_monitoring             | Real User Monitoring (RUM)           |
-| recursion                        | Recursion                            |
-| reflow                           | Reflow                               |
-| registrable_domain               | Registrable domain                   |
-| regular_expression               | Regular expression                   |
-| relying_party                    | Relying party                        |
-| render_blocking                  | Render-blocking                      |
-| repaint                          | Repaint                              |
-| replaced_elements                | Replaced elements                    |
-| replay_attack                    | Replay attack                        |
-| repo                             | Repo                                 |
-| reporting_directive              | Reporting directive                  |
-| representation_header            | Representation header                |
-| request_header                   | Request header                       |
-| resource_timing                  | Resource Timing                      |
-| response_header                  | Response header                      |
-| responsive_web_design            | Responsive Web Design (RWD)          |
-| rest                             | REST                                 |
-| rgb                              | RGB                                  |
-| ril                              | RIL                                  |
-| rng                              | Random Number Generator              |
-| robots.txt                       | Robots.txt                           |
-| round_trip_time                  | Round Trip Time (RTT)                |
-| router                           | Router                               |
-| rss                              | RSS                                  |
-| rsync                            | Rsync                                |
-| rtcp                             | RTCP                                 |
-| rtf                              | RTF                                  |
-| rtl                              | RTL (Right to Left)                  |
-| rtp                              | RTP                                  |
-| rtsp                             | RTSP                                 |
-| ruby                             | Ruby                                 |
-| safe                             | Safe                                 |
-| salt                             | Salt                                 |
-| same-origin_policy               | Same-origin policy                   |
-| scm                              | SCM                                  |
-| scope                            | Scope                                |
-| screen_reader                    | Screen reader                        |
-| script-supporting_element        | Script-supporting element            |
-| scroll_boundary                  | Scroll boundary                      |
-| scroll_chaining                  | Scroll chaining                      |
-| scroll_container                 | Scroll container                     |
-| scroll_snap                      | Scroll snap                          |
-| sctp                             | SCTP                                 |
-| sdk                              | SDK                                  |
-| sdp                              | SDP                                  |
-| search_engine                    | Search engine                        |
-| secure_context                   | Secure context                       |
-| semantics                        | Semantics                            |
-| seo                              | SEO                                  |
-| serializable_object              | Serializable object                  |
-| serialization                    | Serialization                        |
-| server                           | Server                               |
-| server_timing                    | Server Timing                        |
-| session_hijacking                | Session hijacking                    |
-| sgml                             | SGML                                 |
-| shadow_tree                      | Shadow tree                          |
-| shallow_copy                     | Shallow copy                         |
-| shim                             | Shim                                 |
-| signature                        | Signature                            |
-| simd                             | SIMD                                 |
-| sisd                             | SISD                                 |
-| site                             | Site                                 |
-| site_map                         | Site map                             |
-| sld                              | SLD                                  |
-| sloppy_mode                      | Sloppy mode                          |
-| slug                             | Slug                                 |
-| smoke_test                       | Smoke test                           |
-| smpte                            | SMPTE                                |
-| smtp                             | SMTP                                 |
-| snake_case                       | Snake case                           |
-| snap_positions                   | Snap positions                       |
-| soap                             | SOAP                                 |
-| social_engineering               | Social engineering                   |
-| source_map                       | Source map                           |
-| spa                              | SPA (Single-page application)        |
-| specification                    | Specification                        |
-| speculative_parsing              | Speculative parsing                  |
-| speed_index                      | Speed index                          |
-| sql                              | SQL                                  |
-| sql_injection                    | SQL injection                        |
-| sri                              | SRI                                  |
-| ssg                              | Static site generator (SSG)          |
-| ssl                              | Secure Sockets Layer (SSL)           |
-| ssr                              | Server-side rendering (SSR)          |
-| stacking_context                 | Stacking context                     |
-| state_machine                    | State machine                        |
-| statement                        | Statement                            |
-| static_method                    | Static method                        |
-| static_typing                    | Static typing                        |
-| sticky_activation                | Sticky activation                    |
-| strict_mode                      | Strict mode                          |
-| string                           | String                               |
-| stringifier                      | Stringifier                          |
-| stun                             | STUN                                 |
-| style_origin                     | Style origin                         |
-| stylesheet                       | Stylesheet                           |
-| submit_button                    | Submit button                        |
-| svg                              | SVG                                  |
-| svn                              | SVN                                  |
-| symbol                           | Symbol                               |
-| symmetric-key_cryptography       | Symmetric-key cryptography           |
-| synchronous                      | Synchronous                          |
-| syntax                           | Syntax                               |
-| syntax_error                     | Syntax error                         |
-| synthetic_monitoring             | Synthetic monitoring                 |
-| table_grid_box                   | Table grid box                       |
-| table_wrapper_box                | Table wrapper box                    |
-| tag                              | Tag                                  |
-| tcp                              | TCP                                  |
-| tcp_handshake                    | TCP handshake                        |
-| tcp_slow_start                   | TCP slow start                       |
-| telnet                           | Telnet                               |
-| texel                            | Texel                                |
-| thread                           | Thread                               |
-| three_js                         | three.js                             |
-| throttle                         | Throttle                             |
-| time_to_first_byte               | Time to First Byte (TTFB)            |
-| time_to_interactive              | Time to Interactive (TTI)            |
-| tld                              | TLD                                  |
-| tls                              | TLS                                  |
-| tofu                             | TOFU                                 |
-| top_layer                        | Top layer                            |
-| transient_activation             | Transient activation                 |
-| tree_shaking                     | Tree shaking                         |
-| trident                          | Trident                              |
-| truthy                           | Truthy                               |
-| ttl                              | TTL                                  |
-| turn                             | TURN                                 |
-| type                             | Type                                 |
-| type_coercion                    | Type coercion                        |
-| type_conversion                  | Type conversion                      |
-| typescript                       | TypeScript                           |
-| uaag                             | UAAG                                 |
-| udp                              | UDP                                  |
-| ui                               | UI                                   |
-| undefined                        | Undefined                            |
-| unicode                          | Unicode                              |
-| unix_time                        | Unix time                            |
-| uri                              | URI                                  |
-| url                              | URL                                  |
-| urn                              | URN                                  |
-| usenet                           | Usenet                               |
-| user_agent                       | User agent                           |
-| utf-16                           | UTF-16                               |
-| utf-8                            | UTF-8                                |
-| uuid                             | UUID                                 |
-| ux                               | UX                                   |
-| validator                        | Validator                            |
-| value                            | Value                                |
-| variable                         | Variable                             |
-| vendor_prefix                    | Vendor prefix                        |
-| viewport                         | Viewport                             |
-| visual_viewport                  | Visual viewport                      |
-| void_element                     | Void element                         |
-| voip                             | VoIP                                 |
-| w3c                              | W3C                                  |
-| wai                              | WAI                                  |
-| wcag                             | WCAG                                 |
-| web_performance                  | Web performance                      |
-| web_server                       | Web server                           |
-| web_standards                    | Web standards                        |
-| webassembly                      | WebAssembly                          |
-| webdav                           | WebDAV                               |
-| webextensions                    | WebExtensions                        |
-| webgl                            | WebGL                                |
-| webidl                           | WebIDL                               |
-| webkit                           | WebKit                               |
-| webm                             | WebM                                 |
-| webp                             | WebP                                 |
-| webrtc                           | WebRTC                               |
-| websockets                       | WebSockets                           |
-| webvtt                           | WebVTT                               |
-| whatwg                           | WHATWG                               |
-| whitespace                       | Whitespace                           |
-| windowproxy                      | WindowProxy                          |
-| world_wide_web                   | World Wide Web                       |
-| wrapper                          | Wrapper                              |
-| xforms                           | XForms                               |
-| xhtml                            | XHTML                                |
-| xinclude                         | XInclude                             |
-| xlink                            | XLink                                |
-| xml                              | XML                                  |
-| xmlhttprequest                   | XMLHttpRequest (XHR)                 |
-| xpath                            | XPath                                |
-| xquery                           | XQuery                               |
-| xslt                             | XSLT                                 |
-| zstandard_compression            | Zstandard compression                |
+| Term (slug)                      | Tiêu đề tiếng Việt                         |
+| -------------------------------- | ------------------------------------------ |
+| abstraction                      | Trừu tượng hóa                             |
+| accent                           | Accent                                     |
+| accessibility                    | Khả năng tiếp cận                          |
+| accessibility_tree               | Cây khả năng tiếp cận                      |
+| accessible_description           | Mô tả khả năng tiếp cận                    |
+| accessible_name                  | Tên khả năng tiếp cận                      |
+| adobe_flash                      | Adobe Flash                                |
+| advance_measure                  | Kích thước dịch chuyển                     |
+| ajax                             | Ajax                                       |
+| algorithm                        | Thuật toán                                 |
+| alignment_container              | Hộp chứa căn chỉnh                         |
+| alignment_subject                | Đối tượng căn chỉnh                        |
+| alpha                            | Alpha (alpha channel)                      |
+| alpn                             | ALPN                                       |
+| api                              | API                                        |
+| apple_safari                     | Apple Safari                               |
+| application_context              | Ngữ cảnh ứng dụng                          |
+| argument                         | Đối số                                     |
+| aria                             | ARIA                                       |
+| arpa                             | ARPA                                       |
+| arpanet                          | ARPANET                                    |
+| array                            | Mảng                                       |
+| ascii                            | ASCII                                      |
+| aspect_ratio                     | Tỉ lệ khung hình                           |
+| asynchronous                     | Bất đồng bộ                                |
+| atag                             | ATAG                                       |
+| attribute                        | Thuộc tính                                 |
+| authentication                   | Xác thực                                   |
+| authenticator                    | Trình xác thực                             |
+| bandwidth                        | Băng thông                                 |
+| base64                           | Base64                                     |
+| baseline                         | Đường cơ sở                                |
+| bcp_47_language_tag              | BCP 47 language tag                        |
+| beacon                           | Beacon                                     |
+| bezier_curve                     | Đường cong Bézier                          |
+| bfcache                          | bfcache                                    |
+| bidi                             | Hai chiều (Bidi)                           |
+| bigint                           | BigInt                                     |
+| binding                          | Liên kết                                   |
+| bitwise_flags                    | Bitwise flags                              |
+| blink                            | Blink                                      |
+| blink_element                    | Phần tử blink                              |
+| block                            | Khối                                       |
+| block-level_content              | Nội dung cấp khối                          |
+| block_cipher_mode_of_operation   | Chế độ hoạt động mật mã khối               |
+| boolean                          | Boolean                                    |
+| bounding_box                     | Hộp bao                                    |
+| breadcrumb                       | Breadcrumb                                 |
+| brotli_compression               | Brotli compression                         |
+| browser                          | Trình duyệt                                |
+| browsing_context                 | Ngữ cảnh duyệt web                         |
+| buffer                           | Bộ đệm                                     |
+| bun                              | Bun                                        |
+| cache                            | Bộ nhớ đệm                                 |
+| cacheable                        | Có thể lưu đệm                             |
+| caldav                           | CalDAV                                     |
+| call_stack                       | Ngăn xếp lời gọi                           |
+| callback_function                | Hàm gọi lại                                |
+| camel_case                       | Camel case                                 |
+| canonical_order                  | Thứ tự chuẩn                               |
+| canvas                           | Canvas                                     |
+| card_sorting                     | Phân loại thẻ                              |
+| carddav                          | CardDAV                                    |
+| caret                            | Con trỏ văn bản                            |
+| cdn                              | CDN                                        |
+| certificate_authority            | Tổ chức cấp chứng chỉ                      |
+| certified                        | Được chứng nhận                            |
+| challenge                        | Thử thách xác thực                         |
+| character                        | Ký tự                                      |
+| character_encoding               | Mã hóa ký tự                               |
+| character_reference              | Tham chiếu ký tự                           |
+| character_set                    | Bộ ký tự                                   |
+| chrome                           | Chrome                                     |
+| cia                              | CIA                                        |
+| cipher                           | Mật mã                                     |
+| cipher_suite                     | Bộ mật mã                                  |
+| ciphertext                       | Văn bản mã hóa                             |
+| class                            | Lớp                                        |
+| closure                          | Bao đóng                                   |
+| cloud                            | Đám mây                                    |
+| cloud_computing                  | Điện toán đám mây                          |
+| cls                              | Cumulative Layout Shift (CLS)              |
+| cms                              | CMS                                        |
+| code_point                       | Điểm mã                                    |
+| code_splitting                   | Phân tách mã                               |
+| code_unit                        | Đơn vị mã                                  |
+| codec                            | Codec                                      |
+| color_space                      | Không gian màu                             |
+| color_wheel                      | Bánh xe màu                                |
+| compile                          | Biên dịch                                  |
+| compile_time                     | Thời gian biên dịch                        |
+| composite_operation              | Phép tổng hợp                              |
+| compression_dictionary_transport | Compression Dictionary Transport           |
+| computer_programming             | Lập trình máy tính                         |
+| conditional                      | Điều kiện                                  |
+| constant                         | Hằng số                                    |
+| constructor                      | Hàm khởi tạo                               |
+| content_header                   | Header nội dung                            |
+| continuous_integration           | Tích hợp liên tục                          |
+| continuous_media                 | Phương tiện liên tục                       |
+| control_flow                     | Luồng điều khiển                           |
+| cookie                           | Cookie                                     |
+| copyleft                         | Copyleft                                   |
+| cors                             | CORS                                       |
+| cors-safelisted_request_header   | CORS-safelisted request header             |
+| cors-safelisted_response_header  | CORS-safelisted response header            |
+| crawler                          | Trình thu thập dữ liệu                     |
+| credential                       | Thông tin xác thực                         |
+| crlf                             | CRLF                                       |
+| cross-site_scripting             | Kịch bản chéo trang (XSS)                  |
+| cross_axis                       | Trục chéo                                  |
+| crud                             | CRUD                                       |
+| cryptanalysis                    | Phân tích mật mã                           |
+| cryptography                     | Mật mã học                                 |
+| csp                              | CSP                                        |
+| csr                              | Client-side rendering (CSR)                |
+| csrf                             | Cross-site request forgery (CSRF)          |
+| css                              | CSS                                        |
+| css_descriptor                   | Descriptor (CSS)                           |
+| css_pixel                        | CSS pixel                                  |
+| css_preprocessor                 | CSS preprocessor                           |
+| css_selector                     | Selector (CSS)                             |
+| cssom                            | CSS Object Model (CSSOM)                   |
+| data_structure                   | Cấu trúc dữ liệu                           |
+| database                         | Cơ sở dữ liệu                              |
+| debounce                         | Debounce                                   |
+| decryption                       | Giải mã                                    |
+| deep_copy                        | Sao chép sâu                               |
+| delta                            | Delta                                      |
+| denial_of_service                | Từ chối dịch vụ (DoS)                      |
+| deno                             | Deno                                       |
+| deserialization                  | Giải tuần tự hóa                           |
+| developer_tools                  | Công cụ phát triển                         |
+| device_pixel                     | Pixel thiết bị                             |
+| digital_certificate              | Chứng chỉ số                               |
+| digital_signature                | Chữ ký số                                  |
+| distributed_denial_of_service    | Tấn công từ chối dịch vụ phân tán (DDoS)   |
+| dmz                              | DMZ                                        |
+| dns                              | DNS                                        |
+| doctype                          | Doctype                                    |
+| document_directive               | Chỉ thị tài liệu                           |
+| document_environment             | Môi trường tài liệu                        |
+| dom                              | DOM (Document Object Model)                |
+| domain                           | Miền                                       |
+| domain_name                      | Tên miền                                   |
+| domain_sharding                  | Phân tách tên miền                         |
+| dominator                        | Dominator                                  |
+| dsl                              | DSL                                        |
+| dtls                             | DTLS (Datagram Transport Layer Security)   |
+| dtmf                             | DTMF (Dual-Tone Multi-Frequency signaling) |
+| dynamic_typing                   | Định kiểu động                             |
+| ecma                             | ECMA                                       |
+| ecmascript                       | ECMAScript                                 |
+| effective_connection_type        | Loại kết nối hiệu quả                      |
+| element                          | Phần tử                                    |
+| encapsulation                    | Đóng gói                                   |
+| encryption                       | Mã hóa                                     |
+| endianness                       | Thứ tự byte                                |
+| engine                           | Engine                                     |
+| entity                           | Thực thể                                   |
+| entity_header                    | Header thực thể                            |
+| enumerated                       | Kiểu liệt kê                               |
+| escape_character                 | Ký tự thoát                                |
+| event                            | Sự kiện                                    |
+| exception                        | Ngoại lệ                                   |
+| exif                             | EXIF                                       |
+| expando                          | Expando                                    |
+| extrinsic_size                   | Kích thước ngoại lai                       |
+| fallback_alignment               | Căn chỉnh dự phòng                         |
+| falsy                            | Falsy                                      |
+| favicon                          | Favicon                                    |
+| federated_identity               | Nhận dạng liên kết                         |
+| fetch_directive                  | Chỉ thị fetch                              |
+| fetch_metadata_request_header    | Header yêu cầu siêu dữ liệu fetch          |
+| fingerprinting                   | Lấy dấu vân tay                            |
+| firefox_os                       | Firefox OS                                 |
+| firewall                         | Tường lửa                                  |
+| first-class_function             | Hàm hạng nhất                              |
+| first_contentful_paint           | First Contentful Paint (FCP)               |
+| first_cpu_idle                   | First CPU Idle                             |
+| first_input_delay                | First Input Delay (FID)                    |
+| first_meaningful_paint           | First Meaningful Paint (FMP)               |
+| first_paint                      | First Paint (FP)                           |
+| flex                             | Flex                                       |
+| flex_container                   | Flex container                             |
+| flex_item                        | Flex item                                  |
+| flexbox                          | Flexbox                                    |
+| flow_relative_values             | Giá trị tương đối theo luồng               |
+| forbidden_request_header         | Header yêu cầu bị cấm                      |
+| forbidden_response_header_name   | Tên header phản hồi bị cấm                 |
+| fork                             | Fork                                       |
+| fps                              | Frame rate (FPS)                           |
+| fragmentainer                    | Fragmentainer                              |
+| ftp                              | FTP                                        |
+| ftu                              | FTU                                        |
+| function                         | Hàm                                        |
+| fuzzing                          | Kiểm thử mờ                                |
+| gamut                            | Gam màu                                    |
+| garbage_collection               | Thu gom rác                                |
+| gecko                            | Gecko                                      |
+| general_header                   | Header chung                               |
+| gif                              | GIF                                        |
+| git                              | Git                                        |
+| global_object                    | Đối tượng toàn cục                         |
+| global_scope                     | Phạm vi toàn cục                           |
+| global_variable                  | Biến toàn cục                              |
+| glyph                            | Ký tự đồ họa                               |
+| google_chrome                    | Google Chrome                              |
+| gpl                              | GPL                                        |
+| gpu                              | GPU                                        |
+| graceful_degradation             | Giảm cấp khéo léo                          |
+| grid                             | Grid                                       |
+| grid_areas                       | Grid areas                                 |
+| grid_axis                        | Trục grid                                  |
+| grid_cell                        | Ô grid                                     |
+| grid_column                      | Cột grid                                   |
+| grid_container                   | Hộp chứa grid                              |
+| grid_lines                       | Đường grid                                 |
+| grid_row                         | Hàng grid                                  |
+| grid_tracks                      | Track grid                                 |
+| guaranteed_invalid_value         | Giá trị không hợp lệ đảm bảo               |
+| gutters                          | Khoảng cách rãnh                           |
+| gzip_compression                 | Nén gzip                                   |
+| hash_function                    | Hàm băm                                    |
+| hash_routing                     | Định tuyến hash                            |
+| head                             | Head                                       |
+| head_of_line_blocking            | Chặn đầu hàng                              |
+| high-level_programming_language  | Ngôn ngữ lập trình bậc cao                 |
+| hmac                             | HMAC                                       |
+| hoisting                         | Hoisting                                   |
+| host                             | Máy chủ                                    |
+| hotlink                          | Hotlink                                    |
+| houdini                          | Houdini                                    |
+| hpkp                             | HPKP                                       |
+| hsts                             | HSTS                                       |
+| html                             | HTML                                       |
+| html5                            | HTML5                                      |
+| html_color_codes                 | Mã màu HTML                                |
+| http                             | HTTP                                       |
+| http_2                           | HTTP/2                                     |
+| http_3                           | HTTP/3                                     |
+| http_content                     | Nội dung HTTP                              |
+| http_header                      | Header HTTP                                |
+| https                            | HTTPS                                      |
+| https_rr                         | HTTPS RR                                   |
+| hyperlink                        | Siêu liên kết                              |
+| hypertext                        | Siêu văn bản                               |
+| iana                             | IANA                                       |
+| icann                            | ICANN                                      |
+| ice                              | ICE                                        |
+| ide                              | IDE                                        |
+| idempotent                       | Bất biến                                   |
+| identifier                       | Định danh                                  |
+| identity_provider                | Nhà cung cấp danh tính                     |
+| idl                              | IDL                                        |
+| ietf                             | IETF                                       |
+| iife                             | IIFE                                       |
+| imap                             | IMAP                                       |
+| immutable                        | Bất biến                                   |
+| indexeddb                        | IndexedDB                                  |
+| information_architecture         | Kiến trúc thông tin                        |
+| inheritance                      | Kế thừa                                    |
+| ink_overflow                     | Tràn mực                                   |
+| inline-level_content             | Nội dung cấp inline                        |
+| input_method_editor              | Trình soạn thảo phương thức nhập           |
+| inset_properties                 | Thuộc tính inset                           |
+| instance                         | Thực thể                                   |
+| interaction_to_next_paint        | Interaction to Next Paint (INP)            |
+| internationalization             | Quốc tế hóa (i18n)                         |
+| internet                         | Internet                                   |
+| interpolation                    | Nội suy                                    |
+| intrinsic_size                   | Kích thước nội tại                         |
+| invariant                        | Bất biến thức                              |
+| ip_address                       | Địa chỉ IP                                 |
+| ipv4                             | IPv4                                       |
+| ipv6                             | IPv6                                       |
+| irc                              | IRC                                        |
+| iso                              | ISO                                        |
+| isp                              | ISP                                        |
+| itu                              | ITU                                        |
+| jank                             | Jank                                       |
+| java                             | Java                                       |
+| javascript                       | JavaScript                                 |
+| jitter                           | Jitter                                     |
+| jpeg                             | JPEG                                       |
+| json                             | JSON                                       |
+| json_type_representation         | Biểu diễn kiểu JSON                        |
+| just_in_time_compilation         | Biên dịch just-in-time (JIT)               |
+| kebab_case                       | Kebab case                                 |
+| key                              | Khóa                                       |
+| keyword                          | Từ khóa                                    |
+| khronos                          | The Khronos Group                          |
+| largest_contentful_paint         | Largest Contentful Paint (LCP)             |
+| latency                          | Độ trễ                                     |
+| layout_mode                      | Chế độ bố cục                              |
+| layout_viewport                  | Vùng nhìn bố cục                           |
+| lazy_load                        | Tải lười biếng                             |
+| leading                          | Khoảng cách dòng                           |
+| lgpl                             | LGPL                                       |
+| ligature                         | Chữ ghép                                   |
+| literal                          | Giá trị trực tiếp                          |
+| local_scope                      | Phạm vi cục bộ                             |
+| local_variable                   | Biến cục bộ                                |
+| locale                           | Locale                                     |
+| localization                     | Bản địa hóa                                |
+| logical_properties               | Thuộc tính logic                           |
+| long_task                        | Tác vụ dài                                 |
+| loop                             | Vòng lặp                                   |
+| lossless_compression             | Nén không mất dữ liệu                      |
+| lossy_compression                | Nén có mất dữ liệu                         |
+| ltr                              | LTR (Left To Right)                        |
+| main_axis                        | Trục chính                                 |
+| main_thread                      | Luồng chính                                |
+| markup                           | Đánh dấu                                   |
+| mathml                           | MathML                                     |
+| media                            | Media                                      |
+| media_query                      | Truy vấn media                             |
+| metadata                         | Siêu dữ liệu                               |
+| method                           | Phương thức                                |
+| microsoft_edge                   | Microsoft Edge                             |
+| microsoft_internet_explorer      | Microsoft Internet Explorer                |
+| middleware                       | Middleware                                 |
+| mime                             | MIME                                       |
+| mime_type                        | Kiểu MIME                                  |
+| minification                     | Thu nhỏ mã                                 |
+| mitm                             | MitM                                       |
+| mixin                            | Mixin                                      |
+| mobile_first                     | Mobile first                               |
+| modem                            | Modem                                      |
+| modularity                       | Tính mô-đun                                |
+| mozilla_firefox                  | Mozilla Firefox                            |
+| multi-factor_authentication      | Xác thực đa yếu tố                         |
+| mutable                          | Có thể thay đổi                            |
+| mvc                              | MVC                                        |
+| namespace                        | Không gian tên                             |
+| nan                              | NaN                                        |
+| nat                              | NAT                                        |
+| native                           | Gốc                                        |
+| navigation_directive             | Chỉ thị điều hướng                         |
+| netscape_navigator               | Netscape Navigator                         |
+| network_throttling               | Hạn chế băng thông                         |
+| nntp                             | NNTP                                       |
+| node                             | Nút                                        |
+| node.js                          | Node.js                                    |
+| non-normative                    | Không chuẩn tắc                            |
+| nonce                            | Nonce                                      |
+| normative                        | Chuẩn tắc                                  |
+| null                             | Null                                       |
+| nullish                          | Giá trị nullish                            |
+| number                           | Số                                         |
+| object                           | Đối tượng                                  |
+| object_reference                 | Tham chiếu đối tượng                       |
+| oop                              | OOP                                        |
+| opengl                           | OpenGL                                     |
+| openssl                          | OpenSSL                                    |
+| opera_browser                    | Opera browser                              |
+| operand                          | Toán hạng                                  |
+| operator                         | Toán tử                                    |
+| origin                           | Nguồn gốc                                  |
+| ota                              | OTA                                        |
+| owasp                            | OWASP                                      |
+| p2p                              | P2P                                        |
+| pac                              | PAC                                        |
+| packet                           | Gói tin                                    |
+| page_load_time                   | Thời gian tải trang                        |
+| page_prediction                  | Dự đoán trang                              |
+| parameter                        | Tham số                                    |
+| parent_object                    | Đối tượng cha                              |
+| parse                            | Phân tích cú pháp                          |
+| parser                           | Trình phân tích cú pháp                    |
+| payload_body                     | Thân nội dung                              |
+| payload_header                   | Header nội dung                            |
+| pdf                              | PDF                                        |
+| perceived_performance            | Hiệu năng cảm nhận                         |
+| percent-encoding                 | Mã hóa phần trăm                           |
+| php                              | PHP                                        |
+| physical_properties              | Thuộc tính vật lý                          |
+| pixel                            | Pixel                                      |
+| placeholder_names                | Tên giữ chỗ                                |
+| plaintext                        | Văn bản thuần                              |
+| plugin                           | Plugin                                     |
+| png                              | PNG                                        |
+| polyfill                         | Polyfill                                   |
+| polymorphism                     | Đa hình                                    |
+| pop                              | POP3                                       |
+| port                             | Cổng                                       |
+| prefetch                         | Tải trước                                  |
+| preflight_request                | Yêu cầu kiểm tra trước                     |
+| prerender                        | Kết xuất trước                             |
+| presto                           | Presto                                     |
+| primitive                        | Kiểu nguyên thủy                           |
+| principle_of_least_privilege     | Nguyên tắc đặc quyền tối thiểu             |
+| privileged                       | Đặc quyền                                  |
+| privileged_code                  | Mã đặc quyền                               |
+| progressive_enhancement          | Cải tiến lũy tiến                          |
+| progressive_web_apps             | Ứng dụng web tiến bộ (PWAs)                |
+| promise                          | Promise                                    |
+| property                         | Thuộc tính                                 |
+| protocol                         | Giao thức                                  |
+| prototype                        | Nguyên mẫu                                 |
+| prototype-based_programming      | Lập trình dựa trên nguyên mẫu              |
+| proxy_server                     | Máy chủ proxy                              |
+| pseudo-class                     | Lớp giả                                    |
+| pseudo-element                   | Phần tử giả                                |
+| pseudocode                       | Mã giả                                     |
+| public-key_cryptography          | Mật mã khóa công khai                      |
+| python                           | Python                                     |
+| quality_values                   | Giá trị chất lượng                         |
+| quaternion                       | Tứ nguyên                                  |
+| quic                             | QUIC                                       |
+| rail                             | RAIL                                       |
+| raster_image                     | Ảnh raster                                 |
+| rate_limit                       | Giới hạn tốc độ                            |
+| rdf                              | RDF                                        |
+| reading_order                    | Thứ tự đọc                                 |
+| real_user_monitoring             | Giám sát người dùng thực (RUM)             |
+| recursion                        | Đệ quy                                     |
+| reflow                           | Tái bố cục                                 |
+| registrable_domain               | Miền có thể đăng ký                        |
+| regular_expression               | Biểu thức chính quy                        |
+| relying_party                    | Bên phụ thuộc                              |
+| render_blocking                  | Chặn kết xuất                              |
+| repaint                          | Vẽ lại                                     |
+| replaced_elements                | Phần tử thay thế                           |
+| replay_attack                    | Tấn công phát lại                          |
+| repo                             | Repo                                       |
+| reporting_directive              | Chỉ thị báo cáo                            |
+| representation_header            | Header biểu diễn                           |
+| request_header                   | Header yêu cầu                             |
+| resource_timing                  | Resource Timing                            |
+| response_header                  | Header phản hồi                            |
+| responsive_web_design            | Thiết kế web thích ứng (RWD)               |
+| rest                             | REST                                       |
+| rgb                              | RGB                                        |
+| ril                              | RIL                                        |
+| rng                              | RNG                                        |
+| robots.txt                       | Robots.txt                                 |
+| round_trip_time                  | Thời gian khứ hồi (RTT)                    |
+| router                           | Bộ định tuyến                              |
+| rss                              | RSS                                        |
+| rsync                            | Rsync                                      |
+| rtcp                             | RTCP                                       |
+| rtf                              | RTF                                        |
+| rtl                              | RTL                                        |
+| rtp                              | RTP                                        |
+| rtsp                             | RTSP                                       |
+| ruby                             | Ruby                                       |
+| safe                             | An toàn                                    |
+| salt                             | Muối (salt)                                |
+| same-origin_policy               | Chính sách cùng nguồn gốc                  |
+| scm                              | SCM                                        |
+| scope                            | Phạm vi                                    |
+| screen_reader                    | Trình đọc màn hình                         |
+| script-supporting_element        | Phần tử hỗ trợ script                      |
+| scroll_boundary                  | Ranh giới cuộn                             |
+| scroll_chaining                  | Chuỗi cuộn                                 |
+| scroll_container                 | Hộp chứa cuộn                              |
+| scroll_snap                      | Cuộn giật                                  |
+| sctp                             | SCTP                                       |
+| sdk                              | SDK                                        |
+| sdp                              | SDP                                        |
+| search_engine                    | Công cụ tìm kiếm                           |
+| secure_context                   | Ngữ cảnh bảo mật                           |
+| semantics                        | Ngữ nghĩa                                  |
+| seo                              | SEO                                        |
+| serializable_object              | Đối tượng có thể tuần tự hóa               |
+| serialization                    | Tuần tự hóa                                |
+| server                           | Máy chủ                                    |
+| server_timing                    | Server Timing                              |
+| session_hijacking                | Chiếm quyền phiên                          |
+| sgml                             | SGML                                       |
+| shadow_tree                      | Cây shadow                                 |
+| shallow_copy                     | Sao chép nông                              |
+| shim                             | Shim                                       |
+| signature                        | Chữ ký                                     |
+| simd                             | SIMD                                       |
+| sisd                             | SISD                                       |
+| site                             | Trang web                                  |
+| site_map                         | Sơ đồ trang web                            |
+| sld                              | SLD                                        |
+| sloppy_mode                      | Chế độ lỏng lẻo                            |
+| slug                             | Slug                                       |
+| smoke_test                       | Kiểm thử khói                              |
+| smpte                            | SMPTE                                      |
+| smtp                             | SMTP                                       |
+| snake_case                       | Snake case                                 |
+| snap_positions                   | Vị trí giật                                |
+| soap                             | SOAP                                       |
+| social_engineering               | Kỹ nghệ xã hội                             |
+| source_map                       | Bản đồ nguồn                               |
+| spa                              | SPA                                        |
+| specification                    | Đặc tả                                     |
+| speculative_parsing              | Phân tích cú pháp suy đoán                 |
+| speed_index                      | Chỉ số tốc độ                              |
+| sql                              | SQL                                        |
+| sql_injection                    | Tiêm SQL                                   |
+| sri                              | SRI                                        |
+| ssg                              | SSG                                        |
+| ssl                              | SSL                                        |
+| ssr                              | SSR                                        |
+| stacking_context                 | Ngữ cảnh xếp chồng                         |
+| state_machine                    | Máy trạng thái                             |
+| statement                        | Câu lệnh                                   |
+| static_method                    | Phương thức tĩnh                           |
+| static_typing                    | Định kiểu tĩnh                             |
+| sticky_activation                | Kích hoạt dính                             |
+| strict_mode                      | Chế độ nghiêm ngặt                         |
+| string                           | Chuỗi                                      |
+| stringifier                      | Stringifier                                |
+| stun                             | STUN                                       |
+| style_origin                     | Nguồn gốc kiểu                             |
+| stylesheet                       | Bảng kiểu                                  |
+| submit_button                    | Nút gửi                                    |
+| svg                              | SVG                                        |
+| svn                              | SVN                                        |
+| symbol                           | Symbol                                     |
+| symmetric-key_cryptography       | Mật mã khóa đối xứng                       |
+| synchronous                      | Đồng bộ                                    |
+| syntax                           | Cú pháp                                    |
+| syntax_error                     | Lỗi cú pháp                                |
+| synthetic_monitoring             | Giám sát tổng hợp                          |
+| table_grid_box                   | Hộp lưới bảng                              |
+| table_wrapper_box                | Hộp bọc bảng                               |
+| tag                              | Thẻ                                        |
+| tcp                              | TCP                                        |
+| tcp_handshake                    | Bắt tay TCP                                |
+| tcp_slow_start                   | Khởi động chậm TCP                         |
+| telnet                           | Telnet                                     |
+| texel                            | Texel                                      |
+| thread                           | Luồng                                      |
+| three_js                         | three.js                                   |
+| throttle                         | Throttle                                   |
+| time_to_first_byte               | Time to First Byte (TTFB)                  |
+| time_to_interactive              | Time to Interactive (TTI)                  |
+| tld                              | TLD                                        |
+| tls                              | TLS                                        |
+| tofu                             | TOFU                                       |
+| top_layer                        | Lớp trên cùng                              |
+| transient_activation             | Kích hoạt tạm thời                         |
+| tree_shaking                     | Tree shaking                               |
+| trident                          | Trident                                    |
+| truthy                           | Truthy                                     |
+| ttl                              | TTL                                        |
+| turn                             | TURN                                       |
+| type                             | Kiểu                                       |
+| type_coercion                    | Ép kiểu                                    |
+| type_conversion                  | Chuyển đổi kiểu                            |
+| typescript                       | TypeScript                                 |
+| uaag                             | UAAG                                       |
+| udp                              | UDP                                        |
+| ui                               | UI                                         |
+| undefined                        | Undefined                                  |
+| unicode                          | Unicode                                    |
+| unix_time                        | Thời gian Unix                             |
+| uri                              | URI                                        |
+| url                              | URL                                        |
+| urn                              | URN                                        |
+| usenet                           | Usenet                                     |
+| user_agent                       | Tác nhân người dùng                        |
+| utf-16                           | UTF-16                                     |
+| utf-8                            | UTF-8                                      |
+| uuid                             | UUID                                       |
+| ux                               | UX                                         |
+| validator                        | Trình xác nhận                             |
+| value                            | Giá trị                                    |
+| variable                         | Biến                                       |
+| vendor_prefix                    | Tiền tố nhà cung cấp                       |
+| viewport                         | Vùng nhìn                                  |
+| visual_viewport                  | Vùng nhìn trực quan                        |
+| void_element                     | Phần tử void                               |
+| voip                             | VoIP                                       |
+| w3c                              | W3C                                        |
+| wai                              | WAI                                        |
+| wcag                             | WCAG                                       |
+| web_performance                  | Hiệu năng web                              |
+| web_server                       | Máy chủ web                                |
+| web_standards                    | Tiêu chuẩn web                             |
+| webassembly                      | WebAssembly                                |
+| webdav                           | WebDAV                                     |
+| webextensions                    | WebExtensions                              |
+| webgl                            | WebGL                                      |
+| webidl                           | WebIDL                                     |
+| webkit                           | WebKit                                     |
+| webm                             | WebM                                       |
+| webp                             | WebP                                       |
+| webrtc                           | WebRTC                                     |
+| websockets                       | WebSockets                                 |
+| webvtt                           | WebVTT                                     |
+| whatwg                           | WHATWG                                     |
+| whitespace                       | Khoảng trắng                               |
+| windowproxy                      | WindowProxy                                |
+| world_wide_web                   | World Wide Web                             |
+| wrapper                          | Wrapper                                    |
+| xforms                           | XForms                                     |
+| xhtml                            | XHTML                                      |
+| xinclude                         | XInclude                                   |
+| xlink                            | XLink                                      |
+| xml                              | XML                                        |
+| xmlhttprequest                   | XMLHttpRequest (XHR)                       |
+| xpath                            | XPath                                      |
+| xquery                           | XQuery                                     |
+| xslt                             | XSLT                                       |
+| zstandard_compression            | Zstandard compression                      |

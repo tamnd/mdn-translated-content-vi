@@ -1,5 +1,5 @@
 ---
-title: Firewall
+title: Tường lửa
 slug: Glossary/Firewall
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Forbidden request header
+title: Header yêu cầu bị cấm
 slug: Glossary/Forbidden_request_header
 page-type: glossary-definition
 sidebar: glossarysidebar

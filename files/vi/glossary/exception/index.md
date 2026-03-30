@@ -1,5 +1,5 @@
 ---
-title: Exception
+title: Ngoại lệ
 slug: Glossary/Exception
 page-type: glossary-definition
 sidebar: glossarysidebar

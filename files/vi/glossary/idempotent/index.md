@@ -1,5 +1,5 @@
 ---
-title: Idempotent
+title: Bất biến
 slug: Glossary/Idempotent
 page-type: glossary-definition
 sidebar: glossarysidebar

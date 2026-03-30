@@ -1,5 +1,5 @@
 ---
-title: RTL (Right to Left)
+title: RTL
 slug: Glossary/RTL
 page-type: glossary-definition
 sidebar: glossarysidebar

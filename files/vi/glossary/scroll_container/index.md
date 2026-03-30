@@ -1,5 +1,5 @@
 ---
-title: Scroll container
+title: Hộp chứa cuộn
 slug: Glossary/Scroll_container
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Visual viewport
+title: Vùng nhìn trực quan
 slug: Glossary/Visual_Viewport
 page-type: glossary-definition
 sidebar: glossarysidebar

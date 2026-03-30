@@ -1,5 +1,5 @@
 ---
-title: Raster image
+title: Ảnh raster
 slug: Glossary/Raster_image
 page-type: glossary-definition
 sidebar: glossarysidebar

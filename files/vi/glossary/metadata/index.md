@@ -1,5 +1,5 @@
 ---
-title: Metadata
+title: Siêu dữ liệu
 slug: Glossary/Metadata
 page-type: glossary-definition
 sidebar: glossarysidebar

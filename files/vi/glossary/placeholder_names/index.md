@@ -1,5 +1,5 @@
 ---
-title: Placeholder names
+title: Tên giữ chỗ
 slug: Glossary/Placeholder_names
 page-type: glossary-definition
 sidebar: glossarysidebar

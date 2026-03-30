@@ -1,5 +1,5 @@
 ---
-title: Continuous media
+title: Phương tiện liên tục
 slug: Glossary/Continuous_Media
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Mutable
+title: Có thể thay đổi
 slug: Glossary/Mutable
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Intrinsic size
+title: Kích thước nội tại
 slug: Glossary/Intrinsic_Size
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Main thread
+title: Luồng chính
 slug: Glossary/Main_thread
 page-type: glossary-definition
 sidebar: glossarysidebar

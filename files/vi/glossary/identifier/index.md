@@ -1,5 +1,5 @@
 ---
-title: Identifier
+title: Định danh
 slug: Glossary/Identifier
 page-type: glossary-definition
 sidebar: glossarysidebar

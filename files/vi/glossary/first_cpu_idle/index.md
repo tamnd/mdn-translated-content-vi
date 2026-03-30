@@ -1,5 +1,5 @@
 ---
-title: First CPU idle
+title: First CPU Idle
 slug: Glossary/First_CPU_idle
 page-type: glossary-definition
 sidebar: glossarysidebar

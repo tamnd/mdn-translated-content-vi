@@ -1,5 +1,5 @@
 ---
-title: Type
+title: Kiểu
 slug: Glossary/Type
 page-type: glossary-definition
 sidebar: glossarysidebar

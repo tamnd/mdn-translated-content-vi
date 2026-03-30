@@ -1,5 +1,5 @@
 ---
-title: SPA (Single-page application)
+title: SPA
 slug: Glossary/SPA
 page-type: glossary-definition
 sidebar: glossarysidebar

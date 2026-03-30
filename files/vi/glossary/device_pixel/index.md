@@ -1,5 +1,5 @@
 ---
-title: Device pixel
+title: Pixel thiết bị
 slug: Glossary/Device_pixel
 page-type: glossary-definition
 sidebar: glossarysidebar

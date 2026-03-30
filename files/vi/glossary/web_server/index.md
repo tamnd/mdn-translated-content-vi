@@ -1,5 +1,5 @@
 ---
-title: Web server
+title: Máy chủ web
 slug: Glossary/Web_server
 page-type: glossary-definition
 sidebar: glossarysidebar

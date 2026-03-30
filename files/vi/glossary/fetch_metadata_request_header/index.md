@@ -1,5 +1,5 @@
 ---
-title: Fetch metadata request header
+title: Header yêu cầu siêu dữ liệu fetch
 slug: Glossary/Fetch_metadata_request_header
 page-type: glossary-definition
 sidebar: glossarysidebar

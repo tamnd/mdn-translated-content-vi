@@ -1,5 +1,5 @@
 ---
-title: Server-side rendering (SSR)
+title: SSR
 slug: Glossary/SSR
 page-type: glossary-definition
 sidebar: glossarysidebar

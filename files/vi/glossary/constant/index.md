@@ -1,5 +1,5 @@
 ---
-title: Constant
+title: Hằng số
 slug: Glossary/Constant
 page-type: glossary-definition
 sidebar: glossarysidebar

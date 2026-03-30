@@ -1,5 +1,5 @@
 ---
-title: SQL injection
+title: Tiêm SQL
 slug: Glossary/SQL_Injection
 page-type: glossary-definition
 sidebar: glossarysidebar

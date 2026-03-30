@@ -1,5 +1,5 @@
 ---
-title: Accessibility tree
+title: Cây khả năng tiếp cận
 slug: Glossary/Accessibility_tree
 page-type: glossary-definition
 sidebar: glossarysidebar

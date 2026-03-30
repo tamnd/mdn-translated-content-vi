@@ -1,5 +1,5 @@
 ---
-title: Page prediction
+title: Dự đoán trang
 slug: Glossary/Page_prediction
 page-type: glossary-definition
 sidebar: glossarysidebar

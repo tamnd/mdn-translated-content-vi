@@ -1,5 +1,5 @@
 ---
-title: BiDi
+title: Hai chiều (Bidi)
 slug: Glossary/BiDi
 page-type: glossary-definition
 sidebar: glossarysidebar

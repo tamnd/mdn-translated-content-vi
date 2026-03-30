@@ -1,5 +1,5 @@
 ---
-title: Bandwidth
+title: Băng thông
 slug: Glossary/Bandwidth
 page-type: glossary-definition
 sidebar: glossarysidebar

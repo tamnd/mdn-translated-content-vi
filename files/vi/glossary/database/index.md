@@ -1,5 +1,5 @@
 ---
-title: Database
+title: Cơ sở dữ liệu
 slug: Glossary/Database
 page-type: glossary-definition
 sidebar: glossarysidebar

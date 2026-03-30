@@ -1,5 +1,5 @@
 ---
-title: Deep copy
+title: Sao chép sâu
 slug: Glossary/Deep_copy
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Entity header
+title: Header thực thể
 slug: Glossary/Entity_header
 page-type: glossary-definition
 sidebar: glossarysidebar

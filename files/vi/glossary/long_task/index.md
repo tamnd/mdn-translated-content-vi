@@ -1,5 +1,5 @@
 ---
-title: Long task
+title: Tác vụ dài
 slug: Glossary/Long_task
 page-type: glossary-definition
 sidebar: glossarysidebar

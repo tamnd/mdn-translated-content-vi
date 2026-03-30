@@ -1,5 +1,5 @@
 ---
-title: Unix time
+title: Thời gian Unix
 slug: Glossary/Unix_time
 page-type: glossary-definition
 sidebar: glossarysidebar

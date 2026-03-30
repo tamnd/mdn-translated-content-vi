@@ -1,5 +1,5 @@
 ---
-title: Repaint
+title: Vẽ lại
 slug: Glossary/Repaint
 page-type: glossary-definition
 sidebar: glossarysidebar

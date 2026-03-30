@@ -1,5 +1,5 @@
 ---
-title: Same-origin policy
+title: Chính sách cùng nguồn gốc
 slug: Glossary/Same-origin_policy
 page-type: glossary-definition
 sidebar: glossarysidebar

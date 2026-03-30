@@ -1,5 +1,5 @@
 ---
-title: Media query
+title: Truy vấn media
 slug: Glossary/Media_query
 page-type: glossary-definition
 sidebar: glossarysidebar

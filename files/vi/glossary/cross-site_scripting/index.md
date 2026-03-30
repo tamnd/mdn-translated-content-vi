@@ -1,5 +1,5 @@
 ---
-title: Cross-site scripting (XSS)
+title: Kịch bản chéo trang (XSS)
 slug: Glossary/Cross-site_scripting
 page-type: glossary-definition
 sidebar: glossarysidebar

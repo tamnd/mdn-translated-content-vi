@@ -1,5 +1,5 @@
 ---
-title: Render-blocking
+title: Chặn kết xuất
 slug: Glossary/Render_blocking
 page-type: glossary-definition
 sidebar: glossarysidebar

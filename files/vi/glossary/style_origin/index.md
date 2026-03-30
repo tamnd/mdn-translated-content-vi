@@ -1,5 +1,5 @@
 ---
-title: Style origin
+title: Nguồn gốc kiểu
 slug: Glossary/Style_origin
 page-type: glossary-definition
 sidebar: glossarysidebar

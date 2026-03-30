@@ -1,5 +1,5 @@
 ---
-title: Variable
+title: Biến
 slug: Glossary/Variable
 page-type: glossary-definition
 sidebar: glossarysidebar

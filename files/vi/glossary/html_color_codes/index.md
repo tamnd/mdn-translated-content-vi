@@ -1,5 +1,5 @@
 ---
-title: HTML color codes
+title: Mã màu HTML
 slug: Glossary/html_color_codes
 page-type: glossary-definition
 sidebar: glossarysidebar

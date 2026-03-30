@@ -1,5 +1,5 @@
 ---
-title: Glyph
+title: Ký tự đồ họa
 slug: Glossary/Glyph
 page-type: glossary-definition
 sidebar: glossarysidebar

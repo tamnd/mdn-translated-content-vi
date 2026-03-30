@@ -1,5 +1,5 @@
 ---
-title: High-level programming language
+title: Ngôn ngữ lập trình bậc cao
 slug: Glossary/High-level_programming_language
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Just-In-Time Compilation (JIT)
+title: Biên dịch just-in-time (JIT)
 slug: Glossary/Just_In_Time_Compilation
 page-type: glossary-definition
 sidebar: glossarysidebar

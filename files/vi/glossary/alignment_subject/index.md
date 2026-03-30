@@ -1,11 +1,11 @@
 ---
-title: Alignment subject
+title: Đối tượng căn chỉnh
 slug: Glossary/Alignment_Subject
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Trong [căn chỉnh hộp CSS](/en-US/docs/Web/CSS/Guides/Box_alignment), **đối tượng căn chỉnh** (alignment subject) là thứ (hoặc những thứ) được căn chỉnh bên trong {{glossary("alignment container", "vùng chứa căn chỉnh")}} bởi thuộc tính.
+Trong [căn chỉnh hộp CSS](/en-US/docs/Web/CSS/Guides/Box_alignment), **đối tượng căn chỉnh** (alignment subject) là thứ (hoặc những thứ) được căn chỉnh bên trong {{glossary("alignment container", "hộp chứa căn chỉnh")}} bởi thuộc tính.
 
 Đối với {{cssxref("justify-self")}} và {{cssxref("align-self")}}, đối tượng căn chỉnh là hộp lề của hộp mà thuộc tính được đặt, sử dụng chế độ viết của hộp đó. Đối với {{cssxref("justify-content")}} và {{cssxref("align-content")}}, chế độ viết của hộp cũng được sử dụng.
 

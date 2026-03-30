@@ -1,5 +1,5 @@
 ---
-title: Color wheel
+title: Bánh xe màu
 slug: Glossary/Color_wheel
 page-type: glossary-definition
 sidebar: glossarysidebar

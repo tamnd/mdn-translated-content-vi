@@ -1,5 +1,5 @@
 ---
-title: Element
+title: Phần tử
 slug: Glossary/Element
 page-type: glossary-definition
 sidebar: glossarysidebar

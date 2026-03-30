@@ -1,5 +1,5 @@
 ---
-title: Fetch directive
+title: Chỉ thị fetch
 slug: Glossary/Fetch_directive
 page-type: glossary-definition
 sidebar: glossarysidebar

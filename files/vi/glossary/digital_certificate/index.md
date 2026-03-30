@@ -1,5 +1,5 @@
 ---
-title: Digital certificate
+title: Chứng chỉ số
 slug: Glossary/Digital_certificate
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Graceful degradation
+title: Giảm cấp khéo léo
 slug: Glossary/Graceful_degradation
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Serialization
+title: Tuần tự hóa
 slug: Glossary/Serialization
 page-type: glossary-definition
 sidebar: glossarysidebar

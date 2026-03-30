@@ -1,5 +1,5 @@
 ---
-title: Endianness
+title: Thứ tự byte
 slug: Glossary/Endianness
 page-type: glossary-definition
 sidebar: glossarysidebar

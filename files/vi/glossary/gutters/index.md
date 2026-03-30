@@ -1,5 +1,5 @@
 ---
-title: Gutters
+title: Khoảng cách rãnh
 slug: Glossary/Gutters
 page-type: glossary-definition
 sidebar: glossarysidebar

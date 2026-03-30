@@ -1,5 +1,5 @@
 ---
-title: Distributed Denial of Service (DDoS)
+title: Tấn công từ chối dịch vụ phân tán (DDoS)
 slug: Glossary/Distributed_Denial_of_Service
 page-type: glossary-definition
 sidebar: glossarysidebar

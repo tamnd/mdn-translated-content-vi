@@ -1,5 +1,5 @@
 ---
-title: Constructor
+title: Hàm khởi tạo
 slug: Glossary/Constructor
 page-type: glossary-definition
 sidebar: glossarysidebar

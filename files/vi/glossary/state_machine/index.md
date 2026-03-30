@@ -1,5 +1,5 @@
 ---
-title: State machine
+title: Máy trạng thái
 slug: Glossary/State_machine
 page-type: glossary-definition
 sidebar: glossarysidebar

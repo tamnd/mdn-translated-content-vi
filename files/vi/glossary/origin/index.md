@@ -1,5 +1,5 @@
 ---
-title: Origin
+title: Nguồn gốc
 slug: Glossary/Origin
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Smoke test
+title: Kiểm thử khói
 slug: Glossary/Smoke_Test
 page-type: glossary-definition
 sidebar: glossarysidebar

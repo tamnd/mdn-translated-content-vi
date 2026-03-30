@@ -1,5 +1,5 @@
 ---
-title: Control flow
+title: Luồng điều khiển
 slug: Glossary/Control_flow
 page-type: glossary-definition
 sidebar: glossarysidebar

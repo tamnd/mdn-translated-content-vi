@@ -1,5 +1,5 @@
 ---
-title: Decryption
+title: Giải mã
 slug: Glossary/Decryption
 page-type: glossary-definition
 sidebar: glossarysidebar

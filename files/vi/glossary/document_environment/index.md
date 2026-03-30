@@ -1,5 +1,5 @@
 ---
-title: Document environment
+title: Môi trường tài liệu
 slug: Glossary/Document_environment
 page-type: glossary-definition
 sidebar: glossarysidebar

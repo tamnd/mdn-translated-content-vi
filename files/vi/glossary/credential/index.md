@@ -1,5 +1,5 @@
 ---
-title: Credential
+title: Thông tin xác thực
 slug: Glossary/Credential
 page-type: glossary-definition
 sidebar: glossarysidebar

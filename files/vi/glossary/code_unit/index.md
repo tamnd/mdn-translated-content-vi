@@ -1,5 +1,5 @@
 ---
-title: Code unit
+title: Đơn vị mã
 slug: Glossary/Code_unit
 page-type: glossary-definition
 sidebar: glossarysidebar

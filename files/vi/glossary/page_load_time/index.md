@@ -1,5 +1,5 @@
 ---
-title: Page load time
+title: Thời gian tải trang
 slug: Glossary/Page_load_time
 page-type: glossary-definition
 sidebar: glossarysidebar

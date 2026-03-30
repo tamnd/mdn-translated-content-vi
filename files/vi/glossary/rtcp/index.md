@@ -1,5 +1,5 @@
 ---
-title: RTCP (RTP Control Protocol)
+title: RTCP
 slug: Glossary/RTCP
 page-type: glossary-definition
 sidebar: glossarysidebar

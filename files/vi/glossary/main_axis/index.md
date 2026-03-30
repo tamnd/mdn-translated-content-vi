@@ -1,5 +1,5 @@
 ---
-title: Main axis
+title: Trục chính
 slug: Glossary/Main_Axis
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Scroll snap
+title: Cuộn giật
 slug: Glossary/Scroll_snap
 page-type: glossary-definition
 sidebar: glossarysidebar

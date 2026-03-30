@@ -1,5 +1,5 @@
 ---
-title: Primitive
+title: Kiểu nguyên thủy
 slug: Glossary/Primitive
 page-type: glossary-definition
 sidebar: glossarysidebar

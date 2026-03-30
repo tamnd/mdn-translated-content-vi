@@ -1,5 +1,5 @@
 ---
-title: Syntax error
+title: Lỗi cú pháp
 slug: Glossary/Syntax_error
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Screen reader
+title: Trình đọc màn hình
 slug: Glossary/Screen_reader
 page-type: glossary-definition
 sidebar: glossarysidebar

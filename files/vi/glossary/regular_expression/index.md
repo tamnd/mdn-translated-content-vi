@@ -1,5 +1,5 @@
 ---
-title: Regular expression
+title: Biểu thức chính quy
 slug: Glossary/Regular_expression
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Content header
+title: Header nội dung
 slug: Glossary/Content_header
 page-type: glossary-definition
 sidebar: glossarysidebar

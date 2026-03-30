@@ -1,5 +1,5 @@
 ---
-title: Speed index
+title: Chỉ số tốc độ
 slug: Glossary/Speed_index
 page-type: glossary-definition
 sidebar: glossarysidebar

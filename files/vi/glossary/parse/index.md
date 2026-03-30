@@ -1,5 +1,5 @@
 ---
-title: Parse
+title: Phân tích cú pháp
 slug: Glossary/Parse
 page-type: glossary-definition
 sidebar: glossarysidebar

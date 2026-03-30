@@ -1,5 +1,5 @@
 ---
-title: Syntax
+title: Cú pháp
 slug: Glossary/Syntax
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Stylesheet
+title: Bảng kiểu
 slug: Glossary/Stylesheet
 page-type: glossary-definition
 sidebar: glossarysidebar

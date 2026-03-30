@@ -1,5 +1,5 @@
 ---
-title: Domain sharding
+title: Phân tách tên miền
 slug: Glossary/Domain_sharding
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Accessibility
+title: Khả năng tiếp cận
 slug: Glossary/Accessibility
 page-type: glossary-definition
 sidebar: glossarysidebar

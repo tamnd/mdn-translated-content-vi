@@ -1,5 +1,5 @@
 ---
-title: Network throttling
+title: Hạn chế băng thông
 slug: Glossary/Network_throttling
 page-type: glossary-definition
 sidebar: glossarysidebar

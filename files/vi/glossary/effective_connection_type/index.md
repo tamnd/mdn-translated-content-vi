@@ -1,5 +1,5 @@
 ---
-title: Effective connection type
+title: Loại kết nối hiệu quả
 slug: Glossary/Effective_connection_type
 page-type: glossary-definition
 sidebar: glossarysidebar

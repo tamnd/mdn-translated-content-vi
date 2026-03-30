@@ -1,5 +1,5 @@
 ---
-title: Logical properties
+title: Thuộc tính logic
 slug: Glossary/Logical_properties
 page-type: glossary-definition
 sidebar: glossarysidebar

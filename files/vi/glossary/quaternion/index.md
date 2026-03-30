@@ -1,5 +1,5 @@
 ---
-title: Quaternion
+title: Tứ nguyên
 slug: Glossary/Quaternion
 page-type: glossary-definition
 sidebar: glossarysidebar

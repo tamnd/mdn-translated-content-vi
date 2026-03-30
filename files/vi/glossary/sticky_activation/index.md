@@ -1,5 +1,5 @@
 ---
-title: Sticky activation
+title: Kích hoạt dính
 slug: Glossary/Sticky_activation
 page-type: glossary-definition
 sidebar: glossarysidebar

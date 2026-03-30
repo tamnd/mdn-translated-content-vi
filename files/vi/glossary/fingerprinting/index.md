@@ -1,5 +1,5 @@
 ---
-title: Fingerprinting
+title: Lấy dấu vân tay
 slug: Glossary/Fingerprinting
 page-type: glossary-definition
 sidebar: glossarysidebar

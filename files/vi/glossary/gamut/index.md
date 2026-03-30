@@ -1,5 +1,5 @@
 ---
-title: Gamut
+title: Gam màu
 slug: Glossary/Gamut
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Compile time
+title: Thời gian biên dịch
 slug: Glossary/Compile_time
 page-type: glossary-definition
 sidebar: glossarysidebar

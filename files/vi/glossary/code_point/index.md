@@ -1,5 +1,5 @@
 ---
-title: Code point
+title: Điểm mã
 slug: Glossary/Code_point
 page-type: glossary-definition
 sidebar: glossarysidebar

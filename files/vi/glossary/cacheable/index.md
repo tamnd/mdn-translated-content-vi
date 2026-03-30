@@ -1,5 +1,5 @@
 ---
-title: Cacheable
+title: Có thể lưu đệm
 slug: Glossary/Cacheable
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Block
+title: Khối
 slug: Glossary/Block
 page-type: glossary-disambiguation
 sidebar: glossarysidebar

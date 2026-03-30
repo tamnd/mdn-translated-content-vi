@@ -1,5 +1,5 @@
 ---
-title: Document directive
+title: Chỉ thị tài liệu
 slug: Glossary/Document_directive
 page-type: glossary-definition
 sidebar: glossarysidebar

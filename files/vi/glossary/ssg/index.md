@@ -1,5 +1,5 @@
 ---
-title: Static site generator (SSG)
+title: SSG
 slug: Glossary/SSG
 page-type: glossary-definition
 sidebar: glossarysidebar

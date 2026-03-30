@@ -1,5 +1,5 @@
 ---
-title: Semantics
+title: Ngữ nghĩa
 slug: Glossary/Semantics
 page-type: glossary-definition
 sidebar: glossarysidebar

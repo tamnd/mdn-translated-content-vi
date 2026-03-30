@@ -1,5 +1,5 @@
 ---
-title: "RTSP: Real-time streaming protocol"
+title: RTSP
 slug: Glossary/RTSP
 page-type: glossary-definition
 sidebar: glossarysidebar

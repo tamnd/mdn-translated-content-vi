@@ -1,5 +1,5 @@
 ---
-title: Table grid box
+title: Hộp lưới bảng
 slug: Glossary/Table_Grid_Box
 page-type: glossary-definition
 sidebar: glossarysidebar

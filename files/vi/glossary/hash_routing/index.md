@@ -1,5 +1,5 @@
 ---
-title: Hash routing
+title: Định tuyến hash
 slug: Glossary/Hash_routing
 page-type: glossary-definition
 sidebar: glossarysidebar

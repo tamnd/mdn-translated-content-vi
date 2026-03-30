@@ -1,5 +1,5 @@
 ---
-title: Head-of-line blocking
+title: Chặn đầu hàng
 short-title: HOL blocking
 slug: Glossary/Head_of_line_blocking
 page-type: glossary-definition

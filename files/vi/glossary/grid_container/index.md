@@ -1,5 +1,5 @@
 ---
-title: Grid container
+title: Hộp chứa grid
 slug: Glossary/Grid_Container
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Scroll chaining
+title: Chuỗi cuộn
 slug: Glossary/Scroll_chaining
 page-type: glossary-definition
 sidebar: glossarysidebar

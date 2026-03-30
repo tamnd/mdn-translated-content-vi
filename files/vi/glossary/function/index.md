@@ -1,5 +1,5 @@
 ---
-title: Function
+title: Hàm
 slug: Glossary/Function
 page-type: glossary-definition
 sidebar: glossarysidebar

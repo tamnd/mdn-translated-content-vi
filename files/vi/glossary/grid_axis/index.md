@@ -1,5 +1,5 @@
 ---
-title: Grid Axis
+title: Trục grid
 slug: Glossary/Grid_Axis
 page-type: glossary-definition
 sidebar: glossarysidebar

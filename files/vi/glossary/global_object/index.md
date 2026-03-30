@@ -1,5 +1,5 @@
 ---
-title: Global object
+title: Đối tượng toàn cục
 slug: Glossary/Global_object
 page-type: glossary-definition
 sidebar: glossarysidebar

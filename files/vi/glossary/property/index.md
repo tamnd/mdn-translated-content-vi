@@ -1,5 +1,5 @@
 ---
-title: Property
+title: Thuộc tính
 slug: Glossary/Property
 page-type: glossary-disambiguation
 sidebar: glossarysidebar

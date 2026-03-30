@@ -1,5 +1,5 @@
 ---
-title: Block-level content
+title: Nội dung cấp khối
 slug: Glossary/Block-level_content
 page-type: glossary-definition
 sidebar: glossarysidebar

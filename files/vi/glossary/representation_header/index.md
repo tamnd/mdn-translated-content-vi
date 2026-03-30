@@ -1,5 +1,5 @@
 ---
-title: Representation header
+title: Header biểu diễn
 slug: Glossary/Representation_header
 page-type: glossary-definition
 sidebar: glossarysidebar

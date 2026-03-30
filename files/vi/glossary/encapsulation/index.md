@@ -1,5 +1,5 @@
 ---
-title: Encapsulation
+title: Đóng gói
 slug: Glossary/Encapsulation
 page-type: glossary-definition
 sidebar: glossarysidebar
