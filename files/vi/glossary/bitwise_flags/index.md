@@ -17,18 +17,18 @@ const descriptor = {
 
 Các giá trị này được định nghĩa bên trong cùng một không gian tên, và mỗi cái có một giá trị thập lục phân:
 
-| Cờ sử dụng                    | Biểu diễn thập lục phân | Tương đương thập phân |
-| ------------------------------ | ------------------------ | --------------------- |
-| `GPUBufferUsage.MAP_READ`      | 0x0001                   | 1                     |
-| `GPUBufferUsage.MAP_WRITE`     | 0x0002                   | 2                     |
-| `GPUBufferUsage.COPY_SRC`      | 0x0004                   | 4                     |
-| `GPUBufferUsage.COPY_DST`      | 0x0008                   | 8                     |
-| `GPUBufferUsage.INDEX`         | 0x0010                   | 16                    |
-| `GPUBufferUsage.VERTEX`        | 0x0020                   | 32                    |
-| `GPUBufferUsage.UNIFORM`       | 0x0040                   | 64                    |
-| `GPUBufferUsage.STORAGE`       | 0x0080                   | 128                   |
-| `GPUBufferUsage.INDIRECT`      | 0x0100                   | 256                   |
-| `GPUBufferUsage.QUERY_RESOLVE` | 0x0200                   | 512                   |
+| Cờ sử dụng                     | Biểu diễn thập lục phân | Tương đương thập phân |
+| ------------------------------ | ----------------------- | --------------------- |
+| `GPUBufferUsage.MAP_READ`      | 0x0001                  | 1                     |
+| `GPUBufferUsage.MAP_WRITE`     | 0x0002                  | 2                     |
+| `GPUBufferUsage.COPY_SRC`      | 0x0004                  | 4                     |
+| `GPUBufferUsage.COPY_DST`      | 0x0008                  | 8                     |
+| `GPUBufferUsage.INDEX`         | 0x0010                  | 16                    |
+| `GPUBufferUsage.VERTEX`        | 0x0020                  | 32                    |
+| `GPUBufferUsage.UNIFORM`       | 0x0040                  | 64                    |
+| `GPUBufferUsage.STORAGE`       | 0x0080                  | 128                   |
+| `GPUBufferUsage.INDIRECT`      | 0x0100                  | 256                   |
+| `GPUBufferUsage.QUERY_RESOLVE` | 0x0200                  | 512                   |
 
 Khi bạn truy vấn thuộc tính {{domxref("GPUBuffer.usage")}}, bạn nhận được một số thập phân duy nhất được trả về, đó là tổng của các giá trị thập phân khác nhau cho các cờ sử dụng khác nhau. Quay lại ví dụ trên, truy vấn `GPUBuffer.usage` cho `GPUBuffer` được tạo với cách sử dụng được chỉ định trước đó sẽ trả về như sau:
 
