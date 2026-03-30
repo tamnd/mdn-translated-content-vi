@@ -1,5 +1,5 @@
 ---
-title: Three js
+title: three.js
 slug: Glossary/Three_js
 page-type: glossary-definition
 sidebar: glossarysidebar

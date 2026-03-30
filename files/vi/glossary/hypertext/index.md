@@ -1,5 +1,5 @@
 ---
-title: Hypertext
+title: Siêu văn bản
 slug: Glossary/Hypertext
 page-type: glossary-definition
 sidebar: glossarysidebar

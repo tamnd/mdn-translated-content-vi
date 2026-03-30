@@ -1,5 +1,5 @@
 ---
-title: Giải tuần tự hóa
+title: Deserialization
 slug: Glossary/Deserialization
 page-type: glossary-definition
 sidebar: glossarysidebar

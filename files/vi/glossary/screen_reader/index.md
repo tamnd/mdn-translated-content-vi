@@ -34,7 +34,7 @@ Xem [ChromeVox screen reader](https://support.google.com/accessibility/answer/70
 ## Xem thêm
 
 - [Accessibility](/en-US/docs/Web/Accessibility)
-- [Học accessibility](/en-US/docs/Learn_web_development/Core/Accessibility)
+- [Tìm hiểu về accessibility](/en-US/docs/Learn_web_development/Core/Accessibility)
 - [ARIA](/en-US/docs/Web/Accessibility/ARIA)
 - Các thuật ngữ liên quan:
   - {{Glossary("Accessibility")}}

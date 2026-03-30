@@ -1,5 +1,5 @@
 ---
-title: Kết xuất phía máy chủ (SSR)
+title: Server-side rendering (SSR)
 slug: Glossary/SSR
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -15,9 +15,9 @@ Lợi ích của SSR bao gồm:
 
 - Khả năng truy cập: trang có thể sử dụng được (một phần) mà không cần JavaScript, ví dụ khi kết nối Internet chậm, người dùng đã tắt JavaScript, hoặc trình duyệt cũ và JavaScript không chạy được. Tuy nhiên, mọi tính năng tương tác hay logic phía máy khách sẽ không hoạt động.
 - Thân thiện với trình thu thập dữ liệu: công cụ tìm kiếm, trình thu thập dữ liệu mạng xã hội và các bot khác có thể dễ dàng đọc nội dung mà không cần thực thi JavaScript. Lưu ý rằng các công cụ tìm kiếm lớn có khả năng thực thi JavaScript nên các trang CSR thuần túy vẫn có thể được lập chỉ mục, nhưng trình thu thập mạng xã hội thường không làm được điều này.
-- Hiệu suất: máy chủ có thể biết trước nội dung cần thiết và tải tất cả dữ liệu cần thiết cùng một lúc, so với CSR nơi máy khách thường chỉ nhận biết các phụ thuộc thêm khi hiển thị trang ban đầu, gây ra hiệu ứng thác nước của các yêu cầu.
+- Hiệu năng: máy chủ có thể biết trước nội dung cần thiết và tải tất cả dữ liệu cần thiết cùng một lúc, so với CSR nơi máy khách thường chỉ nhận biết các phụ thuộc thêm khi hiển thị trang ban đầu, gây ra hiệu ứng thác nước của các yêu cầu.
 
-Cả SSR và CSR đều có sự đánh đổi về hiệu suất, và có thể kết hợp SSR và CSR để tận dụng lợi ích của cả hai kỹ thuật. Ví dụ, máy chủ có thể tạo ra khung trang với các vùng chứa rỗng, và máy khách có thể tải thêm dữ liệu và cập nhật trang theo nhu cầu.
+Cả SSR và CSR đều có sự đánh đổi về hiệu năng, và có thể kết hợp SSR và CSR để tận dụng lợi ích của cả hai kỹ thuật. Ví dụ, máy chủ có thể tạo ra khung trang với các vùng chứa rỗng, và máy khách có thể tải thêm dữ liệu và cập nhật trang theo nhu cầu.
 
 ## Xem thêm
 

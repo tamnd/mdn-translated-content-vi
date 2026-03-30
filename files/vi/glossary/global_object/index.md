@@ -8,7 +8,7 @@ sidebar: glossarysidebar
 **Đối tượng toàn cục** trong JavaScript là một {{glossary("object")}} đại diện cho {{glossary("global scope")}}.
 
 > [!NOTE]
-> _Các đối tượng khả dụng toàn cục_, là các đối tượng trong {{glossary("global scope")}}, đôi khi cũng được gọi là các đối tượng toàn cục, nhưng về mặt chặt chẽ, chỉ có một đối tượng toàn cục cho mỗi môi trường.
+> _Các đối tượng có sẵn toàn cục_ — là các đối tượng trong {{glossary("global scope")}} — đôi khi cũng được gọi là "đối tượng toàn cục", nhưng về mặt chính xác, chỉ có một đối tượng toàn cục cho mỗi môi trường.
 
 Trong mỗi môi trường JavaScript, luôn có một đối tượng toàn cục được định nghĩa. Giao diện của đối tượng toàn cục phụ thuộc vào ngữ cảnh thực thi mà script đang chạy. Ví dụ:
 

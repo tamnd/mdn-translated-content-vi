@@ -1,13 +1,13 @@
 ---
-title: Cơ sở dữ liệu
+title: Database
 slug: Glossary/Database
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Cơ sở dữ liệu** (database) là hệ thống lưu trữ thu thập dữ liệu có tổ chức, giúp dễ dàng tìm kiếm, cấu trúc và mở rộng hơn.
+**Cơ sở dữ liệu** (database) là hệ thống lưu trữ dữ liệu có tổ chức, giúp dễ dàng tìm kiếm, cấu trúc và mở rộng.
 
-Trong phát triển web, hầu hết các cơ sở dữ liệu sử dụng hệ thống quản lý cơ sở dữ liệu quan hệ (RDBMS) để tổ chức dữ liệu và lập trình bằng {{glossary("SQL")}}. Tuy nhiên, một số cơ sở dữ liệu không tuân theo cơ chế trước đó để tổ chức dữ liệu, được gọi là NoSQL.
+Trong phát triển web, hầu hết các cơ sở dữ liệu sử dụng hệ thống quản lý cơ sở dữ liệu quan hệ (RDBMS) để tổ chức dữ liệu và lập trình bằng {{glossary("SQL")}}. Tuy nhiên, một số cơ sở dữ liệu không theo cơ chế quan hệ này, được gọi là NoSQL.
 
 Một số RDBMS phía máy chủ nổi tiếng là _MySQL_ (hoặc _MariaDB_ là một fork của nó), _SQL Server_, và _Oracle Database_. Mặt khác, một số ví dụ NoSQL nổi tiếng là _MongoDB_, _Cassandra_ và _Redis_.
 

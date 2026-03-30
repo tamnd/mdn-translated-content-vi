@@ -1,5 +1,5 @@
 ---
-title: Phân tích mật mã
+title: Cryptanalysis
 slug: Glossary/Cryptanalysis
 page-type: glossary-definition
 sidebar: glossarysidebar

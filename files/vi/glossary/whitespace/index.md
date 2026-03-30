@@ -1,5 +1,5 @@
 ---
-title: Khoảng trắng
+title: Whitespace
 slug: Glossary/Whitespace
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -25,5 +25,5 @@ Các ký tự khoảng trắng và cách sử dụng của chúng khác nhau gi�
 - Đặc tả:
   - [Đặc tả khoảng trắng ASCII](https://infra.spec.whatwg.org/#ascii-whitespace)
   - [Đặc tả ngôn ngữ ECMAScript](https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-white-space)
-- Thuật ngữ liên quan:
+- Các thuật ngữ liên quan:
   - {{Glossary("Character")}}

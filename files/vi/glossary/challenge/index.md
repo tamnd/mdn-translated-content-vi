@@ -1,5 +1,5 @@
 ---
-title: Xác thực thách thức-phản hồi
+title: Challenge-response authentication
 slug: Glossary/Challenge
 page-type: glossary-definition
 sidebar: glossarysidebar

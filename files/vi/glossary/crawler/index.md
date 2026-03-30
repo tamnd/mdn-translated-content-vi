@@ -1,5 +1,5 @@
 ---
-title: Trình thu thập dữ liệu web
+title: Crawler
 slug: Glossary/Crawler
 page-type: glossary-definition
 sidebar: glossarysidebar

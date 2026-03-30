@@ -32,7 +32,7 @@ Bạn có thể kiểm tra mô tả có thể tiếp cận cho bất kỳ phần
 
 5. Nếu không có gì ở trên định nghĩa mô tả có thể tiếp cận, mô tả có thể tiếp cận sẽ trống.
 
-Các bước để định nghĩa mô tả có thể tiếp cận trong HTML được xác định trong [HTML-AAM Accessible Description](https://w3c.github.io/html-aam/#accdesc-computation/). Mô tả có thể tiếp cận cho các phần tử SVG tuân theo các bước tương tự với một số khác biệt nhỏ được liệt kê tại [SVG-AAM Accessible Description](https://w3c.github.io/svg-aam/#mapping_additional_nd/)).
+Các bước để định nghĩa mô tả có thể tiếp cận trong HTML được xác định trong [HTML-AAM Accessible Description](https://w3c.github.io/html-aam/#accdesc-computation)). Mô tả có thể tiếp cận cho các phần tử SVG tuân theo các bước tương tự với một số khác biệt nhỏ được liệt kê tại [SVG-AAM Accessible Description](https://w3c.github.io/svg-aam/#mapping_additional_nd)).
 
 ## Xem thêm
 

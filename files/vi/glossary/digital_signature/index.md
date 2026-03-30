@@ -1,5 +1,5 @@
 ---
-title: Chữ ký số
+title: Digital signature
 slug: Glossary/Digital_signature
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -9,9 +9,9 @@ sidebar: glossarysidebar
 
 Chữ ký số thường dựa trên {{glossary("public-key cryptography","mật mã khóa công khai")}}, trong đó một khóa được tạo ra thành một cặp khóa, với đặc tính là nếu một số đầu vào được mã hóa bằng một khóa, nó chỉ có thể được giải mã bằng khóa kia, và ngược lại.
 
-Người tạo ra cặp khóa công khai một khóa và giữ khóa kia là riêng tư. Để ký một tài liệu, chủ sở hữu cặp khóa tạo ra {{glossary("hash function","băm")}} của tài liệu và mã hóa nó bằng khóa riêng tư.
+Người tạo cặp khóa công bố một khóa và giữ bí mật khóa còn lại. Để ký một tài liệu, chủ sở hữu cặp khóa tạo {{glossary("hash function","băm")}} của tài liệu và mã hóa nó bằng khóa riêng tư.
 
-Tài liệu và chữ ký được gửi đến người xác minh, người này băm tài liệu, lấy khóa công khai và giải mã chữ ký: nếu điều này khớp với băm, thì chữ ký đã được xác minh, và người xác minh có thể tin tưởng rằng nó được tạo ra bởi một thực thể có quyền truy cập vào khóa riêng tư.
+Tài liệu và chữ ký được gửi đến người xác minh, người này băm tài liệu, truy xuất khóa công khai và giải mã chữ ký: nếu kết quả khớp với giá trị băm, chữ ký đã được xác minh, và người xác minh có thể tin tưởng rằng nó được tạo ra bởi một thực thể có quyền truy cập vào khóa riêng tư.
 
 Tính bảo mật của hệ thống chữ ký số phụ thuộc (trong số những thứ khác) vào:
 

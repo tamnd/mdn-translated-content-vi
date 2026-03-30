@@ -1,5 +1,5 @@
 ---
-title: Code point (Điểm mã)
+title: Code point
 slug: Glossary/Code_point
 page-type: glossary-definition
 sidebar: glossarysidebar

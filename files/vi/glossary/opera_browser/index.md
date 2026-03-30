@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Opera** là một {{Glossary("Browser","trình duyệt web")}} miễn phí được phát hành công khai vào năm 1996, ban đầu chỉ có trên Windows. Opera đã sử dụng engine render {{glossary("Blink")}} từ năm 2013 (thay thế {{glossary("Presto")}}). Opera cũng có sẵn trên điện thoại và máy tính bảng.
+**Opera** là một {{Glossary("Browser","trình duyệt web")}} miễn phí được phát hành công khai vào năm 1996, ban đầu chỉ có trên Windows. Opera đã sử dụng engine kết xuất {{glossary("Blink")}} từ năm 2013 (thay thế {{glossary("Presto")}}). Opera cũng có sẵn trên điện thoại và máy tính bảng.
 
 ## Tải Opera
 

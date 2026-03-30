@@ -1,5 +1,5 @@
 ---
-title: Bộ chọn (CSS)
+title: Selector (CSS)
 slug: Glossary/CSS_Selector
 page-type: glossary-definition
 sidebar: glossarysidebar

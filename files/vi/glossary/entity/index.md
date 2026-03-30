@@ -1,5 +1,5 @@
 ---
-title: Thực thể
+title: Entity
 slug: Glossary/Entity
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Tên miền
+title: Domain
 slug: Glossary/Domain
 page-type: glossary-definition
 sidebar: glossarysidebar

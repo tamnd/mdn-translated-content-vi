@@ -5,9 +5,9 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-SPA (Single-page application - Ứng dụng một trang) là cách triển khai ứng dụng web chỉ tải một tài liệu web duy nhất, sau đó cập nhật nội dung phần thân của tài liệu duy nhất đó thông qua các API JavaScript như [Fetch](/en-US/docs/Web/API/Fetch_API) khi cần hiển thị nội dung khác.
+**SPA** (Single-page application - Ứng dụng một trang) là cách triển khai ứng dụng web chỉ tải một tài liệu web duy nhất, sau đó cập nhật nội dung phần thân của tài liệu duy nhất đó thông qua các API JavaScript như [Fetch](/en-US/docs/Web/API/Fetch_API) khi cần hiển thị nội dung khác.
 
-Điều này cho phép người dùng sử dụng trang web mà không cần tải toàn bộ trang mới từ máy chủ, có thể mang lại hiệu suất tốt hơn và trải nghiệm năng động hơn, nhưng đánh đổi bằng một số bất lợi như SEO, cần nhiều nỗ lực hơn để duy trì trạng thái, triển khai điều hướng và thực hiện giám sát hiệu suất có ý nghĩa.
+Điều này cho phép người dùng sử dụng trang web mà không cần tải toàn bộ trang mới từ máy chủ, có thể mang lại hiệu năng tốt hơn và trải nghiệm năng động hơn, nhưng đánh đổi bằng một số bất lợi như SEO, cần nhiều nỗ lực hơn để duy trì trạng thái, triển khai điều hướng và thực hiện giám sát hiệu năng có ý nghĩa.
 
 ## Xem thêm
 

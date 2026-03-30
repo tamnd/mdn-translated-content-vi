@@ -13,7 +13,7 @@ WAI phát triển các hướng dẫn và báo cáo kỹ thuật khác thông qu
 
 - [Trang web chính thức của WAI](https://www.w3.org/WAI/)
 - [Web Accessibility Initiative](https://en.wikipedia.org/wiki/Web_Accessibility_Initiative) trên Wikipedia
-- Thuật ngữ
+- Các thuật ngữ liên quan:
   - {{Glossary("W3C")}}
   - {{Glossary("Accessibility")}}
   - {{Glossary("WCAG")}}

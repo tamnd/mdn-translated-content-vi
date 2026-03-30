@@ -1,5 +1,5 @@
 ---
-title: Ký tự thoát
+title: Escape character
 slug: Glossary/Escape_character
 page-type: glossary-definition
 sidebar: glossarysidebar

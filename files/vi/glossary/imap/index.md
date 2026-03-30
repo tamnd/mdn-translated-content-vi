@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-IMAP (Internet Message Access Protocol - Giao thức truy cập thư điện tử Internet) là một {{Glossary("protocol","giao thức")}} được sử dụng để truy xuất và lưu trữ email. Mới hơn {{Glossary("POP")}}, IMAP cho phép tạo thư mục và quy tắc trên máy chủ.
+**IMAP** (Internet Message Access Protocol) là {{Glossary("protocol","giao thức")}} dùng để truy xuất và lưu trữ email. Ra đời sau {{Glossary("POP")}}, IMAP cho phép tạo thư mục và thiết lập quy tắc trên máy chủ.
 
 Không giống như POP3, IMAP cho phép nhiều kết nối đồng thời đến một hộp thư. Các client truy cập hộp thư có thể nhận thông tin về các thay đổi trạng thái được thực hiện từ các client khác. IMAP cũng cung cấp chế độ để các client ở trạng thái kết nối và nhận thông tin theo yêu cầu.
 

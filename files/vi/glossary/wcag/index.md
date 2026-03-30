@@ -23,7 +23,7 @@ WCAG 2 sử dụng ba cấp độ tuân thủ:
 - [WCAG](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines) trên Wikipedia
 - [Web Content Accessibility Guidelines (WCAG) 2.2: Recommendation](https://w3c.github.io/wcag/guidelines/22/)
 - [W3C Accessibility Guidelines (WCAG) 3.0: Working Draft](https://w3c.github.io/wcag3/guidelines/)
-- Thuật ngữ
+- Các thuật ngữ liên quan:
   - {{Glossary("Accessibility")}}
   - {{Glossary("WAI")}}
   - {{Glossary("ATAG")}}

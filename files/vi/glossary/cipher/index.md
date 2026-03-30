@@ -1,5 +1,5 @@
 ---
-title: Cipher (Mật mã)
+title: Cipher
 slug: Glossary/Cipher
 page-type: glossary-definition
 sidebar: glossarysidebar

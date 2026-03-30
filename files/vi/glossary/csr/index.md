@@ -1,5 +1,5 @@
 ---
-title: Kết xuất phía máy khách (CSR)
+title: Client-side rendering (CSR)
 slug: Glossary/CSR
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -31,6 +31,10 @@ Sau đó, nội dung trang thực sự được tạo bởi JavaScript trong `bu
 
 - Tính tương tác: mọi cập nhật trang, bao gồm cả chuyển đổi route, không yêu cầu tải lại toàn bộ trang. Điều này làm cho ứng dụng cảm thấy nhanh hơn và phản hồi tốt hơn.
 - Hiệu năng: máy chủ chỉ cần gửi nội dung HTML ban đầu và các tài nguyên JavaScript. Các cập nhật trang tiếp theo có thể được tải từ API, có thể nhanh hơn so với việc lấy toàn bộ trang HTML, và ít tải hơn cho máy chủ.
+
+Cả SSR và CSR đều có những đánh đổi về hiệu năng riêng, và có thể kết hợp cả hai để tận dụng ưu điểm của từng kỹ thuật. Ví dụ, máy chủ có thể tạo ra khung trang với các chỗ trống, còn client sẽ tải thêm dữ liệu và cập nhật trang khi cần.
+
+Lưu ý rằng {{glossary("SPA","ứng dụng trang đơn")}} không yêu cầu trang web phải dùng CSR. Các framework hiện đại như [React](/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started), [Vue](/en-US/docs/Learn_web_development/Core/Frameworks_libraries/Vue_getting_started) và [Svelte](/en-US/docs/Learn_web_development/Core/Frameworks_libraries/Svelte_getting_started) đều có thể được dùng để xây dựng SPA với khả năng SSR.
 
 ## Xem thêm
 

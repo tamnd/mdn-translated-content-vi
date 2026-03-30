@@ -1,5 +1,5 @@
 ---
-title: Code splitting (Phân tách code)
+title: Code splitting
 slug: Glossary/Code_splitting
 page-type: glossary-definition
 sidebar: glossarysidebar

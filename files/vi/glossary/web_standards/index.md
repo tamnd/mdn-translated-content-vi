@@ -1,5 +1,5 @@
 ---
-title: Tiêu chuẩn web
+title: Web standards
 slug: Glossary/Web_standards
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -23,7 +23,7 @@ Danh sách không đầy đủ này cho bạn biết những tiêu chuẩn nào 
 
 Các nhà cung cấp _đồng ý_ với tính năng này thường vẫn triển khai nó để có thể thử nghiệm và cung cấp phản hồi. Điều này cho phép các bên quan tâm xây dựng các trường hợp sử dụng và chứng minh các vấn đề với tính năng, hy vọng đạt được sự đồng thuận về phiên bản tương lai.
 
-Các thành viên tổ chức tiêu chuẩn thường công bố hồ sơ về lập trường của họ đối với các tiêu chuẩn khác nhau để tham khảo.
+Các thành viên tổ chức tiêu chuẩn thường công bố hồ sơ về lập trường của họ đối với các tiêu chuẩn khác nhau để tham khảo. Ví dụ, xem [Mozilla Specification Positions](https://mozilla.github.io/standards-positions/) và [WebKit Standards Positions](https://webkit.org/standards-positions/).
 
 ## Xem thêm
 

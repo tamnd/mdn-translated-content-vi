@@ -1,5 +1,5 @@
 ---
-title: Mô tả tử (CSS)
+title: Descriptor (CSS)
 slug: Glossary/CSS_Descriptor
 page-type: glossary-definition
 sidebar: glossarysidebar

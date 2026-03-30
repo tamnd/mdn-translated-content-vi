@@ -1,5 +1,5 @@
 ---
-title: Certified (Được chứng nhận)
+title: Certified
 slug: Glossary/Certified
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Canonical order (Thứ tự chuẩn tắc)
+title: Canonical order
 slug: Glossary/Canonical_order
 page-type: glossary-definition
 sidebar: glossarysidebar

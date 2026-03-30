@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Sticky activation** (kích hoạt dính, hay "sticky user activation") là trạng thái của cửa sổ cho biết người dùng đã tương tác có ý nghĩa và trực tiếp với cửa sổ kể từ khi tải trang. Một khi đã kích hoạt, trạng thái này kéo dài trong suốt phiên làm việc.
+**Sticky activation** (kích hoạt bền vững, hay "sticky user activation") là trạng thái của cửa sổ cho biết người dùng đã tương tác có ý nghĩa và trực tiếp với cửa sổ kể từ khi tải trang. Một khi đã kích hoạt, trạng thái này kéo dài trong suốt phiên làm việc.
 
 Trạng thái được kích hoạt sau bất kỳ tương tác nào của người dùng, khi cửa sổ có tiêu điểm, dẫn đến việc trình duyệt tạo ra một hoặc nhiều sự kiện sau:
 

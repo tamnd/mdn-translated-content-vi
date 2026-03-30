@@ -1,5 +1,5 @@
 ---
-title: Nén Zstandard
+title: Zstandard compression
 slug: Glossary/Zstandard_compression
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -13,7 +13,7 @@ Zstandard, hay `zstd` là phiên bản rút gọn, là thuật toán nén không
 
 ## Xem thêm
 
-- Thuật ngữ liên quan:
+- Các thuật ngữ liên quan:
   - {{glossary("Lossless compression")}}
   - {{glossary("Lossy compression")}}
   - {{glossary("Brotli compression")}}

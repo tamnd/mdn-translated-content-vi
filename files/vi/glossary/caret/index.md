@@ -1,5 +1,5 @@
 ---
-title: Caret (Con trỏ văn bản)
+title: Caret
 slug: Glossary/Caret
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -5,9 +5,9 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Hàm băm** là hàm nhận đầu vào có độ dài biến đổi và tạo ra đầu ra có độ dài cố định, còn được gọi là _digest_ (hoặc chỉ là "hash"). Hàm băm nên nhanh để tính toán, và các đầu vào khác nhau nên tạo ra đầu ra khác nhau càng nhiều càng tốt (điều này được gọi là _collision-resistance_ - kháng va chạm).
+**Hàm băm** là hàm nhận đầu vào có độ dài bất kỳ và tạo ra đầu ra có độ dài cố định, còn gọi là _digest_ (hay "hash"). Hàm băm phải nhanh khi tính toán, và các đầu vào khác nhau nên tạo ra đầu ra khác nhau nhiều nhất có thể (tính chất này gọi là _kháng va chạm_ — _collision-resistance_).
 
-Hàm băm có cả mục đích {{glossary("cryptography", "mã hóa")}} và phi mã hóa. Ngoài mã hóa, ví dụ, hàm băm có thể được sử dụng để tạo các khóa cho mảng kết hợp như bản đồ hoặc từ điển.
+Hàm băm được dùng trong cả mục đích {{glossary("cryptography", "mật mã")}} và phi mật mã. Ngoài mật mã, hàm băm có thể được dùng để tạo khóa cho mảng kết hợp như map hay dictionary.
 
 Hàm {{domxref("SubtleCrypto.digest()", "digest()")}} của giao diện {{domxref("SubtleCrypto")}} cung cấp nhiều hàm băm khác nhau cho ứng dụng web.
 

@@ -5,9 +5,9 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Trong môi trường lập trình, _phạm vi toàn cục_ là {{glossary("scope")}} chứa và hiển thị trong tất cả các phạm vi khác.
+Trong môi trường lập trình, _phạm vi toàn cục_ là {{glossary("scope")}} bao trùm và hiển thị trong tất cả các phạm vi khác.
 
-Trong JavaScript phía máy khách, phạm vi toàn cục thường là trang web trong đó tất cả code đang được thực thi.
+Trong JavaScript phía máy khách, phạm vi toàn cục thường là trang web nơi tất cả mã đang được thực thi.
 
 ## Xem thêm
 

@@ -1,11 +1,11 @@
 ---
-title: Truyền tải từ điển nén
+title: Compression Dictionary Transport
 slug: Glossary/Compression_dictionary_transport
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Truyền tải từ điển nén** (Compression Dictionary Transport) là cách sử dụng từ điển nén chia sẻ, thay vì từ điển tĩnh tiêu chuẩn trong {{glossary("Brotli compression", "nén Brotli")}} hoặc {{glossary("Zstandard compression", "nén Zstandard")}}, để giảm đáng kể kích thước truyền tải của các phản hồi HTTP.
+**Compression Dictionary Transport** là cách sử dụng từ điển nén chia sẻ, thay vì từ điển tĩnh tiêu chuẩn trong {{glossary("Brotli compression", "nén Brotli")}} hoặc {{glossary("Zstandard compression", "nén Zstandard")}}, để giảm đáng kể kích thước truyền tải của các phản hồi HTTP.
 
 Ví dụ, khi tải xuống `app.v2.js`, nếu client đã có `app.v1.js` thì họ có thể tham chiếu văn bản từ tệp đó bằng cách sử dụng nó như một từ điển và thực chất chỉ tải xuống phần delta và một lượng nhỏ tham chiếu đến tệp `v1`.
 

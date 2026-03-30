@@ -1,5 +1,5 @@
 ---
-title: Transport Layer Security (TLS)
+title: TLS
 slug: Glossary/TLS
 page-type: glossary-definition
 sidebar: glossarysidebar

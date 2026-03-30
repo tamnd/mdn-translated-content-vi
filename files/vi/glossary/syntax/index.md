@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Cú pháp (Syntax) quy định tổ hợp và thứ tự bắt buộc của các {{Glossary("character", "ký tự")}} tạo nên mã nguồn có cấu trúc đúng. Cú pháp thường bao gồm ngữ pháp và các quy tắc áp dụng khi viết mã, chẳng hạn như yêu cầu thụt lề trong Python.
+Cú pháp quy định tổ hợp và thứ tự bắt buộc của các {{Glossary("character", "ký tự")}} tạo nên mã nguồn có cấu trúc đúng. Cú pháp thường bao gồm ngữ pháp và các quy tắc áp dụng khi viết mã, chẳng hạn như yêu cầu thụt lề trong Python.
 
 Cú pháp khác nhau tùy theo ngôn ngữ (ví dụ: cú pháp trong {{Glossary("HTML")}} và {{Glossary("JavaScript")}} là khác nhau). Mặc dù các ngôn ngữ có thể có một vài điểm tương đồng về cú pháp, chẳng hạn quy tắc "toán hạng toán tử toán hạng" trong JavaScript và Python, điều này không có nghĩa là hai ngôn ngữ có cú pháp giống nhau.
 

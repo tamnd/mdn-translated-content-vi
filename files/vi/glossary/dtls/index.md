@@ -1,5 +1,5 @@
 ---
-title: DTLS (Bảo mật tầng vận chuyển dữ liệu)
+title: DTLS (Datagram Transport Layer Security)
 slug: Glossary/DTLS
 page-type: glossary-definition
 sidebar: glossarysidebar

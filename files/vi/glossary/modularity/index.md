@@ -1,5 +1,5 @@
 ---
-title: Tính mô-đun (Modularity)
+title: Modularity
 slug: Glossary/Modularity
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -42,5 +42,5 @@ Nếu bạn muốn thử các tính năng Firefox mới nhất, hãy cài đặt
 - Các thuật ngữ liên quan:
   - {{glossary("Browser")}}
   - {{glossary("Gecko")}}
-  - {{Glossary("Engine/Rendering", "Công cụ kết xuất")}}
+  - {{Glossary("Engine/Rendering", "Rendering engine")}}
   - Các trình duyệt khác: {{glossary("Apple Safari")}}, {{glossary("Google Chrome")}}, {{glossary("Microsoft Edge")}}, {{glossary("Opera Browser")}}

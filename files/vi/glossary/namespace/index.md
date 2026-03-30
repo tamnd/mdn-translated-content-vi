@@ -1,5 +1,5 @@
 ---
-title: Không gian tên (Namespace)
+title: Namespace
 slug: Glossary/Namespace
 page-type: glossary-definition
 sidebar: glossarysidebar

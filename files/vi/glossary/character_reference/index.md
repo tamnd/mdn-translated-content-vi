@@ -1,5 +1,5 @@
 ---
-title: Character reference (Tham chiếu ký tự)
+title: Character reference
 slug: Glossary/Character_reference
 page-type: glossary-definition
 sidebar: glossarysidebar

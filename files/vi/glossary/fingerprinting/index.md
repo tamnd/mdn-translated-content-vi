@@ -5,18 +5,18 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Fingerprinting** (lấy dấu vân tay trình duyệt) là một kỹ thuật mà các trang web sử dụng để nhận diện một trình duyệt cụ thể (và theo đó, một người dùng cụ thể) bằng cách thu thập và kết hợp các đặc điểm phân biệt của trình duyệt và hệ điều hành bên dưới. Các thành phần của fingerprint có thể bao gồm, ví dụ:
+**Fingerprinting** là kỹ thuật các trang web sử dụng để nhận dạng một trình duyệt cụ thể (và qua đó là một người dùng cụ thể) bằng cách thu thập và kết hợp các đặc điểm phân biệt của trình duyệt cùng hệ điều hành bên dưới. Các thành phần của fingerprint có thể bao gồm:
 
 - phiên bản trình duyệt
 - múi giờ và ngôn ngữ ưu tiên
-- tập hợp các codec video hoặc âm thanh có sẵn trên hệ thống
+- tập codec video hoặc âm thanh có sẵn trên hệ thống
 - các phông chữ được cài đặt trên hệ thống
 - trạng thái cài đặt của trình duyệt
-- kích thước và độ phân giải màn hình máy tính
+- kích thước và độ phân giải màn hình
 
-Một trang web có thể lấy thông tin như thế này bằng cách chạy JavaScript và CSS trên thiết bị, và bằng cách kết hợp dữ liệu này thường có thể tạo ra một fingerprint duy nhất cho một trình duyệt, sau đó có thể được sử dụng để theo dõi người dùng trên web.
+Một trang web có thể thu thập thông tin như vậy bằng cách chạy JavaScript và CSS trên thiết bị; kết hợp các dữ liệu này thường tạo ra được một fingerprint duy nhất cho mỗi trình duyệt, từ đó dùng để theo dõi người dùng trên web.
 
-Các tiêu chuẩn web được thiết kế theo cách giảm thiểu khả năng của trang web thu thập thông tin nhận dạng, và các trình duyệt thường cũng thêm các biện pháp bảo vệ riêng của mình.
+Các tiêu chuẩn web được thiết kế theo hướng hạn chế khả năng thu thập thông tin nhận dạng của trang web, và các trình duyệt cũng thường tự bổ sung các biện pháp bảo vệ của mình.
 
 ## Xem thêm
 

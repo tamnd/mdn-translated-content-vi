@@ -1,5 +1,5 @@
 ---
-title: Biên dịch
+title: Compile
 slug: Glossary/Compile
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**HTML** (HyperText Markup Language - Ngôn ngữ đánh dấu siêu văn bản) là một ngôn ngữ mô tả xác định cấu trúc trang web.
+**HTML** (HyperText Markup Language) là ngôn ngữ mô tả xác định cấu trúc trang web.
 
 ## Lược sử
 

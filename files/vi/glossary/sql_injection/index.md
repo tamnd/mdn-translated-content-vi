@@ -11,7 +11,7 @@ SQL injection có thể đạt được quyền truy cập trái phép vào cơ 
 
 ![Biểu đồ tròn về các lỗ hổng phổ biến nhất: SQL Injection chiếm 50% lỗ hổng, Cross Site Scripting chiếm 42%, Source Code Disclosure chiếm 7%.](sql_inj_xss.gif)
 
-[Nguồn gốc](https://cdn.acunetix.com/wp_content/uploads/2010/09/sql_inj_xss.gif)
+[Nguồn](https://cdn.acunetix.com/wp_content/uploads/2010/09/sql_inj_xss.gif)
 
 ## Cách thức hoạt động
 

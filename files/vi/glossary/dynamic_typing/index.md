@@ -1,5 +1,5 @@
 ---
-title: Kiểu dữ liệu động
+title: Dynamic typing
 slug: Glossary/Dynamic_typing
 page-type: glossary-definition
 sidebar: glossarysidebar

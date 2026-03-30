@@ -1,5 +1,5 @@
 ---
-title: Cloud computing (Điện toán đám mây)
+title: Cloud computing
 slug: Glossary/Cloud_computing
 page-type: glossary-definition
 sidebar: glossarysidebar

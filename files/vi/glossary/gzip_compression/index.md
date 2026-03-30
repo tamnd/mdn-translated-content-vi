@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**gzip** là định dạng tệp được sử dụng trong nén và giải nén tệp. Nó dựa trên [thuật toán Deflate](https://www.zlib.net/feldspar.html) cho phép các tệp được làm nhỏ hơn, cho phép truyền mạng nhanh hơn. gzip thường được hỗ trợ bởi các web server và các trình duyệt hiện đại, nghĩa là các server có thể tự động nén các tệp bằng gzip trước khi gửi, và các trình duyệt có thể giải nén các tệp khi nhận được.
+**gzip** là định dạng tệp dùng để nén và giải nén tệp. Nó dựa trên [thuật toán Deflate](https://www.zlib.net/feldspar.html), giúp giảm kích thước tệp và tăng tốc độ truyền qua mạng. gzip được hỗ trợ rộng rãi bởi các web server và trình duyệt hiện đại, cho phép server tự động nén tệp bằng gzip trước khi gửi và trình duyệt giải nén khi nhận.
 
 ## Xem thêm
 

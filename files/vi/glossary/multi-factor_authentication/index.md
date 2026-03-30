@@ -1,5 +1,5 @@
 ---
-title: Xác thực đa yếu tố
+title: Multi-factor authentication
 slug: Glossary/Multi-factor_authentication
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Công cụ phát triển
+title: Developer tools
 slug: Glossary/Developer_Tools
 page-type: glossary-definition
 sidebar: glossarysidebar

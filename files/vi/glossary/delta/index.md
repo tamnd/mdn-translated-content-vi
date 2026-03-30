@@ -19,7 +19,7 @@ Tương tự, khi biết giá trị mới của _X_ và giá trị cũ của nó
 let deltaX = newX - oldX;
 ```
 
-Thông thường hơn, bạn nhận được delta và sử dụng nó để cập nhật điều kiện trước đó đã lưu:
+Thông thường hơn, bạn nhận được delta và sử dụng nó để cập nhật trạng thái trước đó đã lưu:
 
 ```js
 let newX = oldX + deltaX;

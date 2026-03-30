@@ -1,5 +1,5 @@
 ---
-title: Certificate authority (Tổ chức cấp chứng chỉ)
+title: Certificate authority
 slug: Glossary/Certificate_authority
 page-type: glossary-definition
 sidebar: glossarysidebar

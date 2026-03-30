@@ -1,5 +1,5 @@
 ---
-title: Chrome (Giao diện trình duyệt)
+title: Chrome
 slug: Glossary/Chrome
 page-type: glossary-definition
 sidebar: glossarysidebar

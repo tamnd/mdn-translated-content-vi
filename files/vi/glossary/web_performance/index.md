@@ -1,5 +1,5 @@
 ---
-title: Hiệu suất web
+title: Web performance
 slug: Glossary/Web_performance
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -12,5 +12,5 @@ Một cách khách quan, đó là thời gian đo lường được, tính bằn
 ## Xem thêm
 
 - [Hướng dẫn hiệu suất web](/en-US/docs/Web/Performance)
-- Thuật ngữ liên quan:
+- Các thuật ngữ liên quan:
   - {{Glossary("Perceived performance")}}

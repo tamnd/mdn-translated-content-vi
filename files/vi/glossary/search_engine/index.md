@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Công cụ tìm kiếm (search engine) là hệ thống phần mềm thu thập thông tin từ {{Glossary("World Wide Web")}} và trình bày cho người dùng đang tìm kiếm thông tin cụ thể.
+**Công cụ tìm kiếm** (search engine) là hệ thống phần mềm thu thập thông tin từ {{Glossary("World Wide Web")}} và trình bày cho người dùng đang tìm kiếm thông tin cụ thể.
 
 Công cụ tìm kiếm thực hiện các quy trình sau:
 

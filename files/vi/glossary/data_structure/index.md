@@ -1,5 +1,5 @@
 ---
-title: Cấu trúc dữ liệu
+title: Data structure
 slug: Glossary/Data_structure
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -23,7 +23,7 @@ Trong HTML, ví dụ, phần tử {{htmlelement("Heading_Elements", "h1")}} là 
 <h1>This is a top level heading</h1>
 ```
 
-Theo mặc định, [stylesheet của tác nhân người dùng](/en-US/docs/Web/CSS/Guides/Cascade/Introduction#user-agent_stylesheets) của hầu hết các trình duyệt sẽ tạo style cho {{htmlelement("Heading_Elements", "h1")}} với cỡ phông chữ lớn để làm nó _trông_ giống như một tiêu đề (mặc dù bạn có thể tạo style cho nó trông như bất cứ điều gì bạn muốn).
+Theo mặc định, [bảng kiểu của tác nhân người dùng](/en-US/docs/Web/CSS/Guides/Cascade/Introduction#user-agent_stylesheets) của hầu hết các trình duyệt sẽ tạo style cho {{htmlelement("Heading_Elements", "h1")}} với cỡ phông chữ lớn để làm nó _trông_ giống như một tiêu đề (mặc dù bạn có thể tạo style cho nó trông như bất cứ điều gì bạn muốn).
 
 Mặt khác, bạn có thể làm cho bất kỳ phần tử nào _trông_ giống như tiêu đề cấp cao nhất. Hãy xem xét ví dụ sau:
 
@@ -31,7 +31,7 @@ Mặt khác, bạn có thể làm cho bất kỳ phần tử nào _trông_ giố
 <span style="font-size: 32px; margin: 21px 0;">Not a top-level heading!</span>
 ```
 
-Đây sẽ render ra trông giống tiêu đề cấp cao nhất, nhưng nó không có giá trị ngữ nghĩa, vì vậy nó sẽ không được hưởng bất kỳ lợi ích bổ sung nào như được mô tả ở trên. Do đó, việc sử dụng đúng phần tử HTML cho đúng công việc là ý tưởng hay.
+Phần tử này sẽ được kết xuất trông giống tiêu đề cấp cao nhất, nhưng nó không có giá trị ngữ nghĩa, vì vậy nó sẽ không được hưởng bất kỳ lợi ích bổ sung nào như được mô tả ở trên. Do đó, việc sử dụng đúng phần tử HTML cho đúng công việc là ý tưởng hay.
 
 HTML nên được viết để biểu diễn _dữ liệu_ sẽ được điền vào, chứ không phải dựa trên kiểu trình bày mặc định. Trình bày (giao diện nhìn thế nào), là trách nhiệm duy nhất của [CSS](/en-US/docs/Web/CSS).
 

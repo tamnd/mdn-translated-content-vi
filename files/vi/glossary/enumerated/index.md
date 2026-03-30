@@ -1,5 +1,5 @@
 ---
-title: Kiểu liệt kê
+title: Enumerated
 slug: Glossary/Enumerated
 page-type: glossary-definition
 sidebar: glossarysidebar

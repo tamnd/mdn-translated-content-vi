@@ -5,9 +5,9 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Chỉ thị fetch của {{Glossary("CSP")}}** được sử dụng trong tiêu đề {{HTTPHeader("Content-Security-Policy")}} và kiểm soát các vị trí mà từ đó một số loại tài nguyên nhất định có thể được tải. Ví dụ, {{CSP("script-src")}} cho phép các nhà phát triển cho phép các nguồn script tin cậy thực thi trên trang, trong khi {{CSP("font-src")}} kiểm soát các nguồn của phông chữ web.
+**Chỉ thị fetch của {{Glossary("CSP")}}** được dùng trong tiêu đề {{HTTPHeader("Content-Security-Policy")}} để kiểm soát các nguồn mà từ đó một số loại tài nguyên nhất định có thể được tải. Ví dụ, {{CSP("script-src")}} cho phép nhà phát triển chỉ định các nguồn script tin cậy được phép thực thi trên trang, trong khi {{CSP("font-src")}} kiểm soát nguồn của phông chữ web.
 
-Tất cả các chỉ thị fetch đều dự phòng về {{CSP("default-src")}}. Điều đó có nghĩa là, nếu một chỉ thị fetch vắng mặt trong tiêu đề CSP, tác nhân người dùng sẽ tìm kiếm chỉ thị `default-src`.
+Tất cả các chỉ thị fetch đều dự phòng về {{CSP("default-src")}}. Nghĩa là nếu một chỉ thị fetch không có trong tiêu đề CSP, trình duyệt sẽ tìm kiếm chỉ thị `default-src`.
 
 Xem [Fetch directives](/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#fetch_directives) để có danh sách đầy đủ.
 

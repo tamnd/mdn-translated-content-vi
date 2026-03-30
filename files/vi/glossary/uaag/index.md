@@ -11,7 +11,7 @@ _User Agent {{glossary("Accessibility", "Accessibility")}} Guidelines_ (**UAAG**
 
 - [UAAG là một phần của WAI](<https://en.wikipedia.org/wiki/Web_Accessibility_Initiative#User_Agent_Accessibility_Guidelines_(UAAG)>) trên Wikipedia
 - [User Agent Accessibility Guidelines (UAAG) 2.0: Recommendation](https://www.w3.org/TR/UAAG20/)
-- Thuật ngữ
+- Các thuật ngữ liên quan:
   - {{Glossary("Accessibility")}}
   - {{Glossary("WAI")}}
   - {{Glossary("WCAG")}}
