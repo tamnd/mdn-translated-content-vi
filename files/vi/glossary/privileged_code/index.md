@@ -1,5 +1,5 @@
 ---
-title: Privileged code
+title: Mã đặc quyền
 slug: Glossary/Privileged_code
 page-type: glossary-definition
 sidebar: glossarysidebar

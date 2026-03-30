@@ -1,5 +1,5 @@
 ---
-title: Replaced elements
+title: Phần tử thay thế
 slug: Glossary/Replaced_elements
 page-type: glossary-definition
 sidebar: glossarysidebar

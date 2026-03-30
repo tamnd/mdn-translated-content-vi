@@ -1,5 +1,5 @@
 ---
-title: Pixel CSS
+title: CSS pixel
 slug: Glossary/CSS_pixel
 page-type: glossary-definition
 sidebar: glossarysidebar

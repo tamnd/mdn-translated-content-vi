@@ -1,5 +1,5 @@
 ---
-title: Table wrapper box
+title: Hộp bọc bảng
 slug: Glossary/Table_Wrapper_Box
 page-type: glossary-definition
 sidebar: glossarysidebar

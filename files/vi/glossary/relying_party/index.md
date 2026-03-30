@@ -1,5 +1,5 @@
 ---
-title: Relying party
+title: Bên phụ thuộc
 slug: Glossary/Relying_party
 page-type: glossary-definition
 sidebar: glossarysidebar

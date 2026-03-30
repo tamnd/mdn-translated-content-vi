@@ -1,5 +1,5 @@
 ---
-title: UDP (User Datagram Protocol)
+title: UDP
 slug: Glossary/UDP
 page-type: glossary-definition
 sidebar: glossarysidebar

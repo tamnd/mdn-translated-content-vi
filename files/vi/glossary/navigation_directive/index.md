@@ -1,5 +1,5 @@
 ---
-title: Chỉ thị điều hướng (Navigation directive)
+title: Chỉ thị điều hướng
 slug: Glossary/Navigation_directive
 page-type: glossary-definition
 sidebar: glossarysidebar

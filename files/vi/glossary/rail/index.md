@@ -10,7 +10,7 @@ sidebar: glossarysidebar
 - **Response** (Phản hồi)
   - : Phản hồi người dùng ngay lập tức, xác nhận mọi đầu vào của người dùng trong **100ms** hoặc ít hơn.
 - **Animation** (Hoạt ảnh)
-  - : Khi tạo hoạt ảnh, render mỗi khung hình dưới **16ms**, nhắm đến sự nhất quán và tránh jank (giật lag).
+  - : Khi tạo hoạt ảnh, kết xuất mỗi khung hình dưới **16ms**, nhắm đến sự nhất quán và tránh jank (giật lag).
 - **Idle** (Rảnh rỗi)
   - : Khi sử dụng luồng JavaScript chính, làm việc theo từng đoạn dưới **50ms** để giải phóng luồng cho các tương tác của người dùng.
 - **Load** (Tải)

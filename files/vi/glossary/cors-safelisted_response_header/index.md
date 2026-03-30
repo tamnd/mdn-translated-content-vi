@@ -1,11 +1,11 @@
 ---
-title: Header phản hồi được CORS cho phép
+title: CORS-safelisted response header
 slug: Glossary/CORS-safelisted_response_header
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Header phản hồi được CORS cho phép** (còn được gọi là "header phản hồi đơn giản") là một [HTTP header](/en-US/docs/Web/HTTP/Reference/Headers) trong phản hồi [CORS](/en-US/docs/Web/HTTP/Guides/CORS) được coi là _an toàn_ để hiển thị cho các tập lệnh client. Chỉ các header phản hồi được cho phép mới có thể được truy cập từ các trang web.
+**CORS-safelisted response header** (còn được gọi là "header phản hồi đơn giản") là một [HTTP header](/en-US/docs/Web/HTTP/Reference/Headers) trong phản hồi [CORS](/en-US/docs/Web/HTTP/Guides/CORS) được coi là _an toàn_ để hiển thị cho các tập lệnh client. Chỉ các header phản hồi được cho phép mới có thể được truy cập từ các trang web.
 
 Theo mặc định, danh sách cho phép bao gồm các header phản hồi sau:
 

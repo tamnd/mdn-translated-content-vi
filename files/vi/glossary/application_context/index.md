@@ -1,5 +1,5 @@
 ---
-title: Application context
+title: Ngữ cảnh ứng dụng
 slug: Glossary/Application_context
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Asynchronous
+title: Bất đồng bộ
 slug: Glossary/Asynchronous
 page-type: glossary-definition
 sidebar: glossarysidebar

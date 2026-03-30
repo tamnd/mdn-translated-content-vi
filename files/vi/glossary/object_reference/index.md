@@ -1,5 +1,5 @@
 ---
-title: Object reference
+title: Tham chiếu đối tượng
 slug: Glossary/Object_reference
 page-type: glossary-definition
 sidebar: glossarysidebar

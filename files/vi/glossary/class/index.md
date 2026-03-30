@@ -1,5 +1,5 @@
 ---
-title: Class (Lớp)
+title: Lớp
 slug: Glossary/Class
 page-type: glossary-definition
 sidebar: glossarysidebar

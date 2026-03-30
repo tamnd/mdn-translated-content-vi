@@ -1,5 +1,5 @@
 ---
-title: Lossless compression
+title: Nén không mất dữ liệu
 slug: Glossary/Lossless_compression
 page-type: glossary-definition
 sidebar: glossarysidebar

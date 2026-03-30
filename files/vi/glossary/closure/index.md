@@ -1,5 +1,5 @@
 ---
-title: Closure (Bao đóng)
+title: Bao đóng
 slug: Glossary/Closure
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Grid Column
+title: Cột grid
 slug: Glossary/Grid_Column
 page-type: glossary-definition
 sidebar: glossarysidebar

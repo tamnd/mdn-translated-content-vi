@@ -1,5 +1,5 @@
 ---
-title: RTP (Real-time Transport Protocol) and SRTP (Secure RTP)
+title: RTP
 slug: Glossary/RTP
 page-type: glossary-definition
 sidebar: glossarysidebar

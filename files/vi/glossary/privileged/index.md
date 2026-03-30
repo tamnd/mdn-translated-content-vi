@@ -1,5 +1,5 @@
 ---
-title: Privileged
+title: Đặc quyền
 slug: Glossary/Privileged
 page-type: glossary-definition
 sidebar: glossarysidebar

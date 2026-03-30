@@ -1,5 +1,5 @@
 ---
-title: Attribute
+title: Thuộc tính
 slug: Glossary/Attribute
 page-type: glossary-definition
 sidebar: glossarysidebar

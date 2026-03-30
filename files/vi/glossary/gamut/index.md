@@ -1,5 +1,5 @@
 ---
-title: Gamut
+title: Gam màu
 slug: Glossary/Gamut
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -13,7 +13,7 @@ Theo truyền thống, trong phát triển web, gamut duy nhất được sử d
 
 Từ năm 2021, các trình duyệt đã bắt đầu cung cấp chức năng cho các gamut khác, như _[Display-P3](/en-US/docs/Glossary/Color_space#display-p3)_, được sử dụng rộng rãi trong ngành điện ảnh, và _[rec2020](/en-US/docs/Glossary/Color_space#rec2020)_.
 
-Các nhà phát triển có thể định nghĩa các tập hợp màu khác nhau cho các thiết bị hỗ trợ gamut lớn hơn bằng cách sử dụng tính năng media {{cssxref("@media/color-gamut")}} [media feature](/en-US/docs/Web/CSS/Guides/Media_queries/Using). Họ có thể mô tả các màu ngoài gamut RGB bằng cách sử dụng các hàm CSS cụ thể như {{cssxref("color_value/lch")}} cho hệ tọa độ hình trụ LCH, hoặc {{cssxref("color_value/lab")}} cho hệ tọa độ Lab.
+Nhà phát triển có thể định nghĩa các tập hợp màu khác nhau cho các thiết bị hỗ trợ gamut rộng hơn bằng cách sử dụng {{cssxref("@media/color-gamut")}} [media feature](/en-US/docs/Web/CSS/Guides/Media_queries/Using). Các màu ngoài gamut RGB có thể được mô tả bằng các hàm CSS như {{cssxref("color_value/lch")}} (cho hệ tọa độ hình trụ LCH) hoặc {{cssxref("color_value/lab")}} (cho hệ tọa độ Lab).
 
 ## Xem thêm
 

@@ -1,5 +1,5 @@
 ---
-title: Prefetch
+title: Tải trước
 slug: Glossary/Prefetch
 page-type: glossary-definition
 sidebar: glossarysidebar

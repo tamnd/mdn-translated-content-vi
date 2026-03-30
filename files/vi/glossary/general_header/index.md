@@ -1,5 +1,5 @@
 ---
-title: General header
+title: Header chung
 slug: Glossary/General_header
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Method
+title: Phương thức
 slug: Glossary/Method
 page-type: glossary-definition
 sidebar: glossarysidebar

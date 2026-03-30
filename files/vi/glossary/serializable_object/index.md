@@ -1,5 +1,5 @@
 ---
-title: Serializable object
+title: Đối tượng có thể tuần tự hóa
 slug: Glossary/Serializable_object
 page-type: glossary-definition
 sidebar: glossarysidebar

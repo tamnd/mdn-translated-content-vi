@@ -1,5 +1,5 @@
 ---
-title: Kích thước ngoại sinh
+title: Kích thước ngoại lai
 slug: Glossary/Extrinsic_size
 page-type: glossary-definition
 sidebar: glossarysidebar

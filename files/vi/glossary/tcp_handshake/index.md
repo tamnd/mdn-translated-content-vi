@@ -1,5 +1,5 @@
 ---
-title: TCP handshake
+title: Bắt tay TCP
 slug: Glossary/TCP_handshake
 page-type: glossary-definition
 sidebar: glossarysidebar

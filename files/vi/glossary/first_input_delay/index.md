@@ -14,7 +14,7 @@ sidebar: glossarysidebar
 
 Đây là khoảng thời gian, tính bằng mili giây, giữa lần tương tác đầu tiên của người dùng trên một trang web và phản hồi của trình duyệt với tương tác đó. Cuộn trang và thu phóng không được bao gồm trong chỉ số này.
 
-Thời gian giữa khi nội dung được vẽ lên trang và khi tất cả các chức năng trở nên phản hồi với tương tác của người dùng thường thay đổi dựa trên kích thước và độ phức tạp của JavaScript cần được tải xuống, phân tích cú pháp và thực thi trên luồng chính, và trên tốc độ thiết bị hoặc sự thiếu hụt đó (hãy nghĩ đến các thiết bị di động cấp thấp). Độ trễ càng lâu, trải nghiệm người dùng càng tệ. Giảm thời gian khởi tạo trang và loại bỏ [các tác vụ dài](/en-US/docs/Web/API/PerformanceLongTaskTiming) có thể giúp loại bỏ độ trễ đầu vào đầu tiên.
+Thời gian giữa lúc nội dung được vẽ lên trang và lúc tất cả chức năng sẵn sàng phản hồi người dùng thường thay đổi tùy theo kích thước và độ phức tạp của JavaScript cần được tải xuống, phân tích cú pháp và thực thi trên luồng chính, cũng như tốc độ của thiết bị (ví dụ: các thiết bị di động tầm thấp). Độ trễ càng lớn, trải nghiệm người dùng càng kém. Giảm thời gian khởi tạo trang và loại bỏ [các tác vụ dài](/en-US/docs/Web/API/PerformanceLongTaskTiming) có thể giúp giảm độ trễ đầu vào đầu tiên.
 
 ## Xem thêm
 

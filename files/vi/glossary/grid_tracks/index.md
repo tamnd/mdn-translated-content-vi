@@ -1,5 +1,5 @@
 ---
-title: Grid Tracks
+title: Track grid
 slug: Glossary/Grid_Tracks
 page-type: glossary-definition
 sidebar: glossarysidebar

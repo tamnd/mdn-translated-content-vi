@@ -1,5 +1,5 @@
 ---
-title: Perceived performance
+title: Hiệu năng cảm nhận
 slug: Glossary/Perceived_performance
 page-type: glossary-definition
 sidebar: glossarysidebar

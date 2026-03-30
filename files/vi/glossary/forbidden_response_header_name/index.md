@@ -1,5 +1,5 @@
 ---
-title: Forbidden response header name
+title: Tên header phản hồi bị cấm
 slug: Glossary/Forbidden_response_header_name
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: HTTP header
+title: Header HTTP
 slug: Glossary/HTTP_header
 page-type: glossary-definition
 sidebar: glossarysidebar

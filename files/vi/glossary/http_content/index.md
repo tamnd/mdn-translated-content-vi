@@ -1,5 +1,5 @@
 ---
-title: HTTP content
+title: Nội dung HTTP
 slug: Glossary/HTTP_Content
 page-type: glossary-definition
 sidebar: glossarysidebar

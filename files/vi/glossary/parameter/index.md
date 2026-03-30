@@ -1,5 +1,5 @@
 ---
-title: Parameter
+title: Tham số
 slug: Glossary/Parameter
 page-type: glossary-definition
 sidebar: glossarysidebar

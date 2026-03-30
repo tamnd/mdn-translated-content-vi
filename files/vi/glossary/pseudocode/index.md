@@ -1,5 +1,5 @@
 ---
-title: Pseudocode
+title: Mã giả
 slug: Glossary/Pseudocode
 page-type: glossary-definition
 sidebar: glossarysidebar

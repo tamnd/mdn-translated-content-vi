@@ -1,5 +1,5 @@
 ---
-title: TCP slow start
+title: Khởi động chậm TCP
 slug: Glossary/TCP_slow_start
 page-type: glossary-definition
 sidebar: glossarysidebar

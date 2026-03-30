@@ -1,5 +1,5 @@
 ---
-title: Operator
+title: Toán tử
 slug: Glossary/Operator
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Nullish value
+title: Giá trị nullish
 slug: Glossary/Nullish
 page-type: glossary-definition
 sidebar: glossarysidebar

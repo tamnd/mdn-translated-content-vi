@@ -5,9 +5,9 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**ICE** (_Interactive Connectivity Establishment_ - Thiết lập kết nối tương tác) là một framework được sử dụng bởi {{glossary("WebRTC")}} (cùng với các công nghệ khác) để kết nối hai peer, bất kể cấu trúc mạng (thường dùng cho trò chuyện âm thanh và video). Giao thức này cho phép hai peer tìm và thiết lập kết nối với nhau ngay cả khi cả hai có thể đang sử dụng Network Address Translator ({{glossary("NAT")}}) để chia sẻ địa chỉ IP toàn cầu với các thiết bị khác trên các mạng cục bộ tương ứng của họ.
+**ICE** (_Interactive Connectivity Establishment_) là framework được {{glossary("WebRTC")}} (và một số công nghệ khác) sử dụng để kết nối hai peer bất kể cấu trúc mạng (thường dùng cho trò chuyện âm thanh và video). Giao thức này cho phép hai peer tìm và thiết lập kết nối dù cả hai có thể đang sử dụng Network Address Translator ({{glossary("NAT")}}) để chia sẻ địa chỉ IP toàn cầu với các thiết bị khác trên các mạng cục bộ tương ứng.
 
-Thuật toán framework tìm kiếm đường dẫn có độ trễ thấp nhất để kết nối hai peer, thử các tùy chọn này theo thứ tự:
+Thuật toán ICE tìm đường dẫn có độ trễ thấp nhất để kết nối hai peer, thử các tùy chọn theo thứ tự:
 
 1. Kết nối UDP trực tiếp (Trong trường hợp này—và chỉ trong trường hợp này—một máy chủ {{glossary("STUN")}} được sử dụng để tìm địa chỉ đối diện mạng của một peer)
 2. Kết nối TCP trực tiếp, qua cổng HTTP

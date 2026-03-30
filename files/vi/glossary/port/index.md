@@ -1,5 +1,5 @@
 ---
-title: Port
+title: Cổng
 slug: Glossary/Port
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Localization
+title: Bản địa hóa
 slug: Glossary/Localization
 page-type: glossary-definition
 sidebar: glossarysidebar

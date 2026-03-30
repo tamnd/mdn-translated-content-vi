@@ -1,5 +1,5 @@
 ---
-title: Ink overflow
+title: Tràn mực
 slug: Glossary/Ink_overflow
 page-type: glossary-definition
 sidebar: glossarysidebar

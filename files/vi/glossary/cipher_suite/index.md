@@ -1,5 +1,5 @@
 ---
-title: Cipher suite (Bộ mật mã)
+title: Bộ mật mã
 slug: Glossary/Cipher_suite
 page-type: glossary-definition
 sidebar: glossarysidebar

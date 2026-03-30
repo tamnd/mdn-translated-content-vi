@@ -1,5 +1,5 @@
 ---
-title: Polymorphism
+title: Đa hình
 slug: Glossary/Polymorphism
 page-type: glossary-definition
 sidebar: glossarysidebar

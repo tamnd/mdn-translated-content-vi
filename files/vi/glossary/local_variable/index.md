@@ -1,5 +1,5 @@
 ---
-title: Local variable
+title: Biến cục bộ
 slug: Glossary/Local_variable
 page-type: glossary-definition
 sidebar: glossarysidebar

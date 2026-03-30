@@ -1,5 +1,5 @@
 ---
-title: Keyword
+title: Từ khóa
 slug: Glossary/Keyword
 page-type: glossary-definition
 sidebar: glossarysidebar

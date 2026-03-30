@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**FTP** (File Transfer Protocol - Giao thức truyền tệp) là một {{glossary("protocol")}} không bảo mật dùng để truyền tệp từ một {{glossary("host")}} sang host khác qua Internet.
+**FTP** (File Transfer Protocol) là {{glossary("protocol","giao thức")}} không bảo mật dùng để truyền tệp từ một {{glossary("host")}} sang host khác qua Internet.
 
 Trong nhiều năm, đây là tiêu chuẩn thực tế để truyền tệp, nhưng vì nó vốn không bảo mật, nên không còn được hỗ trợ bởi nhiều tài khoản hosting. Thay vào đó, bạn nên sử dụng SFTP (phiên bản bảo mật và mã hóa của FTP) hoặc một phương pháp bảo mật khác để truyền tệp như Rsync qua SSH.
 

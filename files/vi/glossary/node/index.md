@@ -1,5 +1,5 @@
 ---
-title: Node
+title: Nút
 slug: Glossary/Node
 page-type: glossary-disambiguation
 sidebar: glossarysidebar

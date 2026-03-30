@@ -1,11 +1,11 @@
 ---
-title: Speed index
+title: Chỉ số tốc độ
 slug: Glossary/Speed_index
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Speed Index** (SI - Chỉ số tốc độ) là chỉ số hiệu suất tải trang đo lường mức độ nhanh chóng nội dung của một trang được điền vào một cách hiển thị. Speed Index phụ thuộc vào kích thước của viewport và được biểu thị bằng mili giây: lượng thời gian càng thấp thì điểm càng tốt.
+**Speed Index** (SI - Chỉ số tốc độ) là chỉ số hiệu năng tải trang đo lường mức độ nhanh chóng nội dung của một trang được điền vào một cách trực quan. Speed Index phụ thuộc vào kích thước của viewport và được biểu thị bằng mili giây: lượng thời gian càng thấp thì điểm càng tốt.
 
 Speed Index được giới thiệu để giải quyết các vấn đề với các mốc và chỉ số khác và cung cấp thước đo trải nghiệm người dùng thực tế. Speed Index đã được triển khai trong một số công cụ kiểm tra phổ biến bao gồm [WebPageTest](https://github.com/catchpoint/WebPageTest.docs/blob/main/src/metrics/SpeedIndex.md) và [Lighthouse](https://github.com/paulirish/speedline).
 
@@ -16,4 +16,4 @@ _Sơ đồ cho thấy cách nội dung trên màn hình có thể tải trước
 
 ## Xem thêm
 
-- [Học: Hiệu suất web](/en-US/docs/Learn_web_development/Extensions/Performance)
+- [Học: Hiệu năng web](/en-US/docs/Learn_web_development/Extensions/Performance)

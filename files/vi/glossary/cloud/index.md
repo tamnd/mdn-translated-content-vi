@@ -1,5 +1,5 @@
 ---
-title: Cloud (Đám mây)
+title: Đám mây
 slug: Glossary/Cloud
 page-type: glossary-definition
 sidebar: glossarysidebar

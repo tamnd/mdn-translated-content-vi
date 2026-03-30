@@ -1,5 +1,5 @@
 ---
-title: Bézier curve
+title: Đường cong Bézier
 slug: Glossary/Bezier_curve
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Site
+title: Trang web
 slug: Glossary/Site
 page-type: glossary-definition
 sidebar: glossarysidebar

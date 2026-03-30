@@ -1,5 +1,5 @@
 ---
-title: Wrapper (Lớp bọc)
+title: Wrapper
 slug: Glossary/Wrapper
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -12,7 +12,7 @@ Ví dụ, thư viện SDK cho AWS là ví dụ về wrapper.
 ## Xem thêm
 
 - [Hàm wrapper](https://en.wikipedia.org/wiki/Wrapper_function) (Wikipedia)
-- Thuật ngữ liên quan:
+- Các thuật ngữ liên quan:
   - {{Glossary("API")}}
   - {{Glossary("Class")}}
   - {{Glossary("Function")}}

@@ -1,11 +1,11 @@
 ---
-title: Alignment container
+title: Hộp chứa căn chỉnh
 slug: Glossary/Alignment_Container
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Vùng chứa căn chỉnh** (alignment container) là hình chữ nhật mà {{glossary("alignment subject", "đối tượng căn chỉnh")}} được căn chỉnh bên trong. Điều này được xác định bởi chế độ bố cục; thông thường nó là khối chứa của đối tượng căn chỉnh, và giả định chế độ viết của hộp thiết lập khối chứa.
+**Hộp chứa căn chỉnh** (alignment container) là hình chữ nhật mà {{glossary("alignment subject", "đối tượng căn chỉnh")}} được căn chỉnh bên trong. Điều này được xác định bởi chế độ bố cục; thông thường nó là khối chứa của đối tượng căn chỉnh, và giả định chế độ viết của hộp thiết lập khối chứa.
 
 ## Xem thêm
 

@@ -1,11 +1,11 @@
 ---
-title: Idempotent
+title: Bất biến
 slug: Glossary/Idempotent
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Một phương thức HTTP là **idempotent** (bất biến) nếu hiệu ứng dự định trên máy chủ khi thực hiện một yêu cầu duy nhất giống với hiệu ứng của việc thực hiện nhiều yêu cầu giống hệt nhau.
+Một phương thức HTTP được gọi là **idempotent** nếu hiệu ứng dự định trên máy chủ khi thực hiện một yêu cầu duy nhất giống với hiệu ứng khi thực hiện nhiều yêu cầu giống hệt nhau.
 
 Đặc tả HTTP định nghĩa nhiều phương thức HTTP và ngữ nghĩa của chúng, bao gồm việc chúng có idempotent hay không. Tất cả các phương thức {{glossary("Safe/HTTP","an toàn")}} đều là idempotent, cũng như {{HTTPMethod("PUT")}} và {{HTTPMethod("DELETE")}}. Các phương thức {{HTTPMethod("POST")}} và {{HTTPMethod("PATCH")}} không được đảm bảo là idempotent.
 

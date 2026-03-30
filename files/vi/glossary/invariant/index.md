@@ -1,5 +1,5 @@
 ---
-title: Invariant
+title: Bất biến thức
 slug: Glossary/Invariant
 page-type: glossary-definition
 sidebar: glossarysidebar

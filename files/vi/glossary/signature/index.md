@@ -1,5 +1,5 @@
 ---
-title: Signature
+title: Chữ ký
 slug: Glossary/Signature
 page-type: glossary-disambiguation
 sidebar: glossarysidebar

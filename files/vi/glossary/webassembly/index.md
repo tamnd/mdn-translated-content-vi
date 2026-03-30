@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**WebAssembly** (viết tắt là _Wasm_) là định dạng lập trình {{Glossary("binary")}} mở có thể chạy trong các {{Glossary("Browser", "trình duyệt")}} web hiện đại nhằm đạt được hiệu suất cao hơn và/hoặc cung cấp các tính năng mới cho các trang web.
+**WebAssembly** (viết tắt là _Wasm_) là định dạng lập trình {{Glossary("binary")}} mở có thể chạy trong các {{Glossary("Browser", "trình duyệt")}} web hiện đại nhằm đạt được hiệu năng cao hơn và/hoặc cung cấp các tính năng mới cho các trang web.
 
 ## Xem thêm
 

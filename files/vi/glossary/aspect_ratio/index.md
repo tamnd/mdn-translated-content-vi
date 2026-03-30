@@ -1,11 +1,11 @@
 ---
-title: Aspect ratio
+title: Tỉ lệ khung hình
 slug: Glossary/Aspect_ratio
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Tỷ lệ khung hình** (aspect ratio) là mối quan hệ tỷ lệ giữa chiều rộng và chiều cao của một phần tử hoặc {{glossary("viewport")}}. Nó được biểu diễn dưới dạng {{cssxref("ratio")}} của hai số.
+**Tỉ lệ khung hình** (aspect ratio) là mối quan hệ tỷ lệ giữa chiều rộng và chiều cao của một phần tử hoặc {{glossary("viewport")}}. Nó được biểu diễn dưới dạng {{cssxref("ratio")}} của hai số.
 
 Có tỷ lệ khung hình, dù là tỷ lệ khung hình cố hữu như ảnh và video hay được đặt từ bên ngoài, sẽ duy trì các tỷ lệ dự định của một phần tử. Bạn cũng có thể truy vấn tỷ lệ khung hình của một phần tử hoặc viewport, điều này hữu ích trong việc phát triển các thành phần và bố cục linh hoạt.
 

@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**ICANN** (Internet Corporation for Assigned Names and Numbers - Tổ chức quản lý tên và số Internet) là một tổ chức phi lợi nhuận quốc tế duy trì {{glossary("DNS","hệ thống tên miền")}} và hồ sơ về {{glossary("IP address","địa chỉ IP")}}.
+**ICANN** (Internet Corporation for Assigned Names and Numbers) là tổ chức phi lợi nhuận quốc tế duy trì {{glossary("DNS","hệ thống tên miền")}} và hồ sơ về {{glossary("IP address","địa chỉ IP")}}.
 
 ## Xem thêm
 

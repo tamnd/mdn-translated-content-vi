@@ -1,11 +1,11 @@
 ---
-title: Serialization
+title: Tuần tự hóa
 slug: Glossary/Serialization
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Quá trình mà một đối tượng hoặc cấu trúc dữ liệu được chuyển đổi sang định dạng phù hợp để truyền qua mạng hoặc lưu trữ (ví dụ: trong một mảng đệm hay định dạng tệp).
+**Tuần tự hóa** (serialization) là quá trình chuyển đổi một đối tượng hoặc cấu trúc dữ liệu sang định dạng phù hợp để truyền qua mạng hoặc lưu trữ (ví dụ: trong một mảng đệm hay định dạng tệp).
 
 Trong {{Glossary("JavaScript")}}, ví dụ, bạn có thể tuần tự hóa một đối tượng thành {{Glossary("JSON")}} {{Glossary("string","chuỗi")}} bằng cách gọi {{Glossary("function","hàm")}} {{jsxref("JSON.stringify()")}}.
 

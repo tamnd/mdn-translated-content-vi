@@ -1,5 +1,5 @@
 ---
-title: Nút chi phối
+title: Dominator
 slug: Glossary/Dominator
 page-type: glossary-definition
 sidebar: glossarysidebar

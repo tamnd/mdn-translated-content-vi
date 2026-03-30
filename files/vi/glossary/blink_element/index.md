@@ -1,5 +1,5 @@
 ---
-title: blink element (<blink> tag)
+title: Phần tử blink
 slug: Glossary/blink_element
 page-type: glossary-definition
 sidebar: glossarysidebar

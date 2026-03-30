@@ -1,5 +1,5 @@
 ---
-title: Specification
+title: Đặc tả
 slug: Glossary/Specification
 page-type: glossary-definition
 sidebar: glossarysidebar

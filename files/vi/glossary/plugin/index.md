@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Plugin (tiện ích mở rộng dạng nhị phân) trình duyệt là một thành phần phần mềm mà người dùng có thể cài đặt để xử lý nội dung mà trình duyệt không hỗ trợ gốc. Plugin trình duyệt thường được viết bằng kiến trúc [NPAPI](https://en.wikipedia.org/wiki/NPAPI) (Netscape Plugin Application Programming Interface).
+Plugin trình duyệt là một thành phần phần mềm mà người dùng có thể cài đặt để xử lý nội dung mà trình duyệt không hỗ trợ gốc. Plugin trình duyệt thường được viết bằng kiến trúc [NPAPI](https://en.wikipedia.org/wiki/NPAPI) (Netscape Plugin Application Programming Interface).
 
 Plugin nổi tiếng và được sử dụng rộng rãi nhất là trình phát Adobe Flash nay đã lỗi thời, cho phép trình duyệt chạy nội dung {{Glossary("Adobe Flash")}}.
 

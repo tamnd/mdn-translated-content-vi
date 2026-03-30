@@ -1,11 +1,11 @@
 ---
-title: Header yêu cầu được CORS cho phép
+title: CORS-safelisted request header
 slug: Glossary/CORS-safelisted_request_header
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-[**Header yêu cầu được CORS cho phép**](https://fetch.spec.whatwg.org/#cors-safelisted-request-header) (còn được gọi là "header đơn giản") là một trong các [HTTP header](/en-US/docs/Web/HTTP/Reference/Headers) sau:
+[**CORS-safelisted request header**](https://fetch.spec.whatwg.org/#cors-safelisted-request-header) (còn được gọi là "header đơn giản") là một trong các [HTTP header](/en-US/docs/Web/HTTP/Reference/Headers) sau:
 
 - {{HTTPHeader("Accept")}}
 - {{HTTPHeader("Accept-Language")}}

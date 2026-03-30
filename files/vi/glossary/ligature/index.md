@@ -1,5 +1,5 @@
 ---
-title: Ligature
+title: Chữ ghép
 slug: Glossary/Ligature
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: SDK (Software Development Kit)
+title: SDK
 slug: Glossary/SDK
 page-type: glossary-definition
 sidebar: glossarysidebar

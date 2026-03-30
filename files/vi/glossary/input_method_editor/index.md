@@ -1,5 +1,5 @@
 ---
-title: Input method editor
+title: Trình soạn thảo phương thức nhập
 slug: Glossary/Input_method_editor
 page-type: glossary-definition
 sidebar: glossarysidebar

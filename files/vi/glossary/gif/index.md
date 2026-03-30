@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-GIF (Graphics Interchange Format - Định dạng trao đổi đồ họa) là định dạng hình ảnh sử dụng nén không mất dữ liệu và có thể được sử dụng cho hoạt ảnh. GIF sử dụng tối đa 8 bit mỗi pixel và tối đa 256 màu từ không gian màu 24-bit.
+**GIF** (Graphics Interchange Format) là định dạng hình ảnh sử dụng nén không mất dữ liệu và có thể dùng cho hoạt ảnh. GIF sử dụng tối đa 8 bit mỗi pixel và tối đa 256 màu từ không gian màu 24-bit.
 
 ## Xem thêm
 

@@ -1,5 +1,5 @@
 ---
-title: JSON type representation
+title: Biểu diễn kiểu JSON
 slug: Glossary/JSON_type_representation
 page-type: glossary-definition
 sidebar: glossarysidebar

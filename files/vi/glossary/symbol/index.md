@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Symbol** (ký hiệu) là một kiểu dữ liệu đại diện cho các định danh duy nhất và không thể giả mạo. Đôi khi chúng được gọi là _atom_.
+**Symbol** (biểu tượng) là một kiểu dữ liệu đại diện cho các định danh duy nhất và không thể giả mạo. Đôi khi chúng được gọi là _atom_.
 
 Vì symbol là duy nhất và không thể giả mạo, bạn chỉ có thể đọc giá trị thuộc tính liên kết với một symbol nếu bạn có tham chiếu đến định danh gốc.
 

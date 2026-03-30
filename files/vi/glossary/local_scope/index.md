@@ -1,5 +1,5 @@
 ---
-title: Local scope
+title: Phạm vi cục bộ
 slug: Glossary/Local_scope
 page-type: glossary-definition
 sidebar: glossarysidebar

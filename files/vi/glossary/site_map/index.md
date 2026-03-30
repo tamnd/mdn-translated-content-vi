@@ -1,5 +1,5 @@
 ---
-title: Site map
+title: Sơ đồ trang web
 slug: Glossary/Site_map
 page-type: glossary-definition
 sidebar: glossarysidebar

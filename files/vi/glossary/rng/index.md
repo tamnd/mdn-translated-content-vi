@@ -1,5 +1,5 @@
 ---
-title: Random Number Generator
+title: RNG
 slug: Glossary/RNG
 page-type: glossary-definition
 sidebar: glossarysidebar

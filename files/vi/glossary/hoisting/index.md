@@ -26,7 +26,7 @@ const x = 1;
 }
 ```
 
-Nếu khai báo `const x = 2` hoàn toàn không được hoisting (như trong, nó chỉ có hiệu lực khi được thực thi), thì câu lệnh `console.log(x)` đáng lẽ phải có thể đọc giá trị `x` từ phạm vi trên. Tuy nhiên, vì khai báo `const` vẫn "làm nhiễm" toàn bộ phạm vi mà nó được định nghĩa, câu lệnh `console.log(x)` đọc `x` từ khai báo `const x = 2` thay thế, chưa được khởi tạo, và gây ra {{jsxref("ReferenceError")}}. Tuy nhiên, có thể hữu ích hơn khi mô tả các khai báo từ vựng là không hoisting, vì từ góc độ thực dụng, việc hoisting của các khai báo này không mang lại tính năng có ý nghĩa nào.
+Nếu khai báo `const x = 2` hoàn toàn không được hoisting (tức là nó chỉ có hiệu lực khi được thực thi), thì câu lệnh `console.log(x)` đáng lẽ phải đọc được giá trị `x` từ phạm vi trên. Tuy nhiên, vì khai báo `const` vẫn "làm nhiễm" toàn bộ phạm vi mà nó được định nghĩa, câu lệnh `console.log(x)` đọc `x` từ khai báo `const x = 2` — khai báo chưa được khởi tạo — và gây ra {{jsxref("ReferenceError")}}. Dù vậy, mô tả các khai báo từ vựng là không hoisting có thể hữu ích hơn về mặt thực dụng, vì hoisting của chúng không mang lại tính năng có ý nghĩa nào.
 
 Lưu ý rằng phần sau đây không phải là một hình thức hoisting:
 

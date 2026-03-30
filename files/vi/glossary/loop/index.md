@@ -1,5 +1,5 @@
 ---
-title: Loop
+title: Vòng lặp
 slug: Glossary/Loop
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Inheritance
+title: Kế thừa
 slug: Glossary/Inheritance
 page-type: glossary-definition
 sidebar: glossarysidebar

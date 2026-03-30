@@ -1,5 +1,5 @@
 ---
-title: Operand
+title: Toán hạng
 slug: Glossary/Operand
 page-type: glossary-definition
 sidebar: glossarysidebar

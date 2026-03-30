@@ -1,5 +1,5 @@
 ---
-title: Normative
+title: Chuẩn tắc
 slug: Glossary/Normative
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**IIFE** (Immediately Invoked Function Expression - Biểu thức hàm được gọi ngay lập tức) là một thành ngữ trong đó một {{glossary("function","hàm")}} {{glossary("JavaScript")}} chạy ngay khi nó được định nghĩa. Nó còn được gọi là _hàm ẩn danh tự thực thi_. Tên IIFE được phổ biến bởi Ben Alman trong [blog của anh ấy](https://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife).
+**IIFE** (Immediately Invoked Function Expression) là thành ngữ trong đó một {{glossary("function","hàm")}} {{glossary("JavaScript")}} chạy ngay khi được định nghĩa. Còn được gọi là _hàm ẩn danh tự thực thi_. Tên gọi IIFE được phổ biến bởi Ben Alman trong [blog của ông](https://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife).
 
 ```js
 // IIFE tiêu chuẩn
@@ -29,7 +29,7 @@ Nó chứa hai phần chính:
 1. Một [_biểu thức_ hàm](/en-US/docs/Web/JavaScript/Reference/Operators/function). Điều này thường cần được [đặt trong dấu ngoặc](/en-US/docs/Web/JavaScript/Reference/Operators/Grouping) để được phân tích cú pháp đúng cách.
 2. _Gọi_ biểu thức hàm ngay lập tức. Có thể cung cấp các đối số, mặc dù IIFE không có đối số phổ biến hơn.
 
-IIFE là một mẫu phổ biến được sử dụng để thực thi một số lượng tùy ý các câu lệnh trong phạm vi của riêng chúng (và có thể trả về một giá trị), ở một vị trí yêu cầu một biểu thức duy nhất. Chúng tương tự, nhưng mạnh hơn nhiều so với [toán tử dấu phẩy](/en-US/docs/Web/JavaScript/Reference/Operators/Comma_operator), chỉ có thể thực thi nhiều biểu thức và do đó không cung cấp cách sử dụng biến cục bộ hoặc các câu lệnh điều khiển luồng.
+IIFE là mẫu phổ biến dùng để thực thi một số lượng câu lệnh tùy ý trong phạm vi riêng của chúng (và có thể trả về giá trị), ở vị trí chỉ cho phép một biểu thức đơn. Chúng tương tự nhưng mạnh hơn nhiều so với [toán tử dấu phẩy](/en-US/docs/Web/JavaScript/Reference/Operators/Comma_operator), vốn chỉ thực thi nhiều biểu thức mà không hỗ trợ biến cục bộ hay câu lệnh điều khiển luồng.
 
 Các trường hợp sử dụng của IIFE bao gồm:
 

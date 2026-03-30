@@ -1,5 +1,5 @@
 ---
-title: Payload body
+title: Thân nội dung
 slug: Glossary/Payload_body
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,15 +1,15 @@
 ---
-title: Graceful degradation
+title: Giảm cấp khéo léo
 slug: Glossary/Graceful_degradation
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Graceful degradation** (giảm cấp độ linh hoạt) là một triết lý thiết kế tập trung vào việc xây dựng trang web/ứng dụng hiện đại hoạt động tốt trên các trình duyệt mới nhất, nhưng rơi xuống một trải nghiệm, mặc dù không tốt bằng, vẫn cung cấp nội dung và chức năng thiết yếu trên các trình duyệt cũ hơn.
+**Graceful degradation** là triết lý thiết kế tập trung vào việc xây dựng trang web/ứng dụng hiện đại hoạt động tốt nhất trên các trình duyệt mới nhất, nhưng vẫn cung cấp nội dung và chức năng thiết yếu cho người dùng trình duyệt cũ hơn, dù trải nghiệm có thể kém hơn.
 
-{{Glossary("Polyfill","Polyfills")}} có thể được sử dụng để xây dựng các tính năng bị thiếu bằng JavaScript, nhưng các giải pháp thay thế chấp nhận được cho các tính năng như kiểu dáng và bố cục nên được cung cấp khi có thể, ví dụ như bằng cách sử dụng cascade CSS hoặc hành vi dự phòng HTML.
+{{Glossary("Polyfill","Polyfill")}} có thể được dùng để bổ sung các tính năng còn thiếu bằng JavaScript, nhưng cũng nên cung cấp các giải pháp thay thế phù hợp cho các tính năng như kiểu dáng và bố cục khi có thể, ví dụ bằng cách tận dụng cascade CSS hoặc hành vi dự phòng của HTML.
 
-Đây là một kỹ thuật hữu ích cho phép các nhà phát triển web tập trung vào việc phát triển các trang web tốt nhất có thể, biết rằng những trang web đó được truy cập bởi nhiều tác nhân người dùng không xác định. {{Glossary("Progressive enhancement")}} có liên quan nhưng khác nhau — thường được coi là đi theo hướng ngược lại với graceful degradation. Trên thực tế, cả hai cách tiếp cận đều hợp lệ và thường có thể bổ sung cho nhau.
+Đây là kỹ thuật hữu ích giúp nhà phát triển web tập trung xây dựng những trang web tốt nhất có thể, dù biết rằng chúng sẽ được truy cập từ nhiều loại trình duyệt khác nhau. {{Glossary("Progressive enhancement")}} có liên quan nhưng khác biệt — thường được xem là đi theo hướng ngược lại với graceful degradation. Trên thực tế, cả hai cách tiếp cận đều hợp lệ và thường có thể bổ trợ cho nhau.
 
 ## Xem thêm
 

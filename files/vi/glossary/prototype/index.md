@@ -1,5 +1,5 @@
 ---
-title: Prototype
+title: Nguyên mẫu
 slug: Glossary/Prototype
 page-type: glossary-definition
 sidebar: glossarysidebar

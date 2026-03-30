@@ -1,5 +1,5 @@
 ---
-title: Reporting directive
+title: Chỉ thị báo cáo
 slug: Glossary/Reporting_directive
 page-type: glossary-definition
 sidebar: glossarysidebar

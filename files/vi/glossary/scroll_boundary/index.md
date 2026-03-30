@@ -1,5 +1,5 @@
 ---
-title: Scroll boundary
+title: Ranh giới cuộn
 slug: Glossary/Scroll_boundary
 page-type: glossary-definition
 sidebar: glossarysidebar

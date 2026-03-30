@@ -1,5 +1,5 @@
 ---
-title: Phân mảnh miền
+title: Phân tách tên miền
 slug: Glossary/Domain_sharding
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -9,7 +9,7 @@ Trình duyệt giới hạn số lượng kết nối hoạt động cho mỗi m
 
 Vấn đề với phân mảnh miền, về mặt hiệu năng, là chi phí tra cứu DNS thêm cho mỗi miền và overhead của việc thiết lập mỗi kết nối TCP.
 
-HTTP2 hỗ trợ các yêu cầu đồng thời không giới hạn, làm cho phân mảnh miền trở thành yêu cầu lỗi thời khi HTTP/2 được bật.
+HTTP/2 hỗ trợ số lượng yêu cầu đồng thời không giới hạn, khiến phân mảnh miền trở nên lỗi thời khi HTTP/2 được bật.
 
 ## Xem thêm
 

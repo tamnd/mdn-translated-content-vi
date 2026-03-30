@@ -1,5 +1,5 @@
 ---
-title: Browsing context
+title: Ngữ cảnh duyệt web
 slug: Glossary/Browsing_Context
 page-type: glossary-definition
 sidebar: glossarysidebar

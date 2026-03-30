@@ -1,5 +1,5 @@
 ---
-title: Public-key cryptography
+title: Mật mã khóa công khai
 slug: Glossary/Public-key_cryptography
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Abstraction
+title: Trừu tượng hóa
 slug: Glossary/Abstraction
 page-type: glossary-definition
 sidebar: glossarysidebar

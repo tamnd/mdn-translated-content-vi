@@ -12,4 +12,5 @@ sidebar: glossarysidebar
 - [Phần WebP trong hướng dẫn loại và định dạng tệp hình ảnh](/en-US/docs/Web/Media/Guides/Formats/Image_types#webp_image)
 - Các định dạng hình ảnh khác (thuật ngữ từ điển): {{Glossary("GIF")}}, {{Glossary("JPEG")}}, {{Glossary("PNG")}}, {{Glossary("SVG")}}
 - [Hình ảnh HTML](/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images)
+- [Thêm biểu tượng tùy chỉnh cho trang web của bạn](/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata#adding_custom_icons_to_your_site)
 - [WebP](https://en.wikipedia.org/wiki/WebP) trên Wikipedia

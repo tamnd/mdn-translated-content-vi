@@ -1,5 +1,5 @@
 ---
-title: Statement
+title: Câu lệnh
 slug: Glossary/Statement
 page-type: glossary-definition
 sidebar: glossarysidebar

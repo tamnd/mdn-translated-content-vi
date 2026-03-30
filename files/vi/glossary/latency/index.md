@@ -1,5 +1,5 @@
 ---
-title: Latency
+title: Độ trễ
 slug: Glossary/Latency
 page-type: glossary-definition
 sidebar: glossarysidebar

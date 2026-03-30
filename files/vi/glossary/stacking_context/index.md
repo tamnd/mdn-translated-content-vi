@@ -1,5 +1,5 @@
 ---
-title: Stacking context
+title: Ngữ cảnh xếp chồng
 slug: Glossary/Stacking_context
 page-type: glossary-definition
 sidebar: glossarysidebar

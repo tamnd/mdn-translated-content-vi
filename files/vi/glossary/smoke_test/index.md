@@ -1,11 +1,11 @@
 ---
-title: Smoke test
+title: Kiểm thử khói
 slug: Glossary/Smoke_Test
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Smoke test (kiểm thử khói) bao gồm các bài kiểm thử chức năng hoặc đơn vị của các chức năng phần mềm quan trọng. Kiểm thử khói được thực hiện trước khi tiến hành kiểm thử sâu hơn, chi tiết hơn.
+**Smoke test** (kiểm thử khói) bao gồm các bài kiểm thử chức năng hoặc đơn vị của các chức năng phần mềm quan trọng. Kiểm thử khói được thực hiện trước khi tiến hành kiểm thử sâu hơn, chi tiết hơn.
 
 Smoke testing trả lời các câu hỏi như:
 

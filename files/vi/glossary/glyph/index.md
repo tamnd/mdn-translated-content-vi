@@ -1,13 +1,13 @@
 ---
-title: Glyph
+title: Ký tự đồ họa
 slug: Glossary/Glyph
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Glyph** là thuật ngữ được sử dụng trong ngành in ấn/typography để chỉ biểu diễn hình ảnh của một hoặc nhiều {{Glossary("character", "ký tự")}}.
+**Glyph** là thuật ngữ trong ngành typography dùng để chỉ biểu diễn trực quan của một hoặc nhiều {{Glossary("character", "ký tự")}}.
 
-Các phông chữ được sử dụng bởi một trang web chứa các tập hợp glyph khác nhau, đại diện cho các ký tự của phông chữ.
+Các phông chữ được một trang web sử dụng chứa các tập hợp glyph khác nhau, đại diện cho các ký tự của phông chữ đó.
 
 ## Xem thêm
 

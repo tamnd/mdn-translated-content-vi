@@ -1,5 +1,5 @@
 ---
-title: Transient activation
+title: Kích hoạt tạm thời
 slug: Glossary/Transient_activation
 page-type: glossary-definition
 sidebar: glossarysidebar

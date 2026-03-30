@@ -1,5 +1,5 @@
 ---
-title: Synchronous
+title: Đồng bộ
 slug: Glossary/Synchronous
 page-type: glossary-definition
 sidebar: glossarysidebar

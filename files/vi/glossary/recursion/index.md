@@ -1,5 +1,5 @@
 ---
-title: Recursion
+title: Đệ quy
 slug: Glossary/Recursion
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Round Trip Time (RTT)
+title: Thời gian khứ hồi (RTT)
 slug: Glossary/Round_Trip_Time
 page-type: glossary-definition
 sidebar: glossarysidebar

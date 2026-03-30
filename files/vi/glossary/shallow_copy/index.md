@@ -1,5 +1,5 @@
 ---
-title: Shallow copy
+title: Sao chép nông
 slug: Glossary/Shallow_copy
 page-type: glossary-definition
 sidebar: glossarysidebar

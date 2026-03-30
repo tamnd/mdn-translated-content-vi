@@ -1,5 +1,5 @@
 ---
-title: Safe
+title: An toàn
 slug: Glossary/Safe
 page-type: glossary-disambiguation
 sidebar: glossarysidebar

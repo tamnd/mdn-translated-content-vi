@@ -1,5 +1,5 @@
 ---
-title: Scope
+title: Phạm vi
 slug: Glossary/Scope
 page-type: glossary-definition
 sidebar: glossarysidebar

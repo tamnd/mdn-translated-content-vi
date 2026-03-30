@@ -1,5 +1,5 @@
 ---
-title: Garbage collection
+title: Thu gom rác
 slug: Glossary/Garbage_collection
 page-type: glossary-definition
 sidebar: glossarysidebar

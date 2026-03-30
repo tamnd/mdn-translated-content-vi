@@ -1,5 +1,5 @@
 ---
-title: Information architecture
+title: Kiến trúc thông tin
 slug: Glossary/Information_architecture
 page-type: glossary-definition
 sidebar: glossarysidebar

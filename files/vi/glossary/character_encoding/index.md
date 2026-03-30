@@ -1,5 +1,5 @@
 ---
-title: Character encoding (Mã hóa ký tự)
+title: Mã hóa ký tự
 slug: Glossary/Character_encoding
 page-type: glossary-definition
 sidebar: glossarysidebar

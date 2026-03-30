@@ -1,5 +1,5 @@
 ---
-title: Submit button
+title: Nút gửi
 slug: Glossary/Submit_button
 page-type: glossary-definition
 sidebar: glossarysidebar

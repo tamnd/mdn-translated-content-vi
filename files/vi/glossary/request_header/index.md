@@ -1,5 +1,5 @@
 ---
-title: Request header
+title: Header yêu cầu
 slug: Glossary/Request_header
 page-type: glossary-definition
 sidebar: glossarysidebar

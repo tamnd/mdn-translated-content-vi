@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Từ chối dịch vụ** (DoS - Denial of Service) là loại tấn công mạng tiêu thụ tài nguyên của {{Glossary("server","máy chủ")}} khả dụng, thường bằng cách tràn ngập máy chủ với các yêu cầu. Máy chủ sau đó trở nên chậm chạp hoặc không khả dụng đối với người dùng hợp lệ.
+**Từ chối dịch vụ** (DoS - Denial of Service) là loại tấn công mạng tiêu thụ tài nguyên khả dụng của {{Glossary("server","máy chủ")}}, thường bằng cách tràn ngập máy chủ với các yêu cầu. Máy chủ sau đó trở nên chậm chạp hoặc không phục vụ được người dùng hợp lệ.
 
 Máy tính có tài nguyên hạn chế, ví dụ như khả năng xử lý hoặc bộ nhớ. Khi những tài nguyên này bị cạn kiệt, chương trình có thể bị đóng băng hoặc sụp đổ, khiến nó không khả dụng. Tấn công DoS bao gồm nhiều kỹ thuật khác nhau để cạn kiệt các tài nguyên này và làm cho máy chủ hoặc mạng không khả dụng cho người dùng hợp lệ, hoặc ít nhất là làm cho máy chủ hoạt động chậm chạp.
 

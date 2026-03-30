@@ -1,5 +1,5 @@
 ---
-title: Bounding box
+title: Hộp bao
 slug: Glossary/Bounding_box
 page-type: glossary-definition
 sidebar: glossarysidebar

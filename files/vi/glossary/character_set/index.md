@@ -1,5 +1,5 @@
 ---
-title: Character set (Bộ ký tự)
+title: Bộ ký tự
 slug: Glossary/Character_set
 page-type: glossary-definition
 sidebar: glossarysidebar

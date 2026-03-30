@@ -1,5 +1,5 @@
 ---
-title: Flow relative values
+title: Giá trị tương đối theo luồng
 slug: Glossary/Flow_relative_values
 page-type: glossary-definition
 sidebar: glossarysidebar

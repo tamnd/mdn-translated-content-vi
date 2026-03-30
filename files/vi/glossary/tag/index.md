@@ -1,5 +1,5 @@
 ---
-title: Tag
+title: Thẻ
 slug: Glossary/Tag
 page-type: glossary-definition
 sidebar: glossarysidebar

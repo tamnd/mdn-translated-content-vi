@@ -1,13 +1,13 @@
 ---
-title: Host
+title: Máy chủ
 slug: Glossary/Host
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Host (máy chủ) là thiết bị được kết nối với {{glossary("Internet")}} (hoặc mạng cục bộ). Một số máy chủ được gọi là {{glossary("server","servers")}} cung cấp các dịch vụ bổ sung như phục vụ các trang web hoặc lưu trữ tệp và email.
+**Máy chủ** (host) là thiết bị được kết nối với {{glossary("Internet")}} (hoặc mạng cục bộ). Một số máy chủ được gọi là {{glossary("server","server")}} cung cấp các dịch vụ bổ sung như phục vụ trang web hoặc lưu trữ tệp và email.
 
-Máy chủ không nhất thiết phải là một phần cứng thực thể. Nó có thể được tạo ra bởi các máy ảo. Máy chủ được tạo ra bởi máy ảo được gọi là "Virtual hosting" (máy chủ ảo).
+Máy chủ không nhất thiết phải là phần cứng vật lý — nó có thể được tạo bởi các máy ảo. Máy chủ được tạo bởi máy ảo gọi là "virtual hosting" (lưu trữ ảo).
 
 ## Xem thêm
 

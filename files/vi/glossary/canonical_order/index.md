@@ -1,13 +1,13 @@
 ---
-title: Canonical order (Thứ tự chuẩn tắc)
+title: Thứ tự chuẩn
 slug: Glossary/Canonical_order
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Trong CSS, **thứ tự chuẩn tắc** được sử dụng để chỉ thứ tự mà các giá trị riêng biệt cần được chỉ định (hoặc {{Glossary("parse", "phân tích cú pháp")}}) hoặc được {{Glossary("serialization", "tuần tự hóa")}} như một phần của giá trị thuộc tính CSS. Nó được xác định bởi {{Glossary("syntax", "cú pháp")}} chính thức của thuộc tính và thường đề cập đến thứ tự mà các giá trị longhand nên được chỉ định như một phần của một giá trị shorthand duy nhất.
+Trong CSS, **thứ tự chuẩn** (canonical order) được sử dụng để chỉ thứ tự mà các giá trị riêng biệt cần được chỉ định (hoặc {{Glossary("parse", "phân tích cú pháp")}}) hoặc được {{Glossary("serialization", "tuần tự hóa")}} như một phần của giá trị thuộc tính CSS. Nó được xác định bởi {{Glossary("syntax", "cú pháp")}} chính thức của thuộc tính và thường đề cập đến thứ tự mà các giá trị longhand nên được chỉ định như một phần của một giá trị shorthand duy nhất.
 
-Ví dụ, các giá trị thuộc tính shorthand {{cssxref("background")}} được tạo thành từ một số thuộc tính longhand `background-*`. Thứ tự chuẩn tắc của các giá trị longhand đó được định nghĩa là:
+Ví dụ, các giá trị thuộc tính shorthand {{cssxref("background")}} được tạo thành từ một số thuộc tính longhand `background-*`. Thứ tự chuẩn của các giá trị longhand đó được định nghĩa là:
 
 1. {{cssxref("background-image")}}
 2. {{cssxref("background-position")}}
@@ -23,4 +23,4 @@ Hơn nữa, cú pháp của nó định nghĩa rằng nếu một giá trị cho
 ## Xem thêm
 
 - [Cú pháp định nghĩa giá trị CSS](/en-US/docs/Web/CSS/Guides/Values_and_units/Value_definition_syntax)
-- ["Thứ tự chuẩn tắc" có nghĩa gì đối với thuộc tính CSS?](https://stackoverflow.com/questions/28963536/what-does-canonical-order-mean-with-respect-to-css-properties) trên Stack Overflow cung cấp thêm thảo luận hữu ích.
+- ["Thứ tự chuẩn" có nghĩa gì đối với thuộc tính CSS?](https://stackoverflow.com/questions/28963536/what-does-canonical-order-mean-with-respect-to-css-properties) trên Stack Overflow cung cấp thêm thảo luận hữu ích.

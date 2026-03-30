@@ -1,5 +1,5 @@
 ---
-title: Salt
+title: Muối (salt)
 slug: Glossary/Salt
 page-type: glossary-definition
 sidebar: glossarysidebar
@@ -11,7 +11,7 @@ Mật khẩu không bao giờ nên được lưu trữ dưới dạng văn bản
 
 Để suy ra mật khẩu từ giá trị băm, kẻ tấn công có thể tra cứu mật khẩu tương ứng với một giá trị băm trong bảng được tính toán trước (còn gọi là [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table)) ánh xạ các mật khẩu có thể với giá trị băm của chúng:
 
-| Mật khẩu | Băm        |
+| Mật khẩu | Băm         |
 | -------- | ----------- |
 | pa55w0rd | 56965E2A... |
 | abcdef   | BEF57EC7... |

@@ -1,11 +1,11 @@
 ---
-title: Prerender
+title: Kết xuất trước
 slug: Glossary/Prerender
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Prerender (tiền render) đề cập đến việc {{Glossary("prefetch", "tải trước")}} và _render_ các trang một cách suy đoán mà người dùng có khả năng điều hướng tới trong tương lai gần (trình duyệt render trang trong nền trong một tab vô hình riêng biệt). Prerender bao gồm việc tải xuống các tài nguyên con của tài liệu và thực thi JavaScript liên quan.
+Prerender (kết xuất trước) đề cập đến việc {{Glossary("prefetch", "tải trước")}} và _kết xuất_ các trang một cách suy đoán mà người dùng có khả năng điều hướng tới trong tương lai gần (trình duyệt kết xuất trang trong nền trong một tab vô hình riêng biệt). Prerender bao gồm việc tải xuống các tài nguyên con của tài liệu và thực thi JavaScript liên quan.
 
 Nếu người dùng sau đó chọn điều hướng tới trang, nội dung của nó có thể được hiển thị gần như tức thì.
 

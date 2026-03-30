@@ -1,5 +1,5 @@
 ---
-title: First-class function
+title: Hàm hạng nhất
 slug: Glossary/First-class_Function
 page-type: glossary-definition
 sidebar: glossarysidebar

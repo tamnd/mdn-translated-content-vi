@@ -1,5 +1,5 @@
 ---
-title: Algorithm
+title: Thuật toán
 slug: Glossary/Algorithm
 page-type: glossary-definition
 sidebar: glossarysidebar

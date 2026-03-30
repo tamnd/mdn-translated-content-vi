@@ -7,7 +7,7 @@ sidebar: glossarysidebar
 
 **HTTP/2** là một bản sửa đổi lớn của [giao thức mạng HTTP](/en-US/docs/Web/HTTP).
 
-Các mục tiêu chính của HTTP/2 là giảm {{glossary("latency","độ trễ")}} và {{glossary("head of line blocking","chặn đầu hàng")}}, bằng cách cho phép ghép kênh hoàn toàn các yêu cầu và phản hồi và hỗ trợ ưu tiên hóa yêu cầu, và giảm thiểu overhead giao thức thông qua nén hiệu quả các trường HTTP header (HPACK).
+Các mục tiêu chính của HTTP/2 là giảm {{glossary("latency","độ trễ")}} và {{glossary("head of line blocking","tắc nghẽn đầu hàng")}}, thông qua việc hỗ trợ ghép kênh đầy đủ các yêu cầu và phản hồi cùng ưu tiên hóa yêu cầu, đồng thời giảm overhead giao thức bằng cách nén hiệu quả các trường HTTP header (HPACK).
 
 HTTP/2 cũng giới thiệu cơ chế gọi là Server Push, cho phép máy chủ gửi tài nguyên đến client khi dự đoán client sẽ sớm cần chúng. Server Push tỏ ra khó thực hiện trong thực tế, và đã bị loại bỏ khỏi hầu hết các công cụ trình duyệt lớn. Nó đã được thay thế bằng các phương pháp thay thế như [`rel="preload"`](/en-US/docs/Web/HTML/Reference/Attributes/rel/preload) và {{HTTPStatus("103", "103 Early hints")}}.
 
@@ -18,6 +18,6 @@ HTTP/2 không sửa đổi ngữ nghĩa của HTTP, có nghĩa là các khái ni
 - [HTTP](/en-US/docs/Web/HTTP) trên MDN
 - Các thuật ngữ liên quan:
   - {{glossary("HTTP")}}
-  - {{glossary("Latency")}}, {{glossary("head of line blocking","Chặn đầu hàng")}}
+  - {{glossary("Latency")}}, {{glossary("head of line blocking","Tắc nghẽn đầu hàng")}}
 - {{RFC("7540", "Server Push", "8.2")}}
 - [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) trên Wikipedia

@@ -1,5 +1,5 @@
 ---
-title: Gốc (Native)
+title: Gốc
 slug: Glossary/Native
 page-type: glossary-definition
 sidebar: glossarysidebar

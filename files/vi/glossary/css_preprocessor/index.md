@@ -1,5 +1,5 @@
 ---
-title: Bộ tiền xử lý CSS
+title: CSS preprocessor
 slug: Glossary/CSS_preprocessor
 page-type: glossary-definition
 sidebar: glossarysidebar

@@ -1,5 +1,5 @@
 ---
-title: Parent object
+title: Đối tượng cha
 slug: Glossary/Parent_object
 page-type: glossary-definition
 sidebar: glossarysidebar

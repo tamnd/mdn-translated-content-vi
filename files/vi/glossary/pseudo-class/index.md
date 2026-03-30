@@ -1,5 +1,5 @@
 ---
-title: Pseudo-class
+title: Lớp giả
 slug: Glossary/Pseudo-class
 page-type: glossary-definition
 sidebar: glossarysidebar

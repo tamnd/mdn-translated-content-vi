@@ -1,5 +1,5 @@
 ---
-title: Response header
+title: Header phản hồi
 slug: Glossary/Response_header
 page-type: glossary-definition
 sidebar: glossarysidebar

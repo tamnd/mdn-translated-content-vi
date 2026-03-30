@@ -1,11 +1,11 @@
 ---
-title: String
+title: Chuỗi
 slug: Glossary/String
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Trong bất kỳ ngôn ngữ lập trình máy tính nào, một chuỗi (string) là một dãy các {{Glossary("character","ký tự")}} được sử dụng để biểu diễn văn bản.
+Trong bất kỳ ngôn ngữ lập trình máy tính nào, **chuỗi ký tự** (string) là một dãy các {{Glossary("character","ký tự")}} được sử dụng để biểu diễn văn bản.
 
 Trong {{Glossary("JavaScript")}}, String là một trong các {{Glossary("Primitive", "kiểu nguyên thủy")}} và đối tượng {{jsxref("String")}} là {{Glossary("wrapper","lớp bao")}} xung quanh một String nguyên thủy.
 

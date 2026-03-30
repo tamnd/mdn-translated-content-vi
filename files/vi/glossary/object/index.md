@@ -1,5 +1,5 @@
 ---
-title: Object
+title: Đối tượng
 slug: Glossary/Object
 page-type: glossary-definition
 sidebar: glossarysidebar

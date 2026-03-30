@@ -1,5 +1,5 @@
 ---
-title: Non-normative
+title: Không chuẩn tắc
 slug: Glossary/Non-normative
 page-type: glossary-definition
 sidebar: glossarysidebar

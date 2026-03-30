@@ -1,11 +1,11 @@
 ---
-title: Giả mạo yêu cầu trang chéo (CSRF)
+title: Cross-site request forgery (CSRF)
 slug: Glossary/CSRF
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-Trong cuộc tấn công **giả mạo yêu cầu trang chéo** (CSRF - Cross-site request forgery), kẻ tấn công lừa trình duyệt thực hiện yêu cầu HTTP đến trang web mục tiêu từ một trang web độc hại. Yêu cầu bao gồm thông tin xác thực của người dùng và khiến máy chủ thực hiện một số hành động gây hại, cho rằng người dùng đã có ý định thực hiện điều đó.
+Trong cuộc tấn công **cross-site request forgery** (CSRF), kẻ tấn công lừa trình duyệt thực hiện yêu cầu HTTP đến trang web mục tiêu từ một trang web độc hại. Yêu cầu mang theo thông tin xác thực của người dùng và khiến máy chủ thực hiện một hành động gây hại, trong khi tưởng rằng người dùng đã có ý định thực hiện điều đó.
 
 Tấn công CSRF có thể xảy ra nếu một trang web:
 
@@ -17,5 +17,5 @@ Có một số biện pháp phòng thủ chống lại các cuộc tấn công C
 
 ## Xem thêm
 
-- [Giả mạo yêu cầu trang chéo](/en-US/docs/Web/Security/Attacks/CSRF)
+- [Cross-site request forgery](/en-US/docs/Web/Security/Attacks/CSRF)
 - [Hướng dẫn phòng ngừa Cross-Site Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) tại [owasp.org](https://owasp.org/)

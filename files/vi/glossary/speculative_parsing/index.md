@@ -1,5 +1,5 @@
 ---
-title: Speculative parsing
+title: Phân tích cú pháp suy đoán
 slug: Glossary/Speculative_parsing
 page-type: glossary-definition
 sidebar: glossarysidebar

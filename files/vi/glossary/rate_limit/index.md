@@ -1,5 +1,5 @@
 ---
-title: Rate limit
+title: Giới hạn tốc độ
 slug: Glossary/Rate_limit
 page-type: glossary-definition
 sidebar: glossarysidebar

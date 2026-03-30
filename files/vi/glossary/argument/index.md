@@ -1,5 +1,5 @@
 ---
-title: Argument
+title: Đối số
 slug: Glossary/Argument
 page-type: glossary-definition
 sidebar: glossarysidebar

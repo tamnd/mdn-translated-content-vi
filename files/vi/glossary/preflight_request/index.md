@@ -1,5 +1,5 @@
 ---
-title: Preflight request
+title: Yêu cầu kiểm tra trước
 slug: Glossary/Preflight_request
 page-type: glossary-definition
 sidebar: glossarysidebar

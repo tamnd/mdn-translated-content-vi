@@ -1,5 +1,5 @@
 ---
-title: User agent
+title: Tác nhân người dùng
 slug: Glossary/User_agent
 page-type: glossary-definition
 sidebar: glossarysidebar

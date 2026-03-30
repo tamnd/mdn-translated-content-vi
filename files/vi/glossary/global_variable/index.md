@@ -1,5 +1,5 @@
 ---
-title: Global variable
+title: Biến toàn cục
 slug: Glossary/Global_variable
 page-type: glossary-definition
 sidebar: glossarysidebar

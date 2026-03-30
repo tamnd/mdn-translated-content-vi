@@ -1,5 +1,5 @@
 ---
-title: Layout mode
+title: Chế độ bố cục
 slug: Glossary/Layout_mode
 page-type: glossary-definition
 sidebar: glossarysidebar

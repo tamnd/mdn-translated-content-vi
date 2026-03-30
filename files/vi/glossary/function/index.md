@@ -1,13 +1,13 @@
 ---
-title: Function
+title: Hàm
 slug: Glossary/Function
 page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Hàm** là một đoạn code có thể được gọi bởi code khác hoặc bởi chính nó, hoặc là một {{Glossary("variable")}} tham chiếu đến hàm. Khi một hàm được gọi, {{Glossary("Argument", "đối số")}} được truyền vào hàm như đầu vào, và hàm có thể tùy chọn trả về một giá trị. Một hàm trong {{glossary("JavaScript")}} cũng là một {{glossary("object")}}.
+**Hàm** là một đoạn mã có thể được gọi bởi mã khác hoặc bởi chính nó, hoặc là một {{Glossary("variable", "biến")}} tham chiếu đến hàm. Khi một hàm được gọi, {{Glossary("Argument", "đối số")}} được truyền vào hàm làm đầu vào, và hàm có thể trả về một giá trị. Một hàm trong {{glossary("JavaScript")}} cũng là một {{glossary("object", "đối tượng")}}.
 
-Tên hàm là một {{Glossary("identifier")}} được bao gồm như một phần của khai báo hàm hoặc biểu thức hàm. {{Glossary("scope")}} của tên hàm phụ thuộc vào việc tên hàm là khai báo hay biểu thức.
+Tên hàm là một {{Glossary("identifier", "định danh")}} được khai báo như một phần của khai báo hàm hoặc biểu thức hàm. {{Glossary("scope", "Phạm vi")}} của tên hàm phụ thuộc vào việc đó là khai báo hay biểu thức.
 
 ## Các loại hàm khác nhau
 
@@ -68,7 +68,7 @@ const loop2 = (x) => {
 };
 ```
 
-**Immediately Invoked Function Expression** ({{glossary("IIFE")}} - Biểu thức hàm được gọi ngay lập tức) là hàm được gọi ngay sau khi hàm được nạp vào trình biên dịch của trình duyệt. Cách nhận biết một IIFE là tìm dấu ngoặc đơn trái và phải bổ sung ở cuối định nghĩa hàm.
+**Immediately Invoked Function Expression** ({{glossary("IIFE")}}) là hàm được gọi ngay sau khi được nạp vào trình thông dịch của trình duyệt. Cách nhận biết một IIFE là tìm cặp dấu ngoặc đơn bổ sung ở cuối định nghĩa hàm.
 
 Các biểu thức hàm, có tên hay ẩn danh, đều có thể được gọi ngay lập tức.
 

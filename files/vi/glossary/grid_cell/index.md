@@ -1,5 +1,5 @@
 ---
-title: Grid Cell
+title: Ô grid
 slug: Glossary/Grid_Cell
 page-type: glossary-definition
 sidebar: glossarysidebar

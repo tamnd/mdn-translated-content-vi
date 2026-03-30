@@ -1,5 +1,5 @@
 ---
-title: Reading order
+title: Thứ tự đọc
 slug: Glossary/Reading_order
 page-type: glossary-definition
 sidebar: glossarysidebar

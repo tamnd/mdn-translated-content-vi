@@ -1,5 +1,5 @@
 ---
-title: Immutable
+title: Bất biến
 slug: Glossary/Immutable
 page-type: glossary-definition
 sidebar: glossarysidebar

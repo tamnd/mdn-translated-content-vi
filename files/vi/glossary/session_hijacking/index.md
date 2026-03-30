@@ -1,5 +1,5 @@
 ---
-title: Session hijacking
+title: Chiếm quyền phiên
 slug: Glossary/Session_Hijacking
 page-type: glossary-definition
 sidebar: glossarysidebar

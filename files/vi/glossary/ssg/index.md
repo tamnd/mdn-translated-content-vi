@@ -1,5 +1,5 @@
 ---
-title: Trình tạo trang web tĩnh (SSG)
+title: SSG
 slug: Glossary/SSG
 page-type: glossary-definition
 sidebar: glossarysidebar

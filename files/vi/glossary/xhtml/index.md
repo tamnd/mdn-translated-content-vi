@@ -42,7 +42,7 @@ Trong thực tế, rất ít tài liệu "XHTML" được phục vụ trên web 
 
 ## Xem thêm
 
-- Thuật ngữ liên quan:
+- Các thuật ngữ liên quan:
   - {{Glossary("HTML")}}
   - {{Glossary("HTML5")}}
   - {{Glossary("SVG")}}

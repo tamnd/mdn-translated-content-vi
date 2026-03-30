@@ -1,5 +1,5 @@
 ---
-title: Prototype-based programming
+title: Lập trình dựa trên nguyên mẫu
 slug: Glossary/Prototype-based_programming
 page-type: glossary-definition
 sidebar: glossarysidebar

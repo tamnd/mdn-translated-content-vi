@@ -9,7 +9,7 @@ HyperText Transfer Protocol (**HTTP**) là {{glossary("protocol","giao thức")}
 
 Là một phần của {{glossary("URI")}}, "http" trong "http\://example.com/" được gọi là "scheme" (giao thức). Các tài nguyên sử dụng scheme "http" thường được truyền qua các kết nối không được mã hóa sử dụng giao thức HTTP. Scheme "https" (như trong "https\://developer.mozilla.org") chỉ ra rằng một tài nguyên được truyền bằng giao thức HTTP, nhưng qua kênh {{glossary("TLS")}} bảo mật.
 
-HTTP là văn bản (tất cả giao tiếp được thực hiện bằng văn bản thuần túy) và không trạng thái (không có giao tiếp nào nhận biết các giao tiếp trước đó). Thuộc tính này làm cho nó lý tưởng để con người đọc các tài liệu (trang web) trên world wide web. Tuy nhiên, HTTP cũng có thể được sử dụng làm cơ sở cho các dịch vụ web {{glossary("REST")}} từ máy chủ đến máy chủ hoặc các yêu cầu {{domxref("Window/fetch", "fetch()")}} trong các trang web để làm cho chúng động hơn.
+HTTP là giao thức dạng văn bản (mọi giao tiếp đều dưới dạng văn bản thuần túy) và phi trạng thái (mỗi yêu cầu không nhận biết các yêu cầu trước đó). Đặc điểm này làm cho nó lý tưởng để con người đọc tài liệu (trang web) trên Web. Tuy nhiên, HTTP cũng có thể dùng làm nền tảng cho các dịch vụ web {{glossary("REST")}} giữa các máy chủ, hoặc cho các yêu cầu {{domxref("Window/fetch", "fetch()")}} trong trang web để làm chúng trở nên động hơn.
 
 ## Xem thêm
 

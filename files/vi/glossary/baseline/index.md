@@ -1,5 +1,5 @@
 ---
-title: Baseline
+title: Đường cơ sở
 slug: Glossary/Baseline
 page-type: glossary-disambiguation
 sidebar: glossarysidebar

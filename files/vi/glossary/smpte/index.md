@@ -1,5 +1,5 @@
 ---
-title: SMPTE (Society of Motion Picture and Television Engineers)
+title: SMPTE
 slug: Glossary/SMPTE
 page-type: glossary-definition
 sidebar: glossarysidebar
