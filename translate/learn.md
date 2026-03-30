@@ -7,28 +7,28 @@ This section is beginner-friendly and high-impact. Translating it helps Vietname
 
 ## Getting started (22 pages)
 
-- [ ] learn_web_development/getting_started/index.md
-- [ ] learn_web_development/getting_started/environment_setup/index.md
-- [ ] learn_web_development/getting_started/environment_setup/browsing_the_web/index.md
-- [ ] learn_web_development/getting_started/environment_setup/code_editors/index.md
-- [ ] learn_web_development/getting_started/environment_setup/command_line/index.md
-- [ ] learn_web_development/getting_started/environment_setup/dealing_with_files/index.md
-- [ ] learn_web_development/getting_started/environment_setup/installing_software/index.md
-- [ ] learn_web_development/getting_started/soft_skills/index.md
-- [ ] learn_web_development/getting_started/soft_skills/collaboration_and_teamwork/index.md
-- [ ] learn_web_development/getting_started/soft_skills/finding_a_job/index.md
-- [ ] learn_web_development/getting_started/soft_skills/research_and_learning/index.md
-- [ ] learn_web_development/getting_started/soft_skills/workflows_and_processes/index.md
-- [ ] learn_web_development/getting_started/web_standards/index.md
-- [ ] learn_web_development/getting_started/web_standards/how_browsers_load_websites/index.md
-- [ ] learn_web_development/getting_started/web_standards/how_the_web_works/index.md
-- [ ] learn_web_development/getting_started/web_standards/the_web_standards_model/index.md
-- [ ] learn_web_development/getting_started/your_first_website/index.md
-- [ ] learn_web_development/getting_started/your_first_website/adding_interactivity/index.md
-- [ ] learn_web_development/getting_started/your_first_website/creating_the_content/index.md
-- [ ] learn_web_development/getting_started/your_first_website/publishing_your_website/index.md
-- [ ] learn_web_development/getting_started/your_first_website/styling_the_content/index.md
-- [ ] learn_web_development/getting_started/your_first_website/what_will_your_website_look_like/index.md
+- [x] learn_web_development/getting_started/index.md
+- [x] learn_web_development/getting_started/environment_setup/index.md
+- [x] learn_web_development/getting_started/environment_setup/browsing_the_web/index.md
+- [x] learn_web_development/getting_started/environment_setup/code_editors/index.md
+- [x] learn_web_development/getting_started/environment_setup/command_line/index.md
+- [x] learn_web_development/getting_started/environment_setup/dealing_with_files/index.md
+- [x] learn_web_development/getting_started/environment_setup/installing_software/index.md
+- [x] learn_web_development/getting_started/soft_skills/index.md
+- [x] learn_web_development/getting_started/soft_skills/collaboration_and_teamwork/index.md
+- [x] learn_web_development/getting_started/soft_skills/finding_a_job/index.md
+- [x] learn_web_development/getting_started/soft_skills/research_and_learning/index.md
+- [x] learn_web_development/getting_started/soft_skills/workflows_and_processes/index.md
+- [x] learn_web_development/getting_started/web_standards/index.md
+- [x] learn_web_development/getting_started/web_standards/how_browsers_load_websites/index.md
+- [x] learn_web_development/getting_started/web_standards/how_the_web_works/index.md
+- [x] learn_web_development/getting_started/web_standards/the_web_standards_model/index.md
+- [x] learn_web_development/getting_started/your_first_website/index.md
+- [x] learn_web_development/getting_started/your_first_website/adding_interactivity/index.md
+- [x] learn_web_development/getting_started/your_first_website/creating_the_content/index.md
+- [x] learn_web_development/getting_started/your_first_website/publishing_your_website/index.md
+- [x] learn_web_development/getting_started/your_first_website/styling_the_content/index.md
+- [x] learn_web_development/getting_started/your_first_website/what_will_your_website_look_like/index.md
 
 ## Core (178 pages)
 
