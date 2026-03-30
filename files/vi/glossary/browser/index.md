@@ -5,7 +5,7 @@ page-type: glossary-definition
 sidebar: glossarysidebar
 ---
 
-**Trình duyệt web** hay **trình duyệt** là một chương trình truy xuất và hiển thị các trang từ {{Glossary("World Wide Web", "web")}}, đồng thời cho phép người dùng truy cập các trang khác thông qua {{Glossary("hyperlink", "liên kết")}}.  Trình duyệt là loại {{Glossary("user agent")}} quen thuộc nhất. Nó sử dụng {{Glossary("Engine/Rendering", "công cụ kết xuất")}} để hiển thị các trang web.
+**Trình duyệt web** hay **trình duyệt** là một chương trình truy xuất và hiển thị các trang từ {{Glossary("World Wide Web", "web")}}, đồng thời cho phép người dùng truy cập các trang khác thông qua {{Glossary("hyperlink", "liên kết")}}. Trình duyệt là loại {{Glossary("user agent")}} quen thuộc nhất. Nó sử dụng {{Glossary("Engine/Rendering", "công cụ kết xuất")}} để hiển thị các trang web.
 
 Các trình duyệt phổ biến bao gồm:
 
