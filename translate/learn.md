@@ -240,99 +240,99 @@ This section is beginner-friendly and high-impact. Translating it helps Vietname
 
 - [x] learn_web_development/core/version_control/index.md
 
-## Extensions (120 pages)
+## Extensions (120 pages) — DONE
 
 ### extensions/index (1 page)
 
-- [ ] learn_web_development/extensions/index.md
+- [x] learn_web_development/extensions/index.md
 
 ### Advanced JavaScript objects (8 pages)
 
-- [ ] learn_web_development/extensions/advanced_javascript_objects/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/object_prototypes/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/object-oriented_programming/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/classes_in_javascript/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/object_building_practice/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/adding_bouncing_balls_features/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/test_your_skills/index.md
-- [ ] learn_web_development/extensions/advanced_javascript_objects/test_your_skills/object-oriented_javascript/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/object_prototypes/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/object-oriented_programming/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/classes_in_javascript/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/object_building_practice/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/adding_bouncing_balls_features/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/test_your_skills/index.md
+- [x] learn_web_development/extensions/advanced_javascript_objects/test_your_skills/object-oriented_javascript/index.md
 
 ### Asynchronous JavaScript (6 pages)
 
-- [ ] learn_web_development/extensions/async_js/index.md
-- [ ] learn_web_development/extensions/async_js/introducing/index.md
-- [ ] learn_web_development/extensions/async_js/promises/index.md
-- [ ] learn_web_development/extensions/async_js/implementing_a_promise-based_api/index.md
-- [ ] learn_web_development/extensions/async_js/introducing_workers/index.md
-- [ ] learn_web_development/extensions/async_js/sequencing_animations/index.md
+- [x] learn_web_development/extensions/async_js/index.md
+- [x] learn_web_development/extensions/async_js/introducing/index.md
+- [x] learn_web_development/extensions/async_js/promises/index.md
+- [x] learn_web_development/extensions/async_js/implementing_a_promise-based_api/index.md
+- [x] learn_web_development/extensions/async_js/introducing_workers/index.md
+- [x] learn_web_development/extensions/async_js/sequencing_animations/index.md
 
 ### Client-side web APIs (6 pages)
 
-- [ ] learn_web_development/extensions/client-side_apis/index.md
-- [ ] learn_web_development/extensions/client-side_apis/introduction/index.md
-- [ ] learn_web_development/extensions/client-side_apis/video_and_audio_apis/index.md
-- [ ] learn_web_development/extensions/client-side_apis/drawing_graphics/index.md
-- [ ] learn_web_development/extensions/client-side_apis/client-side_storage/index.md
-- [ ] learn_web_development/extensions/client-side_apis/third_party_apis/index.md
+- [x] learn_web_development/extensions/client-side_apis/index.md
+- [x] learn_web_development/extensions/client-side_apis/introduction/index.md
+- [x] learn_web_development/extensions/client-side_apis/video_and_audio_apis/index.md
+- [x] learn_web_development/extensions/client-side_apis/drawing_graphics/index.md
+- [x] learn_web_development/extensions/client-side_apis/client-side_storage/index.md
+- [x] learn_web_development/extensions/client-side_apis/third_party_apis/index.md
 
 ### Client-side tools (5 pages)
 
-- [ ] learn_web_development/extensions/client-side_tools/index.md
-- [ ] learn_web_development/extensions/client-side_tools/overview/index.md
-- [ ] learn_web_development/extensions/client-side_tools/package_management/index.md
-- [ ] learn_web_development/extensions/client-side_tools/introducing_complete_toolchain/index.md
-- [ ] learn_web_development/extensions/client-side_tools/deployment/index.md
+- [x] learn_web_development/extensions/client-side_tools/index.md
+- [x] learn_web_development/extensions/client-side_tools/overview/index.md
+- [x] learn_web_development/extensions/client-side_tools/package_management/index.md
+- [x] learn_web_development/extensions/client-side_tools/introducing_complete_toolchain/index.md
+- [x] learn_web_development/extensions/client-side_tools/deployment/index.md
 
 ### Web forms (23 pages)
 
-- [ ] learn_web_development/extensions/forms/index.md
-- [ ] learn_web_development/extensions/forms/your_first_form/index.md
-- [ ] learn_web_development/extensions/forms/how_to_structure_a_web_form/index.md
-- [ ] learn_web_development/extensions/forms/how_to_structure_a_web_form/example/index.md
-- [ ] learn_web_development/extensions/forms/basic_native_form_controls/index.md
-- [ ] learn_web_development/extensions/forms/html5_input_types/index.md
-- [ ] learn_web_development/extensions/forms/other_form_controls/index.md
-- [ ] learn_web_development/extensions/forms/styling_web_forms/index.md
-- [ ] learn_web_development/extensions/forms/advanced_form_styling/index.md
-- [ ] learn_web_development/extensions/forms/ui_pseudo-classes/index.md
-- [ ] learn_web_development/extensions/forms/form_validation/index.md
-- [ ] learn_web_development/extensions/forms/sending_and_retrieving_form_data/index.md
-- [ ] learn_web_development/extensions/forms/sending_forms_through_javascript/index.md
-- [ ] learn_web_development/extensions/forms/how_to_build_custom_form_controls/index.md
-- [ ] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_1/index.md
-- [ ] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_2/index.md
-- [ ] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_3/index.md
-- [ ] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_4/index.md
-- [ ] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_5/index.md
-- [ ] learn_web_development/extensions/forms/html_forms_in_legacy_browsers/index.md
-- [ ] learn_web_development/extensions/forms/user_input_methods/index.md
-- [ ] learn_web_development/extensions/forms/customizable_select/index.md
-- [ ] learn_web_development/extensions/forms/customizable_select_listboxes/index.md
+- [x] learn_web_development/extensions/forms/index.md
+- [x] learn_web_development/extensions/forms/your_first_form/index.md
+- [x] learn_web_development/extensions/forms/how_to_structure_a_web_form/index.md
+- [x] learn_web_development/extensions/forms/how_to_structure_a_web_form/example/index.md
+- [x] learn_web_development/extensions/forms/basic_native_form_controls/index.md
+- [x] learn_web_development/extensions/forms/html5_input_types/index.md
+- [x] learn_web_development/extensions/forms/other_form_controls/index.md
+- [x] learn_web_development/extensions/forms/styling_web_forms/index.md
+- [x] learn_web_development/extensions/forms/advanced_form_styling/index.md
+- [x] learn_web_development/extensions/forms/ui_pseudo-classes/index.md
+- [x] learn_web_development/extensions/forms/form_validation/index.md
+- [x] learn_web_development/extensions/forms/sending_and_retrieving_form_data/index.md
+- [x] learn_web_development/extensions/forms/sending_forms_through_javascript/index.md
+- [x] learn_web_development/extensions/forms/how_to_build_custom_form_controls/index.md
+- [x] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_1/index.md
+- [x] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_2/index.md
+- [x] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_3/index.md
+- [x] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_4/index.md
+- [x] learn_web_development/extensions/forms/how_to_build_custom_form_controls/example_5/index.md
+- [x] learn_web_development/extensions/forms/html_forms_in_legacy_browsers/index.md
+- [x] learn_web_development/extensions/forms/user_input_methods/index.md
+- [x] learn_web_development/extensions/forms/customizable_select/index.md
+- [x] learn_web_development/extensions/forms/customizable_select_listboxes/index.md
 
 ### Web performance (12 pages)
 
-- [ ] learn_web_development/extensions/performance/index.md
-- [ ] learn_web_development/extensions/performance/what_is_web_performance/index.md
-- [ ] learn_web_development/extensions/performance/why_web_performance/index.md
-- [ ] learn_web_development/extensions/performance/perceived_performance/index.md
-- [ ] learn_web_development/extensions/performance/measuring_performance/index.md
-- [ ] learn_web_development/extensions/performance/multimedia/index.md
-- [ ] learn_web_development/extensions/performance/video/index.md
-- [ ] learn_web_development/extensions/performance/javascript/index.md
-- [ ] learn_web_development/extensions/performance/html/index.md
-- [ ] learn_web_development/extensions/performance/css/index.md
-- [ ] learn_web_development/extensions/performance/best_practices/index.md
-- [ ] learn_web_development/extensions/performance/business_case_for_performance/index.md
+- [x] learn_web_development/extensions/performance/index.md
+- [x] learn_web_development/extensions/performance/what_is_web_performance/index.md
+- [x] learn_web_development/extensions/performance/why_web_performance/index.md
+- [x] learn_web_development/extensions/performance/perceived_performance/index.md
+- [x] learn_web_development/extensions/performance/measuring_performance/index.md
+- [x] learn_web_development/extensions/performance/multimedia/index.md
+- [x] learn_web_development/extensions/performance/video/index.md
+- [x] learn_web_development/extensions/performance/javascript/index.md
+- [x] learn_web_development/extensions/performance/html/index.md
+- [x] learn_web_development/extensions/performance/css/index.md
+- [x] learn_web_development/extensions/performance/best_practices/index.md
+- [x] learn_web_development/extensions/performance/business_case_for_performance/index.md
 
 ### Cross-browser testing (7 pages)
 
-- [ ] learn_web_development/extensions/testing/index.md
-- [ ] learn_web_development/extensions/testing/introduction/index.md
-- [ ] learn_web_development/extensions/testing/testing_strategies/index.md
-- [ ] learn_web_development/extensions/testing/html_and_css/index.md
-- [ ] learn_web_development/extensions/testing/feature_detection/index.md
-- [ ] learn_web_development/extensions/testing/automated_testing/index.md
-- [ ] learn_web_development/extensions/testing/your_own_automation_environment/index.md
+- [x] learn_web_development/extensions/testing/index.md
+- [x] learn_web_development/extensions/testing/introduction/index.md
+- [x] learn_web_development/extensions/testing/testing_strategies/index.md
+- [x] learn_web_development/extensions/testing/html_and_css/index.md
+- [x] learn_web_development/extensions/testing/feature_detection/index.md
+- [x] learn_web_development/extensions/testing/automated_testing/index.md
+- [x] learn_web_development/extensions/testing/your_own_automation_environment/index.md
 
 ### Server-side website programming (52 pages) — DONE
 
@@ -400,24 +400,73 @@ This section is beginner-friendly and high-impact. Translating it helps Vietname
 - [x] learn_web_development/extensions/server-side/express_nodejs/forms/update_book_form/index.md
 - [x] learn_web_development/extensions/server-side/express_nodejs/deployment/index.md
 
-## How to (38 pages)
+## How to (38 pages) — DONE
 
-- [ ] learn_web_development/howto/index.md
-- [ ] learn_web_development/howto/solve_html_problems/index.md
-- [ ] learn_web_development/howto/solve_css_problems/index.md
-- [ ] learn_web_development/howto/solve_javascript_problems/index.md
-- [ ] learn_web_development/howto/tools_and_setup/index.md
-- [ ] learn_web_development/howto/web_mechanics/index.md
-- [ ] _(remaining howto/\* pages)_
+- [x] learn_web_development/howto/index.md
 
-## About (1 page)
+### Solve HTML problems (1 page)
 
-- [ ] learn_web_development/about/index.md
+- [x] learn_web_development/howto/solve_html_problems/index.md
 
-## For educators (1 page)
+### Solve CSS problems (13 pages)
 
-- [ ] learn_web_development/educators/index.md
+- [x] learn_web_development/howto/solve_css_problems/index.md
+- [x] learn_web_development/howto/solve_css_problems/add_a_shadow/index.md
+- [x] learn_web_development/howto/solve_css_problems/add_a_text_shadow/index.md
+- [x] learn_web_development/howto/solve_css_problems/center_an_item/index.md
+- [x] learn_web_development/howto/solve_css_problems/create_fancy_boxes/index.md
+- [x] learn_web_development/howto/solve_css_problems/css_faq/index.md
+- [x] learn_web_development/howto/solve_css_problems/fill_a_box_with_an_image/index.md
+- [x] learn_web_development/howto/solve_css_problems/generated_content/index.md
+- [x] learn_web_development/howto/solve_css_problems/highlight_first_line/index.md
+- [x] learn_web_development/howto/solve_css_problems/highlight_first_para/index.md
+- [x] learn_web_development/howto/solve_css_problems/highlight_para_after_h1/index.md
+- [x] learn_web_development/howto/solve_css_problems/make_box_transparent/index.md
+- [x] learn_web_development/howto/solve_css_problems/transition_button/index.md
 
-## Changelog (1 page)
+### Solve JavaScript problems (1 page)
 
-- [ ] learn_web_development/changelog/index.md
+- [x] learn_web_development/howto/solve_javascript_problems/index.md
+
+### Tools and setup (9 pages)
+
+- [x] learn_web_development/howto/tools_and_setup/index.md
+- [x] learn_web_development/howto/tools_and_setup/available_text_editors/index.md
+- [x] learn_web_development/howto/tools_and_setup/checking_that_your_web_site_is_working_properly/index.md
+- [x] learn_web_development/howto/tools_and_setup/how_much_does_it_cost/index.md
+- [x] learn_web_development/howto/tools_and_setup/set_up_a_local_testing_server/index.md
+- [x] learn_web_development/howto/tools_and_setup/upload_files_to_a_web_server/index.md
+- [x] learn_web_development/howto/tools_and_setup/using_github_pages/index.md
+- [x] learn_web_development/howto/tools_and_setup/what_are_browser_developer_tools/index.md
+- [x] learn_web_development/howto/tools_and_setup/what_software_do_i_need/index.md
+
+### Web mechanics (7 pages)
+
+- [x] learn_web_development/howto/web_mechanics/index.md
+- [x] learn_web_development/howto/web_mechanics/file_browser_bugs/index.md
+- [x] learn_web_development/howto/web_mechanics/how_does_the_internet_work/index.md
+- [x] learn_web_development/howto/web_mechanics/what_are_hyperlinks/index.md
+- [x] learn_web_development/howto/web_mechanics/what_is_a_domain_name/index.md
+- [x] learn_web_development/howto/web_mechanics/what_is_a_url/index.md
+- [x] learn_web_development/howto/web_mechanics/what_is_a_web_server/index.md
+
+### Design and accessibility (6 pages)
+
+- [x] learn_web_development/howto/design_and_accessibility/index.md
+- [x] learn_web_development/howto/design_and_accessibility/common_web_layouts/index.md
+- [x] learn_web_development/howto/design_and_accessibility/design_for_all_types_of_users/index.md
+- [x] learn_web_development/howto/design_and_accessibility/html_features_for_accessibility/index.md
+- [x] learn_web_development/howto/design_and_accessibility/thinking_before_coding/index.md
+- [x] learn_web_development/howto/design_and_accessibility/what_is_accessibility/index.md
+
+## About (1 page) — DONE
+
+- [x] learn_web_development/about/index.md
+
+## For educators (1 page) — DONE
+
+- [x] learn_web_development/educators/index.md
+
+## Changelog (1 page) — DONE
+
+- [x] learn_web_development/changelog/index.md
