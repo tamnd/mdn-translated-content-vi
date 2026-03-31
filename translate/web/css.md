@@ -5,7 +5,7 @@ Total: 1,226 pages
 
 ## Index
 
-- [ ] web/css/index.md
+- [x] web/css/index.md
 
 ## Guides (207 pages)
 
@@ -71,15 +71,15 @@ Total: 1,226 pages
 
 High-priority properties (translate first):
 
-- [ ] web/css/reference/properties/color
+- [x] web/css/reference/properties/color
 - [ ] web/css/reference/properties/background
-- [ ] web/css/reference/properties/background-color
+- [x] web/css/reference/properties/background-color
 - [ ] web/css/reference/properties/background-image
 - [ ] web/css/reference/properties/border
 - [ ] web/css/reference/properties/border-radius
 - [ ] web/css/reference/properties/box-shadow
-- [ ] web/css/reference/properties/display
-- [ ] web/css/reference/properties/position
+- [x] web/css/reference/properties/display
+- [x] web/css/reference/properties/position
 - [ ] web/css/reference/properties/top / right / bottom / left
 - [ ] web/css/reference/properties/flex
 - [ ] web/css/reference/properties/flex-direction
