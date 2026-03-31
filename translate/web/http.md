@@ -5,105 +5,387 @@ Total: 369 pages
 
 ## Index
 
-- [ ] web/http/index.md
+- [x] web/http/index.md
 
 ## Guides (48 pages)
 
-- [ ] web/http/guides/index.md
-- [ ] web/http/guides/basics_of_http
-- [ ] web/http/guides/caching
-- [ ] web/http/guides/connection_management
-- [ ] web/http/guides/content_negotiation
-- [ ] web/http/guides/cookies
-- [ ] web/http/guides/cors
-- [ ] web/http/guides/cross-origin_resource_policy
-- [ ] web/http/guides/data_urls
-- [ ] web/http/guides/evolution_of_http
-- [ ] web/http/guides/messages
-- [ ] web/http/guides/mime_types
-- [ ] web/http/guides/permissions_policy
-- [ ] web/http/guides/proxy_servers_and_tunneling
-- [ ] web/http/guides/range_requests
-- [ ] web/http/guides/redirections
-- [ ] web/http/guides/resources_and_uris
-- [ ] web/http/guides/security
-- [ ] web/http/guides/session
-- [ ] *(remaining guides)*
+- [x] web/http/guides/index.md
+- [x] web/http/guides/authentication
+- [x] web/http/guides/browser_detection_using_the_user_agent
+- [x] web/http/guides/caching
+- [x] web/http/guides/client_hints
+- [x] web/http/guides/compression
+- [x] web/http/guides/compression_dictionary_transport
+- [x] web/http/guides/conditional_requests
+- [x] web/http/guides/connection_management_in_http_1.x
+- [x] web/http/guides/content_negotiation
+- [x] web/http/guides/content_negotiation/list_of_default_accept_values
+- [x] web/http/guides/cookies
+- [x] web/http/guides/cors
+- [x] web/http/guides/cors/errors/index.md
+- [x] web/http/guides/cors/errors/corsalloworiginnotmatchingorigin
+- [x] web/http/guides/cors/errors/corsdidnotsucceed
+- [x] web/http/guides/cors/errors/corsdisabled
+- [x] web/http/guides/cors/errors/corsexternalredirectnotallowed
+- [x] web/http/guides/cors/errors/corsinvalidallowheader
+- [x] web/http/guides/cors/errors/corsinvalidallowmethod
+- [x] web/http/guides/cors/errors/corsmethodnotfound
+- [x] web/http/guides/cors/errors/corsmissingallowcredentials
+- [x] web/http/guides/cors/errors/corsmissingallowheaderfrompreflight
+- [x] web/http/guides/cors/errors/corsmissingalloworigin
+- [x] web/http/guides/cors/errors/corsmultiplealloworiginnotallowed
+- [x] web/http/guides/cors/errors/corsnotsupportingcredentials
+- [x] web/http/guides/cors/errors/corsoriginheadernotadded
+- [x] web/http/guides/cors/errors/corspreflightdidnotsucceed
+- [x] web/http/guides/cors/errors/corsrequestnothttp
+- [x] web/http/guides/csp
+- [x] web/http/guides/csp/errors/index.md
+- [x] web/http/guides/csp/errors/cspviolation
+- [x] web/http/guides/cross-origin_resource_policy
+- [x] web/http/guides/evolution_of_http
+- [x] web/http/guides/iframe_credentialless
+- [x] web/http/guides/messages
+- [x] web/http/guides/mime_types
+- [x] web/http/guides/mime_types/common_types
+- [x] web/http/guides/network_error_logging
+- [x] web/http/guides/overview
+- [x] web/http/guides/permissions_policy
+- [x] web/http/guides/protocol_upgrade_mechanism
+- [x] web/http/guides/proxy_servers_and_tunneling
+- [x] web/http/guides/proxy_servers_and_tunneling/proxy_auto-configuration_pac_file
+- [x] web/http/guides/range_requests
+- [x] web/http/guides/redirections
+- [x] web/http/guides/session
+- [x] web/http/guides/user-agent_reduction
 
 ## Reference -- Headers (246 pages)
 
-High-priority headers:
-
-- [ ] web/http/reference/headers/index.md
-- [ ] web/http/reference/headers/accept
-- [ ] web/http/reference/headers/accept-encoding
-- [ ] web/http/reference/headers/accept-language
-- [ ] web/http/reference/headers/authorization
-- [ ] web/http/reference/headers/cache-control
-- [ ] web/http/reference/headers/content-encoding
-- [ ] web/http/reference/headers/content-length
-- [ ] web/http/reference/headers/content-security-policy
-- [ ] web/http/reference/headers/content-type
-- [ ] web/http/reference/headers/cookie
-- [ ] web/http/reference/headers/cors -- access-control-*
-- [ ] web/http/reference/headers/etag
-- [ ] web/http/reference/headers/host
-- [ ] web/http/reference/headers/if-modified-since
-- [ ] web/http/reference/headers/if-none-match
-- [ ] web/http/reference/headers/last-modified
-- [ ] web/http/reference/headers/location
-- [ ] web/http/reference/headers/origin
-- [ ] web/http/reference/headers/referer
-- [ ] web/http/reference/headers/set-cookie
-- [ ] web/http/reference/headers/strict-transport-security
-- [ ] web/http/reference/headers/transfer-encoding
-- [ ] web/http/reference/headers/user-agent
-- [ ] web/http/reference/headers/vary
-- [ ] web/http/reference/headers/www-authenticate
-- [ ] web/http/reference/headers/x-content-type-options
-- [ ] web/http/reference/headers/x-frame-options
-- [ ] *(remaining headers A-Z)*
+- [x] web/http/reference/headers/index.md
+- [x] web/http/reference/headers/accept
+- [x] web/http/reference/headers/accept-ch
+- [x] web/http/reference/headers/accept-encoding
+- [x] web/http/reference/headers/accept-language
+- [x] web/http/reference/headers/accept-patch
+- [x] web/http/reference/headers/accept-post
+- [x] web/http/reference/headers/accept-ranges
+- [x] web/http/reference/headers/access-control-allow-credentials
+- [x] web/http/reference/headers/access-control-allow-headers
+- [x] web/http/reference/headers/access-control-allow-methods
+- [x] web/http/reference/headers/access-control-allow-origin
+- [x] web/http/reference/headers/access-control-expose-headers
+- [x] web/http/reference/headers/access-control-max-age
+- [x] web/http/reference/headers/access-control-request-headers
+- [x] web/http/reference/headers/access-control-request-method
+- [x] web/http/reference/headers/activate-storage-access
+- [x] web/http/reference/headers/age
+- [x] web/http/reference/headers/allow
+- [x] web/http/reference/headers/alt-svc
+- [x] web/http/reference/headers/alt-used
+- [x] web/http/reference/headers/attribution-reporting-eligible
+- [x] web/http/reference/headers/attribution-reporting-register-source
+- [x] web/http/reference/headers/attribution-reporting-register-trigger
+- [x] web/http/reference/headers/authorization
+- [x] web/http/reference/headers/available-dictionary
+- [x] web/http/reference/headers/cache-control
+- [x] web/http/reference/headers/clear-site-data
+- [x] web/http/reference/headers/connection
+- [x] web/http/reference/headers/content-digest
+- [x] web/http/reference/headers/content-disposition
+- [x] web/http/reference/headers/content-dpr
+- [x] web/http/reference/headers/content-encoding
+- [x] web/http/reference/headers/content-language
+- [x] web/http/reference/headers/content-length
+- [x] web/http/reference/headers/content-location
+- [x] web/http/reference/headers/content-range
+- [x] web/http/reference/headers/content-security-policy
+- [x] web/http/reference/headers/content-security-policy/base-uri
+- [x] web/http/reference/headers/content-security-policy/block-all-mixed-content
+- [x] web/http/reference/headers/content-security-policy/child-src
+- [x] web/http/reference/headers/content-security-policy/connect-src
+- [x] web/http/reference/headers/content-security-policy/default-src
+- [x] web/http/reference/headers/content-security-policy/fenced-frame-src
+- [x] web/http/reference/headers/content-security-policy/font-src
+- [x] web/http/reference/headers/content-security-policy/form-action
+- [x] web/http/reference/headers/content-security-policy/frame-ancestors
+- [x] web/http/reference/headers/content-security-policy/frame-src
+- [x] web/http/reference/headers/content-security-policy/img-src
+- [x] web/http/reference/headers/content-security-policy/manifest-src
+- [x] web/http/reference/headers/content-security-policy/media-src
+- [x] web/http/reference/headers/content-security-policy/object-src
+- [x] web/http/reference/headers/content-security-policy/prefetch-src
+- [x] web/http/reference/headers/content-security-policy/report-to
+- [x] web/http/reference/headers/content-security-policy/report-uri
+- [x] web/http/reference/headers/content-security-policy/require-trusted-types-for
+- [x] web/http/reference/headers/content-security-policy/sandbox
+- [x] web/http/reference/headers/content-security-policy/script-src
+- [x] web/http/reference/headers/content-security-policy/script-src-attr
+- [x] web/http/reference/headers/content-security-policy/script-src-elem
+- [x] web/http/reference/headers/content-security-policy/style-src
+- [x] web/http/reference/headers/content-security-policy/style-src-attr
+- [x] web/http/reference/headers/content-security-policy/style-src-elem
+- [x] web/http/reference/headers/content-security-policy/trusted-types
+- [x] web/http/reference/headers/content-security-policy/upgrade-insecure-requests
+- [x] web/http/reference/headers/content-security-policy/worker-src
+- [x] web/http/reference/headers/content-security-policy-report-only
+- [x] web/http/reference/headers/content-type
+- [x] web/http/reference/headers/cookie
+- [x] web/http/reference/headers/critical-ch
+- [x] web/http/reference/headers/cross-origin-embedder-policy
+- [x] web/http/reference/headers/cross-origin-embedder-policy-report-only
+- [x] web/http/reference/headers/cross-origin-opener-policy
+- [x] web/http/reference/headers/cross-origin-resource-policy
+- [x] web/http/reference/headers/date
+- [x] web/http/reference/headers/device-memory
+- [x] web/http/reference/headers/dictionary-id
+- [x] web/http/reference/headers/dnt
+- [x] web/http/reference/headers/downlink
+- [x] web/http/reference/headers/dpr
+- [x] web/http/reference/headers/early-data
+- [x] web/http/reference/headers/ect
+- [x] web/http/reference/headers/etag
+- [x] web/http/reference/headers/expect
+- [x] web/http/reference/headers/expect-ct
+- [x] web/http/reference/headers/expires
+- [x] web/http/reference/headers/forwarded
+- [x] web/http/reference/headers/from
+- [x] web/http/reference/headers/host
+- [x] web/http/reference/headers/idempotency-key
+- [x] web/http/reference/headers/if-match
+- [x] web/http/reference/headers/if-modified-since
+- [x] web/http/reference/headers/if-none-match
+- [x] web/http/reference/headers/if-range
+- [x] web/http/reference/headers/if-unmodified-since
+- [x] web/http/reference/headers/integrity-policy
+- [x] web/http/reference/headers/integrity-policy-report-only
+- [x] web/http/reference/headers/keep-alive
+- [x] web/http/reference/headers/last-modified
+- [x] web/http/reference/headers/link
+- [x] web/http/reference/headers/location
+- [x] web/http/reference/headers/max-forwards
+- [x] web/http/reference/headers/nel
+- [x] web/http/reference/headers/no-vary-search
+- [x] web/http/reference/headers/observe-browsing-topics
+- [x] web/http/reference/headers/origin
+- [x] web/http/reference/headers/origin-agent-cluster
+- [x] web/http/reference/headers/permissions-policy
+- [x] web/http/reference/headers/permissions-policy/accelerometer
+- [x] web/http/reference/headers/permissions-policy/ambient-light-sensor
+- [x] web/http/reference/headers/permissions-policy/aria-notify
+- [x] web/http/reference/headers/permissions-policy/attribution-reporting
+- [x] web/http/reference/headers/permissions-policy/autoplay
+- [x] web/http/reference/headers/permissions-policy/bluetooth
+- [x] web/http/reference/headers/permissions-policy/browsing-topics
+- [x] web/http/reference/headers/permissions-policy/camera
+- [x] web/http/reference/headers/permissions-policy/captured-surface-control
+- [x] web/http/reference/headers/permissions-policy/ch-ua-high-entropy-values
+- [x] web/http/reference/headers/permissions-policy/compute-pressure
+- [x] web/http/reference/headers/permissions-policy/cross-origin-isolated
+- [x] web/http/reference/headers/permissions-policy/deferred-fetch
+- [x] web/http/reference/headers/permissions-policy/deferred-fetch-minimal
+- [x] web/http/reference/headers/permissions-policy/display-capture
+- [x] web/http/reference/headers/permissions-policy/encrypted-media
+- [x] web/http/reference/headers/permissions-policy/fullscreen
+- [x] web/http/reference/headers/permissions-policy/gamepad
+- [x] web/http/reference/headers/permissions-policy/geolocation
+- [x] web/http/reference/headers/permissions-policy/gyroscope
+- [x] web/http/reference/headers/permissions-policy/hid
+- [x] web/http/reference/headers/permissions-policy/identity-credentials-get
+- [x] web/http/reference/headers/permissions-policy/idle-detection
+- [x] web/http/reference/headers/permissions-policy/language-detector
+- [x] web/http/reference/headers/permissions-policy/local-fonts
+- [x] web/http/reference/headers/permissions-policy/magnetometer
+- [x] web/http/reference/headers/permissions-policy/microphone
+- [x] web/http/reference/headers/permissions-policy/midi
+- [x] web/http/reference/headers/permissions-policy/on-device-speech-recognition
+- [x] web/http/reference/headers/permissions-policy/otp-credentials
+- [x] web/http/reference/headers/permissions-policy/payment
+- [x] web/http/reference/headers/permissions-policy/picture-in-picture
+- [x] web/http/reference/headers/permissions-policy/private-state-token-issuance
+- [x] web/http/reference/headers/permissions-policy/private-state-token-redemption
+- [x] web/http/reference/headers/permissions-policy/publickey-credentials-create
+- [x] web/http/reference/headers/permissions-policy/publickey-credentials-get
+- [x] web/http/reference/headers/permissions-policy/screen-wake-lock
+- [x] web/http/reference/headers/permissions-policy/serial
+- [x] web/http/reference/headers/permissions-policy/speaker-selection
+- [x] web/http/reference/headers/permissions-policy/storage-access
+- [x] web/http/reference/headers/permissions-policy/summarizer
+- [x] web/http/reference/headers/permissions-policy/translator
+- [x] web/http/reference/headers/permissions-policy/usb
+- [x] web/http/reference/headers/permissions-policy/web-share
+- [x] web/http/reference/headers/permissions-policy/window-management
+- [x] web/http/reference/headers/permissions-policy/xr-spatial-tracking
+- [x] web/http/reference/headers/pragma
+- [x] web/http/reference/headers/prefer
+- [x] web/http/reference/headers/preference-applied
+- [x] web/http/reference/headers/priority
+- [x] web/http/reference/headers/proxy-authenticate
+- [x] web/http/reference/headers/proxy-authorization
+- [x] web/http/reference/headers/range
+- [x] web/http/reference/headers/referer
+- [x] web/http/reference/headers/referrer-policy
+- [x] web/http/reference/headers/refresh
+- [x] web/http/reference/headers/report-to
+- [x] web/http/reference/headers/reporting-endpoints
+- [x] web/http/reference/headers/repr-digest
+- [x] web/http/reference/headers/retry-after
+- [x] web/http/reference/headers/rtt
+- [x] web/http/reference/headers/save-data
+- [x] web/http/reference/headers/sec-browsing-topics
+- [x] web/http/reference/headers/sec-ch-device-memory
+- [x] web/http/reference/headers/sec-ch-dpr
+- [x] web/http/reference/headers/sec-ch-prefers-color-scheme
+- [x] web/http/reference/headers/sec-ch-prefers-reduced-motion
+- [x] web/http/reference/headers/sec-ch-prefers-reduced-transparency
+- [x] web/http/reference/headers/sec-ch-ua
+- [x] web/http/reference/headers/sec-ch-ua-arch
+- [x] web/http/reference/headers/sec-ch-ua-bitness
+- [x] web/http/reference/headers/sec-ch-ua-form-factors
+- [x] web/http/reference/headers/sec-ch-ua-full-version
+- [x] web/http/reference/headers/sec-ch-ua-full-version-list
+- [x] web/http/reference/headers/sec-ch-ua-mobile
+- [x] web/http/reference/headers/sec-ch-ua-model
+- [x] web/http/reference/headers/sec-ch-ua-platform
+- [x] web/http/reference/headers/sec-ch-ua-platform-version
+- [x] web/http/reference/headers/sec-ch-ua-wow64
+- [x] web/http/reference/headers/sec-ch-viewport-height
+- [x] web/http/reference/headers/sec-ch-viewport-width
+- [x] web/http/reference/headers/sec-ch-width
+- [x] web/http/reference/headers/sec-fetch-dest
+- [x] web/http/reference/headers/sec-fetch-mode
+- [x] web/http/reference/headers/sec-fetch-site
+- [x] web/http/reference/headers/sec-fetch-storage-access
+- [x] web/http/reference/headers/sec-fetch-user
+- [x] web/http/reference/headers/sec-gpc
+- [x] web/http/reference/headers/sec-private-state-token
+- [x] web/http/reference/headers/sec-private-state-token-crypto-version
+- [x] web/http/reference/headers/sec-private-state-token-lifetime
+- [x] web/http/reference/headers/sec-purpose
+- [x] web/http/reference/headers/sec-redemption-record
+- [x] web/http/reference/headers/sec-speculation-tags
+- [x] web/http/reference/headers/sec-websocket-accept
+- [x] web/http/reference/headers/sec-websocket-extensions
+- [x] web/http/reference/headers/sec-websocket-key
+- [x] web/http/reference/headers/sec-websocket-protocol
+- [x] web/http/reference/headers/sec-websocket-version
+- [x] web/http/reference/headers/server
+- [x] web/http/reference/headers/server-timing
+- [x] web/http/reference/headers/service-worker
+- [x] web/http/reference/headers/service-worker-allowed
+- [x] web/http/reference/headers/service-worker-navigation-preload
+- [x] web/http/reference/headers/set-cookie
+- [x] web/http/reference/headers/set-login
+- [x] web/http/reference/headers/sourcemap
+- [x] web/http/reference/headers/speculation-rules
+- [x] web/http/reference/headers/strict-transport-security
+- [x] web/http/reference/headers/supports-loading-mode
+- [x] web/http/reference/headers/te
+- [x] web/http/reference/headers/timing-allow-origin
+- [x] web/http/reference/headers/tk
+- [x] web/http/reference/headers/trailer
+- [x] web/http/reference/headers/transfer-encoding
+- [x] web/http/reference/headers/upgrade
+- [x] web/http/reference/headers/upgrade-insecure-requests
+- [x] web/http/reference/headers/use-as-dictionary
+- [x] web/http/reference/headers/user-agent
+- [x] web/http/reference/headers/user-agent/firefox
+- [x] web/http/reference/headers/vary
+- [x] web/http/reference/headers/via
+- [x] web/http/reference/headers/viewport-width
+- [x] web/http/reference/headers/want-content-digest
+- [x] web/http/reference/headers/want-repr-digest
+- [x] web/http/reference/headers/warning
+- [x] web/http/reference/headers/width
+- [x] web/http/reference/headers/www-authenticate
+- [x] web/http/reference/headers/x-content-type-options
+- [x] web/http/reference/headers/x-dns-prefetch-control
+- [x] web/http/reference/headers/x-forwarded-for
+- [x] web/http/reference/headers/x-forwarded-host
+- [x] web/http/reference/headers/x-forwarded-proto
+- [x] web/http/reference/headers/x-frame-options
+- [x] web/http/reference/headers/x-permitted-cross-domain-policies
+- [x] web/http/reference/headers/x-powered-by
+- [x] web/http/reference/headers/x-robots-tag
+- [x] web/http/reference/headers/x-xss-protection
 
 ## Reference -- Methods (10 pages)
 
-- [ ] web/http/reference/methods/index.md
-- [ ] web/http/reference/methods/get
-- [ ] web/http/reference/methods/post
-- [ ] web/http/reference/methods/put
-- [ ] web/http/reference/methods/delete
-- [ ] web/http/reference/methods/patch
-- [ ] web/http/reference/methods/head
-- [ ] web/http/reference/methods/options
-- [ ] web/http/reference/methods/connect
-- [ ] web/http/reference/methods/trace
+- [x] web/http/reference/methods/index.md
+- [x] web/http/reference/methods/connect
+- [x] web/http/reference/methods/delete
+- [x] web/http/reference/methods/get
+- [x] web/http/reference/methods/head
+- [x] web/http/reference/methods/options
+- [x] web/http/reference/methods/patch
+- [x] web/http/reference/methods/post
+- [x] web/http/reference/methods/put
+- [x] web/http/reference/methods/trace
 
 ## Reference -- Status codes (62 pages)
 
-- [ ] web/http/reference/status/index.md
-- [ ] web/http/reference/status/100 (Continue)
-- [ ] web/http/reference/status/200 (OK)
-- [ ] web/http/reference/status/201 (Created)
-- [ ] web/http/reference/status/204 (No Content)
-- [ ] web/http/reference/status/206 (Partial Content)
-- [ ] web/http/reference/status/301 (Moved Permanently)
-- [ ] web/http/reference/status/302 (Found)
-- [ ] web/http/reference/status/304 (Not Modified)
-- [ ] web/http/reference/status/307 (Temporary Redirect)
-- [ ] web/http/reference/status/308 (Permanent Redirect)
-- [ ] web/http/reference/status/400 (Bad Request)
-- [ ] web/http/reference/status/401 (Unauthorized)
-- [ ] web/http/reference/status/403 (Forbidden)
-- [ ] web/http/reference/status/404 (Not Found)
-- [ ] web/http/reference/status/405 (Method Not Allowed)
-- [ ] web/http/reference/status/408 (Request Timeout)
-- [ ] web/http/reference/status/409 (Conflict)
-- [ ] web/http/reference/status/410 (Gone)
-- [ ] web/http/reference/status/413 (Content Too Large)
-- [ ] web/http/reference/status/415 (Unsupported Media Type)
-- [ ] web/http/reference/status/422 (Unprocessable Content)
-- [ ] web/http/reference/status/429 (Too Many Requests)
-- [ ] web/http/reference/status/500 (Internal Server Error)
-- [ ] web/http/reference/status/502 (Bad Gateway)
-- [ ] web/http/reference/status/503 (Service Unavailable)
-- [ ] web/http/reference/status/504 (Gateway Timeout)
-- [ ] *(remaining status codes)*
+- [x] web/http/reference/status/index.md
+- [x] web/http/reference/status/100
+- [x] web/http/reference/status/101
+- [x] web/http/reference/status/102
+- [x] web/http/reference/status/103
+- [x] web/http/reference/status/200
+- [x] web/http/reference/status/201
+- [x] web/http/reference/status/202
+- [x] web/http/reference/status/203
+- [x] web/http/reference/status/204
+- [x] web/http/reference/status/205
+- [x] web/http/reference/status/206
+- [x] web/http/reference/status/207
+- [x] web/http/reference/status/208
+- [x] web/http/reference/status/226
+- [x] web/http/reference/status/300
+- [x] web/http/reference/status/301
+- [x] web/http/reference/status/302
+- [x] web/http/reference/status/303
+- [x] web/http/reference/status/304
+- [x] web/http/reference/status/307
+- [x] web/http/reference/status/308
+- [x] web/http/reference/status/400
+- [x] web/http/reference/status/401
+- [x] web/http/reference/status/402
+- [x] web/http/reference/status/403
+- [x] web/http/reference/status/404
+- [x] web/http/reference/status/405
+- [x] web/http/reference/status/406
+- [x] web/http/reference/status/407
+- [x] web/http/reference/status/408
+- [x] web/http/reference/status/409
+- [x] web/http/reference/status/410
+- [x] web/http/reference/status/411
+- [x] web/http/reference/status/412
+- [x] web/http/reference/status/413
+- [x] web/http/reference/status/414
+- [x] web/http/reference/status/415
+- [x] web/http/reference/status/416
+- [x] web/http/reference/status/417
+- [x] web/http/reference/status/418
+- [x] web/http/reference/status/421
+- [x] web/http/reference/status/422
+- [x] web/http/reference/status/423
+- [x] web/http/reference/status/424
+- [x] web/http/reference/status/425
+- [x] web/http/reference/status/426
+- [x] web/http/reference/status/428
+- [x] web/http/reference/status/429
+- [x] web/http/reference/status/431
+- [x] web/http/reference/status/451
+- [x] web/http/reference/status/500
+- [x] web/http/reference/status/501
+- [x] web/http/reference/status/502
+- [x] web/http/reference/status/503
+- [x] web/http/reference/status/504
+- [x] web/http/reference/status/505
+- [x] web/http/reference/status/506
+- [x] web/http/reference/status/507
+- [x] web/http/reference/status/508
+- [x] web/http/reference/status/510
+- [x] web/http/reference/status/511
+
+## Reference -- Other (2 pages)
+
+- [x] web/http/reference/index.md
+- [x] web/http/reference/resources_and_specifications
