@@ -44,7 +44,7 @@ exports.author_detail = async (req, res, next) => {
 ```
 
 Cách tiếp cận này hoàn toàn giống như được mô tả cho [trang chi tiết Thể loại](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Displaying_data/Genre_detail_page).
-Hàm bộ điều khiển tuyến đường sử dụng `Promise.all()` để truy vấn `Author` được chỉ định và các phiên bản `Book` liên kết của họ song song.
+Hàm bộ điều khiển route sử dụng `Promise.all()` để truy vấn `Author` được chỉ định và các phiên bản `Book` liên kết của họ song song.
 Nếu không tìm thấy tác giả nào phù hợp, một đối tượng `Error` được gửi đến middleware xử lý lỗi Express.
 Nếu tác giả được tìm thấy thì thông tin cơ sở dữ liệu được truy xuất sẽ được hiển thị bằng template "author_detail".
 

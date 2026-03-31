@@ -16,7 +16,7 @@ Mở tệp **/controllers/bookinstanceController.js**, và thêm các dòng sau 
 const { body, validationResult } = require("express-validator");
 ```
 
-## Bộ điều khiển — tuyến đường GET
+## Bộ điều khiển — route GET
 
 Ở đầu tệp, yêu cầu module _Book_ (cần thiết vì mỗi `BookInstance` được liên kết với một `Book` cụ thể).
 
@@ -42,7 +42,7 @@ Bộ điều khiển lấy danh sách đã sắp xếp của tất cả sách (`
 Lưu ý rằng không có sách nào được chọn khi chúng ta hiển thị biểu mẫu này lần đầu, vì vậy chúng ta không truyền biến `selected_book` vào `render()`.
 Vì điều này, `selected_book` sẽ có giá trị `undefined` trong template.
 
-## Bộ điều khiển — tuyến đường POST
+## Bộ điều khiển — route POST
 
 Tìm phương thức bộ điều khiển `bookinstance_create_post()` đã được xuất và thay thế bằng đoạn mã sau.
 

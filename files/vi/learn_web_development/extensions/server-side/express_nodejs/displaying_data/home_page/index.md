@@ -7,16 +7,16 @@ sidebar: learnsidebar
 
 Trang đầu tiên chúng tôi sẽ tạo là trang chủ của trang web, có thể truy cập từ gốc trang web (`/`) hoặc catalog (`catalog/`). Trang này sẽ hiển thị một số văn bản tĩnh mô tả trang web, cùng với các "bộ đếm" được tính toán động về số lượng bản ghi khác nhau trong cơ sở dữ liệu.
 
-Chúng tôi đã tạo tuyến đường cho trang chủ. Để hoàn thiện trang, chúng ta cần cập nhật hàm bộ điều khiển để lấy các "bộ đếm" bản ghi từ cơ sở dữ liệu và tạo view (mẫu) mà chúng ta có thể sử dụng để render trang.
+Chúng tôi đã tạo route cho trang chủ. Để hoàn thiện trang, chúng ta cần cập nhật hàm bộ điều khiển để lấy các "bộ đếm" bản ghi từ cơ sở dữ liệu và tạo view (mẫu) mà chúng ta có thể sử dụng để render trang.
 
 > [!NOTE]
 > Chúng tôi sẽ sử dụng Mongoose để lấy thông tin cơ sở dữ liệu.
 > Trước khi tiếp tục, bạn có thể muốn đọc lại phần [nhập môn Mongoose](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose#mongoose_primer) về [tìm kiếm bản ghi](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose#searching_for_records).
 
-## Tuyến đường
+## Route
 
-Chúng tôi đã tạo các tuyến đường trang index trong [hướng dẫn trước](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes).
-Để nhắc lại, tất cả các hàm tuyến đường được định nghĩa trong **/routes/catalog.js**:
+Chúng tôi đã tạo các route trang index trong [hướng dẫn trước](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes).
+Để nhắc lại, tất cả các hàm route được định nghĩa trong **/routes/catalog.js**:
 
 ```js
 // GET catalog home page.
@@ -90,7 +90,7 @@ Truy vấn có thể được thực thi bằng cách gọi [`exec()`](https://m
 
 Vì các truy vấn đếm tài liệu độc lập với nhau nên chúng tôi sử dụng [`Promise.all()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) để chạy chúng song song.
 Phương thức trả về một promise mới mà chúng tôi [`await`](/en-US/docs/Web/JavaScript/Reference/Operators/await) để hoàn thành (thực thi tạm dừng trong _hàm này_ tại `await`).
-Khi tất cả các truy vấn hoàn thành, promise được trả về bởi `all()` được thực hiện, tiếp tục thực thi hàm xử lý tuyến đường và điền vào mảng với kết quả của các truy vấn cơ sở dữ liệu.
+Khi tất cả các truy vấn hoàn thành, promise được trả về bởi `all()` được thực hiện, tiếp tục thực thi hàm xử lý route và điền vào mảng với kết quả của các truy vấn cơ sở dữ liệu.
 
 Sau đó, chúng tôi gọi [`res.render()`](https://expressjs.com/en/5x/api.html#res.render), chỉ định view (mẫu) có tên '**index**' và các đối tượng ánh xạ kết quả của truy vấn cơ sở dữ liệu đến mẫu view.
 Dữ liệu được cung cấp dưới dạng cặp khóa-giá trị và có thể được truy cập trong mẫu bằng khóa.
@@ -128,7 +128,7 @@ block content
 View này rất đơn giản. Chúng tôi mở rộng mẫu cơ sở **layout.pug**, ghi đè `block` có tên '**content**'. Tiêu đề `h1` đầu tiên sẽ là văn bản đã được escape cho biến `title` được truyền vào hàm `render()`—lưu ý cách sử dụng `h1=` để văn bản tiếp theo được xử lý như biểu thức JavaScript. Sau đó chúng tôi bao gồm một đoạn giới thiệu về LocalLibrary.
 
 Dưới tiêu đề _Dynamic content_, chúng tôi liệt kê số lượng bản sao của mỗi mô hình.
-Lưu ý rằng các giá trị mẫu cho dữ liệu là các khóa được chỉ định khi `render()` được gọi trong hàm xử lý tuyến đường.
+Lưu ý rằng các giá trị mẫu cho dữ liệu là các khóa được chỉ định khi `render()` được gọi trong hàm xử lý route.
 
 > [!NOTE]
 > Chúng tôi không escape các giá trị đếm (tức là chúng tôi đã sử dụng cú pháp `!{}`) vì các giá trị đếm được tính toán. Nếu thông tin được cung cấp bởi người dùng cuối thì chúng tôi sẽ escape biến để hiển thị.

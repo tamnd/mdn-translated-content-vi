@@ -39,7 +39,7 @@ exports.book_detail = async (req, res, next) => {
 > Chúng ta không cần yêu cầu thêm bất kỳ module nào trong bước này, vì chúng ta đã import các phụ thuộc khi triển khai bộ điều khiển trang chủ.
 
 Cách tiếp cận này hoàn toàn giống như được mô tả cho [trang chi tiết Thể loại](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Displaying_data/Genre_detail_page).
-Hàm bộ điều khiển tuyến đường sử dụng `Promise.all()` để truy vấn `Book` được chỉ định và các bản sao liên kết (`BookInstance`) song song.
+Hàm bộ điều khiển route sử dụng `Promise.all()` để truy vấn `Book` được chỉ định và các bản sao liên kết (`BookInstance`) song song.
 Nếu không tìm thấy sách nào phù hợp, một đối tượng `Error` được trả về với lỗi "404: Not Found".
 Nếu sách được tìm thấy, thì thông tin cơ sở dữ liệu được truy xuất sẽ được hiển thị bằng template "book_detail".
 Vì khóa 'title' được sử dụng để đặt tên cho trang web (như được định nghĩa trong header của 'layout.pug'), lần này chúng ta đang truyền `results.book.title` khi hiển thị trang web.

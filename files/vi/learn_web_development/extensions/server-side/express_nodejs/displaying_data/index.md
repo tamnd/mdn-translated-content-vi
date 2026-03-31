@@ -15,7 +15,7 @@ Bây giờ chúng tôi đã sẵn sàng thêm các trang hiển thị sách tran
     <tr>
       <th scope="row">Điều kiện tiên quyết:</th>
       <td>
-        Hoàn thành các chủ đề hướng dẫn trước (bao gồm <a href="/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes">Hướng dẫn Express Phần 4: Tuyến đường và bộ điều khiển</a>).
+        Hoàn thành các chủ đề hướng dẫn trước (bao gồm <a href="/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes">Hướng dẫn Express Phần 4: Route và bộ điều khiển</a>).
       </td>
     </tr>
     <tr>
@@ -29,13 +29,13 @@ Bây giờ chúng tôi đã sẵn sàng thêm các trang hiển thị sách tran
 
 ## Tổng quan
 
-Trong các bài hướng dẫn trước, chúng tôi đã định nghĩa [các mô hình Mongoose](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose) mà chúng tôi có thể sử dụng để tương tác với cơ sở dữ liệu và tạo một số bản ghi thư viện ban đầu. Sau đó, chúng tôi đã [tạo tất cả các tuyến đường](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes) cần thiết cho trang web LocalLibrary, nhưng với các hàm "bộ điều khiển giả" (đây là các hàm bộ điều khiển khung chỉ trả về thông báo "chưa được triển khai" khi truy cập trang).
+Trong các bài hướng dẫn trước, chúng tôi đã định nghĩa [các mô hình Mongoose](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose) mà chúng tôi có thể sử dụng để tương tác với cơ sở dữ liệu và tạo một số bản ghi thư viện ban đầu. Sau đó, chúng tôi đã [tạo tất cả các route](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes) cần thiết cho trang web LocalLibrary, nhưng với các hàm "bộ điều khiển giả" (đây là các hàm bộ điều khiển khung chỉ trả về thông báo "chưa được triển khai" khi truy cập trang).
 
 Bước tiếp theo là cung cấp các triển khai đúng đắn cho các trang _hiển thị_ thông tin thư viện của chúng ta (chúng ta sẽ tìm hiểu cách triển khai các trang có biểu mẫu để tạo, cập nhật hoặc xóa thông tin trong các bài viết sau). Điều này bao gồm cập nhật các hàm bộ điều khiển để lấy bản ghi bằng mô hình của chúng ta và định nghĩa các mẫu để hiển thị thông tin này cho người dùng.
 
 Chúng tôi sẽ bắt đầu bằng cách cung cấp các chủ đề tổng quan/nhập môn giải thích cách quản lý các thao tác không đồng bộ trong các hàm bộ điều khiển và cách viết mẫu bằng Pug. Sau đó, chúng tôi sẽ cung cấp các triển khai cho từng trang "chỉ đọc" chính của chúng tôi với giải thích ngắn gọn về bất kỳ tính năng đặc biệt hoặc mới nào mà chúng sử dụng.
 
-Đến cuối bài viết này, bạn nên có hiểu biết đầu cuối tốt về cách hoạt động của các tuyến đường, hàm không đồng bộ, views và mô hình trong thực tế.
+Đến cuối bài viết này, bạn nên có hiểu biết đầu cuối tốt về cách hoạt động của các route, hàm không đồng bộ, views và mô hình trong thực tế.
 
 ## Các bài viết con của hướng dẫn hiển thị dữ liệu thư viện
 

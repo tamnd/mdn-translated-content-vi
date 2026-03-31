@@ -1,5 +1,5 @@
 ---
-title: "Hướng dẫn Express Phần 4: Tuyến đường và bộ điều khiển"
+title: "Hướng dẫn Express Phần 4: Route và bộ điều khiển"
 short-title: "4: Routes and controllers"
 slug: Learn_web_development/Extensions/Server-side/Express_Nodejs/routes
 page-type: learn-module-chapter
@@ -8,7 +8,7 @@ sidebar: learnsidebar
 
 {{PreviousMenuNext("Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose", "Learn_web_development/Extensions/Server-side/Express_Nodejs/Displaying_data", "Learn_web_development/Extensions/Server-side/Express_Nodejs")}}
 
-Trong hướng dẫn này, chúng tôi sẽ thiết lập các tuyến đường (mã xử lý URL) với các hàm xử lý "giả" cho tất cả các điểm cuối tài nguyên mà cuối cùng chúng tôi sẽ cần trong trang web [LocalLibrary](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website). Khi hoàn thành, chúng tôi sẽ có cấu trúc mô-đun cho mã xử lý tuyến đường, mà chúng tôi có thể mở rộng với các hàm xử lý thực trong các bài viết sau. Chúng tôi cũng sẽ có hiểu biết rất tốt về cách tạo tuyến đường mô-đun bằng Express!
+Trong hướng dẫn này, chúng tôi sẽ thiết lập các route (mã xử lý URL) với các hàm xử lý "giả" cho tất cả các điểm cuối tài nguyên mà cuối cùng chúng tôi sẽ cần trong trang web [LocalLibrary](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website). Khi hoàn thành, chúng tôi sẽ có cấu trúc mô-đun cho mã xử lý route, mà chúng tôi có thể mở rộng với các hàm xử lý thực trong các bài viết sau. Chúng tôi cũng sẽ có hiểu biết rất tốt về cách tạo route mô-đun bằng Express!
 
 <table>
   <tbody>
@@ -22,7 +22,7 @@ Trong hướng dẫn này, chúng tôi sẽ thiết lập các tuyến đường
     <tr>
       <th scope="row">Mục tiêu:</th>
       <td>
-        Để hiểu cách tạo các tuyến đường đơn giản.
+        Để hiểu cách tạo các route đơn giản.
         Để thiết lập tất cả các điểm cuối URL của chúng tôi.
       </td>
     </tr>
@@ -31,38 +31,38 @@ Trong hướng dẫn này, chúng tôi sẽ thiết lập các tuyến đường
 
 ## Tổng quan
 
-Trong [bài viết hướng dẫn trước](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose), chúng tôi đã định nghĩa các mô hình _Mongoose_ để tương tác với cơ sở dữ liệu và sử dụng script (độc lập) để tạo một số bản ghi thư viện ban đầu. Bây giờ chúng tôi có thể viết mã để trình bày thông tin đó cho người dùng. Điều đầu tiên chúng tôi cần làm là xác định thông tin nào chúng tôi muốn có thể hiển thị trong các trang của mình và sau đó định nghĩa các URL phù hợp để trả về các tài nguyên đó. Sau đó chúng tôi sẽ cần tạo các tuyến đường (trình xử lý URL) và các views (mẫu) để hiển thị những trang đó.
+Trong [bài viết hướng dẫn trước](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose), chúng tôi đã định nghĩa các mô hình _Mongoose_ để tương tác với cơ sở dữ liệu và sử dụng script (độc lập) để tạo một số bản ghi thư viện ban đầu. Bây giờ chúng tôi có thể viết mã để trình bày thông tin đó cho người dùng. Điều đầu tiên chúng tôi cần làm là xác định thông tin nào chúng tôi muốn có thể hiển thị trong các trang của mình và sau đó định nghĩa các URL phù hợp để trả về các tài nguyên đó. Sau đó chúng tôi sẽ cần tạo các route (trình xử lý URL) và các views (mẫu) để hiển thị những trang đó.
 
-Sơ đồ bên dưới được cung cấp như một nhắc nhở về luồng dữ liệu chính và những thứ cần triển khai khi xử lý yêu cầu/phản hồi HTTP. Ngoài các views và tuyến đường, sơ đồ hiển thị "bộ điều khiển" — các hàm tách ra mã để định tuyến yêu cầu khỏi mã thực sự xử lý yêu cầu.
+Sơ đồ bên dưới được cung cấp như một nhắc nhở về luồng dữ liệu chính và những thứ cần triển khai khi xử lý yêu cầu/phản hồi HTTP. Ngoài các views và route, sơ đồ hiển thị "bộ điều khiển" — các hàm tách ra mã để định tuyến yêu cầu khỏi mã thực sự xử lý yêu cầu.
 
 Vì chúng tôi đã tạo các mô hình, những thứ chính chúng tôi sẽ cần tạo là:
 
-- "Tuyến đường" để chuyển tiếp các yêu cầu được hỗ trợ (và bất kỳ thông tin nào được mã hóa trong URL yêu cầu) đến các hàm bộ điều khiển phù hợp.
+- "Route" để chuyển tiếp các yêu cầu được hỗ trợ (và bất kỳ thông tin nào được mã hóa trong URL yêu cầu) đến các hàm bộ điều khiển phù hợp.
 - Các hàm bộ điều khiển để lấy dữ liệu được yêu cầu từ các mô hình, tạo trang HTML hiển thị dữ liệu và trả về nó cho người dùng để xem trong trình duyệt.
 - Views (mẫu) được sử dụng bởi các bộ điều khiển để render dữ liệu.
 
 ![Main data flow diagram of an MVC express server: 'Routes' receive the HTTP requests sent to the Express server and forward them to the appropriate 'controller' function. The controller reads and writes data from the models. Models are connected to the database to provide data access to the server. Controllers use 'views', also called templates, to render the data. The Controller sends the HTML HTTP response back to the client as an HTTP response.](mvc_express.png)
 
-Cuối cùng chúng tôi có thể có các trang để hiển thị danh sách và thông tin chi tiết cho sách, thể loại, tác giả và phiên bản sách, cùng với các trang để tạo, cập nhật và xóa bản ghi. Đó là rất nhiều để ghi lại trong một bài viết. Do đó phần lớn bài viết này sẽ tập trung vào thiết lập các tuyến đường và bộ điều khiển để trả về nội dung "giả". Chúng tôi sẽ mở rộng các phương thức bộ điều khiển trong các bài viết tiếp theo để làm việc với dữ liệu mô hình.
+Cuối cùng chúng tôi có thể có các trang để hiển thị danh sách và thông tin chi tiết cho sách, thể loại, tác giả và phiên bản sách, cùng với các trang để tạo, cập nhật và xóa bản ghi. Đó là rất nhiều để ghi lại trong một bài viết. Do đó phần lớn bài viết này sẽ tập trung vào thiết lập các route và bộ điều khiển để trả về nội dung "giả". Chúng tôi sẽ mở rộng các phương thức bộ điều khiển trong các bài viết tiếp theo để làm việc với dữ liệu mô hình.
 
-Phần đầu tiên bên dưới cung cấp "giới thiệu" ngắn gọn về cách sử dụng middleware [Router](https://expressjs.com/en/5x/api.html#router) của Express. Chúng tôi sẽ sử dụng kiến thức đó trong các phần sau khi chúng tôi thiết lập các tuyến đường LocalLibrary.
+Phần đầu tiên bên dưới cung cấp "giới thiệu" ngắn gọn về cách sử dụng middleware [Router](https://expressjs.com/en/5x/api.html#router) của Express. Chúng tôi sẽ sử dụng kiến thức đó trong các phần sau khi chúng tôi thiết lập các route LocalLibrary.
 
-## Giới thiệu về tuyến đường
+## Giới thiệu về route
 
-Tuyến đường là một phần của mã Express liên kết một [HTTP verb](/en-US/docs/Web/HTTP/Reference/Methods) (`GET`, `POST`, `PUT`, `DELETE`, v.v.), một đường dẫn/mẫu URL và một hàm được gọi để xử lý mẫu đó.
+Route là một phần của mã Express liên kết một [HTTP verb](/en-US/docs/Web/HTTP/Reference/Methods) (`GET`, `POST`, `PUT`, `DELETE`, v.v.), một đường dẫn/mẫu URL và một hàm được gọi để xử lý mẫu đó.
 
-Có một số cách để tạo tuyến đường. Cho hướng dẫn này, chúng tôi sẽ sử dụng middleware [`express.Router`](https://expressjs.com/en/guide/routing.html#express-router) vì nó cho phép chúng tôi nhóm các trình xử lý tuyến đường cho một phần cụ thể của trang web lại với nhau và truy cập chúng bằng cách sử dụng tiền tố tuyến đường chung. Chúng tôi sẽ giữ tất cả các tuyến đường liên quan đến thư viện trong module "catalog" và nếu chúng tôi thêm tuyến đường để xử lý tài khoản người dùng hoặc các chức năng khác, chúng tôi có thể giữ chúng được nhóm riêng biệt.
+Có một số cách để tạo route. Cho hướng dẫn này, chúng tôi sẽ sử dụng middleware [`express.Router`](https://expressjs.com/en/guide/routing.html#express-router) vì nó cho phép chúng tôi nhóm các trình xử lý route cho một phần cụ thể của trang web lại với nhau và truy cập chúng bằng cách sử dụng tiền tố route chung. Chúng tôi sẽ giữ tất cả các route liên quan đến thư viện trong module "catalog" và nếu chúng tôi thêm route để xử lý tài khoản người dùng hoặc các chức năng khác, chúng tôi có thể giữ chúng được nhóm riêng biệt.
 
 > [!NOTE]
-> Chúng tôi đã thảo luận ngắn gọn về các tuyến đường ứng dụng Express trong [Giới thiệu Express > Tạo trình xử lý tuyến đường](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#creating_route_handlers). Ngoài việc cung cấp hỗ trợ tốt hơn cho mô-đun hóa (như được thảo luận trong tiểu phần đầu tiên bên dưới), sử dụng _Router_ rất tương tự với việc định nghĩa các tuyến đường trực tiếp trên _đối tượng ứng dụng Express_.
+> Chúng tôi đã thảo luận ngắn gọn về các route ứng dụng Express trong [Giới thiệu Express > Tạo trình xử lý route](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#creating_route_handlers). Ngoài việc cung cấp hỗ trợ tốt hơn cho mô-đun hóa (như được thảo luận trong tiểu phần đầu tiên bên dưới), sử dụng _Router_ rất tương tự với việc định nghĩa các route trực tiếp trên _đối tượng ứng dụng Express_.
 
-Phần còn lại của phần này cung cấp tổng quan về cách `Router` có thể được sử dụng để định nghĩa các tuyến đường.
+Phần còn lại của phần này cung cấp tổng quan về cách `Router` có thể được sử dụng để định nghĩa các route.
 
-### Định nghĩa và sử dụng các module tuyến đường riêng biệt
+### Định nghĩa và sử dụng các module route riêng biệt
 
-Mã bên dưới cung cấp một ví dụ cụ thể về cách chúng tôi có thể tạo module tuyến đường và sau đó sử dụng nó trong ứng dụng _Express_.
+Mã bên dưới cung cấp một ví dụ cụ thể về cách chúng tôi có thể tạo module route và sau đó sử dụng nó trong ứng dụng _Express_.
 
-Đầu tiên chúng tôi tạo các tuyến đường cho wiki trong module có tên **wiki.js**. Mã đầu tiên import đối tượng ứng dụng Express, sử dụng nó để lấy đối tượng `Router` và sau đó thêm một vài tuyến đường vào nó bằng phương thức `get()`. Cuối cùng module export đối tượng `Router`.
+Đầu tiên chúng tôi tạo các route cho wiki trong module có tên **wiki.js**. Mã đầu tiên import đối tượng ứng dụng Express, sử dụng nó để lấy đối tượng `Router` và sau đó thêm một vài route vào nó bằng phương thức `get()`. Cuối cùng module export đối tượng `Router`.
 
 ```js
 // wiki.js - Wiki route module.
@@ -85,9 +85,9 @@ module.exports = router;
 ```
 
 > [!NOTE]
-> Ở trên chúng tôi đang định nghĩa các hàm gọi lại trình xử lý tuyến đường trực tiếp trong các hàm bộ định tuyến. Trong LocalLibrary, chúng tôi sẽ định nghĩa các hàm gọi lại này trong module bộ điều khiển riêng biệt.
+> Ở trên chúng tôi đang định nghĩa các hàm gọi lại trình xử lý route trực tiếp trong các hàm bộ định tuyến. Trong LocalLibrary, chúng tôi sẽ định nghĩa các hàm gọi lại này trong module bộ điều khiển riêng biệt.
 
-Để sử dụng module bộ định tuyến trong tệp ứng dụng chính của chúng tôi, trước tiên chúng tôi `require()` module tuyến đường (**wiki.js**). Sau đó chúng tôi gọi `use()` trên ứng dụng _Express_ để thêm Bộ định tuyến vào đường dẫn xử lý middleware, chỉ định đường dẫn URL là 'wiki'.
+Để sử dụng module bộ định tuyến trong tệp ứng dụng chính của chúng tôi, trước tiên chúng tôi `require()` module route (**wiki.js**). Sau đó chúng tôi gọi `use()` trên ứng dụng _Express_ để thêm Bộ định tuyến vào đường dẫn xử lý middleware, chỉ định đường dẫn URL là 'wiki'.
 
 ```js
 const wiki = require("./wiki.js");
@@ -96,11 +96,11 @@ const wiki = require("./wiki.js");
 app.use("/wiki", wiki);
 ```
 
-Hai tuyến đường được định nghĩa trong module tuyến đường wiki của chúng tôi sau đó có thể truy cập từ `/wiki/` và `/wiki/about/`.
+Hai route được định nghĩa trong module route wiki của chúng tôi sau đó có thể truy cập từ `/wiki/` và `/wiki/about/`.
 
-### Các hàm tuyến đường
+### Các hàm route
 
-Module của chúng tôi ở trên định nghĩa một vài hàm tuyến đường điển hình. Tuyến đường "about" (được tái tạo bên dưới) được định nghĩa bằng phương thức `Router.get()`, phản hồi chỉ với các yêu cầu HTTP GET. Đối số đầu tiên của phương thức này là đường dẫn URL trong khi đối số thứ hai là hàm gọi lại sẽ được gọi nếu nhận được yêu cầu HTTP GET với đường dẫn đó.
+Module của chúng tôi ở trên định nghĩa một vài hàm route điển hình. Route "about" (được tái tạo bên dưới) được định nghĩa bằng phương thức `Router.get()`, phản hồi chỉ với các yêu cầu HTTP GET. Đối số đầu tiên của phương thức này là đường dẫn URL trong khi đối số thứ hai là hàm gọi lại sẽ được gọi nếu nhận được yêu cầu HTTP GET với đường dẫn đó.
 
 ```js
 router.get("/about", (req, res) => {
@@ -119,11 +119,11 @@ Hàm gọi lại ở đây gọi [`send()`](https://expressjs.com/en/5x/api.html
 
 ### Các HTTP verb
 
-Các tuyến đường ví dụ ở trên sử dụng phương thức `Router.get()` để phản hồi các yêu cầu HTTP `GET` với một đường dẫn nhất định.
+Các route ví dụ ở trên sử dụng phương thức `Router.get()` để phản hồi các yêu cầu HTTP `GET` với một đường dẫn nhất định.
 
-`Router` cũng cung cấp các phương thức tuyến đường cho tất cả các [HTTP verb](/en-US/docs/Web/HTTP/Reference/Methods) khác, hầu hết được sử dụng theo cách hoàn toàn giống nhau: `post()`, `put()`, `delete()`, `options()`, `trace()`, `copy()`, `lock()`, `mkcol()`, `move()`, `purge()`, `propfind()`, `proppatch()`, `unlock()`, `report()`, `mkactivity()`, `checkout()`, `merge()`, `m-search()`, `notify()`, `subscribe()`, `unsubscribe()`, `patch()`, `search()` và `connect()`.
+`Router` cũng cung cấp các phương thức route cho tất cả các [HTTP verb](/en-US/docs/Web/HTTP/Reference/Methods) khác, hầu hết được sử dụng theo cách hoàn toàn giống nhau: `post()`, `put()`, `delete()`, `options()`, `trace()`, `copy()`, `lock()`, `mkcol()`, `move()`, `purge()`, `propfind()`, `proppatch()`, `unlock()`, `report()`, `mkactivity()`, `checkout()`, `merge()`, `m-search()`, `notify()`, `subscribe()`, `unsubscribe()`, `patch()`, `search()` và `connect()`.
 
-Ví dụ: mã bên dưới hoạt động giống như tuyến đường `/about` trước đó, nhưng chỉ phản hồi các yêu cầu HTTP POST.
+Ví dụ: mã bên dưới hoạt động giống như route `/about` trước đó, nhưng chỉ phản hồi các yêu cầu HTTP POST.
 
 ```js
 router.post("/about", (req, res) => {
@@ -131,27 +131,27 @@ router.post("/about", (req, res) => {
 });
 ```
 
-Các trang web nên lý tưởng sử dụng phương thức tuyến đường (và phương thức HTTP) tương ứng tốt nhất với hoạt động đang được thực hiện.
+Các trang web nên lý tưởng sử dụng phương thức route (và phương thức HTTP) tương ứng tốt nhất với hoạt động đang được thực hiện.
 Ví dụ: ứng dụng được render phía máy khách nên sử dụng `Router.get()` để đọc từ cơ sở dữ liệu, `Router.post()` để tạo bản ghi mới, `Router.put()` hoặc `Router.patch()` để cập nhật bản ghi và `Router.delete()` để xóa dữ liệu.
 
-Tuy nhiên, lưu ý rằng các ứng dụng được render phía máy chủ, chẳng hạn như ứng dụng được thể hiện bởi hướng dẫn này, thường sử dụng `Router.post()` cho tất cả các tuyến đường sửa đổi dữ liệu.
+Tuy nhiên, lưu ý rằng các ứng dụng được render phía máy chủ, chẳng hạn như ứng dụng được thể hiện bởi hướng dẫn này, thường sử dụng `Router.post()` cho tất cả các route sửa đổi dữ liệu.
 Lý do cho điều này là, theo mặc định, các phần tử HTML `<form>` chỉ có thể gửi các yêu cầu [`GET`](/en-US/docs/Web/HTTP/Reference/Methods/GET) và [`POST`](/en-US/docs/Web/HTTP/Reference/Methods/POST).
 
 Có nhiều cách giải quyết cho giới hạn này, chẳng hạn như mã hóa HTTP verb "mong muốn" trong yêu cầu `POST` và sử dụng middleware Express [method-override](https://www.npmjs.com/package/method-override) để sửa đổi yêu cầu thành HTTP verb phù hợp trước khi nó được chuyển đến bộ định tuyến.
 Đối với các ứng dụng cơ bản, việc viết lại mã chỉ để sử dụng đúng HTTP verb thường là quá mức.
 Có thể đáng cải thiện logging máy chủ hoặc nếu máy chủ cần xử lý cả nội dung được render phía máy chủ và phía máy khách thông qua cùng một điểm cuối.
 
-### Đường dẫn tuyến đường
+### Đường dẫn route
 
-Đường dẫn tuyến đường định nghĩa các điểm cuối mà tại đó các yêu cầu có thể được thực hiện. Các ví dụ chúng tôi đã thấy cho đến nay chỉ là các chuỗi và được sử dụng chính xác như được viết: '/', '/about', '/book', '/any-random.path'.
+Đường dẫn route định nghĩa các điểm cuối mà tại đó các yêu cầu có thể được thực hiện. Các ví dụ chúng tôi đã thấy cho đến nay chỉ là các chuỗi và được sử dụng chính xác như được viết: '/', '/about', '/book', '/any-random.path'.
 
-Đường dẫn tuyến đường cũng có thể là các mẫu chuỗi. Các mẫu chuỗi sử dụng dạng cú pháp biểu thức chính quy để định nghĩa _mẫu_ các điểm cuối sẽ được khớp.
-Hầu hết các tuyến đường của chúng tôi cho LocalLibrary sẽ sử dụng chuỗi và không sử dụng biểu thức chính quy.
-Chúng tôi cũng sẽ sử dụng tham số tuyến đường như được thảo luận trong phần tiếp theo.
+Đường dẫn route cũng có thể là các mẫu chuỗi. Các mẫu chuỗi sử dụng dạng cú pháp biểu thức chính quy để định nghĩa _mẫu_ các điểm cuối sẽ được khớp.
+Hầu hết các route của chúng tôi cho LocalLibrary sẽ sử dụng chuỗi và không sử dụng biểu thức chính quy.
+Chúng tôi cũng sẽ sử dụng tham số route như được thảo luận trong phần tiếp theo.
 
-### Tham số tuyến đường
+### Tham số route
 
-Tham số tuyến đường là _các đoạn URL được đặt tên_ được sử dụng để nắm bắt các giá trị tại các vị trí cụ thể trong URL. Các đoạn được đặt tên được đặt tiền tố bằng dấu hai chấm và sau đó là tên (Ví dụ: `/:your_parameter_name/`). Các giá trị được nắm bắt được lưu trữ trong đối tượng `req.params` bằng cách sử dụng tên tham số làm khóa (Ví dụ: `req.params.your_parameter_name`).
+Tham số route là _các đoạn URL được đặt tên_ được sử dụng để nắm bắt các giá trị tại các vị trí cụ thể trong URL. Các đoạn được đặt tên được đặt tiền tố bằng dấu hai chấm và sau đó là tên (Ví dụ: `/:your_parameter_name/`). Các giá trị được nắm bắt được lưu trữ trong đối tượng `req.params` bằng cách sử dụng tên tham số làm khóa (Ví dụ: `req.params.your_parameter_name`).
 
 Vì vậy, ví dụ: xem xét URL được mã hóa để chứa thông tin về người dùng và sách: `http://localhost:3000/users/34/books/8989`. Chúng tôi có thể trích xuất thông tin này như được hiển thị bên dưới, với các tham số đường dẫn `userId` và `bookId`:
 
@@ -164,9 +164,9 @@ app.get("/users/:userId/books/:bookId", (req, res) => {
 ```
 
 > [!NOTE]
-> URL _/book/create_ sẽ được khớp bởi tuyến đường như `/book/:bookId` (vì `:bookId` là trình giữ chỗ cho _bất kỳ_ chuỗi nào, do đó `create` khớp). Tuyến đường đầu tiên khớp với URL đến sẽ được sử dụng, vì vậy nếu bạn muốn xử lý cụ thể các URL `/book/create`, trình xử lý tuyến đường của nó phải được định nghĩa trước tuyến đường `/book/:bookId` của bạn.
+> URL _/book/create_ sẽ được khớp bởi route như `/book/:bookId` (vì `:bookId` là trình giữ chỗ cho _bất kỳ_ chuỗi nào, do đó `create` khớp). Route đầu tiên khớp với URL đến sẽ được sử dụng, vì vậy nếu bạn muốn xử lý cụ thể các URL `/book/create`, trình xử lý route của nó phải được định nghĩa trước route `/book/:bookId` của bạn.
 
-Tên tham số tuyến đường (ví dụ: `bookId` ở trên) có thể là bất kỳ định danh JavaScript hợp lệ nào bắt đầu bằng chữ cái, `_` hoặc `$`. Bạn có thể bao gồm chữ số sau ký tự đầu tiên, nhưng không có gạch nối và khoảng trắng.
+Tên tham số route (ví dụ: `bookId` ở trên) có thể là bất kỳ định danh JavaScript hợp lệ nào bắt đầu bằng chữ cái, `_` hoặc `$`. Bạn có thể bao gồm chữ số sau ký tự đầu tiên, nhưng không có gạch nối và khoảng trắng.
 Bạn cũng có thể sử dụng tên không phải là định danh JavaScript hợp lệ, bao gồm khoảng trắng, gạch nối, biểu tượng cảm xúc hoặc bất kỳ ký tự nào khác, nhưng bạn cần định nghĩa chúng bằng chuỗi được trích dẫn và truy cập chúng bằng ký hiệu ngoặc vuông.
 Ví dụ:
 
@@ -213,15 +213,15 @@ Nếu bạn muốn sử dụng chúng, bạn phải thoát chúng bằng dấu g
 
 Bạn cũng không thể sử dụng ký tự pipe (`|`) trong biểu thức chính quy.
 
-Đó là tất cả những gì bạn cần để bắt đầu với tuyến đường.
-Nếu cần, bạn có thể tìm thêm thông tin trong tài liệu Express: [Định tuyến cơ bản](https://expressjs.com/en/starter/basic-routing.html) và [Hướng dẫn định tuyến](https://expressjs.com/en/guide/routing.html). Các phần sau đây chỉ cách chúng tôi sẽ thiết lập các tuyến đường và bộ điều khiển cho LocalLibrary.
+Đó là tất cả những gì bạn cần để bắt đầu với route.
+Nếu cần, bạn có thể tìm thêm thông tin trong tài liệu Express: [Định tuyến cơ bản](https://expressjs.com/en/starter/basic-routing.html) và [Hướng dẫn định tuyến](https://expressjs.com/en/guide/routing.html). Các phần sau đây chỉ cách chúng tôi sẽ thiết lập các route và bộ điều khiển cho LocalLibrary.
 
-### Xử lý lỗi và ngoại lệ trong các hàm tuyến đường
+### Xử lý lỗi và ngoại lệ trong các hàm route
 
-Các hàm tuyến đường được hiển thị trước đó đều có đối số `req` và `res`, đại diện cho yêu cầu và phản hồi, tương ứng.
-Các hàm tuyến đường cũng được truyền đối số thứ ba, `next`, chứa hàm gọi lại có thể được gọi để chuyển bất kỳ lỗi hoặc ngoại lệ nào đến chuỗi middleware Express, nơi chúng cuối cùng sẽ lan truyền đến mã xử lý lỗi toàn cục của bạn.
+Các hàm route được hiển thị trước đó đều có đối số `req` và `res`, đại diện cho yêu cầu và phản hồi, tương ứng.
+Các hàm route cũng được truyền đối số thứ ba, `next`, chứa hàm gọi lại có thể được gọi để chuyển bất kỳ lỗi hoặc ngoại lệ nào đến chuỗi middleware Express, nơi chúng cuối cùng sẽ lan truyền đến mã xử lý lỗi toàn cục của bạn.
 
-Từ Express 5, `next` được gọi tự động với giá trị từ chối nếu trình xử lý tuyến đường trả về [Promise](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) sau đó bị từ chối; do đó, không cần mã xử lý lỗi trong các hàm tuyến đường khi sử dụng promises.
+Từ Express 5, `next` được gọi tự động với giá trị từ chối nếu trình xử lý route trả về [Promise](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) sau đó bị từ chối; do đó, không cần mã xử lý lỗi trong các hàm route khi sử dụng promises.
 Điều này dẫn đến mã rất gọn gàng khi làm việc với các API promise bất đồng bộ, đặc biệt khi sử dụng [`async` và `await`](/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises#async_and_await).
 
 Ví dụ: đoạn mã sau sử dụng phương thức `find()` để truy vấn cơ sở dữ liệu và sau đó render kết quả.
@@ -265,7 +265,7 @@ app.get("/", (req, res) => {
 });
 ```
 
-Tuy nhiên, bạn phải [`catch()`](/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) các ngoại lệ xảy ra trong mã bất đồng bộ được gọi bởi các trình xử lý tuyến đường hoặc middleware. Chúng sẽ không được bắt bởi mã mặc định:
+Tuy nhiên, bạn phải [`catch()`](/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) các ngoại lệ xảy ra trong mã bất đồng bộ được gọi bởi các trình xử lý route hoặc middleware. Chúng sẽ không được bắt bởi mã mặc định:
 
 ```js
 app.get("/", (req, res, next) => {
@@ -298,7 +298,7 @@ router.get("/about", (req, res, next) => {
 
 Để biết thêm thông tin xem [Xử lý lỗi](https://expressjs.com/en/guide/error-handling.html).
 
-## Các tuyến đường cần thiết cho LocalLibrary
+## Các route cần thiết cho LocalLibrary
 
 Các URL mà cuối cùng chúng tôi sẽ cần cho các trang của mình được liệt kê bên dưới, trong đó _object_ được thay thế bằng tên của mỗi mô hình (book, bookinstance, genre, author), _objects_ là số nhiều của object và _id_ là trường cá thể duy nhất (`_id`) được cung cấp cho mỗi cá thể mô hình Mongoose theo mặc định.
 
@@ -311,16 +311,16 @@ Các URL mà cuối cùng chúng tôi sẽ cần cho các trang của mình đư
 
 Trang chủ và các trang danh sách đầu tiên không mã hóa bất kỳ thông tin bổ sung nào. Trong khi các kết quả được trả về sẽ phụ thuộc vào loại mô hình và nội dung trong cơ sở dữ liệu, các truy vấn chạy để lấy thông tin sẽ luôn giống nhau (tương tự như mã chạy để tạo đối tượng sẽ luôn tương tự).
 
-Ngược lại, các URL khác được sử dụng để hành động trên một tài liệu/cá thể mô hình cụ thể — những URL này mã hóa danh tính của mục trong URL (được hiển thị là `<id>` ở trên). Chúng tôi sẽ sử dụng các tham số đường dẫn để trích xuất thông tin được mã hóa và truyền nó đến trình xử lý tuyến đường (và trong một bài viết sau, chúng tôi sẽ sử dụng điều này để xác định động những thông tin nào cần lấy từ cơ sở dữ liệu). Bằng cách mã hóa thông tin trong URL, chúng tôi chỉ cần một tuyến đường cho mỗi tài nguyên của một loại cụ thể (ví dụ: một tuyến đường để xử lý hiển thị mọi mục sách đơn lẻ).
+Ngược lại, các URL khác được sử dụng để hành động trên một tài liệu/cá thể mô hình cụ thể — những URL này mã hóa danh tính của mục trong URL (được hiển thị là `<id>` ở trên). Chúng tôi sẽ sử dụng các tham số đường dẫn để trích xuất thông tin được mã hóa và truyền nó đến trình xử lý route (và trong một bài viết sau, chúng tôi sẽ sử dụng điều này để xác định động những thông tin nào cần lấy từ cơ sở dữ liệu). Bằng cách mã hóa thông tin trong URL, chúng tôi chỉ cần một route cho mỗi tài nguyên của một loại cụ thể (ví dụ: một route để xử lý hiển thị mọi mục sách đơn lẻ).
 
 > [!NOTE]
 > Express cho phép bạn xây dựng các URL theo bất kỳ cách nào bạn thích — bạn có thể mã hóa thông tin trong phần thân URL như được hiển thị ở trên hoặc sử dụng tham số URL `GET` (ví dụ: `/book/?id=6`). Dù bạn sử dụng cách tiếp cận nào, các URL nên được giữ sạch, logic và dễ đọc ([xem lời khuyên của W3C tại đây](https://www.w3.org/Provider/Style/URI)).
 
-Tiếp theo chúng tôi tạo các hàm gọi lại trình xử lý tuyến đường và mã tuyến đường cho tất cả các URL ở trên.
+Tiếp theo chúng tôi tạo các hàm gọi lại trình xử lý route và mã route cho tất cả các URL ở trên.
 
-## Tạo các hàm gọi lại trình xử lý tuyến đường
+## Tạo các hàm gọi lại trình xử lý route
 
-Trước khi chúng tôi định nghĩa các tuyến đường, trước tiên chúng tôi sẽ tạo tất cả các hàm gọi lại giả/khung mà chúng sẽ gọi. Các hàm gọi lại sẽ được lưu trữ trong các module "bộ điều khiển" riêng biệt cho `Book`, `BookInstance`, `Genre` và `Author` (bạn có thể sử dụng bất kỳ cấu trúc tệp/module nào, nhưng đây có vẻ là độ chi tiết thích hợp cho dự án này).
+Trước khi chúng tôi định nghĩa các route, trước tiên chúng tôi sẽ tạo tất cả các hàm gọi lại giả/khung mà chúng sẽ gọi. Các hàm gọi lại sẽ được lưu trữ trong các module "bộ điều khiển" riêng biệt cho `Book`, `BookInstance`, `Genre` và `Author` (bạn có thể sử dụng bất kỳ cấu trúc tệp/module nào, nhưng đây có vẻ là độ chi tiết thích hợp cho dự án này).
 
 Bắt đầu bằng cách tạo thư mục cho các bộ điều khiển trong thư mục gốc dự án (**/controllers**) và sau đó tạo các tệp/module bộ điều khiển riêng biệt để xử lý từng mô hình:
 
@@ -537,12 +537,12 @@ exports.book_update_post = async (req, res, next) => {
 };
 ```
 
-## Tạo module tuyến đường catalog
+## Tạo module route catalog
 
-Tiếp theo chúng tôi tạo _tuyến đường_ cho tất cả các URL [cần thiết bởi trang web LocalLibrary](#routes_needed_for_the_locallibrary), sẽ gọi các hàm bộ điều khiển chúng tôi đã định nghĩa trong các phần trước.
+Tiếp theo chúng tôi tạo _route_ cho tất cả các URL [cần thiết bởi trang web LocalLibrary](#routes_needed_for_the_locallibrary), sẽ gọi các hàm bộ điều khiển chúng tôi đã định nghĩa trong các phần trước.
 
-Khung đã có thư mục **./routes** chứa các tuyến đường cho _index_ và _users_.
-Tạo tệp tuyến đường khác — **catalog.js** — bên trong thư mục này, như được hiển thị.
+Khung đã có thư mục **./routes** chứa các route cho _index_ và _users_.
+Tạo tệp route khác — **catalog.js** — bên trong thư mục này, như được hiển thị.
 
 ```plain
 /express-locallibrary-tutorial # the project root
@@ -693,19 +693,19 @@ router.get("/bookinstances", book_instance_controller.bookinstance_list);
 module.exports = router;
 ```
 
-Module yêu cầu Express và sau đó sử dụng nó để tạo đối tượng `Router`. Các tuyến đường đều được thiết lập trên bộ định tuyến, sau đó được export.
+Module yêu cầu Express và sau đó sử dụng nó để tạo đối tượng `Router`. Các route đều được thiết lập trên bộ định tuyến, sau đó được export.
 
-Các tuyến đường được định nghĩa bằng cách sử dụng phương thức `.get()` hoặc `.post()` trên đối tượng bộ định tuyến.
+Các route được định nghĩa bằng cách sử dụng phương thức `.get()` hoặc `.post()` trên đối tượng bộ định tuyến.
 Tất cả các đường dẫn được định nghĩa bằng chuỗi (chúng tôi không sử dụng mẫu chuỗi hoặc biểu thức chính quy).
-Các tuyến đường hành động trên tài nguyên cụ thể (ví dụ: sách) sử dụng tham số đường dẫn để lấy id đối tượng từ URL.
+Các route hành động trên tài nguyên cụ thể (ví dụ: sách) sử dụng tham số đường dẫn để lấy id đối tượng từ URL.
 
 Tất cả các hàm xử lý được import từ các module bộ điều khiển chúng tôi đã tạo trong phần trước.
 
-### Cập nhật module tuyến đường index
+### Cập nhật module route index
 
-Chúng tôi đã thiết lập tất cả các tuyến đường mới, nhưng chúng tôi vẫn có tuyến đường đến trang gốc. Thay vào đó, hãy chuyển hướng này đến trang index mới mà chúng tôi đã tạo tại đường dẫn `/catalog`.
+Chúng tôi đã thiết lập tất cả các route mới, nhưng chúng tôi vẫn có route đến trang gốc. Thay vào đó, hãy chuyển hướng này đến trang index mới mà chúng tôi đã tạo tại đường dẫn `/catalog`.
 
-Mở **/routes/index.js** và thay thế tuyến đường hiện có bằng hàm bên dưới.
+Mở **/routes/index.js** và thay thế route hiện có bằng hàm bên dưới.
 
 ```js
 // GET home page.
@@ -719,10 +719,10 @@ router.get("/", (req, res) => {
 
 ### Cập nhật app.js
 
-Bước cuối cùng là thêm các tuyến đường vào chuỗi middleware.
+Bước cuối cùng là thêm các route vào chuỗi middleware.
 Chúng tôi thực hiện điều này trong `app.js`.
 
-Mở **app.js** và yêu cầu tuyến đường catalog bên dưới các tuyến đường khác (thêm dòng thứ ba được hiển thị bên dưới, bên dưới hai dòng khác đã có trong tệp):
+Mở **app.js** và yêu cầu route catalog bên dưới các route khác (thêm dòng thứ ba được hiển thị bên dưới, bên dưới hai dòng khác đã có trong tệp):
 
 ```js
 const indexRouter = require("./routes/index");
@@ -730,7 +730,7 @@ const usersRouter = require("./routes/users");
 const catalogRouter = require("./routes/catalog"); // Import routes for "catalog" area of site
 ```
 
-Tiếp theo, thêm tuyến đường catalog vào ngăn xếp middleware bên dưới các tuyến đường khác (thêm dòng thứ ba được hiển thị bên dưới, bên dưới hai dòng khác đã có trong tệp):
+Tiếp theo, thêm route catalog vào ngăn xếp middleware bên dưới các route khác (thêm dòng thứ ba được hiển thị bên dưới, bên dưới hai dòng khác đã có trong tệp):
 
 ```js
 app.use("/", indexRouter);
@@ -741,11 +741,11 @@ app.use("/catalog", catalogRouter); // Add catalog routes to middleware chain.
 > [!NOTE]
 > Chúng tôi đã thêm module catalog của mình tại đường dẫn `/catalog`. Điều này được thêm vào phía trước tất cả các đường dẫn được định nghĩa trong module catalog. Vì vậy, ví dụ: để truy cập danh sách sách, URL sẽ là: `/catalog/books/`.
 
-Đó là tất cả. Bây giờ chúng tôi nên có các tuyến đường và các hàm khung được kích hoạt cho tất cả các URL mà cuối cùng chúng tôi sẽ hỗ trợ trên trang web LocalLibrary.
+Đó là tất cả. Bây giờ chúng tôi nên có các route và các hàm khung được kích hoạt cho tất cả các URL mà cuối cùng chúng tôi sẽ hỗ trợ trên trang web LocalLibrary.
 
-### Kiểm thử các tuyến đường
+### Kiểm thử các route
 
-Để kiểm thử các tuyến đường, trước tiên khởi động trang web bằng phương pháp thông thường của bạn
+Để kiểm thử các route, trước tiên khởi động trang web bằng phương pháp thông thường của bạn
 
 - Phương pháp mặc định
 
@@ -776,7 +776,7 @@ Sau đó điều hướng đến một số URL LocalLibrary và xác minh rằn
 
 ## Tóm tắt
 
-Chúng tôi đã tạo tất cả các tuyến đường cho trang web của mình, cùng với các hàm bộ điều khiển giả mà chúng tôi có thể điền bằng một triển khai đầy đủ trong các bài viết sau. Trong quá trình đó, chúng tôi đã học được rất nhiều thông tin cơ bản về các tuyến đường Express, xử lý ngoại lệ và một số cách tiếp cận để cấu trúc các tuyến đường và bộ điều khiển của chúng tôi.
+Chúng tôi đã tạo tất cả các route cho trang web của mình, cùng với các hàm bộ điều khiển giả mà chúng tôi có thể điền bằng một triển khai đầy đủ trong các bài viết sau. Trong quá trình đó, chúng tôi đã học được rất nhiều thông tin cơ bản về các route Express, xử lý ngoại lệ và một số cách tiếp cận để cấu trúc các route và bộ điều khiển của chúng tôi.
 
 Trong bài viết tiếp theo của chúng tôi, chúng tôi sẽ tạo trang chào mừng thực sự cho trang web, sử dụng views (mẫu) và thông tin được lưu trữ trong các mô hình của chúng tôi.
 

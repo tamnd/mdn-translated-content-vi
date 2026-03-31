@@ -1,6 +1,6 @@
 ---
-title: "Challenge: DIY Django mini blog"
-short-title: "Challenge: Django blog"
+title: "Thử thách: Tự xây dựng Django mini blog"
+short-title: "Thử thách: Django blog"
 slug: Learn_web_development/Extensions/Server-side/Django/django_assessment_blog
 page-type: learn-module-assessment
 sidebar: learnsidebar

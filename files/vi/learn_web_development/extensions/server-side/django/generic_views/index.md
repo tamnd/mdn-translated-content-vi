@@ -1,6 +1,6 @@
 ---
-title: "Django Tutorial Part 6: Generic list and detail views"
-short-title: "6: Generic list and detail views"
+title: "Hướng dẫn Django Phần 6: Các khung nhìn danh sách và chi tiết tổng quát"
+short-title: "6: Khung nhìn danh sách và chi tiết tổng quát"
 slug: Learn_web_development/Extensions/Server-side/Django/Generic_views
 page-type: learn-module-chapter
 sidebar: learnsidebar

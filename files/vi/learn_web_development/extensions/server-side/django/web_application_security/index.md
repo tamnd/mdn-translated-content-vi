@@ -1,6 +1,6 @@
 ---
-title: Django web application security
-short-title: Django security
+title: Bảo mật ứng dụng web Django
+short-title: Bảo mật Django
 slug: Learn_web_development/Extensions/Server-side/Django/web_application_security
 page-type: learn-module-chapter
 sidebar: learnsidebar

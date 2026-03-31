@@ -5,9 +5,9 @@ page-type: learn-module-chapter
 sidebar: learnsidebar
 ---
 
-Bài viết con cuối cùng này cho thấy cách định nghĩa một trang để cập nhật các đối tượng `Book`. Xử lý biểu mẫu khi cập nhật một cuốn sách rất giống như khi tạo sách, ngoại trừ bạn phải điền sẵn biểu mẫu trong tuyến đường `GET` với các giá trị từ cơ sở dữ liệu.
+Bài viết con cuối cùng này cho thấy cách định nghĩa một trang để cập nhật các đối tượng `Book`. Xử lý biểu mẫu khi cập nhật một cuốn sách rất giống như khi tạo sách, ngoại trừ bạn phải điền sẵn biểu mẫu trong route `GET` với các giá trị từ cơ sở dữ liệu.
 
-## Bộ điều khiển — tuyến đường GET
+## Bộ điều khiển — route GET
 
 Mở tệp **/controllers/bookController.js**. Tìm phương thức bộ điều khiển `book_update_get()` đã được xuất và thay thế bằng đoạn mã sau.
 
@@ -52,7 +52,7 @@ Khi các hoạt động hoàn tất, hàm kiểm tra xem có sách nào được
 
 Sau đó chúng ta đánh dấu các thể loại hiện đang được chọn là checked và sau đó hiển thị view **book_form.pug**, truyền các biến cho `title`, book, tất cả `authors`, và tất cả `genres`.
 
-## Bộ điều khiển — tuyến đường POST
+## Bộ điều khiển — route POST
 
 Tìm phương thức bộ điều khiển `book_update_post()` đã được xuất, và thay thế bằng đoạn mã sau.
 
@@ -132,7 +132,7 @@ exports.book_update_post = [
 ];
 ```
 
-Điều này rất giống với tuyến đường POST được sử dụng khi tạo một `Book`.
+Điều này rất giống với route POST được sử dụng khi tạo một `Book`.
 Đầu tiên chúng ta kiểm tra hợp lệ và làm sạch dữ liệu sách từ biểu mẫu và sử dụng nó để tạo một đối tượng `Book` mới (đặt giá trị `_id` của nó thành id của đối tượng cần cập nhật). Nếu có lỗi khi chúng ta kiểm tra hợp lệ dữ liệu thì chúng ta hiển thị lại biểu mẫu, ngoài ra còn hiển thị dữ liệu mà người dùng đã nhập, các lỗi, và danh sách các thể loại và tác giả. Nếu không có lỗi thì chúng ta gọi `Book.findByIdAndUpdate()` để cập nhật tài liệu `Book`, và sau đó chuyển hướng đến trang chi tiết của nó.
 
 ## View
