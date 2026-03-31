@@ -90,7 +90,7 @@ Total: 1,329 pages
 - [x] web/javascript/reference/statements/label
 - [x] web/javascript/reference/statements/await_using
 - [x] web/javascript/reference/statements/expression_statement
-- [ ] web/javascript/reference/statements/import/with
+- [x] web/javascript/reference/statements/import/with
 - [x] web/javascript/reference/statements/using
 
 ## Reference — Operators (76 pages)
@@ -147,7 +147,7 @@ Total: 1,329 pages
 - [x] web/javascript/reference/operators/greater_than_or_equal
 - [x] web/javascript/reference/operators/grouping
 - [x] web/javascript/reference/operators/import.meta
-- [ ] web/javascript/reference/operators/import.meta/resolve
+- [x] web/javascript/reference/operators/import.meta/resolve
 - [x] web/javascript/reference/operators/import
 - [x] web/javascript/reference/operators/left_shift_assignment
 - [x] web/javascript/reference/operators/left_shift
@@ -248,41 +248,41 @@ Total: 1,329 pages
 - [x] web/javascript/reference/errors/cant_convert_bigint_to_number
 - [x] web/javascript/reference/errors/cant_convert_x_to_bigint
 - [x] web/javascript/reference/errors/cant_define_property_object_not_extensible
-- [ ] web/javascript/reference/errors/cant_delete_private_fields
-- [ ] web/javascript/reference/errors/cant_delete
+- [x] web/javascript/reference/errors/cant_delete_private_fields
+- [x] web/javascript/reference/errors/cant_delete
 - [x] web/javascript/reference/errors/cant_redefine_property
-- [ ] web/javascript/reference/errors/cant_set_prototype
-- [ ] web/javascript/reference/errors/cant_use_nullish_coalescing_unparenthesized
-- [ ] web/javascript/reference/errors/class_ctor_no_new
+- [x] web/javascript/reference/errors/cant_set_prototype
+- [x] web/javascript/reference/errors/cant_use_nullish_coalescing_unparenthesized
+- [x] web/javascript/reference/errors/class_ctor_no_new
 - [x] web/javascript/reference/errors/constructor_cant_be_used_directly
 - [x] web/javascript/reference/errors/cyclic_object_value
-- [ ] web/javascript/reference/errors/cyclic_prototype
-- [ ] web/javascript/reference/errors/delete_in_strict_mode
+- [x] web/javascript/reference/errors/cyclic_prototype
+- [x] web/javascript/reference/errors/delete_in_strict_mode
 - [x] web/javascript/reference/errors/deprecated_caller_or_arguments_usage
 - [x] web/javascript/reference/errors/deprecated_octal_escape_sequence
 - [x] web/javascript/reference/errors/deprecated_octal_literal
 - [x] web/javascript/reference/errors/deprecated_source_map_pragma
-- [ ] web/javascript/reference/errors/duplicate_parameter
-- [ ] web/javascript/reference/errors/duplicate_proto
-- [ ] web/javascript/reference/errors/either_be_both_static_or_non-static
-- [ ] web/javascript/reference/errors/form_must_be_one_of
-- [ ] web/javascript/reference/errors/function_label
-- [ ] web/javascript/reference/errors/get_set_missing_private
-- [ ] web/javascript/reference/errors/getter_no_arguments
+- [x] web/javascript/reference/errors/duplicate_parameter
+- [x] web/javascript/reference/errors/duplicate_proto
+- [x] web/javascript/reference/errors/either_be_both_static_or_non-static
+- [x] web/javascript/reference/errors/form_must_be_one_of
+- [x] web/javascript/reference/errors/function_label
+- [x] web/javascript/reference/errors/get_set_missing_private
+- [x] web/javascript/reference/errors/getter_no_arguments
 - [x] web/javascript/reference/errors/getter_only
 - [x] web/javascript/reference/errors/hash_outside_class
-- [ ] web/javascript/reference/errors/identifier_after_number
+- [x] web/javascript/reference/errors/identifier_after_number
 - [x] web/javascript/reference/errors/illegal_character
-- [ ] web/javascript/reference/errors/import_decl_module_top_level
+- [x] web/javascript/reference/errors/import_decl_module_top_level
 - [x] web/javascript/reference/errors/in_operator_no_object
 - [x] web/javascript/reference/errors/invalid_array_length
-- [ ] web/javascript/reference/errors/invalid_assignment_left-hand_side
-- [ ] web/javascript/reference/errors/invalid_bigint_syntax
+- [x] web/javascript/reference/errors/invalid_assignment_left-hand_side
+- [x] web/javascript/reference/errors/invalid_bigint_syntax
 - [x] web/javascript/reference/errors/invalid_const_assignment
 - [x] web/javascript/reference/errors/invalid_date
-- [ ] web/javascript/reference/errors/invalid_derived_return
-- [ ] web/javascript/reference/errors/invalid_for-in_initializer
-- [ ] web/javascript/reference/errors/invalid_for-of_initializer
+- [x] web/javascript/reference/errors/invalid_derived_return
+- [x] web/javascript/reference/errors/invalid_for-in_initializer
+- [x] web/javascript/reference/errors/invalid_for-of_initializer
 - [x] web/javascript/reference/errors/invalid_right_hand_side_instanceof_operand
 - [x] web/javascript/reference/errors/is_not_iterable
 - [x] web/javascript/reference/errors/json_bad_parse
@@ -382,61 +382,61 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/weakset
 - [x] web/javascript/reference/global_objects/weakref
 - [x] web/javascript/reference/global_objects/finalizationregistry
-- [ ] web/javascript/reference/global_objects/json
-- [ ] web/javascript/reference/global_objects/intl
-- [ ] web/javascript/reference/global_objects/typedarray
-- [ ] web/javascript/reference/global_objects/arraybuffer
-- [ ] web/javascript/reference/global_objects/sharedarraybuffer
-- [ ] web/javascript/reference/global_objects/atomics
-- [ ] web/javascript/reference/global_objects/dataview
-- [ ] web/javascript/reference/global_objects/iterator
-- [ ] web/javascript/reference/global_objects/generator
-- [ ] web/javascript/reference/global_objects/asyncgenerator
-- [ ] web/javascript/reference/global_objects/asyncfunction
-- [ ] web/javascript/reference/global_objects/generatorfunction
-- [ ] web/javascript/reference/global_objects/asyncgeneratorfunction
-- [ ] web/javascript/reference/global_objects/eval
-- [ ] web/javascript/reference/global_objects/parsefloat
-- [ ] web/javascript/reference/global_objects/parseint
-- [ ] web/javascript/reference/global_objects/isfinite
-- [ ] web/javascript/reference/global_objects/isnan
-- [ ] web/javascript/reference/global_objects/encodeuricomponent
-- [ ] web/javascript/reference/global_objects/decodeuricomponent
-- [ ] web/javascript/reference/global_objects/aggregateerror/aggregateerror
-- [ ] web/javascript/reference/global_objects/aggregateerror/errors
-- [ ] web/javascript/reference/global_objects/aggregateerror
-- [ ] web/javascript/reference/global_objects/array/array
-- [ ] web/javascript/reference/global_objects/array/at
-- [ ] web/javascript/reference/global_objects/array/concat
-- [ ] web/javascript/reference/global_objects/array/copywithin
-- [ ] web/javascript/reference/global_objects/array/entries
-- [ ] web/javascript/reference/global_objects/array/every
-- [ ] web/javascript/reference/global_objects/array/fill
-- [ ] web/javascript/reference/global_objects/array/filter
-- [ ] web/javascript/reference/global_objects/array/find
-- [ ] web/javascript/reference/global_objects/array/findindex
-- [ ] web/javascript/reference/global_objects/array/findlast
-- [ ] web/javascript/reference/global_objects/array/findlastindex
-- [ ] web/javascript/reference/global_objects/array/flat
-- [ ] web/javascript/reference/global_objects/array/flatmap
-- [ ] web/javascript/reference/global_objects/array/foreach
-- [ ] web/javascript/reference/global_objects/array/from
-- [ ] web/javascript/reference/global_objects/array/fromasync
-- [ ] web/javascript/reference/global_objects/array/includes
-- [ ] web/javascript/reference/global_objects/array/indexof
-- [ ] web/javascript/reference/global_objects/array/isarray
-- [ ] web/javascript/reference/global_objects/array/join
-- [ ] web/javascript/reference/global_objects/array/keys
-- [ ] web/javascript/reference/global_objects/array/lastindexof
-- [ ] web/javascript/reference/global_objects/array/length
-- [ ] web/javascript/reference/global_objects/array/map
-- [ ] web/javascript/reference/global_objects/array/of
-- [ ] web/javascript/reference/global_objects/array/pop
-- [ ] web/javascript/reference/global_objects/array/push
-- [ ] web/javascript/reference/global_objects/array/reduce
-- [ ] web/javascript/reference/global_objects/array/reduceright
-- [ ] web/javascript/reference/global_objects/array/reverse
-- [ ] web/javascript/reference/global_objects/array/shift
+- [x] web/javascript/reference/global_objects/json
+- [x] web/javascript/reference/global_objects/intl
+- [x] web/javascript/reference/global_objects/typedarray
+- [x] web/javascript/reference/global_objects/arraybuffer
+- [x] web/javascript/reference/global_objects/sharedarraybuffer
+- [x] web/javascript/reference/global_objects/atomics
+- [x] web/javascript/reference/global_objects/dataview
+- [x] web/javascript/reference/global_objects/iterator
+- [x] web/javascript/reference/global_objects/generator
+- [x] web/javascript/reference/global_objects/asyncgenerator
+- [x] web/javascript/reference/global_objects/asyncfunction
+- [x] web/javascript/reference/global_objects/generatorfunction
+- [x] web/javascript/reference/global_objects/asyncgeneratorfunction
+- [x] web/javascript/reference/global_objects/eval
+- [x] web/javascript/reference/global_objects/parsefloat
+- [x] web/javascript/reference/global_objects/parseint
+- [x] web/javascript/reference/global_objects/isfinite
+- [x] web/javascript/reference/global_objects/isnan
+- [x] web/javascript/reference/global_objects/encodeuricomponent
+- [x] web/javascript/reference/global_objects/decodeuricomponent
+- [x] web/javascript/reference/global_objects/aggregateerror/aggregateerror
+- [x] web/javascript/reference/global_objects/aggregateerror/errors
+- [x] web/javascript/reference/global_objects/aggregateerror
+- [x] web/javascript/reference/global_objects/array/array
+- [x] web/javascript/reference/global_objects/array/at
+- [x] web/javascript/reference/global_objects/array/concat
+- [x] web/javascript/reference/global_objects/array/copywithin
+- [x] web/javascript/reference/global_objects/array/entries
+- [x] web/javascript/reference/global_objects/array/every
+- [x] web/javascript/reference/global_objects/array/fill
+- [x] web/javascript/reference/global_objects/array/filter
+- [x] web/javascript/reference/global_objects/array/find
+- [x] web/javascript/reference/global_objects/array/findindex
+- [x] web/javascript/reference/global_objects/array/findlast
+- [x] web/javascript/reference/global_objects/array/findlastindex
+- [x] web/javascript/reference/global_objects/array/flat
+- [x] web/javascript/reference/global_objects/array/flatmap
+- [x] web/javascript/reference/global_objects/array/foreach
+- [x] web/javascript/reference/global_objects/array/from
+- [x] web/javascript/reference/global_objects/array/fromasync
+- [x] web/javascript/reference/global_objects/array/includes
+- [x] web/javascript/reference/global_objects/array/indexof
+- [x] web/javascript/reference/global_objects/array/isarray
+- [x] web/javascript/reference/global_objects/array/join
+- [x] web/javascript/reference/global_objects/array/keys
+- [x] web/javascript/reference/global_objects/array/lastindexof
+- [x] web/javascript/reference/global_objects/array/length
+- [x] web/javascript/reference/global_objects/array/map
+- [x] web/javascript/reference/global_objects/array/of
+- [x] web/javascript/reference/global_objects/array/pop
+- [x] web/javascript/reference/global_objects/array/push
+- [x] web/javascript/reference/global_objects/array/reduce
+- [x] web/javascript/reference/global_objects/array/reduceright
+- [x] web/javascript/reference/global_objects/array/reverse
+- [x] web/javascript/reference/global_objects/array/shift
 - [ ] web/javascript/reference/global_objects/array/slice
 - [ ] web/javascript/reference/global_objects/array/some
 - [ ] web/javascript/reference/global_objects/array/sort
@@ -505,9 +505,9 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/bigint64array
 - [ ] web/javascript/reference/global_objects/biguint64array/biguint64array
 - [ ] web/javascript/reference/global_objects/biguint64array
-- [ ] web/javascript/reference/global_objects/boolean/boolean
-- [ ] web/javascript/reference/global_objects/boolean/tostring
-- [ ] web/javascript/reference/global_objects/boolean/valueof
+- [x] web/javascript/reference/global_objects/boolean/boolean
+- [x] web/javascript/reference/global_objects/boolean/tostring
+- [x] web/javascript/reference/global_objects/boolean/valueof
 - [ ] web/javascript/reference/global_objects/dataview/buffer
 - [ ] web/javascript/reference/global_objects/dataview/bytelength
 - [ ] web/javascript/reference/global_objects/dataview/byteoffset
@@ -620,18 +620,18 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/float32array
 - [ ] web/javascript/reference/global_objects/float64array/float64array
 - [ ] web/javascript/reference/global_objects/float64array
-- [ ] web/javascript/reference/global_objects/function/apply
+- [x] web/javascript/reference/global_objects/function/apply
 - [ ] web/javascript/reference/global_objects/function/arguments
-- [ ] web/javascript/reference/global_objects/function/bind
-- [ ] web/javascript/reference/global_objects/function/call
+- [x] web/javascript/reference/global_objects/function/bind
+- [x] web/javascript/reference/global_objects/function/call
 - [ ] web/javascript/reference/global_objects/function/caller
-- [ ] web/javascript/reference/global_objects/function/displayname
-- [ ] web/javascript/reference/global_objects/function/function
-- [ ] web/javascript/reference/global_objects/function/length
-- [ ] web/javascript/reference/global_objects/function/name
-- [ ] web/javascript/reference/global_objects/function/prototype
-- [ ] web/javascript/reference/global_objects/function/symbol.hasinstance
-- [ ] web/javascript/reference/global_objects/function/tostring
+- [x] web/javascript/reference/global_objects/function/displayname
+- [x] web/javascript/reference/global_objects/function/function
+- [x] web/javascript/reference/global_objects/function/length
+- [x] web/javascript/reference/global_objects/function/name
+- [x] web/javascript/reference/global_objects/function/prototype
+- [x] web/javascript/reference/global_objects/function/symbol.hasinstance
+- [x] web/javascript/reference/global_objects/function/tostring
 - [ ] web/javascript/reference/global_objects/generator/next
 - [ ] web/javascript/reference/global_objects/generator/return
 - [ ] web/javascript/reference/global_objects/generator/throw
@@ -752,22 +752,22 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/json/parse
 - [ ] web/javascript/reference/global_objects/json/rawjson
 - [ ] web/javascript/reference/global_objects/json/stringify
-- [ ] web/javascript/reference/global_objects/map/clear
-- [ ] web/javascript/reference/global_objects/map/delete
-- [ ] web/javascript/reference/global_objects/map/entries
-- [ ] web/javascript/reference/global_objects/map/foreach
-- [ ] web/javascript/reference/global_objects/map/get
+- [x] web/javascript/reference/global_objects/map/clear
+- [x] web/javascript/reference/global_objects/map/delete
+- [x] web/javascript/reference/global_objects/map/entries
+- [x] web/javascript/reference/global_objects/map/foreach
+- [x] web/javascript/reference/global_objects/map/get
 - [ ] web/javascript/reference/global_objects/map/getorinsert
 - [ ] web/javascript/reference/global_objects/map/getorinsertcomputed
-- [ ] web/javascript/reference/global_objects/map/groupby
-- [ ] web/javascript/reference/global_objects/map/has
-- [ ] web/javascript/reference/global_objects/map/keys
-- [ ] web/javascript/reference/global_objects/map/map
-- [ ] web/javascript/reference/global_objects/map/set
-- [ ] web/javascript/reference/global_objects/map/size
-- [ ] web/javascript/reference/global_objects/map/symbol.iterator
-- [ ] web/javascript/reference/global_objects/map/symbol.species
-- [ ] web/javascript/reference/global_objects/map/values
+- [x] web/javascript/reference/global_objects/map/groupby
+- [x] web/javascript/reference/global_objects/map/has
+- [x] web/javascript/reference/global_objects/map/keys
+- [x] web/javascript/reference/global_objects/map/map
+- [x] web/javascript/reference/global_objects/map/set
+- [x] web/javascript/reference/global_objects/map/size
+- [x] web/javascript/reference/global_objects/map/symbol.iterator
+- [x] web/javascript/reference/global_objects/map/symbol.species
+- [x] web/javascript/reference/global_objects/map/values
 - [ ] web/javascript/reference/global_objects/math/abs
 - [ ] web/javascript/reference/global_objects/math/acos
 - [ ] web/javascript/reference/global_objects/math/acosh
@@ -813,76 +813,76 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/math/tan
 - [ ] web/javascript/reference/global_objects/math/tanh
 - [ ] web/javascript/reference/global_objects/math/trunc
-- [ ] web/javascript/reference/global_objects/number/epsilon
-- [ ] web/javascript/reference/global_objects/number/isfinite
-- [ ] web/javascript/reference/global_objects/number/isinteger
-- [ ] web/javascript/reference/global_objects/number/isnan
-- [ ] web/javascript/reference/global_objects/number/issafeinteger
-- [ ] web/javascript/reference/global_objects/number/max_safe_integer
-- [ ] web/javascript/reference/global_objects/number/max_value
-- [ ] web/javascript/reference/global_objects/number/min_safe_integer
-- [ ] web/javascript/reference/global_objects/number/min_value
-- [ ] web/javascript/reference/global_objects/number/nan
-- [ ] web/javascript/reference/global_objects/number/negative_infinity
-- [ ] web/javascript/reference/global_objects/number/number
-- [ ] web/javascript/reference/global_objects/number/parsefloat
-- [ ] web/javascript/reference/global_objects/number/parseint
-- [ ] web/javascript/reference/global_objects/number/positive_infinity
-- [ ] web/javascript/reference/global_objects/number/toexponential
-- [ ] web/javascript/reference/global_objects/number/tofixed
-- [ ] web/javascript/reference/global_objects/number/tolocalestring
-- [ ] web/javascript/reference/global_objects/number/toprecision
-- [ ] web/javascript/reference/global_objects/number/tostring
-- [ ] web/javascript/reference/global_objects/number/valueof
+- [x] web/javascript/reference/global_objects/number/epsilon
+- [x] web/javascript/reference/global_objects/number/isfinite
+- [x] web/javascript/reference/global_objects/number/isinteger
+- [x] web/javascript/reference/global_objects/number/isnan
+- [x] web/javascript/reference/global_objects/number/issafeinteger
+- [x] web/javascript/reference/global_objects/number/max_safe_integer
+- [x] web/javascript/reference/global_objects/number/max_value
+- [x] web/javascript/reference/global_objects/number/min_safe_integer
+- [x] web/javascript/reference/global_objects/number/min_value
+- [x] web/javascript/reference/global_objects/number/nan
+- [x] web/javascript/reference/global_objects/number/negative_infinity
+- [x] web/javascript/reference/global_objects/number/number
+- [x] web/javascript/reference/global_objects/number/parsefloat
+- [x] web/javascript/reference/global_objects/number/parseint
+- [x] web/javascript/reference/global_objects/number/positive_infinity
+- [x] web/javascript/reference/global_objects/number/toexponential
+- [x] web/javascript/reference/global_objects/number/tofixed
+- [x] web/javascript/reference/global_objects/number/tolocalestring
+- [x] web/javascript/reference/global_objects/number/toprecision
+- [x] web/javascript/reference/global_objects/number/tostring
+- [x] web/javascript/reference/global_objects/number/valueof
 - [ ] web/javascript/reference/global_objects/object/**definegetter**
 - [ ] web/javascript/reference/global_objects/object/**definesetter**
 - [ ] web/javascript/reference/global_objects/object/**lookupgetter**
 - [ ] web/javascript/reference/global_objects/object/**lookupsetter**
-- [ ] web/javascript/reference/global_objects/object/assign
+- [x] web/javascript/reference/global_objects/object/assign
 - [ ] web/javascript/reference/global_objects/object/constructor
-- [ ] web/javascript/reference/global_objects/object/create
-- [ ] web/javascript/reference/global_objects/object/defineproperties
-- [ ] web/javascript/reference/global_objects/object/defineproperty
-- [ ] web/javascript/reference/global_objects/object/entries
-- [ ] web/javascript/reference/global_objects/object/freeze
-- [ ] web/javascript/reference/global_objects/object/fromentries
-- [ ] web/javascript/reference/global_objects/object/getownpropertydescriptor
-- [ ] web/javascript/reference/global_objects/object/getownpropertydescriptors
-- [ ] web/javascript/reference/global_objects/object/getownpropertynames
-- [ ] web/javascript/reference/global_objects/object/getownpropertysymbols
-- [ ] web/javascript/reference/global_objects/object/getprototypeof
-- [ ] web/javascript/reference/global_objects/object/groupby
-- [ ] web/javascript/reference/global_objects/object/hasown
-- [ ] web/javascript/reference/global_objects/object/hasownproperty
-- [ ] web/javascript/reference/global_objects/object/is
-- [ ] web/javascript/reference/global_objects/object/isextensible
-- [ ] web/javascript/reference/global_objects/object/isfrozen
-- [ ] web/javascript/reference/global_objects/object/isprototypeof
-- [ ] web/javascript/reference/global_objects/object/issealed
-- [ ] web/javascript/reference/global_objects/object/keys
-- [ ] web/javascript/reference/global_objects/object/object
-- [ ] web/javascript/reference/global_objects/object/preventextensions
-- [ ] web/javascript/reference/global_objects/object/propertyisenumerable
-- [ ] web/javascript/reference/global_objects/object/proto
-- [ ] web/javascript/reference/global_objects/object/seal
-- [ ] web/javascript/reference/global_objects/object/setprototypeof
-- [ ] web/javascript/reference/global_objects/object/tolocalestring
-- [ ] web/javascript/reference/global_objects/object/tostring
-- [ ] web/javascript/reference/global_objects/object/valueof
-- [ ] web/javascript/reference/global_objects/object/values
-- [ ] web/javascript/reference/global_objects/promise/all
-- [ ] web/javascript/reference/global_objects/promise/allsettled
-- [ ] web/javascript/reference/global_objects/promise/any
-- [ ] web/javascript/reference/global_objects/promise/catch
-- [ ] web/javascript/reference/global_objects/promise/finally
-- [ ] web/javascript/reference/global_objects/promise/promise
-- [ ] web/javascript/reference/global_objects/promise/race
-- [ ] web/javascript/reference/global_objects/promise/reject
-- [ ] web/javascript/reference/global_objects/promise/resolve
+- [x] web/javascript/reference/global_objects/object/create
+- [x] web/javascript/reference/global_objects/object/defineproperties
+- [x] web/javascript/reference/global_objects/object/defineproperty
+- [x] web/javascript/reference/global_objects/object/entries
+- [x] web/javascript/reference/global_objects/object/freeze
+- [x] web/javascript/reference/global_objects/object/fromentries
+- [x] web/javascript/reference/global_objects/object/getownpropertydescriptor
+- [x] web/javascript/reference/global_objects/object/getownpropertydescriptors
+- [x] web/javascript/reference/global_objects/object/getownpropertynames
+- [x] web/javascript/reference/global_objects/object/getownpropertysymbols
+- [x] web/javascript/reference/global_objects/object/getprototypeof
+- [x] web/javascript/reference/global_objects/object/groupby
+- [x] web/javascript/reference/global_objects/object/hasown
+- [x] web/javascript/reference/global_objects/object/hasownproperty
+- [x] web/javascript/reference/global_objects/object/is
+- [x] web/javascript/reference/global_objects/object/isextensible
+- [x] web/javascript/reference/global_objects/object/isfrozen
+- [x] web/javascript/reference/global_objects/object/isprototypeof
+- [x] web/javascript/reference/global_objects/object/issealed
+- [x] web/javascript/reference/global_objects/object/keys
+- [x] web/javascript/reference/global_objects/object/object
+- [x] web/javascript/reference/global_objects/object/preventextensions
+- [x] web/javascript/reference/global_objects/object/propertyisenumerable
+- [x] web/javascript/reference/global_objects/object/proto
+- [x] web/javascript/reference/global_objects/object/seal
+- [x] web/javascript/reference/global_objects/object/setprototypeof
+- [x] web/javascript/reference/global_objects/object/tolocalestring
+- [x] web/javascript/reference/global_objects/object/tostring
+- [x] web/javascript/reference/global_objects/object/valueof
+- [x] web/javascript/reference/global_objects/object/values
+- [x] web/javascript/reference/global_objects/promise/all
+- [x] web/javascript/reference/global_objects/promise/allsettled
+- [x] web/javascript/reference/global_objects/promise/any
+- [x] web/javascript/reference/global_objects/promise/catch
+- [x] web/javascript/reference/global_objects/promise/finally
+- [x] web/javascript/reference/global_objects/promise/promise
+- [x] web/javascript/reference/global_objects/promise/race
+- [x] web/javascript/reference/global_objects/promise/reject
+- [x] web/javascript/reference/global_objects/promise/resolve
 - [ ] web/javascript/reference/global_objects/promise/symbol.species
-- [ ] web/javascript/reference/global_objects/promise/then
-- [ ] web/javascript/reference/global_objects/promise/try
-- [ ] web/javascript/reference/global_objects/promise/withresolvers
+- [x] web/javascript/reference/global_objects/promise/then
+- [x] web/javascript/reference/global_objects/promise/try
+- [x] web/javascript/reference/global_objects/promise/withresolvers
 - [ ] web/javascript/reference/global_objects/proxy/proxy/apply
 - [ ] web/javascript/reference/global_objects/proxy/proxy/construct
 - [ ] web/javascript/reference/global_objects/proxy/proxy/defineproperty
@@ -944,25 +944,25 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/regexp/tostring
 - [ ] web/javascript/reference/global_objects/regexp/unicode
 - [ ] web/javascript/reference/global_objects/regexp/unicodesets
-- [ ] web/javascript/reference/global_objects/set/add
-- [ ] web/javascript/reference/global_objects/set/clear
-- [ ] web/javascript/reference/global_objects/set/delete
-- [ ] web/javascript/reference/global_objects/set/difference
-- [ ] web/javascript/reference/global_objects/set/entries
-- [ ] web/javascript/reference/global_objects/set/foreach
-- [ ] web/javascript/reference/global_objects/set/has
-- [ ] web/javascript/reference/global_objects/set/intersection
-- [ ] web/javascript/reference/global_objects/set/isdisjointfrom
-- [ ] web/javascript/reference/global_objects/set/issubsetof
-- [ ] web/javascript/reference/global_objects/set/issupersetof
-- [ ] web/javascript/reference/global_objects/set/keys
-- [ ] web/javascript/reference/global_objects/set/set
-- [ ] web/javascript/reference/global_objects/set/size
-- [ ] web/javascript/reference/global_objects/set/symbol.iterator
+- [x] web/javascript/reference/global_objects/set/add
+- [x] web/javascript/reference/global_objects/set/clear
+- [x] web/javascript/reference/global_objects/set/delete
+- [x] web/javascript/reference/global_objects/set/difference
+- [x] web/javascript/reference/global_objects/set/entries
+- [x] web/javascript/reference/global_objects/set/foreach
+- [x] web/javascript/reference/global_objects/set/has
+- [x] web/javascript/reference/global_objects/set/intersection
+- [x] web/javascript/reference/global_objects/set/isdisjointfrom
+- [x] web/javascript/reference/global_objects/set/issubsetof
+- [x] web/javascript/reference/global_objects/set/issupersetof
+- [x] web/javascript/reference/global_objects/set/keys
+- [x] web/javascript/reference/global_objects/set/set
+- [x] web/javascript/reference/global_objects/set/size
+- [x] web/javascript/reference/global_objects/set/symbol.iterator
 - [ ] web/javascript/reference/global_objects/set/symbol.species
-- [ ] web/javascript/reference/global_objects/set/symmetricdifference
-- [ ] web/javascript/reference/global_objects/set/union
-- [ ] web/javascript/reference/global_objects/set/values
+- [x] web/javascript/reference/global_objects/set/symmetricdifference
+- [x] web/javascript/reference/global_objects/set/union
+- [x] web/javascript/reference/global_objects/set/values
 - [ ] web/javascript/reference/global_objects/sharedarraybuffer/bytelength
 - [ ] web/javascript/reference/global_objects/sharedarraybuffer/grow
 - [ ] web/javascript/reference/global_objects/sharedarraybuffer/growable
@@ -971,59 +971,59 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/sharedarraybuffer/slice
 - [ ] web/javascript/reference/global_objects/sharedarraybuffer/symbol.species
 - [ ] web/javascript/reference/global_objects/string/anchor
-- [ ] web/javascript/reference/global_objects/string/at
+- [x] web/javascript/reference/global_objects/string/at
 - [ ] web/javascript/reference/global_objects/string/big
 - [ ] web/javascript/reference/global_objects/string/blink
 - [ ] web/javascript/reference/global_objects/string/bold
-- [ ] web/javascript/reference/global_objects/string/charat
-- [ ] web/javascript/reference/global_objects/string/charcodeat
-- [ ] web/javascript/reference/global_objects/string/codepointat
-- [ ] web/javascript/reference/global_objects/string/concat
-- [ ] web/javascript/reference/global_objects/string/endswith
+- [x] web/javascript/reference/global_objects/string/charat
+- [x] web/javascript/reference/global_objects/string/charcodeat
+- [x] web/javascript/reference/global_objects/string/codepointat
+- [x] web/javascript/reference/global_objects/string/concat
+- [x] web/javascript/reference/global_objects/string/endswith
 - [ ] web/javascript/reference/global_objects/string/fixed
 - [ ] web/javascript/reference/global_objects/string/fontcolor
 - [ ] web/javascript/reference/global_objects/string/fontsize
-- [ ] web/javascript/reference/global_objects/string/fromcharcode
-- [ ] web/javascript/reference/global_objects/string/fromcodepoint
-- [ ] web/javascript/reference/global_objects/string/includes
-- [ ] web/javascript/reference/global_objects/string/indexof
-- [ ] web/javascript/reference/global_objects/string/iswellformed
+- [x] web/javascript/reference/global_objects/string/fromcharcode
+- [x] web/javascript/reference/global_objects/string/fromcodepoint
+- [x] web/javascript/reference/global_objects/string/includes
+- [x] web/javascript/reference/global_objects/string/indexof
+- [x] web/javascript/reference/global_objects/string/iswellformed
 - [ ] web/javascript/reference/global_objects/string/italics
-- [ ] web/javascript/reference/global_objects/string/lastindexof
-- [ ] web/javascript/reference/global_objects/string/length
+- [x] web/javascript/reference/global_objects/string/lastindexof
+- [x] web/javascript/reference/global_objects/string/length
 - [ ] web/javascript/reference/global_objects/string/link
-- [ ] web/javascript/reference/global_objects/string/localecompare
-- [ ] web/javascript/reference/global_objects/string/match
-- [ ] web/javascript/reference/global_objects/string/matchall
-- [ ] web/javascript/reference/global_objects/string/normalize
-- [ ] web/javascript/reference/global_objects/string/padend
-- [ ] web/javascript/reference/global_objects/string/padstart
-- [ ] web/javascript/reference/global_objects/string/raw
-- [ ] web/javascript/reference/global_objects/string/repeat
-- [ ] web/javascript/reference/global_objects/string/replace
-- [ ] web/javascript/reference/global_objects/string/replaceall
-- [ ] web/javascript/reference/global_objects/string/search
-- [ ] web/javascript/reference/global_objects/string/slice
+- [x] web/javascript/reference/global_objects/string/localecompare
+- [x] web/javascript/reference/global_objects/string/match
+- [x] web/javascript/reference/global_objects/string/matchall
+- [x] web/javascript/reference/global_objects/string/normalize
+- [x] web/javascript/reference/global_objects/string/padend
+- [x] web/javascript/reference/global_objects/string/padstart
+- [x] web/javascript/reference/global_objects/string/raw
+- [x] web/javascript/reference/global_objects/string/repeat
+- [x] web/javascript/reference/global_objects/string/replace
+- [x] web/javascript/reference/global_objects/string/replaceall
+- [x] web/javascript/reference/global_objects/string/search
+- [x] web/javascript/reference/global_objects/string/slice
 - [ ] web/javascript/reference/global_objects/string/small
-- [ ] web/javascript/reference/global_objects/string/split
-- [ ] web/javascript/reference/global_objects/string/startswith
+- [x] web/javascript/reference/global_objects/string/split
+- [x] web/javascript/reference/global_objects/string/startswith
 - [ ] web/javascript/reference/global_objects/string/strike
-- [ ] web/javascript/reference/global_objects/string/string
+- [x] web/javascript/reference/global_objects/string/string
 - [ ] web/javascript/reference/global_objects/string/sub
 - [ ] web/javascript/reference/global_objects/string/substr
-- [ ] web/javascript/reference/global_objects/string/substring
+- [x] web/javascript/reference/global_objects/string/substring
 - [ ] web/javascript/reference/global_objects/string/sup
-- [ ] web/javascript/reference/global_objects/string/symbol.iterator
-- [ ] web/javascript/reference/global_objects/string/tolocalelowercase
-- [ ] web/javascript/reference/global_objects/string/tolocaleuppercase
-- [ ] web/javascript/reference/global_objects/string/tolowercase
-- [ ] web/javascript/reference/global_objects/string/tostring
-- [ ] web/javascript/reference/global_objects/string/touppercase
-- [ ] web/javascript/reference/global_objects/string/towellformed
-- [ ] web/javascript/reference/global_objects/string/trim
-- [ ] web/javascript/reference/global_objects/string/trimend
-- [ ] web/javascript/reference/global_objects/string/trimstart
-- [ ] web/javascript/reference/global_objects/string/valueof
+- [x] web/javascript/reference/global_objects/string/symbol.iterator
+- [x] web/javascript/reference/global_objects/string/tolocalelowercase
+- [x] web/javascript/reference/global_objects/string/tolocaleuppercase
+- [x] web/javascript/reference/global_objects/string/tolowercase
+- [x] web/javascript/reference/global_objects/string/tostring
+- [x] web/javascript/reference/global_objects/string/touppercase
+- [x] web/javascript/reference/global_objects/string/towellformed
+- [x] web/javascript/reference/global_objects/string/trim
+- [x] web/javascript/reference/global_objects/string/trimend
+- [x] web/javascript/reference/global_objects/string/trimstart
+- [x] web/javascript/reference/global_objects/string/valueof
 - [ ] web/javascript/reference/global_objects/suppressederror/error
 - [ ] web/javascript/reference/global_objects/suppressederror
 - [ ] web/javascript/reference/global_objects/suppressederror/suppressed
@@ -1353,16 +1353,16 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/unescape
 - [ ] web/javascript/reference/global_objects/urierror
 - [ ] web/javascript/reference/global_objects/urierror/urierror
-- [ ] web/javascript/reference/global_objects/weakmap/delete
-- [ ] web/javascript/reference/global_objects/weakmap/get
+- [x] web/javascript/reference/global_objects/weakmap/delete
+- [x] web/javascript/reference/global_objects/weakmap/get
 - [ ] web/javascript/reference/global_objects/weakmap/getorinsert
 - [ ] web/javascript/reference/global_objects/weakmap/getorinsertcomputed
-- [ ] web/javascript/reference/global_objects/weakmap/has
-- [ ] web/javascript/reference/global_objects/weakmap/set
-- [ ] web/javascript/reference/global_objects/weakmap/weakmap
+- [x] web/javascript/reference/global_objects/weakmap/has
+- [x] web/javascript/reference/global_objects/weakmap/set
+- [x] web/javascript/reference/global_objects/weakmap/weakmap
 - [ ] web/javascript/reference/global_objects/weakref/deref
 - [ ] web/javascript/reference/global_objects/weakref/weakref
-- [ ] web/javascript/reference/global_objects/weakset/add
-- [ ] web/javascript/reference/global_objects/weakset/delete
-- [ ] web/javascript/reference/global_objects/weakset/has
-- [ ] web/javascript/reference/global_objects/weakset/weakset
+- [x] web/javascript/reference/global_objects/weakset/add
+- [x] web/javascript/reference/global_objects/weakset/delete
+- [x] web/javascript/reference/global_objects/weakset/has
+- [x] web/javascript/reference/global_objects/weakset/weakset
