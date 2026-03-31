@@ -181,9 +181,9 @@ Total: 1,329 pages
 - [x] web/javascript/reference/functions/arguments
 - [x] web/javascript/reference/functions/get
 - [x] web/javascript/reference/functions/set
-- [ ] web/javascript/reference/functions/arguments/callee
-- [ ] web/javascript/reference/functions/arguments/length
-- [ ] web/javascript/reference/functions/arguments/symbol.iterator
+- [x] web/javascript/reference/functions/arguments/callee
+- [x] web/javascript/reference/functions/arguments/length
+- [x] web/javascript/reference/functions/arguments/symbol.iterator
 - [x] web/javascript/reference/functions/method_definitions
 
 ## Reference — Classes (7 pages)
@@ -193,7 +193,7 @@ Total: 1,329 pages
 - [x] web/javascript/reference/classes/extends
 - [x] web/javascript/reference/classes/static
 - [x] web/javascript/reference/classes/private_elements
-- [ ] web/javascript/reference/classes/public_class_fields
+- [x] web/javascript/reference/classes/public_class_fields
 - [x] web/javascript/reference/classes/static_initialization_blocks
 
 ## Reference — Regular expressions (19 pages)
