@@ -108,9 +108,9 @@ Như được báo cáo trong [Chromium Blog](https://blog.chromium.org/2011/07/
 
 Đặc tả [Resource Timing](https://w3c.github.io/resource-timing/) định nghĩa một giao diện cho các ứng dụng web để truy cập thông tin thời gian đầy đủ cho các tài nguyên trong một tài liệu.
 
-Tiêu đề phản hồi [`Timing-Allow-Origin`](/en-US/docs/Web/HTTP/Reference/Headers/Timing-Allow-Origin) chỉ định các nguồn gốc được phép xem các giá trị của các thuộc tính được truy xuất thông qua các tính năng của API Resource Timing, nếu không sẽ được báo cáo là không vì các hạn chế cross-origin.
+Tiêu đề phản hồi [`Timing-Allow-Origin`](/en-US/docs/Web/HTTP/Reference/Headers/Timing-Allow-Origin) chỉ định các nguồn gốc được phép xem các giá trị của các thuộc tính được truy xuất thông qua các tính năng của API Resource Timing, nếu không sẽ được báo cáo là 0 do các hạn chế cross-origin.
 
-Nếu tài nguyên không được phục vụ với `Timing-Allow-Origin` hoặc nếu tiêu đề không bao gồm nguồn gốc sau khi thực hiện yêu cầu, một số thuộc tính của đối tượng `PerformanceResourceTiming` sẽ được đặt thành không.
+Nếu tài nguyên không được phục vụ với `Timing-Allow-Origin` hoặc nếu tiêu đề không bao gồm nguồn gốc sau khi thực hiện yêu cầu, một số thuộc tính của đối tượng `PerformanceResourceTiming` sẽ được đặt thành 0.
 
 ```apacheconf
 <IfModule mod_headers.c>
