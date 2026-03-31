@@ -6,7 +6,7 @@ browser-compat: javascript.operators.exponentiation
 sidebar: jssidebar
 ---
 
-Operator **lũy thừa (`**`)\*\* trả về kết quả của việc nâng toán hạng đầu tiên lên lũy thừa của toán hạng thứ hai. Nó tương đương với {{jsxref("Math.pow()")}}, ngoại trừ việc nó cũng chấp nhận [BigInt](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) làm toán hạng.
+Operator **lũy thừa** (`**`) trả về kết quả của việc nâng toán hạng đầu tiên lên lũy thừa của toán hạng thứ hai. Nó tương đương với {{jsxref("Math.pow()")}}, ngoại trừ việc nó cũng chấp nhận [BigInt](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) làm toán hạng.
 
 {{InteractiveExample("JavaScript Demo: Exponentiation (**) operator")}}
 
