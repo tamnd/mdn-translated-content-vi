@@ -9,42 +9,42 @@ Total: 1,329 pages
 
 ## Guide (33 pages)
 
-- [ ] web/javascript/guide/index.md
+- [x] web/javascript/guide/index.md
 - [x] web/javascript/guide/introduction
-- [ ] web/javascript/guide/grammar_and_types
-- [ ] web/javascript/guide/control_flow_and_error_handling
-- [ ] web/javascript/guide/loops_and_iteration
-- [ ] web/javascript/guide/functions
-- [ ] web/javascript/guide/expressions_and_operators
+- [x] web/javascript/guide/grammar_and_types
+- [x] web/javascript/guide/control_flow_and_error_handling
+- [x] web/javascript/guide/loops_and_iteration
+- [x] web/javascript/guide/functions
+- [x] web/javascript/guide/expressions_and_operators
 - [ ] web/javascript/guide/numbers_and_dates
 - [ ] web/javascript/guide/text_formatting
-- [ ] web/javascript/guide/regular_expressions
-- [ ] web/javascript/guide/indexed_collections
-- [ ] web/javascript/guide/keyed_collections
-- [ ] web/javascript/guide/working_with_objects
+- [x] web/javascript/guide/regular_expressions
+- [x] web/javascript/guide/indexed_collections
+- [x] web/javascript/guide/keyed_collections
+- [x] web/javascript/guide/working_with_objects
 - [ ] web/javascript/guide/details_of_the_object_model
-- [ ] web/javascript/guide/using_promises
-- [ ] web/javascript/guide/iterators_and_generators
-- [ ] web/javascript/guide/meta_programming
-- [ ] web/javascript/guide/modules
-- [ ] web/javascript/guide/closures
+- [x] web/javascript/guide/using_promises
+- [x] web/javascript/guide/iterators_and_generators
+- [x] web/javascript/guide/meta_programming
+- [x] web/javascript/guide/modules
+- [x] web/javascript/guide/closures
 - [ ] web/javascript/guide/data_structures
-- [ ] web/javascript/guide/enumerability_and_ownership_of_properties
-- [ ] web/javascript/guide/equality_comparisons_and_sameness
-- [ ] web/javascript/guide/inheritance_and_the_prototype_chain
-- [ ] web/javascript/guide/internationalization
+- [x] web/javascript/guide/enumerability_and_ownership_of_properties
+- [x] web/javascript/guide/equality_comparisons_and_sameness
+- [x] web/javascript/guide/inheritance_and_the_prototype_chain
+- [x] web/javascript/guide/internationalization
 - [ ] web/javascript/guide/language_overview
-- [ ] web/javascript/guide/memory_management
-- [ ] web/javascript/guide/numbers_and_strings
-- [ ] web/javascript/guide/regular_expressions/assertions
-- [ ] web/javascript/guide/regular_expressions/character_classes
+- [x] web/javascript/guide/memory_management
+- [x] web/javascript/guide/numbers_and_strings
+- [x] web/javascript/guide/regular_expressions/assertions
+- [x] web/javascript/guide/regular_expressions/character_classes
 - [ ] web/javascript/guide/regular_expressions/cheatsheet
 - [ ] web/javascript/guide/regular_expressions/groups_and_backreferences
 - [ ] web/javascript/guide/regular_expressions/quantifiers
-- [ ] web/javascript/guide/representing_dates_times
+- [x] web/javascript/guide/representing_dates_times
 - [ ] web/javascript/guide/resource_management
-- [ ] web/javascript/guide/typed_arrays
-- [ ] web/javascript/guide/using_classes
+- [x] web/javascript/guide/typed_arrays
+- [x] web/javascript/guide/using_classes
 
 ## Reference — Overview pages
 
@@ -63,30 +63,30 @@ Total: 1,329 pages
 - [x] web/javascript/reference/statements/var
 - [x] web/javascript/reference/statements/let
 - [x] web/javascript/reference/statements/const
-- [ ] web/javascript/reference/statements/if...else
-- [ ] web/javascript/reference/statements/switch
-- [ ] web/javascript/reference/statements/for
-- [ ] web/javascript/reference/statements/for...in
-- [ ] web/javascript/reference/statements/for...of
+- [x] web/javascript/reference/statements/if...else
+- [x] web/javascript/reference/statements/switch
+- [x] web/javascript/reference/statements/for
+- [x] web/javascript/reference/statements/for...in
+- [x] web/javascript/reference/statements/for...of
 - [ ] web/javascript/reference/statements/for-await...of
-- [ ] web/javascript/reference/statements/while
-- [ ] web/javascript/reference/statements/do...while
-- [ ] web/javascript/reference/statements/break
-- [ ] web/javascript/reference/statements/continue
-- [ ] web/javascript/reference/statements/return
-- [ ] web/javascript/reference/statements/throw
-- [ ] web/javascript/reference/statements/try...catch
-- [ ] web/javascript/reference/statements/function
+- [x] web/javascript/reference/statements/while
+- [x] web/javascript/reference/statements/do...while
+- [x] web/javascript/reference/statements/break
+- [x] web/javascript/reference/statements/continue
+- [x] web/javascript/reference/statements/return
+- [x] web/javascript/reference/statements/throw
+- [x] web/javascript/reference/statements/try...catch
+- [x] web/javascript/reference/statements/function
 - [ ] web/javascript/reference/statements/function\*
 - [x] web/javascript/reference/statements/async_function
 - [ ] web/javascript/reference/statements/async_function\*
-- [ ] web/javascript/reference/statements/class
-- [ ] web/javascript/reference/statements/import
-- [ ] web/javascript/reference/statements/export
+- [x] web/javascript/reference/statements/class
+- [x] web/javascript/reference/statements/import
+- [x] web/javascript/reference/statements/export
 - [ ] web/javascript/reference/statements/with
-- [ ] web/javascript/reference/statements/block
+- [x] web/javascript/reference/statements/block
 - [ ] web/javascript/reference/statements/empty
-- [ ] web/javascript/reference/statements/debugger
+- [x] web/javascript/reference/statements/debugger
 - [ ] web/javascript/reference/statements/label
 - [ ] web/javascript/reference/statements/await_using
 - [ ] web/javascript/reference/statements/expression_statement
