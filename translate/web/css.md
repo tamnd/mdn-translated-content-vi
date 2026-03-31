@@ -34,12 +34,12 @@ Total: 1,226 pages
 - [ ] web/css/guides/text
 - [ ] web/css/guides/transforms
 - [ ] web/css/guides/transitions
-- [ ] *(remaining guides)*
+- [ ] _(remaining guides)_
 
 ## How to (14 pages)
 
 - [ ] web/css/how_to/index.md
-- [ ] *(remaining how_to pages)*
+- [ ] _(remaining how_to pages)_
 
 ## Tutorials (1 page)
 
@@ -65,7 +65,7 @@ Total: 1,226 pages
 - [ ] web/css/reference/at-rules/@scope
 - [ ] web/css/reference/at-rules/@starting-style
 - [ ] web/css/reference/at-rules/@supports
-- [ ] *(remaining at-rules)*
+- [ ] _(remaining at-rules)_
 
 ## Reference -- Properties (550 pages)
 
@@ -92,7 +92,7 @@ High-priority properties (translate first):
 - [ ] web/css/reference/properties/grid-template-columns
 - [ ] web/css/reference/properties/grid-template-rows
 - [ ] web/css/reference/properties/grid-area
-- [ ] web/css/reference/properties/width / height / min-* / max-*
+- [ ] web/css/reference/properties/width / height / min-_ / max-_
 - [ ] web/css/reference/properties/margin / padding
 - [ ] web/css/reference/properties/overflow
 - [ ] web/css/reference/properties/font
@@ -109,7 +109,7 @@ High-priority properties (translate first):
 - [ ] web/css/reference/properties/z-index
 - [ ] web/css/reference/properties/cursor
 - [ ] web/css/reference/properties/visibility
-- [ ] *(remaining properties A-Z)*
+- [ ] _(remaining properties A-Z)_
 
 ## Reference -- Selectors (166 pages)
 
@@ -122,9 +122,9 @@ High-priority properties (translate first):
 - [ ] web/css/reference/selectors/pseudo-classes
 - [ ] web/css/reference/selectors/pseudo-elements
 - [ ] web/css/reference/selectors/combinators
-- [ ] *(remaining selectors)*
+- [ ] _(remaining selectors)_
 
 ## Reference -- Values / types (184 pages)
 
 - [ ] web/css/reference/values/index.md
-- [ ] *(remaining value pages)*
+- [ ] _(remaining value pages)_
