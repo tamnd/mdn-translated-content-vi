@@ -1,6 +1,6 @@
 ---
-title: "Django Tutorial Part 8: User authentication and permissions"
-short-title: "8: Authentication and permissions"
+title: "Hướng dẫn Django Phần 8: Xác thực người dùng và quyền hạn"
+short-title: "8: Xác thực và quyền hạn"
 slug: Learn_web_development/Extensions/Server-side/Django/Authentication
 page-type: learn-module-chapter
 sidebar: learnsidebar

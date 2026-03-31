@@ -1,6 +1,6 @@
 ---
-title: "Django Tutorial Part 9: Working with forms"
-short-title: "9: Forms"
+title: "Hướng dẫn Django Phần 9: Làm việc với biểu mẫu"
+short-title: "9: Biểu mẫu"
 slug: Learn_web_development/Extensions/Server-side/Django/Forms
 page-type: learn-module-chapter
 sidebar: learnsidebar
