@@ -28,38 +28,38 @@ Total: 1,329 pages
 - [x] web/javascript/guide/meta_programming
 - [x] web/javascript/guide/modules
 - [x] web/javascript/guide/closures
-- [ ] web/javascript/guide/data_structures
+- [x] web/javascript/guide/data_structures
 - [x] web/javascript/guide/enumerability_and_ownership_of_properties
 - [x] web/javascript/guide/equality_comparisons_and_sameness
 - [x] web/javascript/guide/inheritance_and_the_prototype_chain
 - [x] web/javascript/guide/internationalization
-- [ ] web/javascript/guide/language_overview
+- [x] web/javascript/guide/language_overview
 - [x] web/javascript/guide/memory_management
 - [x] web/javascript/guide/numbers_and_strings
 - [x] web/javascript/guide/regular_expressions/assertions
 - [x] web/javascript/guide/regular_expressions/character_classes
-- [ ] web/javascript/guide/regular_expressions/cheatsheet
-- [ ] web/javascript/guide/regular_expressions/groups_and_backreferences
-- [ ] web/javascript/guide/regular_expressions/quantifiers
+- [x] web/javascript/guide/regular_expressions/cheatsheet
+- [x] web/javascript/guide/regular_expressions/groups_and_backreferences
+- [x] web/javascript/guide/regular_expressions/quantifiers
 - [x] web/javascript/guide/representing_dates_times
-- [ ] web/javascript/guide/resource_management
+- [x] web/javascript/guide/resource_management
 - [x] web/javascript/guide/typed_arrays
 - [x] web/javascript/guide/using_classes
 
 ## Reference — Overview pages
 
-- [ ] web/javascript/reference/index.md
-- [ ] web/javascript/reference/lexical_grammar
-- [ ] web/javascript/reference/execution_model
-- [ ] web/javascript/reference/strict_mode
-- [ ] web/javascript/reference/template_literals
-- [ ] web/javascript/reference/iteration_protocols
-- [ ] web/javascript/reference/trailing_commas
-- [ ] web/javascript/reference/deprecated_and_obsolete_features
+- [x] web/javascript/reference/index.md
+- [x] web/javascript/reference/lexical_grammar
+- [x] web/javascript/reference/execution_model
+- [x] web/javascript/reference/strict_mode
+- [x] web/javascript/reference/template_literals
+- [x] web/javascript/reference/iteration_protocols
+- [x] web/javascript/reference/trailing_commas
+- [x] web/javascript/reference/deprecated_and_obsolete_features
 
 ## Reference — Statements (33 pages)
 
-- [ ] web/javascript/reference/statements/index.md
+- [x] web/javascript/reference/statements/index.md
 - [x] web/javascript/reference/statements/var
 - [x] web/javascript/reference/statements/let
 - [x] web/javascript/reference/statements/const
@@ -68,7 +68,7 @@ Total: 1,329 pages
 - [x] web/javascript/reference/statements/for
 - [x] web/javascript/reference/statements/for...in
 - [x] web/javascript/reference/statements/for...of
-- [ ] web/javascript/reference/statements/for-await...of
+- [x] web/javascript/reference/statements/for-await...of
 - [x] web/javascript/reference/statements/while
 - [x] web/javascript/reference/statements/do...while
 - [x] web/javascript/reference/statements/break
@@ -83,11 +83,11 @@ Total: 1,329 pages
 - [x] web/javascript/reference/statements/class
 - [x] web/javascript/reference/statements/import
 - [x] web/javascript/reference/statements/export
-- [ ] web/javascript/reference/statements/with
+- [x] web/javascript/reference/statements/with
 - [x] web/javascript/reference/statements/block
-- [ ] web/javascript/reference/statements/empty
+- [x] web/javascript/reference/statements/empty
 - [x] web/javascript/reference/statements/debugger
-- [ ] web/javascript/reference/statements/label
+- [x] web/javascript/reference/statements/label
 - [ ] web/javascript/reference/statements/await_using
 - [ ] web/javascript/reference/statements/expression_statement
 - [ ] web/javascript/reference/statements/import/with
@@ -95,106 +95,106 @@ Total: 1,329 pages
 
 ## Reference — Operators (76 pages)
 
-- [ ] web/javascript/reference/operators/index.md
-- [ ] web/javascript/reference/operators/assignment
-- [ ] web/javascript/reference/operators/addition
-- [ ] web/javascript/reference/operators/subtraction
-- [ ] web/javascript/reference/operators/multiplication
-- [ ] web/javascript/reference/operators/division
-- [ ] web/javascript/reference/operators/remainder
-- [ ] web/javascript/reference/operators/exponentiation
-- [ ] web/javascript/reference/operators/increment
-- [ ] web/javascript/reference/operators/decrement
-- [ ] web/javascript/reference/operators/equality
-- [ ] web/javascript/reference/operators/inequality
-- [ ] web/javascript/reference/operators/strict_equality
-- [ ] web/javascript/reference/operators/strict_inequality
-- [ ] web/javascript/reference/operators/greater_than
-- [ ] web/javascript/reference/operators/less_than
-- [ ] web/javascript/reference/operators/logical_and
-- [ ] web/javascript/reference/operators/logical_or
-- [ ] web/javascript/reference/operators/logical_not
-- [ ] web/javascript/reference/operators/nullish_coalescing
-- [ ] web/javascript/reference/operators/optional_chaining
+- [x] web/javascript/reference/operators/index.md
+- [x] web/javascript/reference/operators/assignment
+- [x] web/javascript/reference/operators/addition
+- [x] web/javascript/reference/operators/subtraction
+- [x] web/javascript/reference/operators/multiplication
+- [x] web/javascript/reference/operators/division
+- [x] web/javascript/reference/operators/remainder
+- [x] web/javascript/reference/operators/exponentiation
+- [x] web/javascript/reference/operators/increment
+- [x] web/javascript/reference/operators/decrement
+- [x] web/javascript/reference/operators/equality
+- [x] web/javascript/reference/operators/inequality
+- [x] web/javascript/reference/operators/strict_equality
+- [x] web/javascript/reference/operators/strict_inequality
+- [x] web/javascript/reference/operators/greater_than
+- [x] web/javascript/reference/operators/less_than
+- [x] web/javascript/reference/operators/logical_and
+- [x] web/javascript/reference/operators/logical_or
+- [x] web/javascript/reference/operators/logical_not
+- [x] web/javascript/reference/operators/nullish_coalescing
+- [x] web/javascript/reference/operators/optional_chaining
 - [x] web/javascript/reference/operators/typeof
-- [ ] web/javascript/reference/operators/instanceof
-- [ ] web/javascript/reference/operators/in
-- [ ] web/javascript/reference/operators/new
-- [ ] web/javascript/reference/operators/delete
-- [ ] web/javascript/reference/operators/void
+- [x] web/javascript/reference/operators/instanceof
+- [x] web/javascript/reference/operators/in
+- [x] web/javascript/reference/operators/new
+- [x] web/javascript/reference/operators/delete
+- [x] web/javascript/reference/operators/void
 - [x] web/javascript/reference/operators/spread_syntax
 - [x] web/javascript/reference/operators/destructuring
-- [ ] web/javascript/reference/operators/comma_operator
-- [ ] web/javascript/reference/operators/conditional_operator
-- [ ] web/javascript/reference/operators/await
-- [ ] web/javascript/reference/operators/yield
-- [ ] web/javascript/reference/operators/this
-- [ ] web/javascript/reference/operators/addition_assignment
+- [x] web/javascript/reference/operators/comma_operator
+- [x] web/javascript/reference/operators/conditional_operator
+- [x] web/javascript/reference/operators/await
+- [x] web/javascript/reference/operators/yield
+- [x] web/javascript/reference/operators/this
+- [x] web/javascript/reference/operators/addition_assignment
 - [ ] web/javascript/reference/operators/async_function\*
 - [ ] web/javascript/reference/operators/async_function
-- [ ] web/javascript/reference/operators/bitwise_and_assignment
-- [ ] web/javascript/reference/operators/bitwise_and
-- [ ] web/javascript/reference/operators/bitwise_not
-- [ ] web/javascript/reference/operators/bitwise_or_assignment
-- [ ] web/javascript/reference/operators/bitwise_or
-- [ ] web/javascript/reference/operators/bitwise_xor_assignment
-- [ ] web/javascript/reference/operators/bitwise_xor
-- [ ] web/javascript/reference/operators/class
-- [ ] web/javascript/reference/operators/division_assignment
-- [ ] web/javascript/reference/operators/exponentiation_assignment
+- [x] web/javascript/reference/operators/bitwise_and_assignment
+- [x] web/javascript/reference/operators/bitwise_and
+- [x] web/javascript/reference/operators/bitwise_not
+- [x] web/javascript/reference/operators/bitwise_or_assignment
+- [x] web/javascript/reference/operators/bitwise_or
+- [x] web/javascript/reference/operators/bitwise_xor_assignment
+- [x] web/javascript/reference/operators/bitwise_xor
+- [x] web/javascript/reference/operators/class
+- [x] web/javascript/reference/operators/division_assignment
+- [x] web/javascript/reference/operators/exponentiation_assignment
 - [ ] web/javascript/reference/operators/function\*
-- [ ] web/javascript/reference/operators/function
-- [ ] web/javascript/reference/operators/greater_than_or_equal
-- [ ] web/javascript/reference/operators/grouping
+- [x] web/javascript/reference/operators/function
+- [x] web/javascript/reference/operators/greater_than_or_equal
+- [x] web/javascript/reference/operators/grouping
 - [ ] web/javascript/reference/operators/import.meta
 - [ ] web/javascript/reference/operators/import.meta/resolve
-- [ ] web/javascript/reference/operators/import
-- [ ] web/javascript/reference/operators/left_shift_assignment
-- [ ] web/javascript/reference/operators/left_shift
-- [ ] web/javascript/reference/operators/less_than_or_equal
-- [ ] web/javascript/reference/operators/logical_and_assignment
-- [ ] web/javascript/reference/operators/logical_or_assignment
-- [ ] web/javascript/reference/operators/multiplication_assignment
-- [ ] web/javascript/reference/operators/new.target
-- [ ] web/javascript/reference/operators/null
-- [ ] web/javascript/reference/operators/nullish_coalescing_assignment
-- [ ] web/javascript/reference/operators/object_initializer
-- [ ] web/javascript/reference/operators/operator_precedence
-- [ ] web/javascript/reference/operators/property_accessors
-- [ ] web/javascript/reference/operators/remainder_assignment
-- [ ] web/javascript/reference/operators/right_shift_assignment
-- [ ] web/javascript/reference/operators/right_shift
-- [ ] web/javascript/reference/operators/subtraction_assignment
-- [ ] web/javascript/reference/operators/super
-- [ ] web/javascript/reference/operators/unary_negation
-- [ ] web/javascript/reference/operators/unary_plus
-- [ ] web/javascript/reference/operators/unsigned_right_shift_assignment
-- [ ] web/javascript/reference/operators/unsigned_right_shift
-- [ ] web/javascript/reference/operators/yield\*
+- [x] web/javascript/reference/operators/import
+- [x] web/javascript/reference/operators/left_shift_assignment
+- [x] web/javascript/reference/operators/left_shift
+- [x] web/javascript/reference/operators/less_than_or_equal
+- [x] web/javascript/reference/operators/logical_and_assignment
+- [x] web/javascript/reference/operators/logical_or_assignment
+- [x] web/javascript/reference/operators/multiplication_assignment
+- [x] web/javascript/reference/operators/new.target
+- [x] web/javascript/reference/operators/null
+- [x] web/javascript/reference/operators/nullish_coalescing_assignment
+- [x] web/javascript/reference/operators/object_initializer
+- [x] web/javascript/reference/operators/operator_precedence
+- [x] web/javascript/reference/operators/property_accessors
+- [x] web/javascript/reference/operators/remainder_assignment
+- [x] web/javascript/reference/operators/right_shift_assignment
+- [x] web/javascript/reference/operators/right_shift
+- [x] web/javascript/reference/operators/subtraction_assignment
+- [x] web/javascript/reference/operators/super
+- [x] web/javascript/reference/operators/unary_negation
+- [x] web/javascript/reference/operators/unary_plus
+- [x] web/javascript/reference/operators/unsigned_right_shift_assignment
+- [x] web/javascript/reference/operators/unsigned_right_shift
+- [x] web/javascript/reference/operators/yield\*\*
 
 ## Reference — Functions (11 pages)
 
-- [ ] web/javascript/reference/functions/index.md
+- [x] web/javascript/reference/functions/index.md
 - [x] web/javascript/reference/functions/arrow_functions
-- [ ] web/javascript/reference/functions/default_parameters
-- [ ] web/javascript/reference/functions/rest_parameters
-- [ ] web/javascript/reference/functions/arguments
-- [ ] web/javascript/reference/functions/get
-- [ ] web/javascript/reference/functions/set
+- [x] web/javascript/reference/functions/default_parameters
+- [x] web/javascript/reference/functions/rest_parameters
+- [x] web/javascript/reference/functions/arguments
+- [x] web/javascript/reference/functions/get
+- [x] web/javascript/reference/functions/set
 - [ ] web/javascript/reference/functions/arguments/callee
 - [ ] web/javascript/reference/functions/arguments/length
 - [ ] web/javascript/reference/functions/arguments/symbol.iterator
-- [ ] web/javascript/reference/functions/method_definitions
+- [x] web/javascript/reference/functions/method_definitions
 
 ## Reference — Classes (7 pages)
 
 - [x] web/javascript/reference/classes/index.md
 - [x] web/javascript/reference/classes/constructor
-- [ ] web/javascript/reference/classes/extends
-- [ ] web/javascript/reference/classes/static
-- [ ] web/javascript/reference/classes/private_elements
+- [x] web/javascript/reference/classes/extends
+- [x] web/javascript/reference/classes/static
+- [x] web/javascript/reference/classes/private_elements
 - [ ] web/javascript/reference/classes/public_class_fields
-- [ ] web/javascript/reference/classes/static_initialization_blocks
+- [x] web/javascript/reference/classes/static_initialization_blocks
 
 ## Reference — Regular expressions (19 pages)
 
