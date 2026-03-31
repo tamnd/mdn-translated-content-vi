@@ -11,7 +11,7 @@ Như đã thảo luận trong phần [thiết kế biểu mẫu](/en-US/docs/Lea
 Về mặt triển khai, điều này có nghĩa là biểu mẫu cần xác nhận rằng không có sách liên quan nào trước khi tác giả bị xóa.
 Nếu có sách liên quan, nó nên hiển thị chúng và nêu rõ rằng chúng phải được xóa trước khi đối tượng `Author` có thể bị xóa.
 
-## Bộ điều khiển — tuyến đường GET
+## Bộ điều khiển — route GET
 
 Mở tệp **/controllers/authorController.js**. Tìm phương thức bộ điều khiển `author_delete_get()` đã được xuất và thay thế bằng đoạn mã sau.
 
@@ -54,7 +54,7 @@ Khi cả hai hoạt động hoàn tất, nó hiển thị view **author_delete.p
 > }
 > ```
 
-## Bộ điều khiển — tuyến đường POST
+## Bộ điều khiển — route POST
 
 Tìm phương thức bộ điều khiển `author_delete_post()` đã được xuất, và thay thế bằng đoạn mã sau.
 
@@ -83,7 +83,7 @@ exports.author_delete_post = async (req, res, next) => {
 ```
 
 Đầu tiên chúng ta kiểm tra hợp lệ rằng một id đã được cung cấp (điều này được gửi qua các tham số body biểu mẫu, thay vì sử dụng phiên bản trong URL).
-Sau đó chúng ta lấy tác giả và sách liên quan của họ theo cách tương tự như đối với tuyến đường `GET`.
+Sau đó chúng ta lấy tác giả và sách liên quan của họ theo cách tương tự như đối với route `GET`.
 Nếu không có sách nào thì chúng ta xóa đối tượng tác giả và chuyển hướng đến danh sách tất cả tác giả.
 Nếu vẫn còn sách thì chúng ta chỉ hiển thị lại biểu mẫu, truyền vào tác giả và danh sách sách cần xóa.
 

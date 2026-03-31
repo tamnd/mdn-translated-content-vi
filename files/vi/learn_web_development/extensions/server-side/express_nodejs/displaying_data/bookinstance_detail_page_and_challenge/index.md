@@ -36,7 +36,7 @@ exports.bookinstance_detail = async (req, res, next) => {
 ```
 
 Việc triển khai rất giống với cách được sử dụng cho các trang chi tiết model khác.
-Hàm bộ điều khiển tuyến đường gọi `BookInstance.findById()` với ID của một bản sao sách cụ thể được trích xuất từ URL (sử dụng tuyến đường), và được truy cập trong bộ điều khiển thông qua các tham số yêu cầu: `req.params.id`.
+Hàm bộ điều khiển route gọi `BookInstance.findById()` với ID của một bản sao sách cụ thể được trích xuất từ URL (sử dụng route), và được truy cập trong bộ điều khiển thông qua các tham số yêu cầu: `req.params.id`.
 Sau đó nó gọi `populate()` để lấy thông tin chi tiết của `Book` liên kết.
 Nếu không tìm thấy `BookInstance` phù hợp, một lỗi sẽ được gửi đến middleware Express.
 Nếu không, dữ liệu được trả về sẽ được hiển thị bằng view **bookinstance_detail.pug**.

@@ -6,7 +6,7 @@ sidebar: learnsidebar
 ---
 
 Trang _chi tiết_ thể loại cần hiển thị thông tin cho một thể loại cụ thể, sử dụng giá trị trường `_id` được tạo tự động làm mã định danh.
-ID của bản ghi thể loại cần thiết được mã hóa ở cuối URL và được trích xuất tự động dựa trên định nghĩa tuyến đường (**/genre/:id**).
+ID của bản ghi thể loại cần thiết được mã hóa ở cuối URL và được trích xuất tự động dựa trên định nghĩa route (**/genre/:id**).
 Sau đó nó được truy cập trong bộ điều khiển thông qua các tham số yêu cầu: `req.params.id`.
 
 Trang nên hiển thị tên thể loại và danh sách tất cả sách trong thể loại đó với các liên kết đến trang chi tiết của từng cuốn sách.
@@ -52,7 +52,7 @@ Nếu thể loại không tồn tại trong cơ sở dữ liệu (tức là, nó
 Trong trường hợp này chúng ta muốn hiển thị trang "không tìm thấy", vì vậy chúng ta tạo một đối tượng `Error` và truyền nó vào hàm middleware `next` trong chuỗi.
 
 > [!NOTE]
-> Các lỗi được truyền vào hàm middleware `next` sẽ lan truyền đến mã xử lý lỗi của chúng ta (điều này được thiết lập khi chúng ta [tạo ra khung ứng dụng](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/skeleton_website#app.js). Để biết thêm thông tin, xem [Xử lý Lỗi](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#handling_errors) và [Xử lý lỗi và ngoại lệ trong các hàm tuyến đường](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes#handling_errors_and_exceptions_in_the_route_functions)).
+> Các lỗi được truyền vào hàm middleware `next` sẽ lan truyền đến mã xử lý lỗi của chúng ta (điều này được thiết lập khi chúng ta [tạo ra khung ứng dụng](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/skeleton_website#app.js). Để biết thêm thông tin, xem [Xử lý Lỗi](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#handling_errors) và [Xử lý lỗi và ngoại lệ trong các hàm route](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes#handling_errors_and_exceptions_in_the_route_functions)).
 
 Nếu `genre` được tìm thấy, thì chúng ta gọi `render()` để hiển thị view.
 Template view là **genre_detail** (.pug).

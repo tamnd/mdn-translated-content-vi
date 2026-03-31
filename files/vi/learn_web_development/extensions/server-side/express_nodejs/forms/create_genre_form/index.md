@@ -5,13 +5,13 @@ page-type: learn-module-chapter
 sidebar: learnsidebar
 ---
 
-Bài viết con này cho thấy cách chúng ta định nghĩa trang để tạo các đối tượng `Genre` (đây là nơi tốt để bắt đầu vì `Genre` chỉ có một trường, `name`, và không có phụ thuộc). Như bất kỳ trang nào khác, chúng ta cần thiết lập các tuyến đường, bộ điều khiển và view.
+Bài viết con này cho thấy cách chúng ta định nghĩa trang để tạo các đối tượng `Genre` (đây là nơi tốt để bắt đầu vì `Genre` chỉ có một trường, `name`, và không có phụ thuộc). Như bất kỳ trang nào khác, chúng ta cần thiết lập các route, bộ điều khiển và view.
 
 ## Import các phương thức kiểm tra hợp lệ và làm sạch
 
 Để sử dụng _express-validator_ trong các bộ điều khiển của chúng ta, chúng ta phải _require_ các hàm chúng ta muốn sử dụng từ module `'express-validator'`.
 
-Mở tệp **/controllers/genreController.js**, và thêm dòng sau vào đầu tệp, trước bất kỳ hàm xử lý tuyến đường nào:
+Mở tệp **/controllers/genreController.js**, và thêm dòng sau vào đầu tệp, trước bất kỳ hàm xử lý route nào:
 
 ```js
 const { body, validationResult } = require("express-validator");
@@ -19,7 +19,7 @@ const { body, validationResult } = require("express-validator");
 
 Lưu ý rằng `require("express-validator")` chỉ là một lời gọi hàm trả về một đối tượng, và chúng ta [phân rã](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring) hai thuộc tính, `body` và `validationResult`, từ đối tượng, vì vậy chúng ta có thể sử dụng chúng trực tiếp như các biến.
 
-## Bộ điều khiển — tuyến đường GET
+## Bộ điều khiển — route GET
 
 Tìm phương thức bộ điều khiển `genre_create_get()` đã được xuất và thay thế bằng đoạn mã sau.
 Điều này hiển thị view **genre_form.pug**, truyền vào biến title.
@@ -31,7 +31,7 @@ exports.genre_create_get = (req, res, next) => {
 };
 ```
 
-## Bộ điều khiển — tuyến đường POST
+## Bộ điều khiển — route POST
 
 Tìm phương thức bộ điều khiển `genre_create_post()` đã được xuất và thay thế bằng đoạn mã sau.
 
@@ -129,7 +129,7 @@ Nếu dữ liệu tên thể loại hợp lệ thì chúng ta thực hiện tìm
 
 Nếu một `Genre` có tên phù hợp đã tồn tại, chúng ta chuyển hướng đến trang chi tiết của nó.
 Nếu không, chúng ta lưu `Genre` mới và chuyển hướng đến trang chi tiết của nó.
-Lưu ý rằng ở đây chúng ta `await` kết quả của truy vấn cơ sở dữ liệu, theo cùng mẫu như trong các trình xử lý tuyến đường khác.
+Lưu ý rằng ở đây chúng ta `await` kết quả của truy vấn cơ sở dữ liệu, theo cùng mẫu như trong các trình xử lý route khác.
 
 ```js
 // Check if Genre with same name already exists.
@@ -150,7 +150,7 @@ Mẫu tương tự này được sử dụng trong tất cả các bộ điều 
 
 ## View
 
-Cùng một view được hiển thị trong cả bộ điều khiển/tuyến đường `GET` và `POST` khi chúng ta tạo một `Genre` mới (và sau này nó cũng được sử dụng khi chúng ta _cập nhật_ một `Genre`). Trong trường hợp `GET`, biểu mẫu trống và chúng ta chỉ truyền vào biến title. Trong trường hợp `POST`, người dùng đã nhập dữ liệu không hợp lệ trước đó — trong biến `genre`, chúng ta truyền lại một phiên bản đã làm sạch của dữ liệu đã nhập và trong biến `errors`, chúng ta truyền lại một mảng thông báo lỗi.
+Cùng một view được hiển thị trong cả bộ điều khiển/route `GET` và `POST` khi chúng ta tạo một `Genre` mới (và sau này nó cũng được sử dụng khi chúng ta _cập nhật_ một `Genre`). Trong trường hợp `GET`, biểu mẫu trống và chúng ta chỉ truyền vào biến title. Trong trường hợp `POST`, người dùng đã nhập dữ liệu không hợp lệ trước đó — trong biến `genre`, chúng ta truyền lại một phiên bản đã làm sạch của dữ liệu đã nhập và trong biến `errors`, chúng ta truyền lại một mảng thông báo lỗi.
 Đoạn mã dưới đây cho thấy mã bộ điều khiển để hiển thị template trong cả hai trường hợp.
 
 ```js
@@ -190,9 +190,9 @@ Phần lớn template này sẽ quen thuộc từ các hướng dẫn trước c
 
 Tiếp theo, chúng ta có mã pug cho biểu mẫu HTML sử dụng `method="POST"` để gửi dữ liệu đến máy chủ, và vì `action` là một chuỗi rỗng, sẽ gửi dữ liệu đến cùng URL như trang.
 
-Biểu mẫu định nghĩa một trường bắt buộc duy nhất kiểu "text" có tên "name". _Giá trị_ mặc định của trường phụ thuộc vào việc biến `genre` có được định nghĩa hay không. Nếu được gọi từ tuyến đường `GET`, nó sẽ rỗng vì đây là biểu mẫu mới. Nếu được gọi từ tuyến đường `POST`, nó sẽ chứa giá trị (không hợp lệ) mà người dùng đã nhập ban đầu.
+Biểu mẫu định nghĩa một trường bắt buộc duy nhất kiểu "text" có tên "name". _Giá trị_ mặc định của trường phụ thuộc vào việc biến `genre` có được định nghĩa hay không. Nếu được gọi từ route `GET`, nó sẽ rỗng vì đây là biểu mẫu mới. Nếu được gọi từ route `POST`, nó sẽ chứa giá trị (không hợp lệ) mà người dùng đã nhập ban đầu.
 
-Phần cuối của trang là mã lỗi. Phần này in ra danh sách lỗi, nếu biến error đã được định nghĩa (nói cách khác, phần này sẽ không xuất hiện khi template được hiển thị trên tuyến đường `GET`).
+Phần cuối của trang là mã lỗi. Phần này in ra danh sách lỗi, nếu biến error đã được định nghĩa (nói cách khác, phần này sẽ không xuất hiện khi template được hiển thị trên route `GET`).
 
 > [!NOTE]
 > Đây chỉ là một cách để hiển thị lỗi. Bạn cũng có thể lấy tên của các trường bị ảnh hưởng từ biến error, và sử dụng chúng để kiểm soát nơi thông báo lỗi được hiển thị, có áp dụng CSS tùy chỉnh hay không, v.v.

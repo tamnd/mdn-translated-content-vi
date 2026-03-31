@@ -766,7 +766,7 @@ Chúng tôi cũng đã khai báo [virtual](#virtual_properties) cho AuthorSchema
 
 > [!NOTE]
 > Khai báo các URL của chúng tôi là virtual trong lược đồ là ý tưởng hay vì URL của một mục chỉ cần được thay đổi ở một nơi.
-> Tại thời điểm này, liên kết sử dụng URL này sẽ không hoạt động vì chúng tôi chưa có mã xử lý tuyến đường cho các cá thể mô hình riêng lẻ.
+> Tại thời điểm này, liên kết sử dụng URL này sẽ không hoạt động vì chúng tôi chưa có mã xử lý route cho các cá thể mô hình riêng lẻ.
 > Chúng tôi sẽ thiết lập những thứ đó trong một bài viết sau!
 
 Ở cuối module, chúng tôi export mô hình.

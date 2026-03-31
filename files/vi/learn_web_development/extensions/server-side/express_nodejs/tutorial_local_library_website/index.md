@@ -38,7 +38,7 @@ Trong loạt bài hướng dẫn này, bạn sẽ:
 - Sử dụng công cụ _Trình tạo ứng dụng Express_ để tạo trang web và ứng dụng khung.
 - Khởi động và dừng máy chủ web Node.
 - Sử dụng cơ sở dữ liệu để lưu trữ dữ liệu ứng dụng của bạn.
-- Tạo các tuyến đường để yêu cầu thông tin khác nhau và các mẫu ("views") để render dữ liệu dưới dạng HTML để hiển thị trong trình duyệt.
+- Tạo các route để yêu cầu thông tin khác nhau và các mẫu ("views") để render dữ liệu dưới dạng HTML để hiển thị trong trình duyệt.
 - Làm việc với các biểu mẫu.
 - Triển khai ứng dụng của bạn lên môi trường sản xuất.
 

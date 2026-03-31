@@ -26,11 +26,11 @@ exports.bookinstance_list = async (req, res, next) => {
 };
 ```
 
-Trình xử lý tuyến đường gọi hàm `find()` trên mô hình `BookInstance`, sau đó nối chuỗi một lời gọi đến `populate()` với trường `book`—điều này sẽ thay thế id sách được lưu trữ cho mỗi `BookInstance` bằng tài liệu `Book` đầy đủ.
+Trình xử lý route gọi hàm `find()` trên mô hình `BookInstance`, sau đó nối chuỗi một lời gọi đến `populate()` với trường `book`—điều này sẽ thay thế id sách được lưu trữ cho mỗi `BookInstance` bằng tài liệu `Book` đầy đủ.
 `exec()` sau đó được nối chuỗi vào cuối để thực thi truy vấn và trả về promise.
 
-Trình xử lý tuyến đường sử dụng `await` để chờ promise, tạm dừng thực thi cho đến khi nó được giải quyết.
-Nếu promise được thực hiện, kết quả của truy vấn được lưu vào biến `allBookInstances` và trình xử lý tuyến đường tiếp tục thực thi.
+Trình xử lý route sử dụng `await` để chờ promise, tạm dừng thực thi cho đến khi nó được giải quyết.
+Nếu promise được thực hiện, kết quả của truy vấn được lưu vào biến `allBookInstances` và trình xử lý route tiếp tục thực thi.
 
 Phần cuối của mã gọi `render()`, chỉ định mẫu **bookinstance_list** (.pug) và truyền các giá trị cho `title` và `bookinstance_list` vào mẫu.
 

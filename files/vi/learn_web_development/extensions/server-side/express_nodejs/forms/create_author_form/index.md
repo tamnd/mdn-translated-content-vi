@@ -11,13 +11,13 @@ Bài viết con này cho thấy cách định nghĩa một trang để tạo cá
 
 Như với [biểu mẫu thể loại](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Create_genre_form), để sử dụng _express-validator_, chúng ta phải _require_ các hàm mà chúng ta muốn sử dụng.
 
-Mở tệp **/controllers/authorController.js**, và thêm dòng sau vào đầu tệp (trên các hàm tuyến đường):
+Mở tệp **/controllers/authorController.js**, và thêm dòng sau vào đầu tệp (trên các hàm route):
 
 ```js
 const { body, validationResult } = require("express-validator");
 ```
 
-## Bộ điều khiển — tuyến đường GET
+## Bộ điều khiển — route GET
 
 Tìm phương thức bộ điều khiển `author_create_get()` đã được xuất và thay thế bằng đoạn mã sau. Điều này hiển thị view **author_form.pug**, truyền vào một biến `title`.
 
@@ -28,7 +28,7 @@ exports.author_create_get = (req, res, next) => {
 };
 ```
 
-## Bộ điều khiển — tuyến đường POST
+## Bộ điều khiển — route POST
 
 Tìm phương thức bộ điều khiển `author_create_post()` đã được xuất, và thay thế bằng đoạn mã sau.
 

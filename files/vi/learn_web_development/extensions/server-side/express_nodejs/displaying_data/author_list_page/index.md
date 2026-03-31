@@ -24,11 +24,11 @@ exports.author_list = async (req, res, next) => {
 };
 ```
 
-Hàm bộ điều khiển tuyến đường tuân theo cùng một mẫu như cho các trang danh sách khác.
+Hàm bộ điều khiển route tuân theo cùng một mẫu như cho các trang danh sách khác.
 Nó định nghĩa một truy vấn trên mô hình `Author`, sử dụng hàm `find()` để lấy tất cả tác giả và phương thức `sort()` để sắp xếp chúng theo `family_name` theo thứ tự bảng chữ cái.
 `exec()` được nối chuỗi vào cuối để thực thi truy vấn và trả về promise mà hàm có thể `await`.
 
-Khi promise được thực hiện, trình xử lý tuyến đường render mẫu **author_list**(.pug), truyền `title` trang và danh sách tác giả (`allAuthors`) bằng các khóa mẫu.
+Khi promise được thực hiện, trình xử lý route render mẫu **author_list**(.pug), truyền `title` trang và danh sách tác giả (`allAuthors`) bằng các khóa mẫu.
 
 ## View
 

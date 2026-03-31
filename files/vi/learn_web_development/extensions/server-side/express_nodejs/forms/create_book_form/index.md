@@ -9,13 +9,13 @@ Bài viết con này cho thấy cách định nghĩa một trang/biểu mẫu đ
 
 ## Import các phương thức kiểm tra hợp lệ và làm sạch
 
-Mở tệp **/controllers/bookController.js**, và thêm dòng sau vào đầu tệp (trước các hàm tuyến đường):
+Mở tệp **/controllers/bookController.js**, và thêm dòng sau vào đầu tệp (trước các hàm route):
 
 ```js
 const { body, validationResult } = require("express-validator");
 ```
 
-## Bộ điều khiển — tuyến đường GET
+## Bộ điều khiển — route GET
 
 Tìm phương thức bộ điều khiển `book_create_get()` đã được xuất và thay thế bằng đoạn mã sau:
 
@@ -39,7 +39,7 @@ exports.book_create_get = async (req, res, next) => {
 Điều này sử dụng `await` trên kết quả của `Promise.all()` để lấy tất cả các đối tượng `Author` và `Genre` song song (cách tiếp cận tương tự được sử dụng trong [Hướng dẫn Express Phần 5: Hiển thị dữ liệu thư viện](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Displaying_data)).
 Chúng sau đó được truyền vào view **`book_form.pug`** như các biến có tên `authors` và `genres` (cùng với `title` của trang).
 
-## Bộ điều khiển — tuyến đường POST
+## Bộ điều khiển — route POST
 
 Tìm phương thức bộ điều khiển `book_create_post()` đã được xuất và thay thế bằng đoạn mã sau.
 
@@ -117,7 +117,7 @@ exports.book_create_post = [
 ];
 ```
 
-Cấu trúc và hành vi của mã này gần như hoàn toàn giống như các hàm tuyến đường POST cho các biểu mẫu [`Genre`](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Create_genre_form) và [`Author`](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Create_author_form). Đầu tiên chúng ta kiểm tra hợp lệ và làm sạch dữ liệu. Nếu dữ liệu không hợp lệ thì chúng ta hiển thị lại biểu mẫu cùng với dữ liệu mà người dùng đã nhập ban đầu và danh sách thông báo lỗi. Nếu dữ liệu hợp lệ, chúng ta lưu bản ghi `Book` mới và chuyển hướng người dùng đến trang chi tiết sách.
+Cấu trúc và hành vi của mã này gần như hoàn toàn giống như các hàm route POST cho các biểu mẫu [`Genre`](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Create_genre_form) và [`Author`](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms/Create_author_form). Đầu tiên chúng ta kiểm tra hợp lệ và làm sạch dữ liệu. Nếu dữ liệu không hợp lệ thì chúng ta hiển thị lại biểu mẫu cùng với dữ liệu mà người dùng đã nhập ban đầu và danh sách thông báo lỗi. Nếu dữ liệu hợp lệ, chúng ta lưu bản ghi `Book` mới và chuyển hướng người dùng đến trang chi tiết sách.
 
 Sự khác biệt chính so với mã xử lý biểu mẫu khác là cách chúng ta làm sạch thông tin thể loại.
 Biểu mẫu trả về một mảng các mục `Genre` (trong khi với các trường khác nó trả về một chuỗi).

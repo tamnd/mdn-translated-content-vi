@@ -8,7 +8,7 @@ sidebar: learnsidebar
 
 {{PreviousMenuNext("Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website", "Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose", "Learn_web_development/Extensions/Server-side/Express_Nodejs")}}
 
-Bài viết thứ hai trong [Hướng dẫn Express](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website) của chúng tôi chỉ ra cách bạn có thể tạo dự án trang web "khung" mà sau đó bạn có thể tiếp tục điền vào với các tuyến đường, mẫu/views và các lệnh gọi cơ sở dữ liệu dành riêng cho trang web.
+Bài viết thứ hai trong [Hướng dẫn Express](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website) của chúng tôi chỉ ra cách bạn có thể tạo dự án trang web "khung" mà sau đó bạn có thể tiếp tục điền vào với các route, mẫu/views và các lệnh gọi cơ sở dữ liệu dành riêng cho trang web.
 
 <table>
   <tbody>
@@ -30,7 +30,7 @@ Bài viết thứ hai trong [Hướng dẫn Express](/en-US/docs/Learn_web_devel
 
 ## Tổng quan
 
-Bài viết này chỉ ra cách bạn có thể tạo trang web "khung" bằng công cụ [Trình tạo ứng dụng Express](https://expressjs.com/en/starter/generator.html), sau đó bạn có thể điền vào với các tuyến đường, views/mẫu và các lệnh gọi cơ sở dữ liệu dành riêng cho trang web. Trong trường hợp này, chúng tôi sẽ sử dụng công cụ để tạo framework cho [trang web Thư viện cục bộ](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website), mà sau đó chúng tôi sẽ thêm tất cả mã khác cần thiết bởi trang web. Quy trình cực kỳ đơn giản, chỉ yêu cầu bạn gọi trình tạo trên dòng lệnh với tên dự án mới, tùy chọn cũng chỉ định công cụ mẫu và trình tạo CSS của trang web.
+Bài viết này chỉ ra cách bạn có thể tạo trang web "khung" bằng công cụ [Trình tạo ứng dụng Express](https://expressjs.com/en/starter/generator.html), sau đó bạn có thể điền vào với các route, views/mẫu và các lệnh gọi cơ sở dữ liệu dành riêng cho trang web. Trong trường hợp này, chúng tôi sẽ sử dụng công cụ để tạo framework cho [trang web Thư viện cục bộ](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website), mà sau đó chúng tôi sẽ thêm tất cả mã khác cần thiết bởi trang web. Quy trình cực kỳ đơn giản, chỉ yêu cầu bạn gọi trình tạo trên dòng lệnh với tên dự án mới, tùy chọn cũng chỉ định công cụ mẫu và trình tạo CSS của trang web.
 
 Các phần sau đây chỉ cho bạn cách gọi trình tạo ứng dụng và cung cấp một chút giải thích về các tùy chọn view/CSS khác nhau. Chúng tôi cũng sẽ giải thích cách trang web khung được cấu trúc. Cuối cùng, chúng tôi sẽ chỉ ra cách bạn có thể chạy trang web để xác minh rằng nó hoạt động.
 
@@ -301,7 +301,7 @@ Dự án được tạo, bây giờ bạn đã cài đặt các phụ thuộc, c
 Tệp **package.json** định nghĩa các phụ thuộc ứng dụng và thông tin khác.
 Nó cũng định nghĩa script khởi động sẽ gọi điểm vào ứng dụng, tệp JavaScript **/bin/www**.
 Điều này thiết lập một số xử lý lỗi ứng dụng và sau đó tải **app.js** để thực hiện phần còn lại của công việc.
-Các tuyến đường ứng dụng được lưu trữ trong các module riêng biệt dưới thư mục **routes/**.
+Các route ứng dụng được lưu trữ trong các module riêng biệt dưới thư mục **routes/**.
 Các mẫu được lưu trữ dưới thư mục /**views**.
 
 ```plain
@@ -460,7 +460,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 ```
 
-Sau đó chúng tôi `require()` các module từ thư mục routes của chúng tôi. Các module/tệp này chứa mã để xử lý các tập hợp "tuyến đường" (đường dẫn URL) liên quan cụ thể. Khi chúng tôi mở rộng ứng dụng khung, ví dụ để liệt kê tất cả sách trong thư viện, chúng tôi sẽ thêm tệp mới để xử lý các tuyến đường liên quan đến sách.
+Sau đó chúng tôi `require()` các module từ thư mục routes của chúng tôi. Các module/tệp này chứa mã để xử lý các tập hợp "route" (đường dẫn URL) liên quan cụ thể. Khi chúng tôi mở rộng ứng dụng khung, ví dụ để liệt kê tất cả sách trong thư viện, chúng tôi sẽ thêm tệp mới để xử lý các route liên quan đến sách.
 
 ```js
 const indexRouter = require("./routes/index");
@@ -468,7 +468,7 @@ const usersRouter = require("./routes/users");
 ```
 
 > [!NOTE]
-> Tại thời điểm này, chúng tôi chỉ đã _import_ module; chúng tôi thực sự chưa sử dụng các tuyến đường của nó (điều này xảy ra một chút sau trong tệp).
+> Tại thời điểm này, chúng tôi chỉ đã _import_ module; chúng tôi thực sự chưa sử dụng các route của nó (điều này xảy ra một chút sau trong tệp).
 
 Tiếp theo, chúng tôi tạo đối tượng `app` bằng cách sử dụng module _express_ đã được import và sau đó sử dụng nó để thiết lập công cụ view (mẫu). Có hai phần để thiết lập công cụ. Đầu tiên, chúng tôi đặt giá trị `"views"` để chỉ định thư mục nơi các mẫu sẽ được lưu trữ (trong trường hợp này là thư mục con **/views**). Sau đó chúng tôi đặt giá trị `"view engine"` để chỉ định thư viện mẫu (trong trường hợp này "pug").
 
@@ -493,7 +493,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 ```
 
-Bây giờ tất cả middleware khác đã được thiết lập, chúng tôi thêm mã xử lý tuyến đường (được import trước đó) vào chuỗi xử lý yêu cầu. Mã được import sẽ định nghĩa các tuyến đường cụ thể cho các _phần_ khác nhau của trang web:
+Bây giờ tất cả middleware khác đã được thiết lập, chúng tôi thêm mã xử lý route (được import trước đó) vào chuỗi xử lý yêu cầu. Mã được import sẽ định nghĩa các route cụ thể cho các _phần_ khác nhau của trang web:
 
 ```js
 app.use("/", indexRouter);
@@ -501,8 +501,8 @@ app.use("/users", usersRouter);
 ```
 
 > [!NOTE]
-> Các đường dẫn được chỉ định ở trên (`"/"` và `"/users"`) được coi là tiền tố cho các tuyến đường được định nghĩa trong các tệp được import.
-> Vì vậy, ví dụ: nếu module **users** đã import định nghĩa tuyến đường cho `/profile`, bạn sẽ truy cập tuyến đường đó tại `/users/profile`. Chúng tôi sẽ nói thêm về tuyến đường trong một bài viết sau.
+> Các đường dẫn được chỉ định ở trên (`"/"` và `"/users"`) được coi là tiền tố cho các route được định nghĩa trong các tệp được import.
+> Vì vậy, ví dụ: nếu module **users** đã import định nghĩa route cho `/profile`, bạn sẽ truy cập route đó tại `/users/profile`. Chúng tôi sẽ nói thêm về route trong một bài viết sau.
 
 Middleware cuối cùng trong tệp thêm các phương thức xử lý cho các lỗi và phản hồi HTTP 404.
 
@@ -530,11 +530,11 @@ app.use((err, req, res, next) => {
 module.exports = app;
 ```
 
-### Tuyến đường
+### Route
 
-Tệp tuyến đường **/routes/users.js** được hiển thị bên dưới (các tệp tuyến đường có cấu trúc tương tự, vì vậy chúng tôi không cần hiển thị thêm **index.js**).
+Tệp route **/routes/users.js** được hiển thị bên dưới (các tệp route có cấu trúc tương tự, vì vậy chúng tôi không cần hiển thị thêm **index.js**).
 Đầu tiên, nó tải module _express_ và sử dụng nó để lấy đối tượng `express.Router`.
-Sau đó nó chỉ định một tuyến đường trên đối tượng đó và cuối cùng export bộ định tuyến từ module (điều này cho phép tệp được import vào **app.js**).
+Sau đó nó chỉ định một route trên đối tượng đó và cuối cùng export bộ định tuyến từ module (điều này cho phép tệp được import vào **app.js**).
 
 ```js
 const express = require("express");
@@ -549,16 +549,16 @@ router.get("/", (req, res, next) => {
 module.exports = router;
 ```
 
-Tuyến đường định nghĩa một hàm gọi lại sẽ được gọi bất cứ khi nào phát hiện yêu cầu HTTP `GET` với mẫu đúng. Mẫu khớp là tuyến đường được chỉ định khi module được import (`"/users"`) cộng với bất cứ điều gì được định nghĩa trong tệp này (`"/"`). Nói cách khác, tuyến đường này sẽ được sử dụng khi nhận được URL `/users/`.
+Route định nghĩa một hàm gọi lại sẽ được gọi bất cứ khi nào phát hiện yêu cầu HTTP `GET` với mẫu đúng. Mẫu khớp là route được chỉ định khi module được import (`"/users"`) cộng với bất cứ điều gì được định nghĩa trong tệp này (`"/"`). Nói cách khác, route này sẽ được sử dụng khi nhận được URL `/users/`.
 
 > [!NOTE]
 > Hãy thử điều này bằng cách chạy máy chủ với node và truy cập URL trong trình duyệt của bạn: `http://localhost:3000/users/`. Bạn sẽ thấy thông báo: 'respond with a resource'.
 
-Một điều thú vị ở trên là hàm gọi lại có đối số thứ ba `next` và do đó là hàm middleware thay vì hàm gọi lại tuyến đường đơn giản. Mặc dù mã hiện tại không sử dụng đối số `next`, nhưng có thể hữu ích trong tương lai nếu bạn muốn thêm nhiều trình xử lý tuyến đường vào đường dẫn tuyến đường `'/'`.
+Một điều thú vị ở trên là hàm gọi lại có đối số thứ ba `next` và do đó là hàm middleware thay vì hàm gọi lại route đơn giản. Mặc dù mã hiện tại không sử dụng đối số `next`, nhưng có thể hữu ích trong tương lai nếu bạn muốn thêm nhiều trình xử lý route vào đường dẫn route `'/'`.
 
 ### Views (mẫu)
 
-Các views (mẫu) được lưu trữ trong thư mục **/views** (như được chỉ định trong **app.js**) và được cấp phần mở rộng tệp **.pug**. Phương thức [`Response.render()`](https://expressjs.com/en/5x/api.html#res.render) được sử dụng để render một mẫu được chỉ định cùng với các giá trị của các biến được đặt tên được truyền trong một đối tượng, và sau đó gửi kết quả như một phản hồi. Trong mã bên dưới từ **/routes/index.js**, bạn có thể thấy cách tuyến đường đó render phản hồi bằng cách sử dụng mẫu "index" truyền biến mẫu "title".
+Các views (mẫu) được lưu trữ trong thư mục **/views** (như được chỉ định trong **app.js**) và được cấp phần mở rộng tệp **.pug**. Phương thức [`Response.render()`](https://expressjs.com/en/5x/api.html#res.render) được sử dụng để render một mẫu được chỉ định cùng với các giá trị của các biến được đặt tên được truyền trong một đối tượng, và sau đó gửi kết quả như một phản hồi. Trong mã bên dưới từ **/routes/index.js**, bạn có thể thấy cách route đó render phản hồi bằng cách sử dụng mẫu "index" truyền biến mẫu "title".
 
 ```js
 /* GET home page. */
@@ -567,7 +567,7 @@ router.get("/", (req, res, next) => {
 });
 ```
 
-Mẫu tương ứng cho tuyến đường trên được cung cấp bên dưới (**index.pug**). Chúng tôi sẽ nói thêm về cú pháp sau. Tất cả những gì bạn cần biết bây giờ là biến `title` (với giá trị `'Express'`) được chèn vào nơi được chỉ định trong mẫu.
+Mẫu tương ứng cho route trên được cung cấp bên dưới (**index.pug**). Chúng tôi sẽ nói thêm về cú pháp sau. Tất cả những gì bạn cần biết bây giờ là biến `title` (với giá trị `'Express'`) được chèn vào nơi được chỉ định trong mẫu.
 
 ```pug
 extends layout
@@ -579,11 +579,11 @@ block content
 
 ## Thử thách bản thân
 
-Tạo một tuyến đường mới trong **/routes/users.js** sẽ hiển thị văn bản "_You're so cool"_ tại URL `/users/cool/`. Kiểm tra bằng cách chạy máy chủ và truy cập `http://localhost:3000/users/cool/` trong trình duyệt của bạn
+Tạo một route mới trong **/routes/users.js** sẽ hiển thị văn bản "_You're so cool"_ tại URL `/users/cool/`. Kiểm tra bằng cách chạy máy chủ và truy cập `http://localhost:3000/users/cool/` trong trình duyệt của bạn
 
 ## Tóm tắt
 
-Bây giờ bạn đã tạo dự án trang web khung cho [Thư viện cục bộ](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website) và xác minh rằng nó chạy bằng _node_. Quan trọng nhất, bạn cũng hiểu cấu trúc dự án, vì vậy bạn có ý tưởng tốt về nơi chúng tôi cần thực hiện thay đổi để thêm tuyến đường và views cho thư viện cục bộ của chúng tôi.
+Bây giờ bạn đã tạo dự án trang web khung cho [Thư viện cục bộ](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Tutorial_local_library_website) và xác minh rằng nó chạy bằng _node_. Quan trọng nhất, bạn cũng hiểu cấu trúc dự án, vì vậy bạn có ý tưởng tốt về nơi chúng tôi cần thực hiện thay đổi để thêm route và views cho thư viện cục bộ của chúng tôi.
 
 Tiếp theo, chúng tôi sẽ bắt đầu sửa đổi khung để nó hoạt động như một trang web thư viện.
 

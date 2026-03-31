@@ -25,14 +25,14 @@ exports.book_list = async (req, res, next) => {
 };
 ```
 
-Trình xử lý tuyến đường gọi hàm `find()` trên mô hình `Book`, chọn chỉ trả về `title` và `author` vì chúng tôi không cần các trường khác (nó cũng sẽ trả về `_id` và các trường ảo) và sắp xếp kết quả theo thứ tự bảng chữ cái theo tiêu đề bằng phương thức `sort()`.
+Trình xử lý route gọi hàm `find()` trên mô hình `Book`, chọn chỉ trả về `title` và `author` vì chúng tôi không cần các trường khác (nó cũng sẽ trả về `_id` và các trường ảo) và sắp xếp kết quả theo thứ tự bảng chữ cái theo tiêu đề bằng phương thức `sort()`.
 Chúng tôi cũng gọi `populate()` trên `Book`, chỉ định trường `author`—điều này sẽ thay thế id tác giả sách đã lưu trữ bằng thông tin tác giả đầy đủ.
 `exec()` sau đó được nối chuỗi vào cuối để thực thi truy vấn và trả về promise.
 
-Trình xử lý tuyến đường sử dụng `await` để chờ promise, tạm dừng thực thi cho đến khi nó được giải quyết.
+Trình xử lý route sử dụng `await` để chờ promise, tạm dừng thực thi cho đến khi nó được giải quyết.
 Nếu promise được thực hiện, kết quả của truy vấn được lưu vào biến `allBooks` và trình xử lý tiếp tục thực thi.
 
-Phần cuối của trình xử lý tuyến đường gọi `render()`, chỉ định mẫu **book_list** (.pug) và truyền các giá trị cho `title` và `book_list` vào mẫu.
+Phần cuối của trình xử lý route gọi `render()`, chỉ định mẫu **book_list** (.pug) và truyền các giá trị cho `title` và `book_list` vào mẫu.
 
 ## View
 
@@ -58,13 +58,13 @@ View mở rộng mẫu cơ sở **layout.pug** và ghi đè `block` có tên '**
 Nếu không có sách nào trong `book_list` thì mệnh đề `else` được thực thi và hiển thị văn bản 'There are no books'.
 
 > [!NOTE]
-> Chúng tôi sử dụng `book.url` để cung cấp liên kết đến bản ghi chi tiết cho mỗi sách (chúng tôi đã triển khai tuyến đường này, nhưng chưa triển khai trang). Đây là thuộc tính ảo của mô hình `Book` sử dụng trường `_id` của phiên bản mô hình để tạo ra đường dẫn URL duy nhất.
+> Chúng tôi sử dụng `book.url` để cung cấp liên kết đến bản ghi chi tiết cho mỗi sách (chúng tôi đã triển khai route này, nhưng chưa triển khai trang). Đây là thuộc tính ảo của mô hình `Book` sử dụng trường `_id` của phiên bản mô hình để tạo ra đường dẫn URL duy nhất.
 
 Điều thú vị ở đây là mỗi sách được định nghĩa trên hai dòng, sử dụng ký tự pipe cho dòng thứ hai. Cách tiếp cận này cần thiết vì nếu tên tác giả nằm trên dòng trước thì nó sẽ là một phần của siêu liên kết.
 
 ## Trông như thế nào?
 
-Chạy ứng dụng (xem [Kiểm thử các tuyến đường](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes#testing_the_routes) để biết các lệnh liên quan) và mở trình duyệt đến `http://localhost:3000/`. Sau đó chọn liên kết _All books_. Nếu mọi thứ được thiết lập đúng, trang web của bạn sẽ trông giống ảnh chụp màn hình sau đây.
+Chạy ứng dụng (xem [Kiểm thử các route](/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes#testing_the_routes) để biết các lệnh liên quan) và mở trình duyệt đến `http://localhost:3000/`. Sau đó chọn liên kết _All books_. Nếu mọi thứ được thiết lập đúng, trang web của bạn sẽ trông giống ảnh chụp màn hình sau đây.
 
 ![Book List Page - Express Local Library site](new_book_list.png)
 
