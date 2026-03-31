@@ -45,7 +45,7 @@ Total: 1,226 pages
 
 - [ ] web/css/tutorials/index.md
 
-## Reference -- At-rules (100 pages)
+## Reference — At-rules (100 pages)
 
 - [ ] web/css/reference/at-rules/index.md
 - [ ] web/css/reference/at-rules/@charset
@@ -67,7 +67,7 @@ Total: 1,226 pages
 - [ ] web/css/reference/at-rules/@supports
 - [ ] _(remaining at-rules)_
 
-## Reference -- Properties (550 pages)
+## Reference — Properties (550 pages)
 
 High-priority properties (translate first):
 
@@ -111,7 +111,7 @@ High-priority properties (translate first):
 - [ ] web/css/reference/properties/visibility
 - [ ] _(remaining properties A-Z)_
 
-## Reference -- Selectors (166 pages)
+## Reference — Selectors (166 pages)
 
 - [ ] web/css/reference/selectors/index.md
 - [ ] web/css/reference/selectors/universal_selectors
@@ -124,7 +124,7 @@ High-priority properties (translate first):
 - [ ] web/css/reference/selectors/combinators
 - [ ] _(remaining selectors)_
 
-## Reference -- Values / types (184 pages)
+## Reference — Values / types (184 pages)
 
 - [ ] web/css/reference/values/index.md
 - [ ] _(remaining value pages)_
