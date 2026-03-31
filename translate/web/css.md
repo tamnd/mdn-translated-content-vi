@@ -5,7 +5,7 @@ Total: 1,226 pages
 
 ## Index
 
-- [ ] web/css/index.md
+- [x] web/css/index.md
 
 ## Guides (207 pages)
 
@@ -34,18 +34,18 @@ Total: 1,226 pages
 - [ ] web/css/guides/text
 - [ ] web/css/guides/transforms
 - [ ] web/css/guides/transitions
-- [ ] *(remaining guides)*
+- [ ] _(remaining guides)_
 
 ## How to (14 pages)
 
 - [ ] web/css/how_to/index.md
-- [ ] *(remaining how_to pages)*
+- [ ] _(remaining how_to pages)_
 
 ## Tutorials (1 page)
 
 - [ ] web/css/tutorials/index.md
 
-## Reference -- At-rules (100 pages)
+## Reference — At-rules (100 pages)
 
 - [ ] web/css/reference/at-rules/index.md
 - [ ] web/css/reference/at-rules/@charset
@@ -65,21 +65,21 @@ Total: 1,226 pages
 - [ ] web/css/reference/at-rules/@scope
 - [ ] web/css/reference/at-rules/@starting-style
 - [ ] web/css/reference/at-rules/@supports
-- [ ] *(remaining at-rules)*
+- [ ] _(remaining at-rules)_
 
-## Reference -- Properties (550 pages)
+## Reference — Properties (550 pages)
 
 High-priority properties (translate first):
 
-- [ ] web/css/reference/properties/color
+- [x] web/css/reference/properties/color
 - [ ] web/css/reference/properties/background
-- [ ] web/css/reference/properties/background-color
+- [x] web/css/reference/properties/background-color
 - [ ] web/css/reference/properties/background-image
 - [ ] web/css/reference/properties/border
 - [ ] web/css/reference/properties/border-radius
 - [ ] web/css/reference/properties/box-shadow
-- [ ] web/css/reference/properties/display
-- [ ] web/css/reference/properties/position
+- [x] web/css/reference/properties/display
+- [x] web/css/reference/properties/position
 - [ ] web/css/reference/properties/top / right / bottom / left
 - [ ] web/css/reference/properties/flex
 - [ ] web/css/reference/properties/flex-direction
@@ -92,7 +92,7 @@ High-priority properties (translate first):
 - [ ] web/css/reference/properties/grid-template-columns
 - [ ] web/css/reference/properties/grid-template-rows
 - [ ] web/css/reference/properties/grid-area
-- [ ] web/css/reference/properties/width / height / min-* / max-*
+- [ ] web/css/reference/properties/width / height / min-_ / max-_
 - [ ] web/css/reference/properties/margin / padding
 - [ ] web/css/reference/properties/overflow
 - [ ] web/css/reference/properties/font
@@ -109,9 +109,9 @@ High-priority properties (translate first):
 - [ ] web/css/reference/properties/z-index
 - [ ] web/css/reference/properties/cursor
 - [ ] web/css/reference/properties/visibility
-- [ ] *(remaining properties A-Z)*
+- [ ] _(remaining properties A-Z)_
 
-## Reference -- Selectors (166 pages)
+## Reference — Selectors (166 pages)
 
 - [ ] web/css/reference/selectors/index.md
 - [ ] web/css/reference/selectors/universal_selectors
@@ -122,9 +122,9 @@ High-priority properties (translate first):
 - [ ] web/css/reference/selectors/pseudo-classes
 - [ ] web/css/reference/selectors/pseudo-elements
 - [ ] web/css/reference/selectors/combinators
-- [ ] *(remaining selectors)*
+- [ ] _(remaining selectors)_
 
-## Reference -- Values / types (184 pages)
+## Reference — Values / types (184 pages)
 
 - [ ] web/css/reference/values/index.md
-- [ ] *(remaining value pages)*
+- [ ] _(remaining value pages)_
