@@ -334,71 +334,71 @@ This section is beginner-friendly and high-impact. Translating it helps Vietname
 - [ ] learn_web_development/extensions/testing/automated_testing/index.md
 - [ ] learn_web_development/extensions/testing/your_own_automation_environment/index.md
 
-### Server-side website programming (52 pages)
+### Server-side website programming (52 pages) — DONE
 
 #### server-side/index and misc (4 pages)
 
-- [ ] learn_web_development/extensions/server-side/index.md
-- [ ] learn_web_development/extensions/server-side/apache_configuration_htaccess/index.md
-- [ ] learn_web_development/extensions/server-side/configuring_server_mime_types/index.md
-- [ ] learn_web_development/extensions/server-side/node_server_without_framework/index.md
+- [x] learn_web_development/extensions/server-side/index.md
+- [x] learn_web_development/extensions/server-side/apache_configuration_htaccess/index.md
+- [x] learn_web_development/extensions/server-side/configuring_server_mime_types/index.md
+- [x] learn_web_development/extensions/server-side/node_server_without_framework/index.md
 
 #### First steps (5 pages)
 
-- [ ] learn_web_development/extensions/server-side/first_steps/index.md
-- [ ] learn_web_development/extensions/server-side/first_steps/introduction/index.md
-- [ ] learn_web_development/extensions/server-side/first_steps/client-server_overview/index.md
-- [ ] learn_web_development/extensions/server-side/first_steps/web_frameworks/index.md
-- [ ] learn_web_development/extensions/server-side/first_steps/website_security/index.md
+- [x] learn_web_development/extensions/server-side/first_steps/index.md
+- [x] learn_web_development/extensions/server-side/first_steps/introduction/index.md
+- [x] learn_web_development/extensions/server-side/first_steps/client-server_overview/index.md
+- [x] learn_web_development/extensions/server-side/first_steps/web_frameworks/index.md
+- [x] learn_web_development/extensions/server-side/first_steps/website_security/index.md
 
 #### Django (16 pages)
 
-- [ ] learn_web_development/extensions/server-side/django/index.md
-- [ ] learn_web_development/extensions/server-side/django/introduction/index.md
-- [ ] learn_web_development/extensions/server-side/django/development_environment/index.md
-- [ ] learn_web_development/extensions/server-side/django/tutorial_local_library_website/index.md
-- [ ] learn_web_development/extensions/server-side/django/skeleton_website/index.md
-- [ ] learn_web_development/extensions/server-side/django/models/index.md
-- [ ] learn_web_development/extensions/server-side/django/admin_site/index.md
-- [ ] learn_web_development/extensions/server-side/django/home_page/index.md
-- [ ] learn_web_development/extensions/server-side/django/generic_views/index.md
-- [ ] learn_web_development/extensions/server-side/django/sessions/index.md
-- [ ] learn_web_development/extensions/server-side/django/authentication/index.md
-- [ ] learn_web_development/extensions/server-side/django/forms/index.md
-- [ ] learn_web_development/extensions/server-side/django/testing/index.md
-- [ ] learn_web_development/extensions/server-side/django/deployment/index.md
-- [ ] learn_web_development/extensions/server-side/django/web_application_security/index.md
-- [ ] learn_web_development/extensions/server-side/django/django_assessment_blog/index.md
+- [x] learn_web_development/extensions/server-side/django/index.md
+- [x] learn_web_development/extensions/server-side/django/introduction/index.md
+- [x] learn_web_development/extensions/server-side/django/development_environment/index.md
+- [x] learn_web_development/extensions/server-side/django/tutorial_local_library_website/index.md
+- [x] learn_web_development/extensions/server-side/django/skeleton_website/index.md
+- [x] learn_web_development/extensions/server-side/django/models/index.md
+- [x] learn_web_development/extensions/server-side/django/admin_site/index.md
+- [x] learn_web_development/extensions/server-side/django/home_page/index.md
+- [x] learn_web_development/extensions/server-side/django/generic_views/index.md
+- [x] learn_web_development/extensions/server-side/django/sessions/index.md
+- [x] learn_web_development/extensions/server-side/django/authentication/index.md
+- [x] learn_web_development/extensions/server-side/django/forms/index.md
+- [x] learn_web_development/extensions/server-side/django/testing/index.md
+- [x] learn_web_development/extensions/server-side/django/deployment/index.md
+- [x] learn_web_development/extensions/server-side/django/web_application_security/index.md
+- [x] learn_web_development/extensions/server-side/django/django_assessment_blog/index.md
 
 #### Express/Node.js (27 pages)
 
-- [ ] learn_web_development/extensions/server-side/express_nodejs/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/introduction/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/development_environment/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/tutorial_local_library_website/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/skeleton_website/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/mongoose/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/routes/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/home_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/book_list_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/bookinstance_list_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/date_formatting_using_moment/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/author_list_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/genre_detail_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/book_detail_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/author_detail_page/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/bookinstance_detail_page_and_challenge/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/locallibrary_base_template/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/displaying_data/template_primer/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/create_genre_form/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/create_author_form/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/create_book_form/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/create_bookinstance_form/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/delete_author_form/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/forms/update_book_form/index.md
-- [ ] learn_web_development/extensions/server-side/express_nodejs/deployment/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/introduction/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/development_environment/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/tutorial_local_library_website/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/skeleton_website/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/mongoose/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/routes/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/home_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/book_list_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/bookinstance_list_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/date_formatting_using_moment/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/author_list_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/genre_detail_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/book_detail_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/author_detail_page/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/bookinstance_detail_page_and_challenge/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/locallibrary_base_template/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/displaying_data/template_primer/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/create_genre_form/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/create_author_form/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/create_book_form/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/create_bookinstance_form/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/delete_author_form/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/forms/update_book_form/index.md
+- [x] learn_web_development/extensions/server-side/express_nodejs/deployment/index.md
 
 ## How to (38 pages)
 
