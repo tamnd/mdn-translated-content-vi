@@ -5,7 +5,7 @@ page-type: javascript-error
 sidebar: jssidebar
 ---
 
-Ngoại lệ JavaScript "invalid assignment left-hand side" xảy ra khi có một phép gán không mong đợi ở đâu đó. Nó có thể được kích hoạt khi một dấu `=` đơn được sử dụng thay vì `==` hoặc `===`.
+Ngoại lệ JavaScript "invalid assignment left-hand side" xảy ra khi có một phép gán không mong đợi ở đâu đó. Lỗi này có thể xảy ra khi dùng dấu `=` thay vì `==` hoặc `===`.
 
 ## Thông báo
 
@@ -23,13 +23,13 @@ ReferenceError: Left side of assignment is not a reference. (Safari)
 
 {{jsxref("SyntaxError")}} hoặc {{jsxref("ReferenceError")}}, tùy thuộc vào cú pháp.
 
-## Điều gì đã xảy ra?
+## Nguyên nhân?
 
-Có một phép gán không mong đợi ở đâu đó. Điều này có thể do sự không khớp giữa [toán tử gán](/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators) và [toán tử so sánh bằng](/en-US/docs/Web/JavaScript/Reference/Operators#equality_operators), ví dụ. Trong khi một dấu `=` đơn gán giá trị cho một biến, các toán tử `==` hoặc `===` so sánh một giá trị.
+Có một phép gán không mong đợi ở đâu đó. Nguyên nhân có thể là do nhầm lẫn giữa [toán tử gán](/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators) và [toán tử so sánh bằng](/en-US/docs/Web/JavaScript/Reference/Operators#equality_operators). Trong khi dấu `=` đơn dùng để gán giá trị cho một biến, thì toán tử `==` hoặc `===` dùng để so sánh một giá trị.
 
 ## Ví dụ
 
-### Các phép gán không hợp lệ điển hình
+### Phép gán không hợp lệ điển hình
 
 ```js-nolint example-bad
 if (Math.PI + 1 = 3 || Math.PI + 1 = 4) {
@@ -43,7 +43,7 @@ const str = "Hello, "
 // SyntaxError: invalid assignment left-hand side
 ```
 
-Trong câu lệnh `if`, bạn muốn sử dụng toán tử so sánh bằng (`===`), và để nối chuỗi, cần toán tử cộng (`+`).
+Trong câu lệnh `if`, bạn cần dùng toán tử so sánh bằng (`===`), và để nối chuỗi, cần dùng toán tử cộng (`+`).
 
 ```js-nolint example-good
 if (Math.PI + 1 === 3 || Math.PI + 1 === 4) {
@@ -55,9 +55,9 @@ const str = "Hello, "
   + "other side!";
 ```
 
-### Các phép gán tạo ra ReferenceError
+### Phép gán gây ra ReferenceError
 
-Các phép gán không hợp lệ không phải lúc nào cũng tạo ra lỗi cú pháp. Đôi khi cú pháp gần đúng, nhưng tại thời điểm chạy, biểu thức vế trái đánh giá thành _giá trị_ thay vì _tham chiếu_, vì vậy phép gán vẫn không hợp lệ. Các lỗi như vậy xảy ra muộn hơn trong quá trình thực thi, khi câu lệnh thực sự được thực thi.
+Các phép gán không hợp lệ không phải lúc nào cũng gây ra lỗi cú pháp. Đôi khi cú pháp gần như đúng, nhưng lúc thực thi, biểu thức ở vế trái được đánh giá thành một _giá trị_ thay vì một _tham chiếu_, nên phép gán vẫn không hợp lệ. Các lỗi như vậy xảy ra muộn hơn trong quá trình thực thi, khi câu lệnh thực sự được chạy.
 
 ```js-nolint example-bad
 function foo() {
@@ -66,7 +66,7 @@ function foo() {
 foo() = 1; // ReferenceError: invalid assignment left-hand side
 ```
 
-Lời gọi hàm, lời gọi [`new`](/en-US/docs/Web/JavaScript/Reference/Operators/new), [`super()`](/en-US/docs/Web/JavaScript/Reference/Operators/super), và [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this) đều là các giá trị thay vì tham chiếu. Nếu bạn muốn sử dụng chúng ở vế trái, đích gán cần phải là thuộc tính của các giá trị được tạo ra bởi chúng.
+Các lời gọi hàm, lời gọi [`new`](/en-US/docs/Web/JavaScript/Reference/Operators/new), [`super()`](/en-US/docs/Web/JavaScript/Reference/Operators/super), và [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this) đều là các giá trị chứ không phải tham chiếu. Nếu bạn muốn dùng chúng ở vế trái, mục tiêu gán cần phải là một thuộc tính của các giá trị mà chúng tạo ra.
 
 ```js example-good
 function foo() {
@@ -76,11 +76,11 @@ foo().a = 1;
 ```
 
 > [!NOTE]
-> Trong Firefox và Safari, ví dụ đầu tiên tạo ra `ReferenceError` trong chế độ non-strict, và `SyntaxError` trong [chế độ strict](/en-US/docs/Web/JavaScript/Reference/Strict_mode). Chrome ném `ReferenceError` tại thời điểm chạy cho cả chế độ strict và non-strict.
+> Trong Firefox và Safari, ví dụ đầu tiên tạo ra `ReferenceError` ở chế độ không nghiêm ngặt, và `SyntaxError` ở [chế độ nghiêm ngặt](/en-US/docs/Web/JavaScript/Reference/Strict_mode). Chrome ném ra `ReferenceError` lúc chạy cho cả hai chế độ nghiêm ngặt và không nghiêm ngặt.
 
-### Sử dụng optional chaining làm đích gán
+### Sử dụng optional chaining làm mục tiêu gán
 
-[Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) không phải là đích gán hợp lệ.
+[Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) không phải là mục tiêu hợp lệ của phép gán.
 
 ```js-nolint example-bad
 obj?.foo = 1; // SyntaxError: invalid assignment left-hand side
