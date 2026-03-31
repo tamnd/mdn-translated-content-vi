@@ -88,10 +88,10 @@ Total: 1,329 pages
 - [x] web/javascript/reference/statements/empty
 - [x] web/javascript/reference/statements/debugger
 - [x] web/javascript/reference/statements/label
-- [ ] web/javascript/reference/statements/await_using
-- [ ] web/javascript/reference/statements/expression_statement
+- [x] web/javascript/reference/statements/await_using
+- [x] web/javascript/reference/statements/expression_statement
 - [ ] web/javascript/reference/statements/import/with
-- [ ] web/javascript/reference/statements/using
+- [x] web/javascript/reference/statements/using
 
 ## Reference — Operators (76 pages)
 
@@ -131,7 +131,7 @@ Total: 1,329 pages
 - [x] web/javascript/reference/operators/this
 - [x] web/javascript/reference/operators/addition_assignment
 - [ ] web/javascript/reference/operators/async_function\*
-- [ ] web/javascript/reference/operators/async_function
+- [x] web/javascript/reference/operators/async_function
 - [x] web/javascript/reference/operators/bitwise_and_assignment
 - [x] web/javascript/reference/operators/bitwise_and
 - [x] web/javascript/reference/operators/bitwise_not
@@ -146,7 +146,7 @@ Total: 1,329 pages
 - [x] web/javascript/reference/operators/function
 - [x] web/javascript/reference/operators/greater_than_or_equal
 - [x] web/javascript/reference/operators/grouping
-- [ ] web/javascript/reference/operators/import.meta
+- [x] web/javascript/reference/operators/import.meta
 - [ ] web/javascript/reference/operators/import.meta/resolve
 - [x] web/javascript/reference/operators/import
 - [x] web/javascript/reference/operators/left_shift_assignment
@@ -198,70 +198,70 @@ Total: 1,329 pages
 
 ## Reference — Regular expressions (19 pages)
 
-- [ ] web/javascript/reference/regular_expressions/index.md
-- [ ] web/javascript/reference/regular_expressions/backreference
-- [ ] web/javascript/reference/regular_expressions/capturing_group
-- [ ] web/javascript/reference/regular_expressions/character_class_escape
-- [ ] web/javascript/reference/regular_expressions/character_class
-- [ ] web/javascript/reference/regular_expressions/character_escape
-- [ ] web/javascript/reference/regular_expressions/disjunction
-- [ ] web/javascript/reference/regular_expressions/input_boundary_assertion
-- [ ] web/javascript/reference/regular_expressions/literal_character
-- [ ] web/javascript/reference/regular_expressions/lookahead_assertion
-- [ ] web/javascript/reference/regular_expressions/lookbehind_assertion
-- [ ] web/javascript/reference/regular_expressions/modifier
-- [ ] web/javascript/reference/regular_expressions/named_backreference
-- [ ] web/javascript/reference/regular_expressions/named_capturing_group
-- [ ] web/javascript/reference/regular_expressions/non-capturing_group
-- [ ] web/javascript/reference/regular_expressions/quantifier
-- [ ] web/javascript/reference/regular_expressions/unicode_character_class_escape
-- [ ] web/javascript/reference/regular_expressions/wildcard
-- [ ] web/javascript/reference/regular_expressions/word_boundary_assertion
+- [x] web/javascript/reference/regular_expressions/index.md
+- [x] web/javascript/reference/regular_expressions/backreference
+- [x] web/javascript/reference/regular_expressions/capturing_group
+- [x] web/javascript/reference/regular_expressions/character_class_escape
+- [x] web/javascript/reference/regular_expressions/character_class
+- [x] web/javascript/reference/regular_expressions/character_escape
+- [x] web/javascript/reference/regular_expressions/disjunction
+- [x] web/javascript/reference/regular_expressions/input_boundary_assertion
+- [x] web/javascript/reference/regular_expressions/literal_character
+- [x] web/javascript/reference/regular_expressions/lookahead_assertion
+- [x] web/javascript/reference/regular_expressions/lookbehind_assertion
+- [x] web/javascript/reference/regular_expressions/modifier
+- [x] web/javascript/reference/regular_expressions/named_backreference
+- [x] web/javascript/reference/regular_expressions/named_capturing_group
+- [x] web/javascript/reference/regular_expressions/non-capturing_group
+- [x] web/javascript/reference/regular_expressions/quantifier
+- [x] web/javascript/reference/regular_expressions/unicode_character_class_escape
+- [x] web/javascript/reference/regular_expressions/wildcard
+- [x] web/javascript/reference/regular_expressions/word_boundary_assertion
 
 ## Reference — Errors (132 pages)
 
-- [ ] web/javascript/reference/errors/index.md
-- [ ] web/javascript/reference/errors/already_executing_generator
-- [ ] web/javascript/reference/errors/already_has_pragma
-- [ ] web/javascript/reference/errors/arguments_not_allowed
-- [ ] web/javascript/reference/errors/array_sort_argument
-- [ ] web/javascript/reference/errors/await_yield_in_parameter
-- [ ] web/javascript/reference/errors/bad_await
-- [ ] web/javascript/reference/errors/bad_break
-- [ ] web/javascript/reference/errors/bad_continue
-- [ ] web/javascript/reference/errors/bad_new_optional
-- [ ] web/javascript/reference/errors/bad_optional_template
-- [ ] web/javascript/reference/errors/bad_radix
-- [ ] web/javascript/reference/errors/bad_regexp_flag
-- [ ] web/javascript/reference/errors/bad_return
-- [ ] web/javascript/reference/errors/bad_strict_arguments_eval
-- [ ] web/javascript/reference/errors/bad_super_call
-- [ ] web/javascript/reference/errors/bad_super_prop
-- [ ] web/javascript/reference/errors/bigint_division_by_zero
-- [ ] web/javascript/reference/errors/bigint_negative_exponent
-- [ ] web/javascript/reference/errors/bigint_not_serializable
-- [ ] web/javascript/reference/errors/builtin_ctor_no_new
-- [ ] web/javascript/reference/errors/called_on_incompatible_type
-- [ ] web/javascript/reference/errors/cant_access_lexical_declaration_before_init
-- [ ] web/javascript/reference/errors/cant_assign_to_property
-- [ ] web/javascript/reference/errors/cant_be_converted_to_bigint_because_it_isnt_an_integer
-- [ ] web/javascript/reference/errors/cant_convert_bigint_to_number
-- [ ] web/javascript/reference/errors/cant_convert_x_to_bigint
-- [ ] web/javascript/reference/errors/cant_define_property_object_not_extensible
+- [x] web/javascript/reference/errors/index.md
+- [x] web/javascript/reference/errors/already_executing_generator
+- [x] web/javascript/reference/errors/already_has_pragma
+- [x] web/javascript/reference/errors/arguments_not_allowed
+- [x] web/javascript/reference/errors/array_sort_argument
+- [x] web/javascript/reference/errors/await_yield_in_parameter
+- [x] web/javascript/reference/errors/bad_await
+- [x] web/javascript/reference/errors/bad_break
+- [x] web/javascript/reference/errors/bad_continue
+- [x] web/javascript/reference/errors/bad_new_optional
+- [x] web/javascript/reference/errors/bad_optional_template
+- [x] web/javascript/reference/errors/bad_radix
+- [x] web/javascript/reference/errors/bad_regexp_flag
+- [x] web/javascript/reference/errors/bad_return
+- [x] web/javascript/reference/errors/bad_strict_arguments_eval
+- [x] web/javascript/reference/errors/bad_super_call
+- [x] web/javascript/reference/errors/bad_super_prop
+- [x] web/javascript/reference/errors/bigint_division_by_zero
+- [x] web/javascript/reference/errors/bigint_negative_exponent
+- [x] web/javascript/reference/errors/bigint_not_serializable
+- [x] web/javascript/reference/errors/builtin_ctor_no_new
+- [x] web/javascript/reference/errors/called_on_incompatible_type
+- [x] web/javascript/reference/errors/cant_access_lexical_declaration_before_init
+- [x] web/javascript/reference/errors/cant_assign_to_property
+- [x] web/javascript/reference/errors/cant_be_converted_to_bigint_because_it_isnt_an_integer
+- [x] web/javascript/reference/errors/cant_convert_bigint_to_number
+- [x] web/javascript/reference/errors/cant_convert_x_to_bigint
+- [x] web/javascript/reference/errors/cant_define_property_object_not_extensible
 - [ ] web/javascript/reference/errors/cant_delete_private_fields
 - [ ] web/javascript/reference/errors/cant_delete
-- [ ] web/javascript/reference/errors/cant_redefine_property
+- [x] web/javascript/reference/errors/cant_redefine_property
 - [ ] web/javascript/reference/errors/cant_set_prototype
 - [ ] web/javascript/reference/errors/cant_use_nullish_coalescing_unparenthesized
 - [ ] web/javascript/reference/errors/class_ctor_no_new
-- [ ] web/javascript/reference/errors/constructor_cant_be_used_directly
-- [ ] web/javascript/reference/errors/cyclic_object_value
+- [x] web/javascript/reference/errors/constructor_cant_be_used_directly
+- [x] web/javascript/reference/errors/cyclic_object_value
 - [ ] web/javascript/reference/errors/cyclic_prototype
 - [ ] web/javascript/reference/errors/delete_in_strict_mode
-- [ ] web/javascript/reference/errors/deprecated_caller_or_arguments_usage
-- [ ] web/javascript/reference/errors/deprecated_octal_escape_sequence
-- [ ] web/javascript/reference/errors/deprecated_octal_literal
-- [ ] web/javascript/reference/errors/deprecated_source_map_pragma
+- [x] web/javascript/reference/errors/deprecated_caller_or_arguments_usage
+- [x] web/javascript/reference/errors/deprecated_octal_escape_sequence
+- [x] web/javascript/reference/errors/deprecated_octal_literal
+- [x] web/javascript/reference/errors/deprecated_source_map_pragma
 - [ ] web/javascript/reference/errors/duplicate_parameter
 - [ ] web/javascript/reference/errors/duplicate_proto
 - [ ] web/javascript/reference/errors/either_be_both_static_or_non-static
@@ -269,57 +269,57 @@ Total: 1,329 pages
 - [ ] web/javascript/reference/errors/function_label
 - [ ] web/javascript/reference/errors/get_set_missing_private
 - [ ] web/javascript/reference/errors/getter_no_arguments
-- [ ] web/javascript/reference/errors/getter_only
-- [ ] web/javascript/reference/errors/hash_outside_class
+- [x] web/javascript/reference/errors/getter_only
+- [x] web/javascript/reference/errors/hash_outside_class
 - [ ] web/javascript/reference/errors/identifier_after_number
-- [ ] web/javascript/reference/errors/illegal_character
+- [x] web/javascript/reference/errors/illegal_character
 - [ ] web/javascript/reference/errors/import_decl_module_top_level
-- [ ] web/javascript/reference/errors/in_operator_no_object
-- [ ] web/javascript/reference/errors/invalid_array_length
+- [x] web/javascript/reference/errors/in_operator_no_object
+- [x] web/javascript/reference/errors/invalid_array_length
 - [ ] web/javascript/reference/errors/invalid_assignment_left-hand_side
 - [ ] web/javascript/reference/errors/invalid_bigint_syntax
-- [ ] web/javascript/reference/errors/invalid_const_assignment
-- [ ] web/javascript/reference/errors/invalid_date
+- [x] web/javascript/reference/errors/invalid_const_assignment
+- [x] web/javascript/reference/errors/invalid_date
 - [ ] web/javascript/reference/errors/invalid_derived_return
 - [ ] web/javascript/reference/errors/invalid_for-in_initializer
 - [ ] web/javascript/reference/errors/invalid_for-of_initializer
-- [ ] web/javascript/reference/errors/invalid_right_hand_side_instanceof_operand
-- [ ] web/javascript/reference/errors/is_not_iterable
-- [ ] web/javascript/reference/errors/json_bad_parse
+- [x] web/javascript/reference/errors/invalid_right_hand_side_instanceof_operand
+- [x] web/javascript/reference/errors/is_not_iterable
+- [x] web/javascript/reference/errors/json_bad_parse
 - [ ] web/javascript/reference/errors/key_not_weakly_held
 - [ ] web/javascript/reference/errors/label_not_found
-- [ ] web/javascript/reference/errors/malformed_uri
-- [ ] web/javascript/reference/errors/missing_bracket_after_list
-- [ ] web/javascript/reference/errors/missing_colon_after_property_id
-- [ ] web/javascript/reference/errors/missing_curly_after_function_body
-- [ ] web/javascript/reference/errors/missing_curly_after_property_list
-- [ ] web/javascript/reference/errors/missing_formal_parameter
-- [ ] web/javascript/reference/errors/missing_initializer_in_const
-- [ ] web/javascript/reference/errors/missing_name_after_dot_operator
+- [x] web/javascript/reference/errors/malformed_uri
+- [x] web/javascript/reference/errors/missing_bracket_after_list
+- [x] web/javascript/reference/errors/missing_colon_after_property_id
+- [x] web/javascript/reference/errors/missing_curly_after_function_body
+- [x] web/javascript/reference/errors/missing_curly_after_property_list
+- [x] web/javascript/reference/errors/missing_formal_parameter
+- [x] web/javascript/reference/errors/missing_initializer_in_const
+- [x] web/javascript/reference/errors/missing_name_after_dot_operator
 - [ ] web/javascript/reference/errors/missing_parenthesis_after_argument_list
 - [ ] web/javascript/reference/errors/missing_parenthesis_after_condition
-- [ ] web/javascript/reference/errors/more_arguments_needed
-- [ ] web/javascript/reference/errors/negative_repetition_count
-- [ ] web/javascript/reference/errors/no_non-null_object
-- [ ] web/javascript/reference/errors/no_properties
-- [ ] web/javascript/reference/errors/no_variable_name
-- [ ] web/javascript/reference/errors/non_configurable_array_element
-- [ ] web/javascript/reference/errors/not_a_constructor
-- [ ] web/javascript/reference/errors/not_a_function
+- [x] web/javascript/reference/errors/more_arguments_needed
+- [x] web/javascript/reference/errors/negative_repetition_count
+- [x] web/javascript/reference/errors/no_non-null_object
+- [x] web/javascript/reference/errors/no_properties
+- [x] web/javascript/reference/errors/no_variable_name
+- [x] web/javascript/reference/errors/non_configurable_array_element
+- [x] web/javascript/reference/errors/not_a_constructor
+- [x] web/javascript/reference/errors/not_a_function
 - [ ] web/javascript/reference/errors/not_a_valid_code_point
-- [ ] web/javascript/reference/errors/not_defined
+- [x] web/javascript/reference/errors/not_defined
 - [ ] web/javascript/reference/errors/parameter_after_rest_parameter
-- [ ] web/javascript/reference/errors/precision_range
+- [x] web/javascript/reference/errors/precision_range
 - [ ] web/javascript/reference/errors/private_double_initialization
 - [ ] web/javascript/reference/errors/private_setter_only
 - [ ] web/javascript/reference/errors/promise_any_all_rejected
-- [ ] web/javascript/reference/errors/property_access_denied
+- [x] web/javascript/reference/errors/property_access_denied
 - [ ] web/javascript/reference/errors/read-only
 - [ ] web/javascript/reference/errors/redeclared_parameter
-- [ ] web/javascript/reference/errors/reduce_of_empty_array_with_no_initial_value
+- [x] web/javascript/reference/errors/reduce_of_empty_array_with_no_initial_value
 - [ ] web/javascript/reference/errors/regex_backslash_at_end_of_pattern
 - [ ] web/javascript/reference/errors/regex_character_class_escape_in_class_range
-- [ ] web/javascript/reference/errors/regex_duplicate_capture_group_name
+- [x] web/javascript/reference/errors/regex_duplicate_capture_group_name
 - [ ] web/javascript/reference/errors/regex_incomplete_quantifier
 - [ ] web/javascript/reference/errors/regex_invalid_capture_group_name
 - [ ] web/javascript/reference/errors/regex_invalid_char_in_class
@@ -336,20 +336,20 @@ Total: 1,329 pages
 - [ ] web/javascript/reference/errors/regex_numbers_out_of_order_in_quantifier
 - [ ] web/javascript/reference/errors/regex_raw_bracket
 - [ ] web/javascript/reference/errors/requires_global_regexp
-- [ ] web/javascript/reference/errors/reserved_identifier
+- [x] web/javascript/reference/errors/reserved_identifier
 - [ ] web/javascript/reference/errors/rest_with_default
-- [ ] web/javascript/reference/errors/resulting_string_too_large
+- [x] web/javascript/reference/errors/resulting_string_too_large
 - [ ] web/javascript/reference/errors/setter_one_argument
 - [ ] web/javascript/reference/errors/stmt_after_return
 - [ ] web/javascript/reference/errors/strict_non_simple_params
 - [ ] web/javascript/reference/errors/string_literal_eol
 - [ ] web/javascript/reference/errors/super_called_twice
 - [ ] web/javascript/reference/errors/super_not_called
-- [ ] web/javascript/reference/errors/too_much_recursion
-- [ ] web/javascript/reference/errors/undeclared_private_field_or_method
+- [x] web/javascript/reference/errors/too_much_recursion
+- [x] web/javascript/reference/errors/undeclared_private_field_or_method
 - [ ] web/javascript/reference/errors/undeclared_var
-- [ ] web/javascript/reference/errors/unexpected_token
-- [ ] web/javascript/reference/errors/unexpected_type
+- [x] web/javascript/reference/errors/unexpected_token
+- [x] web/javascript/reference/errors/unexpected_type
 - [ ] web/javascript/reference/errors/unnamed_function_statement
 - [ ] web/javascript/reference/errors/unparenthesized_unary_expr_lhs_exponentiation
 
@@ -357,31 +357,31 @@ Total: 1,329 pages
 
 High-priority (translate first):
 
-- [ ] web/javascript/reference/global_objects/array
-- [ ] web/javascript/reference/global_objects/object
-- [ ] web/javascript/reference/global_objects/function
-- [ ] web/javascript/reference/global_objects/string
-- [ ] web/javascript/reference/global_objects/number
-- [ ] web/javascript/reference/global_objects/boolean
-- [ ] web/javascript/reference/global_objects/symbol
-- [ ] web/javascript/reference/global_objects/bigint
+- [x] web/javascript/reference/global_objects/array
+- [x] web/javascript/reference/global_objects/object
+- [x] web/javascript/reference/global_objects/function
+- [x] web/javascript/reference/global_objects/string
+- [x] web/javascript/reference/global_objects/number
+- [x] web/javascript/reference/global_objects/boolean
+- [x] web/javascript/reference/global_objects/symbol
+- [x] web/javascript/reference/global_objects/bigint
 - [ ] web/javascript/reference/global_objects/null
-- [ ] web/javascript/reference/global_objects/undefined
-- [ ] web/javascript/reference/global_objects/nan
-- [ ] web/javascript/reference/global_objects/infinity
-- [ ] web/javascript/reference/global_objects/math
-- [ ] web/javascript/reference/global_objects/date
-- [ ] web/javascript/reference/global_objects/regexp
-- [ ] web/javascript/reference/global_objects/error
+- [x] web/javascript/reference/global_objects/undefined
+- [x] web/javascript/reference/global_objects/nan
+- [x] web/javascript/reference/global_objects/infinity
+- [x] web/javascript/reference/global_objects/math
+- [x] web/javascript/reference/global_objects/date
+- [x] web/javascript/reference/global_objects/regexp
+- [x] web/javascript/reference/global_objects/error
 - [x] web/javascript/reference/global_objects/promise
-- [ ] web/javascript/reference/global_objects/proxy
-- [ ] web/javascript/reference/global_objects/reflect
-- [ ] web/javascript/reference/global_objects/map
-- [ ] web/javascript/reference/global_objects/set
-- [ ] web/javascript/reference/global_objects/weakmap
-- [ ] web/javascript/reference/global_objects/weakset
-- [ ] web/javascript/reference/global_objects/weakref
-- [ ] web/javascript/reference/global_objects/finalizationregistry
+- [x] web/javascript/reference/global_objects/proxy
+- [x] web/javascript/reference/global_objects/reflect
+- [x] web/javascript/reference/global_objects/map
+- [x] web/javascript/reference/global_objects/set
+- [x] web/javascript/reference/global_objects/weakmap
+- [x] web/javascript/reference/global_objects/weakset
+- [x] web/javascript/reference/global_objects/weakref
+- [x] web/javascript/reference/global_objects/finalizationregistry
 - [ ] web/javascript/reference/global_objects/json
 - [ ] web/javascript/reference/global_objects/intl
 - [ ] web/javascript/reference/global_objects/typedarray
