@@ -96,61 +96,61 @@ CSS có thể tải các tài nguyên được tham chiếu từ stylesheets. Nh
 
 ### `no-referrer`
 
-| Từ tài liệu                | Điều hướng đến | Người giới thiệu sử dụng |
-| -------------------------- | -------------- | ------------------------- |
-| `https://example.com/page` | _bất kỳ đâu_  | _(không có người giới thiệu)_ |
+| Từ tài liệu                | Điều hướng đến | Người giới thiệu sử dụng      |
+| -------------------------- | -------------- | ----------------------------- |
+| `https://example.com/page` | _bất kỳ đâu_   | _(không có người giới thiệu)_ |
 
 ### `no-referrer-when-downgrade`
 
-| Từ tài liệu                 | Điều hướng đến                  | Người giới thiệu sử dụng   |
-| --------------------------- | -------------------------------- | ---------------------------- |
-| `https://example.com/page`  | `https://example.com/otherpage` | `https://example.com/page` |
-| `https://example.com/page`  | `https://mozilla.org`           | `https://example.com/page` |
+| Từ tài liệu                 | Điều hướng đến                  | Người giới thiệu sử dụng      |
+| --------------------------- | ------------------------------- | ----------------------------- |
+| `https://example.com/page`  | `https://example.com/otherpage` | `https://example.com/page`    |
+| `https://example.com/page`  | `https://mozilla.org`           | `https://example.com/page`    |
 | `https://example.com/page`  | **http**://example.com          | _(không có người giới thiệu)_ |
-| **http**://example.com/page | _bất kỳ đâu_                   | `http://example.com/page`  |
+| **http**://example.com/page | _bất kỳ đâu_                    | `http://example.com/page`     |
 
 ### `origin`
 
 | Từ tài liệu                | Điều hướng đến | Người giới thiệu sử dụng |
-| -------------------------- | -------------- | ------------------------- |
-| `https://example.com/page` | _bất kỳ đâu_  | `https://example.com/`   |
+| -------------------------- | -------------- | ------------------------ |
+| `https://example.com/page` | _bất kỳ đâu_   | `https://example.com/`   |
 
 ### `origin-when-cross-origin`
 
 | Từ tài liệu                | Điều hướng đến                  | Người giới thiệu sử dụng   |
-| -------------------------- | -------------------------------- | ---------------------------- |
+| -------------------------- | ------------------------------- | -------------------------- |
 | `https://example.com/page` | `https://example.com/otherpage` | `https://example.com/page` |
 | `https://example.com/page` | `https://mozilla.org`           | `https://example.com/`     |
 | `https://example.com/page` | **http**://example.com/page     | `https://example.com/`     |
 
 ### `same-origin`
 
-| Từ tài liệu                | Điều hướng đến                  | Người giới thiệu sử dụng   |
-| -------------------------- | -------------------------------- | ---------------------------- |
-| `https://example.com/page` | `https://example.com/otherpage` | `https://example.com/page` |
+| Từ tài liệu                | Điều hướng đến                  | Người giới thiệu sử dụng      |
+| -------------------------- | ------------------------------- | ----------------------------- |
+| `https://example.com/page` | `https://example.com/otherpage` | `https://example.com/page`    |
 | `https://example.com/page` | `https://mozilla.org`           | _(không có người giới thiệu)_ |
 
 ### `strict-origin`
 
-| Từ tài liệu                 | Điều hướng đến         | Người giới thiệu sử dụng |
-| --------------------------- | ----------------------- | ------------------------- |
-| `https://example.com/page`  | `https://mozilla.org`  | `https://example.com/`   |
+| Từ tài liệu                 | Điều hướng đến         | Người giới thiệu sử dụng      |
+| --------------------------- | ---------------------- | ----------------------------- |
+| `https://example.com/page`  | `https://mozilla.org`  | `https://example.com/`        |
 | `https://example.com/page`  | **http**://example.com | _(không có người giới thiệu)_ |
-| **http**://example.com/page | _bất kỳ đâu_           | `http://example.com/`    |
+| **http**://example.com/page | _bất kỳ đâu_           | `http://example.com/`         |
 
 ### `strict-origin-when-cross-origin`
 
-| Từ tài liệu                | Điều hướng đến                  | Người giới thiệu sử dụng   |
-| -------------------------- | -------------------------------- | ---------------------------- |
-| `https://example.com/page` | `https://example.com/otherpage` | `https://example.com/page` |
-| `https://example.com/page` | `https://mozilla.org`           | `https://example.com/`     |
+| Từ tài liệu                | Điều hướng đến                  | Người giới thiệu sử dụng      |
+| -------------------------- | ------------------------------- | ----------------------------- |
+| `https://example.com/page` | `https://example.com/otherpage` | `https://example.com/page`    |
+| `https://example.com/page` | `https://mozilla.org`           | `https://example.com/`        |
 | `https://example.com/page` | **http**://example.com          | _(không có người giới thiệu)_ |
 
 ### `unsafe-url`
 
 | Từ tài liệu                      | Điều hướng đến | Người giới thiệu sử dụng         |
-| --------------------------------- | -------------- | ---------------------------------- |
-| `https://example.com/page?q=123` | _bất kỳ đâu_  | `https://example.com/page?q=123` |
+| -------------------------------- | -------------- | -------------------------------- |
+| `https://example.com/page?q=123` | _bất kỳ đâu_   | `https://example.com/page?q=123` |
 
 ### Chỉ định chính sách dự phòng
 

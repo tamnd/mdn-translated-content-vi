@@ -61,15 +61,15 @@ Warning: <warn-code> <warn-agent> <warn-text> [<warn-date>]
 
 [Sổ đăng ký HTTP Warn Codes tại iana.org](https://www.iana.org/assignments/http-warn-codes/http-warn-codes.xhtml) định nghĩa không gian tên cho các mã cảnh báo.
 
-| Mã  | Văn bản                          | Mô tả                                                                                                                                                                                            |
-| ---- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 110  | Response is Stale                | Phản hồi được cung cấp bởi bộ đệm đã cũ (thời gian hết hạn được đặt cho phản hồi đã qua).                                                                                                      |
-| 111  | Revalidation Failed              | Nỗ lực xác thực phản hồi cũ đã thất bại do không thể liên hệ với máy chủ.                                                                                                                       |
-| 112  | Disconnected Operation           | Bộ đệm bị cố ý ngắt kết nối khỏi phần còn lại của mạng.                                                                                                                                         |
-| 113  | Heuristic Expiration             | Bộ đệm theo heuristic đã chọn [thời gian mới mẻ](/en-US/docs/Web/HTTP/Guides/Caching#fresh_and_stale_based_on_age) lớn hơn 24 giờ và tuổi của phản hồi lớn hơn 24 giờ.                          |
-| 199  | Miscellaneous Warning            | Thông tin tùy ý cần được hiển thị cho người dùng hoặc ghi lại.                                                                                                                                   |
-| 214  | Transformation Applied           | Được thêm bởi proxy nếu nó áp dụng bất kỳ biến đổi nào cho biểu diễn, chẳng hạn như thay đổi mã hóa nội dung, kiểu phương tiện hoặc tương tự.                                                   |
-| 299  | Miscellaneous Persistent Warning | Thông tin tùy ý cần được hiển thị cho người dùng hoặc ghi lại. Mã cảnh báo này tương tự như mã cảnh báo 199 và ngoài ra chỉ ra cảnh báo liên tục.                                               |
+| Mã  | Văn bản                          | Mô tả                                                                                                                                                                  |
+| --- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 110 | Response is Stale                | Phản hồi được cung cấp bởi bộ đệm đã cũ (thời gian hết hạn được đặt cho phản hồi đã qua).                                                                              |
+| 111 | Revalidation Failed              | Nỗ lực xác thực phản hồi cũ đã thất bại do không thể liên hệ với máy chủ.                                                                                              |
+| 112 | Disconnected Operation           | Bộ đệm bị cố ý ngắt kết nối khỏi phần còn lại của mạng.                                                                                                                |
+| 113 | Heuristic Expiration             | Bộ đệm theo heuristic đã chọn [thời gian mới mẻ](/en-US/docs/Web/HTTP/Guides/Caching#fresh_and_stale_based_on_age) lớn hơn 24 giờ và tuổi của phản hồi lớn hơn 24 giờ. |
+| 199 | Miscellaneous Warning            | Thông tin tùy ý cần được hiển thị cho người dùng hoặc ghi lại.                                                                                                         |
+| 214 | Transformation Applied           | Được thêm bởi proxy nếu nó áp dụng bất kỳ biến đổi nào cho biểu diễn, chẳng hạn như thay đổi mã hóa nội dung, kiểu phương tiện hoặc tương tự.                          |
+| 299 | Miscellaneous Persistent Warning | Thông tin tùy ý cần được hiển thị cho người dùng hoặc ghi lại. Mã cảnh báo này tương tự như mã cảnh báo 199 và ngoài ra chỉ ra cảnh báo liên tục.                      |
 
 ## Ví dụ
 

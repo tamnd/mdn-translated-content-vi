@@ -637,10 +637,10 @@ function FindProxyForURL(url, host) {
 
 Ví dụ này phức tạp hơn. Có bốn (4) proxy servers; một trong số chúng là dự phòng nóng cho tất cả các máy chủ còn lại, vì vậy nếu bất kỳ máy chủ còn lại nào ngừng hoạt động, máy chủ thứ tư sẽ tiếp quản. Hơn nữa, ba proxy servers còn lại chia sẻ tải dựa trên mẫu URL, làm cho việc lưu vào cache của chúng hiệu quả hơn (chỉ có một bản sao của bất kỳ tài liệu nào trên ba máy chủ - thay vì một bản sao trên mỗi máy chủ). Tải được phân phối như thế này:
 
-| Proxy | Mục đích          |
-| ----- | ----------------- |
-| #1    | Domain .com       |
-| #2    | Domain .edu       |
+| Proxy | Mục đích           |
+| ----- | ------------------ |
+| #1    | Domain .com        |
+| #2    | Domain .edu        |
 | #3    | Tất cả domain khác |
 | #4    | Dự phòng nóng      |
 

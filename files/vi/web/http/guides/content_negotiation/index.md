@@ -52,11 +52,11 @@ Tiêu đề `Accept` được định nghĩa bởi trình duyệt, hoặc bất 
 
 Tiêu đề thử nghiệm {{HTTPHeader("Accept-CH")}} liệt kê dữ liệu cấu hình mà máy chủ có thể sử dụng để chọn phản hồi phù hợp. Các giá trị hợp lệ ví dụ bao gồm:
 
-| Giá trị                 | Ý nghĩa                                                                                                                                                                                                          |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Giá trị                 | Ý nghĩa                                                                                                                                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Sec-CH-Device-Memory`  | Cho biết lượng RAM thiết bị gần đúng. Giá trị này là xấp xỉ được cung cấp bằng cách làm tròn đến lũy thừa gần nhất của 2 và chia số đó cho 1024. Ví dụ, 512 megabytes sẽ được báo cáo là `0.5`. |
-| `Sec-CH-Viewport-Width` | Cho biết chiều rộng viewport bố cục tính bằng pixel CSS.                                                                                                                                                         |
-| `Sec-CH-Width`          | Cho biết chiều rộng tài nguyên tính bằng pixel vật lý (nói cách khác là kích thước nội tại của hình ảnh).                                                                                                       |
+| `Sec-CH-Viewport-Width` | Cho biết chiều rộng viewport bố cục tính bằng pixel CSS.                                                                                                                                        |
+| `Sec-CH-Width`          | Cho biết chiều rộng tài nguyên tính bằng pixel vật lý (nói cách khác là kích thước nội tại của hình ảnh).                                                                                       |
 
 ### Tiêu đề `Accept-Encoding`
 
