@@ -350,8 +350,8 @@ Total: 1,329 pages
 - [x] web/javascript/reference/errors/undeclared_var
 - [x] web/javascript/reference/errors/unexpected_token
 - [x] web/javascript/reference/errors/unexpected_type
-- [ ] web/javascript/reference/errors/unnamed_function_statement
-- [ ] web/javascript/reference/errors/unparenthesized_unary_expr_lhs_exponentiation
+- [x] web/javascript/reference/errors/unnamed_function_statement
+- [x] web/javascript/reference/errors/unparenthesized_unary_expr_lhs_exponentiation
 
 ## Reference — Global objects (1,008 pages)
 
@@ -454,7 +454,7 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/array/with
 - [x] web/javascript/reference/global_objects/arraybuffer/arraybuffer
 - [x] web/javascript/reference/global_objects/arraybuffer/bytelength
-- [ ] web/javascript/reference/global_objects/arraybuffer/detached
+- [x] web/javascript/reference/global_objects/arraybuffer/detached
 - [x] web/javascript/reference/global_objects/arraybuffer/isview
 - [x] web/javascript/reference/global_objects/arraybuffer/maxbytelength
 - [x] web/javascript/reference/global_objects/arraybuffer/resizable
@@ -472,15 +472,15 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/asyncdisposablestack/move
 - [x] web/javascript/reference/global_objects/asyncdisposablestack/symbol.asyncdispose
 - [x] web/javascript/reference/global_objects/asyncdisposablestack/use
-- [ ] web/javascript/reference/global_objects/asyncfunction/asyncfunction
-- [ ] web/javascript/reference/global_objects/asyncgenerator/next
-- [ ] web/javascript/reference/global_objects/asyncgenerator/return
-- [ ] web/javascript/reference/global_objects/asyncgenerator/throw
-- [ ] web/javascript/reference/global_objects/asyncgeneratorfunction/asyncgeneratorfunction
-- [ ] web/javascript/reference/global_objects/asyncgeneratorfunction/prototype
+- [x] web/javascript/reference/global_objects/asyncfunction/asyncfunction
+- [x] web/javascript/reference/global_objects/asyncgenerator/next
+- [x] web/javascript/reference/global_objects/asyncgenerator/return
+- [x] web/javascript/reference/global_objects/asyncgenerator/throw
+- [x] web/javascript/reference/global_objects/asyncgeneratorfunction/asyncgeneratorfunction
+- [x] web/javascript/reference/global_objects/asyncgeneratorfunction/prototype
 - [ ] web/javascript/reference/global_objects/asynciterator
-- [ ] web/javascript/reference/global_objects/asynciterator/symbol.asyncdispose
-- [ ] web/javascript/reference/global_objects/asynciterator/symbol.asynciterator
+- [x] web/javascript/reference/global_objects/asynciterator/symbol.asyncdispose
+- [x] web/javascript/reference/global_objects/asynciterator/symbol.asynciterator
 - [x] web/javascript/reference/global_objects/atomics/add
 - [x] web/javascript/reference/global_objects/atomics/and
 - [x] web/javascript/reference/global_objects/atomics/compareexchange
@@ -489,7 +489,7 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/atomics/load
 - [x] web/javascript/reference/global_objects/atomics/notify
 - [x] web/javascript/reference/global_objects/atomics/or
-- [ ] web/javascript/reference/global_objects/atomics/pause
+- [x] web/javascript/reference/global_objects/atomics/pause
 - [x] web/javascript/reference/global_objects/atomics/store
 - [x] web/javascript/reference/global_objects/atomics/sub
 - [x] web/javascript/reference/global_objects/atomics/wait
@@ -502,9 +502,9 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/bigint/tostring
 - [x] web/javascript/reference/global_objects/bigint/valueof
 - [x] web/javascript/reference/global_objects/bigint64array/bigint64array
-- [ ] web/javascript/reference/global_objects/bigint64array
+- [x] web/javascript/reference/global_objects/bigint64array
 - [x] web/javascript/reference/global_objects/biguint64array/biguint64array
-- [ ] web/javascript/reference/global_objects/biguint64array
+- [x] web/javascript/reference/global_objects/biguint64array
 - [x] web/javascript/reference/global_objects/boolean/boolean
 - [x] web/javascript/reference/global_objects/boolean/tostring
 - [x] web/javascript/reference/global_objects/boolean/valueof
@@ -514,7 +514,7 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/dataview/dataview
 - [x] web/javascript/reference/global_objects/dataview/getbigint64
 - [x] web/javascript/reference/global_objects/dataview/getbiguint64
-- [ ] web/javascript/reference/global_objects/dataview/getfloat16
+- [x] web/javascript/reference/global_objects/dataview/getfloat16
 - [x] web/javascript/reference/global_objects/dataview/getfloat32
 - [x] web/javascript/reference/global_objects/dataview/getfloat64
 - [x] web/javascript/reference/global_objects/dataview/getint16
@@ -525,7 +525,7 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/dataview/getuint8
 - [x] web/javascript/reference/global_objects/dataview/setbigint64
 - [x] web/javascript/reference/global_objects/dataview/setbiguint64
-- [ ] web/javascript/reference/global_objects/dataview/setfloat16
+- [x] web/javascript/reference/global_objects/dataview/setfloat16
 - [x] web/javascript/reference/global_objects/dataview/setfloat32
 - [x] web/javascript/reference/global_objects/dataview/setfloat64
 - [x] web/javascript/reference/global_objects/dataview/setint16
@@ -553,7 +553,7 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/date/getutcminutes
 - [x] web/javascript/reference/global_objects/date/getutcmonth
 - [x] web/javascript/reference/global_objects/date/getutcseconds
-- [ ] web/javascript/reference/global_objects/date/getyear
+- [x] web/javascript/reference/global_objects/date/getyear
 - [x] web/javascript/reference/global_objects/date/now
 - [x] web/javascript/reference/global_objects/date/parse
 - [x] web/javascript/reference/global_objects/date/setdate
@@ -615,11 +615,11 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/finalizationregistry/register
 - [x] web/javascript/reference/global_objects/finalizationregistry/unregister
 - [ ] web/javascript/reference/global_objects/float16array/float16array
-- [ ] web/javascript/reference/global_objects/float16array
+- [x] web/javascript/reference/global_objects/float16array
 - [ ] web/javascript/reference/global_objects/float32array/float32array
-- [ ] web/javascript/reference/global_objects/float32array
+- [x] web/javascript/reference/global_objects/float32array
 - [ ] web/javascript/reference/global_objects/float64array/float64array
-- [ ] web/javascript/reference/global_objects/float64array
+- [x] web/javascript/reference/global_objects/float64array
 - [x] web/javascript/reference/global_objects/function/apply
 - [ ] web/javascript/reference/global_objects/function/arguments
 - [x] web/javascript/reference/global_objects/function/bind
@@ -635,14 +635,14 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/generator/next
 - [x] web/javascript/reference/global_objects/generator/return
 - [x] web/javascript/reference/global_objects/generator/throw
-- [ ] web/javascript/reference/global_objects/generatorfunction/generatorfunction
-- [ ] web/javascript/reference/global_objects/generatorfunction/prototype
+- [x] web/javascript/reference/global_objects/generatorfunction/generatorfunction
+- [x] web/javascript/reference/global_objects/generatorfunction/prototype
 - [ ] web/javascript/reference/global_objects/globalthis
 - [ ] web/javascript/reference/global_objects
-- [ ] web/javascript/reference/global_objects/int16array
-- [ ] web/javascript/reference/global_objects/int16array/int16array
-- [ ] web/javascript/reference/global_objects/int32array
-- [ ] web/javascript/reference/global_objects/int32array/int32array
+- [x] web/javascript/reference/global_objects/int16array
+- [x] web/javascript/reference/global_objects/int16array/int16array
+- [x] web/javascript/reference/global_objects/int32array
+- [x] web/javascript/reference/global_objects/int32array/int32array
 - [x] web/javascript/reference/global_objects/int8array
 - [x] web/javascript/reference/global_objects/int8array/int8array
 - [x] web/javascript/reference/global_objects/internalerror
@@ -669,15 +669,15 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/intl/durationformat/format
 - [x] web/javascript/reference/global_objects/intl/durationformat/formattoparts
 - [x] web/javascript/reference/global_objects/intl/durationformat
-- [ ] web/javascript/reference/global_objects/intl/durationformat/resolvedoptions
-- [ ] web/javascript/reference/global_objects/intl/durationformat/supportedlocalesof
+- [x] web/javascript/reference/global_objects/intl/durationformat/resolvedoptions
+- [x] web/javascript/reference/global_objects/intl/durationformat/supportedlocalesof
 - [ ] web/javascript/reference/global_objects/intl/getcanonicallocales
-- [ ] web/javascript/reference/global_objects/intl/listformat/format
-- [ ] web/javascript/reference/global_objects/intl/listformat/formattoparts
-- [ ] web/javascript/reference/global_objects/intl/listformat
-- [ ] web/javascript/reference/global_objects/intl/listformat/listformat
-- [ ] web/javascript/reference/global_objects/intl/listformat/resolvedoptions
-- [ ] web/javascript/reference/global_objects/intl/listformat/supportedlocalesof
+- [x] web/javascript/reference/global_objects/intl/listformat/format
+- [x] web/javascript/reference/global_objects/intl/listformat/formattoparts
+- [x] web/javascript/reference/global_objects/intl/listformat
+- [x] web/javascript/reference/global_objects/intl/listformat/listformat
+- [x] web/javascript/reference/global_objects/intl/listformat/resolvedoptions
+- [x] web/javascript/reference/global_objects/intl/listformat/supportedlocalesof
 - [x] web/javascript/reference/global_objects/intl/locale/basename
 - [x] web/javascript/reference/global_objects/intl/locale/calendar
 - [x] web/javascript/reference/global_objects/intl/locale/casefirst
@@ -721,14 +721,14 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/intl/relativetimeformat/relativetimeformat
 - [x] web/javascript/reference/global_objects/intl/relativetimeformat/resolvedoptions
 - [x] web/javascript/reference/global_objects/intl/relativetimeformat/supportedlocalesof
-- [ ] web/javascript/reference/global_objects/intl/segmenter
-- [ ] web/javascript/reference/global_objects/intl/segmenter/resolvedoptions
-- [ ] web/javascript/reference/global_objects/intl/segmenter/segment
-- [ ] web/javascript/reference/global_objects/intl/segmenter/segment/segments/containing
-- [ ] web/javascript/reference/global_objects/intl/segmenter/segment/segments
-- [ ] web/javascript/reference/global_objects/intl/segmenter/segment/segments/symbol.iterator
-- [ ] web/javascript/reference/global_objects/intl/segmenter/segmenter
-- [ ] web/javascript/reference/global_objects/intl/segmenter/supportedlocalesof
+- [x] web/javascript/reference/global_objects/intl/segmenter
+- [x] web/javascript/reference/global_objects/intl/segmenter/resolvedoptions
+- [x] web/javascript/reference/global_objects/intl/segmenter/segment
+- [x] web/javascript/reference/global_objects/intl/segmenter/segment/segments/containing
+- [x] web/javascript/reference/global_objects/intl/segmenter/segment/segments
+- [x] web/javascript/reference/global_objects/intl/segmenter/segment/segments/symbol.iterator
+- [x] web/javascript/reference/global_objects/intl/segmenter/segmenter
+- [x] web/javascript/reference/global_objects/intl/segmenter/supportedlocalesof
 - [ ] web/javascript/reference/global_objects/intl/supportedvaluesof
 - [x] web/javascript/reference/global_objects/iterator/concat
 - [x] web/javascript/reference/global_objects/iterator/drop
@@ -883,11 +883,11 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/promise/then
 - [x] web/javascript/reference/global_objects/promise/try
 - [x] web/javascript/reference/global_objects/promise/withresolvers
-- [ ] web/javascript/reference/global_objects/proxy/proxy/apply
-- [ ] web/javascript/reference/global_objects/proxy/proxy/construct
-- [ ] web/javascript/reference/global_objects/proxy/proxy/defineproperty
-- [ ] web/javascript/reference/global_objects/proxy/proxy/deleteproperty
-- [ ] web/javascript/reference/global_objects/proxy/proxy/get
+- [x] web/javascript/reference/global_objects/proxy/proxy/apply
+- [x] web/javascript/reference/global_objects/proxy/proxy/construct
+- [x] web/javascript/reference/global_objects/proxy/proxy/defineproperty
+- [x] web/javascript/reference/global_objects/proxy/proxy/deleteproperty
+- [x] web/javascript/reference/global_objects/proxy/proxy/get
 - [ ] web/javascript/reference/global_objects/proxy/proxy/getownpropertydescriptor
 - [ ] web/javascript/reference/global_objects/proxy/proxy/getprototypeof
 - [ ] web/javascript/reference/global_objects/proxy/proxy/has
@@ -970,28 +970,28 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/sharedarraybuffer/sharedarraybuffer
 - [x] web/javascript/reference/global_objects/sharedarraybuffer/slice
 - [ ] web/javascript/reference/global_objects/sharedarraybuffer/symbol.species
-- [ ] web/javascript/reference/global_objects/string/anchor
+- [x] web/javascript/reference/global_objects/string/anchor
 - [x] web/javascript/reference/global_objects/string/at
-- [ ] web/javascript/reference/global_objects/string/big
-- [ ] web/javascript/reference/global_objects/string/blink
-- [ ] web/javascript/reference/global_objects/string/bold
+- [x] web/javascript/reference/global_objects/string/big
+- [x] web/javascript/reference/global_objects/string/blink
+- [x] web/javascript/reference/global_objects/string/bold
 - [x] web/javascript/reference/global_objects/string/charat
 - [x] web/javascript/reference/global_objects/string/charcodeat
 - [x] web/javascript/reference/global_objects/string/codepointat
 - [x] web/javascript/reference/global_objects/string/concat
 - [x] web/javascript/reference/global_objects/string/endswith
-- [ ] web/javascript/reference/global_objects/string/fixed
-- [ ] web/javascript/reference/global_objects/string/fontcolor
-- [ ] web/javascript/reference/global_objects/string/fontsize
+- [x] web/javascript/reference/global_objects/string/fixed
+- [x] web/javascript/reference/global_objects/string/fontcolor
+- [x] web/javascript/reference/global_objects/string/fontsize
 - [x] web/javascript/reference/global_objects/string/fromcharcode
 - [x] web/javascript/reference/global_objects/string/fromcodepoint
 - [x] web/javascript/reference/global_objects/string/includes
 - [x] web/javascript/reference/global_objects/string/indexof
 - [x] web/javascript/reference/global_objects/string/iswellformed
-- [ ] web/javascript/reference/global_objects/string/italics
+- [x] web/javascript/reference/global_objects/string/italics
 - [x] web/javascript/reference/global_objects/string/lastindexof
 - [x] web/javascript/reference/global_objects/string/length
-- [ ] web/javascript/reference/global_objects/string/link
+- [x] web/javascript/reference/global_objects/string/link
 - [x] web/javascript/reference/global_objects/string/localecompare
 - [x] web/javascript/reference/global_objects/string/match
 - [x] web/javascript/reference/global_objects/string/matchall
@@ -1052,19 +1052,19 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/symbol/valueof
 - [x] web/javascript/reference/global_objects/syntaxerror
 - [x] web/javascript/reference/global_objects/syntaxerror/syntaxerror
-- [ ] web/javascript/reference/global_objects/temporal/duration/abs
-- [ ] web/javascript/reference/global_objects/temporal/duration/add
-- [ ] web/javascript/reference/global_objects/temporal/duration/blank
-- [ ] web/javascript/reference/global_objects/temporal/duration/compare
-- [ ] web/javascript/reference/global_objects/temporal/duration/days
-- [ ] web/javascript/reference/global_objects/temporal/duration/duration
-- [ ] web/javascript/reference/global_objects/temporal/duration/from
-- [ ] web/javascript/reference/global_objects/temporal/duration/hours
-- [ ] web/javascript/reference/global_objects/temporal/duration
-- [ ] web/javascript/reference/global_objects/temporal/duration/microseconds
-- [ ] web/javascript/reference/global_objects/temporal/duration/milliseconds
-- [ ] web/javascript/reference/global_objects/temporal/duration/minutes
-- [ ] web/javascript/reference/global_objects/temporal/duration/months
+- [x] web/javascript/reference/global_objects/temporal/duration/abs
+- [x] web/javascript/reference/global_objects/temporal/duration/add
+- [x] web/javascript/reference/global_objects/temporal/duration/blank
+- [x] web/javascript/reference/global_objects/temporal/duration/compare
+- [x] web/javascript/reference/global_objects/temporal/duration/days
+- [x] web/javascript/reference/global_objects/temporal/duration/duration
+- [x] web/javascript/reference/global_objects/temporal/duration/from
+- [x] web/javascript/reference/global_objects/temporal/duration/hours
+- [x] web/javascript/reference/global_objects/temporal/duration
+- [x] web/javascript/reference/global_objects/temporal/duration/microseconds
+- [x] web/javascript/reference/global_objects/temporal/duration/milliseconds
+- [x] web/javascript/reference/global_objects/temporal/duration/minutes
+- [x] web/javascript/reference/global_objects/temporal/duration/months
 - [ ] web/javascript/reference/global_objects/temporal/duration/nanoseconds
 - [ ] web/javascript/reference/global_objects/temporal/duration/negated
 - [ ] web/javascript/reference/global_objects/temporal/duration/round
@@ -1080,17 +1080,17 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/temporal/duration/with
 - [ ] web/javascript/reference/global_objects/temporal/duration/years
 - [x] web/javascript/reference/global_objects/temporal
-- [ ] web/javascript/reference/global_objects/temporal/instant/add
-- [ ] web/javascript/reference/global_objects/temporal/instant/compare
-- [ ] web/javascript/reference/global_objects/temporal/instant/epochmilliseconds
-- [ ] web/javascript/reference/global_objects/temporal/instant/epochnanoseconds
-- [ ] web/javascript/reference/global_objects/temporal/instant/equals
-- [ ] web/javascript/reference/global_objects/temporal/instant/from
-- [ ] web/javascript/reference/global_objects/temporal/instant/fromepochmilliseconds
-- [ ] web/javascript/reference/global_objects/temporal/instant/fromepochnanoseconds
-- [ ] web/javascript/reference/global_objects/temporal/instant
-- [ ] web/javascript/reference/global_objects/temporal/instant/instant
-- [ ] web/javascript/reference/global_objects/temporal/instant/round
+- [x] web/javascript/reference/global_objects/temporal/instant/add
+- [x] web/javascript/reference/global_objects/temporal/instant/compare
+- [x] web/javascript/reference/global_objects/temporal/instant/epochmilliseconds
+- [x] web/javascript/reference/global_objects/temporal/instant/epochnanoseconds
+- [x] web/javascript/reference/global_objects/temporal/instant/equals
+- [x] web/javascript/reference/global_objects/temporal/instant/from
+- [x] web/javascript/reference/global_objects/temporal/instant/fromepochmilliseconds
+- [x] web/javascript/reference/global_objects/temporal/instant/fromepochnanoseconds
+- [x] web/javascript/reference/global_objects/temporal/instant
+- [x] web/javascript/reference/global_objects/temporal/instant/instant
+- [x] web/javascript/reference/global_objects/temporal/instant/round
 - [ ] web/javascript/reference/global_objects/temporal/instant/since
 - [ ] web/javascript/reference/global_objects/temporal/instant/subtract
 - [ ] web/javascript/reference/global_objects/temporal/instant/tojson
@@ -1100,31 +1100,31 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/temporal/instant/until
 - [ ] web/javascript/reference/global_objects/temporal/instant/valueof
 - [x] web/javascript/reference/global_objects/temporal/now
-- [ ] web/javascript/reference/global_objects/temporal/now/instant
-- [ ] web/javascript/reference/global_objects/temporal/now/plaindateiso
-- [ ] web/javascript/reference/global_objects/temporal/now/plaindatetimeiso
-- [ ] web/javascript/reference/global_objects/temporal/now/plaintimeiso
-- [ ] web/javascript/reference/global_objects/temporal/now/timezoneid
-- [ ] web/javascript/reference/global_objects/temporal/now/zoneddatetimeiso
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/add
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/calendarid
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/compare
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/day
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/dayofweek
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/dayofyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/daysinmonth
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/daysinweek
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/daysinyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/equals
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/era
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/erayear
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/from
-- [ ] web/javascript/reference/global_objects/temporal/plaindate
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/inleapyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/month
+- [x] web/javascript/reference/global_objects/temporal/now/instant
+- [x] web/javascript/reference/global_objects/temporal/now/plaindateiso
+- [x] web/javascript/reference/global_objects/temporal/now/plaindatetimeiso
+- [x] web/javascript/reference/global_objects/temporal/now/plaintimeiso
+- [x] web/javascript/reference/global_objects/temporal/now/timezoneid
+- [x] web/javascript/reference/global_objects/temporal/now/zoneddatetimeiso
+- [x] web/javascript/reference/global_objects/temporal/plaindate/add
+- [x] web/javascript/reference/global_objects/temporal/plaindate/calendarid
+- [x] web/javascript/reference/global_objects/temporal/plaindate/compare
+- [x] web/javascript/reference/global_objects/temporal/plaindate/day
+- [x] web/javascript/reference/global_objects/temporal/plaindate/dayofweek
+- [x] web/javascript/reference/global_objects/temporal/plaindate/dayofyear
+- [x] web/javascript/reference/global_objects/temporal/plaindate/daysinmonth
+- [x] web/javascript/reference/global_objects/temporal/plaindate/daysinweek
+- [x] web/javascript/reference/global_objects/temporal/plaindate/daysinyear
+- [x] web/javascript/reference/global_objects/temporal/plaindate/equals
+- [x] web/javascript/reference/global_objects/temporal/plaindate/era
+- [x] web/javascript/reference/global_objects/temporal/plaindate/erayear
+- [x] web/javascript/reference/global_objects/temporal/plaindate/from
+- [x] web/javascript/reference/global_objects/temporal/plaindate
+- [x] web/javascript/reference/global_objects/temporal/plaindate/inleapyear
+- [x] web/javascript/reference/global_objects/temporal/plaindate/month
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/monthcode
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/monthsinyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindate/plaindate
+- [x] web/javascript/reference/global_objects/temporal/plaindate/plaindate
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/since
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/subtract
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/tojson
@@ -1141,32 +1141,32 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/withcalendar
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/year
 - [ ] web/javascript/reference/global_objects/temporal/plaindate/yearofweek
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/add
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/calendarid
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/compare
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/day
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/dayofweek
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/dayofyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/daysinmonth
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/daysinweek
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/daysinyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/equals
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/era
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/erayear
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/from
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/hour
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/add
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/calendarid
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/compare
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/day
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/dayofweek
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/dayofyear
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/daysinmonth
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/daysinweek
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/daysinyear
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/equals
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/era
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/erayear
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/from
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/hour
 - [x] web/javascript/reference/global_objects/temporal/plaindatetime
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/inleapyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/microsecond
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/millisecond
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/minute
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/month
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/monthcode
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/monthsinyear
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/nanosecond
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/plaindatetime
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/round
-- [ ] web/javascript/reference/global_objects/temporal/plaindatetime/second
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/inleapyear
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/microsecond
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/millisecond
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/minute
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/month
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/monthcode
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/monthsinyear
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/nanosecond
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/plaindatetime
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/round
+- [x] web/javascript/reference/global_objects/temporal/plaindatetime/second
 - [ ] web/javascript/reference/global_objects/temporal/plaindatetime/since
 - [ ] web/javascript/reference/global_objects/temporal/plaindatetime/subtract
 - [ ] web/javascript/reference/global_objects/temporal/plaindatetime/tojson
@@ -1196,43 +1196,43 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/temporal/plainmonthday/tostring
 - [ ] web/javascript/reference/global_objects/temporal/plainmonthday/valueof
 - [ ] web/javascript/reference/global_objects/temporal/plainmonthday/with
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/add
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/compare
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/equals
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/from
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/hour
-- [ ] web/javascript/reference/global_objects/temporal/plaintime
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/microsecond
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/millisecond
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/minute
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/nanosecond
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/plaintime
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/round
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/second
+- [x] web/javascript/reference/global_objects/temporal/plaintime/add
+- [x] web/javascript/reference/global_objects/temporal/plaintime/compare
+- [x] web/javascript/reference/global_objects/temporal/plaintime/equals
+- [x] web/javascript/reference/global_objects/temporal/plaintime/from
+- [x] web/javascript/reference/global_objects/temporal/plaintime/hour
+- [x] web/javascript/reference/global_objects/temporal/plaintime
+- [x] web/javascript/reference/global_objects/temporal/plaintime/microsecond
+- [x] web/javascript/reference/global_objects/temporal/plaintime/millisecond
+- [x] web/javascript/reference/global_objects/temporal/plaintime/minute
+- [x] web/javascript/reference/global_objects/temporal/plaintime/nanosecond
+- [x] web/javascript/reference/global_objects/temporal/plaintime/plaintime
+- [x] web/javascript/reference/global_objects/temporal/plaintime/round
+- [x] web/javascript/reference/global_objects/temporal/plaintime/second
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/since
-- [ ] web/javascript/reference/global_objects/temporal/plaintime/subtract
+- [x] web/javascript/reference/global_objects/temporal/plaintime/subtract
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/tojson
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/tolocalestring
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/tostring
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/until
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/valueof
 - [ ] web/javascript/reference/global_objects/temporal/plaintime/with
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/add
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/calendarid
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/compare
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/daysinmonth
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/daysinyear
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/equals
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/era
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/erayear
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/from
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/inleapyear
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/month
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/monthcode
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/monthsinyear
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/plainyearmonth
-- [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/since
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/add
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/calendarid
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/compare
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/daysinmonth
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/daysinyear
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/equals
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/era
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/erayear
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/from
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/inleapyear
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/month
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/monthcode
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/monthsinyear
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/plainyearmonth
+- [x] web/javascript/reference/global_objects/temporal/plainyearmonth/since
 - [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/subtract
 - [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/tojson
 - [ ] web/javascript/reference/global_objects/temporal/plainyearmonth/tolocalestring
@@ -1270,23 +1270,23 @@ High-priority (translate first):
 - [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/monthsinyear
 - [x] web/javascript/reference/global_objects/temporal/zoneddatetime/nanosecond
 - [x] web/javascript/reference/global_objects/temporal/zoneddatetime/offset
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/offsetnanoseconds
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/round
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/second
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/since
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/startofday
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/subtract
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/timezoneid
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/toinstant
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/tojson
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/tolocalestring
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindate
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindatetime
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/toplaintime
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/tostring
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/until
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/valueof
-- [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/weekofyear
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/offsetnanoseconds
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/round
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/second
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/since
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/startofday
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/subtract
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/timezoneid
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/toinstant
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/tojson
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/tolocalestring
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindate
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindatetime
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/toplaintime
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/tostring
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/until
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/valueof
+- [x] web/javascript/reference/global_objects/temporal/zoneddatetime/weekofyear
 - [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/with
 - [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/withcalendar
 - [ ] web/javascript/reference/global_objects/temporal/zoneddatetime/withplaintime
@@ -1336,19 +1336,19 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/typedarray/with
 - [x] web/javascript/reference/global_objects/typeerror
 - [x] web/javascript/reference/global_objects/typeerror/typeerror
-- [ ] web/javascript/reference/global_objects/uint16array
-- [ ] web/javascript/reference/global_objects/uint16array/uint16array
-- [ ] web/javascript/reference/global_objects/uint32array
-- [ ] web/javascript/reference/global_objects/uint32array/uint32array
+- [x] web/javascript/reference/global_objects/uint16array
+- [x] web/javascript/reference/global_objects/uint16array/uint16array
+- [x] web/javascript/reference/global_objects/uint32array
+- [x] web/javascript/reference/global_objects/uint32array/uint32array
 - [x] web/javascript/reference/global_objects/uint8array/frombase64
 - [x] web/javascript/reference/global_objects/uint8array/fromhex
-- [ ] web/javascript/reference/global_objects/uint8array
+- [x] web/javascript/reference/global_objects/uint8array
 - [x] web/javascript/reference/global_objects/uint8array/setfrombase64
 - [x] web/javascript/reference/global_objects/uint8array/setfromhex
 - [x] web/javascript/reference/global_objects/uint8array/tobase64
 - [x] web/javascript/reference/global_objects/uint8array/tohex
 - [x] web/javascript/reference/global_objects/uint8array/uint8array
-- [ ] web/javascript/reference/global_objects/uint8clampedarray
+- [x] web/javascript/reference/global_objects/uint8clampedarray
 - [x] web/javascript/reference/global_objects/uint8clampedarray/uint8clampedarray
 - [ ] web/javascript/reference/global_objects/unescape
 - [x] web/javascript/reference/global_objects/urierror
