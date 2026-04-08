@@ -9,1247 +9,1247 @@ Total: 1,226 pages
 
 ## Guides (207 pages)
 
-- [ ] web/css/guides/index.md
-- [ ] web/css/guides/anchor_positioning
-- [ ] web/css/guides/anchor_positioning/anchored_container_queries
-- [ ] web/css/guides/anchor_positioning/try_options_hiding
-- [ ] web/css/guides/anchor_positioning/using
-- [ ] web/css/guides/animations
-- [ ] web/css/guides/animations/animatable_properties
-- [ ] web/css/guides/animations/using
-- [ ] web/css/guides/backgrounds_and_borders
-- [ ] web/css/guides/backgrounds_and_borders/border-image_generator
-- [ ] web/css/guides/backgrounds_and_borders/border-radius_generator
-- [ ] web/css/guides/backgrounds_and_borders/box-shadow_generator
-- [ ] web/css/guides/backgrounds_and_borders/resizing_background_images
-- [ ] web/css/guides/backgrounds_and_borders/scaling_svg_backgrounds
-- [ ] web/css/guides/backgrounds_and_borders/using_multiple_backgrounds
-- [ ] web/css/guides/basic_user_interface
-- [ ] web/css/guides/borders_and_box_decorations
-- [ ] web/css/guides/box_alignment
-- [ ] web/css/guides/box_alignment/in_block_abspos_tables
-- [ ] web/css/guides/box_alignment/in_flexbox
-- [ ] web/css/guides/box_alignment/in_grid_layout
-- [ ] web/css/guides/box_alignment/in_multi-column_layout
-- [ ] web/css/guides/box_alignment/overview
-- [ ] web/css/guides/box_model
-- [ ] web/css/guides/box_model/introduction
-- [ ] web/css/guides/box_model/margin_collapsing
-- [ ] web/css/guides/box_sizing
-- [ ] web/css/guides/box_sizing/aspect_ratios
-- [ ] web/css/guides/cascade
-- [ ] web/css/guides/cascade/inheritance
-- [ ] web/css/guides/cascade/introduction
-- [ ] web/css/guides/cascade/property_value_processing
-- [ ] web/css/guides/cascade/shorthand_properties
-- [ ] web/css/guides/cascade/specificity
-- [ ] web/css/guides/cascading_variables
-- [ ] web/css/guides/cascading_variables/using_custom_properties
-- [ ] web/css/guides/color_adjustment
-- [ ] web/css/guides/colors
-- [ ] web/css/guides/colors/applying_color
-- [ ] web/css/guides/colors/color_format_converter
-- [ ] web/css/guides/colors/color_mixer
-- [ ] web/css/guides/colors/color_values
-- [ ] web/css/guides/colors/using_color_wisely
-- [ ] web/css/guides/colors/using_relative_colors
-- [ ] web/css/guides/compositing_and_blending
-- [ ] web/css/guides/conditional_rules
-- [ ] web/css/guides/conditional_rules/container_scroll-state_queries
-- [ ] web/css/guides/conditional_rules/using_feature_queries
-- [ ] web/css/guides/containment
-- [ ] web/css/guides/containment/container_queries
-- [ ] web/css/guides/containment/container_size_and_style_queries
-- [ ] web/css/guides/containment/using
-- [ ] web/css/guides/counter_styles
-- [ ] web/css/guides/counter_styles/using_counters
-- [ ] web/css/guides/cssom_view
-- [ ] web/css/guides/cssom_view/viewport_concepts
-- [ ] web/css/guides/custom_functions_and_mixins
-- [ ] web/css/guides/custom_functions_and_mixins/using_custom_functions
-- [ ] web/css/guides/custom_highlight_api
-- [ ] web/css/guides/display
-- [ ] web/css/guides/display/block_and_inline_layout
-- [ ] web/css/guides/display/block_formatting_context
-- [ ] web/css/guides/display/containing_block
-- [ ] web/css/guides/display/flow_layout
-- [ ] web/css/guides/display/flow_layout_and_overflow
-- [ ] web/css/guides/display/flow_layout_and_writing_modes
-- [ ] web/css/guides/display/formatting_contexts
-- [ ] web/css/guides/display/in_flow_and_out_of_flow
-- [ ] web/css/guides/display/multi-keyword_syntax
-- [ ] web/css/guides/display/visual_formatting_model
-- [ ] web/css/guides/easing_functions
-- [ ] web/css/guides/environment_variables
-- [ ] web/css/guides/environment_variables/using
-- [ ] web/css/guides/filter_effects
-- [ ] web/css/guides/filter_effects/using
-- [ ] web/css/guides/flexible_box_layout
-- [ ] web/css/guides/flexible_box_layout/aligning_items
-- [ ] web/css/guides/flexible_box_layout/basic_concepts
-- [ ] web/css/guides/flexible_box_layout/controlling_flex_item_ratios
-- [ ] web/css/guides/flexible_box_layout/ordering_items
-- [ ] web/css/guides/flexible_box_layout/relationship_with_other_layout_methods
-- [ ] web/css/guides/flexible_box_layout/use_cases
-- [ ] web/css/guides/flexible_box_layout/wrapping_items
-- [ ] web/css/guides/font_loading
-- [ ] web/css/guides/fonts
-- [ ] web/css/guides/fonts/opentype_fonts
-- [ ] web/css/guides/fonts/variable_fonts
-- [ ] web/css/guides/fonts/woff
-- [ ] web/css/guides/fragmentation
-- [ ] web/css/guides/generated_content
-- [ ] web/css/guides/grid_layout
-- [ ] web/css/guides/grid_layout/accessibility
-- [ ] web/css/guides/grid_layout/auto-placement
-- [ ] web/css/guides/grid_layout/basic_concepts
-- [ ] web/css/guides/grid_layout/box_alignment
-- [ ] web/css/guides/grid_layout/common_grid_layouts
-- [ ] web/css/guides/grid_layout/grid_template_areas
-- [ ] web/css/guides/grid_layout/line-based_placement
-- [ ] web/css/guides/grid_layout/logical_values_and_writing_modes
-- [ ] web/css/guides/grid_layout/masonry_layout
-- [ ] web/css/guides/grid_layout/named_grid_lines
-- [ ] web/css/guides/grid_layout/relationship_with_other_layout_methods
-- [ ] web/css/guides/grid_layout/subgrid
-- [ ] web/css/guides/images
-- [ ] web/css/guides/images/implementing_image_sprites
-- [ ] web/css/guides/images/replaced_element_properties
-- [ ] web/css/guides/images/using_gradients
-- [ ] web/css/guides/images/using_object-view-box
-- [ ] web/css/guides/inline_layout
-- [ ] web/css/guides/inline_layout/inline_formatting_context
-- [ ] web/css/guides/lists
-- [ ] web/css/guides/lists/indenting
-- [ ] web/css/guides/logical_properties_and_values
-- [ ] web/css/guides/logical_properties_and_values/basic_concepts
-- [ ] web/css/guides/logical_properties_and_values/floating_and_positioning
-- [ ] web/css/guides/logical_properties_and_values/margins_borders_padding
-- [ ] web/css/guides/logical_properties_and_values/sizing
-- [ ] web/css/guides/masking
-- [ ] web/css/guides/masking/clipping
-- [ ] web/css/guides/masking/introduction
-- [ ] web/css/guides/masking/mask_properties
-- [ ] web/css/guides/masking/multiple_masks
-- [ ] web/css/guides/media_queries
-- [ ] web/css/guides/media_queries/printing
-- [ ] web/css/guides/media_queries/testing
-- [ ] web/css/guides/media_queries/using_for_accessibility
-- [ ] web/css/guides/media_queries/using
-- [ ] web/css/guides/motion_path
-- [ ] web/css/guides/multicol_layout
-- [ ] web/css/guides/multicol_layout/basic_concepts
-- [ ] web/css/guides/multicol_layout/handling_content_breaks
-- [ ] web/css/guides/multicol_layout/handling_overflow
-- [ ] web/css/guides/multicol_layout/spanning_balancing_columns
-- [ ] web/css/guides/multicol_layout/styling_columns
-- [ ] web/css/guides/multicol_layout/using
-- [ ] web/css/guides/namespaces
-- [ ] web/css/guides/nesting
-- [ ] web/css/guides/nesting/at-rules
-- [ ] web/css/guides/nesting/nesting_and_specificity
-- [ ] web/css/guides/nesting/using
-- [ ] web/css/guides/overflow
-- [ ] web/css/guides/overflow/carousels
-- [ ] web/css/guides/overscroll_behavior
-- [ ] web/css/guides/paged_media
-- [ ] web/css/guides/positioned_layout
-- [ ] web/css/guides/positioned_layout/stacking_context
-- [ ] web/css/guides/positioned_layout/stacking_context/example_1
-- [ ] web/css/guides/positioned_layout/stacking_context/example_2
-- [ ] web/css/guides/positioned_layout/stacking_context/example_3
-- [ ] web/css/guides/positioned_layout/stacking_floating_elements
-- [ ] web/css/guides/positioned_layout/stacking_without_z-index
-- [ ] web/css/guides/positioned_layout/understanding_z-index
-- [ ] web/css/guides/positioned_layout/using_z-index
-- [ ] web/css/guides/properties_and_values_api
-- [ ] web/css/guides/properties_and_values_api/houdini
-- [ ] web/css/guides/properties_and_values_api/registering_properties
-- [ ] web/css/guides/pseudo-elements
-- [ ] web/css/guides/round_display
-- [ ] web/css/guides/ruby_layout
-- [ ] web/css/guides/scoping
-- [ ] web/css/guides/scroll_anchoring
-- [ ] web/css/guides/scroll_anchoring/overview
-- [ ] web/css/guides/scroll_snap
-- [ ] web/css/guides/scroll_snap/basic_concepts
-- [ ] web/css/guides/scroll_snap/using_scroll_snap_events
-- [ ] web/css/guides/scroll-driven_animations
-- [ ] web/css/guides/scroll-driven_animations/timeline_range_names
-- [ ] web/css/guides/scroll-driven_animations/timelines
-- [ ] web/css/guides/scrollbars_styling
-- [ ] web/css/guides/selectors
-- [ ] web/css/guides/selectors/privacy_and\_\_colon_visited
-- [ ] web/css/guides/selectors/selector_structure
-- [ ] web/css/guides/selectors/selectors_and_combinators
-- [ ] web/css/guides/selectors/using\_\_colon_target
-- [ ] web/css/guides/shadow_parts
-- [ ] web/css/guides/shapes
-- [ ] web/css/guides/shapes/from_box_values
-- [ ] web/css/guides/shapes/from_images
-- [ ] web/css/guides/shapes/overview
-- [ ] web/css/guides/shapes/shape_generator
-- [ ] web/css/guides/shapes/using_shape-outside
-- [ ] web/css/guides/syntax
-- [ ] web/css/guides/syntax/at-rules
-- [ ] web/css/guides/syntax/comments
-- [ ] web/css/guides/syntax/error_handling
-- [ ] web/css/guides/syntax/introduction
-- [ ] web/css/guides/table
-- [ ] web/css/guides/text
-- [ ] web/css/guides/text/whitespace
-- [ ] web/css/guides/text/wrapping_breaking_text
-- [ ] web/css/guides/text_decoration
-- [ ] web/css/guides/text_decoration/text_shadows
-- [ ] web/css/guides/transforms
-- [ ] web/css/guides/transforms/using
-- [ ] web/css/guides/transitions
-- [ ] web/css/guides/transitions/using
-- [ ] web/css/guides/values_and_units
-- [ ] web/css/guides/values_and_units/numeric_data_types
-- [ ] web/css/guides/values_and_units/textual_data_types
-- [ ] web/css/guides/values_and_units/using_math_functions
-- [ ] web/css/guides/values_and_units/using_typed_arithmetic
-- [ ] web/css/guides/values_and_units/value_definition_syntax
-- [ ] web/css/guides/view_transitions
-- [ ] web/css/guides/viewport
-- [ ] web/css/guides/writing_modes
-- [ ] web/css/guides/writing_modes/vertical_controls
-- [ ] web/css/guides/writing_modes/writing_mode_systems
+- [x] web/css/guides/index.md
+- [x] web/css/guides/anchor_positioning
+- [x] web/css/guides/anchor_positioning/anchored_container_queries
+- [x] web/css/guides/anchor_positioning/try_options_hiding
+- [x] web/css/guides/anchor_positioning/using
+- [x] web/css/guides/animations
+- [x] web/css/guides/animations/animatable_properties
+- [x] web/css/guides/animations/using
+- [x] web/css/guides/backgrounds_and_borders
+- [x] web/css/guides/backgrounds_and_borders/border-image_generator
+- [x] web/css/guides/backgrounds_and_borders/border-radius_generator
+- [x] web/css/guides/backgrounds_and_borders/box-shadow_generator
+- [x] web/css/guides/backgrounds_and_borders/resizing_background_images
+- [x] web/css/guides/backgrounds_and_borders/scaling_svg_backgrounds
+- [x] web/css/guides/backgrounds_and_borders/using_multiple_backgrounds
+- [x] web/css/guides/basic_user_interface
+- [x] web/css/guides/borders_and_box_decorations
+- [x] web/css/guides/box_alignment
+- [x] web/css/guides/box_alignment/in_block_abspos_tables
+- [x] web/css/guides/box_alignment/in_flexbox
+- [x] web/css/guides/box_alignment/in_grid_layout
+- [x] web/css/guides/box_alignment/in_multi-column_layout
+- [x] web/css/guides/box_alignment/overview
+- [x] web/css/guides/box_model
+- [x] web/css/guides/box_model/introduction
+- [x] web/css/guides/box_model/margin_collapsing
+- [x] web/css/guides/box_sizing
+- [x] web/css/guides/box_sizing/aspect_ratios
+- [x] web/css/guides/cascade
+- [x] web/css/guides/cascade/inheritance
+- [x] web/css/guides/cascade/introduction
+- [x] web/css/guides/cascade/property_value_processing
+- [x] web/css/guides/cascade/shorthand_properties
+- [x] web/css/guides/cascade/specificity
+- [x] web/css/guides/cascading_variables
+- [x] web/css/guides/cascading_variables/using_custom_properties
+- [x] web/css/guides/color_adjustment
+- [x] web/css/guides/colors
+- [x] web/css/guides/colors/applying_color
+- [x] web/css/guides/colors/color_format_converter
+- [x] web/css/guides/colors/color_mixer
+- [x] web/css/guides/colors/color_values
+- [x] web/css/guides/colors/using_color_wisely
+- [x] web/css/guides/colors/using_relative_colors
+- [x] web/css/guides/compositing_and_blending
+- [x] web/css/guides/conditional_rules
+- [x] web/css/guides/conditional_rules/container_scroll-state_queries
+- [x] web/css/guides/conditional_rules/using_feature_queries
+- [x] web/css/guides/containment
+- [x] web/css/guides/containment/container_queries
+- [x] web/css/guides/containment/container_size_and_style_queries
+- [x] web/css/guides/containment/using
+- [x] web/css/guides/counter_styles
+- [x] web/css/guides/counter_styles/using_counters
+- [x] web/css/guides/cssom_view
+- [x] web/css/guides/cssom_view/viewport_concepts
+- [x] web/css/guides/custom_functions_and_mixins
+- [x] web/css/guides/custom_functions_and_mixins/using_custom_functions
+- [x] web/css/guides/custom_highlight_api
+- [x] web/css/guides/display
+- [x] web/css/guides/display/block_and_inline_layout
+- [x] web/css/guides/display/block_formatting_context
+- [x] web/css/guides/display/containing_block
+- [x] web/css/guides/display/flow_layout
+- [x] web/css/guides/display/flow_layout_and_overflow
+- [x] web/css/guides/display/flow_layout_and_writing_modes
+- [x] web/css/guides/display/formatting_contexts
+- [x] web/css/guides/display/in_flow_and_out_of_flow
+- [x] web/css/guides/display/multi-keyword_syntax
+- [x] web/css/guides/display/visual_formatting_model
+- [x] web/css/guides/easing_functions
+- [x] web/css/guides/environment_variables
+- [x] web/css/guides/environment_variables/using
+- [x] web/css/guides/filter_effects
+- [x] web/css/guides/filter_effects/using
+- [x] web/css/guides/flexible_box_layout
+- [x] web/css/guides/flexible_box_layout/aligning_items
+- [x] web/css/guides/flexible_box_layout/basic_concepts
+- [x] web/css/guides/flexible_box_layout/controlling_flex_item_ratios
+- [x] web/css/guides/flexible_box_layout/ordering_items
+- [x] web/css/guides/flexible_box_layout/relationship_with_other_layout_methods
+- [x] web/css/guides/flexible_box_layout/use_cases
+- [x] web/css/guides/flexible_box_layout/wrapping_items
+- [x] web/css/guides/font_loading
+- [x] web/css/guides/fonts
+- [x] web/css/guides/fonts/opentype_fonts
+- [x] web/css/guides/fonts/variable_fonts
+- [x] web/css/guides/fonts/woff
+- [x] web/css/guides/fragmentation
+- [x] web/css/guides/generated_content
+- [x] web/css/guides/grid_layout
+- [x] web/css/guides/grid_layout/accessibility
+- [x] web/css/guides/grid_layout/auto-placement
+- [x] web/css/guides/grid_layout/basic_concepts
+- [x] web/css/guides/grid_layout/box_alignment
+- [x] web/css/guides/grid_layout/common_grid_layouts
+- [x] web/css/guides/grid_layout/grid_template_areas
+- [x] web/css/guides/grid_layout/line-based_placement
+- [x] web/css/guides/grid_layout/logical_values_and_writing_modes
+- [x] web/css/guides/grid_layout/masonry_layout
+- [x] web/css/guides/grid_layout/named_grid_lines
+- [x] web/css/guides/grid_layout/relationship_with_other_layout_methods
+- [x] web/css/guides/grid_layout/subgrid
+- [x] web/css/guides/images
+- [x] web/css/guides/images/implementing_image_sprites
+- [x] web/css/guides/images/replaced_element_properties
+- [x] web/css/guides/images/using_gradients
+- [x] web/css/guides/images/using_object-view-box
+- [x] web/css/guides/inline_layout
+- [x] web/css/guides/inline_layout/inline_formatting_context
+- [x] web/css/guides/lists
+- [x] web/css/guides/lists/indenting
+- [x] web/css/guides/logical_properties_and_values
+- [x] web/css/guides/logical_properties_and_values/basic_concepts
+- [x] web/css/guides/logical_properties_and_values/floating_and_positioning
+- [x] web/css/guides/logical_properties_and_values/margins_borders_padding
+- [x] web/css/guides/logical_properties_and_values/sizing
+- [x] web/css/guides/masking
+- [x] web/css/guides/masking/clipping
+- [x] web/css/guides/masking/introduction
+- [x] web/css/guides/masking/mask_properties
+- [x] web/css/guides/masking/multiple_masks
+- [x] web/css/guides/media_queries
+- [x] web/css/guides/media_queries/printing
+- [x] web/css/guides/media_queries/testing
+- [x] web/css/guides/media_queries/using_for_accessibility
+- [x] web/css/guides/media_queries/using
+- [x] web/css/guides/motion_path
+- [x] web/css/guides/multicol_layout
+- [x] web/css/guides/multicol_layout/basic_concepts
+- [x] web/css/guides/multicol_layout/handling_content_breaks
+- [x] web/css/guides/multicol_layout/handling_overflow
+- [x] web/css/guides/multicol_layout/spanning_balancing_columns
+- [x] web/css/guides/multicol_layout/styling_columns
+- [x] web/css/guides/multicol_layout/using
+- [x] web/css/guides/namespaces
+- [x] web/css/guides/nesting
+- [x] web/css/guides/nesting/at-rules
+- [x] web/css/guides/nesting/nesting_and_specificity
+- [x] web/css/guides/nesting/using
+- [x] web/css/guides/overflow
+- [x] web/css/guides/overflow/carousels
+- [x] web/css/guides/overscroll_behavior
+- [x] web/css/guides/paged_media
+- [x] web/css/guides/positioned_layout
+- [x] web/css/guides/positioned_layout/stacking_context
+- [x] web/css/guides/positioned_layout/stacking_context/example_1
+- [x] web/css/guides/positioned_layout/stacking_context/example_2
+- [x] web/css/guides/positioned_layout/stacking_context/example_3
+- [x] web/css/guides/positioned_layout/stacking_floating_elements
+- [x] web/css/guides/positioned_layout/stacking_without_z-index
+- [x] web/css/guides/positioned_layout/understanding_z-index
+- [x] web/css/guides/positioned_layout/using_z-index
+- [x] web/css/guides/properties_and_values_api
+- [x] web/css/guides/properties_and_values_api/houdini
+- [x] web/css/guides/properties_and_values_api/registering_properties
+- [x] web/css/guides/pseudo-elements
+- [x] web/css/guides/round_display
+- [x] web/css/guides/ruby_layout
+- [x] web/css/guides/scoping
+- [x] web/css/guides/scroll_anchoring
+- [x] web/css/guides/scroll_anchoring/overview
+- [x] web/css/guides/scroll_snap
+- [x] web/css/guides/scroll_snap/basic_concepts
+- [x] web/css/guides/scroll_snap/using_scroll_snap_events
+- [x] web/css/guides/scroll-driven_animations
+- [x] web/css/guides/scroll-driven_animations/timeline_range_names
+- [x] web/css/guides/scroll-driven_animations/timelines
+- [x] web/css/guides/scrollbars_styling
+- [x] web/css/guides/selectors
+- [x] web/css/guides/selectors/privacy_and\_\_colon_visited
+- [x] web/css/guides/selectors/selector_structure
+- [x] web/css/guides/selectors/selectors_and_combinators
+- [x] web/css/guides/selectors/using\_\_colon_target
+- [x] web/css/guides/shadow_parts
+- [x] web/css/guides/shapes
+- [x] web/css/guides/shapes/from_box_values
+- [x] web/css/guides/shapes/from_images
+- [x] web/css/guides/shapes/overview
+- [x] web/css/guides/shapes/shape_generator
+- [x] web/css/guides/shapes/using_shape-outside
+- [x] web/css/guides/syntax
+- [x] web/css/guides/syntax/at-rules
+- [x] web/css/guides/syntax/comments
+- [x] web/css/guides/syntax/error_handling
+- [x] web/css/guides/syntax/introduction
+- [x] web/css/guides/table
+- [x] web/css/guides/text
+- [x] web/css/guides/text/whitespace
+- [x] web/css/guides/text/wrapping_breaking_text
+- [x] web/css/guides/text_decoration
+- [x] web/css/guides/text_decoration/text_shadows
+- [x] web/css/guides/transforms
+- [x] web/css/guides/transforms/using
+- [x] web/css/guides/transitions
+- [x] web/css/guides/transitions/using
+- [x] web/css/guides/values_and_units
+- [x] web/css/guides/values_and_units/numeric_data_types
+- [x] web/css/guides/values_and_units/textual_data_types
+- [x] web/css/guides/values_and_units/using_math_functions
+- [x] web/css/guides/values_and_units/using_typed_arithmetic
+- [x] web/css/guides/values_and_units/value_definition_syntax
+- [x] web/css/guides/view_transitions
+- [x] web/css/guides/viewport
+- [x] web/css/guides/writing_modes
+- [x] web/css/guides/writing_modes/vertical_controls
+- [x] web/css/guides/writing_modes/writing_mode_systems
 
 ## How to (14 pages)
 
-- [ ] web/css/how_to/index.md
-- [ ] web/css/how_to/layout_cookbook
-- [ ] web/css/how_to/layout_cookbook/breadcrumb_navigation
-- [ ] web/css/how_to/layout_cookbook/card
-- [ ] web/css/how_to/layout_cookbook/center_an_element
-- [ ] web/css/how_to/layout_cookbook/column_layouts
-- [ ] web/css/how_to/layout_cookbook/contribute_a_recipe
-- [ ] web/css/how_to/layout_cookbook/contribute_a_recipe/cookbook_template
-- [ ] web/css/how_to/layout_cookbook/grid_wrapper
-- [ ] web/css/how_to/layout_cookbook/list_group_with_badges
-- [ ] web/css/how_to/layout_cookbook/media_objects
-- [ ] web/css/how_to/layout_cookbook/pagination
-- [ ] web/css/how_to/layout_cookbook/split_navigation
-- [ ] web/css/how_to/layout_cookbook/sticky_footers
+- [x] web/css/how_to/index.md
+- [x] web/css/how_to/layout_cookbook
+- [x] web/css/how_to/layout_cookbook/breadcrumb_navigation
+- [x] web/css/how_to/layout_cookbook/card
+- [x] web/css/how_to/layout_cookbook/center_an_element
+- [x] web/css/how_to/layout_cookbook/column_layouts
+- [x] web/css/how_to/layout_cookbook/contribute_a_recipe
+- [x] web/css/how_to/layout_cookbook/contribute_a_recipe/cookbook_template
+- [x] web/css/how_to/layout_cookbook/grid_wrapper
+- [x] web/css/how_to/layout_cookbook/list_group_with_badges
+- [x] web/css/how_to/layout_cookbook/media_objects
+- [x] web/css/how_to/layout_cookbook/pagination
+- [x] web/css/how_to/layout_cookbook/split_navigation
+- [x] web/css/how_to/layout_cookbook/sticky_footers
 
 ## Tutorials (1 page)
 
-- [ ] web/css/tutorials/index.md
+- [x] web/css/tutorials/index.md
 
 ## Reference — landing page
 
-- [ ] web/css/reference/index.md
+- [x] web/css/reference/index.md
 
 ## Reference — At-rules (100 pages)
 
-- [ ] web/css/reference/at-rules/index.md
-- [ ] web/css/reference/at-rules/at-rule_functions
-- [ ] web/css/reference/at-rules/@charset
-- [ ] web/css/reference/at-rules/@color-profile
-- [ ] web/css/reference/at-rules/@container
-- [ ] web/css/reference/at-rules/@counter-style
-- [ ] web/css/reference/at-rules/@counter-style/additive-symbols
-- [ ] web/css/reference/at-rules/@counter-style/fallback
-- [ ] web/css/reference/at-rules/@counter-style/negative
-- [ ] web/css/reference/at-rules/@counter-style/pad
-- [ ] web/css/reference/at-rules/@counter-style/prefix
-- [ ] web/css/reference/at-rules/@counter-style/range
-- [ ] web/css/reference/at-rules/@counter-style/speak-as
-- [ ] web/css/reference/at-rules/@counter-style/suffix
-- [ ] web/css/reference/at-rules/@counter-style/symbols
-- [ ] web/css/reference/at-rules/@counter-style/system
-- [ ] web/css/reference/at-rules/@custom-media
-- [ ] web/css/reference/at-rules/@document
-- [ ] web/css/reference/at-rules/@font-face
-- [ ] web/css/reference/at-rules/@font-face/ascent-override
-- [ ] web/css/reference/at-rules/@font-face/descent-override
-- [ ] web/css/reference/at-rules/@font-face/font-display
-- [ ] web/css/reference/at-rules/@font-face/font-family
-- [ ] web/css/reference/at-rules/@font-face/font-feature-settings
-- [ ] web/css/reference/at-rules/@font-face/font-stretch
-- [ ] web/css/reference/at-rules/@font-face/font-style
-- [ ] web/css/reference/at-rules/@font-face/font-variation-settings
-- [ ] web/css/reference/at-rules/@font-face/font-weight
-- [ ] web/css/reference/at-rules/@font-face/font-width
-- [ ] web/css/reference/at-rules/@font-face/line-gap-override
-- [ ] web/css/reference/at-rules/@font-face/size-adjust
-- [ ] web/css/reference/at-rules/@font-face/src
-- [ ] web/css/reference/at-rules/@font-face/unicode-range
-- [ ] web/css/reference/at-rules/@font-feature-values
-- [ ] web/css/reference/at-rules/@font-feature-values/font-display
-- [ ] web/css/reference/at-rules/@font-palette-values
-- [ ] web/css/reference/at-rules/@font-palette-values/base-palette
-- [ ] web/css/reference/at-rules/@font-palette-values/font-family
-- [ ] web/css/reference/at-rules/@font-palette-values/override-colors
-- [ ] web/css/reference/at-rules/@function
-- [ ] web/css/reference/at-rules/@import
-- [ ] web/css/reference/at-rules/@import/layer_function
-- [ ] web/css/reference/at-rules/@keyframes
-- [ ] web/css/reference/at-rules/@layer
-- [ ] web/css/reference/at-rules/@media
-- [ ] web/css/reference/at-rules/@media/-moz-device-pixel-ratio
-- [ ] web/css/reference/at-rules/@media/-webkit-animation
-- [ ] web/css/reference/at-rules/@media/-webkit-device-pixel-ratio
-- [ ] web/css/reference/at-rules/@media/-webkit-transform-2d
-- [ ] web/css/reference/at-rules/@media/-webkit-transform-3d
-- [ ] web/css/reference/at-rules/@media/-webkit-transition
-- [ ] web/css/reference/at-rules/@media/any-hover
-- [ ] web/css/reference/at-rules/@media/any-pointer
-- [ ] web/css/reference/at-rules/@media/aspect-ratio
-- [ ] web/css/reference/at-rules/@media/color
-- [ ] web/css/reference/at-rules/@media/color-gamut
-- [ ] web/css/reference/at-rules/@media/color-index
-- [ ] web/css/reference/at-rules/@media/device-aspect-ratio
-- [ ] web/css/reference/at-rules/@media/device-height
-- [ ] web/css/reference/at-rules/@media/device-posture
-- [ ] web/css/reference/at-rules/@media/device-width
-- [ ] web/css/reference/at-rules/@media/display-mode
-- [ ] web/css/reference/at-rules/@media/dynamic-range
-- [ ] web/css/reference/at-rules/@media/forced-colors
-- [ ] web/css/reference/at-rules/@media/grid
-- [ ] web/css/reference/at-rules/@media/height
-- [ ] web/css/reference/at-rules/@media/horizontal-viewport-segments
-- [ ] web/css/reference/at-rules/@media/hover
-- [ ] web/css/reference/at-rules/@media/inverted-colors
-- [ ] web/css/reference/at-rules/@media/monochrome
-- [ ] web/css/reference/at-rules/@media/orientation
-- [ ] web/css/reference/at-rules/@media/overflow-block
-- [ ] web/css/reference/at-rules/@media/overflow-inline
-- [ ] web/css/reference/at-rules/@media/pointer
-- [ ] web/css/reference/at-rules/@media/prefers-color-scheme
-- [ ] web/css/reference/at-rules/@media/prefers-contrast
-- [ ] web/css/reference/at-rules/@media/prefers-reduced-data
-- [ ] web/css/reference/at-rules/@media/prefers-reduced-motion
-- [ ] web/css/reference/at-rules/@media/prefers-reduced-transparency
-- [ ] web/css/reference/at-rules/@media/resolution
-- [ ] web/css/reference/at-rules/@media/scan
-- [ ] web/css/reference/at-rules/@media/scripting
-- [ ] web/css/reference/at-rules/@media/shape
-- [ ] web/css/reference/at-rules/@media/update
-- [ ] web/css/reference/at-rules/@media/vertical-viewport-segments
-- [ ] web/css/reference/at-rules/@media/video-dynamic-range
-- [ ] web/css/reference/at-rules/@media/width
-- [ ] web/css/reference/at-rules/@namespace
-- [ ] web/css/reference/at-rules/@page
-- [ ] web/css/reference/at-rules/@page/page-orientation
-- [ ] web/css/reference/at-rules/@page/size
-- [ ] web/css/reference/at-rules/@position-try
-- [ ] web/css/reference/at-rules/@property
-- [ ] web/css/reference/at-rules/@property/inherits
-- [ ] web/css/reference/at-rules/@property/initial-value
-- [ ] web/css/reference/at-rules/@property/syntax
-- [ ] web/css/reference/at-rules/@scope
-- [ ] web/css/reference/at-rules/@starting-style
-- [ ] web/css/reference/at-rules/@supports
-- [ ] web/css/reference/at-rules/@view-transition
+- [x] web/css/reference/at-rules/index.md
+- [x] web/css/reference/at-rules/at-rule_functions
+- [x] web/css/reference/at-rules/@charset
+- [x] web/css/reference/at-rules/@color-profile
+- [x] web/css/reference/at-rules/@container
+- [x] web/css/reference/at-rules/@counter-style
+- [x] web/css/reference/at-rules/@counter-style/additive-symbols
+- [x] web/css/reference/at-rules/@counter-style/fallback
+- [x] web/css/reference/at-rules/@counter-style/negative
+- [x] web/css/reference/at-rules/@counter-style/pad
+- [x] web/css/reference/at-rules/@counter-style/prefix
+- [x] web/css/reference/at-rules/@counter-style/range
+- [x] web/css/reference/at-rules/@counter-style/speak-as
+- [x] web/css/reference/at-rules/@counter-style/suffix
+- [x] web/css/reference/at-rules/@counter-style/symbols
+- [x] web/css/reference/at-rules/@counter-style/system
+- [x] web/css/reference/at-rules/@custom-media
+- [x] web/css/reference/at-rules/@document
+- [x] web/css/reference/at-rules/@font-face
+- [x] web/css/reference/at-rules/@font-face/ascent-override
+- [x] web/css/reference/at-rules/@font-face/descent-override
+- [x] web/css/reference/at-rules/@font-face/font-display
+- [x] web/css/reference/at-rules/@font-face/font-family
+- [x] web/css/reference/at-rules/@font-face/font-feature-settings
+- [x] web/css/reference/at-rules/@font-face/font-stretch
+- [x] web/css/reference/at-rules/@font-face/font-style
+- [x] web/css/reference/at-rules/@font-face/font-variation-settings
+- [x] web/css/reference/at-rules/@font-face/font-weight
+- [x] web/css/reference/at-rules/@font-face/font-width
+- [x] web/css/reference/at-rules/@font-face/line-gap-override
+- [x] web/css/reference/at-rules/@font-face/size-adjust
+- [x] web/css/reference/at-rules/@font-face/src
+- [x] web/css/reference/at-rules/@font-face/unicode-range
+- [x] web/css/reference/at-rules/@font-feature-values
+- [x] web/css/reference/at-rules/@font-feature-values/font-display
+- [x] web/css/reference/at-rules/@font-palette-values
+- [x] web/css/reference/at-rules/@font-palette-values/base-palette
+- [x] web/css/reference/at-rules/@font-palette-values/font-family
+- [x] web/css/reference/at-rules/@font-palette-values/override-colors
+- [x] web/css/reference/at-rules/@function
+- [x] web/css/reference/at-rules/@import
+- [x] web/css/reference/at-rules/@import/layer_function
+- [x] web/css/reference/at-rules/@keyframes
+- [x] web/css/reference/at-rules/@layer
+- [x] web/css/reference/at-rules/@media
+- [x] web/css/reference/at-rules/@media/-moz-device-pixel-ratio
+- [x] web/css/reference/at-rules/@media/-webkit-animation
+- [x] web/css/reference/at-rules/@media/-webkit-device-pixel-ratio
+- [x] web/css/reference/at-rules/@media/-webkit-transform-2d
+- [x] web/css/reference/at-rules/@media/-webkit-transform-3d
+- [x] web/css/reference/at-rules/@media/-webkit-transition
+- [x] web/css/reference/at-rules/@media/any-hover
+- [x] web/css/reference/at-rules/@media/any-pointer
+- [x] web/css/reference/at-rules/@media/aspect-ratio
+- [x] web/css/reference/at-rules/@media/color
+- [x] web/css/reference/at-rules/@media/color-gamut
+- [x] web/css/reference/at-rules/@media/color-index
+- [x] web/css/reference/at-rules/@media/device-aspect-ratio
+- [x] web/css/reference/at-rules/@media/device-height
+- [x] web/css/reference/at-rules/@media/device-posture
+- [x] web/css/reference/at-rules/@media/device-width
+- [x] web/css/reference/at-rules/@media/display-mode
+- [x] web/css/reference/at-rules/@media/dynamic-range
+- [x] web/css/reference/at-rules/@media/forced-colors
+- [x] web/css/reference/at-rules/@media/grid
+- [x] web/css/reference/at-rules/@media/height
+- [x] web/css/reference/at-rules/@media/horizontal-viewport-segments
+- [x] web/css/reference/at-rules/@media/hover
+- [x] web/css/reference/at-rules/@media/inverted-colors
+- [x] web/css/reference/at-rules/@media/monochrome
+- [x] web/css/reference/at-rules/@media/orientation
+- [x] web/css/reference/at-rules/@media/overflow-block
+- [x] web/css/reference/at-rules/@media/overflow-inline
+- [x] web/css/reference/at-rules/@media/pointer
+- [x] web/css/reference/at-rules/@media/prefers-color-scheme
+- [x] web/css/reference/at-rules/@media/prefers-contrast
+- [x] web/css/reference/at-rules/@media/prefers-reduced-data
+- [x] web/css/reference/at-rules/@media/prefers-reduced-motion
+- [x] web/css/reference/at-rules/@media/prefers-reduced-transparency
+- [x] web/css/reference/at-rules/@media/resolution
+- [x] web/css/reference/at-rules/@media/scan
+- [x] web/css/reference/at-rules/@media/scripting
+- [x] web/css/reference/at-rules/@media/shape
+- [x] web/css/reference/at-rules/@media/update
+- [x] web/css/reference/at-rules/@media/vertical-viewport-segments
+- [x] web/css/reference/at-rules/@media/video-dynamic-range
+- [x] web/css/reference/at-rules/@media/width
+- [x] web/css/reference/at-rules/@namespace
+- [x] web/css/reference/at-rules/@page
+- [x] web/css/reference/at-rules/@page/page-orientation
+- [x] web/css/reference/at-rules/@page/size
+- [x] web/css/reference/at-rules/@position-try
+- [x] web/css/reference/at-rules/@property
+- [x] web/css/reference/at-rules/@property/inherits
+- [x] web/css/reference/at-rules/@property/initial-value
+- [x] web/css/reference/at-rules/@property/syntax
+- [x] web/css/reference/at-rules/@scope
+- [x] web/css/reference/at-rules/@starting-style
+- [x] web/css/reference/at-rules/@supports
+- [x] web/css/reference/at-rules/@view-transition
 
 ## Reference — Properties (550 pages)
 
-- [ ] web/css/reference/properties/index.md
-- [ ] web/css/reference/properties/--_star_
-- [ ] web/css/reference/properties/-moz-float-edge
-- [ ] web/css/reference/properties/-moz-force-broken-image-icon
-- [ ] web/css/reference/properties/-moz-orient
-- [ ] web/css/reference/properties/-moz-user-focus
-- [ ] web/css/reference/properties/-moz-user-input
-- [ ] web/css/reference/properties/-webkit-border-before
-- [ ] web/css/reference/properties/-webkit-box-reflect
-- [ ] web/css/reference/properties/-webkit-mask-box-image
-- [ ] web/css/reference/properties/-webkit-mask-composite
-- [ ] web/css/reference/properties/-webkit-mask-position-x
-- [ ] web/css/reference/properties/-webkit-mask-position-y
-- [ ] web/css/reference/properties/-webkit-mask-repeat-x
-- [ ] web/css/reference/properties/-webkit-mask-repeat-y
-- [ ] web/css/reference/properties/-webkit-tap-highlight-color
-- [ ] web/css/reference/properties/-webkit-text-fill-color
-- [ ] web/css/reference/properties/-webkit-text-security
-- [ ] web/css/reference/properties/-webkit-text-stroke
-- [ ] web/css/reference/properties/-webkit-text-stroke-color
-- [ ] web/css/reference/properties/-webkit-text-stroke-width
-- [ ] web/css/reference/properties/-webkit-touch-callout
-- [ ] web/css/reference/properties/accent-color
-- [ ] web/css/reference/properties/align-content
-- [ ] web/css/reference/properties/align-items
-- [ ] web/css/reference/properties/align-self
-- [ ] web/css/reference/properties/alignment-baseline
-- [ ] web/css/reference/properties/all
-- [ ] web/css/reference/properties/anchor-name
-- [ ] web/css/reference/properties/anchor-scope
-- [ ] web/css/reference/properties/animation
-- [ ] web/css/reference/properties/animation-composition
-- [ ] web/css/reference/properties/animation-delay
-- [ ] web/css/reference/properties/animation-direction
-- [ ] web/css/reference/properties/animation-duration
-- [ ] web/css/reference/properties/animation-fill-mode
-- [ ] web/css/reference/properties/animation-iteration-count
-- [ ] web/css/reference/properties/animation-name
-- [ ] web/css/reference/properties/animation-play-state
-- [ ] web/css/reference/properties/animation-range
-- [ ] web/css/reference/properties/animation-range-end
-- [ ] web/css/reference/properties/animation-range-start
-- [ ] web/css/reference/properties/animation-timeline
-- [ ] web/css/reference/properties/animation-timeline/scroll
-- [ ] web/css/reference/properties/animation-timeline/view
-- [ ] web/css/reference/properties/animation-timing-function
-- [ ] web/css/reference/properties/appearance
-- [ ] web/css/reference/properties/aspect-ratio
-- [ ] web/css/reference/properties/backdrop-filter
-- [ ] web/css/reference/properties/backface-visibility
-- [ ] web/css/reference/properties/background
-- [ ] web/css/reference/properties/background-attachment
-- [ ] web/css/reference/properties/background-blend-mode
-- [ ] web/css/reference/properties/background-clip
+- [x] web/css/reference/properties/index.md
+- [x] web/css/reference/properties/--_star_
+- [x] web/css/reference/properties/-moz-float-edge
+- [x] web/css/reference/properties/-moz-force-broken-image-icon
+- [x] web/css/reference/properties/-moz-orient
+- [x] web/css/reference/properties/-moz-user-focus
+- [x] web/css/reference/properties/-moz-user-input
+- [x] web/css/reference/properties/-webkit-border-before
+- [x] web/css/reference/properties/-webkit-box-reflect
+- [x] web/css/reference/properties/-webkit-mask-box-image
+- [x] web/css/reference/properties/-webkit-mask-composite
+- [x] web/css/reference/properties/-webkit-mask-position-x
+- [x] web/css/reference/properties/-webkit-mask-position-y
+- [x] web/css/reference/properties/-webkit-mask-repeat-x
+- [x] web/css/reference/properties/-webkit-mask-repeat-y
+- [x] web/css/reference/properties/-webkit-tap-highlight-color
+- [x] web/css/reference/properties/-webkit-text-fill-color
+- [x] web/css/reference/properties/-webkit-text-security
+- [x] web/css/reference/properties/-webkit-text-stroke
+- [x] web/css/reference/properties/-webkit-text-stroke-color
+- [x] web/css/reference/properties/-webkit-text-stroke-width
+- [x] web/css/reference/properties/-webkit-touch-callout
+- [x] web/css/reference/properties/accent-color
+- [x] web/css/reference/properties/align-content
+- [x] web/css/reference/properties/align-items
+- [x] web/css/reference/properties/align-self
+- [x] web/css/reference/properties/alignment-baseline
+- [x] web/css/reference/properties/all
+- [x] web/css/reference/properties/anchor-name
+- [x] web/css/reference/properties/anchor-scope
+- [x] web/css/reference/properties/animation
+- [x] web/css/reference/properties/animation-composition
+- [x] web/css/reference/properties/animation-delay
+- [x] web/css/reference/properties/animation-direction
+- [x] web/css/reference/properties/animation-duration
+- [x] web/css/reference/properties/animation-fill-mode
+- [x] web/css/reference/properties/animation-iteration-count
+- [x] web/css/reference/properties/animation-name
+- [x] web/css/reference/properties/animation-play-state
+- [x] web/css/reference/properties/animation-range
+- [x] web/css/reference/properties/animation-range-end
+- [x] web/css/reference/properties/animation-range-start
+- [x] web/css/reference/properties/animation-timeline
+- [x] web/css/reference/properties/animation-timeline/scroll
+- [x] web/css/reference/properties/animation-timeline/view
+- [x] web/css/reference/properties/animation-timing-function
+- [x] web/css/reference/properties/appearance
+- [x] web/css/reference/properties/aspect-ratio
+- [x] web/css/reference/properties/backdrop-filter
+- [x] web/css/reference/properties/backface-visibility
+- [x] web/css/reference/properties/background
+- [x] web/css/reference/properties/background-attachment
+- [x] web/css/reference/properties/background-blend-mode
+- [x] web/css/reference/properties/background-clip
 - [x] web/css/reference/properties/background-color
-- [ ] web/css/reference/properties/background-image
-- [ ] web/css/reference/properties/background-origin
-- [ ] web/css/reference/properties/background-position
-- [ ] web/css/reference/properties/background-position-x
-- [ ] web/css/reference/properties/background-position-y
-- [ ] web/css/reference/properties/background-repeat
-- [ ] web/css/reference/properties/background-repeat-x
-- [ ] web/css/reference/properties/background-repeat-y
-- [ ] web/css/reference/properties/background-size
-- [ ] web/css/reference/properties/baseline-shift
-- [ ] web/css/reference/properties/baseline-source
-- [ ] web/css/reference/properties/block-size
-- [ ] web/css/reference/properties/border
-- [ ] web/css/reference/properties/border-block
-- [ ] web/css/reference/properties/border-block-color
-- [ ] web/css/reference/properties/border-block-end
-- [ ] web/css/reference/properties/border-block-end-color
-- [ ] web/css/reference/properties/border-block-end-style
-- [ ] web/css/reference/properties/border-block-end-width
-- [ ] web/css/reference/properties/border-block-start
-- [ ] web/css/reference/properties/border-block-start-color
-- [ ] web/css/reference/properties/border-block-start-style
-- [ ] web/css/reference/properties/border-block-start-width
-- [ ] web/css/reference/properties/border-block-style
-- [ ] web/css/reference/properties/border-block-width
-- [ ] web/css/reference/properties/border-bottom
-- [ ] web/css/reference/properties/border-bottom-color
-- [ ] web/css/reference/properties/border-bottom-left-radius
-- [ ] web/css/reference/properties/border-bottom-right-radius
-- [ ] web/css/reference/properties/border-bottom-style
-- [ ] web/css/reference/properties/border-bottom-width
-- [ ] web/css/reference/properties/border-collapse
-- [ ] web/css/reference/properties/border-color
-- [ ] web/css/reference/properties/border-end-end-radius
-- [ ] web/css/reference/properties/border-end-start-radius
-- [ ] web/css/reference/properties/border-image
-- [ ] web/css/reference/properties/border-image-outset
-- [ ] web/css/reference/properties/border-image-repeat
-- [ ] web/css/reference/properties/border-image-slice
-- [ ] web/css/reference/properties/border-image-source
-- [ ] web/css/reference/properties/border-image-width
-- [ ] web/css/reference/properties/border-inline
-- [ ] web/css/reference/properties/border-inline-color
-- [ ] web/css/reference/properties/border-inline-end
-- [ ] web/css/reference/properties/border-inline-end-color
-- [ ] web/css/reference/properties/border-inline-end-style
-- [ ] web/css/reference/properties/border-inline-end-width
-- [ ] web/css/reference/properties/border-inline-start
-- [ ] web/css/reference/properties/border-inline-start-color
-- [ ] web/css/reference/properties/border-inline-start-style
-- [ ] web/css/reference/properties/border-inline-start-width
-- [ ] web/css/reference/properties/border-inline-style
-- [ ] web/css/reference/properties/border-inline-width
-- [ ] web/css/reference/properties/border-left
-- [ ] web/css/reference/properties/border-left-color
-- [ ] web/css/reference/properties/border-left-style
-- [ ] web/css/reference/properties/border-left-width
-- [ ] web/css/reference/properties/border-radius
-- [ ] web/css/reference/properties/border-right
-- [ ] web/css/reference/properties/border-right-color
-- [ ] web/css/reference/properties/border-right-style
-- [ ] web/css/reference/properties/border-right-width
-- [ ] web/css/reference/properties/border-spacing
-- [ ] web/css/reference/properties/border-start-end-radius
-- [ ] web/css/reference/properties/border-start-start-radius
-- [ ] web/css/reference/properties/border-style
-- [ ] web/css/reference/properties/border-top
-- [ ] web/css/reference/properties/border-top-color
-- [ ] web/css/reference/properties/border-top-left-radius
-- [ ] web/css/reference/properties/border-top-right-radius
-- [ ] web/css/reference/properties/border-top-style
-- [ ] web/css/reference/properties/border-top-width
-- [ ] web/css/reference/properties/border-width
-- [ ] web/css/reference/properties/bottom
-- [ ] web/css/reference/properties/box-align
-- [ ] web/css/reference/properties/box-decoration-break
-- [ ] web/css/reference/properties/box-direction
-- [ ] web/css/reference/properties/box-flex
-- [ ] web/css/reference/properties/box-flex-group
-- [ ] web/css/reference/properties/box-lines
-- [ ] web/css/reference/properties/box-ordinal-group
-- [ ] web/css/reference/properties/box-orient
-- [ ] web/css/reference/properties/box-pack
-- [ ] web/css/reference/properties/box-shadow
-- [ ] web/css/reference/properties/box-sizing
-- [ ] web/css/reference/properties/break-after
-- [ ] web/css/reference/properties/break-before
-- [ ] web/css/reference/properties/break-inside
-- [ ] web/css/reference/properties/caption-side
-- [ ] web/css/reference/properties/caret
-- [ ] web/css/reference/properties/caret-animation
-- [ ] web/css/reference/properties/caret-color
-- [ ] web/css/reference/properties/caret-shape
-- [ ] web/css/reference/properties/clear
-- [ ] web/css/reference/properties/clip
-- [ ] web/css/reference/properties/clip-path
-- [ ] web/css/reference/properties/clip-rule
+- [x] web/css/reference/properties/background-image
+- [x] web/css/reference/properties/background-origin
+- [x] web/css/reference/properties/background-position
+- [x] web/css/reference/properties/background-position-x
+- [x] web/css/reference/properties/background-position-y
+- [x] web/css/reference/properties/background-repeat
+- [x] web/css/reference/properties/background-repeat-x
+- [x] web/css/reference/properties/background-repeat-y
+- [x] web/css/reference/properties/background-size
+- [x] web/css/reference/properties/baseline-shift
+- [x] web/css/reference/properties/baseline-source
+- [x] web/css/reference/properties/block-size
+- [x] web/css/reference/properties/border
+- [x] web/css/reference/properties/border-block
+- [x] web/css/reference/properties/border-block-color
+- [x] web/css/reference/properties/border-block-end
+- [x] web/css/reference/properties/border-block-end-color
+- [x] web/css/reference/properties/border-block-end-style
+- [x] web/css/reference/properties/border-block-end-width
+- [x] web/css/reference/properties/border-block-start
+- [x] web/css/reference/properties/border-block-start-color
+- [x] web/css/reference/properties/border-block-start-style
+- [x] web/css/reference/properties/border-block-start-width
+- [x] web/css/reference/properties/border-block-style
+- [x] web/css/reference/properties/border-block-width
+- [x] web/css/reference/properties/border-bottom
+- [x] web/css/reference/properties/border-bottom-color
+- [x] web/css/reference/properties/border-bottom-left-radius
+- [x] web/css/reference/properties/border-bottom-right-radius
+- [x] web/css/reference/properties/border-bottom-style
+- [x] web/css/reference/properties/border-bottom-width
+- [x] web/css/reference/properties/border-collapse
+- [x] web/css/reference/properties/border-color
+- [x] web/css/reference/properties/border-end-end-radius
+- [x] web/css/reference/properties/border-end-start-radius
+- [x] web/css/reference/properties/border-image
+- [x] web/css/reference/properties/border-image-outset
+- [x] web/css/reference/properties/border-image-repeat
+- [x] web/css/reference/properties/border-image-slice
+- [x] web/css/reference/properties/border-image-source
+- [x] web/css/reference/properties/border-image-width
+- [x] web/css/reference/properties/border-inline
+- [x] web/css/reference/properties/border-inline-color
+- [x] web/css/reference/properties/border-inline-end
+- [x] web/css/reference/properties/border-inline-end-color
+- [x] web/css/reference/properties/border-inline-end-style
+- [x] web/css/reference/properties/border-inline-end-width
+- [x] web/css/reference/properties/border-inline-start
+- [x] web/css/reference/properties/border-inline-start-color
+- [x] web/css/reference/properties/border-inline-start-style
+- [x] web/css/reference/properties/border-inline-start-width
+- [x] web/css/reference/properties/border-inline-style
+- [x] web/css/reference/properties/border-inline-width
+- [x] web/css/reference/properties/border-left
+- [x] web/css/reference/properties/border-left-color
+- [x] web/css/reference/properties/border-left-style
+- [x] web/css/reference/properties/border-left-width
+- [x] web/css/reference/properties/border-radius
+- [x] web/css/reference/properties/border-right
+- [x] web/css/reference/properties/border-right-color
+- [x] web/css/reference/properties/border-right-style
+- [x] web/css/reference/properties/border-right-width
+- [x] web/css/reference/properties/border-spacing
+- [x] web/css/reference/properties/border-start-end-radius
+- [x] web/css/reference/properties/border-start-start-radius
+- [x] web/css/reference/properties/border-style
+- [x] web/css/reference/properties/border-top
+- [x] web/css/reference/properties/border-top-color
+- [x] web/css/reference/properties/border-top-left-radius
+- [x] web/css/reference/properties/border-top-right-radius
+- [x] web/css/reference/properties/border-top-style
+- [x] web/css/reference/properties/border-top-width
+- [x] web/css/reference/properties/border-width
+- [x] web/css/reference/properties/bottom
+- [x] web/css/reference/properties/box-align
+- [x] web/css/reference/properties/box-decoration-break
+- [x] web/css/reference/properties/box-direction
+- [x] web/css/reference/properties/box-flex
+- [x] web/css/reference/properties/box-flex-group
+- [x] web/css/reference/properties/box-lines
+- [x] web/css/reference/properties/box-ordinal-group
+- [x] web/css/reference/properties/box-orient
+- [x] web/css/reference/properties/box-pack
+- [x] web/css/reference/properties/box-shadow
+- [x] web/css/reference/properties/box-sizing
+- [x] web/css/reference/properties/break-after
+- [x] web/css/reference/properties/break-before
+- [x] web/css/reference/properties/break-inside
+- [x] web/css/reference/properties/caption-side
+- [x] web/css/reference/properties/caret
+- [x] web/css/reference/properties/caret-animation
+- [x] web/css/reference/properties/caret-color
+- [x] web/css/reference/properties/caret-shape
+- [x] web/css/reference/properties/clear
+- [x] web/css/reference/properties/clip
+- [x] web/css/reference/properties/clip-path
+- [x] web/css/reference/properties/clip-rule
 - [x] web/css/reference/properties/color
-- [ ] web/css/reference/properties/color-interpolation
-- [ ] web/css/reference/properties/color-interpolation-filters
-- [ ] web/css/reference/properties/color-scheme
-- [ ] web/css/reference/properties/column-count
-- [ ] web/css/reference/properties/column-fill
-- [ ] web/css/reference/properties/column-gap
-- [ ] web/css/reference/properties/column-height
-- [ ] web/css/reference/properties/column-rule
-- [ ] web/css/reference/properties/column-rule-color
-- [ ] web/css/reference/properties/column-rule-style
-- [ ] web/css/reference/properties/column-rule-width
-- [ ] web/css/reference/properties/column-span
-- [ ] web/css/reference/properties/column-width
-- [ ] web/css/reference/properties/column-wrap
-- [ ] web/css/reference/properties/columns
-- [ ] web/css/reference/properties/contain
-- [ ] web/css/reference/properties/contain-intrinsic-block-size
-- [ ] web/css/reference/properties/contain-intrinsic-height
-- [ ] web/css/reference/properties/contain-intrinsic-inline-size
-- [ ] web/css/reference/properties/contain-intrinsic-size
-- [ ] web/css/reference/properties/contain-intrinsic-width
-- [ ] web/css/reference/properties/container
-- [ ] web/css/reference/properties/container-name
-- [ ] web/css/reference/properties/container-type
-- [ ] web/css/reference/properties/content
-- [ ] web/css/reference/properties/content-visibility
-- [ ] web/css/reference/properties/corner-block-end-shape
-- [ ] web/css/reference/properties/corner-block-start-shape
-- [ ] web/css/reference/properties/corner-bottom-left-shape
-- [ ] web/css/reference/properties/corner-bottom-right-shape
-- [ ] web/css/reference/properties/corner-bottom-shape
-- [ ] web/css/reference/properties/corner-end-end-shape
-- [ ] web/css/reference/properties/corner-end-start-shape
-- [ ] web/css/reference/properties/corner-inline-end-shape
-- [ ] web/css/reference/properties/corner-inline-start-shape
-- [ ] web/css/reference/properties/corner-left-shape
-- [ ] web/css/reference/properties/corner-right-shape
-- [ ] web/css/reference/properties/corner-shape
-- [ ] web/css/reference/properties/corner-start-end-shape
-- [ ] web/css/reference/properties/corner-start-start-shape
-- [ ] web/css/reference/properties/corner-top-left-shape
-- [ ] web/css/reference/properties/corner-top-right-shape
-- [ ] web/css/reference/properties/corner-top-shape
-- [ ] web/css/reference/properties/counter-increment
-- [ ] web/css/reference/properties/counter-reset
-- [ ] web/css/reference/properties/counter-set
-- [ ] web/css/reference/properties/cursor
-- [ ] web/css/reference/properties/cx
-- [ ] web/css/reference/properties/cy
-- [ ] web/css/reference/properties/d
-- [ ] web/css/reference/properties/direction
+- [x] web/css/reference/properties/color-interpolation
+- [x] web/css/reference/properties/color-interpolation-filters
+- [x] web/css/reference/properties/color-scheme
+- [x] web/css/reference/properties/column-count
+- [x] web/css/reference/properties/column-fill
+- [x] web/css/reference/properties/column-gap
+- [x] web/css/reference/properties/column-height
+- [x] web/css/reference/properties/column-rule
+- [x] web/css/reference/properties/column-rule-color
+- [x] web/css/reference/properties/column-rule-style
+- [x] web/css/reference/properties/column-rule-width
+- [x] web/css/reference/properties/column-span
+- [x] web/css/reference/properties/column-width
+- [x] web/css/reference/properties/column-wrap
+- [x] web/css/reference/properties/columns
+- [x] web/css/reference/properties/contain
+- [x] web/css/reference/properties/contain-intrinsic-block-size
+- [x] web/css/reference/properties/contain-intrinsic-height
+- [x] web/css/reference/properties/contain-intrinsic-inline-size
+- [x] web/css/reference/properties/contain-intrinsic-size
+- [x] web/css/reference/properties/contain-intrinsic-width
+- [x] web/css/reference/properties/container
+- [x] web/css/reference/properties/container-name
+- [x] web/css/reference/properties/container-type
+- [x] web/css/reference/properties/content
+- [x] web/css/reference/properties/content-visibility
+- [x] web/css/reference/properties/corner-block-end-shape
+- [x] web/css/reference/properties/corner-block-start-shape
+- [x] web/css/reference/properties/corner-bottom-left-shape
+- [x] web/css/reference/properties/corner-bottom-right-shape
+- [x] web/css/reference/properties/corner-bottom-shape
+- [x] web/css/reference/properties/corner-end-end-shape
+- [x] web/css/reference/properties/corner-end-start-shape
+- [x] web/css/reference/properties/corner-inline-end-shape
+- [x] web/css/reference/properties/corner-inline-start-shape
+- [x] web/css/reference/properties/corner-left-shape
+- [x] web/css/reference/properties/corner-right-shape
+- [x] web/css/reference/properties/corner-shape
+- [x] web/css/reference/properties/corner-start-end-shape
+- [x] web/css/reference/properties/corner-start-start-shape
+- [x] web/css/reference/properties/corner-top-left-shape
+- [x] web/css/reference/properties/corner-top-right-shape
+- [x] web/css/reference/properties/corner-top-shape
+- [x] web/css/reference/properties/counter-increment
+- [x] web/css/reference/properties/counter-reset
+- [x] web/css/reference/properties/counter-set
+- [x] web/css/reference/properties/cursor
+- [x] web/css/reference/properties/cx
+- [x] web/css/reference/properties/cy
+- [x] web/css/reference/properties/d
+- [x] web/css/reference/properties/direction
 - [x] web/css/reference/properties/display
-- [ ] web/css/reference/properties/dominant-baseline
-- [ ] web/css/reference/properties/dynamic-range-limit
-- [ ] web/css/reference/properties/empty-cells
-- [ ] web/css/reference/properties/field-sizing
-- [ ] web/css/reference/properties/fill
-- [ ] web/css/reference/properties/fill-opacity
-- [ ] web/css/reference/properties/fill-rule
-- [ ] web/css/reference/properties/filter
-- [ ] web/css/reference/properties/flex
-- [ ] web/css/reference/properties/flex-basis
-- [ ] web/css/reference/properties/flex-direction
-- [ ] web/css/reference/properties/flex-flow
-- [ ] web/css/reference/properties/flex-grow
-- [ ] web/css/reference/properties/flex-shrink
-- [ ] web/css/reference/properties/flex-wrap
-- [ ] web/css/reference/properties/float
-- [ ] web/css/reference/properties/flood-color
-- [ ] web/css/reference/properties/flood-opacity
-- [ ] web/css/reference/properties/font
-- [ ] web/css/reference/properties/font-family
-- [ ] web/css/reference/properties/font-feature-settings
-- [ ] web/css/reference/properties/font-kerning
-- [ ] web/css/reference/properties/font-language-override
-- [ ] web/css/reference/properties/font-optical-sizing
-- [ ] web/css/reference/properties/font-palette
-- [ ] web/css/reference/properties/font-palette/palette-mix
-- [ ] web/css/reference/properties/font-size
-- [ ] web/css/reference/properties/font-size-adjust
-- [ ] web/css/reference/properties/font-smooth
-- [ ] web/css/reference/properties/font-stretch
-- [ ] web/css/reference/properties/font-style
-- [ ] web/css/reference/properties/font-synthesis
-- [ ] web/css/reference/properties/font-synthesis-position
-- [ ] web/css/reference/properties/font-synthesis-small-caps
-- [ ] web/css/reference/properties/font-synthesis-style
-- [ ] web/css/reference/properties/font-synthesis-weight
-- [ ] web/css/reference/properties/font-variant
-- [ ] web/css/reference/properties/font-variant-alternates
-- [ ] web/css/reference/properties/font-variant-caps
-- [ ] web/css/reference/properties/font-variant-east-asian
-- [ ] web/css/reference/properties/font-variant-emoji
-- [ ] web/css/reference/properties/font-variant-ligatures
-- [ ] web/css/reference/properties/font-variant-numeric
-- [ ] web/css/reference/properties/font-variant-position
-- [ ] web/css/reference/properties/font-variation-settings
-- [ ] web/css/reference/properties/font-weight
-- [ ] web/css/reference/properties/font-width
-- [ ] web/css/reference/properties/forced-color-adjust
-- [ ] web/css/reference/properties/gap
-- [ ] web/css/reference/properties/grid
-- [ ] web/css/reference/properties/grid-area
-- [ ] web/css/reference/properties/grid-auto-columns
-- [ ] web/css/reference/properties/grid-auto-flow
-- [ ] web/css/reference/properties/grid-auto-rows
-- [ ] web/css/reference/properties/grid-column
-- [ ] web/css/reference/properties/grid-column-end
-- [ ] web/css/reference/properties/grid-column-start
-- [ ] web/css/reference/properties/grid-row
-- [ ] web/css/reference/properties/grid-row-end
-- [ ] web/css/reference/properties/grid-row-start
-- [ ] web/css/reference/properties/grid-template
-- [ ] web/css/reference/properties/grid-template-areas
-- [ ] web/css/reference/properties/grid-template-columns
-- [ ] web/css/reference/properties/grid-template-rows
-- [ ] web/css/reference/properties/hanging-punctuation
-- [ ] web/css/reference/properties/height
-- [ ] web/css/reference/properties/hyphenate-character
-- [ ] web/css/reference/properties/hyphenate-limit-chars
-- [ ] web/css/reference/properties/hyphens
-- [ ] web/css/reference/properties/image-orientation
-- [ ] web/css/reference/properties/image-rendering
-- [ ] web/css/reference/properties/image-resolution
-- [ ] web/css/reference/properties/initial-letter
-- [ ] web/css/reference/properties/inline-size
-- [ ] web/css/reference/properties/inset
-- [ ] web/css/reference/properties/inset-block
-- [ ] web/css/reference/properties/inset-block-end
-- [ ] web/css/reference/properties/inset-block-start
-- [ ] web/css/reference/properties/inset-inline
-- [ ] web/css/reference/properties/inset-inline-end
-- [ ] web/css/reference/properties/inset-inline-start
-- [ ] web/css/reference/properties/interactivity
-- [ ] web/css/reference/properties/interest-delay
-- [ ] web/css/reference/properties/interest-delay-end
-- [ ] web/css/reference/properties/interest-delay-start
-- [ ] web/css/reference/properties/interpolate-size
-- [ ] web/css/reference/properties/isolation
-- [ ] web/css/reference/properties/justify-content
-- [ ] web/css/reference/properties/justify-items
-- [ ] web/css/reference/properties/justify-self
-- [ ] web/css/reference/properties/left
-- [ ] web/css/reference/properties/letter-spacing
-- [ ] web/css/reference/properties/lighting-color
-- [ ] web/css/reference/properties/line-break
-- [ ] web/css/reference/properties/line-clamp
-- [ ] web/css/reference/properties/line-height
-- [ ] web/css/reference/properties/line-height-step
-- [ ] web/css/reference/properties/list-style
-- [ ] web/css/reference/properties/list-style-image
-- [ ] web/css/reference/properties/list-style-position
-- [ ] web/css/reference/properties/list-style-type
-- [ ] web/css/reference/properties/margin
-- [ ] web/css/reference/properties/margin-block
-- [ ] web/css/reference/properties/margin-block-end
-- [ ] web/css/reference/properties/margin-block-start
-- [ ] web/css/reference/properties/margin-bottom
-- [ ] web/css/reference/properties/margin-inline
-- [ ] web/css/reference/properties/margin-inline-end
-- [ ] web/css/reference/properties/margin-inline-start
-- [ ] web/css/reference/properties/margin-left
-- [ ] web/css/reference/properties/margin-right
-- [ ] web/css/reference/properties/margin-top
-- [ ] web/css/reference/properties/margin-trim
-- [ ] web/css/reference/properties/marker
-- [ ] web/css/reference/properties/marker-end
-- [ ] web/css/reference/properties/marker-mid
-- [ ] web/css/reference/properties/marker-start
-- [ ] web/css/reference/properties/mask
-- [ ] web/css/reference/properties/mask-border
-- [ ] web/css/reference/properties/mask-border-mode
-- [ ] web/css/reference/properties/mask-border-outset
-- [ ] web/css/reference/properties/mask-border-repeat
-- [ ] web/css/reference/properties/mask-border-slice
-- [ ] web/css/reference/properties/mask-border-source
-- [ ] web/css/reference/properties/mask-border-width
-- [ ] web/css/reference/properties/mask-clip
-- [ ] web/css/reference/properties/mask-composite
-- [ ] web/css/reference/properties/mask-image
-- [ ] web/css/reference/properties/mask-mode
-- [ ] web/css/reference/properties/mask-origin
-- [ ] web/css/reference/properties/mask-position
-- [ ] web/css/reference/properties/mask-repeat
-- [ ] web/css/reference/properties/mask-size
-- [ ] web/css/reference/properties/mask-type
-- [ ] web/css/reference/properties/math-depth
-- [ ] web/css/reference/properties/math-shift
-- [ ] web/css/reference/properties/math-style
-- [ ] web/css/reference/properties/max-block-size
-- [ ] web/css/reference/properties/max-height
-- [ ] web/css/reference/properties/max-inline-size
-- [ ] web/css/reference/properties/max-width
-- [ ] web/css/reference/properties/min-block-size
-- [ ] web/css/reference/properties/min-height
-- [ ] web/css/reference/properties/min-inline-size
-- [ ] web/css/reference/properties/min-width
-- [ ] web/css/reference/properties/mix-blend-mode
-- [ ] web/css/reference/properties/object-fit
-- [ ] web/css/reference/properties/object-position
-- [ ] web/css/reference/properties/object-view-box
-- [ ] web/css/reference/properties/offset
-- [ ] web/css/reference/properties/offset-anchor
-- [ ] web/css/reference/properties/offset-distance
-- [ ] web/css/reference/properties/offset-path
-- [ ] web/css/reference/properties/offset-position
-- [ ] web/css/reference/properties/offset-rotate
-- [ ] web/css/reference/properties/opacity
-- [ ] web/css/reference/properties/order
-- [ ] web/css/reference/properties/orphans
-- [ ] web/css/reference/properties/outline
-- [ ] web/css/reference/properties/outline-color
-- [ ] web/css/reference/properties/outline-offset
-- [ ] web/css/reference/properties/outline-style
-- [ ] web/css/reference/properties/outline-width
-- [ ] web/css/reference/properties/overflow
-- [ ] web/css/reference/properties/overflow-anchor
-- [ ] web/css/reference/properties/overflow-block
-- [ ] web/css/reference/properties/overflow-clip-margin
-- [ ] web/css/reference/properties/overflow-inline
-- [ ] web/css/reference/properties/overflow-wrap
-- [ ] web/css/reference/properties/overflow-x
-- [ ] web/css/reference/properties/overflow-y
-- [ ] web/css/reference/properties/overlay
-- [ ] web/css/reference/properties/overscroll-behavior
-- [ ] web/css/reference/properties/overscroll-behavior-block
-- [ ] web/css/reference/properties/overscroll-behavior-inline
-- [ ] web/css/reference/properties/overscroll-behavior-x
-- [ ] web/css/reference/properties/overscroll-behavior-y
-- [ ] web/css/reference/properties/padding
-- [ ] web/css/reference/properties/padding-block
-- [ ] web/css/reference/properties/padding-block-end
-- [ ] web/css/reference/properties/padding-block-start
-- [ ] web/css/reference/properties/padding-bottom
-- [ ] web/css/reference/properties/padding-inline
-- [ ] web/css/reference/properties/padding-inline-end
-- [ ] web/css/reference/properties/padding-inline-start
-- [ ] web/css/reference/properties/padding-left
-- [ ] web/css/reference/properties/padding-right
-- [ ] web/css/reference/properties/padding-top
-- [ ] web/css/reference/properties/page
-- [ ] web/css/reference/properties/page-break-after
-- [ ] web/css/reference/properties/page-break-before
-- [ ] web/css/reference/properties/page-break-inside
-- [ ] web/css/reference/properties/paint-order
-- [ ] web/css/reference/properties/perspective
-- [ ] web/css/reference/properties/perspective-origin
-- [ ] web/css/reference/properties/place-content
-- [ ] web/css/reference/properties/place-items
-- [ ] web/css/reference/properties/place-self
-- [ ] web/css/reference/properties/pointer-events
+- [x] web/css/reference/properties/dominant-baseline
+- [x] web/css/reference/properties/dynamic-range-limit
+- [x] web/css/reference/properties/empty-cells
+- [x] web/css/reference/properties/field-sizing
+- [x] web/css/reference/properties/fill
+- [x] web/css/reference/properties/fill-opacity
+- [x] web/css/reference/properties/fill-rule
+- [x] web/css/reference/properties/filter
+- [x] web/css/reference/properties/flex
+- [x] web/css/reference/properties/flex-basis
+- [x] web/css/reference/properties/flex-direction
+- [x] web/css/reference/properties/flex-flow
+- [x] web/css/reference/properties/flex-grow
+- [x] web/css/reference/properties/flex-shrink
+- [x] web/css/reference/properties/flex-wrap
+- [x] web/css/reference/properties/float
+- [x] web/css/reference/properties/flood-color
+- [x] web/css/reference/properties/flood-opacity
+- [x] web/css/reference/properties/font
+- [x] web/css/reference/properties/font-family
+- [x] web/css/reference/properties/font-feature-settings
+- [x] web/css/reference/properties/font-kerning
+- [x] web/css/reference/properties/font-language-override
+- [x] web/css/reference/properties/font-optical-sizing
+- [x] web/css/reference/properties/font-palette
+- [x] web/css/reference/properties/font-palette/palette-mix
+- [x] web/css/reference/properties/font-size
+- [x] web/css/reference/properties/font-size-adjust
+- [x] web/css/reference/properties/font-smooth
+- [x] web/css/reference/properties/font-stretch
+- [x] web/css/reference/properties/font-style
+- [x] web/css/reference/properties/font-synthesis
+- [x] web/css/reference/properties/font-synthesis-position
+- [x] web/css/reference/properties/font-synthesis-small-caps
+- [x] web/css/reference/properties/font-synthesis-style
+- [x] web/css/reference/properties/font-synthesis-weight
+- [x] web/css/reference/properties/font-variant
+- [x] web/css/reference/properties/font-variant-alternates
+- [x] web/css/reference/properties/font-variant-caps
+- [x] web/css/reference/properties/font-variant-east-asian
+- [x] web/css/reference/properties/font-variant-emoji
+- [x] web/css/reference/properties/font-variant-ligatures
+- [x] web/css/reference/properties/font-variant-numeric
+- [x] web/css/reference/properties/font-variant-position
+- [x] web/css/reference/properties/font-variation-settings
+- [x] web/css/reference/properties/font-weight
+- [x] web/css/reference/properties/font-width
+- [x] web/css/reference/properties/forced-color-adjust
+- [x] web/css/reference/properties/gap
+- [x] web/css/reference/properties/grid
+- [x] web/css/reference/properties/grid-area
+- [x] web/css/reference/properties/grid-auto-columns
+- [x] web/css/reference/properties/grid-auto-flow
+- [x] web/css/reference/properties/grid-auto-rows
+- [x] web/css/reference/properties/grid-column
+- [x] web/css/reference/properties/grid-column-end
+- [x] web/css/reference/properties/grid-column-start
+- [x] web/css/reference/properties/grid-row
+- [x] web/css/reference/properties/grid-row-end
+- [x] web/css/reference/properties/grid-row-start
+- [x] web/css/reference/properties/grid-template
+- [x] web/css/reference/properties/grid-template-areas
+- [x] web/css/reference/properties/grid-template-columns
+- [x] web/css/reference/properties/grid-template-rows
+- [x] web/css/reference/properties/hanging-punctuation
+- [x] web/css/reference/properties/height
+- [x] web/css/reference/properties/hyphenate-character
+- [x] web/css/reference/properties/hyphenate-limit-chars
+- [x] web/css/reference/properties/hyphens
+- [x] web/css/reference/properties/image-orientation
+- [x] web/css/reference/properties/image-rendering
+- [x] web/css/reference/properties/image-resolution
+- [x] web/css/reference/properties/initial-letter
+- [x] web/css/reference/properties/inline-size
+- [x] web/css/reference/properties/inset
+- [x] web/css/reference/properties/inset-block
+- [x] web/css/reference/properties/inset-block-end
+- [x] web/css/reference/properties/inset-block-start
+- [x] web/css/reference/properties/inset-inline
+- [x] web/css/reference/properties/inset-inline-end
+- [x] web/css/reference/properties/inset-inline-start
+- [x] web/css/reference/properties/interactivity
+- [x] web/css/reference/properties/interest-delay
+- [x] web/css/reference/properties/interest-delay-end
+- [x] web/css/reference/properties/interest-delay-start
+- [x] web/css/reference/properties/interpolate-size
+- [x] web/css/reference/properties/isolation
+- [x] web/css/reference/properties/justify-content
+- [x] web/css/reference/properties/justify-items
+- [x] web/css/reference/properties/justify-self
+- [x] web/css/reference/properties/left
+- [x] web/css/reference/properties/letter-spacing
+- [x] web/css/reference/properties/lighting-color
+- [x] web/css/reference/properties/line-break
+- [x] web/css/reference/properties/line-clamp
+- [x] web/css/reference/properties/line-height
+- [x] web/css/reference/properties/line-height-step
+- [x] web/css/reference/properties/list-style
+- [x] web/css/reference/properties/list-style-image
+- [x] web/css/reference/properties/list-style-position
+- [x] web/css/reference/properties/list-style-type
+- [x] web/css/reference/properties/margin
+- [x] web/css/reference/properties/margin-block
+- [x] web/css/reference/properties/margin-block-end
+- [x] web/css/reference/properties/margin-block-start
+- [x] web/css/reference/properties/margin-bottom
+- [x] web/css/reference/properties/margin-inline
+- [x] web/css/reference/properties/margin-inline-end
+- [x] web/css/reference/properties/margin-inline-start
+- [x] web/css/reference/properties/margin-left
+- [x] web/css/reference/properties/margin-right
+- [x] web/css/reference/properties/margin-top
+- [x] web/css/reference/properties/margin-trim
+- [x] web/css/reference/properties/marker
+- [x] web/css/reference/properties/marker-end
+- [x] web/css/reference/properties/marker-mid
+- [x] web/css/reference/properties/marker-start
+- [x] web/css/reference/properties/mask
+- [x] web/css/reference/properties/mask-border
+- [x] web/css/reference/properties/mask-border-mode
+- [x] web/css/reference/properties/mask-border-outset
+- [x] web/css/reference/properties/mask-border-repeat
+- [x] web/css/reference/properties/mask-border-slice
+- [x] web/css/reference/properties/mask-border-source
+- [x] web/css/reference/properties/mask-border-width
+- [x] web/css/reference/properties/mask-clip
+- [x] web/css/reference/properties/mask-composite
+- [x] web/css/reference/properties/mask-image
+- [x] web/css/reference/properties/mask-mode
+- [x] web/css/reference/properties/mask-origin
+- [x] web/css/reference/properties/mask-position
+- [x] web/css/reference/properties/mask-repeat
+- [x] web/css/reference/properties/mask-size
+- [x] web/css/reference/properties/mask-type
+- [x] web/css/reference/properties/math-depth
+- [x] web/css/reference/properties/math-shift
+- [x] web/css/reference/properties/math-style
+- [x] web/css/reference/properties/max-block-size
+- [x] web/css/reference/properties/max-height
+- [x] web/css/reference/properties/max-inline-size
+- [x] web/css/reference/properties/max-width
+- [x] web/css/reference/properties/min-block-size
+- [x] web/css/reference/properties/min-height
+- [x] web/css/reference/properties/min-inline-size
+- [x] web/css/reference/properties/min-width
+- [x] web/css/reference/properties/mix-blend-mode
+- [x] web/css/reference/properties/object-fit
+- [x] web/css/reference/properties/object-position
+- [x] web/css/reference/properties/object-view-box
+- [x] web/css/reference/properties/offset
+- [x] web/css/reference/properties/offset-anchor
+- [x] web/css/reference/properties/offset-distance
+- [x] web/css/reference/properties/offset-path
+- [x] web/css/reference/properties/offset-position
+- [x] web/css/reference/properties/offset-rotate
+- [x] web/css/reference/properties/opacity
+- [x] web/css/reference/properties/order
+- [x] web/css/reference/properties/orphans
+- [x] web/css/reference/properties/outline
+- [x] web/css/reference/properties/outline-color
+- [x] web/css/reference/properties/outline-offset
+- [x] web/css/reference/properties/outline-style
+- [x] web/css/reference/properties/outline-width
+- [x] web/css/reference/properties/overflow
+- [x] web/css/reference/properties/overflow-anchor
+- [x] web/css/reference/properties/overflow-block
+- [x] web/css/reference/properties/overflow-clip-margin
+- [x] web/css/reference/properties/overflow-inline
+- [x] web/css/reference/properties/overflow-wrap
+- [x] web/css/reference/properties/overflow-x
+- [x] web/css/reference/properties/overflow-y
+- [x] web/css/reference/properties/overlay
+- [x] web/css/reference/properties/overscroll-behavior
+- [x] web/css/reference/properties/overscroll-behavior-block
+- [x] web/css/reference/properties/overscroll-behavior-inline
+- [x] web/css/reference/properties/overscroll-behavior-x
+- [x] web/css/reference/properties/overscroll-behavior-y
+- [x] web/css/reference/properties/padding
+- [x] web/css/reference/properties/padding-block
+- [x] web/css/reference/properties/padding-block-end
+- [x] web/css/reference/properties/padding-block-start
+- [x] web/css/reference/properties/padding-bottom
+- [x] web/css/reference/properties/padding-inline
+- [x] web/css/reference/properties/padding-inline-end
+- [x] web/css/reference/properties/padding-inline-start
+- [x] web/css/reference/properties/padding-left
+- [x] web/css/reference/properties/padding-right
+- [x] web/css/reference/properties/padding-top
+- [x] web/css/reference/properties/page
+- [x] web/css/reference/properties/page-break-after
+- [x] web/css/reference/properties/page-break-before
+- [x] web/css/reference/properties/page-break-inside
+- [x] web/css/reference/properties/paint-order
+- [x] web/css/reference/properties/perspective
+- [x] web/css/reference/properties/perspective-origin
+- [x] web/css/reference/properties/place-content
+- [x] web/css/reference/properties/place-items
+- [x] web/css/reference/properties/place-self
+- [x] web/css/reference/properties/pointer-events
 - [x] web/css/reference/properties/position
-- [ ] web/css/reference/properties/position-anchor
-- [ ] web/css/reference/properties/position-area
-- [ ] web/css/reference/properties/position-try
-- [ ] web/css/reference/properties/position-try-fallbacks
-- [ ] web/css/reference/properties/position-try-order
-- [ ] web/css/reference/properties/position-visibility
-- [ ] web/css/reference/properties/print-color-adjust
-- [ ] web/css/reference/properties/quotes
-- [ ] web/css/reference/properties/r
-- [ ] web/css/reference/properties/reading-flow
-- [ ] web/css/reference/properties/reading-order
-- [ ] web/css/reference/properties/resize
-- [ ] web/css/reference/properties/right
-- [ ] web/css/reference/properties/rotate
-- [ ] web/css/reference/properties/row-gap
-- [ ] web/css/reference/properties/ruby-align
-- [ ] web/css/reference/properties/ruby-overhang
-- [ ] web/css/reference/properties/ruby-position
-- [ ] web/css/reference/properties/rx
-- [ ] web/css/reference/properties/ry
-- [ ] web/css/reference/properties/scale
-- [ ] web/css/reference/properties/scroll-behavior
-- [ ] web/css/reference/properties/scroll-initial-target
-- [ ] web/css/reference/properties/scroll-margin
-- [ ] web/css/reference/properties/scroll-margin-block
-- [ ] web/css/reference/properties/scroll-margin-block-end
-- [ ] web/css/reference/properties/scroll-margin-block-start
-- [ ] web/css/reference/properties/scroll-margin-bottom
-- [ ] web/css/reference/properties/scroll-margin-inline
-- [ ] web/css/reference/properties/scroll-margin-inline-end
-- [ ] web/css/reference/properties/scroll-margin-inline-start
-- [ ] web/css/reference/properties/scroll-margin-left
-- [ ] web/css/reference/properties/scroll-margin-right
-- [ ] web/css/reference/properties/scroll-margin-top
-- [ ] web/css/reference/properties/scroll-marker-group
-- [ ] web/css/reference/properties/scroll-padding
-- [ ] web/css/reference/properties/scroll-padding-block
-- [ ] web/css/reference/properties/scroll-padding-block-end
-- [ ] web/css/reference/properties/scroll-padding-block-start
-- [ ] web/css/reference/properties/scroll-padding-bottom
-- [ ] web/css/reference/properties/scroll-padding-inline
-- [ ] web/css/reference/properties/scroll-padding-inline-end
-- [ ] web/css/reference/properties/scroll-padding-inline-start
-- [ ] web/css/reference/properties/scroll-padding-left
-- [ ] web/css/reference/properties/scroll-padding-right
-- [ ] web/css/reference/properties/scroll-padding-top
-- [ ] web/css/reference/properties/scroll-snap-align
-- [ ] web/css/reference/properties/scroll-snap-stop
-- [ ] web/css/reference/properties/scroll-snap-type
-- [ ] web/css/reference/properties/scroll-target-group
-- [ ] web/css/reference/properties/scroll-timeline
-- [ ] web/css/reference/properties/scroll-timeline-axis
-- [ ] web/css/reference/properties/scroll-timeline-name
-- [ ] web/css/reference/properties/scrollbar-color
-- [ ] web/css/reference/properties/scrollbar-gutter
-- [ ] web/css/reference/properties/scrollbar-width
-- [ ] web/css/reference/properties/shape-image-threshold
-- [ ] web/css/reference/properties/shape-margin
-- [ ] web/css/reference/properties/shape-outside
-- [ ] web/css/reference/properties/shape-rendering
-- [ ] web/css/reference/properties/speak-as
-- [ ] web/css/reference/properties/stop-color
-- [ ] web/css/reference/properties/stop-opacity
-- [ ] web/css/reference/properties/stroke
-- [ ] web/css/reference/properties/stroke-dasharray
-- [ ] web/css/reference/properties/stroke-dashoffset
-- [ ] web/css/reference/properties/stroke-linecap
-- [ ] web/css/reference/properties/stroke-linejoin
-- [ ] web/css/reference/properties/stroke-miterlimit
-- [ ] web/css/reference/properties/stroke-opacity
-- [ ] web/css/reference/properties/stroke-width
-- [ ] web/css/reference/properties/tab-size
-- [ ] web/css/reference/properties/table-layout
-- [ ] web/css/reference/properties/text-align
-- [ ] web/css/reference/properties/text-align-last
-- [ ] web/css/reference/properties/text-anchor
-- [ ] web/css/reference/properties/text-autospace
-- [ ] web/css/reference/properties/text-box
-- [ ] web/css/reference/properties/text-box-edge
-- [ ] web/css/reference/properties/text-box-trim
-- [ ] web/css/reference/properties/text-combine-upright
-- [ ] web/css/reference/properties/text-decoration
-- [ ] web/css/reference/properties/text-decoration-color
-- [ ] web/css/reference/properties/text-decoration-inset
-- [ ] web/css/reference/properties/text-decoration-line
-- [ ] web/css/reference/properties/text-decoration-skip
-- [ ] web/css/reference/properties/text-decoration-skip-ink
-- [ ] web/css/reference/properties/text-decoration-style
-- [ ] web/css/reference/properties/text-decoration-thickness
-- [ ] web/css/reference/properties/text-emphasis
-- [ ] web/css/reference/properties/text-emphasis-color
-- [ ] web/css/reference/properties/text-emphasis-position
-- [ ] web/css/reference/properties/text-emphasis-style
-- [ ] web/css/reference/properties/text-indent
-- [ ] web/css/reference/properties/text-justify
-- [ ] web/css/reference/properties/text-orientation
-- [ ] web/css/reference/properties/text-overflow
-- [ ] web/css/reference/properties/text-rendering
-- [ ] web/css/reference/properties/text-shadow
-- [ ] web/css/reference/properties/text-size-adjust
-- [ ] web/css/reference/properties/text-spacing-trim
-- [ ] web/css/reference/properties/text-transform
-- [ ] web/css/reference/properties/text-underline-offset
-- [ ] web/css/reference/properties/text-underline-position
-- [ ] web/css/reference/properties/text-wrap
-- [ ] web/css/reference/properties/text-wrap-mode
-- [ ] web/css/reference/properties/text-wrap-style
-- [ ] web/css/reference/properties/timeline-scope
-- [ ] web/css/reference/properties/top
-- [ ] web/css/reference/properties/touch-action
-- [ ] web/css/reference/properties/transform
-- [ ] web/css/reference/properties/transform-box
-- [ ] web/css/reference/properties/transform-origin
-- [ ] web/css/reference/properties/transform-style
-- [ ] web/css/reference/properties/transition
-- [ ] web/css/reference/properties/transition-behavior
-- [ ] web/css/reference/properties/transition-delay
-- [ ] web/css/reference/properties/transition-duration
-- [ ] web/css/reference/properties/transition-property
-- [ ] web/css/reference/properties/transition-timing-function
-- [ ] web/css/reference/properties/translate
-- [ ] web/css/reference/properties/unicode-bidi
-- [ ] web/css/reference/properties/user-modify
-- [ ] web/css/reference/properties/user-select
-- [ ] web/css/reference/properties/vector-effect
-- [ ] web/css/reference/properties/vertical-align
-- [ ] web/css/reference/properties/view-timeline
-- [ ] web/css/reference/properties/view-timeline-axis
-- [ ] web/css/reference/properties/view-timeline-inset
-- [ ] web/css/reference/properties/view-timeline-name
-- [ ] web/css/reference/properties/view-transition-class
-- [ ] web/css/reference/properties/view-transition-name
-- [ ] web/css/reference/properties/visibility
-- [ ] web/css/reference/properties/white-space
-- [ ] web/css/reference/properties/white-space-collapse
-- [ ] web/css/reference/properties/widows
-- [ ] web/css/reference/properties/width
-- [ ] web/css/reference/properties/will-change
-- [ ] web/css/reference/properties/word-break
-- [ ] web/css/reference/properties/word-spacing
-- [ ] web/css/reference/properties/writing-mode
-- [ ] web/css/reference/properties/x
-- [ ] web/css/reference/properties/y
-- [ ] web/css/reference/properties/z-index
-- [ ] web/css/reference/properties/zoom
+- [x] web/css/reference/properties/position-anchor
+- [x] web/css/reference/properties/position-area
+- [x] web/css/reference/properties/position-try
+- [x] web/css/reference/properties/position-try-fallbacks
+- [x] web/css/reference/properties/position-try-order
+- [x] web/css/reference/properties/position-visibility
+- [x] web/css/reference/properties/print-color-adjust
+- [x] web/css/reference/properties/quotes
+- [x] web/css/reference/properties/r
+- [x] web/css/reference/properties/reading-flow
+- [x] web/css/reference/properties/reading-order
+- [x] web/css/reference/properties/resize
+- [x] web/css/reference/properties/right
+- [x] web/css/reference/properties/rotate
+- [x] web/css/reference/properties/row-gap
+- [x] web/css/reference/properties/ruby-align
+- [x] web/css/reference/properties/ruby-overhang
+- [x] web/css/reference/properties/ruby-position
+- [x] web/css/reference/properties/rx
+- [x] web/css/reference/properties/ry
+- [x] web/css/reference/properties/scale
+- [x] web/css/reference/properties/scroll-behavior
+- [x] web/css/reference/properties/scroll-initial-target
+- [x] web/css/reference/properties/scroll-margin
+- [x] web/css/reference/properties/scroll-margin-block
+- [x] web/css/reference/properties/scroll-margin-block-end
+- [x] web/css/reference/properties/scroll-margin-block-start
+- [x] web/css/reference/properties/scroll-margin-bottom
+- [x] web/css/reference/properties/scroll-margin-inline
+- [x] web/css/reference/properties/scroll-margin-inline-end
+- [x] web/css/reference/properties/scroll-margin-inline-start
+- [x] web/css/reference/properties/scroll-margin-left
+- [x] web/css/reference/properties/scroll-margin-right
+- [x] web/css/reference/properties/scroll-margin-top
+- [x] web/css/reference/properties/scroll-marker-group
+- [x] web/css/reference/properties/scroll-padding
+- [x] web/css/reference/properties/scroll-padding-block
+- [x] web/css/reference/properties/scroll-padding-block-end
+- [x] web/css/reference/properties/scroll-padding-block-start
+- [x] web/css/reference/properties/scroll-padding-bottom
+- [x] web/css/reference/properties/scroll-padding-inline
+- [x] web/css/reference/properties/scroll-padding-inline-end
+- [x] web/css/reference/properties/scroll-padding-inline-start
+- [x] web/css/reference/properties/scroll-padding-left
+- [x] web/css/reference/properties/scroll-padding-right
+- [x] web/css/reference/properties/scroll-padding-top
+- [x] web/css/reference/properties/scroll-snap-align
+- [x] web/css/reference/properties/scroll-snap-stop
+- [x] web/css/reference/properties/scroll-snap-type
+- [x] web/css/reference/properties/scroll-target-group
+- [x] web/css/reference/properties/scroll-timeline
+- [x] web/css/reference/properties/scroll-timeline-axis
+- [x] web/css/reference/properties/scroll-timeline-name
+- [x] web/css/reference/properties/scrollbar-color
+- [x] web/css/reference/properties/scrollbar-gutter
+- [x] web/css/reference/properties/scrollbar-width
+- [x] web/css/reference/properties/shape-image-threshold
+- [x] web/css/reference/properties/shape-margin
+- [x] web/css/reference/properties/shape-outside
+- [x] web/css/reference/properties/shape-rendering
+- [x] web/css/reference/properties/speak-as
+- [x] web/css/reference/properties/stop-color
+- [x] web/css/reference/properties/stop-opacity
+- [x] web/css/reference/properties/stroke
+- [x] web/css/reference/properties/stroke-dasharray
+- [x] web/css/reference/properties/stroke-dashoffset
+- [x] web/css/reference/properties/stroke-linecap
+- [x] web/css/reference/properties/stroke-linejoin
+- [x] web/css/reference/properties/stroke-miterlimit
+- [x] web/css/reference/properties/stroke-opacity
+- [x] web/css/reference/properties/stroke-width
+- [x] web/css/reference/properties/tab-size
+- [x] web/css/reference/properties/table-layout
+- [x] web/css/reference/properties/text-align
+- [x] web/css/reference/properties/text-align-last
+- [x] web/css/reference/properties/text-anchor
+- [x] web/css/reference/properties/text-autospace
+- [x] web/css/reference/properties/text-box
+- [x] web/css/reference/properties/text-box-edge
+- [x] web/css/reference/properties/text-box-trim
+- [x] web/css/reference/properties/text-combine-upright
+- [x] web/css/reference/properties/text-decoration
+- [x] web/css/reference/properties/text-decoration-color
+- [x] web/css/reference/properties/text-decoration-inset
+- [x] web/css/reference/properties/text-decoration-line
+- [x] web/css/reference/properties/text-decoration-skip
+- [x] web/css/reference/properties/text-decoration-skip-ink
+- [x] web/css/reference/properties/text-decoration-style
+- [x] web/css/reference/properties/text-decoration-thickness
+- [x] web/css/reference/properties/text-emphasis
+- [x] web/css/reference/properties/text-emphasis-color
+- [x] web/css/reference/properties/text-emphasis-position
+- [x] web/css/reference/properties/text-emphasis-style
+- [x] web/css/reference/properties/text-indent
+- [x] web/css/reference/properties/text-justify
+- [x] web/css/reference/properties/text-orientation
+- [x] web/css/reference/properties/text-overflow
+- [x] web/css/reference/properties/text-rendering
+- [x] web/css/reference/properties/text-shadow
+- [x] web/css/reference/properties/text-size-adjust
+- [x] web/css/reference/properties/text-spacing-trim
+- [x] web/css/reference/properties/text-transform
+- [x] web/css/reference/properties/text-underline-offset
+- [x] web/css/reference/properties/text-underline-position
+- [x] web/css/reference/properties/text-wrap
+- [x] web/css/reference/properties/text-wrap-mode
+- [x] web/css/reference/properties/text-wrap-style
+- [x] web/css/reference/properties/timeline-scope
+- [x] web/css/reference/properties/top
+- [x] web/css/reference/properties/touch-action
+- [x] web/css/reference/properties/transform
+- [x] web/css/reference/properties/transform-box
+- [x] web/css/reference/properties/transform-origin
+- [x] web/css/reference/properties/transform-style
+- [x] web/css/reference/properties/transition
+- [x] web/css/reference/properties/transition-behavior
+- [x] web/css/reference/properties/transition-delay
+- [x] web/css/reference/properties/transition-duration
+- [x] web/css/reference/properties/transition-property
+- [x] web/css/reference/properties/transition-timing-function
+- [x] web/css/reference/properties/translate
+- [x] web/css/reference/properties/unicode-bidi
+- [x] web/css/reference/properties/user-modify
+- [x] web/css/reference/properties/user-select
+- [x] web/css/reference/properties/vector-effect
+- [x] web/css/reference/properties/vertical-align
+- [x] web/css/reference/properties/view-timeline
+- [x] web/css/reference/properties/view-timeline-axis
+- [x] web/css/reference/properties/view-timeline-inset
+- [x] web/css/reference/properties/view-timeline-name
+- [x] web/css/reference/properties/view-transition-class
+- [x] web/css/reference/properties/view-transition-name
+- [x] web/css/reference/properties/visibility
+- [x] web/css/reference/properties/white-space
+- [x] web/css/reference/properties/white-space-collapse
+- [x] web/css/reference/properties/widows
+- [x] web/css/reference/properties/width
+- [x] web/css/reference/properties/will-change
+- [x] web/css/reference/properties/word-break
+- [x] web/css/reference/properties/word-spacing
+- [x] web/css/reference/properties/writing-mode
+- [x] web/css/reference/properties/x
+- [x] web/css/reference/properties/y
+- [x] web/css/reference/properties/z-index
+- [x] web/css/reference/properties/zoom
 
 ## Reference — Selectors (166 pages)
 
-- [ ] web/css/reference/selectors/index.md
-- [ ] web/css/reference/selectors/_colon_-moz-broken
-- [ ] web/css/reference/selectors/_colon_-moz-drag-over
-- [ ] web/css/reference/selectors/_colon_-moz-first-node
-- [ ] web/css/reference/selectors/_colon_-moz-handler-blocked
-- [ ] web/css/reference/selectors/_colon_-moz-handler-crashed
-- [ ] web/css/reference/selectors/_colon_-moz-handler-disabled
-- [ ] web/css/reference/selectors/_colon_-moz-last-node
-- [ ] web/css/reference/selectors/_colon_-moz-loading
-- [ ] web/css/reference/selectors/_colon_-moz-locale-dir_ltr
-- [ ] web/css/reference/selectors/_colon_-moz-locale-dir_rtl
-- [ ] web/css/reference/selectors/_colon_-moz-only-whitespace
-- [ ] web/css/reference/selectors/_colon_-moz-submit-invalid
-- [ ] web/css/reference/selectors/_colon_-moz-suppressed
-- [ ] web/css/reference/selectors/_colon_-moz-user-disabled
-- [ ] web/css/reference/selectors/_colon_-moz-window-inactive
-- [ ] web/css/reference/selectors/\_colon_active
-- [ ] web/css/reference/selectors/\_colon_active-view-transition
-- [ ] web/css/reference/selectors/\_colon_active-view-transition-type
-- [ ] web/css/reference/selectors/\_colon_any-link
-- [ ] web/css/reference/selectors/\_colon_autofill
-- [ ] web/css/reference/selectors/\_colon_blank
-- [ ] web/css/reference/selectors/\_colon_buffering
-- [ ] web/css/reference/selectors/\_colon_checked
-- [ ] web/css/reference/selectors/\_colon_current
-- [ ] web/css/reference/selectors/\_colon_default
-- [ ] web/css/reference/selectors/\_colon_defined
-- [ ] web/css/reference/selectors/\_colon_dir
-- [ ] web/css/reference/selectors/\_colon_disabled
-- [ ] web/css/reference/selectors/\_colon_empty
-- [ ] web/css/reference/selectors/\_colon_enabled
-- [ ] web/css/reference/selectors/\_colon_first
-- [ ] web/css/reference/selectors/\_colon_first-child
-- [ ] web/css/reference/selectors/\_colon_first-of-type
-- [ ] web/css/reference/selectors/\_colon_focus
-- [ ] web/css/reference/selectors/\_colon_focus-visible
-- [ ] web/css/reference/selectors/\_colon_focus-within
-- [ ] web/css/reference/selectors/\_colon_fullscreen
-- [ ] web/css/reference/selectors/\_colon_future
-- [ ] web/css/reference/selectors/\_colon_has
-- [ ] web/css/reference/selectors/\_colon_has-slotted
-- [ ] web/css/reference/selectors/\_colon_heading
-- [ ] web/css/reference/selectors/\_colon_heading_function
-- [ ] web/css/reference/selectors/\_colon_host
-- [ ] web/css/reference/selectors/\_colon_host-context
-- [ ] web/css/reference/selectors/\_colon_host_function
-- [ ] web/css/reference/selectors/\_colon_hover
-- [ ] web/css/reference/selectors/\_colon_in-range
-- [ ] web/css/reference/selectors/\_colon_indeterminate
-- [ ] web/css/reference/selectors/\_colon_interest-source
-- [ ] web/css/reference/selectors/\_colon_interest-target
-- [ ] web/css/reference/selectors/\_colon_invalid
-- [ ] web/css/reference/selectors/\_colon_is
-- [ ] web/css/reference/selectors/\_colon_lang
-- [ ] web/css/reference/selectors/\_colon_last-child
-- [ ] web/css/reference/selectors/\_colon_last-of-type
-- [ ] web/css/reference/selectors/\_colon_left
-- [ ] web/css/reference/selectors/\_colon_link
-- [ ] web/css/reference/selectors/\_colon_local-link
-- [ ] web/css/reference/selectors/\_colon_modal
-- [ ] web/css/reference/selectors/\_colon_muted
-- [ ] web/css/reference/selectors/\_colon_not
-- [ ] web/css/reference/selectors/\_colon_nth-child
-- [ ] web/css/reference/selectors/\_colon_nth-last-child
-- [ ] web/css/reference/selectors/\_colon_nth-last-of-type
-- [ ] web/css/reference/selectors/\_colon_nth-of-type
-- [ ] web/css/reference/selectors/\_colon_only-child
-- [ ] web/css/reference/selectors/\_colon_only-of-type
-- [ ] web/css/reference/selectors/\_colon_open
-- [ ] web/css/reference/selectors/\_colon_optional
-- [ ] web/css/reference/selectors/\_colon_out-of-range
-- [ ] web/css/reference/selectors/\_colon_past
-- [ ] web/css/reference/selectors/\_colon_paused
-- [ ] web/css/reference/selectors/\_colon_picture-in-picture
-- [ ] web/css/reference/selectors/\_colon_placeholder-shown
-- [ ] web/css/reference/selectors/\_colon_playing
-- [ ] web/css/reference/selectors/\_colon_popover-open
-- [ ] web/css/reference/selectors/\_colon_read-only
-- [ ] web/css/reference/selectors/\_colon_read-write
-- [ ] web/css/reference/selectors/\_colon_required
-- [ ] web/css/reference/selectors/\_colon_right
-- [ ] web/css/reference/selectors/\_colon_root
-- [ ] web/css/reference/selectors/\_colon_scope
-- [ ] web/css/reference/selectors/\_colon_seeking
-- [ ] web/css/reference/selectors/\_colon_stalled
-- [ ] web/css/reference/selectors/\_colon_state
-- [ ] web/css/reference/selectors/\_colon_target
-- [ ] web/css/reference/selectors/\_colon_target-after
-- [ ] web/css/reference/selectors/\_colon_target-before
-- [ ] web/css/reference/selectors/\_colon_target-current
-- [ ] web/css/reference/selectors/\_colon_user-invalid
-- [ ] web/css/reference/selectors/\_colon_user-valid
-- [ ] web/css/reference/selectors/\_colon_valid
-- [ ] web/css/reference/selectors/\_colon_visited
-- [ ] web/css/reference/selectors/\_colon_volume-locked
-- [ ] web/css/reference/selectors/\_colon_where
-- [ ] web/css/reference/selectors/_doublecolon_-moz-color-swatch
-- [ ] web/css/reference/selectors/_doublecolon_-moz-focus-inner
-- [ ] web/css/reference/selectors/_doublecolon_-moz-list-bullet
-- [ ] web/css/reference/selectors/_doublecolon_-moz-list-number
-- [ ] web/css/reference/selectors/_doublecolon_-moz-meter-bar
-- [ ] web/css/reference/selectors/_doublecolon_-moz-progress-bar
-- [ ] web/css/reference/selectors/_doublecolon_-moz-range-progress
-- [ ] web/css/reference/selectors/_doublecolon_-moz-range-thumb
-- [ ] web/css/reference/selectors/_doublecolon_-moz-range-track
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-inner-spin-button
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-bar
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-even-less-good-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-inner-element
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-optimum-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-suboptimum-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-progress-bar
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-progress-inner-element
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-progress-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-scrollbar
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-search-cancel-button
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-search-results-button
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-slider-runnable-track
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-slider-thumb
-- [ ] web/css/reference/selectors/\_doublecolon_after
-- [ ] web/css/reference/selectors/\_doublecolon_backdrop
-- [ ] web/css/reference/selectors/\_doublecolon_before
-- [ ] web/css/reference/selectors/\_doublecolon_checkmark
-- [ ] web/css/reference/selectors/\_doublecolon_column
-- [ ] web/css/reference/selectors/\_doublecolon_cue
-- [ ] web/css/reference/selectors/\_doublecolon_details-content
-- [ ] web/css/reference/selectors/\_doublecolon_file-selector-button
-- [ ] web/css/reference/selectors/\_doublecolon_first-letter
-- [ ] web/css/reference/selectors/\_doublecolon_first-line
-- [ ] web/css/reference/selectors/\_doublecolon_grammar-error
-- [ ] web/css/reference/selectors/\_doublecolon_highlight
-- [ ] web/css/reference/selectors/\_doublecolon_marker
-- [ ] web/css/reference/selectors/\_doublecolon_part
-- [ ] web/css/reference/selectors/\_doublecolon_picker
-- [ ] web/css/reference/selectors/\_doublecolon_picker-icon
-- [ ] web/css/reference/selectors/\_doublecolon_placeholder
-- [ ] web/css/reference/selectors/\_doublecolon_scroll-button
-- [ ] web/css/reference/selectors/\_doublecolon_scroll-marker
-- [ ] web/css/reference/selectors/\_doublecolon_scroll-marker-group
-- [ ] web/css/reference/selectors/\_doublecolon_search-text
-- [ ] web/css/reference/selectors/\_doublecolon_selection
-- [ ] web/css/reference/selectors/\_doublecolon_slotted
-- [ ] web/css/reference/selectors/\_doublecolon_spelling-error
-- [ ] web/css/reference/selectors/\_doublecolon_target-text
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-group
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-image-pair
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-new
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-old
-- [ ] web/css/reference/selectors/attribute_selectors
-- [ ] web/css/reference/selectors/child_combinator
-- [ ] web/css/reference/selectors/class_selectors
-- [ ] web/css/reference/selectors/column_combinator
-- [ ] web/css/reference/selectors/combinators
-- [ ] web/css/reference/selectors/descendant_combinator
-- [ ] web/css/reference/selectors/id_selectors
-- [ ] web/css/reference/selectors/keyframe_selectors
-- [ ] web/css/reference/selectors/namespace_separator
-- [ ] web/css/reference/selectors/nesting_selector
-- [ ] web/css/reference/selectors/next-sibling_combinator
-- [ ] web/css/reference/selectors/pseudo-classes
-- [ ] web/css/reference/selectors/pseudo-elements
-- [ ] web/css/reference/selectors/selector_list
-- [ ] web/css/reference/selectors/subsequent-sibling_combinator
-- [ ] web/css/reference/selectors/type_selectors
-- [ ] web/css/reference/selectors/universal_selectors
+- [x] web/css/reference/selectors/index.md
+- [x] web/css/reference/selectors/_colon_-moz-broken
+- [x] web/css/reference/selectors/_colon_-moz-drag-over
+- [x] web/css/reference/selectors/_colon_-moz-first-node
+- [x] web/css/reference/selectors/_colon_-moz-handler-blocked
+- [x] web/css/reference/selectors/_colon_-moz-handler-crashed
+- [x] web/css/reference/selectors/_colon_-moz-handler-disabled
+- [x] web/css/reference/selectors/_colon_-moz-last-node
+- [x] web/css/reference/selectors/_colon_-moz-loading
+- [x] web/css/reference/selectors/_colon_-moz-locale-dir_ltr
+- [x] web/css/reference/selectors/_colon_-moz-locale-dir_rtl
+- [x] web/css/reference/selectors/_colon_-moz-only-whitespace
+- [x] web/css/reference/selectors/_colon_-moz-submit-invalid
+- [x] web/css/reference/selectors/_colon_-moz-suppressed
+- [x] web/css/reference/selectors/_colon_-moz-user-disabled
+- [x] web/css/reference/selectors/_colon_-moz-window-inactive
+- [x] web/css/reference/selectors/\_colon_active
+- [x] web/css/reference/selectors/\_colon_active-view-transition
+- [x] web/css/reference/selectors/\_colon_active-view-transition-type
+- [x] web/css/reference/selectors/\_colon_any-link
+- [x] web/css/reference/selectors/\_colon_autofill
+- [x] web/css/reference/selectors/\_colon_blank
+- [x] web/css/reference/selectors/\_colon_buffering
+- [x] web/css/reference/selectors/\_colon_checked
+- [x] web/css/reference/selectors/\_colon_current
+- [x] web/css/reference/selectors/\_colon_default
+- [x] web/css/reference/selectors/\_colon_defined
+- [x] web/css/reference/selectors/\_colon_dir
+- [x] web/css/reference/selectors/\_colon_disabled
+- [x] web/css/reference/selectors/\_colon_empty
+- [x] web/css/reference/selectors/\_colon_enabled
+- [x] web/css/reference/selectors/\_colon_first
+- [x] web/css/reference/selectors/\_colon_first-child
+- [x] web/css/reference/selectors/\_colon_first-of-type
+- [x] web/css/reference/selectors/\_colon_focus
+- [x] web/css/reference/selectors/\_colon_focus-visible
+- [x] web/css/reference/selectors/\_colon_focus-within
+- [x] web/css/reference/selectors/\_colon_fullscreen
+- [x] web/css/reference/selectors/\_colon_future
+- [x] web/css/reference/selectors/\_colon_has
+- [x] web/css/reference/selectors/\_colon_has-slotted
+- [x] web/css/reference/selectors/\_colon_heading
+- [x] web/css/reference/selectors/\_colon_heading_function
+- [x] web/css/reference/selectors/\_colon_host
+- [x] web/css/reference/selectors/\_colon_host-context
+- [x] web/css/reference/selectors/\_colon_host_function
+- [x] web/css/reference/selectors/\_colon_hover
+- [x] web/css/reference/selectors/\_colon_in-range
+- [x] web/css/reference/selectors/\_colon_indeterminate
+- [x] web/css/reference/selectors/\_colon_interest-source
+- [x] web/css/reference/selectors/\_colon_interest-target
+- [x] web/css/reference/selectors/\_colon_invalid
+- [x] web/css/reference/selectors/\_colon_is
+- [x] web/css/reference/selectors/\_colon_lang
+- [x] web/css/reference/selectors/\_colon_last-child
+- [x] web/css/reference/selectors/\_colon_last-of-type
+- [x] web/css/reference/selectors/\_colon_left
+- [x] web/css/reference/selectors/\_colon_link
+- [x] web/css/reference/selectors/\_colon_local-link
+- [x] web/css/reference/selectors/\_colon_modal
+- [x] web/css/reference/selectors/\_colon_muted
+- [x] web/css/reference/selectors/\_colon_not
+- [x] web/css/reference/selectors/\_colon_nth-child
+- [x] web/css/reference/selectors/\_colon_nth-last-child
+- [x] web/css/reference/selectors/\_colon_nth-last-of-type
+- [x] web/css/reference/selectors/\_colon_nth-of-type
+- [x] web/css/reference/selectors/\_colon_only-child
+- [x] web/css/reference/selectors/\_colon_only-of-type
+- [x] web/css/reference/selectors/\_colon_open
+- [x] web/css/reference/selectors/\_colon_optional
+- [x] web/css/reference/selectors/\_colon_out-of-range
+- [x] web/css/reference/selectors/\_colon_past
+- [x] web/css/reference/selectors/\_colon_paused
+- [x] web/css/reference/selectors/\_colon_picture-in-picture
+- [x] web/css/reference/selectors/\_colon_placeholder-shown
+- [x] web/css/reference/selectors/\_colon_playing
+- [x] web/css/reference/selectors/\_colon_popover-open
+- [x] web/css/reference/selectors/\_colon_read-only
+- [x] web/css/reference/selectors/\_colon_read-write
+- [x] web/css/reference/selectors/\_colon_required
+- [x] web/css/reference/selectors/\_colon_right
+- [x] web/css/reference/selectors/\_colon_root
+- [x] web/css/reference/selectors/\_colon_scope
+- [x] web/css/reference/selectors/\_colon_seeking
+- [x] web/css/reference/selectors/\_colon_stalled
+- [x] web/css/reference/selectors/\_colon_state
+- [x] web/css/reference/selectors/\_colon_target
+- [x] web/css/reference/selectors/\_colon_target-after
+- [x] web/css/reference/selectors/\_colon_target-before
+- [x] web/css/reference/selectors/\_colon_target-current
+- [x] web/css/reference/selectors/\_colon_user-invalid
+- [x] web/css/reference/selectors/\_colon_user-valid
+- [x] web/css/reference/selectors/\_colon_valid
+- [x] web/css/reference/selectors/\_colon_visited
+- [x] web/css/reference/selectors/\_colon_volume-locked
+- [x] web/css/reference/selectors/\_colon_where
+- [x] web/css/reference/selectors/_doublecolon_-moz-color-swatch
+- [x] web/css/reference/selectors/_doublecolon_-moz-focus-inner
+- [x] web/css/reference/selectors/_doublecolon_-moz-list-bullet
+- [x] web/css/reference/selectors/_doublecolon_-moz-list-number
+- [x] web/css/reference/selectors/_doublecolon_-moz-meter-bar
+- [x] web/css/reference/selectors/_doublecolon_-moz-progress-bar
+- [x] web/css/reference/selectors/_doublecolon_-moz-range-progress
+- [x] web/css/reference/selectors/_doublecolon_-moz-range-thumb
+- [x] web/css/reference/selectors/_doublecolon_-moz-range-track
+- [x] web/css/reference/selectors/_doublecolon_-webkit-inner-spin-button
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-bar
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-even-less-good-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-inner-element
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-optimum-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-suboptimum-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-progress-bar
+- [x] web/css/reference/selectors/_doublecolon_-webkit-progress-inner-element
+- [x] web/css/reference/selectors/_doublecolon_-webkit-progress-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-scrollbar
+- [x] web/css/reference/selectors/_doublecolon_-webkit-search-cancel-button
+- [x] web/css/reference/selectors/_doublecolon_-webkit-search-results-button
+- [x] web/css/reference/selectors/_doublecolon_-webkit-slider-runnable-track
+- [x] web/css/reference/selectors/_doublecolon_-webkit-slider-thumb
+- [x] web/css/reference/selectors/\_doublecolon_after
+- [x] web/css/reference/selectors/\_doublecolon_backdrop
+- [x] web/css/reference/selectors/\_doublecolon_before
+- [x] web/css/reference/selectors/\_doublecolon_checkmark
+- [x] web/css/reference/selectors/\_doublecolon_column
+- [x] web/css/reference/selectors/\_doublecolon_cue
+- [x] web/css/reference/selectors/\_doublecolon_details-content
+- [x] web/css/reference/selectors/\_doublecolon_file-selector-button
+- [x] web/css/reference/selectors/\_doublecolon_first-letter
+- [x] web/css/reference/selectors/\_doublecolon_first-line
+- [x] web/css/reference/selectors/\_doublecolon_grammar-error
+- [x] web/css/reference/selectors/\_doublecolon_highlight
+- [x] web/css/reference/selectors/\_doublecolon_marker
+- [x] web/css/reference/selectors/\_doublecolon_part
+- [x] web/css/reference/selectors/\_doublecolon_picker
+- [x] web/css/reference/selectors/\_doublecolon_picker-icon
+- [x] web/css/reference/selectors/\_doublecolon_placeholder
+- [x] web/css/reference/selectors/\_doublecolon_scroll-button
+- [x] web/css/reference/selectors/\_doublecolon_scroll-marker
+- [x] web/css/reference/selectors/\_doublecolon_scroll-marker-group
+- [x] web/css/reference/selectors/\_doublecolon_search-text
+- [x] web/css/reference/selectors/\_doublecolon_selection
+- [x] web/css/reference/selectors/\_doublecolon_slotted
+- [x] web/css/reference/selectors/\_doublecolon_spelling-error
+- [x] web/css/reference/selectors/\_doublecolon_target-text
+- [x] web/css/reference/selectors/\_doublecolon_view-transition
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-group
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-image-pair
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-new
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-old
+- [x] web/css/reference/selectors/attribute_selectors
+- [x] web/css/reference/selectors/child_combinator
+- [x] web/css/reference/selectors/class_selectors
+- [x] web/css/reference/selectors/column_combinator
+- [x] web/css/reference/selectors/combinators
+- [x] web/css/reference/selectors/descendant_combinator
+- [x] web/css/reference/selectors/id_selectors
+- [x] web/css/reference/selectors/keyframe_selectors
+- [x] web/css/reference/selectors/namespace_separator
+- [x] web/css/reference/selectors/nesting_selector
+- [x] web/css/reference/selectors/next-sibling_combinator
+- [x] web/css/reference/selectors/pseudo-classes
+- [x] web/css/reference/selectors/pseudo-elements
+- [x] web/css/reference/selectors/selector_list
+- [x] web/css/reference/selectors/subsequent-sibling_combinator
+- [x] web/css/reference/selectors/type_selectors
+- [x] web/css/reference/selectors/universal_selectors
 
 ## Reference — Values / types (184 pages)
 
-- [ ] web/css/reference/values/index.md
-- [ ] web/css/reference/values/-moz-image-rect
-- [ ] web/css/reference/values/abs
-- [ ] web/css/reference/values/absolute-size
-- [ ] web/css/reference/values/acos
-- [ ] web/css/reference/values/alpha-value
-- [ ] web/css/reference/values/anchor
-- [ ] web/css/reference/values/anchor-size
-- [ ] web/css/reference/values/angle
-- [ ] web/css/reference/values/angle-percentage
-- [ ] web/css/reference/values/asin
-- [ ] web/css/reference/values/atan
-- [ ] web/css/reference/values/atan2
-- [ ] web/css/reference/values/attr
-- [ ] web/css/reference/values/axis
-- [ ] web/css/reference/values/baseline-position
-- [ ] web/css/reference/values/basic-shape
-- [ ] web/css/reference/values/basic-shape/circle
-- [ ] web/css/reference/values/basic-shape/ellipse
-- [ ] web/css/reference/values/basic-shape/inset
-- [ ] web/css/reference/values/basic-shape/path
-- [ ] web/css/reference/values/basic-shape/polygon
-- [ ] web/css/reference/values/basic-shape/rect
-- [ ] web/css/reference/values/basic-shape/shape
-- [ ] web/css/reference/values/basic-shape/xywh
-- [ ] web/css/reference/values/blend-mode
-- [ ] web/css/reference/values/box-edge
-- [ ] web/css/reference/values/calc
-- [ ] web/css/reference/values/calc-keyword
-- [ ] web/css/reference/values/calc-size
-- [ ] web/css/reference/values/calc-sum
-- [ ] web/css/reference/values/clamp
-- [ ] web/css/reference/values/color-interpolation-method
-- [ ] web/css/reference/values/color_value
-- [ ] web/css/reference/values/color_value/color
-- [ ] web/css/reference/values/color_value/color-mix
-- [ ] web/css/reference/values/color_value/contrast-color
-- [ ] web/css/reference/values/color_value/device-cmyk
-- [ ] web/css/reference/values/color_value/hsl
-- [ ] web/css/reference/values/color_value/hwb
-- [ ] web/css/reference/values/color_value/lab
-- [ ] web/css/reference/values/color_value/lch
-- [ ] web/css/reference/values/color_value/light-dark
-- [ ] web/css/reference/values/color_value/oklab
-- [ ] web/css/reference/values/color_value/oklch
-- [ ] web/css/reference/values/color_value/rgb
-- [ ] web/css/reference/values/content-distribution
-- [ ] web/css/reference/values/content-position
-- [ ] web/css/reference/values/corner-shape-value
-- [ ] web/css/reference/values/cos
-- [ ] web/css/reference/values/counter
-- [ ] web/css/reference/values/counters
-- [ ] web/css/reference/values/cross-fade
-- [ ] web/css/reference/values/custom-ident
-- [ ] web/css/reference/values/dashed-function
-- [ ] web/css/reference/values/dashed-ident
-- [ ] web/css/reference/values/data_types
-- [ ] web/css/reference/values/dimension
-- [ ] web/css/reference/values/display-box
-- [ ] web/css/reference/values/display-inside
-- [ ] web/css/reference/values/display-internal
-- [ ] web/css/reference/values/display-legacy
-- [ ] web/css/reference/values/display-listitem
-- [ ] web/css/reference/values/display-outside
-- [ ] web/css/reference/values/dynamic-range-limit-mix
-- [ ] web/css/reference/values/easing-function
-- [ ] web/css/reference/values/easing-function/cubic-bezier
-- [ ] web/css/reference/values/easing-function/linear
-- [ ] web/css/reference/values/easing-function/steps
-- [ ] web/css/reference/values/element
-- [ ] web/css/reference/values/env
-- [ ] web/css/reference/values/exp
-- [ ] web/css/reference/values/filter-function
-- [ ] web/css/reference/values/filter-function/blur
-- [ ] web/css/reference/values/filter-function/brightness
-- [ ] web/css/reference/values/filter-function/contrast
-- [ ] web/css/reference/values/filter-function/drop-shadow
-- [ ] web/css/reference/values/filter-function/grayscale
-- [ ] web/css/reference/values/filter-function/hue-rotate
-- [ ] web/css/reference/values/filter-function/invert
-- [ ] web/css/reference/values/filter-function/opacity
-- [ ] web/css/reference/values/filter-function/saturate
-- [ ] web/css/reference/values/filter-function/sepia
-- [ ] web/css/reference/values/fit-content
-- [ ] web/css/reference/values/fit-content_function
-- [ ] web/css/reference/values/flex_value
-- [ ] web/css/reference/values/frequency
-- [ ] web/css/reference/values/frequency-percentage
-- [ ] web/css/reference/values/functions
-- [ ] web/css/reference/values/generic-family
-- [ ] web/css/reference/values/gradient
-- [ ] web/css/reference/values/gradient/conic-gradient
-- [ ] web/css/reference/values/gradient/linear-gradient
-- [ ] web/css/reference/values/gradient/radial-gradient
-- [ ] web/css/reference/values/gradient/repeating-conic-gradient
-- [ ] web/css/reference/values/gradient/repeating-linear-gradient
-- [ ] web/css/reference/values/gradient/repeating-radial-gradient
-- [ ] web/css/reference/values/hex-color
-- [ ] web/css/reference/values/hue
-- [ ] web/css/reference/values/hue-interpolation-method
-- [ ] web/css/reference/values/hypot
-- [ ] web/css/reference/values/ident
-- [ ] web/css/reference/values/if
-- [ ] web/css/reference/values/image
-- [ ] web/css/reference/values/image/image
-- [ ] web/css/reference/values/image/image-set
-- [ ] web/css/reference/values/image/paint
-- [ ] web/css/reference/values/important
-- [ ] web/css/reference/values/inherit
-- [ ] web/css/reference/values/initial
-- [ ] web/css/reference/values/integer
-- [ ] web/css/reference/values/length
-- [ ] web/css/reference/values/length-percentage
-- [ ] web/css/reference/values/line-style
-- [ ] web/css/reference/values/log
-- [ ] web/css/reference/values/max
-- [ ] web/css/reference/values/max-content
-- [ ] web/css/reference/values/min
-- [ ] web/css/reference/values/min-content
-- [ ] web/css/reference/values/minmax
-- [ ] web/css/reference/values/mod
-- [ ] web/css/reference/values/named-color
-- [ ] web/css/reference/values/number
-- [ ] web/css/reference/values/overflow-position
-- [ ] web/css/reference/values/overflow_value
-- [ ] web/css/reference/values/percentage
-- [ ] web/css/reference/values/position-area_value
-- [ ] web/css/reference/values/position_value
-- [ ] web/css/reference/values/pow
-- [ ] web/css/reference/values/progress
-- [ ] web/css/reference/values/random
-- [ ] web/css/reference/values/ratio
-- [ ] web/css/reference/values/ray
-- [ ] web/css/reference/values/relative-size
-- [ ] web/css/reference/values/rem
-- [ ] web/css/reference/values/repeat
-- [ ] web/css/reference/values/resolution
-- [ ] web/css/reference/values/revert
-- [ ] web/css/reference/values/revert-layer
-- [ ] web/css/reference/values/round
-- [ ] web/css/reference/values/rule-list
-- [ ] web/css/reference/values/self-position
-- [ ] web/css/reference/values/shape
-- [ ] web/css/reference/values/sibling-count
-- [ ] web/css/reference/values/sibling-index
-- [ ] web/css/reference/values/sign
-- [ ] web/css/reference/values/sin
-- [ ] web/css/reference/values/sqrt
-- [ ] web/css/reference/values/string
-- [ ] web/css/reference/values/superellipse
-- [ ] web/css/reference/values/symbols
-- [ ] web/css/reference/values/system-color
-- [ ] web/css/reference/values/tan
-- [ ] web/css/reference/values/text-edge
-- [ ] web/css/reference/values/time
-- [ ] web/css/reference/values/time-percentage
-- [ ] web/css/reference/values/timeline-range-name
-- [ ] web/css/reference/values/transform-function
-- [ ] web/css/reference/values/transform-function/matrix
-- [ ] web/css/reference/values/transform-function/matrix3d
-- [ ] web/css/reference/values/transform-function/perspective
-- [ ] web/css/reference/values/transform-function/rotate
-- [ ] web/css/reference/values/transform-function/rotate3d
-- [ ] web/css/reference/values/transform-function/rotatex
-- [ ] web/css/reference/values/transform-function/rotatey
-- [ ] web/css/reference/values/transform-function/rotatez
-- [ ] web/css/reference/values/transform-function/scale
-- [ ] web/css/reference/values/transform-function/scale3d
-- [ ] web/css/reference/values/transform-function/scalex
-- [ ] web/css/reference/values/transform-function/scaley
-- [ ] web/css/reference/values/transform-function/scalez
-- [ ] web/css/reference/values/transform-function/skew
-- [ ] web/css/reference/values/transform-function/skewx
-- [ ] web/css/reference/values/transform-function/skewy
-- [ ] web/css/reference/values/transform-function/translate
-- [ ] web/css/reference/values/transform-function/translate3d
-- [ ] web/css/reference/values/transform-function/translatex
-- [ ] web/css/reference/values/transform-function/translatey
-- [ ] web/css/reference/values/transform-function/translatez
-- [ ] web/css/reference/values/type
-- [ ] web/css/reference/values/unset
-- [ ] web/css/reference/values/url_function
-- [ ] web/css/reference/values/url_value
-- [ ] web/css/reference/values/var
+- [x] web/css/reference/values/index.md
+- [x] web/css/reference/values/-moz-image-rect
+- [x] web/css/reference/values/abs
+- [x] web/css/reference/values/absolute-size
+- [x] web/css/reference/values/acos
+- [x] web/css/reference/values/alpha-value
+- [x] web/css/reference/values/anchor
+- [x] web/css/reference/values/anchor-size
+- [x] web/css/reference/values/angle
+- [x] web/css/reference/values/angle-percentage
+- [x] web/css/reference/values/asin
+- [x] web/css/reference/values/atan
+- [x] web/css/reference/values/atan2
+- [x] web/css/reference/values/attr
+- [x] web/css/reference/values/axis
+- [x] web/css/reference/values/baseline-position
+- [x] web/css/reference/values/basic-shape
+- [x] web/css/reference/values/basic-shape/circle
+- [x] web/css/reference/values/basic-shape/ellipse
+- [x] web/css/reference/values/basic-shape/inset
+- [x] web/css/reference/values/basic-shape/path
+- [x] web/css/reference/values/basic-shape/polygon
+- [x] web/css/reference/values/basic-shape/rect
+- [x] web/css/reference/values/basic-shape/shape
+- [x] web/css/reference/values/basic-shape/xywh
+- [x] web/css/reference/values/blend-mode
+- [x] web/css/reference/values/box-edge
+- [x] web/css/reference/values/calc
+- [x] web/css/reference/values/calc-keyword
+- [x] web/css/reference/values/calc-size
+- [x] web/css/reference/values/calc-sum
+- [x] web/css/reference/values/clamp
+- [x] web/css/reference/values/color-interpolation-method
+- [x] web/css/reference/values/color_value
+- [x] web/css/reference/values/color_value/color
+- [x] web/css/reference/values/color_value/color-mix
+- [x] web/css/reference/values/color_value/contrast-color
+- [x] web/css/reference/values/color_value/device-cmyk
+- [x] web/css/reference/values/color_value/hsl
+- [x] web/css/reference/values/color_value/hwb
+- [x] web/css/reference/values/color_value/lab
+- [x] web/css/reference/values/color_value/lch
+- [x] web/css/reference/values/color_value/light-dark
+- [x] web/css/reference/values/color_value/oklab
+- [x] web/css/reference/values/color_value/oklch
+- [x] web/css/reference/values/color_value/rgb
+- [x] web/css/reference/values/content-distribution
+- [x] web/css/reference/values/content-position
+- [x] web/css/reference/values/corner-shape-value
+- [x] web/css/reference/values/cos
+- [x] web/css/reference/values/counter
+- [x] web/css/reference/values/counters
+- [x] web/css/reference/values/cross-fade
+- [x] web/css/reference/values/custom-ident
+- [x] web/css/reference/values/dashed-function
+- [x] web/css/reference/values/dashed-ident
+- [x] web/css/reference/values/data_types
+- [x] web/css/reference/values/dimension
+- [x] web/css/reference/values/display-box
+- [x] web/css/reference/values/display-inside
+- [x] web/css/reference/values/display-internal
+- [x] web/css/reference/values/display-legacy
+- [x] web/css/reference/values/display-listitem
+- [x] web/css/reference/values/display-outside
+- [x] web/css/reference/values/dynamic-range-limit-mix
+- [x] web/css/reference/values/easing-function
+- [x] web/css/reference/values/easing-function/cubic-bezier
+- [x] web/css/reference/values/easing-function/linear
+- [x] web/css/reference/values/easing-function/steps
+- [x] web/css/reference/values/element
+- [x] web/css/reference/values/env
+- [x] web/css/reference/values/exp
+- [x] web/css/reference/values/filter-function
+- [x] web/css/reference/values/filter-function/blur
+- [x] web/css/reference/values/filter-function/brightness
+- [x] web/css/reference/values/filter-function/contrast
+- [x] web/css/reference/values/filter-function/drop-shadow
+- [x] web/css/reference/values/filter-function/grayscale
+- [x] web/css/reference/values/filter-function/hue-rotate
+- [x] web/css/reference/values/filter-function/invert
+- [x] web/css/reference/values/filter-function/opacity
+- [x] web/css/reference/values/filter-function/saturate
+- [x] web/css/reference/values/filter-function/sepia
+- [x] web/css/reference/values/fit-content
+- [x] web/css/reference/values/fit-content_function
+- [x] web/css/reference/values/flex_value
+- [x] web/css/reference/values/frequency
+- [x] web/css/reference/values/frequency-percentage
+- [x] web/css/reference/values/functions
+- [x] web/css/reference/values/generic-family
+- [x] web/css/reference/values/gradient
+- [x] web/css/reference/values/gradient/conic-gradient
+- [x] web/css/reference/values/gradient/linear-gradient
+- [x] web/css/reference/values/gradient/radial-gradient
+- [x] web/css/reference/values/gradient/repeating-conic-gradient
+- [x] web/css/reference/values/gradient/repeating-linear-gradient
+- [x] web/css/reference/values/gradient/repeating-radial-gradient
+- [x] web/css/reference/values/hex-color
+- [x] web/css/reference/values/hue
+- [x] web/css/reference/values/hue-interpolation-method
+- [x] web/css/reference/values/hypot
+- [x] web/css/reference/values/ident
+- [x] web/css/reference/values/if
+- [x] web/css/reference/values/image
+- [x] web/css/reference/values/image/image
+- [x] web/css/reference/values/image/image-set
+- [x] web/css/reference/values/image/paint
+- [x] web/css/reference/values/important
+- [x] web/css/reference/values/inherit
+- [x] web/css/reference/values/initial
+- [x] web/css/reference/values/integer
+- [x] web/css/reference/values/length
+- [x] web/css/reference/values/length-percentage
+- [x] web/css/reference/values/line-style
+- [x] web/css/reference/values/log
+- [x] web/css/reference/values/max
+- [x] web/css/reference/values/max-content
+- [x] web/css/reference/values/min
+- [x] web/css/reference/values/min-content
+- [x] web/css/reference/values/minmax
+- [x] web/css/reference/values/mod
+- [x] web/css/reference/values/named-color
+- [x] web/css/reference/values/number
+- [x] web/css/reference/values/overflow-position
+- [x] web/css/reference/values/overflow_value
+- [x] web/css/reference/values/percentage
+- [x] web/css/reference/values/position-area_value
+- [x] web/css/reference/values/position_value
+- [x] web/css/reference/values/pow
+- [x] web/css/reference/values/progress
+- [x] web/css/reference/values/random
+- [x] web/css/reference/values/ratio
+- [x] web/css/reference/values/ray
+- [x] web/css/reference/values/relative-size
+- [x] web/css/reference/values/rem
+- [x] web/css/reference/values/repeat
+- [x] web/css/reference/values/resolution
+- [x] web/css/reference/values/revert
+- [x] web/css/reference/values/revert-layer
+- [x] web/css/reference/values/round
+- [x] web/css/reference/values/rule-list
+- [x] web/css/reference/values/self-position
+- [x] web/css/reference/values/shape
+- [x] web/css/reference/values/sibling-count
+- [x] web/css/reference/values/sibling-index
+- [x] web/css/reference/values/sign
+- [x] web/css/reference/values/sin
+- [x] web/css/reference/values/sqrt
+- [x] web/css/reference/values/string
+- [x] web/css/reference/values/superellipse
+- [x] web/css/reference/values/symbols
+- [x] web/css/reference/values/system-color
+- [x] web/css/reference/values/tan
+- [x] web/css/reference/values/text-edge
+- [x] web/css/reference/values/time
+- [x] web/css/reference/values/time-percentage
+- [x] web/css/reference/values/timeline-range-name
+- [x] web/css/reference/values/transform-function
+- [x] web/css/reference/values/transform-function/matrix
+- [x] web/css/reference/values/transform-function/matrix3d
+- [x] web/css/reference/values/transform-function/perspective
+- [x] web/css/reference/values/transform-function/rotate
+- [x] web/css/reference/values/transform-function/rotate3d
+- [x] web/css/reference/values/transform-function/rotatex
+- [x] web/css/reference/values/transform-function/rotatey
+- [x] web/css/reference/values/transform-function/rotatez
+- [x] web/css/reference/values/transform-function/scale
+- [x] web/css/reference/values/transform-function/scale3d
+- [x] web/css/reference/values/transform-function/scalex
+- [x] web/css/reference/values/transform-function/scaley
+- [x] web/css/reference/values/transform-function/scalez
+- [x] web/css/reference/values/transform-function/skew
+- [x] web/css/reference/values/transform-function/skewx
+- [x] web/css/reference/values/transform-function/skewy
+- [x] web/css/reference/values/transform-function/translate
+- [x] web/css/reference/values/transform-function/translate3d
+- [x] web/css/reference/values/transform-function/translatex
+- [x] web/css/reference/values/transform-function/translatey
+- [x] web/css/reference/values/transform-function/translatez
+- [x] web/css/reference/values/type
+- [x] web/css/reference/values/unset
+- [x] web/css/reference/values/url_function
+- [x] web/css/reference/values/url_value
+- [x] web/css/reference/values/var

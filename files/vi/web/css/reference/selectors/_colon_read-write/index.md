@@ -1,0 +1,180 @@
+---
+title: :read-write
+slug: Web/CSS/Reference/Selectors/:read-write
+page-type: css-pseudo-class
+browser-compat: css.selectors.read-write
+sidebar: cssref
+---
+
+Lớp giả **`:read-write`** trong [CSS](/en-US/docs/Web/CSS) ([pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes)) đại diện cho một phần tử (chẳng hạn như `input` hoặc `textarea`) có thể chỉnh sửa bởi người dùng.
+
+{{InteractiveExample("CSS Demo: :read-write", "tabbed-shorter")}}
+
+```css interactive-example
+label,
+input[type="submit"] {
+  display: block;
+  margin-top: 1em;
+}
+
+*:read-write {
+  background-color: ivory;
+  border: 2px solid darkorange;
+  border-radius: 5px;
+}
+```
+
+```html interactive-example
+<p>Please fill in your details:</p>
+
+<form>
+  <label for="email">Email Address:</label>
+  <input id="email" name="email" type="email" value="test@example.com" />
+
+  <label for="note">Short note about yourself:</label>
+  <textarea id="note" name="note">Don't be shy</textarea>
+
+  <label for="pic">Your picture:</label>
+  <input id="pic" name="pic" type="file" />
+
+  <input type="submit" value="Submit form" />
+</form>
+```
+
+## Cú pháp
+
+```css
+:read-write {
+  /* ... */
+}
+```
+
+## Ví dụ
+
+### Xác nhận thông tin biểu mẫu bằng các điều khiển chỉ đọc
+
+Bạn có thể sử dụng các điều khiển biểu mẫu [`readonly`](/en-US/docs/Web/HTML/Reference/Attributes/readonly) khi muốn người dùng xác minh thông tin họ đã nhập trước đó, mà bạn muốn gửi cùng với dữ liệu mới trong các điều khiển đọc-ghi. Trong ví dụ dưới đây, lớp giả {{cssxref(":read-only")}} được sử dụng để làm cho {{htmlelement("textarea")}} (địa chỉ của người dùng) trông như một đoạn văn bình thường. Lớp giả `:read-write` cung cấp cách làm nổi bật `<textarea>` có thể chỉnh sửa (hướng dẫn giao hàng):
+
+```css hidden
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 10px auto;
+}
+
+legend {
+  color: white;
+  background: black;
+  padding: 5px 10px;
+}
+
+fieldset > div {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button,
+label,
+textarea {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 30px;
+}
+
+textarea {
+  width: 50%;
+}
+
+textarea {
+  height: 70px;
+  resize: none;
+}
+
+label {
+  width: 40%;
+}
+```
+
+```css
+textarea:read-only {
+  border: 0;
+}
+
+textarea:read-write {
+  box-shadow: inset 1px 1px 3px #cccccc;
+  border-radius: 5px;
+}
+```
+
+```html
+<form>
+  <fieldset>
+    <legend>Confirm details</legend>
+    <div>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" readonly>
+123 Choco Mountain,
+Awesome Ridge,
+CA</textarea
+      >
+    </div>
+    <div>
+      <label for="instructions">Delivery instructions</label>
+      <textarea id="instructions" name="instructions"></textarea>
+    </div>
+  </fieldset>
+  <button type="submit">Confirm</button>
+</form>
+```
+
+{{embedlivesample("confirming_form_details_using_read-only_controls", , "300")}}
+
+### Tạo kiểu cho các điều khiển không phải biểu mẫu đọc-ghi
+
+Bộ chọn này không chỉ chọn các phần tử {{htmlElement("input")}}/{{htmlElement("textarea")}} mà nó sẽ chọn _bất kỳ_ phần tử nào có thể chỉnh sửa bởi người dùng, chẳng hạn như phần tử {{htmlelement("p")}} với thuộc tính [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) được đặt trên đó.
+
+```html
+<p contenteditable>This paragraph is editable; it is read-write.</p>
+
+<p>This paragraph is not editable; it is read-only.</p>
+```
+
+```css
+body {
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 150%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+p:read-only {
+  background-color: red;
+  color: white;
+}
+
+p:read-write {
+  background-color: lime;
+}
+```
+
+{{EmbedLiveSample('Styling_read-write_non-form_controls')}}
+
+## Thông số kỹ thuật
+
+{{Specifications}}
+
+## Tương thích trình duyệt
+
+{{Compat}}
+
+## Xem thêm
+
+- {{cssxref(":read-only")}}
+- HTML [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) attribute

@@ -1,0 +1,32 @@
+---
+title: :-moz-handler-disabled
+slug: Web/CSS/Reference/Selectors/:-moz-handler-disabled
+page-type: css-pseudo-class
+status:
+  - non-standard
+sidebar: cssref
+---
+
+{{Non-standard_header}}
+
+**`:-moz-handler-disabled`** là [lớp giả](/vi/docs/Web/CSS/Reference/Selectors/Pseudo-classes) [CSS](/vi/docs/Web/CSS) là một [phần mở rộng Mozilla](/vi/docs/Web/CSS/Reference/Mozilla_extensions) khớp với các phần tử không thể hiển thị vì trình xử lý của chúng đã bị người dùng tắt.
+
+> [!NOTE]
+> Bộ chọn này chủ yếu được thiết kế để sử dụng bởi các nhà phát triển theme.
+
+## Cú pháp
+
+```css
+:-moz-handler-disabled {
+  /* ... */
+}
+```
+
+## Thông số kỹ thuật
+
+Không thuộc bất kỳ tiêu chuẩn nào.
+
+## Xem thêm
+
+- {{ cssxref(":-moz-handler-blocked") }}
+- {{ cssxref(":-moz-handler-crashed") }}
