@@ -717,18 +717,18 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/outline-width
 - [x] web/css/reference/properties/overflow
 - [x] web/css/reference/properties/overflow-anchor
-- [ ] web/css/reference/properties/overflow-block
+- [x] web/css/reference/properties/overflow-block
 - [x] web/css/reference/properties/overflow-clip-margin
 - [x] web/css/reference/properties/overflow-inline
 - [x] web/css/reference/properties/overflow-wrap
 - [x] web/css/reference/properties/overflow-x
-- [ ] web/css/reference/properties/overflow-y
-- [ ] web/css/reference/properties/overlay
-- [ ] web/css/reference/properties/overscroll-behavior
-- [ ] web/css/reference/properties/overscroll-behavior-block
-- [ ] web/css/reference/properties/overscroll-behavior-inline
-- [ ] web/css/reference/properties/overscroll-behavior-x
-- [ ] web/css/reference/properties/overscroll-behavior-y
+- [x] web/css/reference/properties/overflow-y
+- [x] web/css/reference/properties/overlay
+- [x] web/css/reference/properties/overscroll-behavior
+- [x] web/css/reference/properties/overscroll-behavior-block
+- [x] web/css/reference/properties/overscroll-behavior-inline
+- [x] web/css/reference/properties/overscroll-behavior-x
+- [x] web/css/reference/properties/overscroll-behavior-y
 - [x] web/css/reference/properties/padding
 - [x] web/css/reference/properties/padding-block
 - [x] web/css/reference/properties/padding-block-end
@@ -750,10 +750,10 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/place-content
 - [x] web/css/reference/properties/place-items
 - [x] web/css/reference/properties/place-self
-- [ ] web/css/reference/properties/pointer-events
+- [x] web/css/reference/properties/pointer-events
 - [x] web/css/reference/properties/position
-- [ ] web/css/reference/properties/position-anchor
-- [ ] web/css/reference/properties/position-area
+- [x] web/css/reference/properties/position-anchor
+- [x] web/css/reference/properties/position-area
 - [x] web/css/reference/properties/position-try
 - [x] web/css/reference/properties/position-try-fallbacks
 - [x] web/css/reference/properties/position-try-order
@@ -818,24 +818,24 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/stroke
 - [x] web/css/reference/properties/stroke-dasharray
 - [x] web/css/reference/properties/stroke-dashoffset
-- [ ] web/css/reference/properties/stroke-linecap
-- [ ] web/css/reference/properties/stroke-linejoin
+- [x] web/css/reference/properties/stroke-linecap
+- [x] web/css/reference/properties/stroke-linejoin
 - [x] web/css/reference/properties/stroke-miterlimit
 - [x] web/css/reference/properties/stroke-opacity
 - [x] web/css/reference/properties/stroke-width
 - [x] web/css/reference/properties/tab-size
 - [x] web/css/reference/properties/table-layout
-- [ ] web/css/reference/properties/text-align
-- [ ] web/css/reference/properties/text-align-last
-- [ ] web/css/reference/properties/text-anchor
+- [x] web/css/reference/properties/text-align
+- [x] web/css/reference/properties/text-align-last
+- [x] web/css/reference/properties/text-anchor
 - [x] web/css/reference/properties/text-autospace
 - [x] web/css/reference/properties/text-box
 - [x] web/css/reference/properties/text-box-edge
 - [x] web/css/reference/properties/text-box-trim
-- [ ] web/css/reference/properties/text-combine-upright
-- [ ] web/css/reference/properties/text-decoration
-- [ ] web/css/reference/properties/text-decoration-color
-- [ ] web/css/reference/properties/text-decoration-inset
+- [x] web/css/reference/properties/text-combine-upright
+- [x] web/css/reference/properties/text-decoration
+- [x] web/css/reference/properties/text-decoration-color
+- [x] web/css/reference/properties/text-decoration-inset
 - [x] web/css/reference/properties/text-decoration-line
 - [x] web/css/reference/properties/text-decoration-skip
 - [x] web/css/reference/properties/text-decoration-skip-ink
@@ -845,29 +845,29 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/text-emphasis-color
 - [x] web/css/reference/properties/text-emphasis-position
 - [x] web/css/reference/properties/text-emphasis-style
-- [ ] web/css/reference/properties/text-indent
-- [ ] web/css/reference/properties/text-justify
-- [ ] web/css/reference/properties/text-orientation
-- [ ] web/css/reference/properties/text-overflow
-- [ ] web/css/reference/properties/text-rendering
-- [ ] web/css/reference/properties/text-shadow
-- [ ] web/css/reference/properties/text-size-adjust
+- [x] web/css/reference/properties/text-indent
+- [x] web/css/reference/properties/text-justify
+- [x] web/css/reference/properties/text-orientation
+- [x] web/css/reference/properties/text-overflow
+- [x] web/css/reference/properties/text-rendering
+- [x] web/css/reference/properties/text-shadow
+- [x] web/css/reference/properties/text-size-adjust
 - [x] web/css/reference/properties/text-spacing-trim
 - [x] web/css/reference/properties/text-transform
 - [x] web/css/reference/properties/text-underline-offset
 - [x] web/css/reference/properties/text-underline-position
-- [ ] web/css/reference/properties/text-wrap
-- [ ] web/css/reference/properties/text-wrap-mode
-- [ ] web/css/reference/properties/text-wrap-style
-- [ ] web/css/reference/properties/timeline-scope
+- [x] web/css/reference/properties/text-wrap
+- [x] web/css/reference/properties/text-wrap-mode
+- [x] web/css/reference/properties/text-wrap-style
+- [x] web/css/reference/properties/timeline-scope
 - [x] web/css/reference/properties/top
 - [x] web/css/reference/properties/touch-action
 - [x] web/css/reference/properties/transform
 - [x] web/css/reference/properties/transform-box
-- [ ] web/css/reference/properties/transform-origin
-- [ ] web/css/reference/properties/transform-style
-- [ ] web/css/reference/properties/transition
-- [ ] web/css/reference/properties/transition-behavior
+- [x] web/css/reference/properties/transform-origin
+- [x] web/css/reference/properties/transform-style
+- [x] web/css/reference/properties/transition
+- [x] web/css/reference/properties/transition-behavior
 - [x] web/css/reference/properties/transition-delay
 - [x] web/css/reference/properties/transition-duration
 - [x] web/css/reference/properties/transition-property
@@ -880,18 +880,18 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/vertical-align
 - [x] web/css/reference/properties/view-timeline
 - [x] web/css/reference/properties/view-timeline-axis
-- [ ] web/css/reference/properties/view-timeline-inset
-- [ ] web/css/reference/properties/view-timeline-name
-- [ ] web/css/reference/properties/view-transition-class
-- [ ] web/css/reference/properties/view-transition-name
+- [x] web/css/reference/properties/view-timeline-inset
+- [x] web/css/reference/properties/view-timeline-name
+- [x] web/css/reference/properties/view-transition-class
+- [x] web/css/reference/properties/view-transition-name
 - [x] web/css/reference/properties/visibility
 - [x] web/css/reference/properties/white-space
 - [x] web/css/reference/properties/white-space-collapse
 - [x] web/css/reference/properties/widows
 - [x] web/css/reference/properties/width
-- [ ] web/css/reference/properties/will-change
-- [ ] web/css/reference/properties/word-break
-- [ ] web/css/reference/properties/word-spacing
+- [x] web/css/reference/properties/will-change
+- [x] web/css/reference/properties/word-break
+- [x] web/css/reference/properties/word-spacing
 - [x] web/css/reference/properties/writing-mode
 - [x] web/css/reference/properties/x
 - [x] web/css/reference/properties/y
@@ -902,20 +902,20 @@ Total: 1,226 pages
 
 - [x] web/css/reference/selectors/index.md
 - [x] web/css/reference/selectors/_colon_-moz-broken
-- [ ] web/css/reference/selectors/_colon_-moz-drag-over
-- [ ] web/css/reference/selectors/_colon_-moz-first-node
-- [ ] web/css/reference/selectors/_colon_-moz-handler-blocked
-- [ ] web/css/reference/selectors/_colon_-moz-handler-crashed
-- [ ] web/css/reference/selectors/_colon_-moz-handler-disabled
-- [ ] web/css/reference/selectors/_colon_-moz-last-node
-- [ ] web/css/reference/selectors/_colon_-moz-loading
-- [ ] web/css/reference/selectors/_colon_-moz-locale-dir_ltr
-- [ ] web/css/reference/selectors/_colon_-moz-locale-dir_rtl
-- [ ] web/css/reference/selectors/_colon_-moz-only-whitespace
-- [ ] web/css/reference/selectors/_colon_-moz-submit-invalid
-- [ ] web/css/reference/selectors/_colon_-moz-suppressed
-- [ ] web/css/reference/selectors/_colon_-moz-user-disabled
-- [ ] web/css/reference/selectors/_colon_-moz-window-inactive
+- [x] web/css/reference/selectors/_colon_-moz-drag-over
+- [x] web/css/reference/selectors/_colon_-moz-first-node
+- [x] web/css/reference/selectors/_colon_-moz-handler-blocked
+- [x] web/css/reference/selectors/_colon_-moz-handler-crashed
+- [x] web/css/reference/selectors/_colon_-moz-handler-disabled
+- [x] web/css/reference/selectors/_colon_-moz-last-node
+- [x] web/css/reference/selectors/_colon_-moz-loading
+- [x] web/css/reference/selectors/_colon_-moz-locale-dir_ltr
+- [x] web/css/reference/selectors/_colon_-moz-locale-dir_rtl
+- [x] web/css/reference/selectors/_colon_-moz-only-whitespace
+- [x] web/css/reference/selectors/_colon_-moz-submit-invalid
+- [x] web/css/reference/selectors/_colon_-moz-suppressed
+- [x] web/css/reference/selectors/_colon_-moz-user-disabled
+- [x] web/css/reference/selectors/_colon_-moz-window-inactive
 - [ ] web/css/reference/selectors/\_colon_active
 - [ ] web/css/reference/selectors/\_colon_active-view-transition
 - [ ] web/css/reference/selectors/\_colon_active-view-transition-type
