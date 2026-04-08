@@ -182,8 +182,8 @@ Bộ chọn không có không gian tên, `|a`, khớp phần tử `<a>` được
 ## Xem thêm
 
 - {{cssxref("@namespace")}}
-- Phương thức [`Document.createElementNS()`](/en-US/docs/Web/API/Document/createElementNS)
-- Thuộc tính [`Element.namespaceURI`](/en-US/docs/Web/API/Element/namespaceURI)
-- [Bộ chọn kiểu CSS](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors)
-- [Bộ chọn toàn thể CSS](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors)
-- [Mô-đun bộ chọn CSS](/en-US/docs/Web/CSS/Guides/Selectors)
+- Phương thức [`Document.createElementNS()`](/vi/docs/Web/API/Document/createElementNS)
+- Thuộc tính [`Element.namespaceURI`](/vi/docs/Web/API/Element/namespaceURI)
+- [Bộ chọn kiểu CSS](/vi/docs/Web/CSS/Reference/Selectors/Type_selectors)
+- [Bộ chọn toàn thể CSS](/vi/docs/Web/CSS/Reference/Selectors/Universal_selectors)
+- [Mô-đun bộ chọn CSS](/vi/docs/Web/CSS/Guides/Selectors)

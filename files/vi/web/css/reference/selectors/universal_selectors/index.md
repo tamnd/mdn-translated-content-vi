@@ -98,5 +98,5 @@ example|* {
 
 ## Xem thêm
 
-- [CSS selectors](/en-US/docs/Web/CSS/Guides/Selectors) module
-- [Learn CSS: Basic selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
+- Mô-đun [CSS selectors](/vi/docs/Web/CSS/Guides/Selectors)
+- [Học CSS: Các bộ chọn cơ bản](/vi/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)

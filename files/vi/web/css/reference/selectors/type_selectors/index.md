@@ -70,5 +70,5 @@ example|h1 {
 
 ## Xem thêm
 
-- [CSS Selectors](/en-US/docs/Web/CSS/Guides/Selectors)
-- [Learn CSS: Basic selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
+- [CSS Selectors](/vi/docs/Web/CSS/Guides/Selectors)
+- [Học CSS: Các bộ chọn cơ bản](/vi/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
