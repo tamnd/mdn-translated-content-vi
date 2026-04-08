@@ -626,102 +626,102 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/image-resolution
 - [x] web/css/reference/properties/initial-letter
 - [x] web/css/reference/properties/inline-size
-- [ ] web/css/reference/properties/inset
-- [ ] web/css/reference/properties/inset-block
-- [ ] web/css/reference/properties/inset-block-end
-- [ ] web/css/reference/properties/inset-block-start
-- [ ] web/css/reference/properties/inset-inline
-- [ ] web/css/reference/properties/inset-inline-end
-- [ ] web/css/reference/properties/inset-inline-start
-- [ ] web/css/reference/properties/interactivity
-- [ ] web/css/reference/properties/interest-delay
-- [ ] web/css/reference/properties/interest-delay-end
-- [ ] web/css/reference/properties/interest-delay-start
-- [ ] web/css/reference/properties/interpolate-size
-- [ ] web/css/reference/properties/isolation
-- [ ] web/css/reference/properties/justify-content
-- [ ] web/css/reference/properties/justify-items
-- [ ] web/css/reference/properties/justify-self
-- [ ] web/css/reference/properties/left
-- [ ] web/css/reference/properties/letter-spacing
-- [ ] web/css/reference/properties/lighting-color
-- [ ] web/css/reference/properties/line-break
-- [ ] web/css/reference/properties/line-clamp
-- [ ] web/css/reference/properties/line-height
-- [ ] web/css/reference/properties/line-height-step
-- [ ] web/css/reference/properties/list-style
-- [ ] web/css/reference/properties/list-style-image
-- [ ] web/css/reference/properties/list-style-position
-- [ ] web/css/reference/properties/list-style-type
-- [ ] web/css/reference/properties/margin
-- [ ] web/css/reference/properties/margin-block
-- [ ] web/css/reference/properties/margin-block-end
-- [ ] web/css/reference/properties/margin-block-start
-- [ ] web/css/reference/properties/margin-bottom
-- [ ] web/css/reference/properties/margin-inline
-- [ ] web/css/reference/properties/margin-inline-end
-- [ ] web/css/reference/properties/margin-inline-start
-- [ ] web/css/reference/properties/margin-left
-- [ ] web/css/reference/properties/margin-right
-- [ ] web/css/reference/properties/margin-top
-- [ ] web/css/reference/properties/margin-trim
-- [ ] web/css/reference/properties/marker
-- [ ] web/css/reference/properties/marker-end
-- [ ] web/css/reference/properties/marker-mid
-- [ ] web/css/reference/properties/marker-start
-- [ ] web/css/reference/properties/mask
-- [ ] web/css/reference/properties/mask-border
-- [ ] web/css/reference/properties/mask-border-mode
-- [ ] web/css/reference/properties/mask-border-outset
-- [ ] web/css/reference/properties/mask-border-repeat
-- [ ] web/css/reference/properties/mask-border-slice
-- [ ] web/css/reference/properties/mask-border-source
-- [ ] web/css/reference/properties/mask-border-width
-- [ ] web/css/reference/properties/mask-clip
-- [ ] web/css/reference/properties/mask-composite
-- [ ] web/css/reference/properties/mask-image
-- [ ] web/css/reference/properties/mask-mode
-- [ ] web/css/reference/properties/mask-origin
-- [ ] web/css/reference/properties/mask-position
-- [ ] web/css/reference/properties/mask-repeat
-- [ ] web/css/reference/properties/mask-size
-- [ ] web/css/reference/properties/mask-type
-- [ ] web/css/reference/properties/math-depth
-- [ ] web/css/reference/properties/math-shift
-- [ ] web/css/reference/properties/math-style
-- [ ] web/css/reference/properties/max-block-size
-- [ ] web/css/reference/properties/max-height
-- [ ] web/css/reference/properties/max-inline-size
-- [ ] web/css/reference/properties/max-width
-- [ ] web/css/reference/properties/min-block-size
-- [ ] web/css/reference/properties/min-height
-- [ ] web/css/reference/properties/min-inline-size
-- [ ] web/css/reference/properties/min-width
-- [ ] web/css/reference/properties/mix-blend-mode
-- [ ] web/css/reference/properties/object-fit
-- [ ] web/css/reference/properties/object-position
-- [ ] web/css/reference/properties/object-view-box
-- [ ] web/css/reference/properties/offset
-- [ ] web/css/reference/properties/offset-anchor
-- [ ] web/css/reference/properties/offset-distance
-- [ ] web/css/reference/properties/offset-path
-- [ ] web/css/reference/properties/offset-position
-- [ ] web/css/reference/properties/offset-rotate
-- [ ] web/css/reference/properties/opacity
-- [ ] web/css/reference/properties/order
-- [ ] web/css/reference/properties/orphans
-- [ ] web/css/reference/properties/outline
-- [ ] web/css/reference/properties/outline-color
-- [ ] web/css/reference/properties/outline-offset
-- [ ] web/css/reference/properties/outline-style
-- [ ] web/css/reference/properties/outline-width
-- [ ] web/css/reference/properties/overflow
-- [ ] web/css/reference/properties/overflow-anchor
+- [x] web/css/reference/properties/inset
+- [x] web/css/reference/properties/inset-block
+- [x] web/css/reference/properties/inset-block-end
+- [x] web/css/reference/properties/inset-block-start
+- [x] web/css/reference/properties/inset-inline
+- [x] web/css/reference/properties/inset-inline-end
+- [x] web/css/reference/properties/inset-inline-start
+- [x] web/css/reference/properties/interactivity
+- [x] web/css/reference/properties/interest-delay
+- [x] web/css/reference/properties/interest-delay-end
+- [x] web/css/reference/properties/interest-delay-start
+- [x] web/css/reference/properties/interpolate-size
+- [x] web/css/reference/properties/isolation
+- [x] web/css/reference/properties/justify-content
+- [x] web/css/reference/properties/justify-items
+- [x] web/css/reference/properties/justify-self
+- [x] web/css/reference/properties/left
+- [x] web/css/reference/properties/letter-spacing
+- [x] web/css/reference/properties/lighting-color
+- [x] web/css/reference/properties/line-break
+- [x] web/css/reference/properties/line-clamp
+- [x] web/css/reference/properties/line-height
+- [x] web/css/reference/properties/line-height-step
+- [x] web/css/reference/properties/list-style
+- [x] web/css/reference/properties/list-style-image
+- [x] web/css/reference/properties/list-style-position
+- [x] web/css/reference/properties/list-style-type
+- [x] web/css/reference/properties/margin
+- [x] web/css/reference/properties/margin-block
+- [x] web/css/reference/properties/margin-block-end
+- [x] web/css/reference/properties/margin-block-start
+- [x] web/css/reference/properties/margin-bottom
+- [x] web/css/reference/properties/margin-inline
+- [x] web/css/reference/properties/margin-inline-end
+- [x] web/css/reference/properties/margin-inline-start
+- [x] web/css/reference/properties/margin-left
+- [x] web/css/reference/properties/margin-right
+- [x] web/css/reference/properties/margin-top
+- [x] web/css/reference/properties/margin-trim
+- [x] web/css/reference/properties/marker
+- [x] web/css/reference/properties/marker-end
+- [x] web/css/reference/properties/marker-mid
+- [x] web/css/reference/properties/marker-start
+- [x] web/css/reference/properties/mask
+- [x] web/css/reference/properties/mask-border
+- [x] web/css/reference/properties/mask-border-mode
+- [x] web/css/reference/properties/mask-border-outset
+- [x] web/css/reference/properties/mask-border-repeat
+- [x] web/css/reference/properties/mask-border-slice
+- [x] web/css/reference/properties/mask-border-source
+- [x] web/css/reference/properties/mask-border-width
+- [x] web/css/reference/properties/mask-clip
+- [x] web/css/reference/properties/mask-composite
+- [x] web/css/reference/properties/mask-image
+- [x] web/css/reference/properties/mask-mode
+- [x] web/css/reference/properties/mask-origin
+- [x] web/css/reference/properties/mask-position
+- [x] web/css/reference/properties/mask-repeat
+- [x] web/css/reference/properties/mask-size
+- [x] web/css/reference/properties/mask-type
+- [x] web/css/reference/properties/math-depth
+- [x] web/css/reference/properties/math-shift
+- [x] web/css/reference/properties/math-style
+- [x] web/css/reference/properties/max-block-size
+- [x] web/css/reference/properties/max-height
+- [x] web/css/reference/properties/max-inline-size
+- [x] web/css/reference/properties/max-width
+- [x] web/css/reference/properties/min-block-size
+- [x] web/css/reference/properties/min-height
+- [x] web/css/reference/properties/min-inline-size
+- [x] web/css/reference/properties/min-width
+- [x] web/css/reference/properties/mix-blend-mode
+- [x] web/css/reference/properties/object-fit
+- [x] web/css/reference/properties/object-position
+- [x] web/css/reference/properties/object-view-box
+- [x] web/css/reference/properties/offset
+- [x] web/css/reference/properties/offset-anchor
+- [x] web/css/reference/properties/offset-distance
+- [x] web/css/reference/properties/offset-path
+- [x] web/css/reference/properties/offset-position
+- [x] web/css/reference/properties/offset-rotate
+- [x] web/css/reference/properties/opacity
+- [x] web/css/reference/properties/order
+- [x] web/css/reference/properties/orphans
+- [x] web/css/reference/properties/outline
+- [x] web/css/reference/properties/outline-color
+- [x] web/css/reference/properties/outline-offset
+- [x] web/css/reference/properties/outline-style
+- [x] web/css/reference/properties/outline-width
+- [x] web/css/reference/properties/overflow
+- [x] web/css/reference/properties/overflow-anchor
 - [ ] web/css/reference/properties/overflow-block
-- [ ] web/css/reference/properties/overflow-clip-margin
-- [ ] web/css/reference/properties/overflow-inline
-- [ ] web/css/reference/properties/overflow-wrap
-- [ ] web/css/reference/properties/overflow-x
+- [x] web/css/reference/properties/overflow-clip-margin
+- [x] web/css/reference/properties/overflow-inline
+- [x] web/css/reference/properties/overflow-wrap
+- [x] web/css/reference/properties/overflow-x
 - [ ] web/css/reference/properties/overflow-y
 - [ ] web/css/reference/properties/overlay
 - [ ] web/css/reference/properties/overscroll-behavior
