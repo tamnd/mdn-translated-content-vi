@@ -916,47 +916,47 @@ Total: 1,226 pages
 - [x] web/css/reference/selectors/_colon_-moz-suppressed
 - [x] web/css/reference/selectors/_colon_-moz-user-disabled
 - [x] web/css/reference/selectors/_colon_-moz-window-inactive
-- [ ] web/css/reference/selectors/\_colon_active
-- [ ] web/css/reference/selectors/\_colon_active-view-transition
-- [ ] web/css/reference/selectors/\_colon_active-view-transition-type
-- [ ] web/css/reference/selectors/\_colon_any-link
-- [ ] web/css/reference/selectors/\_colon_autofill
-- [ ] web/css/reference/selectors/\_colon_blank
-- [ ] web/css/reference/selectors/\_colon_buffering
-- [ ] web/css/reference/selectors/\_colon_checked
-- [ ] web/css/reference/selectors/\_colon_current
-- [ ] web/css/reference/selectors/\_colon_default
-- [ ] web/css/reference/selectors/\_colon_defined
-- [ ] web/css/reference/selectors/\_colon_dir
-- [ ] web/css/reference/selectors/\_colon_disabled
-- [ ] web/css/reference/selectors/\_colon_empty
-- [ ] web/css/reference/selectors/\_colon_enabled
-- [ ] web/css/reference/selectors/\_colon_first
-- [ ] web/css/reference/selectors/\_colon_first-child
-- [ ] web/css/reference/selectors/\_colon_first-of-type
-- [ ] web/css/reference/selectors/\_colon_focus
-- [ ] web/css/reference/selectors/\_colon_focus-visible
-- [ ] web/css/reference/selectors/\_colon_focus-within
-- [ ] web/css/reference/selectors/\_colon_fullscreen
-- [ ] web/css/reference/selectors/\_colon_future
-- [ ] web/css/reference/selectors/\_colon_has
-- [ ] web/css/reference/selectors/\_colon_has-slotted
-- [ ] web/css/reference/selectors/\_colon_heading
-- [ ] web/css/reference/selectors/\_colon_heading_function
-- [ ] web/css/reference/selectors/\_colon_host
-- [ ] web/css/reference/selectors/\_colon_host-context
-- [ ] web/css/reference/selectors/\_colon_host_function
-- [ ] web/css/reference/selectors/\_colon_hover
-- [ ] web/css/reference/selectors/\_colon_in-range
-- [ ] web/css/reference/selectors/\_colon_indeterminate
-- [ ] web/css/reference/selectors/\_colon_interest-source
-- [ ] web/css/reference/selectors/\_colon_interest-target
-- [ ] web/css/reference/selectors/\_colon_invalid
-- [ ] web/css/reference/selectors/\_colon_is
-- [ ] web/css/reference/selectors/\_colon_lang
-- [ ] web/css/reference/selectors/\_colon_last-child
-- [ ] web/css/reference/selectors/\_colon_last-of-type
-- [ ] web/css/reference/selectors/\_colon_left
+- [x] web/css/reference/selectors/\_colon_active
+- [x] web/css/reference/selectors/\_colon_active-view-transition
+- [x] web/css/reference/selectors/\_colon_active-view-transition-type
+- [x] web/css/reference/selectors/\_colon_any-link
+- [x] web/css/reference/selectors/\_colon_autofill
+- [x] web/css/reference/selectors/\_colon_blank
+- [x] web/css/reference/selectors/\_colon_buffering
+- [x] web/css/reference/selectors/\_colon_checked
+- [x] web/css/reference/selectors/\_colon_current
+- [x] web/css/reference/selectors/\_colon_default
+- [x] web/css/reference/selectors/\_colon_defined
+- [x] web/css/reference/selectors/\_colon_dir
+- [x] web/css/reference/selectors/\_colon_disabled
+- [x] web/css/reference/selectors/\_colon_empty
+- [x] web/css/reference/selectors/\_colon_enabled
+- [x] web/css/reference/selectors/\_colon_first
+- [x] web/css/reference/selectors/\_colon_first-child
+- [x] web/css/reference/selectors/\_colon_first-of-type
+- [x] web/css/reference/selectors/\_colon_focus
+- [x] web/css/reference/selectors/\_colon_focus-visible
+- [x] web/css/reference/selectors/\_colon_focus-within
+- [x] web/css/reference/selectors/\_colon_fullscreen
+- [x] web/css/reference/selectors/\_colon_future
+- [x] web/css/reference/selectors/\_colon_has
+- [x] web/css/reference/selectors/\_colon_has-slotted
+- [x] web/css/reference/selectors/\_colon_heading
+- [x] web/css/reference/selectors/\_colon_heading_function
+- [x] web/css/reference/selectors/\_colon_host
+- [x] web/css/reference/selectors/\_colon_host-context
+- [x] web/css/reference/selectors/\_colon_host_function
+- [x] web/css/reference/selectors/\_colon_hover
+- [x] web/css/reference/selectors/\_colon_in-range
+- [x] web/css/reference/selectors/\_colon_indeterminate
+- [x] web/css/reference/selectors/\_colon_interest-source
+- [x] web/css/reference/selectors/\_colon_interest-target
+- [x] web/css/reference/selectors/\_colon_invalid
+- [x] web/css/reference/selectors/\_colon_is
+- [x] web/css/reference/selectors/\_colon_lang
+- [x] web/css/reference/selectors/\_colon_last-child
+- [x] web/css/reference/selectors/\_colon_last-of-type
+- [x] web/css/reference/selectors/\_colon_left
 - [ ] web/css/reference/selectors/\_colon_link
 - [ ] web/css/reference/selectors/\_colon_local-link
 - [ ] web/css/reference/selectors/\_colon_modal
