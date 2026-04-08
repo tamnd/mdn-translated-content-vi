@@ -6,10 +6,10 @@ browser-compat: css.types.color.light-dark
 sidebar: cssref
 ---
 
-[Hàm `<color>`](/vi/docs/Web/CSS/Reference/Values/Functions#color_functions) của [CSS](/vi/docs/Web/CSS) **`light-dark()`** cho phép đặt hai màu cho một thuộc tính - trả về một trong hai tùy chọn màu bằng cách phát hiện liệu nhà phát triển đã đặt giao diện màu sáng hay tối hoặc người dùng đã yêu cầu giao diện màu sáng hay tối - mà không cần bao bọc màu giao diện trong truy vấn tính năng media [`prefers-color-scheme`](/vi/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme).
-Người dùng có thể chỉ định tùy chọn giao diện màu của họ thông qua cài đặt hệ điều hành (ví dụ: chế độ sáng hoặc tối) hoặc cài đặt user agent. Hàm `light-dark()` cho phép cung cấp hai giá trị màu trong đó bất kỳ giá trị `<color>` nào đều được chấp nhận. Hàm màu CSS `light-dark()` trả về giá trị đầu tiên nếu tùy chọn của người dùng được đặt là `light` hoặc nếu không có tùy chọn nào được đặt, và giá trị thứ hai nếu tùy chọn của người dùng được đặt là `dark`.
+Hàm [CSS](/vi/docs/Web/CSS) [`<color>` function](/vi/docs/Web/CSS/Reference/Values/Functions#color_functions) **`light-dark()`** cho phép đặt hai màu cho một thuộc tính - trả về một trong hai màu tùy chọn bằng cách phát hiện xem nhà phát triển đã đặt bố cục màu sáng hay tối, hoặc người dùng đã yêu cầu chủ đề màu sáng hay tối - mà không cần bao bọc màu chủ đề trong truy vấn [media feature](/vi/docs/Web/CSS/Guides/Media_queries/Using#targeting_media_features) [`prefers-color-scheme`](/vi/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme).
+Người dùng có thể chỉ định tùy chọn bố cục màu của mình thông qua cài đặt hệ điều hành (ví dụ: chế độ sáng hoặc tối) hoặc cài đặt user agent. Hàm `light-dark()` cho phép cung cấp hai giá trị màu trong đó bất kỳ giá trị `<color>` nào đều được chấp nhận. Hàm màu CSS `light-dark()` trả về giá trị đầu tiên nếu tùy chọn của người dùng được đặt thành `light` hoặc không có tùy chọn nào được đặt, và giá trị thứ hai nếu tùy chọn của người dùng được đặt thành `dark`.
 
-Để kích hoạt hỗ trợ cho hàm màu `light-dark()`, {{CSSXref("color-scheme")}} phải có giá trị `light dark`, thường được đặt trên [lớp giả](/vi/docs/Web/CSS/Reference/Selectors/Pseudo-classes) {{CSSXref(":root")}}.
+Để bật hỗ trợ cho hàm màu `light-dark()`, {{CSSXref("color-scheme")}} phải có giá trị `light dark`, thường được đặt trên [lớp giả](/vi/docs/Web/CSS/Reference/Selectors/Pseudo-classes) {{CSSXref(":root")}}.
 
 ```css
 :root {
@@ -39,10 +39,10 @@ color: light-dark(var(--light), var(--dark));
 Ký hiệu hàm: `light-dark(light-color, dark-color)`
 
 - `light-color`
-  - : Giá trị {{CSSXref("&lt;color&gt;")}} để đặt cho {{CSSXref("color-scheme")}} sáng.
+  - : Giá trị {{CSSXref("&lt;color&gt;")}} được đặt cho {{CSSXref("color-scheme")}} sáng.
 
 - `dark-color`
-  - : Giá trị {{CSSXref("&lt;color&gt;")}} để đặt cho {{CSSXref("color-scheme")}} tối.
+  - : Giá trị {{CSSXref("&lt;color&gt;")}} được đặt cho {{CSSXref("color-scheme")}} tối.
 
 ## Cú pháp chính thức
 
@@ -50,13 +50,13 @@ Ký hiệu hàm: `light-dark(light-color, dark-color)`
 
 ## Ví dụ
 
-### Đặt màu dựa trên giao diện màu
+### Đặt màu dựa trên bố cục màu
 
-Theo mặc định, trong các trình duyệt hỗ trợ, màu được trả về bởi hàm màu `light-dark()` phụ thuộc vào tùy chọn người dùng được đặt qua cài đặt hệ điều hành (ví dụ: chế độ sáng hoặc tối) hoặc từ cài đặt user agent. Bạn cũng có thể thay đổi cài đặt này trong {{glossary("developer tools", "công cụ dành cho nhà phát triển")}} của trình duyệt.
+Theo mặc định, trong các trình duyệt hỗ trợ, màu trả về bởi hàm màu `light-dark()` phụ thuộc vào tùy chọn người dùng được đặt thông qua cài đặt hệ điều hành (ví dụ: chế độ sáng hoặc tối) hoặc từ cài đặt user agent. Bạn cũng có thể thay đổi cài đặt này trong {{glossary("developer tools")}} của trình duyệt.
 
 #### HTML
 
-Chúng ta bao gồm ba phần để kích hoạt việc nhắm mục tiêu màu sáng, màu tối, và màu được chọn dựa trên giao diện màu ưa thích của người dùng.
+Chúng ta bao gồm ba phần để có thể nhắm mục tiêu màu sáng, màu tối và màu được chọn dựa trên tùy chọn bố cục màu của người dùng.
 
 ```html
 <h1><code>light-dark()</code> CSS function</h1>
@@ -78,11 +78,11 @@ Chúng ta bao gồm ba phần để kích hoạt việc nhắm mục tiêu màu 
 
 #### CSS
 
-Chúng ta bao gồm các màu cho cả giao diện sáng và tối. Chúng ta cũng định nghĩa `color-scheme` cho tài liệu trên `:root` để kích hoạt hàm màu `light-dark()` cho toàn bộ tài liệu.
+Chúng ta bao gồm màu cho cả chủ đề sáng và tối. Chúng ta cũng định nghĩa `color-scheme` cho tài liệu trên `:root` để bật hàm màu `light-dark()` cho toàn bộ tài liệu.
 
 ```css-nolint
 :root {
-  /* phải được đặt để chuyển đổi giữa sáng hoặc tối */
+  /* this has to be set to switch between light or dark */
   color-scheme: light dark;
 
   --light-bg: ghostwhite;
@@ -102,18 +102,18 @@ code {
 }
 ```
 
-Ngoài việc kích hoạt hàm `light-dark()`, thuộc tính `color-scheme` cho phép ghi đè giao diện màu của người dùng cho các phần tài liệu. Có thể buộc một phần trang chỉ sử dụng giao diện màu sáng hoặc tối bằng cách đặt thuộc tính `color-scheme` thành `light` hoặc `dark`.
+Ngoài việc bật hàm `light-dark()`, thuộc tính `color-scheme` còn cho phép ghi đè bố cục màu của người dùng cho các phần của tài liệu. Việc buộc một phần trang chỉ sử dụng bố cục màu sáng hoặc tối có thể được thực hiện bằng cách đặt thuộc tính `color-scheme` thành `light` hoặc `dark`.
 
 > [!NOTE]
-> Thông thường điều này không nên được thực hiện, chúng ta sử dụng nó ở đây chỉ để minh họa. Nếu người dùng đã đặt tùy chọn, thông thường bạn không nên ghi đè tùy chọn của họ.
+> Nói chung, điều này không nên được thực hiện; chúng tôi sử dụng nó ở đây cho mục đích minh họa. Nếu người dùng đã đặt tùy chọn, bạn thường không nên ghi đè tùy chọn của họ.
 
 ```css
 .light {
-  /* buộc giao diện màu sáng */
+  /* forces light color-scheme */
   color-scheme: light;
 }
 .dark {
-  /* buộc giao diện màu tối */
+  /* forces dark color-scheme */
   color-scheme: dark;
 }
 ```
@@ -128,7 +128,7 @@ section {
 
 {{EmbedLiveSample("setting_colors_based_on_color_scheme", "100%", 500)}}
 
-## Thông số kỹ thuật
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
