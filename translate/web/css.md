@@ -729,24 +729,24 @@ Total: 1,226 pages
 - [ ] web/css/reference/properties/overscroll-behavior-inline
 - [ ] web/css/reference/properties/overscroll-behavior-x
 - [ ] web/css/reference/properties/overscroll-behavior-y
-- [ ] web/css/reference/properties/padding
-- [ ] web/css/reference/properties/padding-block
-- [ ] web/css/reference/properties/padding-block-end
-- [ ] web/css/reference/properties/padding-block-start
-- [ ] web/css/reference/properties/padding-bottom
-- [ ] web/css/reference/properties/padding-inline
-- [ ] web/css/reference/properties/padding-inline-end
-- [ ] web/css/reference/properties/padding-inline-start
-- [ ] web/css/reference/properties/padding-left
-- [ ] web/css/reference/properties/padding-right
-- [ ] web/css/reference/properties/padding-top
-- [ ] web/css/reference/properties/page
-- [ ] web/css/reference/properties/page-break-after
-- [ ] web/css/reference/properties/page-break-before
-- [ ] web/css/reference/properties/page-break-inside
-- [ ] web/css/reference/properties/paint-order
-- [ ] web/css/reference/properties/perspective
-- [ ] web/css/reference/properties/perspective-origin
+- [x] web/css/reference/properties/padding
+- [x] web/css/reference/properties/padding-block
+- [x] web/css/reference/properties/padding-block-end
+- [x] web/css/reference/properties/padding-block-start
+- [x] web/css/reference/properties/padding-bottom
+- [x] web/css/reference/properties/padding-inline
+- [x] web/css/reference/properties/padding-inline-end
+- [x] web/css/reference/properties/padding-inline-start
+- [x] web/css/reference/properties/padding-left
+- [x] web/css/reference/properties/padding-right
+- [x] web/css/reference/properties/padding-top
+- [x] web/css/reference/properties/page
+- [x] web/css/reference/properties/page-break-after
+- [x] web/css/reference/properties/page-break-before
+- [x] web/css/reference/properties/page-break-inside
+- [x] web/css/reference/properties/paint-order
+- [x] web/css/reference/properties/perspective
+- [x] web/css/reference/properties/perspective-origin
 - [ ] web/css/reference/properties/place-content
 - [ ] web/css/reference/properties/place-items
 - [ ] web/css/reference/properties/place-self
@@ -754,70 +754,70 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/position
 - [ ] web/css/reference/properties/position-anchor
 - [ ] web/css/reference/properties/position-area
-- [ ] web/css/reference/properties/position-try
-- [ ] web/css/reference/properties/position-try-fallbacks
-- [ ] web/css/reference/properties/position-try-order
-- [ ] web/css/reference/properties/position-visibility
-- [ ] web/css/reference/properties/print-color-adjust
-- [ ] web/css/reference/properties/quotes
-- [ ] web/css/reference/properties/r
-- [ ] web/css/reference/properties/reading-flow
-- [ ] web/css/reference/properties/reading-order
-- [ ] web/css/reference/properties/resize
-- [ ] web/css/reference/properties/right
-- [ ] web/css/reference/properties/rotate
-- [ ] web/css/reference/properties/row-gap
-- [ ] web/css/reference/properties/ruby-align
-- [ ] web/css/reference/properties/ruby-overhang
-- [ ] web/css/reference/properties/ruby-position
-- [ ] web/css/reference/properties/rx
-- [ ] web/css/reference/properties/ry
-- [ ] web/css/reference/properties/scale
-- [ ] web/css/reference/properties/scroll-behavior
-- [ ] web/css/reference/properties/scroll-initial-target
-- [ ] web/css/reference/properties/scroll-margin
-- [ ] web/css/reference/properties/scroll-margin-block
-- [ ] web/css/reference/properties/scroll-margin-block-end
-- [ ] web/css/reference/properties/scroll-margin-block-start
-- [ ] web/css/reference/properties/scroll-margin-bottom
-- [ ] web/css/reference/properties/scroll-margin-inline
-- [ ] web/css/reference/properties/scroll-margin-inline-end
-- [ ] web/css/reference/properties/scroll-margin-inline-start
-- [ ] web/css/reference/properties/scroll-margin-left
-- [ ] web/css/reference/properties/scroll-margin-right
-- [ ] web/css/reference/properties/scroll-margin-top
-- [ ] web/css/reference/properties/scroll-marker-group
-- [ ] web/css/reference/properties/scroll-padding
-- [ ] web/css/reference/properties/scroll-padding-block
-- [ ] web/css/reference/properties/scroll-padding-block-end
-- [ ] web/css/reference/properties/scroll-padding-block-start
-- [ ] web/css/reference/properties/scroll-padding-bottom
-- [ ] web/css/reference/properties/scroll-padding-inline
-- [ ] web/css/reference/properties/scroll-padding-inline-end
-- [ ] web/css/reference/properties/scroll-padding-inline-start
-- [ ] web/css/reference/properties/scroll-padding-left
-- [ ] web/css/reference/properties/scroll-padding-right
-- [ ] web/css/reference/properties/scroll-padding-top
-- [ ] web/css/reference/properties/scroll-snap-align
-- [ ] web/css/reference/properties/scroll-snap-stop
-- [ ] web/css/reference/properties/scroll-snap-type
-- [ ] web/css/reference/properties/scroll-target-group
-- [ ] web/css/reference/properties/scroll-timeline
-- [ ] web/css/reference/properties/scroll-timeline-axis
-- [ ] web/css/reference/properties/scroll-timeline-name
-- [ ] web/css/reference/properties/scrollbar-color
-- [ ] web/css/reference/properties/scrollbar-gutter
-- [ ] web/css/reference/properties/scrollbar-width
-- [ ] web/css/reference/properties/shape-image-threshold
-- [ ] web/css/reference/properties/shape-margin
-- [ ] web/css/reference/properties/shape-outside
-- [ ] web/css/reference/properties/shape-rendering
-- [ ] web/css/reference/properties/speak-as
-- [ ] web/css/reference/properties/stop-color
-- [ ] web/css/reference/properties/stop-opacity
-- [ ] web/css/reference/properties/stroke
-- [ ] web/css/reference/properties/stroke-dasharray
-- [ ] web/css/reference/properties/stroke-dashoffset
+- [x] web/css/reference/properties/position-try
+- [x] web/css/reference/properties/position-try-fallbacks
+- [x] web/css/reference/properties/position-try-order
+- [x] web/css/reference/properties/position-visibility
+- [x] web/css/reference/properties/print-color-adjust
+- [x] web/css/reference/properties/quotes
+- [x] web/css/reference/properties/r
+- [x] web/css/reference/properties/reading-flow
+- [x] web/css/reference/properties/reading-order
+- [x] web/css/reference/properties/resize
+- [x] web/css/reference/properties/right
+- [x] web/css/reference/properties/rotate
+- [x] web/css/reference/properties/row-gap
+- [x] web/css/reference/properties/ruby-align
+- [x] web/css/reference/properties/ruby-overhang
+- [x] web/css/reference/properties/ruby-position
+- [x] web/css/reference/properties/rx
+- [x] web/css/reference/properties/ry
+- [x] web/css/reference/properties/scale
+- [x] web/css/reference/properties/scroll-behavior
+- [x] web/css/reference/properties/scroll-initial-target
+- [x] web/css/reference/properties/scroll-margin
+- [x] web/css/reference/properties/scroll-margin-block
+- [x] web/css/reference/properties/scroll-margin-block-end
+- [x] web/css/reference/properties/scroll-margin-block-start
+- [x] web/css/reference/properties/scroll-margin-bottom
+- [x] web/css/reference/properties/scroll-margin-inline
+- [x] web/css/reference/properties/scroll-margin-inline-end
+- [x] web/css/reference/properties/scroll-margin-inline-start
+- [x] web/css/reference/properties/scroll-margin-left
+- [x] web/css/reference/properties/scroll-margin-right
+- [x] web/css/reference/properties/scroll-margin-top
+- [x] web/css/reference/properties/scroll-marker-group
+- [x] web/css/reference/properties/scroll-padding
+- [x] web/css/reference/properties/scroll-padding-block
+- [x] web/css/reference/properties/scroll-padding-block-end
+- [x] web/css/reference/properties/scroll-padding-block-start
+- [x] web/css/reference/properties/scroll-padding-bottom
+- [x] web/css/reference/properties/scroll-padding-inline
+- [x] web/css/reference/properties/scroll-padding-inline-end
+- [x] web/css/reference/properties/scroll-padding-inline-start
+- [x] web/css/reference/properties/scroll-padding-left
+- [x] web/css/reference/properties/scroll-padding-right
+- [x] web/css/reference/properties/scroll-padding-top
+- [x] web/css/reference/properties/scroll-snap-align
+- [x] web/css/reference/properties/scroll-snap-stop
+- [x] web/css/reference/properties/scroll-snap-type
+- [x] web/css/reference/properties/scroll-target-group
+- [x] web/css/reference/properties/scroll-timeline
+- [x] web/css/reference/properties/scroll-timeline-axis
+- [x] web/css/reference/properties/scroll-timeline-name
+- [x] web/css/reference/properties/scrollbar-color
+- [x] web/css/reference/properties/scrollbar-gutter
+- [x] web/css/reference/properties/scrollbar-width
+- [x] web/css/reference/properties/shape-image-threshold
+- [x] web/css/reference/properties/shape-margin
+- [x] web/css/reference/properties/shape-outside
+- [x] web/css/reference/properties/shape-rendering
+- [x] web/css/reference/properties/speak-as
+- [x] web/css/reference/properties/stop-color
+- [x] web/css/reference/properties/stop-opacity
+- [x] web/css/reference/properties/stroke
+- [x] web/css/reference/properties/stroke-dasharray
+- [x] web/css/reference/properties/stroke-dashoffset
 - [ ] web/css/reference/properties/stroke-linecap
 - [ ] web/css/reference/properties/stroke-linejoin
 - [ ] web/css/reference/properties/stroke-miterlimit
