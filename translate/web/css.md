@@ -1109,11 +1109,11 @@ Total: 1,226 pages
 - [x] web/css/reference/values/color_value/device-cmyk
 - [x] web/css/reference/values/color_value/hsl
 - [x] web/css/reference/values/color_value/hwb
-- [ ] web/css/reference/values/color_value/lab
-- [ ] web/css/reference/values/color_value/lch
-- [ ] web/css/reference/values/color_value/light-dark
-- [ ] web/css/reference/values/color_value/oklab
-- [ ] web/css/reference/values/color_value/oklch
+- [x] web/css/reference/values/color_value/lab
+- [x] web/css/reference/values/color_value/lch
+- [x] web/css/reference/values/color_value/light-dark
+- [x] web/css/reference/values/color_value/oklab
+- [x] web/css/reference/values/color_value/oklch
 - [x] web/css/reference/values/color_value/rgb
 - [x] web/css/reference/values/content-distribution
 - [x] web/css/reference/values/content-position
