@@ -963,8 +963,8 @@ Total: 1,226 pages
 - [x] web/css/reference/selectors/\_colon_muted
 - [x] web/css/reference/selectors/\_colon_not
 - [x] web/css/reference/selectors/\_colon_nth-child
-- [ ] web/css/reference/selectors/\_colon_nth-last-child
-- [ ] web/css/reference/selectors/\_colon_nth-last-of-type
+- [x] web/css/reference/selectors/\_colon_nth-last-child
+- [x] web/css/reference/selectors/\_colon_nth-last-of-type
 - [x] web/css/reference/selectors/\_colon_nth-of-type
 - [x] web/css/reference/selectors/\_colon_only-child
 - [x] web/css/reference/selectors/\_colon_only-of-type
@@ -1027,8 +1027,8 @@ Total: 1,226 pages
 - [x] web/css/reference/selectors/\_doublecolon_cue
 - [x] web/css/reference/selectors/\_doublecolon_details-content
 - [x] web/css/reference/selectors/\_doublecolon_file-selector-button
-- [ ] web/css/reference/selectors/\_doublecolon_first-letter
-- [ ] web/css/reference/selectors/\_doublecolon_first-line
+- [x] web/css/reference/selectors/\_doublecolon_first-letter
+- [x] web/css/reference/selectors/\_doublecolon_first-line
 - [x] web/css/reference/selectors/\_doublecolon_grammar-error
 - [x] web/css/reference/selectors/\_doublecolon_highlight
 - [x] web/css/reference/selectors/\_doublecolon_marker
@@ -1036,15 +1036,15 @@ Total: 1,226 pages
 - [x] web/css/reference/selectors/\_doublecolon_picker
 - [x] web/css/reference/selectors/\_doublecolon_picker-icon
 - [x] web/css/reference/selectors/\_doublecolon_placeholder
-- [ ] web/css/reference/selectors/\_doublecolon_scroll-button
+- [x] web/css/reference/selectors/\_doublecolon_scroll-button
 - [x] web/css/reference/selectors/\_doublecolon_scroll-marker
 - [x] web/css/reference/selectors/\_doublecolon_scroll-marker-group
 - [x] web/css/reference/selectors/\_doublecolon_search-text
-- [ ] web/css/reference/selectors/\_doublecolon_selection
-- [ ] web/css/reference/selectors/\_doublecolon_slotted
-- [ ] web/css/reference/selectors/\_doublecolon_spelling-error
-- [ ] web/css/reference/selectors/\_doublecolon_target-text
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition
+- [x] web/css/reference/selectors/\_doublecolon_selection
+- [x] web/css/reference/selectors/\_doublecolon_slotted
+- [x] web/css/reference/selectors/\_doublecolon_spelling-error
+- [x] web/css/reference/selectors/\_doublecolon_target-text
+- [x] web/css/reference/selectors/\_doublecolon_view-transition
 - [x] web/css/reference/selectors/\_doublecolon_view-transition-group
 - [x] web/css/reference/selectors/\_doublecolon_view-transition-image-pair
 - [x] web/css/reference/selectors/\_doublecolon_view-transition-new
@@ -1054,202 +1054,202 @@ Total: 1,226 pages
 - [x] web/css/reference/selectors/class_selectors
 - [x] web/css/reference/selectors/column_combinator
 - [x] web/css/reference/selectors/combinators
-- [ ] web/css/reference/selectors/descendant_combinator
-- [ ] web/css/reference/selectors/id_selectors
-- [ ] web/css/reference/selectors/keyframe_selectors
-- [ ] web/css/reference/selectors/namespace_separator
+- [x] web/css/reference/selectors/descendant_combinator
+- [x] web/css/reference/selectors/id_selectors
+- [x] web/css/reference/selectors/keyframe_selectors
+- [x] web/css/reference/selectors/namespace_separator
 - [x] web/css/reference/selectors/nesting_selector
 - [x] web/css/reference/selectors/next-sibling_combinator
 - [x] web/css/reference/selectors/pseudo-classes
-- [ ] web/css/reference/selectors/pseudo-elements
-- [ ] web/css/reference/selectors/selector_list
-- [ ] web/css/reference/selectors/subsequent-sibling_combinator
-- [ ] web/css/reference/selectors/type_selectors
-- [ ] web/css/reference/selectors/universal_selectors
+- [x] web/css/reference/selectors/pseudo-elements
+- [x] web/css/reference/selectors/selector_list
+- [x] web/css/reference/selectors/subsequent-sibling_combinator
+- [x] web/css/reference/selectors/type_selectors
+- [x] web/css/reference/selectors/universal_selectors
 
 ## Reference — Values / types (184 pages)
 
-- [ ] web/css/reference/values/index.md
-- [ ] web/css/reference/values/-moz-image-rect
-- [ ] web/css/reference/values/abs
-- [ ] web/css/reference/values/absolute-size
-- [ ] web/css/reference/values/acos
-- [ ] web/css/reference/values/alpha-value
-- [ ] web/css/reference/values/anchor
-- [ ] web/css/reference/values/anchor-size
-- [ ] web/css/reference/values/angle
-- [ ] web/css/reference/values/angle-percentage
-- [ ] web/css/reference/values/asin
-- [ ] web/css/reference/values/atan
-- [ ] web/css/reference/values/atan2
-- [ ] web/css/reference/values/attr
-- [ ] web/css/reference/values/axis
-- [ ] web/css/reference/values/baseline-position
-- [ ] web/css/reference/values/basic-shape
-- [ ] web/css/reference/values/basic-shape/circle
-- [ ] web/css/reference/values/basic-shape/ellipse
-- [ ] web/css/reference/values/basic-shape/inset
-- [ ] web/css/reference/values/basic-shape/path
-- [ ] web/css/reference/values/basic-shape/polygon
-- [ ] web/css/reference/values/basic-shape/rect
-- [ ] web/css/reference/values/basic-shape/shape
-- [ ] web/css/reference/values/basic-shape/xywh
-- [ ] web/css/reference/values/blend-mode
-- [ ] web/css/reference/values/box-edge
-- [ ] web/css/reference/values/calc
-- [ ] web/css/reference/values/calc-keyword
-- [ ] web/css/reference/values/calc-size
-- [ ] web/css/reference/values/calc-sum
-- [ ] web/css/reference/values/clamp
-- [ ] web/css/reference/values/color-interpolation-method
-- [ ] web/css/reference/values/color_value
-- [ ] web/css/reference/values/color_value/color
-- [ ] web/css/reference/values/color_value/color-mix
-- [ ] web/css/reference/values/color_value/contrast-color
-- [ ] web/css/reference/values/color_value/device-cmyk
-- [ ] web/css/reference/values/color_value/hsl
-- [ ] web/css/reference/values/color_value/hwb
+- [x] web/css/reference/values/index.md
+- [x] web/css/reference/values/-moz-image-rect
+- [x] web/css/reference/values/abs
+- [x] web/css/reference/values/absolute-size
+- [x] web/css/reference/values/acos
+- [x] web/css/reference/values/alpha-value
+- [x] web/css/reference/values/anchor
+- [x] web/css/reference/values/anchor-size
+- [x] web/css/reference/values/angle
+- [x] web/css/reference/values/angle-percentage
+- [x] web/css/reference/values/asin
+- [x] web/css/reference/values/atan
+- [x] web/css/reference/values/atan2
+- [x] web/css/reference/values/attr
+- [x] web/css/reference/values/axis
+- [x] web/css/reference/values/baseline-position
+- [x] web/css/reference/values/basic-shape
+- [x] web/css/reference/values/basic-shape/circle
+- [x] web/css/reference/values/basic-shape/ellipse
+- [x] web/css/reference/values/basic-shape/inset
+- [x] web/css/reference/values/basic-shape/path
+- [x] web/css/reference/values/basic-shape/polygon
+- [x] web/css/reference/values/basic-shape/rect
+- [x] web/css/reference/values/basic-shape/shape
+- [x] web/css/reference/values/basic-shape/xywh
+- [x] web/css/reference/values/blend-mode
+- [x] web/css/reference/values/box-edge
+- [x] web/css/reference/values/calc
+- [x] web/css/reference/values/calc-keyword
+- [x] web/css/reference/values/calc-size
+- [x] web/css/reference/values/calc-sum
+- [x] web/css/reference/values/clamp
+- [x] web/css/reference/values/color-interpolation-method
+- [x] web/css/reference/values/color_value
+- [x] web/css/reference/values/color_value/color
+- [x] web/css/reference/values/color_value/color-mix
+- [x] web/css/reference/values/color_value/contrast-color
+- [x] web/css/reference/values/color_value/device-cmyk
+- [x] web/css/reference/values/color_value/hsl
+- [x] web/css/reference/values/color_value/hwb
 - [ ] web/css/reference/values/color_value/lab
 - [ ] web/css/reference/values/color_value/lch
 - [ ] web/css/reference/values/color_value/light-dark
 - [ ] web/css/reference/values/color_value/oklab
 - [ ] web/css/reference/values/color_value/oklch
-- [ ] web/css/reference/values/color_value/rgb
-- [ ] web/css/reference/values/content-distribution
-- [ ] web/css/reference/values/content-position
-- [ ] web/css/reference/values/corner-shape-value
-- [ ] web/css/reference/values/cos
-- [ ] web/css/reference/values/counter
-- [ ] web/css/reference/values/counters
-- [ ] web/css/reference/values/cross-fade
-- [ ] web/css/reference/values/custom-ident
-- [ ] web/css/reference/values/dashed-function
-- [ ] web/css/reference/values/dashed-ident
-- [ ] web/css/reference/values/data_types
-- [ ] web/css/reference/values/dimension
-- [ ] web/css/reference/values/display-box
-- [ ] web/css/reference/values/display-inside
-- [ ] web/css/reference/values/display-internal
-- [ ] web/css/reference/values/display-legacy
-- [ ] web/css/reference/values/display-listitem
-- [ ] web/css/reference/values/display-outside
-- [ ] web/css/reference/values/dynamic-range-limit-mix
-- [ ] web/css/reference/values/easing-function
-- [ ] web/css/reference/values/easing-function/cubic-bezier
-- [ ] web/css/reference/values/easing-function/linear
-- [ ] web/css/reference/values/easing-function/steps
-- [ ] web/css/reference/values/element
-- [ ] web/css/reference/values/env
-- [ ] web/css/reference/values/exp
-- [ ] web/css/reference/values/filter-function
-- [ ] web/css/reference/values/filter-function/blur
-- [ ] web/css/reference/values/filter-function/brightness
-- [ ] web/css/reference/values/filter-function/contrast
-- [ ] web/css/reference/values/filter-function/drop-shadow
-- [ ] web/css/reference/values/filter-function/grayscale
-- [ ] web/css/reference/values/filter-function/hue-rotate
-- [ ] web/css/reference/values/filter-function/invert
-- [ ] web/css/reference/values/filter-function/opacity
-- [ ] web/css/reference/values/filter-function/saturate
-- [ ] web/css/reference/values/filter-function/sepia
-- [ ] web/css/reference/values/fit-content
-- [ ] web/css/reference/values/fit-content_function
-- [ ] web/css/reference/values/flex_value
-- [ ] web/css/reference/values/frequency
-- [ ] web/css/reference/values/frequency-percentage
-- [ ] web/css/reference/values/functions
-- [ ] web/css/reference/values/generic-family
-- [ ] web/css/reference/values/gradient
-- [ ] web/css/reference/values/gradient/conic-gradient
-- [ ] web/css/reference/values/gradient/linear-gradient
-- [ ] web/css/reference/values/gradient/radial-gradient
-- [ ] web/css/reference/values/gradient/repeating-conic-gradient
-- [ ] web/css/reference/values/gradient/repeating-linear-gradient
-- [ ] web/css/reference/values/gradient/repeating-radial-gradient
-- [ ] web/css/reference/values/hex-color
-- [ ] web/css/reference/values/hue
-- [ ] web/css/reference/values/hue-interpolation-method
-- [ ] web/css/reference/values/hypot
-- [ ] web/css/reference/values/ident
-- [ ] web/css/reference/values/if
-- [ ] web/css/reference/values/image
-- [ ] web/css/reference/values/image/image
-- [ ] web/css/reference/values/image/image-set
-- [ ] web/css/reference/values/image/paint
-- [ ] web/css/reference/values/important
-- [ ] web/css/reference/values/inherit
-- [ ] web/css/reference/values/initial
-- [ ] web/css/reference/values/integer
-- [ ] web/css/reference/values/length
-- [ ] web/css/reference/values/length-percentage
-- [ ] web/css/reference/values/line-style
-- [ ] web/css/reference/values/log
-- [ ] web/css/reference/values/max
-- [ ] web/css/reference/values/max-content
-- [ ] web/css/reference/values/min
-- [ ] web/css/reference/values/min-content
-- [ ] web/css/reference/values/minmax
-- [ ] web/css/reference/values/mod
-- [ ] web/css/reference/values/named-color
-- [ ] web/css/reference/values/number
-- [ ] web/css/reference/values/overflow-position
-- [ ] web/css/reference/values/overflow_value
-- [ ] web/css/reference/values/percentage
-- [ ] web/css/reference/values/position-area_value
-- [ ] web/css/reference/values/position_value
-- [ ] web/css/reference/values/pow
-- [ ] web/css/reference/values/progress
-- [ ] web/css/reference/values/random
-- [ ] web/css/reference/values/ratio
-- [ ] web/css/reference/values/ray
-- [ ] web/css/reference/values/relative-size
-- [ ] web/css/reference/values/rem
-- [ ] web/css/reference/values/repeat
-- [ ] web/css/reference/values/resolution
-- [ ] web/css/reference/values/revert
-- [ ] web/css/reference/values/revert-layer
-- [ ] web/css/reference/values/round
-- [ ] web/css/reference/values/rule-list
-- [ ] web/css/reference/values/self-position
-- [ ] web/css/reference/values/shape
-- [ ] web/css/reference/values/sibling-count
-- [ ] web/css/reference/values/sibling-index
-- [ ] web/css/reference/values/sign
-- [ ] web/css/reference/values/sin
-- [ ] web/css/reference/values/sqrt
-- [ ] web/css/reference/values/string
-- [ ] web/css/reference/values/superellipse
-- [ ] web/css/reference/values/symbols
-- [ ] web/css/reference/values/system-color
-- [ ] web/css/reference/values/tan
-- [ ] web/css/reference/values/text-edge
-- [ ] web/css/reference/values/time
-- [ ] web/css/reference/values/time-percentage
-- [ ] web/css/reference/values/timeline-range-name
-- [ ] web/css/reference/values/transform-function
-- [ ] web/css/reference/values/transform-function/matrix
-- [ ] web/css/reference/values/transform-function/matrix3d
-- [ ] web/css/reference/values/transform-function/perspective
-- [ ] web/css/reference/values/transform-function/rotate
-- [ ] web/css/reference/values/transform-function/rotate3d
-- [ ] web/css/reference/values/transform-function/rotatex
-- [ ] web/css/reference/values/transform-function/rotatey
-- [ ] web/css/reference/values/transform-function/rotatez
-- [ ] web/css/reference/values/transform-function/scale
-- [ ] web/css/reference/values/transform-function/scale3d
-- [ ] web/css/reference/values/transform-function/scalex
-- [ ] web/css/reference/values/transform-function/scaley
-- [ ] web/css/reference/values/transform-function/scalez
-- [ ] web/css/reference/values/transform-function/skew
-- [ ] web/css/reference/values/transform-function/skewx
-- [ ] web/css/reference/values/transform-function/skewy
-- [ ] web/css/reference/values/transform-function/translate
-- [ ] web/css/reference/values/transform-function/translate3d
-- [ ] web/css/reference/values/transform-function/translatex
-- [ ] web/css/reference/values/transform-function/translatey
-- [ ] web/css/reference/values/transform-function/translatez
-- [ ] web/css/reference/values/type
-- [ ] web/css/reference/values/unset
-- [ ] web/css/reference/values/url_function
-- [ ] web/css/reference/values/url_value
-- [ ] web/css/reference/values/var
+- [x] web/css/reference/values/color_value/rgb
+- [x] web/css/reference/values/content-distribution
+- [x] web/css/reference/values/content-position
+- [x] web/css/reference/values/corner-shape-value
+- [x] web/css/reference/values/cos
+- [x] web/css/reference/values/counter
+- [x] web/css/reference/values/counters
+- [x] web/css/reference/values/cross-fade
+- [x] web/css/reference/values/custom-ident
+- [x] web/css/reference/values/dashed-function
+- [x] web/css/reference/values/dashed-ident
+- [x] web/css/reference/values/data_types
+- [x] web/css/reference/values/dimension
+- [x] web/css/reference/values/display-box
+- [x] web/css/reference/values/display-inside
+- [x] web/css/reference/values/display-internal
+- [x] web/css/reference/values/display-legacy
+- [x] web/css/reference/values/display-listitem
+- [x] web/css/reference/values/display-outside
+- [x] web/css/reference/values/dynamic-range-limit-mix
+- [x] web/css/reference/values/easing-function
+- [x] web/css/reference/values/easing-function/cubic-bezier
+- [x] web/css/reference/values/easing-function/linear
+- [x] web/css/reference/values/easing-function/steps
+- [x] web/css/reference/values/element
+- [x] web/css/reference/values/env
+- [x] web/css/reference/values/exp
+- [x] web/css/reference/values/filter-function
+- [x] web/css/reference/values/filter-function/blur
+- [x] web/css/reference/values/filter-function/brightness
+- [x] web/css/reference/values/filter-function/contrast
+- [x] web/css/reference/values/filter-function/drop-shadow
+- [x] web/css/reference/values/filter-function/grayscale
+- [x] web/css/reference/values/filter-function/hue-rotate
+- [x] web/css/reference/values/filter-function/invert
+- [x] web/css/reference/values/filter-function/opacity
+- [x] web/css/reference/values/filter-function/saturate
+- [x] web/css/reference/values/filter-function/sepia
+- [x] web/css/reference/values/fit-content
+- [x] web/css/reference/values/fit-content_function
+- [x] web/css/reference/values/flex_value
+- [x] web/css/reference/values/frequency
+- [x] web/css/reference/values/frequency-percentage
+- [x] web/css/reference/values/functions
+- [x] web/css/reference/values/generic-family
+- [x] web/css/reference/values/gradient
+- [x] web/css/reference/values/gradient/conic-gradient
+- [x] web/css/reference/values/gradient/linear-gradient
+- [x] web/css/reference/values/gradient/radial-gradient
+- [x] web/css/reference/values/gradient/repeating-conic-gradient
+- [x] web/css/reference/values/gradient/repeating-linear-gradient
+- [x] web/css/reference/values/gradient/repeating-radial-gradient
+- [x] web/css/reference/values/hex-color
+- [x] web/css/reference/values/hue
+- [x] web/css/reference/values/hue-interpolation-method
+- [x] web/css/reference/values/hypot
+- [x] web/css/reference/values/ident
+- [x] web/css/reference/values/if
+- [x] web/css/reference/values/image
+- [x] web/css/reference/values/image/image
+- [x] web/css/reference/values/image/image-set
+- [x] web/css/reference/values/image/paint
+- [x] web/css/reference/values/important
+- [x] web/css/reference/values/inherit
+- [x] web/css/reference/values/initial
+- [x] web/css/reference/values/integer
+- [x] web/css/reference/values/length
+- [x] web/css/reference/values/length-percentage
+- [x] web/css/reference/values/line-style
+- [x] web/css/reference/values/log
+- [x] web/css/reference/values/max
+- [x] web/css/reference/values/max-content
+- [x] web/css/reference/values/min
+- [x] web/css/reference/values/min-content
+- [x] web/css/reference/values/minmax
+- [x] web/css/reference/values/mod
+- [x] web/css/reference/values/named-color
+- [x] web/css/reference/values/number
+- [x] web/css/reference/values/overflow-position
+- [x] web/css/reference/values/overflow_value
+- [x] web/css/reference/values/percentage
+- [x] web/css/reference/values/position-area_value
+- [x] web/css/reference/values/position_value
+- [x] web/css/reference/values/pow
+- [x] web/css/reference/values/progress
+- [x] web/css/reference/values/random
+- [x] web/css/reference/values/ratio
+- [x] web/css/reference/values/ray
+- [x] web/css/reference/values/relative-size
+- [x] web/css/reference/values/rem
+- [x] web/css/reference/values/repeat
+- [x] web/css/reference/values/resolution
+- [x] web/css/reference/values/revert
+- [x] web/css/reference/values/revert-layer
+- [x] web/css/reference/values/round
+- [x] web/css/reference/values/rule-list
+- [x] web/css/reference/values/self-position
+- [x] web/css/reference/values/shape
+- [x] web/css/reference/values/sibling-count
+- [x] web/css/reference/values/sibling-index
+- [x] web/css/reference/values/sign
+- [x] web/css/reference/values/sin
+- [x] web/css/reference/values/sqrt
+- [x] web/css/reference/values/string
+- [x] web/css/reference/values/superellipse
+- [x] web/css/reference/values/symbols
+- [x] web/css/reference/values/system-color
+- [x] web/css/reference/values/tan
+- [x] web/css/reference/values/text-edge
+- [x] web/css/reference/values/time
+- [x] web/css/reference/values/time-percentage
+- [x] web/css/reference/values/timeline-range-name
+- [x] web/css/reference/values/transform-function
+- [x] web/css/reference/values/transform-function/matrix
+- [x] web/css/reference/values/transform-function/matrix3d
+- [x] web/css/reference/values/transform-function/perspective
+- [x] web/css/reference/values/transform-function/rotate
+- [x] web/css/reference/values/transform-function/rotate3d
+- [x] web/css/reference/values/transform-function/rotatex
+- [x] web/css/reference/values/transform-function/rotatey
+- [x] web/css/reference/values/transform-function/rotatez
+- [x] web/css/reference/values/transform-function/scale
+- [x] web/css/reference/values/transform-function/scale3d
+- [x] web/css/reference/values/transform-function/scalex
+- [x] web/css/reference/values/transform-function/scaley
+- [x] web/css/reference/values/transform-function/scalez
+- [x] web/css/reference/values/transform-function/skew
+- [x] web/css/reference/values/transform-function/skewx
+- [x] web/css/reference/values/transform-function/skewy
+- [x] web/css/reference/values/transform-function/translate
+- [x] web/css/reference/values/transform-function/translate3d
+- [x] web/css/reference/values/transform-function/translatex
+- [x] web/css/reference/values/transform-function/translatey
+- [x] web/css/reference/values/transform-function/translatez
+- [x] web/css/reference/values/type
+- [x] web/css/reference/values/unset
+- [x] web/css/reference/values/url_function
+- [x] web/css/reference/values/url_value
+- [x] web/css/reference/values/var
