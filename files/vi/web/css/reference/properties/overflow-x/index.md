@@ -6,7 +6,7 @@ browser-compat: css.properties.overflow-x
 sidebar: cssref
 ---
 
-Thuộc tính CSS **`overflow-x`** thiết lập nội dung hiển thị khi nội dung tràn qua các cạnh trái và phải của một phần tử cấp khối. Đây có thể là không hiển thị, một thanh cuộn, hoặc nội dung tràn. Thuộc tính này cũng có thể được thiết lập bằng thuộc tính viết tắt {{cssxref("overflow")}}.
+Thuộc tính **`overflow-x`** trong [CSS](/en-US/docs/Web/CSS) xác định nội dung hiển thị như thế nào khi nội dung tràn ra ngoài cạnh trái và phải của một phần tử cấp khối. Thuộc tính này cũng có thể được đặt bằng thuộc tính viết tắt {{cssxref("overflow")}}.
 
 {{InteractiveExample("CSS Demo: overflow-x")}}
 
@@ -67,25 +67,20 @@ overflow-x: revert-layer;
 overflow-x: unset;
 ```
 
-Thuộc tính `overflow-x` được chỉ định bằng một giá trị từ khóa {{CSSXref("overflow_value", "&lt;overflow&gt;")}} duy nhất.
+Nếu {{cssxref("overflow-y")}} là `hidden`, `scroll`, hoặc `auto`, và `overflow-x` là `visible` (mặc định), giá trị sẽ được tính ngầm là `auto`.
 
-Nếu {{cssxref("overflow-y")}} là `hidden`, `scroll` hoặc `auto`, và thuộc tính `overflow-x` là `visible` (mặc định), giá trị sẽ được tính ngầm định là `auto`.
-
-### Giá trị
+### Các giá trị
 
 - `visible`
-  - : Nội dung tràn không bị cắt xén và có thể hiển thị bên ngoài hộp đệm của phần tử ở cạnh trái và phải. Hộp phần tử không phải là {{glossary("scroll container")}}.
+  - : Nội dung tràn không bị cắt và có thể hiển thị bên ngoài hộp padding.
 - `hidden`
-  - : Nội dung tràn bị cắt xén nếu cần để vừa theo chiều ngang trong hộp đệm của phần tử. Không có thanh cuộn nào được cung cấp.
+  - : Nội dung tràn bị cắt nếu cần để vừa theo chiều ngang. Không có thanh cuộn nào.
 - `clip`
-  - : Nội dung tràn bị cắt tại _cạnh cắt tràn_ của phần tử, được xác định bằng thuộc tính {{cssxref("overflow-clip-margin")}}. Kết quả là, nội dung tràn ra khỏi hộp đệm của phần tử bằng giá trị {{cssxref("&lt;length&gt;")}} của `overflow-clip-margin` hoặc bằng `0px` nếu chưa được thiết lập. Sự khác biệt giữa `clip` và `hidden` là từ khóa `clip` cũng cấm tất cả các cuộn, kể cả cuộn theo chương trình. Không có ngữ cảnh định dạng mới nào được tạo ra. Để thiết lập ngữ cảnh định dạng, sử dụng `overflow: clip` cùng với {{cssxref("display", "display: flow-root", "#flow-root")}}. Hộp phần tử không phải là vùng chứa cuộn.
+  - : Nội dung tràn bị cắt tại cạnh clip được xác định bởi {{cssxref("overflow-clip-margin")}}. Cấm tất cả các thao tác cuộn.
 - `scroll`
-  - : Nội dung tràn bị cắt xén nếu cần để vừa theo chiều ngang trong hộp đệm của phần tử. Trình duyệt hiển thị thanh cuộn theo chiều ngang dù có hay không có nội dung bị cắt xén thực sự. (Điều này ngăn thanh cuộn xuất hiện hoặc biến mất khi nội dung thay đổi.) Máy in vẫn có thể in nội dung tràn.
+  - : Nội dung tràn bị cắt. Trình duyệt luôn hiển thị thanh cuộn ngang.
 - `auto`
-  - : Nội dung tràn bị cắt tại hộp đệm của phần tử, và nội dung tràn có thể được cuộn để xem. Khác với `scroll`, tác nhân người dùng chỉ hiển thị thanh cuộn _khi_ nội dung bị tràn và ẩn thanh cuộn theo mặc định. Nếu nội dung vừa trong hộp đệm của phần tử, nó trông giống `visible`, nhưng vẫn thiết lập một ngữ cảnh định dạng khối mới. Trình duyệt máy tính để bàn cung cấp thanh cuộn nếu nội dung bị tràn.
-
-> [!NOTE]
-> Giá trị từ khóa `overlay` là một bí danh giá trị cũ cho `auto`. Với `overlay`, các thanh cuộn được vẽ trên nội dung thay vì chiếm không gian.
+  - : Nội dung tràn bị cắt. Trình duyệt chỉ hiển thị thanh cuộn khi nội dung thực sự tràn.
 
 ## Định nghĩa hình thức
 
@@ -102,23 +97,19 @@ Nếu {{cssxref("overflow-y")}} là `hidden`, `scroll` hoặc `auto`, và thuộ
 ```html
 <ul>
   <li>
-    <code>overflow-x:hidden</code> — ẩn văn bản ngoài hộp
+    <code>overflow-x:hidden</code> — ẩn văn bản bên ngoài hộp
     <div id="div1">ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ</div>
   </li>
-
   <li>
     <code>overflow-x:scroll</code> — luôn thêm thanh cuộn
     <div id="div2">ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ</div>
   </li>
-
   <li>
-    <code>overflow-x:visible</code> — hiển thị văn bản ngoài hộp nếu cần
+    <code>overflow-x:visible</code> — hiển thị văn bản bên ngoài nếu cần
     <div id="div3">ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ</div>
   </li>
-
   <li>
-    <code>overflow-x:auto</code> — trên hầu hết các trình duyệt, tương đương với
-    <code>scroll</code>
+    <code>overflow-x:auto</code> — tương đương scroll trên hầu hết trình duyệt
     <div id="div4">ABCDEFGHIJKLMOPQRSTUVWXYZABCDEFGHIJKLMOPQRSTUVWXYZ</div>
   </li>
 </ul>
@@ -166,4 +157,3 @@ Nếu {{cssxref("overflow-y")}} là `hidden`, `scroll` hoặc `auto`, và thuộ
 
 - {{Cssxref("clip")}}, {{Cssxref("display")}}, {{cssxref("text-overflow")}}, {{cssxref("white-space")}}
 - [CSS overflow](/en-US/docs/Web/CSS/Guides/Overflow) module
-- [Learn: Overflowing content](/en-US/docs/Learn_web_development/Core/Styling_basics/Overflow)
