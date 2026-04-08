@@ -957,110 +957,110 @@ Total: 1,226 pages
 - [x] web/css/reference/selectors/\_colon_last-child
 - [x] web/css/reference/selectors/\_colon_last-of-type
 - [x] web/css/reference/selectors/\_colon_left
-- [ ] web/css/reference/selectors/\_colon_link
-- [ ] web/css/reference/selectors/\_colon_local-link
-- [ ] web/css/reference/selectors/\_colon_modal
-- [ ] web/css/reference/selectors/\_colon_muted
-- [ ] web/css/reference/selectors/\_colon_not
-- [ ] web/css/reference/selectors/\_colon_nth-child
+- [x] web/css/reference/selectors/\_colon_link
+- [x] web/css/reference/selectors/\_colon_local-link
+- [x] web/css/reference/selectors/\_colon_modal
+- [x] web/css/reference/selectors/\_colon_muted
+- [x] web/css/reference/selectors/\_colon_not
+- [x] web/css/reference/selectors/\_colon_nth-child
 - [ ] web/css/reference/selectors/\_colon_nth-last-child
 - [ ] web/css/reference/selectors/\_colon_nth-last-of-type
-- [ ] web/css/reference/selectors/\_colon_nth-of-type
-- [ ] web/css/reference/selectors/\_colon_only-child
-- [ ] web/css/reference/selectors/\_colon_only-of-type
-- [ ] web/css/reference/selectors/\_colon_open
-- [ ] web/css/reference/selectors/\_colon_optional
-- [ ] web/css/reference/selectors/\_colon_out-of-range
-- [ ] web/css/reference/selectors/\_colon_past
-- [ ] web/css/reference/selectors/\_colon_paused
-- [ ] web/css/reference/selectors/\_colon_picture-in-picture
-- [ ] web/css/reference/selectors/\_colon_placeholder-shown
-- [ ] web/css/reference/selectors/\_colon_playing
-- [ ] web/css/reference/selectors/\_colon_popover-open
-- [ ] web/css/reference/selectors/\_colon_read-only
-- [ ] web/css/reference/selectors/\_colon_read-write
-- [ ] web/css/reference/selectors/\_colon_required
-- [ ] web/css/reference/selectors/\_colon_right
-- [ ] web/css/reference/selectors/\_colon_root
-- [ ] web/css/reference/selectors/\_colon_scope
-- [ ] web/css/reference/selectors/\_colon_seeking
-- [ ] web/css/reference/selectors/\_colon_stalled
-- [ ] web/css/reference/selectors/\_colon_state
-- [ ] web/css/reference/selectors/\_colon_target
-- [ ] web/css/reference/selectors/\_colon_target-after
-- [ ] web/css/reference/selectors/\_colon_target-before
-- [ ] web/css/reference/selectors/\_colon_target-current
-- [ ] web/css/reference/selectors/\_colon_user-invalid
-- [ ] web/css/reference/selectors/\_colon_user-valid
-- [ ] web/css/reference/selectors/\_colon_valid
-- [ ] web/css/reference/selectors/\_colon_visited
-- [ ] web/css/reference/selectors/\_colon_volume-locked
-- [ ] web/css/reference/selectors/\_colon_where
-- [ ] web/css/reference/selectors/_doublecolon_-moz-color-swatch
-- [ ] web/css/reference/selectors/_doublecolon_-moz-focus-inner
-- [ ] web/css/reference/selectors/_doublecolon_-moz-list-bullet
-- [ ] web/css/reference/selectors/_doublecolon_-moz-list-number
-- [ ] web/css/reference/selectors/_doublecolon_-moz-meter-bar
-- [ ] web/css/reference/selectors/_doublecolon_-moz-progress-bar
-- [ ] web/css/reference/selectors/_doublecolon_-moz-range-progress
-- [ ] web/css/reference/selectors/_doublecolon_-moz-range-thumb
-- [ ] web/css/reference/selectors/_doublecolon_-moz-range-track
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-inner-spin-button
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-bar
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-even-less-good-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-inner-element
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-optimum-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-meter-suboptimum-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-progress-bar
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-progress-inner-element
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-progress-value
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-scrollbar
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-search-cancel-button
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-search-results-button
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-slider-runnable-track
-- [ ] web/css/reference/selectors/_doublecolon_-webkit-slider-thumb
-- [ ] web/css/reference/selectors/\_doublecolon_after
-- [ ] web/css/reference/selectors/\_doublecolon_backdrop
-- [ ] web/css/reference/selectors/\_doublecolon_before
-- [ ] web/css/reference/selectors/\_doublecolon_checkmark
-- [ ] web/css/reference/selectors/\_doublecolon_column
-- [ ] web/css/reference/selectors/\_doublecolon_cue
-- [ ] web/css/reference/selectors/\_doublecolon_details-content
-- [ ] web/css/reference/selectors/\_doublecolon_file-selector-button
+- [x] web/css/reference/selectors/\_colon_nth-of-type
+- [x] web/css/reference/selectors/\_colon_only-child
+- [x] web/css/reference/selectors/\_colon_only-of-type
+- [x] web/css/reference/selectors/\_colon_open
+- [x] web/css/reference/selectors/\_colon_optional
+- [x] web/css/reference/selectors/\_colon_out-of-range
+- [x] web/css/reference/selectors/\_colon_past
+- [x] web/css/reference/selectors/\_colon_paused
+- [x] web/css/reference/selectors/\_colon_picture-in-picture
+- [x] web/css/reference/selectors/\_colon_placeholder-shown
+- [x] web/css/reference/selectors/\_colon_playing
+- [x] web/css/reference/selectors/\_colon_popover-open
+- [x] web/css/reference/selectors/\_colon_read-only
+- [x] web/css/reference/selectors/\_colon_read-write
+- [x] web/css/reference/selectors/\_colon_required
+- [x] web/css/reference/selectors/\_colon_right
+- [x] web/css/reference/selectors/\_colon_root
+- [x] web/css/reference/selectors/\_colon_scope
+- [x] web/css/reference/selectors/\_colon_seeking
+- [x] web/css/reference/selectors/\_colon_stalled
+- [x] web/css/reference/selectors/\_colon_state
+- [x] web/css/reference/selectors/\_colon_target
+- [x] web/css/reference/selectors/\_colon_target-after
+- [x] web/css/reference/selectors/\_colon_target-before
+- [x] web/css/reference/selectors/\_colon_target-current
+- [x] web/css/reference/selectors/\_colon_user-invalid
+- [x] web/css/reference/selectors/\_colon_user-valid
+- [x] web/css/reference/selectors/\_colon_valid
+- [x] web/css/reference/selectors/\_colon_visited
+- [x] web/css/reference/selectors/\_colon_volume-locked
+- [x] web/css/reference/selectors/\_colon_where
+- [x] web/css/reference/selectors/_doublecolon_-moz-color-swatch
+- [x] web/css/reference/selectors/_doublecolon_-moz-focus-inner
+- [x] web/css/reference/selectors/_doublecolon_-moz-list-bullet
+- [x] web/css/reference/selectors/_doublecolon_-moz-list-number
+- [x] web/css/reference/selectors/_doublecolon_-moz-meter-bar
+- [x] web/css/reference/selectors/_doublecolon_-moz-progress-bar
+- [x] web/css/reference/selectors/_doublecolon_-moz-range-progress
+- [x] web/css/reference/selectors/_doublecolon_-moz-range-thumb
+- [x] web/css/reference/selectors/_doublecolon_-moz-range-track
+- [x] web/css/reference/selectors/_doublecolon_-webkit-inner-spin-button
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-bar
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-even-less-good-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-inner-element
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-optimum-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-meter-suboptimum-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-progress-bar
+- [x] web/css/reference/selectors/_doublecolon_-webkit-progress-inner-element
+- [x] web/css/reference/selectors/_doublecolon_-webkit-progress-value
+- [x] web/css/reference/selectors/_doublecolon_-webkit-scrollbar
+- [x] web/css/reference/selectors/_doublecolon_-webkit-search-cancel-button
+- [x] web/css/reference/selectors/_doublecolon_-webkit-search-results-button
+- [x] web/css/reference/selectors/_doublecolon_-webkit-slider-runnable-track
+- [x] web/css/reference/selectors/_doublecolon_-webkit-slider-thumb
+- [x] web/css/reference/selectors/\_doublecolon_after
+- [x] web/css/reference/selectors/\_doublecolon_backdrop
+- [x] web/css/reference/selectors/\_doublecolon_before
+- [x] web/css/reference/selectors/\_doublecolon_checkmark
+- [x] web/css/reference/selectors/\_doublecolon_column
+- [x] web/css/reference/selectors/\_doublecolon_cue
+- [x] web/css/reference/selectors/\_doublecolon_details-content
+- [x] web/css/reference/selectors/\_doublecolon_file-selector-button
 - [ ] web/css/reference/selectors/\_doublecolon_first-letter
 - [ ] web/css/reference/selectors/\_doublecolon_first-line
-- [ ] web/css/reference/selectors/\_doublecolon_grammar-error
-- [ ] web/css/reference/selectors/\_doublecolon_highlight
-- [ ] web/css/reference/selectors/\_doublecolon_marker
-- [ ] web/css/reference/selectors/\_doublecolon_part
-- [ ] web/css/reference/selectors/\_doublecolon_picker
-- [ ] web/css/reference/selectors/\_doublecolon_picker-icon
-- [ ] web/css/reference/selectors/\_doublecolon_placeholder
+- [x] web/css/reference/selectors/\_doublecolon_grammar-error
+- [x] web/css/reference/selectors/\_doublecolon_highlight
+- [x] web/css/reference/selectors/\_doublecolon_marker
+- [x] web/css/reference/selectors/\_doublecolon_part
+- [x] web/css/reference/selectors/\_doublecolon_picker
+- [x] web/css/reference/selectors/\_doublecolon_picker-icon
+- [x] web/css/reference/selectors/\_doublecolon_placeholder
 - [ ] web/css/reference/selectors/\_doublecolon_scroll-button
-- [ ] web/css/reference/selectors/\_doublecolon_scroll-marker
-- [ ] web/css/reference/selectors/\_doublecolon_scroll-marker-group
-- [ ] web/css/reference/selectors/\_doublecolon_search-text
+- [x] web/css/reference/selectors/\_doublecolon_scroll-marker
+- [x] web/css/reference/selectors/\_doublecolon_scroll-marker-group
+- [x] web/css/reference/selectors/\_doublecolon_search-text
 - [ ] web/css/reference/selectors/\_doublecolon_selection
 - [ ] web/css/reference/selectors/\_doublecolon_slotted
 - [ ] web/css/reference/selectors/\_doublecolon_spelling-error
 - [ ] web/css/reference/selectors/\_doublecolon_target-text
 - [ ] web/css/reference/selectors/\_doublecolon_view-transition
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-group
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-image-pair
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-new
-- [ ] web/css/reference/selectors/\_doublecolon_view-transition-old
-- [ ] web/css/reference/selectors/attribute_selectors
-- [ ] web/css/reference/selectors/child_combinator
-- [ ] web/css/reference/selectors/class_selectors
-- [ ] web/css/reference/selectors/column_combinator
-- [ ] web/css/reference/selectors/combinators
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-group
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-image-pair
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-new
+- [x] web/css/reference/selectors/\_doublecolon_view-transition-old
+- [x] web/css/reference/selectors/attribute_selectors
+- [x] web/css/reference/selectors/child_combinator
+- [x] web/css/reference/selectors/class_selectors
+- [x] web/css/reference/selectors/column_combinator
+- [x] web/css/reference/selectors/combinators
 - [ ] web/css/reference/selectors/descendant_combinator
 - [ ] web/css/reference/selectors/id_selectors
 - [ ] web/css/reference/selectors/keyframe_selectors
 - [ ] web/css/reference/selectors/namespace_separator
-- [ ] web/css/reference/selectors/nesting_selector
-- [ ] web/css/reference/selectors/next-sibling_combinator
-- [ ] web/css/reference/selectors/pseudo-classes
+- [x] web/css/reference/selectors/nesting_selector
+- [x] web/css/reference/selectors/next-sibling_combinator
+- [x] web/css/reference/selectors/pseudo-classes
 - [ ] web/css/reference/selectors/pseudo-elements
 - [ ] web/css/reference/selectors/selector_list
 - [ ] web/css/reference/selectors/subsequent-sibling_combinator
