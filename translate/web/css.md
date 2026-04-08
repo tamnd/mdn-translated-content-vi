@@ -529,103 +529,103 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/corner-block-end-shape
 - [x] web/css/reference/properties/corner-block-start-shape
 - [x] web/css/reference/properties/corner-bottom-left-shape
-- [ ] web/css/reference/properties/corner-bottom-right-shape
-- [ ] web/css/reference/properties/corner-bottom-shape
-- [ ] web/css/reference/properties/corner-end-end-shape
-- [ ] web/css/reference/properties/corner-end-start-shape
-- [ ] web/css/reference/properties/corner-inline-end-shape
-- [ ] web/css/reference/properties/corner-inline-start-shape
-- [ ] web/css/reference/properties/corner-left-shape
-- [ ] web/css/reference/properties/corner-right-shape
-- [ ] web/css/reference/properties/corner-shape
-- [ ] web/css/reference/properties/corner-start-end-shape
-- [ ] web/css/reference/properties/corner-start-start-shape
-- [ ] web/css/reference/properties/corner-top-left-shape
-- [ ] web/css/reference/properties/corner-top-right-shape
-- [ ] web/css/reference/properties/corner-top-shape
-- [ ] web/css/reference/properties/counter-increment
-- [ ] web/css/reference/properties/counter-reset
-- [ ] web/css/reference/properties/counter-set
-- [ ] web/css/reference/properties/cursor
-- [ ] web/css/reference/properties/cx
-- [ ] web/css/reference/properties/cy
-- [ ] web/css/reference/properties/d
-- [ ] web/css/reference/properties/direction
+- [x] web/css/reference/properties/corner-bottom-right-shape
+- [x] web/css/reference/properties/corner-bottom-shape
+- [x] web/css/reference/properties/corner-end-end-shape
+- [x] web/css/reference/properties/corner-end-start-shape
+- [x] web/css/reference/properties/corner-inline-end-shape
+- [x] web/css/reference/properties/corner-inline-start-shape
+- [x] web/css/reference/properties/corner-left-shape
+- [x] web/css/reference/properties/corner-right-shape
+- [x] web/css/reference/properties/corner-shape
+- [x] web/css/reference/properties/corner-start-end-shape
+- [x] web/css/reference/properties/corner-start-start-shape
+- [x] web/css/reference/properties/corner-top-left-shape
+- [x] web/css/reference/properties/corner-top-right-shape
+- [x] web/css/reference/properties/corner-top-shape
+- [x] web/css/reference/properties/counter-increment
+- [x] web/css/reference/properties/counter-reset
+- [x] web/css/reference/properties/counter-set
+- [x] web/css/reference/properties/cursor
+- [x] web/css/reference/properties/cx
+- [x] web/css/reference/properties/cy
+- [x] web/css/reference/properties/d
+- [x] web/css/reference/properties/direction
 - [x] web/css/reference/properties/display
-- [ ] web/css/reference/properties/dominant-baseline
-- [ ] web/css/reference/properties/dynamic-range-limit
-- [ ] web/css/reference/properties/empty-cells
-- [ ] web/css/reference/properties/field-sizing
-- [ ] web/css/reference/properties/fill
-- [ ] web/css/reference/properties/fill-opacity
-- [ ] web/css/reference/properties/fill-rule
-- [ ] web/css/reference/properties/filter
-- [ ] web/css/reference/properties/flex
-- [ ] web/css/reference/properties/flex-basis
-- [ ] web/css/reference/properties/flex-direction
-- [ ] web/css/reference/properties/flex-flow
-- [ ] web/css/reference/properties/flex-grow
-- [ ] web/css/reference/properties/flex-shrink
-- [ ] web/css/reference/properties/flex-wrap
-- [ ] web/css/reference/properties/float
-- [ ] web/css/reference/properties/flood-color
-- [ ] web/css/reference/properties/flood-opacity
-- [ ] web/css/reference/properties/font
-- [ ] web/css/reference/properties/font-family
-- [ ] web/css/reference/properties/font-feature-settings
-- [ ] web/css/reference/properties/font-kerning
-- [ ] web/css/reference/properties/font-language-override
-- [ ] web/css/reference/properties/font-optical-sizing
-- [ ] web/css/reference/properties/font-palette
-- [ ] web/css/reference/properties/font-palette/palette-mix
-- [ ] web/css/reference/properties/font-size
-- [ ] web/css/reference/properties/font-size-adjust
-- [ ] web/css/reference/properties/font-smooth
-- [ ] web/css/reference/properties/font-stretch
-- [ ] web/css/reference/properties/font-style
-- [ ] web/css/reference/properties/font-synthesis
-- [ ] web/css/reference/properties/font-synthesis-position
-- [ ] web/css/reference/properties/font-synthesis-small-caps
-- [ ] web/css/reference/properties/font-synthesis-style
-- [ ] web/css/reference/properties/font-synthesis-weight
-- [ ] web/css/reference/properties/font-variant
-- [ ] web/css/reference/properties/font-variant-alternates
-- [ ] web/css/reference/properties/font-variant-caps
-- [ ] web/css/reference/properties/font-variant-east-asian
-- [ ] web/css/reference/properties/font-variant-emoji
-- [ ] web/css/reference/properties/font-variant-ligatures
-- [ ] web/css/reference/properties/font-variant-numeric
-- [ ] web/css/reference/properties/font-variant-position
-- [ ] web/css/reference/properties/font-variation-settings
-- [ ] web/css/reference/properties/font-weight
-- [ ] web/css/reference/properties/font-width
-- [ ] web/css/reference/properties/forced-color-adjust
-- [ ] web/css/reference/properties/gap
-- [ ] web/css/reference/properties/grid
-- [ ] web/css/reference/properties/grid-area
-- [ ] web/css/reference/properties/grid-auto-columns
-- [ ] web/css/reference/properties/grid-auto-flow
-- [ ] web/css/reference/properties/grid-auto-rows
-- [ ] web/css/reference/properties/grid-column
-- [ ] web/css/reference/properties/grid-column-end
-- [ ] web/css/reference/properties/grid-column-start
-- [ ] web/css/reference/properties/grid-row
-- [ ] web/css/reference/properties/grid-row-end
-- [ ] web/css/reference/properties/grid-row-start
-- [ ] web/css/reference/properties/grid-template
-- [ ] web/css/reference/properties/grid-template-areas
-- [ ] web/css/reference/properties/grid-template-columns
-- [ ] web/css/reference/properties/grid-template-rows
-- [ ] web/css/reference/properties/hanging-punctuation
-- [ ] web/css/reference/properties/height
-- [ ] web/css/reference/properties/hyphenate-character
-- [ ] web/css/reference/properties/hyphenate-limit-chars
-- [ ] web/css/reference/properties/hyphens
-- [ ] web/css/reference/properties/image-orientation
-- [ ] web/css/reference/properties/image-rendering
-- [ ] web/css/reference/properties/image-resolution
-- [ ] web/css/reference/properties/initial-letter
-- [ ] web/css/reference/properties/inline-size
+- [x] web/css/reference/properties/dominant-baseline
+- [x] web/css/reference/properties/dynamic-range-limit
+- [x] web/css/reference/properties/empty-cells
+- [x] web/css/reference/properties/field-sizing
+- [x] web/css/reference/properties/fill
+- [x] web/css/reference/properties/fill-opacity
+- [x] web/css/reference/properties/fill-rule
+- [x] web/css/reference/properties/filter
+- [x] web/css/reference/properties/flex
+- [x] web/css/reference/properties/flex-basis
+- [x] web/css/reference/properties/flex-direction
+- [x] web/css/reference/properties/flex-flow
+- [x] web/css/reference/properties/flex-grow
+- [x] web/css/reference/properties/flex-shrink
+- [x] web/css/reference/properties/flex-wrap
+- [x] web/css/reference/properties/float
+- [x] web/css/reference/properties/flood-color
+- [x] web/css/reference/properties/flood-opacity
+- [x] web/css/reference/properties/font
+- [x] web/css/reference/properties/font-family
+- [x] web/css/reference/properties/font-feature-settings
+- [x] web/css/reference/properties/font-kerning
+- [x] web/css/reference/properties/font-language-override
+- [x] web/css/reference/properties/font-optical-sizing
+- [x] web/css/reference/properties/font-palette
+- [x] web/css/reference/properties/font-palette/palette-mix
+- [x] web/css/reference/properties/font-size
+- [x] web/css/reference/properties/font-size-adjust
+- [x] web/css/reference/properties/font-smooth
+- [x] web/css/reference/properties/font-stretch
+- [x] web/css/reference/properties/font-style
+- [x] web/css/reference/properties/font-synthesis
+- [x] web/css/reference/properties/font-synthesis-position
+- [x] web/css/reference/properties/font-synthesis-small-caps
+- [x] web/css/reference/properties/font-synthesis-style
+- [x] web/css/reference/properties/font-synthesis-weight
+- [x] web/css/reference/properties/font-variant
+- [x] web/css/reference/properties/font-variant-alternates
+- [x] web/css/reference/properties/font-variant-caps
+- [x] web/css/reference/properties/font-variant-east-asian
+- [x] web/css/reference/properties/font-variant-emoji
+- [x] web/css/reference/properties/font-variant-ligatures
+- [x] web/css/reference/properties/font-variant-numeric
+- [x] web/css/reference/properties/font-variant-position
+- [x] web/css/reference/properties/font-variation-settings
+- [x] web/css/reference/properties/font-weight
+- [x] web/css/reference/properties/font-width
+- [x] web/css/reference/properties/forced-color-adjust
+- [x] web/css/reference/properties/gap
+- [x] web/css/reference/properties/grid
+- [x] web/css/reference/properties/grid-area
+- [x] web/css/reference/properties/grid-auto-columns
+- [x] web/css/reference/properties/grid-auto-flow
+- [x] web/css/reference/properties/grid-auto-rows
+- [x] web/css/reference/properties/grid-column
+- [x] web/css/reference/properties/grid-column-end
+- [x] web/css/reference/properties/grid-column-start
+- [x] web/css/reference/properties/grid-row
+- [x] web/css/reference/properties/grid-row-end
+- [x] web/css/reference/properties/grid-row-start
+- [x] web/css/reference/properties/grid-template
+- [x] web/css/reference/properties/grid-template-areas
+- [x] web/css/reference/properties/grid-template-columns
+- [x] web/css/reference/properties/grid-template-rows
+- [x] web/css/reference/properties/hanging-punctuation
+- [x] web/css/reference/properties/height
+- [x] web/css/reference/properties/hyphenate-character
+- [x] web/css/reference/properties/hyphenate-limit-chars
+- [x] web/css/reference/properties/hyphens
+- [x] web/css/reference/properties/image-orientation
+- [x] web/css/reference/properties/image-rendering
+- [x] web/css/reference/properties/image-resolution
+- [x] web/css/reference/properties/initial-letter
+- [x] web/css/reference/properties/inline-size
 - [ ] web/css/reference/properties/inset
 - [ ] web/css/reference/properties/inset-block
 - [ ] web/css/reference/properties/inset-block-end
