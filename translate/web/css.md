@@ -432,103 +432,103 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/border-bottom-left-radius
 - [x] web/css/reference/properties/border-bottom-right-radius
 - [x] web/css/reference/properties/border-bottom-style
-- [ ] web/css/reference/properties/border-bottom-width
-- [ ] web/css/reference/properties/border-collapse
-- [ ] web/css/reference/properties/border-color
-- [ ] web/css/reference/properties/border-end-end-radius
-- [ ] web/css/reference/properties/border-end-start-radius
-- [ ] web/css/reference/properties/border-image
-- [ ] web/css/reference/properties/border-image-outset
-- [ ] web/css/reference/properties/border-image-repeat
-- [ ] web/css/reference/properties/border-image-slice
-- [ ] web/css/reference/properties/border-image-source
-- [ ] web/css/reference/properties/border-image-width
-- [ ] web/css/reference/properties/border-inline
-- [ ] web/css/reference/properties/border-inline-color
-- [ ] web/css/reference/properties/border-inline-end
-- [ ] web/css/reference/properties/border-inline-end-color
-- [ ] web/css/reference/properties/border-inline-end-style
-- [ ] web/css/reference/properties/border-inline-end-width
-- [ ] web/css/reference/properties/border-inline-start
-- [ ] web/css/reference/properties/border-inline-start-color
-- [ ] web/css/reference/properties/border-inline-start-style
-- [ ] web/css/reference/properties/border-inline-start-width
-- [ ] web/css/reference/properties/border-inline-style
-- [ ] web/css/reference/properties/border-inline-width
-- [ ] web/css/reference/properties/border-left
-- [ ] web/css/reference/properties/border-left-color
-- [ ] web/css/reference/properties/border-left-style
-- [ ] web/css/reference/properties/border-left-width
-- [ ] web/css/reference/properties/border-radius
-- [ ] web/css/reference/properties/border-right
-- [ ] web/css/reference/properties/border-right-color
-- [ ] web/css/reference/properties/border-right-style
-- [ ] web/css/reference/properties/border-right-width
-- [ ] web/css/reference/properties/border-spacing
-- [ ] web/css/reference/properties/border-start-end-radius
-- [ ] web/css/reference/properties/border-start-start-radius
-- [ ] web/css/reference/properties/border-style
-- [ ] web/css/reference/properties/border-top
-- [ ] web/css/reference/properties/border-top-color
-- [ ] web/css/reference/properties/border-top-left-radius
-- [ ] web/css/reference/properties/border-top-right-radius
-- [ ] web/css/reference/properties/border-top-style
-- [ ] web/css/reference/properties/border-top-width
-- [ ] web/css/reference/properties/border-width
-- [ ] web/css/reference/properties/bottom
-- [ ] web/css/reference/properties/box-align
-- [ ] web/css/reference/properties/box-decoration-break
-- [ ] web/css/reference/properties/box-direction
-- [ ] web/css/reference/properties/box-flex
-- [ ] web/css/reference/properties/box-flex-group
-- [ ] web/css/reference/properties/box-lines
-- [ ] web/css/reference/properties/box-ordinal-group
-- [ ] web/css/reference/properties/box-orient
-- [ ] web/css/reference/properties/box-pack
-- [ ] web/css/reference/properties/box-shadow
-- [ ] web/css/reference/properties/box-sizing
-- [ ] web/css/reference/properties/break-after
-- [ ] web/css/reference/properties/break-before
-- [ ] web/css/reference/properties/break-inside
-- [ ] web/css/reference/properties/caption-side
-- [ ] web/css/reference/properties/caret
-- [ ] web/css/reference/properties/caret-animation
-- [ ] web/css/reference/properties/caret-color
-- [ ] web/css/reference/properties/caret-shape
-- [ ] web/css/reference/properties/clear
-- [ ] web/css/reference/properties/clip
-- [ ] web/css/reference/properties/clip-path
-- [ ] web/css/reference/properties/clip-rule
+- [x] web/css/reference/properties/border-bottom-width
+- [x] web/css/reference/properties/border-collapse
+- [x] web/css/reference/properties/border-color
+- [x] web/css/reference/properties/border-end-end-radius
+- [x] web/css/reference/properties/border-end-start-radius
+- [x] web/css/reference/properties/border-image
+- [x] web/css/reference/properties/border-image-outset
+- [x] web/css/reference/properties/border-image-repeat
+- [x] web/css/reference/properties/border-image-slice
+- [x] web/css/reference/properties/border-image-source
+- [x] web/css/reference/properties/border-image-width
+- [x] web/css/reference/properties/border-inline
+- [x] web/css/reference/properties/border-inline-color
+- [x] web/css/reference/properties/border-inline-end
+- [x] web/css/reference/properties/border-inline-end-color
+- [x] web/css/reference/properties/border-inline-end-style
+- [x] web/css/reference/properties/border-inline-end-width
+- [x] web/css/reference/properties/border-inline-start
+- [x] web/css/reference/properties/border-inline-start-color
+- [x] web/css/reference/properties/border-inline-start-style
+- [x] web/css/reference/properties/border-inline-start-width
+- [x] web/css/reference/properties/border-inline-style
+- [x] web/css/reference/properties/border-inline-width
+- [x] web/css/reference/properties/border-left
+- [x] web/css/reference/properties/border-left-color
+- [x] web/css/reference/properties/border-left-style
+- [x] web/css/reference/properties/border-left-width
+- [x] web/css/reference/properties/border-radius
+- [x] web/css/reference/properties/border-right
+- [x] web/css/reference/properties/border-right-color
+- [x] web/css/reference/properties/border-right-style
+- [x] web/css/reference/properties/border-right-width
+- [x] web/css/reference/properties/border-spacing
+- [x] web/css/reference/properties/border-start-end-radius
+- [x] web/css/reference/properties/border-start-start-radius
+- [x] web/css/reference/properties/border-style
+- [x] web/css/reference/properties/border-top
+- [x] web/css/reference/properties/border-top-color
+- [x] web/css/reference/properties/border-top-left-radius
+- [x] web/css/reference/properties/border-top-right-radius
+- [x] web/css/reference/properties/border-top-style
+- [x] web/css/reference/properties/border-top-width
+- [x] web/css/reference/properties/border-width
+- [x] web/css/reference/properties/bottom
+- [x] web/css/reference/properties/box-align
+- [x] web/css/reference/properties/box-decoration-break
+- [x] web/css/reference/properties/box-direction
+- [x] web/css/reference/properties/box-flex
+- [x] web/css/reference/properties/box-flex-group
+- [x] web/css/reference/properties/box-lines
+- [x] web/css/reference/properties/box-ordinal-group
+- [x] web/css/reference/properties/box-orient
+- [x] web/css/reference/properties/box-pack
+- [x] web/css/reference/properties/box-shadow
+- [x] web/css/reference/properties/box-sizing
+- [x] web/css/reference/properties/break-after
+- [x] web/css/reference/properties/break-before
+- [x] web/css/reference/properties/break-inside
+- [x] web/css/reference/properties/caption-side
+- [x] web/css/reference/properties/caret
+- [x] web/css/reference/properties/caret-animation
+- [x] web/css/reference/properties/caret-color
+- [x] web/css/reference/properties/caret-shape
+- [x] web/css/reference/properties/clear
+- [x] web/css/reference/properties/clip
+- [x] web/css/reference/properties/clip-path
+- [x] web/css/reference/properties/clip-rule
 - [x] web/css/reference/properties/color
-- [ ] web/css/reference/properties/color-interpolation
-- [ ] web/css/reference/properties/color-interpolation-filters
-- [ ] web/css/reference/properties/color-scheme
-- [ ] web/css/reference/properties/column-count
-- [ ] web/css/reference/properties/column-fill
-- [ ] web/css/reference/properties/column-gap
-- [ ] web/css/reference/properties/column-height
-- [ ] web/css/reference/properties/column-rule
-- [ ] web/css/reference/properties/column-rule-color
-- [ ] web/css/reference/properties/column-rule-style
-- [ ] web/css/reference/properties/column-rule-width
-- [ ] web/css/reference/properties/column-span
-- [ ] web/css/reference/properties/column-width
-- [ ] web/css/reference/properties/column-wrap
-- [ ] web/css/reference/properties/columns
-- [ ] web/css/reference/properties/contain
-- [ ] web/css/reference/properties/contain-intrinsic-block-size
-- [ ] web/css/reference/properties/contain-intrinsic-height
-- [ ] web/css/reference/properties/contain-intrinsic-inline-size
-- [ ] web/css/reference/properties/contain-intrinsic-size
-- [ ] web/css/reference/properties/contain-intrinsic-width
-- [ ] web/css/reference/properties/container
-- [ ] web/css/reference/properties/container-name
-- [ ] web/css/reference/properties/container-type
-- [ ] web/css/reference/properties/content
-- [ ] web/css/reference/properties/content-visibility
-- [ ] web/css/reference/properties/corner-block-end-shape
-- [ ] web/css/reference/properties/corner-block-start-shape
-- [ ] web/css/reference/properties/corner-bottom-left-shape
+- [x] web/css/reference/properties/color-interpolation
+- [x] web/css/reference/properties/color-interpolation-filters
+- [x] web/css/reference/properties/color-scheme
+- [x] web/css/reference/properties/column-count
+- [x] web/css/reference/properties/column-fill
+- [x] web/css/reference/properties/column-gap
+- [x] web/css/reference/properties/column-height
+- [x] web/css/reference/properties/column-rule
+- [x] web/css/reference/properties/column-rule-color
+- [x] web/css/reference/properties/column-rule-style
+- [x] web/css/reference/properties/column-rule-width
+- [x] web/css/reference/properties/column-span
+- [x] web/css/reference/properties/column-width
+- [x] web/css/reference/properties/column-wrap
+- [x] web/css/reference/properties/columns
+- [x] web/css/reference/properties/contain
+- [x] web/css/reference/properties/contain-intrinsic-block-size
+- [x] web/css/reference/properties/contain-intrinsic-height
+- [x] web/css/reference/properties/contain-intrinsic-inline-size
+- [x] web/css/reference/properties/contain-intrinsic-size
+- [x] web/css/reference/properties/contain-intrinsic-width
+- [x] web/css/reference/properties/container
+- [x] web/css/reference/properties/container-name
+- [x] web/css/reference/properties/container-type
+- [x] web/css/reference/properties/content
+- [x] web/css/reference/properties/content-visibility
+- [x] web/css/reference/properties/corner-block-end-shape
+- [x] web/css/reference/properties/corner-block-start-shape
+- [x] web/css/reference/properties/corner-bottom-left-shape
 - [ ] web/css/reference/properties/corner-bottom-right-shape
 - [ ] web/css/reference/properties/corner-bottom-shape
 - [ ] web/css/reference/properties/corner-end-end-shape
