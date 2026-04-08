@@ -129,104 +129,104 @@ Total: 1,226 pages
 - [x] web/css/guides/masking
 - [x] web/css/guides/masking/clipping
 - [x] web/css/guides/masking/introduction
-- [ ] web/css/guides/masking/mask_properties
-- [ ] web/css/guides/masking/multiple_masks
-- [ ] web/css/guides/media_queries
-- [ ] web/css/guides/media_queries/printing
-- [ ] web/css/guides/media_queries/testing
-- [ ] web/css/guides/media_queries/using_for_accessibility
-- [ ] web/css/guides/media_queries/using
-- [ ] web/css/guides/motion_path
-- [ ] web/css/guides/multicol_layout
-- [ ] web/css/guides/multicol_layout/basic_concepts
-- [ ] web/css/guides/multicol_layout/handling_content_breaks
-- [ ] web/css/guides/multicol_layout/handling_overflow
-- [ ] web/css/guides/multicol_layout/spanning_balancing_columns
-- [ ] web/css/guides/multicol_layout/styling_columns
-- [ ] web/css/guides/multicol_layout/using
-- [ ] web/css/guides/namespaces
-- [ ] web/css/guides/nesting
-- [ ] web/css/guides/nesting/at-rules
-- [ ] web/css/guides/nesting/nesting_and_specificity
-- [ ] web/css/guides/nesting/using
-- [ ] web/css/guides/overflow
-- [ ] web/css/guides/overflow/carousels
-- [ ] web/css/guides/overscroll_behavior
-- [ ] web/css/guides/paged_media
-- [ ] web/css/guides/positioned_layout
-- [ ] web/css/guides/positioned_layout/stacking_context
-- [ ] web/css/guides/positioned_layout/stacking_context/example_1
-- [ ] web/css/guides/positioned_layout/stacking_context/example_2
-- [ ] web/css/guides/positioned_layout/stacking_context/example_3
-- [ ] web/css/guides/positioned_layout/stacking_floating_elements
-- [ ] web/css/guides/positioned_layout/stacking_without_z-index
-- [ ] web/css/guides/positioned_layout/understanding_z-index
-- [ ] web/css/guides/positioned_layout/using_z-index
-- [ ] web/css/guides/properties_and_values_api
-- [ ] web/css/guides/properties_and_values_api/houdini
-- [ ] web/css/guides/properties_and_values_api/registering_properties
-- [ ] web/css/guides/pseudo-elements
-- [ ] web/css/guides/round_display
-- [ ] web/css/guides/ruby_layout
-- [ ] web/css/guides/scoping
-- [ ] web/css/guides/scroll_anchoring
-- [ ] web/css/guides/scroll_anchoring/overview
-- [ ] web/css/guides/scroll_snap
-- [ ] web/css/guides/scroll_snap/basic_concepts
-- [ ] web/css/guides/scroll_snap/using_scroll_snap_events
-- [ ] web/css/guides/scroll-driven_animations
-- [ ] web/css/guides/scroll-driven_animations/timeline_range_names
-- [ ] web/css/guides/scroll-driven_animations/timelines
-- [ ] web/css/guides/scrollbars_styling
-- [ ] web/css/guides/selectors
+- [x] web/css/guides/masking/mask_properties
+- [x] web/css/guides/masking/multiple_masks
+- [x] web/css/guides/media_queries
+- [x] web/css/guides/media_queries/printing
+- [x] web/css/guides/media_queries/testing
+- [x] web/css/guides/media_queries/using_for_accessibility
+- [x] web/css/guides/media_queries/using
+- [x] web/css/guides/motion_path
+- [x] web/css/guides/multicol_layout
+- [x] web/css/guides/multicol_layout/basic_concepts
+- [x] web/css/guides/multicol_layout/handling_content_breaks
+- [x] web/css/guides/multicol_layout/handling_overflow
+- [x] web/css/guides/multicol_layout/spanning_balancing_columns
+- [x] web/css/guides/multicol_layout/styling_columns
+- [x] web/css/guides/multicol_layout/using
+- [x] web/css/guides/namespaces
+- [x] web/css/guides/nesting
+- [x] web/css/guides/nesting/at-rules
+- [x] web/css/guides/nesting/nesting_and_specificity
+- [x] web/css/guides/nesting/using
+- [x] web/css/guides/overflow
+- [x] web/css/guides/overflow/carousels
+- [x] web/css/guides/overscroll_behavior
+- [x] web/css/guides/paged_media
+- [x] web/css/guides/positioned_layout
+- [x] web/css/guides/positioned_layout/stacking_context
+- [x] web/css/guides/positioned_layout/stacking_context/example_1
+- [x] web/css/guides/positioned_layout/stacking_context/example_2
+- [x] web/css/guides/positioned_layout/stacking_context/example_3
+- [x] web/css/guides/positioned_layout/stacking_floating_elements
+- [x] web/css/guides/positioned_layout/stacking_without_z-index
+- [x] web/css/guides/positioned_layout/understanding_z-index
+- [x] web/css/guides/positioned_layout/using_z-index
+- [x] web/css/guides/properties_and_values_api
+- [x] web/css/guides/properties_and_values_api/houdini
+- [x] web/css/guides/properties_and_values_api/registering_properties
+- [x] web/css/guides/pseudo-elements
+- [x] web/css/guides/round_display
+- [x] web/css/guides/ruby_layout
+- [x] web/css/guides/scoping
+- [x] web/css/guides/scroll_anchoring
+- [x] web/css/guides/scroll_anchoring/overview
+- [x] web/css/guides/scroll_snap
+- [x] web/css/guides/scroll_snap/basic_concepts
+- [x] web/css/guides/scroll_snap/using_scroll_snap_events
+- [x] web/css/guides/scroll-driven_animations
+- [x] web/css/guides/scroll-driven_animations/timeline_range_names
+- [x] web/css/guides/scroll-driven_animations/timelines
+- [x] web/css/guides/scrollbars_styling
+- [x] web/css/guides/selectors
 - [ ] web/css/guides/selectors/privacy_and\_\_colon_visited
-- [ ] web/css/guides/selectors/selector_structure
-- [ ] web/css/guides/selectors/selectors_and_combinators
+- [x] web/css/guides/selectors/selector_structure
+- [x] web/css/guides/selectors/selectors_and_combinators
 - [ ] web/css/guides/selectors/using\_\_colon_target
-- [ ] web/css/guides/shadow_parts
-- [ ] web/css/guides/shapes
-- [ ] web/css/guides/shapes/from_box_values
-- [ ] web/css/guides/shapes/from_images
-- [ ] web/css/guides/shapes/overview
-- [ ] web/css/guides/shapes/shape_generator
-- [ ] web/css/guides/shapes/using_shape-outside
-- [ ] web/css/guides/syntax
-- [ ] web/css/guides/syntax/at-rules
-- [ ] web/css/guides/syntax/comments
-- [ ] web/css/guides/syntax/error_handling
-- [ ] web/css/guides/syntax/introduction
-- [ ] web/css/guides/table
-- [ ] web/css/guides/text
-- [ ] web/css/guides/text/whitespace
-- [ ] web/css/guides/text/wrapping_breaking_text
-- [ ] web/css/guides/text_decoration
-- [ ] web/css/guides/text_decoration/text_shadows
-- [ ] web/css/guides/transforms
-- [ ] web/css/guides/transforms/using
-- [ ] web/css/guides/transitions
-- [ ] web/css/guides/transitions/using
-- [ ] web/css/guides/values_and_units
-- [ ] web/css/guides/values_and_units/numeric_data_types
-- [ ] web/css/guides/values_and_units/textual_data_types
-- [ ] web/css/guides/values_and_units/using_math_functions
-- [ ] web/css/guides/values_and_units/using_typed_arithmetic
-- [ ] web/css/guides/values_and_units/value_definition_syntax
-- [ ] web/css/guides/view_transitions
-- [ ] web/css/guides/viewport
-- [ ] web/css/guides/writing_modes
-- [ ] web/css/guides/writing_modes/vertical_controls
-- [ ] web/css/guides/writing_modes/writing_mode_systems
+- [x] web/css/guides/shadow_parts
+- [x] web/css/guides/shapes
+- [x] web/css/guides/shapes/from_box_values
+- [x] web/css/guides/shapes/from_images
+- [x] web/css/guides/shapes/overview
+- [x] web/css/guides/shapes/shape_generator
+- [x] web/css/guides/shapes/using_shape-outside
+- [x] web/css/guides/syntax
+- [x] web/css/guides/syntax/at-rules
+- [x] web/css/guides/syntax/comments
+- [x] web/css/guides/syntax/error_handling
+- [x] web/css/guides/syntax/introduction
+- [x] web/css/guides/table
+- [x] web/css/guides/text
+- [x] web/css/guides/text/whitespace
+- [x] web/css/guides/text/wrapping_breaking_text
+- [x] web/css/guides/text_decoration
+- [x] web/css/guides/text_decoration/text_shadows
+- [x] web/css/guides/transforms
+- [x] web/css/guides/transforms/using
+- [x] web/css/guides/transitions
+- [x] web/css/guides/transitions/using
+- [x] web/css/guides/values_and_units
+- [x] web/css/guides/values_and_units/numeric_data_types
+- [x] web/css/guides/values_and_units/textual_data_types
+- [x] web/css/guides/values_and_units/using_math_functions
+- [x] web/css/guides/values_and_units/using_typed_arithmetic
+- [x] web/css/guides/values_and_units/value_definition_syntax
+- [x] web/css/guides/view_transitions
+- [x] web/css/guides/viewport
+- [x] web/css/guides/writing_modes
+- [x] web/css/guides/writing_modes/vertical_controls
+- [x] web/css/guides/writing_modes/writing_mode_systems
 
 ## How to (14 pages)
 
 - [ ] web/css/how_to/index.md
-- [ ] web/css/how_to/layout_cookbook
-- [ ] web/css/how_to/layout_cookbook/breadcrumb_navigation
-- [ ] web/css/how_to/layout_cookbook/card
-- [ ] web/css/how_to/layout_cookbook/center_an_element
-- [ ] web/css/how_to/layout_cookbook/column_layouts
-- [ ] web/css/how_to/layout_cookbook/contribute_a_recipe
-- [ ] web/css/how_to/layout_cookbook/contribute_a_recipe/cookbook_template
+- [x] web/css/how_to/layout_cookbook
+- [x] web/css/how_to/layout_cookbook/breadcrumb_navigation
+- [x] web/css/how_to/layout_cookbook/card
+- [x] web/css/how_to/layout_cookbook/center_an_element
+- [x] web/css/how_to/layout_cookbook/column_layouts
+- [x] web/css/how_to/layout_cookbook/contribute_a_recipe
+- [x] web/css/how_to/layout_cookbook/contribute_a_recipe/cookbook_template
 - [ ] web/css/how_to/layout_cookbook/grid_wrapper
 - [ ] web/css/how_to/layout_cookbook/list_group_with_badges
 - [ ] web/css/how_to/layout_cookbook/media_objects
