@@ -1,12 +1,12 @@
 ---
-title: "<td>: Phần tử Ô Dữ liệu Bảng"
+title: "<td>: The Table Data Cell element"
 slug: Web/HTML/Reference/Elements/td
 page-type: html-element
 browser-compat: html.elements.td
 sidebar: htmlsidebar
 ---
 
-Phần tử **`<td>`** trong [HTML](/vi/docs/Web/HTML) xác định một ô bảng chứa dữ liệu và có thể được sử dụng làm con của phần tử {{HTMLElement("tr")}}.
+Phần tử **`<td>`** trong [HTML](/en-US/docs/Web/HTML) xác định một ô của bảng chứa dữ liệu và có thể được sử dụng làm con của phần tử {{HTMLElement("tr")}}.
 
 {{InteractiveExample("HTML Demo: &lt;td&gt;", "tabbed-taller")}}
 
@@ -82,12 +82,12 @@ caption {
 
 ## Thuộc tính
 
-Phần tử này bao gồm các [thuộc tính toàn cục](/vi/docs/Web/HTML/Reference/Global_attributes).
+Phần tử này bao gồm [thuộc tính toàn cục](/en-US/docs/Web/HTML/Reference/Global_attributes).
 
 - `colspan`
-  - : Chứa giá trị số nguyên không âm cho biết ô dữ liệu trải rộng hoặc mở rộng qua bao nhiêu cột. Giá trị mặc định là `1`. Tác nhân người dùng bỏ qua các giá trị cao hơn 1000 là không chính xác, đặt về giá trị mặc định (`1`).
+  - : Chứa giá trị số nguyên không âm cho biết ô dữ liệu trải rộng hoặc mở rộng qua bao nhiêu cột. Giá trị mặc định là `1`. Tác nhân người dùng bỏ qua các giá trị cao hơn 1000 là không chính xác, đặt lại về giá trị mặc định (`1`).
 - `headers`
-  - : Chứa danh sách các chuỗi phân tách bằng dấu cách, mỗi chuỗi tương ứng với thuộc tính `id` của các phần tử {{HTMLElement("th")}} cung cấp tiêu đề cho ô bảng này.
+  - : Chứa danh sách các chuỗi cách nhau bằng dấu cách, mỗi chuỗi tương ứng với thuộc tính `id` của các phần tử {{HTMLElement("th")}} cung cấp tiêu đề cho ô bảng này.
 - `rowspan`
   - : Chứa giá trị số nguyên không âm cho biết ô dữ liệu trải rộng hoặc mở rộng qua bao nhiêu hàng. Giá trị mặc định là `1`; nếu giá trị được đặt thành `0`, nó mở rộng đến cuối phần nhóm bảng ({{HTMLElement("thead")}}, {{HTMLElement("tbody")}}, {{HTMLElement("tfoot")}}, kể cả khi được định nghĩa ngầm), mà ô thuộc về. Các giá trị cao hơn `65534` bị cắt xuống `65534`.
 
@@ -96,16 +96,16 @@ Phần tử này bao gồm các [thuộc tính toàn cục](/vi/docs/Web/HTML/Re
 Các thuộc tính sau đây đã không còn được dùng và không nên sử dụng. Chúng được ghi lại dưới đây để tham khảo khi cập nhật code hiện có và chỉ vì lý do lịch sử.
 
 - `abbr` {{deprecated_inline}}
-  - : Chứa mô tả ngắn gọn về nội dung của ô dữ liệu. Một số tác nhân người dùng, như trình đọc lời nói, có thể trình bày mô tả này trước nội dung chính. Đặt nội dung rút gọn bên trong ô và đặt mô tả (dài hơn) vào thuộc tính [`title`](/vi/docs/Web/HTML/Reference/Global_attributes/title), vì thuộc tính này đã không còn được dùng. Hoặc, tốt hơn là bao gồm nội dung trong ô dữ liệu và sử dụng CSS để [cắt văn bản tràn trực quan](/vi/docs/Web/CSS/Reference/Properties/text-overflow).
+  - : Chứa mô tả viết tắt ngắn về nội dung của ô dữ liệu. Một số tác nhân người dùng, như trình đọc giọng nói, có thể trình bày mô tả này trước nội dung chính. Hãy đặt nội dung viết tắt trong ô và đặt mô tả (dài hơn) trong thuộc tính [`title`](/en-US/docs/Web/HTML/Reference/Global_attributes/title), vì thuộc tính này đã không còn được dùng. Hoặc tốt hơn, hãy bao gồm nội dung trong ô dữ liệu và sử dụng CSS để [cắt ngắn văn bản bị tràn theo chiều nhìn](/en-US/docs/Web/CSS/Reference/Properties/text-overflow).
 
 - `align` {{deprecated_inline}}
   - : Xác định căn chỉnh ngang của ô dữ liệu. Các giá trị {{Glossary("enumerated")}} có thể là `left`, `center`, `right`, `justify` và `char`. Khi được hỗ trợ, giá trị `char` căn chỉnh nội dung văn bản theo ký tự được định nghĩa trong thuộc tính [`char`](#char) và độ lệch được định nghĩa bởi thuộc tính [`charoff`](#charoff). Thay vào đó hãy sử dụng thuộc tính CSS {{cssxref("text-align")}}, vì thuộc tính này đã không còn được dùng.
 
 - `axis` {{deprecated_inline}}
-  - : Chứa danh sách các chuỗi phân tách bằng dấu cách, mỗi chuỗi tương ứng với thuộc tính `id` của một nhóm ô mà ô dữ liệu áp dụng cho.
+  - : Chứa danh sách các chuỗi cách nhau bằng dấu cách, mỗi chuỗi tương ứng với thuộc tính `id` của nhóm ô mà ô dữ liệu áp dụng cho.
 
 - `bgcolor` {{deprecated_inline}}
-  - : Xác định màu nền của ô dữ liệu. Giá trị là màu HTML; có thể là [mã RGB thập lục phân 6 chữ số](/vi/docs/Web/CSS/Reference/Values/hex-color), có tiền tố `#`, hoặc một [từ khóa màu](/vi/docs/Web/CSS/Reference/Values/named-color). Các giá trị CSS {{cssxref("&lt;color&gt;")}} khác không được hỗ trợ. Thay vào đó hãy sử dụng thuộc tính CSS {{cssxref("background-color")}}, vì thuộc tính này đã không còn được dùng.
+  - : Xác định màu nền của ô dữ liệu. Giá trị là màu HTML; có thể là [mã RGB thập lục phân 6 chữ số](/en-US/docs/Web/CSS/Reference/Values/hex-color), có tiền tố `#`, hoặc một [từ khóa màu](/en-US/docs/Web/CSS/Reference/Values/named-color). Các giá trị CSS {{cssxref("&lt;color&gt;")}} khác không được hỗ trợ. Thay vào đó hãy sử dụng thuộc tính CSS {{cssxref("background-color")}}, vì thuộc tính này đã không còn được dùng.
 
 - `char` {{deprecated_inline}}
   - : Không có tác dụng. Ban đầu được dùng để xác định căn chỉnh nội dung theo một ký tự của ô dữ liệu. Các giá trị điển hình bao gồm dấu chấm (`.`) khi muốn căn chỉnh số hoặc giá trị tiền tệ. Nếu [`align`](#align) không được đặt thành `char`, thuộc tính này bị bỏ qua.
@@ -141,14 +141,14 @@ Xem {{HTMLElement("table")}} để biết ví dụ bảng đầy đủ giới th
 
 ### Các ô dữ liệu cơ bản
 
-Ví dụ này sử dụng các phần tử `<td>` cùng với các phần tử liên quan đến bảng khác để giới thiệu một bảng cơ bản với dữ liệu về bảng chữ cái ngữ âm.
+Ví dụ này sử dụng các phần tử `<td>` cùng với các phần tử liên quan đến bảng khác để giới thiệu bảng cơ bản với dữ liệu về bảng chữ cái ngữ âm.
 
 #### HTML
 
-Một số hàng bảng (phần tử {{HTMLElement("tr")}}) chứa cả các ô tiêu đề (phần tử {{HTMLElement("th")}}) và các ô dữ liệu `<td>`. Phần tử {{HTMLElement("th")}} là con đầu tiên của mỗi hàng tạo thành cột đầu tiên của bảng, với mỗi `<th>` cung cấp tiêu đề hàng cho các ô dữ liệu trong hàng đó. Mỗi phần tử `<td>` tương ứng chứa dữ liệu được căn chỉnh với tiêu đề cột và tiêu đề hàng tương ứng của nó.
+Một số hàng bảng (phần tử {{HTMLElement("tr")}}) chứa cả ô tiêu đề (phần tử {{HTMLElement("th")}}) và ô dữ liệu `<td>`. Phần tử {{HTMLElement("th")}} là con đầu tiên của mỗi hàng tạo thành cột đầu tiên của bảng, với mỗi `<th>` cung cấp tiêu đề hàng cho các ô dữ liệu trong hàng đó. Mỗi phần tử `<td>` tương ứng chứa dữ liệu được căn chỉnh với tiêu đề cột và ô tiêu đề hàng tương ứng.
 
 > [!NOTE]
-> Thông thường, nhóm đầu bảng với tiêu đề cột sẽ được triển khai để dễ hiểu thông tin trong các cột hơn. Các phần tử {{HTMLElement("thead")}} và {{HTMLElement("tbody")}} sẽ được sử dụng để nhóm các hàng tiêu đề và dữ liệu như vậy vào các phần đầu và thân tương ứng của bảng. Điều này không được triển khai trong ví dụ này để tập trung vào các ô dữ liệu và giảm độ phức tạp của ví dụ này.
+> Thông thường, một nhóm đầu bảng với các tiêu đề cột sẽ được triển khai để dễ hiểu thông tin trong các cột hơn. Các phần tử {{HTMLElement("thead")}} và {{HTMLElement("tbody")}} sẽ được sử dụng để nhóm các hàng tiêu đề và dữ liệu vào các phần đầu và thân tương ứng của bảng. Điều này không được triển khai trong ví dụ này để tập trung vào các ô dữ liệu và giảm độ phức tạp của ví dụ.
 
 ```html
 <table>
@@ -177,7 +177,7 @@ Một số hàng bảng (phần tử {{HTMLElement("tr")}}) chứa cả các ô 
 
 #### CSS
 
-Một số CSS cơ bản được sử dụng để tạo kiểu bảng và các ô của nó. [Bộ chọn thuộc tính](/vi/docs/Web/CSS/Reference/Selectors/Attribute_selectors) CSS và pseudo-class {{cssxref(":nth-of-type")}} được sử dụng để xen kẽ giao diện của các ô để làm cho thông tin trong bảng dễ hiểu và xác định hơn.
+Một số CSS cơ bản được sử dụng để tạo kiểu bảng và các ô của nó. [Bộ chọn thuộc tính](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) CSS và pseudo-class {{cssxref(":nth-of-type")}} được sử dụng để xen kẽ giao diện của các ô để làm cho thông tin trong bảng dễ hiểu và nhận biết hơn.
 
 ```css
 td,
@@ -252,7 +252,7 @@ Sử dụng thuộc tính [`rowspan`](#rowspan), ô "ABC" được trải rộng
 
 #### CSS
 
-Các pseudo-class {{cssxref(":first-of-type")}} và {{cssxref(":last-of-type")}} được sử dụng trong CSS để chọn và tạo kiểu ô dữ liệu "ABC" được thêm vào.
+Các pseudo-class {{cssxref(":first-of-type")}} và {{cssxref(":last-of-type")}} được sử dụng trong CSS để chọn và tạo kiểu ô dữ liệu "ABC" đã thêm.
 
 ```css
 tr:first-of-type td:last-of-type {
@@ -294,14 +294,14 @@ table {
 
 ### Liên kết các ô dữ liệu với các ô tiêu đề
 
-Đối với các mối quan hệ phức tạp hơn giữa các ô dữ liệu (phần tử `<td>`) và các ô tiêu đề (phần tử {{HTMLElement("th")}}), việc sử dụng các phần tử {{HTMLElement("th")}} với thuộc tính [`scope`](/vi/docs/Web/HTML/Reference/Elements/th#scope) một mình có thể không đủ cho công nghệ hỗ trợ, đặc biệt là trình đọc màn hình.
+Đối với các mối quan hệ phức tạp hơn giữa các ô dữ liệu (phần tử `<td>`) và các ô tiêu đề (phần tử {{HTMLElement("th")}}), việc chỉ sử dụng các phần tử {{HTMLElement("th")}} với thuộc tính [`scope`](/en-US/docs/Web/HTML/Reference/Elements/th#scope) có thể không đủ cho công nghệ hỗ trợ, đặc biệt là trình đọc màn hình.
 
 #### HTML
 
-Để cải thiện {{Glossary("accessibility", "khả năng tiếp cận")}} của [ví dụ trước](#column_and_row_spanning) và cho phép trình đọc màn hình, ví dụ, đọc các tiêu đề liên kết với mỗi ô dữ liệu, thuộc tính [`headers`](#headers) có thể được giới thiệu cùng với các thuộc tính [`id`](/vi/docs/Web/HTML/Reference/Global_attributes/id). Mỗi ô tiêu đề hàng (phần tử {{HTMLElement("th")}}) liên kết với ô dữ liệu "ABC", tức là các chữ cái "A", "B" và "C", được gán một định danh duy nhất với thuộc tính [`id`](/vi/docs/Web/HTML/Reference/Global_attributes/id). Ô dữ liệu "ABC" (phần tử `<td>`) sau đó sử dụng các giá trị `id` này trong danh sách phân tách bằng dấu cách cho thuộc tính [`headers`](#headers).
+Để cải thiện {{Glossary("accessibility", "khả năng tiếp cận")}} của [ví dụ trước](#column_and_row_spanning) và cho phép trình đọc màn hình, ví dụ, đọc các tiêu đề liên kết với mỗi ô dữ liệu, thuộc tính [`headers`](#headers) có thể được giới thiệu cùng với các thuộc tính [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id). Mỗi ô tiêu đề hàng (phần tử {{HTMLElement("th")}}) liên kết với ô dữ liệu "ABC", tức là các chữ "A", "B" và "C", được cung cấp định danh duy nhất bằng thuộc tính [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id). Ô dữ liệu "ABC" (phần tử `<td>`) sau đó sử dụng các giá trị `id` này trong danh sách cách nhau bằng dấu cách cho thuộc tính [`headers`](#headers).
 
 > [!NOTE]
-> Nên sử dụng các giá trị mô tả và hữu ích hơn cho thuộc tính [`id`](/vi/docs/Web/HTML/Reference/Global_attributes/id). Mỗi `id` trong tài liệu phải là duy nhất trong tài liệu đó. Trong ví dụ này, các giá trị `id` là các ký tự đơn để duy trì tập trung vào khái niệm thuộc tính [`headers`](#headers).
+> Nên sử dụng các giá trị mô tả và hữu ích hơn cho thuộc tính [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id). Mỗi `id` trong tài liệu phải là duy nhất trong tài liệu đó. Trong ví dụ này, các giá trị `id` là các ký tự đơn để duy trì tập trung vào khái niệm thuộc tính [`headers`](#headers).
 
 ```html
 <table>
@@ -336,7 +336,7 @@ table {
 
 #### Kết quả
 
-Trong khi [kết quả trực quan](#result_2) không thay đổi so với [bảng ví dụ trước](#column_and_row_spanning), mỗi ô dữ liệu (`<td>`) giờ được liên kết rõ ràng với ô tiêu đề hàng (`<th>`) của nó.
+Trong khi [kết quả trực quan](#result_2) không thay đổi so với [bảng ví dụ trước](#column_and_row_spanning), mỗi ô dữ liệu (`<td>`) hiện được liên kết rõ ràng với ô tiêu đề hàng (`<th>`) của nó.
 
 ## Tóm tắt kỹ thuật
 
@@ -344,7 +344,7 @@ Trong khi [kết quả trực quan](#result_2) không thay đổi so với [bả
   <tbody>
     <tr>
       <th scope="row">
-        <a href="/vi/docs/Web/HTML/Guides/Content_categories"
+        <a href="/en-US/docs/Web/HTML/Guides/Content_categories"
           >Danh mục nội dung</a
         >
       </th>
@@ -353,7 +353,7 @@ Trong khi [kết quả trực quan](#result_2) không thay đổi so với [bả
     <tr>
       <th scope="row">Nội dung được phép</th>
       <td>
-        <a href="/vi/docs/Web/HTML/Guides/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Guides/Content_categories#flow_content"
           >Nội dung luồng</a
         >.
       </td>
@@ -411,7 +411,7 @@ Trong khi [kết quả trực quan](#result_2) không thay đổi so với [bả
 
 ## Xem thêm
 
-- [Học: Kiến thức cơ bản về bảng HTML](/vi/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics)
+- [Học: Kiến thức cơ bản về bảng HTML](/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics)
 - {{HTMLElement("caption")}}, {{HTMLElement("col")}}, {{HTMLElement("colgroup")}}, {{HTMLElement("table")}}, {{HTMLElement("tbody")}}, {{HTMLElement("tfoot")}}, {{HTMLElement("th")}}, {{HTMLElement("thead")}}, {{HTMLElement("tr")}}: Các phần tử liên quan đến bảng khác
 - {{cssxref("background-color")}}: Thuộc tính CSS để đặt màu nền của mỗi ô dữ liệu
 - {{cssxref("border")}}: Thuộc tính CSS để kiểm soát đường viền của các ô dữ liệu
