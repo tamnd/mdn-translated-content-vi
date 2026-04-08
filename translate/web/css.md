@@ -179,10 +179,10 @@ Total: 1,226 pages
 - [x] web/css/guides/scroll-driven_animations/timelines
 - [x] web/css/guides/scrollbars_styling
 - [x] web/css/guides/selectors
-- [ ] web/css/guides/selectors/privacy_and\_\_colon_visited
+- [x] web/css/guides/selectors/privacy_and\_\_colon_visited
 - [x] web/css/guides/selectors/selector_structure
 - [x] web/css/guides/selectors/selectors_and_combinators
-- [ ] web/css/guides/selectors/using\_\_colon_target
+- [x] web/css/guides/selectors/using\_\_colon_target
 - [x] web/css/guides/shadow_parts
 - [x] web/css/guides/shapes
 - [x] web/css/guides/shapes/from_box_values
@@ -219,7 +219,7 @@ Total: 1,226 pages
 
 ## How to (14 pages)
 
-- [ ] web/css/how_to/index.md
+- [x] web/css/how_to/index.md
 - [x] web/css/how_to/layout_cookbook
 - [x] web/css/how_to/layout_cookbook/breadcrumb_navigation
 - [x] web/css/how_to/layout_cookbook/card
@@ -227,12 +227,12 @@ Total: 1,226 pages
 - [x] web/css/how_to/layout_cookbook/column_layouts
 - [x] web/css/how_to/layout_cookbook/contribute_a_recipe
 - [x] web/css/how_to/layout_cookbook/contribute_a_recipe/cookbook_template
-- [ ] web/css/how_to/layout_cookbook/grid_wrapper
-- [ ] web/css/how_to/layout_cookbook/list_group_with_badges
-- [ ] web/css/how_to/layout_cookbook/media_objects
-- [ ] web/css/how_to/layout_cookbook/pagination
-- [ ] web/css/how_to/layout_cookbook/split_navigation
-- [ ] web/css/how_to/layout_cookbook/sticky_footers
+- [x] web/css/how_to/layout_cookbook/grid_wrapper
+- [x] web/css/how_to/layout_cookbook/list_group_with_badges
+- [x] web/css/how_to/layout_cookbook/media_objects
+- [x] web/css/how_to/layout_cookbook/pagination
+- [x] web/css/how_to/layout_cookbook/split_navigation
+- [x] web/css/how_to/layout_cookbook/sticky_footers
 
 ## Tutorials (1 page)
 
@@ -245,93 +245,93 @@ Total: 1,226 pages
 ## Reference — At-rules (100 pages)
 
 - [ ] web/css/reference/at-rules/index.md
-- [ ] web/css/reference/at-rules/at-rule_functions
-- [ ] web/css/reference/at-rules/@charset
-- [ ] web/css/reference/at-rules/@color-profile
-- [ ] web/css/reference/at-rules/@container
-- [ ] web/css/reference/at-rules/@counter-style
-- [ ] web/css/reference/at-rules/@counter-style/additive-symbols
-- [ ] web/css/reference/at-rules/@counter-style/fallback
-- [ ] web/css/reference/at-rules/@counter-style/negative
-- [ ] web/css/reference/at-rules/@counter-style/pad
-- [ ] web/css/reference/at-rules/@counter-style/prefix
-- [ ] web/css/reference/at-rules/@counter-style/range
-- [ ] web/css/reference/at-rules/@counter-style/speak-as
-- [ ] web/css/reference/at-rules/@counter-style/suffix
-- [ ] web/css/reference/at-rules/@counter-style/symbols
-- [ ] web/css/reference/at-rules/@counter-style/system
-- [ ] web/css/reference/at-rules/@custom-media
-- [ ] web/css/reference/at-rules/@document
-- [ ] web/css/reference/at-rules/@font-face
-- [ ] web/css/reference/at-rules/@font-face/ascent-override
-- [ ] web/css/reference/at-rules/@font-face/descent-override
-- [ ] web/css/reference/at-rules/@font-face/font-display
-- [ ] web/css/reference/at-rules/@font-face/font-family
-- [ ] web/css/reference/at-rules/@font-face/font-feature-settings
-- [ ] web/css/reference/at-rules/@font-face/font-stretch
-- [ ] web/css/reference/at-rules/@font-face/font-style
-- [ ] web/css/reference/at-rules/@font-face/font-variation-settings
-- [ ] web/css/reference/at-rules/@font-face/font-weight
-- [ ] web/css/reference/at-rules/@font-face/font-width
-- [ ] web/css/reference/at-rules/@font-face/line-gap-override
-- [ ] web/css/reference/at-rules/@font-face/size-adjust
-- [ ] web/css/reference/at-rules/@font-face/src
-- [ ] web/css/reference/at-rules/@font-face/unicode-range
-- [ ] web/css/reference/at-rules/@font-feature-values
-- [ ] web/css/reference/at-rules/@font-feature-values/font-display
-- [ ] web/css/reference/at-rules/@font-palette-values
-- [ ] web/css/reference/at-rules/@font-palette-values/base-palette
-- [ ] web/css/reference/at-rules/@font-palette-values/font-family
-- [ ] web/css/reference/at-rules/@font-palette-values/override-colors
-- [ ] web/css/reference/at-rules/@function
-- [ ] web/css/reference/at-rules/@import
-- [ ] web/css/reference/at-rules/@import/layer_function
-- [ ] web/css/reference/at-rules/@keyframes
-- [ ] web/css/reference/at-rules/@layer
-- [ ] web/css/reference/at-rules/@media
-- [ ] web/css/reference/at-rules/@media/-moz-device-pixel-ratio
-- [ ] web/css/reference/at-rules/@media/-webkit-animation
-- [ ] web/css/reference/at-rules/@media/-webkit-device-pixel-ratio
-- [ ] web/css/reference/at-rules/@media/-webkit-transform-2d
-- [ ] web/css/reference/at-rules/@media/-webkit-transform-3d
-- [ ] web/css/reference/at-rules/@media/-webkit-transition
-- [ ] web/css/reference/at-rules/@media/any-hover
-- [ ] web/css/reference/at-rules/@media/any-pointer
-- [ ] web/css/reference/at-rules/@media/aspect-ratio
-- [ ] web/css/reference/at-rules/@media/color
-- [ ] web/css/reference/at-rules/@media/color-gamut
-- [ ] web/css/reference/at-rules/@media/color-index
-- [ ] web/css/reference/at-rules/@media/device-aspect-ratio
-- [ ] web/css/reference/at-rules/@media/device-height
-- [ ] web/css/reference/at-rules/@media/device-posture
-- [ ] web/css/reference/at-rules/@media/device-width
-- [ ] web/css/reference/at-rules/@media/display-mode
-- [ ] web/css/reference/at-rules/@media/dynamic-range
-- [ ] web/css/reference/at-rules/@media/forced-colors
-- [ ] web/css/reference/at-rules/@media/grid
-- [ ] web/css/reference/at-rules/@media/height
-- [ ] web/css/reference/at-rules/@media/horizontal-viewport-segments
-- [ ] web/css/reference/at-rules/@media/hover
-- [ ] web/css/reference/at-rules/@media/inverted-colors
-- [ ] web/css/reference/at-rules/@media/monochrome
-- [ ] web/css/reference/at-rules/@media/orientation
-- [ ] web/css/reference/at-rules/@media/overflow-block
-- [ ] web/css/reference/at-rules/@media/overflow-inline
-- [ ] web/css/reference/at-rules/@media/pointer
-- [ ] web/css/reference/at-rules/@media/prefers-color-scheme
-- [ ] web/css/reference/at-rules/@media/prefers-contrast
-- [ ] web/css/reference/at-rules/@media/prefers-reduced-data
-- [ ] web/css/reference/at-rules/@media/prefers-reduced-motion
-- [ ] web/css/reference/at-rules/@media/prefers-reduced-transparency
-- [ ] web/css/reference/at-rules/@media/resolution
-- [ ] web/css/reference/at-rules/@media/scan
-- [ ] web/css/reference/at-rules/@media/scripting
-- [ ] web/css/reference/at-rules/@media/shape
-- [ ] web/css/reference/at-rules/@media/update
-- [ ] web/css/reference/at-rules/@media/vertical-viewport-segments
-- [ ] web/css/reference/at-rules/@media/video-dynamic-range
-- [ ] web/css/reference/at-rules/@media/width
-- [ ] web/css/reference/at-rules/@namespace
+- [x] web/css/reference/at-rules/at-rule_functions
+- [x] web/css/reference/at-rules/@charset
+- [x] web/css/reference/at-rules/@color-profile
+- [x] web/css/reference/at-rules/@container
+- [x] web/css/reference/at-rules/@counter-style
+- [x] web/css/reference/at-rules/@counter-style/additive-symbols
+- [x] web/css/reference/at-rules/@counter-style/fallback
+- [x] web/css/reference/at-rules/@counter-style/negative
+- [x] web/css/reference/at-rules/@counter-style/pad
+- [x] web/css/reference/at-rules/@counter-style/prefix
+- [x] web/css/reference/at-rules/@counter-style/range
+- [x] web/css/reference/at-rules/@counter-style/speak-as
+- [x] web/css/reference/at-rules/@counter-style/suffix
+- [x] web/css/reference/at-rules/@counter-style/symbols
+- [x] web/css/reference/at-rules/@counter-style/system
+- [x] web/css/reference/at-rules/@custom-media
+- [x] web/css/reference/at-rules/@document
+- [x] web/css/reference/at-rules/@font-face
+- [x] web/css/reference/at-rules/@font-face/ascent-override
+- [x] web/css/reference/at-rules/@font-face/descent-override
+- [x] web/css/reference/at-rules/@font-face/font-display
+- [x] web/css/reference/at-rules/@font-face/font-family
+- [x] web/css/reference/at-rules/@font-face/font-feature-settings
+- [x] web/css/reference/at-rules/@font-face/font-stretch
+- [x] web/css/reference/at-rules/@font-face/font-style
+- [x] web/css/reference/at-rules/@font-face/font-variation-settings
+- [x] web/css/reference/at-rules/@font-face/font-weight
+- [x] web/css/reference/at-rules/@font-face/font-width
+- [x] web/css/reference/at-rules/@font-face/line-gap-override
+- [x] web/css/reference/at-rules/@font-face/size-adjust
+- [x] web/css/reference/at-rules/@font-face/src
+- [x] web/css/reference/at-rules/@font-face/unicode-range
+- [x] web/css/reference/at-rules/@font-feature-values
+- [x] web/css/reference/at-rules/@font-feature-values/font-display
+- [x] web/css/reference/at-rules/@font-palette-values
+- [x] web/css/reference/at-rules/@font-palette-values/base-palette
+- [x] web/css/reference/at-rules/@font-palette-values/font-family
+- [x] web/css/reference/at-rules/@font-palette-values/override-colors
+- [x] web/css/reference/at-rules/@function
+- [x] web/css/reference/at-rules/@import
+- [x] web/css/reference/at-rules/@import/layer_function
+- [x] web/css/reference/at-rules/@keyframes
+- [x] web/css/reference/at-rules/@layer
+- [x] web/css/reference/at-rules/@media
+- [x] web/css/reference/at-rules/@media/-moz-device-pixel-ratio
+- [x] web/css/reference/at-rules/@media/-webkit-animation
+- [x] web/css/reference/at-rules/@media/-webkit-device-pixel-ratio
+- [x] web/css/reference/at-rules/@media/-webkit-transform-2d
+- [x] web/css/reference/at-rules/@media/-webkit-transform-3d
+- [x] web/css/reference/at-rules/@media/-webkit-transition
+- [x] web/css/reference/at-rules/@media/any-hover
+- [x] web/css/reference/at-rules/@media/any-pointer
+- [x] web/css/reference/at-rules/@media/aspect-ratio
+- [x] web/css/reference/at-rules/@media/color
+- [x] web/css/reference/at-rules/@media/color-gamut
+- [x] web/css/reference/at-rules/@media/color-index
+- [x] web/css/reference/at-rules/@media/device-aspect-ratio
+- [x] web/css/reference/at-rules/@media/device-height
+- [x] web/css/reference/at-rules/@media/device-posture
+- [x] web/css/reference/at-rules/@media/device-width
+- [x] web/css/reference/at-rules/@media/display-mode
+- [x] web/css/reference/at-rules/@media/dynamic-range
+- [x] web/css/reference/at-rules/@media/forced-colors
+- [x] web/css/reference/at-rules/@media/grid
+- [x] web/css/reference/at-rules/@media/height
+- [x] web/css/reference/at-rules/@media/horizontal-viewport-segments
+- [x] web/css/reference/at-rules/@media/hover
+- [x] web/css/reference/at-rules/@media/inverted-colors
+- [x] web/css/reference/at-rules/@media/monochrome
+- [x] web/css/reference/at-rules/@media/orientation
+- [x] web/css/reference/at-rules/@media/overflow-block
+- [x] web/css/reference/at-rules/@media/overflow-inline
+- [x] web/css/reference/at-rules/@media/pointer
+- [x] web/css/reference/at-rules/@media/prefers-color-scheme
+- [x] web/css/reference/at-rules/@media/prefers-contrast
+- [x] web/css/reference/at-rules/@media/prefers-reduced-data
+- [x] web/css/reference/at-rules/@media/prefers-reduced-motion
+- [x] web/css/reference/at-rules/@media/prefers-reduced-transparency
+- [x] web/css/reference/at-rules/@media/resolution
+- [x] web/css/reference/at-rules/@media/scan
+- [x] web/css/reference/at-rules/@media/scripting
+- [x] web/css/reference/at-rules/@media/shape
+- [x] web/css/reference/at-rules/@media/update
+- [x] web/css/reference/at-rules/@media/vertical-viewport-segments
+- [x] web/css/reference/at-rules/@media/video-dynamic-range
+- [x] web/css/reference/at-rules/@media/width
+- [x] web/css/reference/at-rules/@namespace
 - [ ] web/css/reference/at-rules/@page
 - [ ] web/css/reference/at-rules/@page/page-orientation
 - [ ] web/css/reference/at-rules/@page/size
