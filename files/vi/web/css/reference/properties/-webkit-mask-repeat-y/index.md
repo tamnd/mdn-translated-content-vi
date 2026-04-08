@@ -1,0 +1,93 @@
+---
+title: -webkit-mask-repeat-y
+slug: Web/CSS/Reference/Properties/-webkit-mask-repeat-y
+page-type: css-property
+status:
+  - non-standard
+browser-compat: css.properties.-webkit-mask-repeat-y
+sidebar: cssref
+---
+
+{{Non-standard_header}}
+
+Thuộc tính `-webkit-mask-repeat-y` đặt liệu hình ảnh mặt nạ có được lặp lại (lát gạch) theo chiều dọc hay không và lặp lại như thế nào.
+
+## Cú pháp
+
+```css
+/* Giá trị từ khóa */
+-webkit-mask-repeat-y: repeat;
+-webkit-mask-repeat-y: no-repeat;
+-webkit-mask-repeat-y: space;
+-webkit-mask-repeat-y: round;
+
+/* Nhiều giá trị */
+-webkit-mask-repeat-y: repeat, no-repeat, space;
+
+/* Giá trị toàn cục */
+-webkit-mask-repeat-y: inherit;
+-webkit-mask-repeat-y: initial;
+-webkit-mask-repeat-y: revert;
+-webkit-mask-repeat-y: revert-layer;
+-webkit-mask-repeat-y: unset;
+```
+
+### Giá trị
+
+- repeat
+  - : Hình ảnh mặt nạ được lặp lại theo chiều dọc.
+- no-repeat
+  - : Hình ảnh mặt nạ không được lặp lại theo chiều dọc; chỉ có một bản sao của hình ảnh mặt nạ được vẽ theo chiều dọc. Phần còn lại theo chiều dọc nội dung của phần tử được che khuất sẽ không hiển thị.
+- space
+  - : Hình ảnh được lặp lại nhiều nhất có thể mà không bị cắt xén. Hình ảnh đầu tiên và cuối cùng được ghim vào cạnh trên và cạnh dưới của phần tử, và khoảng trắng được phân phối đều giữa các hình ảnh. Thuộc tính {{cssxref("mask-position")}} bị bỏ qua trừ khi chỉ có một hình ảnh có thể hiển thị mà không bị cắt. Trường hợp duy nhất xảy ra cắt xén khi dùng `space` là khi không có đủ chỗ để hiển thị một hình ảnh.
+- round
+  - : Khi không gian dọc cho phép tăng lên, các hình ảnh lặp lại sẽ kéo giãn (không để khoảng trống) cho đến khi có chỗ để thêm một hình ảnh khác. Khi hình ảnh tiếp theo được thêm vào, tất cả hình ảnh hiện tại nén lại để nhường chỗ. Ví dụ: Một hình ảnh có chiều cao gốc 260px, lặp lại ba lần, có thể kéo giãn cho đến khi mỗi lần lặp cao 300px, rồi một hình ảnh khác sẽ được thêm vào. Sau đó chúng nén xuống còn chiều cao 225px.
+
+## Định nghĩa hình thức
+
+{{CSSInfo}}
+
+## Cú pháp hình thức
+
+{{CSSSyntaxRaw(`-webkit-mask-repeat-y = [ repeat | no-repeat | space | round ]#`)}}
+
+## Ví dụ
+
+### Dùng hình ảnh mặt nạ lặp lại hoặc không lặp lại
+
+```css
+.example-one {
+  -webkit-mask-image: url("mask.png");
+  -webkit-mask-repeat-y: repeat;
+}
+
+.example-two {
+  -webkit-mask-image: url("mask.png");
+  -webkit-mask-repeat-y: no-repeat;
+}
+```
+
+### Dùng nhiều hình ảnh mặt nạ
+
+Bạn có thể chỉ định một `<repeat-style>` khác nhau cho mỗi hình ảnh mặt nạ, phân cách bằng dấu phẩy:
+
+```css
+.example-three {
+  -webkit-mask-image: url("mask1.png"), url("mask2.png");
+  -webkit-mask-repeat-y: repeat, space;
+}
+```
+
+Mỗi hình ảnh được ghép với kiểu lặp tương ứng, từ hình ảnh đầu tiên đến hình ảnh cuối cùng.
+
+## Đặc tả
+
+Không thuộc bất kỳ tiêu chuẩn nào.
+
+## Tương thích trình duyệt
+
+{{Compat}}
+
+## Xem thêm
+
+{{cssxref("mask-repeat", "-webkit-mask-repeat")}}, {{cssxref("-webkit-mask-repeat-x")}}
