@@ -236,15 +236,15 @@ Total: 1,226 pages
 
 ## Tutorials (1 page)
 
-- [ ] web/css/tutorials/index.md
+- [x] web/css/tutorials/index.md
 
 ## Reference — landing page
 
-- [ ] web/css/reference/index.md
+- [x] web/css/reference/index.md
 
 ## Reference — At-rules (100 pages)
 
-- [ ] web/css/reference/at-rules/index.md
+- [x] web/css/reference/at-rules/index.md
 - [x] web/css/reference/at-rules/at-rule_functions
 - [x] web/css/reference/at-rules/@charset
 - [x] web/css/reference/at-rules/@color-profile
@@ -332,106 +332,106 @@ Total: 1,226 pages
 - [x] web/css/reference/at-rules/@media/video-dynamic-range
 - [x] web/css/reference/at-rules/@media/width
 - [x] web/css/reference/at-rules/@namespace
-- [ ] web/css/reference/at-rules/@page
-- [ ] web/css/reference/at-rules/@page/page-orientation
-- [ ] web/css/reference/at-rules/@page/size
-- [ ] web/css/reference/at-rules/@position-try
-- [ ] web/css/reference/at-rules/@property
-- [ ] web/css/reference/at-rules/@property/inherits
-- [ ] web/css/reference/at-rules/@property/initial-value
-- [ ] web/css/reference/at-rules/@property/syntax
-- [ ] web/css/reference/at-rules/@scope
-- [ ] web/css/reference/at-rules/@starting-style
-- [ ] web/css/reference/at-rules/@supports
-- [ ] web/css/reference/at-rules/@view-transition
+- [x] web/css/reference/at-rules/@page
+- [x] web/css/reference/at-rules/@page/page-orientation
+- [x] web/css/reference/at-rules/@page/size
+- [x] web/css/reference/at-rules/@position-try
+- [x] web/css/reference/at-rules/@property
+- [x] web/css/reference/at-rules/@property/inherits
+- [x] web/css/reference/at-rules/@property/initial-value
+- [x] web/css/reference/at-rules/@property/syntax
+- [x] web/css/reference/at-rules/@scope
+- [x] web/css/reference/at-rules/@starting-style
+- [x] web/css/reference/at-rules/@supports
+- [x] web/css/reference/at-rules/@view-transition
 
 ## Reference — Properties (550 pages)
 
-- [ ] web/css/reference/properties/index.md
-- [ ] web/css/reference/properties/--_star_
-- [ ] web/css/reference/properties/-moz-float-edge
-- [ ] web/css/reference/properties/-moz-force-broken-image-icon
-- [ ] web/css/reference/properties/-moz-orient
-- [ ] web/css/reference/properties/-moz-user-focus
-- [ ] web/css/reference/properties/-moz-user-input
-- [ ] web/css/reference/properties/-webkit-border-before
-- [ ] web/css/reference/properties/-webkit-box-reflect
-- [ ] web/css/reference/properties/-webkit-mask-box-image
-- [ ] web/css/reference/properties/-webkit-mask-composite
-- [ ] web/css/reference/properties/-webkit-mask-position-x
-- [ ] web/css/reference/properties/-webkit-mask-position-y
-- [ ] web/css/reference/properties/-webkit-mask-repeat-x
-- [ ] web/css/reference/properties/-webkit-mask-repeat-y
-- [ ] web/css/reference/properties/-webkit-tap-highlight-color
-- [ ] web/css/reference/properties/-webkit-text-fill-color
-- [ ] web/css/reference/properties/-webkit-text-security
-- [ ] web/css/reference/properties/-webkit-text-stroke
-- [ ] web/css/reference/properties/-webkit-text-stroke-color
-- [ ] web/css/reference/properties/-webkit-text-stroke-width
-- [ ] web/css/reference/properties/-webkit-touch-callout
-- [ ] web/css/reference/properties/accent-color
-- [ ] web/css/reference/properties/align-content
-- [ ] web/css/reference/properties/align-items
-- [ ] web/css/reference/properties/align-self
-- [ ] web/css/reference/properties/alignment-baseline
-- [ ] web/css/reference/properties/all
-- [ ] web/css/reference/properties/anchor-name
-- [ ] web/css/reference/properties/anchor-scope
-- [ ] web/css/reference/properties/animation
-- [ ] web/css/reference/properties/animation-composition
-- [ ] web/css/reference/properties/animation-delay
-- [ ] web/css/reference/properties/animation-direction
-- [ ] web/css/reference/properties/animation-duration
-- [ ] web/css/reference/properties/animation-fill-mode
-- [ ] web/css/reference/properties/animation-iteration-count
-- [ ] web/css/reference/properties/animation-name
-- [ ] web/css/reference/properties/animation-play-state
-- [ ] web/css/reference/properties/animation-range
-- [ ] web/css/reference/properties/animation-range-end
-- [ ] web/css/reference/properties/animation-range-start
-- [ ] web/css/reference/properties/animation-timeline
-- [ ] web/css/reference/properties/animation-timeline/scroll
-- [ ] web/css/reference/properties/animation-timeline/view
-- [ ] web/css/reference/properties/animation-timing-function
-- [ ] web/css/reference/properties/appearance
-- [ ] web/css/reference/properties/aspect-ratio
-- [ ] web/css/reference/properties/backdrop-filter
-- [ ] web/css/reference/properties/backface-visibility
-- [ ] web/css/reference/properties/background
-- [ ] web/css/reference/properties/background-attachment
-- [ ] web/css/reference/properties/background-blend-mode
-- [ ] web/css/reference/properties/background-clip
+- [x] web/css/reference/properties/index.md
+- [x] web/css/reference/properties/--_star_
+- [x] web/css/reference/properties/-moz-float-edge
+- [x] web/css/reference/properties/-moz-force-broken-image-icon
+- [x] web/css/reference/properties/-moz-orient
+- [x] web/css/reference/properties/-moz-user-focus
+- [x] web/css/reference/properties/-moz-user-input
+- [x] web/css/reference/properties/-webkit-border-before
+- [x] web/css/reference/properties/-webkit-box-reflect
+- [x] web/css/reference/properties/-webkit-mask-box-image
+- [x] web/css/reference/properties/-webkit-mask-composite
+- [x] web/css/reference/properties/-webkit-mask-position-x
+- [x] web/css/reference/properties/-webkit-mask-position-y
+- [x] web/css/reference/properties/-webkit-mask-repeat-x
+- [x] web/css/reference/properties/-webkit-mask-repeat-y
+- [x] web/css/reference/properties/-webkit-tap-highlight-color
+- [x] web/css/reference/properties/-webkit-text-fill-color
+- [x] web/css/reference/properties/-webkit-text-security
+- [x] web/css/reference/properties/-webkit-text-stroke
+- [x] web/css/reference/properties/-webkit-text-stroke-color
+- [x] web/css/reference/properties/-webkit-text-stroke-width
+- [x] web/css/reference/properties/-webkit-touch-callout
+- [x] web/css/reference/properties/accent-color
+- [x] web/css/reference/properties/align-content
+- [x] web/css/reference/properties/align-items
+- [x] web/css/reference/properties/align-self
+- [x] web/css/reference/properties/alignment-baseline
+- [x] web/css/reference/properties/all
+- [x] web/css/reference/properties/anchor-name
+- [x] web/css/reference/properties/anchor-scope
+- [x] web/css/reference/properties/animation
+- [x] web/css/reference/properties/animation-composition
+- [x] web/css/reference/properties/animation-delay
+- [x] web/css/reference/properties/animation-direction
+- [x] web/css/reference/properties/animation-duration
+- [x] web/css/reference/properties/animation-fill-mode
+- [x] web/css/reference/properties/animation-iteration-count
+- [x] web/css/reference/properties/animation-name
+- [x] web/css/reference/properties/animation-play-state
+- [x] web/css/reference/properties/animation-range
+- [x] web/css/reference/properties/animation-range-end
+- [x] web/css/reference/properties/animation-range-start
+- [x] web/css/reference/properties/animation-timeline
+- [x] web/css/reference/properties/animation-timeline/scroll
+- [x] web/css/reference/properties/animation-timeline/view
+- [x] web/css/reference/properties/animation-timing-function
+- [x] web/css/reference/properties/appearance
+- [x] web/css/reference/properties/aspect-ratio
+- [x] web/css/reference/properties/backdrop-filter
+- [x] web/css/reference/properties/backface-visibility
+- [x] web/css/reference/properties/background
+- [x] web/css/reference/properties/background-attachment
+- [x] web/css/reference/properties/background-blend-mode
+- [x] web/css/reference/properties/background-clip
 - [x] web/css/reference/properties/background-color
-- [ ] web/css/reference/properties/background-image
-- [ ] web/css/reference/properties/background-origin
-- [ ] web/css/reference/properties/background-position
-- [ ] web/css/reference/properties/background-position-x
-- [ ] web/css/reference/properties/background-position-y
-- [ ] web/css/reference/properties/background-repeat
-- [ ] web/css/reference/properties/background-repeat-x
-- [ ] web/css/reference/properties/background-repeat-y
-- [ ] web/css/reference/properties/background-size
-- [ ] web/css/reference/properties/baseline-shift
-- [ ] web/css/reference/properties/baseline-source
-- [ ] web/css/reference/properties/block-size
-- [ ] web/css/reference/properties/border
-- [ ] web/css/reference/properties/border-block
-- [ ] web/css/reference/properties/border-block-color
-- [ ] web/css/reference/properties/border-block-end
-- [ ] web/css/reference/properties/border-block-end-color
-- [ ] web/css/reference/properties/border-block-end-style
-- [ ] web/css/reference/properties/border-block-end-width
-- [ ] web/css/reference/properties/border-block-start
-- [ ] web/css/reference/properties/border-block-start-color
-- [ ] web/css/reference/properties/border-block-start-style
-- [ ] web/css/reference/properties/border-block-start-width
-- [ ] web/css/reference/properties/border-block-style
-- [ ] web/css/reference/properties/border-block-width
-- [ ] web/css/reference/properties/border-bottom
-- [ ] web/css/reference/properties/border-bottom-color
-- [ ] web/css/reference/properties/border-bottom-left-radius
-- [ ] web/css/reference/properties/border-bottom-right-radius
-- [ ] web/css/reference/properties/border-bottom-style
+- [x] web/css/reference/properties/background-image
+- [x] web/css/reference/properties/background-origin
+- [x] web/css/reference/properties/background-position
+- [x] web/css/reference/properties/background-position-x
+- [x] web/css/reference/properties/background-position-y
+- [x] web/css/reference/properties/background-repeat
+- [x] web/css/reference/properties/background-repeat-x
+- [x] web/css/reference/properties/background-repeat-y
+- [x] web/css/reference/properties/background-size
+- [x] web/css/reference/properties/baseline-shift
+- [x] web/css/reference/properties/baseline-source
+- [x] web/css/reference/properties/block-size
+- [x] web/css/reference/properties/border
+- [x] web/css/reference/properties/border-block
+- [x] web/css/reference/properties/border-block-color
+- [x] web/css/reference/properties/border-block-end
+- [x] web/css/reference/properties/border-block-end-color
+- [x] web/css/reference/properties/border-block-end-style
+- [x] web/css/reference/properties/border-block-end-width
+- [x] web/css/reference/properties/border-block-start
+- [x] web/css/reference/properties/border-block-start-color
+- [x] web/css/reference/properties/border-block-start-style
+- [x] web/css/reference/properties/border-block-start-width
+- [x] web/css/reference/properties/border-block-style
+- [x] web/css/reference/properties/border-block-width
+- [x] web/css/reference/properties/border-bottom
+- [x] web/css/reference/properties/border-bottom-color
+- [x] web/css/reference/properties/border-bottom-left-radius
+- [x] web/css/reference/properties/border-bottom-right-radius
+- [x] web/css/reference/properties/border-bottom-style
 - [ ] web/css/reference/properties/border-bottom-width
 - [ ] web/css/reference/properties/border-collapse
 - [ ] web/css/reference/properties/border-color
