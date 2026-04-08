@@ -10,30 +10,30 @@ Total: 1,226 pages
 ## Guides (207 pages)
 
 - [ ] web/css/guides/index.md
-- [ ] web/css/guides/anchor_positioning
-- [ ] web/css/guides/anchor_positioning/anchored_container_queries
-- [ ] web/css/guides/anchor_positioning/try_options_hiding
-- [ ] web/css/guides/anchor_positioning/using
-- [ ] web/css/guides/animations
-- [ ] web/css/guides/animations/animatable_properties
-- [ ] web/css/guides/animations/using
-- [ ] web/css/guides/backgrounds_and_borders
-- [ ] web/css/guides/backgrounds_and_borders/border-image_generator
-- [ ] web/css/guides/backgrounds_and_borders/border-radius_generator
-- [ ] web/css/guides/backgrounds_and_borders/box-shadow_generator
-- [ ] web/css/guides/backgrounds_and_borders/resizing_background_images
-- [ ] web/css/guides/backgrounds_and_borders/scaling_svg_backgrounds
-- [ ] web/css/guides/backgrounds_and_borders/using_multiple_backgrounds
-- [ ] web/css/guides/basic_user_interface
-- [ ] web/css/guides/borders_and_box_decorations
-- [ ] web/css/guides/box_alignment
-- [ ] web/css/guides/box_alignment/in_block_abspos_tables
-- [ ] web/css/guides/box_alignment/in_flexbox
-- [ ] web/css/guides/box_alignment/in_grid_layout
-- [ ] web/css/guides/box_alignment/in_multi-column_layout
-- [ ] web/css/guides/box_alignment/overview
-- [ ] web/css/guides/box_model
-- [ ] web/css/guides/box_model/introduction
+- [x] web/css/guides/anchor_positioning
+- [x] web/css/guides/anchor_positioning/anchored_container_queries
+- [x] web/css/guides/anchor_positioning/try_options_hiding
+- [x] web/css/guides/anchor_positioning/using
+- [x] web/css/guides/animations
+- [x] web/css/guides/animations/animatable_properties
+- [x] web/css/guides/animations/using
+- [x] web/css/guides/backgrounds_and_borders
+- [x] web/css/guides/backgrounds_and_borders/border-image_generator
+- [x] web/css/guides/backgrounds_and_borders/border-radius_generator
+- [x] web/css/guides/backgrounds_and_borders/box-shadow_generator
+- [x] web/css/guides/backgrounds_and_borders/resizing_background_images
+- [x] web/css/guides/backgrounds_and_borders/scaling_svg_backgrounds
+- [x] web/css/guides/backgrounds_and_borders/using_multiple_backgrounds
+- [x] web/css/guides/basic_user_interface
+- [x] web/css/guides/borders_and_box_decorations
+- [x] web/css/guides/box_alignment
+- [x] web/css/guides/box_alignment/in_block_abspos_tables
+- [x] web/css/guides/box_alignment/in_flexbox
+- [x] web/css/guides/box_alignment/in_grid_layout
+- [x] web/css/guides/box_alignment/in_multi-column_layout
+- [x] web/css/guides/box_alignment/overview
+- [x] web/css/guides/box_model
+- [x] web/css/guides/box_model/introduction
 - [ ] web/css/guides/box_model/margin_collapsing
 - [ ] web/css/guides/box_sizing
 - [ ] web/css/guides/box_sizing/aspect_ratios
