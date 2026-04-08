@@ -748,8 +748,8 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/perspective
 - [x] web/css/reference/properties/perspective-origin
 - [x] web/css/reference/properties/place-content
-- [ ] web/css/reference/properties/place-items
-- [ ] web/css/reference/properties/place-self
+- [x] web/css/reference/properties/place-items
+- [x] web/css/reference/properties/place-self
 - [ ] web/css/reference/properties/pointer-events
 - [x] web/css/reference/properties/position
 - [ ] web/css/reference/properties/position-anchor
@@ -822,16 +822,16 @@ Total: 1,226 pages
 - [ ] web/css/reference/properties/stroke-linejoin
 - [x] web/css/reference/properties/stroke-miterlimit
 - [x] web/css/reference/properties/stroke-opacity
-- [ ] web/css/reference/properties/stroke-width
-- [ ] web/css/reference/properties/tab-size
-- [ ] web/css/reference/properties/table-layout
+- [x] web/css/reference/properties/stroke-width
+- [x] web/css/reference/properties/tab-size
+- [x] web/css/reference/properties/table-layout
 - [ ] web/css/reference/properties/text-align
 - [ ] web/css/reference/properties/text-align-last
 - [ ] web/css/reference/properties/text-anchor
 - [x] web/css/reference/properties/text-autospace
 - [x] web/css/reference/properties/text-box
 - [x] web/css/reference/properties/text-box-edge
-- [ ] web/css/reference/properties/text-box-trim
+- [x] web/css/reference/properties/text-box-trim
 - [ ] web/css/reference/properties/text-combine-upright
 - [ ] web/css/reference/properties/text-decoration
 - [ ] web/css/reference/properties/text-decoration-color
@@ -841,9 +841,9 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/text-decoration-skip-ink
 - [x] web/css/reference/properties/text-decoration-style
 - [x] web/css/reference/properties/text-decoration-thickness
-- [ ] web/css/reference/properties/text-emphasis
-- [ ] web/css/reference/properties/text-emphasis-color
-- [ ] web/css/reference/properties/text-emphasis-position
+- [x] web/css/reference/properties/text-emphasis
+- [x] web/css/reference/properties/text-emphasis-color
+- [x] web/css/reference/properties/text-emphasis-position
 - [x] web/css/reference/properties/text-emphasis-style
 - [ ] web/css/reference/properties/text-indent
 - [ ] web/css/reference/properties/text-justify
@@ -853,17 +853,17 @@ Total: 1,226 pages
 - [ ] web/css/reference/properties/text-shadow
 - [ ] web/css/reference/properties/text-size-adjust
 - [x] web/css/reference/properties/text-spacing-trim
-- [ ] web/css/reference/properties/text-transform
-- [ ] web/css/reference/properties/text-underline-offset
-- [ ] web/css/reference/properties/text-underline-position
+- [x] web/css/reference/properties/text-transform
+- [x] web/css/reference/properties/text-underline-offset
+- [x] web/css/reference/properties/text-underline-position
 - [ ] web/css/reference/properties/text-wrap
 - [ ] web/css/reference/properties/text-wrap-mode
 - [ ] web/css/reference/properties/text-wrap-style
 - [ ] web/css/reference/properties/timeline-scope
 - [x] web/css/reference/properties/top
 - [x] web/css/reference/properties/touch-action
-- [ ] web/css/reference/properties/transform
-- [ ] web/css/reference/properties/transform-box
+- [x] web/css/reference/properties/transform
+- [x] web/css/reference/properties/transform-box
 - [ ] web/css/reference/properties/transform-origin
 - [ ] web/css/reference/properties/transform-style
 - [ ] web/css/reference/properties/transition
@@ -873,13 +873,13 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/transition-property
 - [x] web/css/reference/properties/transition-timing-function
 - [x] web/css/reference/properties/translate
-- [ ] web/css/reference/properties/unicode-bidi
-- [ ] web/css/reference/properties/user-modify
-- [ ] web/css/reference/properties/user-select
+- [x] web/css/reference/properties/unicode-bidi
+- [x] web/css/reference/properties/user-modify
+- [x] web/css/reference/properties/user-select
 - [x] web/css/reference/properties/vector-effect
 - [x] web/css/reference/properties/vertical-align
-- [ ] web/css/reference/properties/view-timeline
-- [ ] web/css/reference/properties/view-timeline-axis
+- [x] web/css/reference/properties/view-timeline
+- [x] web/css/reference/properties/view-timeline-axis
 - [ ] web/css/reference/properties/view-timeline-inset
 - [ ] web/css/reference/properties/view-timeline-name
 - [ ] web/css/reference/properties/view-transition-class
@@ -888,20 +888,20 @@ Total: 1,226 pages
 - [x] web/css/reference/properties/white-space
 - [x] web/css/reference/properties/white-space-collapse
 - [x] web/css/reference/properties/widows
-- [ ] web/css/reference/properties/width
+- [x] web/css/reference/properties/width
 - [ ] web/css/reference/properties/will-change
 - [ ] web/css/reference/properties/word-break
 - [ ] web/css/reference/properties/word-spacing
 - [x] web/css/reference/properties/writing-mode
 - [x] web/css/reference/properties/x
 - [x] web/css/reference/properties/y
-- [ ] web/css/reference/properties/z-index
-- [ ] web/css/reference/properties/zoom
+- [x] web/css/reference/properties/z-index
+- [x] web/css/reference/properties/zoom
 
 ## Reference — Selectors (166 pages)
 
-- [ ] web/css/reference/selectors/index.md
-- [ ] web/css/reference/selectors/_colon_-moz-broken
+- [x] web/css/reference/selectors/index.md
+- [x] web/css/reference/selectors/_colon_-moz-broken
 - [ ] web/css/reference/selectors/_colon_-moz-drag-over
 - [ ] web/css/reference/selectors/_colon_-moz-first-node
 - [ ] web/css/reference/selectors/_colon_-moz-handler-blocked
