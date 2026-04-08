@@ -9,7 +9,7 @@ Total: 1,226 pages
 
 ## Guides (207 pages)
 
-- [ ] web/css/guides/index.md
+- [x] web/css/guides/index.md
 - [x] web/css/guides/anchor_positioning
 - [x] web/css/guides/anchor_positioning/anchored_container_queries
 - [x] web/css/guides/anchor_positioning/try_options_hiding
@@ -34,101 +34,101 @@ Total: 1,226 pages
 - [x] web/css/guides/box_alignment/overview
 - [x] web/css/guides/box_model
 - [x] web/css/guides/box_model/introduction
-- [ ] web/css/guides/box_model/margin_collapsing
-- [ ] web/css/guides/box_sizing
-- [ ] web/css/guides/box_sizing/aspect_ratios
-- [ ] web/css/guides/cascade
-- [ ] web/css/guides/cascade/inheritance
-- [ ] web/css/guides/cascade/introduction
-- [ ] web/css/guides/cascade/property_value_processing
-- [ ] web/css/guides/cascade/shorthand_properties
-- [ ] web/css/guides/cascade/specificity
-- [ ] web/css/guides/cascading_variables
-- [ ] web/css/guides/cascading_variables/using_custom_properties
-- [ ] web/css/guides/color_adjustment
-- [ ] web/css/guides/colors
-- [ ] web/css/guides/colors/applying_color
-- [ ] web/css/guides/colors/color_format_converter
-- [ ] web/css/guides/colors/color_mixer
-- [ ] web/css/guides/colors/color_values
-- [ ] web/css/guides/colors/using_color_wisely
-- [ ] web/css/guides/colors/using_relative_colors
-- [ ] web/css/guides/compositing_and_blending
-- [ ] web/css/guides/conditional_rules
-- [ ] web/css/guides/conditional_rules/container_scroll-state_queries
-- [ ] web/css/guides/conditional_rules/using_feature_queries
-- [ ] web/css/guides/containment
-- [ ] web/css/guides/containment/container_queries
-- [ ] web/css/guides/containment/container_size_and_style_queries
-- [ ] web/css/guides/containment/using
-- [ ] web/css/guides/counter_styles
-- [ ] web/css/guides/counter_styles/using_counters
-- [ ] web/css/guides/cssom_view
-- [ ] web/css/guides/cssom_view/viewport_concepts
-- [ ] web/css/guides/custom_functions_and_mixins
-- [ ] web/css/guides/custom_functions_and_mixins/using_custom_functions
-- [ ] web/css/guides/custom_highlight_api
-- [ ] web/css/guides/display
-- [ ] web/css/guides/display/block_and_inline_layout
-- [ ] web/css/guides/display/block_formatting_context
-- [ ] web/css/guides/display/containing_block
-- [ ] web/css/guides/display/flow_layout
-- [ ] web/css/guides/display/flow_layout_and_overflow
-- [ ] web/css/guides/display/flow_layout_and_writing_modes
-- [ ] web/css/guides/display/formatting_contexts
-- [ ] web/css/guides/display/in_flow_and_out_of_flow
-- [ ] web/css/guides/display/multi-keyword_syntax
-- [ ] web/css/guides/display/visual_formatting_model
-- [ ] web/css/guides/easing_functions
-- [ ] web/css/guides/environment_variables
-- [ ] web/css/guides/environment_variables/using
-- [ ] web/css/guides/filter_effects
-- [ ] web/css/guides/filter_effects/using
-- [ ] web/css/guides/flexible_box_layout
-- [ ] web/css/guides/flexible_box_layout/aligning_items
-- [ ] web/css/guides/flexible_box_layout/basic_concepts
-- [ ] web/css/guides/flexible_box_layout/controlling_flex_item_ratios
-- [ ] web/css/guides/flexible_box_layout/ordering_items
-- [ ] web/css/guides/flexible_box_layout/relationship_with_other_layout_methods
-- [ ] web/css/guides/flexible_box_layout/use_cases
-- [ ] web/css/guides/flexible_box_layout/wrapping_items
-- [ ] web/css/guides/font_loading
-- [ ] web/css/guides/fonts
-- [ ] web/css/guides/fonts/opentype_fonts
-- [ ] web/css/guides/fonts/variable_fonts
-- [ ] web/css/guides/fonts/woff
-- [ ] web/css/guides/fragmentation
-- [ ] web/css/guides/generated_content
-- [ ] web/css/guides/grid_layout
-- [ ] web/css/guides/grid_layout/accessibility
-- [ ] web/css/guides/grid_layout/auto-placement
-- [ ] web/css/guides/grid_layout/basic_concepts
-- [ ] web/css/guides/grid_layout/box_alignment
-- [ ] web/css/guides/grid_layout/common_grid_layouts
-- [ ] web/css/guides/grid_layout/grid_template_areas
-- [ ] web/css/guides/grid_layout/line-based_placement
-- [ ] web/css/guides/grid_layout/logical_values_and_writing_modes
-- [ ] web/css/guides/grid_layout/masonry_layout
-- [ ] web/css/guides/grid_layout/named_grid_lines
-- [ ] web/css/guides/grid_layout/relationship_with_other_layout_methods
-- [ ] web/css/guides/grid_layout/subgrid
-- [ ] web/css/guides/images
-- [ ] web/css/guides/images/implementing_image_sprites
-- [ ] web/css/guides/images/replaced_element_properties
-- [ ] web/css/guides/images/using_gradients
-- [ ] web/css/guides/images/using_object-view-box
-- [ ] web/css/guides/inline_layout
-- [ ] web/css/guides/inline_layout/inline_formatting_context
-- [ ] web/css/guides/lists
-- [ ] web/css/guides/lists/indenting
-- [ ] web/css/guides/logical_properties_and_values
-- [ ] web/css/guides/logical_properties_and_values/basic_concepts
-- [ ] web/css/guides/logical_properties_and_values/floating_and_positioning
-- [ ] web/css/guides/logical_properties_and_values/margins_borders_padding
-- [ ] web/css/guides/logical_properties_and_values/sizing
-- [ ] web/css/guides/masking
-- [ ] web/css/guides/masking/clipping
-- [ ] web/css/guides/masking/introduction
+- [x] web/css/guides/box_model/margin_collapsing
+- [x] web/css/guides/box_sizing
+- [x] web/css/guides/box_sizing/aspect_ratios
+- [x] web/css/guides/cascade
+- [x] web/css/guides/cascade/inheritance
+- [x] web/css/guides/cascade/introduction
+- [x] web/css/guides/cascade/property_value_processing
+- [x] web/css/guides/cascade/shorthand_properties
+- [x] web/css/guides/cascade/specificity
+- [x] web/css/guides/cascading_variables
+- [x] web/css/guides/cascading_variables/using_custom_properties
+- [x] web/css/guides/color_adjustment
+- [x] web/css/guides/colors
+- [x] web/css/guides/colors/applying_color
+- [x] web/css/guides/colors/color_format_converter
+- [x] web/css/guides/colors/color_mixer
+- [x] web/css/guides/colors/color_values
+- [x] web/css/guides/colors/using_color_wisely
+- [x] web/css/guides/colors/using_relative_colors
+- [x] web/css/guides/compositing_and_blending
+- [x] web/css/guides/conditional_rules
+- [x] web/css/guides/conditional_rules/container_scroll-state_queries
+- [x] web/css/guides/conditional_rules/using_feature_queries
+- [x] web/css/guides/containment
+- [x] web/css/guides/containment/container_queries
+- [x] web/css/guides/containment/container_size_and_style_queries
+- [x] web/css/guides/containment/using
+- [x] web/css/guides/counter_styles
+- [x] web/css/guides/counter_styles/using_counters
+- [x] web/css/guides/cssom_view
+- [x] web/css/guides/cssom_view/viewport_concepts
+- [x] web/css/guides/custom_functions_and_mixins
+- [x] web/css/guides/custom_functions_and_mixins/using_custom_functions
+- [x] web/css/guides/custom_highlight_api
+- [x] web/css/guides/display
+- [x] web/css/guides/display/block_and_inline_layout
+- [x] web/css/guides/display/block_formatting_context
+- [x] web/css/guides/display/containing_block
+- [x] web/css/guides/display/flow_layout
+- [x] web/css/guides/display/flow_layout_and_overflow
+- [x] web/css/guides/display/flow_layout_and_writing_modes
+- [x] web/css/guides/display/formatting_contexts
+- [x] web/css/guides/display/in_flow_and_out_of_flow
+- [x] web/css/guides/display/multi-keyword_syntax
+- [x] web/css/guides/display/visual_formatting_model
+- [x] web/css/guides/easing_functions
+- [x] web/css/guides/environment_variables
+- [x] web/css/guides/environment_variables/using
+- [x] web/css/guides/filter_effects
+- [x] web/css/guides/filter_effects/using
+- [x] web/css/guides/flexible_box_layout
+- [x] web/css/guides/flexible_box_layout/aligning_items
+- [x] web/css/guides/flexible_box_layout/basic_concepts
+- [x] web/css/guides/flexible_box_layout/controlling_flex_item_ratios
+- [x] web/css/guides/flexible_box_layout/ordering_items
+- [x] web/css/guides/flexible_box_layout/relationship_with_other_layout_methods
+- [x] web/css/guides/flexible_box_layout/use_cases
+- [x] web/css/guides/flexible_box_layout/wrapping_items
+- [x] web/css/guides/font_loading
+- [x] web/css/guides/fonts
+- [x] web/css/guides/fonts/opentype_fonts
+- [x] web/css/guides/fonts/variable_fonts
+- [x] web/css/guides/fonts/woff
+- [x] web/css/guides/fragmentation
+- [x] web/css/guides/generated_content
+- [x] web/css/guides/grid_layout
+- [x] web/css/guides/grid_layout/accessibility
+- [x] web/css/guides/grid_layout/auto-placement
+- [x] web/css/guides/grid_layout/basic_concepts
+- [x] web/css/guides/grid_layout/box_alignment
+- [x] web/css/guides/grid_layout/common_grid_layouts
+- [x] web/css/guides/grid_layout/grid_template_areas
+- [x] web/css/guides/grid_layout/line-based_placement
+- [x] web/css/guides/grid_layout/logical_values_and_writing_modes
+- [x] web/css/guides/grid_layout/masonry_layout
+- [x] web/css/guides/grid_layout/named_grid_lines
+- [x] web/css/guides/grid_layout/relationship_with_other_layout_methods
+- [x] web/css/guides/grid_layout/subgrid
+- [x] web/css/guides/images
+- [x] web/css/guides/images/implementing_image_sprites
+- [x] web/css/guides/images/replaced_element_properties
+- [x] web/css/guides/images/using_gradients
+- [x] web/css/guides/images/using_object-view-box
+- [x] web/css/guides/inline_layout
+- [x] web/css/guides/inline_layout/inline_formatting_context
+- [x] web/css/guides/lists
+- [x] web/css/guides/lists/indenting
+- [x] web/css/guides/logical_properties_and_values
+- [x] web/css/guides/logical_properties_and_values/basic_concepts
+- [x] web/css/guides/logical_properties_and_values/floating_and_positioning
+- [x] web/css/guides/logical_properties_and_values/margins_borders_padding
+- [x] web/css/guides/logical_properties_and_values/sizing
+- [x] web/css/guides/masking
+- [x] web/css/guides/masking/clipping
+- [x] web/css/guides/masking/introduction
 - [ ] web/css/guides/masking/mask_properties
 - [ ] web/css/guides/masking/multiple_masks
 - [ ] web/css/guides/media_queries
