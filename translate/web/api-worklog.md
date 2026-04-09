@@ -108,7 +108,7 @@ Planned pages:
 5. `Web/API/AbstractRange/startContainer`
 6. `Web/API/AbstractRange/startOffset`
 
-## Batch 6
+## Batch 8
 
 Continue with a compact `Accelerometer` sensor batch that keeps the interface and its coordinate properties together for consistent terminology.
 
