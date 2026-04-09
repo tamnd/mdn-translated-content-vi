@@ -20,8 +20,8 @@ Landmark là một phân đoạn quan trọng của trang. Vai trò `landmark` l
 
 Mỗi vai trò landmark cụ thể đều có phần tử HTML ngữ nghĩa tương ứng:
 
-| Vai trò ARIA                                                                               | Phần tử HTML               |
-| ----------------------------------------------------------------------------------------- | -------------------------- |
+| Vai trò ARIA                                                                             | Phần tử HTML               |
+| ---------------------------------------------------------------------------------------- | -------------------------- |
 | [`banner`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/banner_role)               | {{HTMLElement('header')}}  |
 | [`complementary`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/complementary_role) | {{HTMLElement('aside')}}   |
 | [`contentinfo`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/contentinfo_role)     | {{HTMLElement('footer')}}  |
