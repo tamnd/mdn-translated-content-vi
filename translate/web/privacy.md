@@ -16,7 +16,7 @@ Total: 18 pages
 - [x] web/privacy/guides/privacy_sandbox/index.md
 - [x] web/privacy/guides/privacy_sandbox/partitioned_cookies/index.md
 - [x] web/privacy/guides/redirect_tracking_protection/index.md
-- [x] web/privacy/guides/referer_header_colon__privacy_and_security_concerns/index.md
+- [x] web/privacy/guides/referer_header_colon\_\_privacy_and_security_concerns/index.md
 - [x] web/privacy/guides/state_partitioning/index.md
 - [x] web/privacy/guides/storage_access_policy/errors/cookieblockedall/index.md
 - [x] web/privacy/guides/storage_access_policy/errors/cookieblockedbypermission/index.md
