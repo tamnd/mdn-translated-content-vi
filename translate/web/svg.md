@@ -5,301 +5,301 @@ Total: 298 pages
 
 ## Pages
 
-- [ ] web/svg/guides/applying_svg_effects_to_html_content/index.md
-- [ ] web/svg/guides/content_type/index.md
-- [ ] web/svg/guides/index.md
-- [ ] web/svg/guides/linking/index.md
-- [ ] web/svg/guides/namespaces_crash_course/example/index.md
-- [ ] web/svg/guides/namespaces_crash_course/index.md
-- [ ] web/svg/guides/scripting/index.md
-- [ ] web/svg/guides/svg_animation_with_smil/index.md
-- [ ] web/svg/guides/svg_as_an_image/index.md
-- [ ] web/svg/guides/svg_filters/index.md
-- [ ] web/svg/guides/svg_in_html/index.md
-- [ ] web/svg/index.md
-- [ ] web/svg/reference/attribute/accumulate/index.md
-- [ ] web/svg/reference/attribute/additive/index.md
-- [ ] web/svg/reference/attribute/alignment-baseline/index.md
-- [ ] web/svg/reference/attribute/amplitude/index.md
-- [ ] web/svg/reference/attribute/attributename/index.md
-- [ ] web/svg/reference/attribute/attributetype/index.md
-- [ ] web/svg/reference/attribute/autofocus/index.md
-- [ ] web/svg/reference/attribute/azimuth/index.md
-- [ ] web/svg/reference/attribute/basefrequency/index.md
-- [ ] web/svg/reference/attribute/baseline-shift/index.md
-- [ ] web/svg/reference/attribute/baseprofile/index.md
-- [ ] web/svg/reference/attribute/begin/index.md
-- [ ] web/svg/reference/attribute/bias/index.md
-- [ ] web/svg/reference/attribute/by/index.md
-- [ ] web/svg/reference/attribute/calcmode/index.md
-- [ ] web/svg/reference/attribute/class/index.md
-- [ ] web/svg/reference/attribute/clip-path/index.md
-- [ ] web/svg/reference/attribute/clip-rule/index.md
-- [ ] web/svg/reference/attribute/clip/index.md
-- [ ] web/svg/reference/attribute/clippathunits/index.md
-- [ ] web/svg/reference/attribute/color-interpolation-filters/index.md
-- [ ] web/svg/reference/attribute/color-interpolation/index.md
-- [ ] web/svg/reference/attribute/color/index.md
-- [ ] web/svg/reference/attribute/crossorigin/index.md
-- [ ] web/svg/reference/attribute/cursor/index.md
-- [ ] web/svg/reference/attribute/cx/index.md
-- [ ] web/svg/reference/attribute/cy/index.md
-- [ ] web/svg/reference/attribute/d/index.md
-- [ ] web/svg/reference/attribute/data-_star_/index.md
-- [ ] web/svg/reference/attribute/decoding/index.md
-- [ ] web/svg/reference/attribute/diffuseconstant/index.md
-- [ ] web/svg/reference/attribute/direction/index.md
-- [ ] web/svg/reference/attribute/display/index.md
-- [ ] web/svg/reference/attribute/divisor/index.md
-- [ ] web/svg/reference/attribute/dominant-baseline/index.md
-- [ ] web/svg/reference/attribute/dur/index.md
-- [ ] web/svg/reference/attribute/dx/index.md
-- [ ] web/svg/reference/attribute/dy/index.md
-- [ ] web/svg/reference/attribute/edgemode/index.md
-- [ ] web/svg/reference/attribute/elevation/index.md
-- [ ] web/svg/reference/attribute/end/index.md
-- [ ] web/svg/reference/attribute/exponent/index.md
-- [ ] web/svg/reference/attribute/fetchpriority/index.md
-- [ ] web/svg/reference/attribute/fill-opacity/index.md
-- [ ] web/svg/reference/attribute/fill-rule/index.md
-- [ ] web/svg/reference/attribute/fill/index.md
-- [ ] web/svg/reference/attribute/filter/index.md
-- [ ] web/svg/reference/attribute/filterunits/index.md
-- [ ] web/svg/reference/attribute/flood-color/index.md
-- [ ] web/svg/reference/attribute/flood-opacity/index.md
-- [ ] web/svg/reference/attribute/font-family/index.md
-- [ ] web/svg/reference/attribute/font-size-adjust/index.md
-- [ ] web/svg/reference/attribute/font-size/index.md
-- [ ] web/svg/reference/attribute/font-stretch/index.md
-- [ ] web/svg/reference/attribute/font-style/index.md
-- [ ] web/svg/reference/attribute/font-variant/index.md
-- [ ] web/svg/reference/attribute/font-weight/index.md
-- [ ] web/svg/reference/attribute/fr/index.md
-- [ ] web/svg/reference/attribute/from/index.md
-- [ ] web/svg/reference/attribute/fx/index.md
-- [ ] web/svg/reference/attribute/fy/index.md
-- [ ] web/svg/reference/attribute/glyph-orientation-horizontal/index.md
-- [ ] web/svg/reference/attribute/glyph-orientation-vertical/index.md
-- [ ] web/svg/reference/attribute/gradienttransform/index.md
-- [ ] web/svg/reference/attribute/gradientunits/index.md
-- [ ] web/svg/reference/attribute/height/index.md
-- [ ] web/svg/reference/attribute/href/index.md
-- [ ] web/svg/reference/attribute/id/index.md
-- [ ] web/svg/reference/attribute/image-rendering/index.md
-- [ ] web/svg/reference/attribute/in/index.md
-- [ ] web/svg/reference/attribute/in2/index.md
-- [ ] web/svg/reference/attribute/index.md
-- [ ] web/svg/reference/attribute/intercept/index.md
-- [ ] web/svg/reference/attribute/k1/index.md
-- [ ] web/svg/reference/attribute/k2/index.md
-- [ ] web/svg/reference/attribute/k3/index.md
-- [ ] web/svg/reference/attribute/k4/index.md
-- [ ] web/svg/reference/attribute/kernelmatrix/index.md
-- [ ] web/svg/reference/attribute/kernelunitlength/index.md
-- [ ] web/svg/reference/attribute/keypoints/index.md
-- [ ] web/svg/reference/attribute/keysplines/index.md
-- [ ] web/svg/reference/attribute/keytimes/index.md
-- [ ] web/svg/reference/attribute/lang/index.md
-- [ ] web/svg/reference/attribute/lengthadjust/index.md
-- [ ] web/svg/reference/attribute/letter-spacing/index.md
-- [ ] web/svg/reference/attribute/lighting-color/index.md
-- [ ] web/svg/reference/attribute/limitingconeangle/index.md
-- [ ] web/svg/reference/attribute/marker-end/index.md
-- [ ] web/svg/reference/attribute/marker-mid/index.md
-- [ ] web/svg/reference/attribute/marker-start/index.md
-- [ ] web/svg/reference/attribute/markerheight/index.md
-- [ ] web/svg/reference/attribute/markerunits/index.md
-- [ ] web/svg/reference/attribute/markerwidth/index.md
-- [ ] web/svg/reference/attribute/mask-type/index.md
-- [ ] web/svg/reference/attribute/mask/index.md
-- [ ] web/svg/reference/attribute/maskcontentunits/index.md
-- [ ] web/svg/reference/attribute/maskunits/index.md
-- [ ] web/svg/reference/attribute/max/index.md
-- [ ] web/svg/reference/attribute/media/index.md
-- [ ] web/svg/reference/attribute/method/index.md
-- [ ] web/svg/reference/attribute/min/index.md
-- [ ] web/svg/reference/attribute/mode/index.md
-- [ ] web/svg/reference/attribute/numoctaves/index.md
-- [ ] web/svg/reference/attribute/opacity/index.md
-- [ ] web/svg/reference/attribute/operator/index.md
-- [ ] web/svg/reference/attribute/order/index.md
-- [ ] web/svg/reference/attribute/orient/index.md
-- [ ] web/svg/reference/attribute/origin/index.md
-- [ ] web/svg/reference/attribute/overflow/index.md
-- [ ] web/svg/reference/attribute/paint-order/index.md
-- [ ] web/svg/reference/attribute/path/index.md
-- [ ] web/svg/reference/attribute/pathlength/index.md
-- [ ] web/svg/reference/attribute/patterncontentunits/index.md
-- [ ] web/svg/reference/attribute/patterntransform/index.md
-- [ ] web/svg/reference/attribute/patternunits/index.md
-- [ ] web/svg/reference/attribute/pointer-events/index.md
-- [ ] web/svg/reference/attribute/points/index.md
-- [ ] web/svg/reference/attribute/pointsatx/index.md
-- [ ] web/svg/reference/attribute/pointsaty/index.md
-- [ ] web/svg/reference/attribute/pointsatz/index.md
-- [ ] web/svg/reference/attribute/preservealpha/index.md
-- [ ] web/svg/reference/attribute/preserveaspectratio/index.md
-- [ ] web/svg/reference/attribute/primitiveunits/index.md
-- [ ] web/svg/reference/attribute/r/index.md
-- [ ] web/svg/reference/attribute/radius/index.md
-- [ ] web/svg/reference/attribute/refx/index.md
-- [ ] web/svg/reference/attribute/refy/index.md
-- [ ] web/svg/reference/attribute/repeatcount/index.md
-- [ ] web/svg/reference/attribute/repeatdur/index.md
-- [ ] web/svg/reference/attribute/requiredextensions/index.md
-- [ ] web/svg/reference/attribute/requiredfeatures/index.md
-- [ ] web/svg/reference/attribute/restart/index.md
-- [ ] web/svg/reference/attribute/result/index.md
-- [ ] web/svg/reference/attribute/rotate/index.md
-- [ ] web/svg/reference/attribute/rx/index.md
-- [ ] web/svg/reference/attribute/ry/index.md
-- [ ] web/svg/reference/attribute/scale/index.md
-- [ ] web/svg/reference/attribute/seed/index.md
-- [ ] web/svg/reference/attribute/shape-rendering/index.md
-- [ ] web/svg/reference/attribute/side/index.md
-- [ ] web/svg/reference/attribute/slope/index.md
-- [ ] web/svg/reference/attribute/spacing/index.md
-- [ ] web/svg/reference/attribute/specularconstant/index.md
-- [ ] web/svg/reference/attribute/specularexponent/index.md
-- [ ] web/svg/reference/attribute/spreadmethod/index.md
-- [ ] web/svg/reference/attribute/startoffset/index.md
-- [ ] web/svg/reference/attribute/stddeviation/index.md
-- [ ] web/svg/reference/attribute/stitchtiles/index.md
-- [ ] web/svg/reference/attribute/stop-color/index.md
-- [ ] web/svg/reference/attribute/stop-opacity/index.md
-- [ ] web/svg/reference/attribute/stroke-dasharray/index.md
-- [ ] web/svg/reference/attribute/stroke-dashoffset/index.md
-- [ ] web/svg/reference/attribute/stroke-linecap/index.md
-- [ ] web/svg/reference/attribute/stroke-linejoin/index.md
-- [ ] web/svg/reference/attribute/stroke-miterlimit/index.md
-- [ ] web/svg/reference/attribute/stroke-opacity/index.md
-- [ ] web/svg/reference/attribute/stroke-width/index.md
-- [ ] web/svg/reference/attribute/stroke/index.md
-- [ ] web/svg/reference/attribute/style/index.md
-- [ ] web/svg/reference/attribute/surfacescale/index.md
-- [ ] web/svg/reference/attribute/systemlanguage/index.md
-- [ ] web/svg/reference/attribute/tabindex/index.md
-- [ ] web/svg/reference/attribute/tablevalues/index.md
-- [ ] web/svg/reference/attribute/target/index.md
-- [ ] web/svg/reference/attribute/targetx/index.md
-- [ ] web/svg/reference/attribute/targety/index.md
-- [ ] web/svg/reference/attribute/text-anchor/index.md
-- [ ] web/svg/reference/attribute/text-decoration/index.md
-- [ ] web/svg/reference/attribute/text-overflow/index.md
-- [ ] web/svg/reference/attribute/text-rendering/index.md
-- [ ] web/svg/reference/attribute/textlength/index.md
-- [ ] web/svg/reference/attribute/to/index.md
-- [ ] web/svg/reference/attribute/transform-origin/index.md
-- [ ] web/svg/reference/attribute/transform/index.md
-- [ ] web/svg/reference/attribute/type/index.md
-- [ ] web/svg/reference/attribute/unicode-bidi/index.md
-- [ ] web/svg/reference/attribute/values/index.md
-- [ ] web/svg/reference/attribute/vector-effect/index.md
-- [ ] web/svg/reference/attribute/version/index.md
-- [ ] web/svg/reference/attribute/viewbox/index.md
-- [ ] web/svg/reference/attribute/visibility/index.md
-- [ ] web/svg/reference/attribute/white-space/index.md
-- [ ] web/svg/reference/attribute/width/index.md
-- [ ] web/svg/reference/attribute/word-spacing/index.md
-- [ ] web/svg/reference/attribute/writing-mode/index.md
-- [ ] web/svg/reference/attribute/x/index.md
-- [ ] web/svg/reference/attribute/x1/index.md
-- [ ] web/svg/reference/attribute/x2/index.md
-- [ ] web/svg/reference/attribute/xchannelselector/index.md
-- [ ] web/svg/reference/attribute/xlink_colon_arcrole/index.md
-- [ ] web/svg/reference/attribute/xlink_colon_href/index.md
-- [ ] web/svg/reference/attribute/xlink_colon_show/index.md
-- [ ] web/svg/reference/attribute/xlink_colon_title/index.md
-- [ ] web/svg/reference/attribute/xlink_colon_type/index.md
-- [ ] web/svg/reference/attribute/xml_colon_lang/index.md
-- [ ] web/svg/reference/attribute/xml_colon_space/index.md
-- [ ] web/svg/reference/attribute/y/index.md
-- [ ] web/svg/reference/attribute/y1/index.md
-- [ ] web/svg/reference/attribute/y2/index.md
-- [ ] web/svg/reference/attribute/ychannelselector/index.md
-- [ ] web/svg/reference/attribute/z/index.md
-- [ ] web/svg/reference/attribute/zoomandpan/index.md
-- [ ] web/svg/reference/element/a/index.md
-- [ ] web/svg/reference/element/animate/index.md
-- [ ] web/svg/reference/element/animatemotion/index.md
-- [ ] web/svg/reference/element/animatetransform/index.md
-- [ ] web/svg/reference/element/circle/index.md
-- [ ] web/svg/reference/element/clippath/index.md
-- [ ] web/svg/reference/element/defs/index.md
-- [ ] web/svg/reference/element/desc/index.md
-- [ ] web/svg/reference/element/ellipse/index.md
-- [ ] web/svg/reference/element/feblend/index.md
-- [ ] web/svg/reference/element/fecolormatrix/index.md
-- [ ] web/svg/reference/element/fecomponenttransfer/index.md
-- [ ] web/svg/reference/element/fecomposite/index.md
-- [ ] web/svg/reference/element/feconvolvematrix/index.md
-- [ ] web/svg/reference/element/fediffuselighting/index.md
-- [ ] web/svg/reference/element/fedisplacementmap/index.md
-- [ ] web/svg/reference/element/fedistantlight/index.md
-- [ ] web/svg/reference/element/fedropshadow/index.md
-- [ ] web/svg/reference/element/feflood/index.md
-- [ ] web/svg/reference/element/fefunca/index.md
-- [ ] web/svg/reference/element/fefuncb/index.md
-- [ ] web/svg/reference/element/fefuncg/index.md
-- [ ] web/svg/reference/element/fefuncr/index.md
-- [ ] web/svg/reference/element/fegaussianblur/index.md
-- [ ] web/svg/reference/element/feimage/index.md
-- [ ] web/svg/reference/element/femerge/index.md
-- [ ] web/svg/reference/element/femergenode/index.md
-- [ ] web/svg/reference/element/femorphology/index.md
-- [ ] web/svg/reference/element/feoffset/index.md
-- [ ] web/svg/reference/element/fepointlight/index.md
-- [ ] web/svg/reference/element/fespecularlighting/index.md
-- [ ] web/svg/reference/element/fespotlight/index.md
-- [ ] web/svg/reference/element/fetile/index.md
-- [ ] web/svg/reference/element/feturbulence/index.md
-- [ ] web/svg/reference/element/filter/index.md
-- [ ] web/svg/reference/element/foreignobject/index.md
-- [ ] web/svg/reference/element/g/index.md
-- [ ] web/svg/reference/element/image/index.md
-- [ ] web/svg/reference/element/index.md
-- [ ] web/svg/reference/element/line/index.md
-- [ ] web/svg/reference/element/lineargradient/index.md
-- [ ] web/svg/reference/element/marker/index.md
-- [ ] web/svg/reference/element/mask/index.md
-- [ ] web/svg/reference/element/metadata/index.md
-- [ ] web/svg/reference/element/mpath/index.md
-- [ ] web/svg/reference/element/path/index.md
-- [ ] web/svg/reference/element/pattern/index.md
-- [ ] web/svg/reference/element/polygon/index.md
-- [ ] web/svg/reference/element/polyline/index.md
-- [ ] web/svg/reference/element/radialgradient/index.md
-- [ ] web/svg/reference/element/rect/index.md
-- [ ] web/svg/reference/element/script/index.md
-- [ ] web/svg/reference/element/set/index.md
-- [ ] web/svg/reference/element/stop/index.md
-- [ ] web/svg/reference/element/style/index.md
-- [ ] web/svg/reference/element/svg/index.md
-- [ ] web/svg/reference/element/switch/index.md
-- [ ] web/svg/reference/element/symbol/index.md
-- [ ] web/svg/reference/element/text/index.md
-- [ ] web/svg/reference/element/textpath/index.md
-- [ ] web/svg/reference/element/title/index.md
-- [ ] web/svg/reference/element/tspan/index.md
-- [ ] web/svg/reference/element/use/index.md
-- [ ] web/svg/reference/element/view/index.md
-- [ ] web/svg/reference/index.md
-- [ ] web/svg/tutorials/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/basic_shapes/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/basic_transformations/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/clipping_and_masking/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/fills_and_strokes/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/filter_effects/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/getting_started/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/gradients/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/image_element/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/introduction/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/other_content_in_svg/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/paths/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/patterns/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/positions/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/svg_and_css/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/texts/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/tools_for_svg/index.md
-- [ ] web/svg/tutorials/svg_from_scratch/using_fonts/index.md
+- [x] web/svg/guides/applying_svg_effects_to_html_content/index.md
+- [x] web/svg/guides/content_type/index.md
+- [x] web/svg/guides/index.md
+- [x] web/svg/guides/linking/index.md
+- [x] web/svg/guides/namespaces_crash_course/example/index.md
+- [x] web/svg/guides/namespaces_crash_course/index.md
+- [x] web/svg/guides/scripting/index.md
+- [x] web/svg/guides/svg_animation_with_smil/index.md
+- [x] web/svg/guides/svg_as_an_image/index.md
+- [x] web/svg/guides/svg_filters/index.md
+- [x] web/svg/guides/svg_in_html/index.md
+- [x] web/svg/index.md
+- [x] web/svg/reference/attribute/accumulate/index.md
+- [x] web/svg/reference/attribute/additive/index.md
+- [x] web/svg/reference/attribute/alignment-baseline/index.md
+- [x] web/svg/reference/attribute/amplitude/index.md
+- [x] web/svg/reference/attribute/attributename/index.md
+- [x] web/svg/reference/attribute/attributetype/index.md
+- [x] web/svg/reference/attribute/autofocus/index.md
+- [x] web/svg/reference/attribute/azimuth/index.md
+- [x] web/svg/reference/attribute/basefrequency/index.md
+- [x] web/svg/reference/attribute/baseline-shift/index.md
+- [x] web/svg/reference/attribute/baseprofile/index.md
+- [x] web/svg/reference/attribute/begin/index.md
+- [x] web/svg/reference/attribute/bias/index.md
+- [x] web/svg/reference/attribute/by/index.md
+- [x] web/svg/reference/attribute/calcmode/index.md
+- [x] web/svg/reference/attribute/class/index.md
+- [x] web/svg/reference/attribute/clip-path/index.md
+- [x] web/svg/reference/attribute/clip-rule/index.md
+- [x] web/svg/reference/attribute/clip/index.md
+- [x] web/svg/reference/attribute/clippathunits/index.md
+- [x] web/svg/reference/attribute/color-interpolation-filters/index.md
+- [x] web/svg/reference/attribute/color-interpolation/index.md
+- [x] web/svg/reference/attribute/color/index.md
+- [x] web/svg/reference/attribute/crossorigin/index.md
+- [x] web/svg/reference/attribute/cursor/index.md
+- [x] web/svg/reference/attribute/cx/index.md
+- [x] web/svg/reference/attribute/cy/index.md
+- [x] web/svg/reference/attribute/d/index.md
+- [x] web/svg/reference/attribute/data-_star_/index.md
+- [x] web/svg/reference/attribute/decoding/index.md
+- [x] web/svg/reference/attribute/diffuseconstant/index.md
+- [x] web/svg/reference/attribute/direction/index.md
+- [x] web/svg/reference/attribute/display/index.md
+- [x] web/svg/reference/attribute/divisor/index.md
+- [x] web/svg/reference/attribute/dominant-baseline/index.md
+- [x] web/svg/reference/attribute/dur/index.md
+- [x] web/svg/reference/attribute/dx/index.md
+- [x] web/svg/reference/attribute/dy/index.md
+- [x] web/svg/reference/attribute/edgemode/index.md
+- [x] web/svg/reference/attribute/elevation/index.md
+- [x] web/svg/reference/attribute/end/index.md
+- [x] web/svg/reference/attribute/exponent/index.md
+- [x] web/svg/reference/attribute/fetchpriority/index.md
+- [x] web/svg/reference/attribute/fill-opacity/index.md
+- [x] web/svg/reference/attribute/fill-rule/index.md
+- [x] web/svg/reference/attribute/fill/index.md
+- [x] web/svg/reference/attribute/filter/index.md
+- [x] web/svg/reference/attribute/filterunits/index.md
+- [x] web/svg/reference/attribute/flood-color/index.md
+- [x] web/svg/reference/attribute/flood-opacity/index.md
+- [x] web/svg/reference/attribute/font-family/index.md
+- [x] web/svg/reference/attribute/font-size-adjust/index.md
+- [x] web/svg/reference/attribute/font-size/index.md
+- [x] web/svg/reference/attribute/font-stretch/index.md
+- [x] web/svg/reference/attribute/font-style/index.md
+- [x] web/svg/reference/attribute/font-variant/index.md
+- [x] web/svg/reference/attribute/font-weight/index.md
+- [x] web/svg/reference/attribute/fr/index.md
+- [x] web/svg/reference/attribute/from/index.md
+- [x] web/svg/reference/attribute/fx/index.md
+- [x] web/svg/reference/attribute/fy/index.md
+- [x] web/svg/reference/attribute/glyph-orientation-horizontal/index.md
+- [x] web/svg/reference/attribute/glyph-orientation-vertical/index.md
+- [x] web/svg/reference/attribute/gradienttransform/index.md
+- [x] web/svg/reference/attribute/gradientunits/index.md
+- [x] web/svg/reference/attribute/height/index.md
+- [x] web/svg/reference/attribute/href/index.md
+- [x] web/svg/reference/attribute/id/index.md
+- [x] web/svg/reference/attribute/image-rendering/index.md
+- [x] web/svg/reference/attribute/in/index.md
+- [x] web/svg/reference/attribute/in2/index.md
+- [x] web/svg/reference/attribute/index.md
+- [x] web/svg/reference/attribute/intercept/index.md
+- [x] web/svg/reference/attribute/k1/index.md
+- [x] web/svg/reference/attribute/k2/index.md
+- [x] web/svg/reference/attribute/k3/index.md
+- [x] web/svg/reference/attribute/k4/index.md
+- [x] web/svg/reference/attribute/kernelmatrix/index.md
+- [x] web/svg/reference/attribute/kernelunitlength/index.md
+- [x] web/svg/reference/attribute/keypoints/index.md
+- [x] web/svg/reference/attribute/keysplines/index.md
+- [x] web/svg/reference/attribute/keytimes/index.md
+- [x] web/svg/reference/attribute/lang/index.md
+- [x] web/svg/reference/attribute/lengthadjust/index.md
+- [x] web/svg/reference/attribute/letter-spacing/index.md
+- [x] web/svg/reference/attribute/lighting-color/index.md
+- [x] web/svg/reference/attribute/limitingconeangle/index.md
+- [x] web/svg/reference/attribute/marker-end/index.md
+- [x] web/svg/reference/attribute/marker-mid/index.md
+- [x] web/svg/reference/attribute/marker-start/index.md
+- [x] web/svg/reference/attribute/markerheight/index.md
+- [x] web/svg/reference/attribute/markerunits/index.md
+- [x] web/svg/reference/attribute/markerwidth/index.md
+- [x] web/svg/reference/attribute/mask-type/index.md
+- [x] web/svg/reference/attribute/mask/index.md
+- [x] web/svg/reference/attribute/maskcontentunits/index.md
+- [x] web/svg/reference/attribute/maskunits/index.md
+- [x] web/svg/reference/attribute/max/index.md
+- [x] web/svg/reference/attribute/media/index.md
+- [x] web/svg/reference/attribute/method/index.md
+- [x] web/svg/reference/attribute/min/index.md
+- [x] web/svg/reference/attribute/mode/index.md
+- [x] web/svg/reference/attribute/numoctaves/index.md
+- [x] web/svg/reference/attribute/opacity/index.md
+- [x] web/svg/reference/attribute/operator/index.md
+- [x] web/svg/reference/attribute/order/index.md
+- [x] web/svg/reference/attribute/orient/index.md
+- [x] web/svg/reference/attribute/origin/index.md
+- [x] web/svg/reference/attribute/overflow/index.md
+- [x] web/svg/reference/attribute/paint-order/index.md
+- [x] web/svg/reference/attribute/path/index.md
+- [x] web/svg/reference/attribute/pathlength/index.md
+- [x] web/svg/reference/attribute/patterncontentunits/index.md
+- [x] web/svg/reference/attribute/patterntransform/index.md
+- [x] web/svg/reference/attribute/patternunits/index.md
+- [x] web/svg/reference/attribute/pointer-events/index.md
+- [x] web/svg/reference/attribute/points/index.md
+- [x] web/svg/reference/attribute/pointsatx/index.md
+- [x] web/svg/reference/attribute/pointsaty/index.md
+- [x] web/svg/reference/attribute/pointsatz/index.md
+- [x] web/svg/reference/attribute/preservealpha/index.md
+- [x] web/svg/reference/attribute/preserveaspectratio/index.md
+- [x] web/svg/reference/attribute/primitiveunits/index.md
+- [x] web/svg/reference/attribute/r/index.md
+- [x] web/svg/reference/attribute/radius/index.md
+- [x] web/svg/reference/attribute/refx/index.md
+- [x] web/svg/reference/attribute/refy/index.md
+- [x] web/svg/reference/attribute/repeatcount/index.md
+- [x] web/svg/reference/attribute/repeatdur/index.md
+- [x] web/svg/reference/attribute/requiredextensions/index.md
+- [x] web/svg/reference/attribute/requiredfeatures/index.md
+- [x] web/svg/reference/attribute/restart/index.md
+- [x] web/svg/reference/attribute/result/index.md
+- [x] web/svg/reference/attribute/rotate/index.md
+- [x] web/svg/reference/attribute/rx/index.md
+- [x] web/svg/reference/attribute/ry/index.md
+- [x] web/svg/reference/attribute/scale/index.md
+- [x] web/svg/reference/attribute/seed/index.md
+- [x] web/svg/reference/attribute/shape-rendering/index.md
+- [x] web/svg/reference/attribute/side/index.md
+- [x] web/svg/reference/attribute/slope/index.md
+- [x] web/svg/reference/attribute/spacing/index.md
+- [x] web/svg/reference/attribute/specularconstant/index.md
+- [x] web/svg/reference/attribute/specularexponent/index.md
+- [x] web/svg/reference/attribute/spreadmethod/index.md
+- [x] web/svg/reference/attribute/startoffset/index.md
+- [x] web/svg/reference/attribute/stddeviation/index.md
+- [x] web/svg/reference/attribute/stitchtiles/index.md
+- [x] web/svg/reference/attribute/stop-color/index.md
+- [x] web/svg/reference/attribute/stop-opacity/index.md
+- [x] web/svg/reference/attribute/stroke-dasharray/index.md
+- [x] web/svg/reference/attribute/stroke-dashoffset/index.md
+- [x] web/svg/reference/attribute/stroke-linecap/index.md
+- [x] web/svg/reference/attribute/stroke-linejoin/index.md
+- [x] web/svg/reference/attribute/stroke-miterlimit/index.md
+- [x] web/svg/reference/attribute/stroke-opacity/index.md
+- [x] web/svg/reference/attribute/stroke-width/index.md
+- [x] web/svg/reference/attribute/stroke/index.md
+- [x] web/svg/reference/attribute/style/index.md
+- [x] web/svg/reference/attribute/surfacescale/index.md
+- [x] web/svg/reference/attribute/systemlanguage/index.md
+- [x] web/svg/reference/attribute/tabindex/index.md
+- [x] web/svg/reference/attribute/tablevalues/index.md
+- [x] web/svg/reference/attribute/target/index.md
+- [x] web/svg/reference/attribute/targetx/index.md
+- [x] web/svg/reference/attribute/targety/index.md
+- [x] web/svg/reference/attribute/text-anchor/index.md
+- [x] web/svg/reference/attribute/text-decoration/index.md
+- [x] web/svg/reference/attribute/text-overflow/index.md
+- [x] web/svg/reference/attribute/text-rendering/index.md
+- [x] web/svg/reference/attribute/textlength/index.md
+- [x] web/svg/reference/attribute/to/index.md
+- [x] web/svg/reference/attribute/transform-origin/index.md
+- [x] web/svg/reference/attribute/transform/index.md
+- [x] web/svg/reference/attribute/type/index.md
+- [x] web/svg/reference/attribute/unicode-bidi/index.md
+- [x] web/svg/reference/attribute/values/index.md
+- [x] web/svg/reference/attribute/vector-effect/index.md
+- [x] web/svg/reference/attribute/version/index.md
+- [x] web/svg/reference/attribute/viewbox/index.md
+- [x] web/svg/reference/attribute/visibility/index.md
+- [x] web/svg/reference/attribute/white-space/index.md
+- [x] web/svg/reference/attribute/width/index.md
+- [x] web/svg/reference/attribute/word-spacing/index.md
+- [x] web/svg/reference/attribute/writing-mode/index.md
+- [x] web/svg/reference/attribute/x/index.md
+- [x] web/svg/reference/attribute/x1/index.md
+- [x] web/svg/reference/attribute/x2/index.md
+- [x] web/svg/reference/attribute/xchannelselector/index.md
+- [x] web/svg/reference/attribute/xlink_colon_arcrole/index.md
+- [x] web/svg/reference/attribute/xlink_colon_href/index.md
+- [x] web/svg/reference/attribute/xlink_colon_show/index.md
+- [x] web/svg/reference/attribute/xlink_colon_title/index.md
+- [x] web/svg/reference/attribute/xlink_colon_type/index.md
+- [x] web/svg/reference/attribute/xml_colon_lang/index.md
+- [x] web/svg/reference/attribute/xml_colon_space/index.md
+- [x] web/svg/reference/attribute/y/index.md
+- [x] web/svg/reference/attribute/y1/index.md
+- [x] web/svg/reference/attribute/y2/index.md
+- [x] web/svg/reference/attribute/ychannelselector/index.md
+- [x] web/svg/reference/attribute/z/index.md
+- [x] web/svg/reference/attribute/zoomandpan/index.md
+- [x] web/svg/reference/element/a/index.md
+- [x] web/svg/reference/element/animate/index.md
+- [x] web/svg/reference/element/animatemotion/index.md
+- [x] web/svg/reference/element/animatetransform/index.md
+- [x] web/svg/reference/element/circle/index.md
+- [x] web/svg/reference/element/clippath/index.md
+- [x] web/svg/reference/element/defs/index.md
+- [x] web/svg/reference/element/desc/index.md
+- [x] web/svg/reference/element/ellipse/index.md
+- [x] web/svg/reference/element/feblend/index.md
+- [x] web/svg/reference/element/fecolormatrix/index.md
+- [x] web/svg/reference/element/fecomponenttransfer/index.md
+- [x] web/svg/reference/element/fecomposite/index.md
+- [x] web/svg/reference/element/feconvolvematrix/index.md
+- [x] web/svg/reference/element/fediffuselighting/index.md
+- [x] web/svg/reference/element/fedisplacementmap/index.md
+- [x] web/svg/reference/element/fedistantlight/index.md
+- [x] web/svg/reference/element/fedropshadow/index.md
+- [x] web/svg/reference/element/feflood/index.md
+- [x] web/svg/reference/element/fefunca/index.md
+- [x] web/svg/reference/element/fefuncb/index.md
+- [x] web/svg/reference/element/fefuncg/index.md
+- [x] web/svg/reference/element/fefuncr/index.md
+- [x] web/svg/reference/element/fegaussianblur/index.md
+- [x] web/svg/reference/element/feimage/index.md
+- [x] web/svg/reference/element/femerge/index.md
+- [x] web/svg/reference/element/femergenode/index.md
+- [x] web/svg/reference/element/femorphology/index.md
+- [x] web/svg/reference/element/feoffset/index.md
+- [x] web/svg/reference/element/fepointlight/index.md
+- [x] web/svg/reference/element/fespecularlighting/index.md
+- [x] web/svg/reference/element/fespotlight/index.md
+- [x] web/svg/reference/element/fetile/index.md
+- [x] web/svg/reference/element/feturbulence/index.md
+- [x] web/svg/reference/element/filter/index.md
+- [x] web/svg/reference/element/foreignobject/index.md
+- [x] web/svg/reference/element/g/index.md
+- [x] web/svg/reference/element/image/index.md
+- [x] web/svg/reference/element/index.md
+- [x] web/svg/reference/element/line/index.md
+- [x] web/svg/reference/element/lineargradient/index.md
+- [x] web/svg/reference/element/marker/index.md
+- [x] web/svg/reference/element/mask/index.md
+- [x] web/svg/reference/element/metadata/index.md
+- [x] web/svg/reference/element/mpath/index.md
+- [x] web/svg/reference/element/path/index.md
+- [x] web/svg/reference/element/pattern/index.md
+- [x] web/svg/reference/element/polygon/index.md
+- [x] web/svg/reference/element/polyline/index.md
+- [x] web/svg/reference/element/radialgradient/index.md
+- [x] web/svg/reference/element/rect/index.md
+- [x] web/svg/reference/element/script/index.md
+- [x] web/svg/reference/element/set/index.md
+- [x] web/svg/reference/element/stop/index.md
+- [x] web/svg/reference/element/style/index.md
+- [x] web/svg/reference/element/svg/index.md
+- [x] web/svg/reference/element/switch/index.md
+- [x] web/svg/reference/element/symbol/index.md
+- [x] web/svg/reference/element/text/index.md
+- [x] web/svg/reference/element/textpath/index.md
+- [x] web/svg/reference/element/title/index.md
+- [x] web/svg/reference/element/tspan/index.md
+- [x] web/svg/reference/element/use/index.md
+- [x] web/svg/reference/element/view/index.md
+- [x] web/svg/reference/index.md
+- [x] web/svg/tutorials/index.md
+- [x] web/svg/tutorials/svg_from_scratch/basic_shapes/index.md
+- [x] web/svg/tutorials/svg_from_scratch/basic_transformations/index.md
+- [x] web/svg/tutorials/svg_from_scratch/clipping_and_masking/index.md
+- [x] web/svg/tutorials/svg_from_scratch/fills_and_strokes/index.md
+- [x] web/svg/tutorials/svg_from_scratch/filter_effects/index.md
+- [x] web/svg/tutorials/svg_from_scratch/getting_started/index.md
+- [x] web/svg/tutorials/svg_from_scratch/gradients/index.md
+- [x] web/svg/tutorials/svg_from_scratch/image_element/index.md
+- [x] web/svg/tutorials/svg_from_scratch/index.md
+- [x] web/svg/tutorials/svg_from_scratch/introduction/index.md
+- [x] web/svg/tutorials/svg_from_scratch/other_content_in_svg/index.md
+- [x] web/svg/tutorials/svg_from_scratch/paths/index.md
+- [x] web/svg/tutorials/svg_from_scratch/patterns/index.md
+- [x] web/svg/tutorials/svg_from_scratch/positions/index.md
+- [x] web/svg/tutorials/svg_from_scratch/svg_and_css/index.md
+- [x] web/svg/tutorials/svg_from_scratch/texts/index.md
+- [x] web/svg/tutorials/svg_from_scratch/tools_for_svg/index.md
+- [x] web/svg/tutorials/svg_from_scratch/using_fonts/index.md
