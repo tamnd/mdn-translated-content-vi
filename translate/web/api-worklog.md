@@ -135,6 +135,16 @@ Planned pages:
 4. `Web/API/Accelerometer/y`
 5. `Web/API/Accelerometer/z`
 
+## Batch 9
+
+Translate the `AmbientLightSensor` interface, constructor, and illuminance property together so the sensor terminology stays consistent across the compact batch.
+
+Planned pages:
+
+1. `Web/API/AmbientLightSensor`
+2. `Web/API/AmbientLightSensor/AmbientLightSensor`
+3. `Web/API/AmbientLightSensor/illuminance`
+
 ## Batch 7
 
 Continue with the `AbsoluteOrientationSensor` pair to cover the interface and constructor together as a compact sensor batch.
