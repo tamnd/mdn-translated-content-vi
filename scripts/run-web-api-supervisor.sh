@@ -61,13 +61,15 @@ next_family() {
   local in_progress
   in_progress="$(list_in_progress_families | tr '\n' ' ')"
 
-  list_untranslated_pages | awk -F/ '{print $1"/"$2"/"$3}' | awk '!seen[$0]++' | while read -r family; do
+  local family
+  while read -r family; do
     if [[ " $in_progress " == *" $family "* ]]; then
       continue
     fi
     echo "$family"
     return 0
-  done
+  done < <(list_untranslated_pages | awk -F/ '{print $1"/"$2"/"$3}' | awk '!seen[$0]++')
+
   return 1
 }
 
@@ -223,13 +225,16 @@ EOF
 
   (
     cd "$worktree"
+    set +e
     codex exec \
       --cd "$worktree" \
       --dangerously-bypass-approvals-and-sandbox \
       --model gpt-5.4 \
       --output-last-message "$STATE_DIR/worker-$slot-last-message.txt" \
       "$(cat "$prompt_file")" >>"$log_file" 2>&1
-    echo $? >"$exit_file"
+    exit_code=$?
+    set -e
+    echo "$exit_code" >"$exit_file"
   ) &
 
   log "worker=$slot family=$family started branch=$branch"
@@ -255,7 +260,8 @@ while true; do
     merge_worker_result "$local_slot"
   done
 
-  if ! list_untranslated_pages | grep -q .; then
+  first_untranslated="$(list_untranslated_pages | sed -n '1p' || true)"
+  if [ -z "${first_untranslated:-}" ]; then
     if all_workers_idle; then
       log "all web api pages translated"
       break
