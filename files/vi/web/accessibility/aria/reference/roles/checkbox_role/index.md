@@ -71,8 +71,8 @@ Từ góc nhìn của người dùng công nghệ trợ năng, tiêu đề khôn
 
 ### Tương tác bàn phím
 
-| Phím             | Chức năng                 |
-| ---------------- | ------------------------- |
+| Phím             | Chức năng          |
+| ---------------- | ------------------ |
 | <kbd>Space</kbd> | Kích hoạt checkbox |
 
 ### JavaScript bắt buộc
