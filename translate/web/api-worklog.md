@@ -108,6 +108,21 @@ Planned pages:
 5. `Web/API/AbstractRange/startContainer`
 6. `Web/API/AbstractRange/startOffset`
 
+## Batch 6
+
+Translate the `Attr` interface and its core instance properties in one compact DOM batch.
+
+Planned pages:
+
+1. `Web/API/Attr`
+2. `Web/API/Attr/localName`
+3. `Web/API/Attr/name`
+4. `Web/API/Attr/namespaceURI`
+5. `Web/API/Attr/ownerElement`
+6. `Web/API/Attr/prefix`
+7. `Web/API/Attr/specified`
+8. `Web/API/Attr/value`
+
 ## Batch 8
 
 Continue with a compact `Accelerometer` sensor batch that keeps the interface and its coordinate properties together for consistent terminology.
