@@ -231,3 +231,20 @@ Planned pages:
 3. `Web/API/AnimationEvent/animationName`
 4. `Web/API/AnimationEvent/elapsedTime`
 5. `Web/API/AnimationEvent/pseudoElement`
+
+## Batch 23
+
+Translate the `Animation` interface and its related constructor, properties, methods, and events together so the Web Animations terminology remains aligned across the family.
+
+Planned pages:
+
+1. `Web/API/Animation`
+2. `Web/API/Animation/Animation`
+3. `Web/API/Animation/cancel`
+4. `Web/API/Animation/cancel_event`
+5. `Web/API/Animation/commitStyles`
+6. `Web/API/Animation/currentTime`
+7. `Web/API/Animation/effect`
+8. `Web/API/Animation/finish`
+9. `Web/API/Animation/finish_event`
+10. `Web/API/Animation/finished`
