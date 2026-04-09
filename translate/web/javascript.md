@@ -16,13 +16,13 @@ Total: 1,329 pages
 - [x] web/javascript/guide/loops_and_iteration
 - [x] web/javascript/guide/functions
 - [x] web/javascript/guide/expressions_and_operators
-- [x] web/javascript/guide/numbers_and_dates
-- [x] web/javascript/guide/text_formatting
+- [ ] web/javascript/guide/numbers_and_dates
+- [ ] web/javascript/guide/text_formatting
 - [x] web/javascript/guide/regular_expressions
 - [x] web/javascript/guide/indexed_collections
 - [x] web/javascript/guide/keyed_collections
 - [x] web/javascript/guide/working_with_objects
-- [x] web/javascript/guide/details_of_the_object_model
+- [ ] web/javascript/guide/details_of_the_object_model
 - [x] web/javascript/guide/using_promises
 - [x] web/javascript/guide/iterators_and_generators
 - [x] web/javascript/guide/meta_programming
@@ -365,7 +365,7 @@ High-priority (translate first):
 - [x] web/javascript/reference/global_objects/boolean
 - [x] web/javascript/reference/global_objects/symbol
 - [x] web/javascript/reference/global_objects/bigint
-- [x] web/javascript/reference/global_objects/null
+- [ ] web/javascript/reference/global_objects/null
 - [x] web/javascript/reference/global_objects/undefined
 - [x] web/javascript/reference/global_objects/nan
 - [x] web/javascript/reference/global_objects/infinity
