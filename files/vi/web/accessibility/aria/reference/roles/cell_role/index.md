@@ -140,7 +140,9 @@ Chỉ dùng {{HTMLElement('table')}}, {{HTMLElement('tbody')}}, {{HTMLElement('t
   </caption>
   <thead role="rowgroup">
     <tr role="row">
-      <th role="columnheader" aria-sort="none" aria-rowindex="1">Vai trò ARIA</th>
+      <th role="columnheader" aria-sort="none" aria-rowindex="1">
+        Vai trò ARIA
+      </th>
       <th role="columnheader" aria-sort="none" aria-rowindex="1">
         Phần tử ngữ nghĩa
       </th>
