@@ -85,16 +85,16 @@ Giá trị của mỗi thuộc tính được xác định trong HTML bằng thu
 </p>
 ```
 
-| Thuộc tính             | Mô tả                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------- |
-| **`p-name`**           | Tên đầy đủ/định dạng của người hoặc tổ chức.                                  |
-| **`u-email`**          | địa chỉ email                                                                 |
-| **`u-photo`**          | ảnh của người hoặc tổ chức                                                    |
-| **`u-url`**            | trang chủ hoặc URL khác đại diện cho người hoặc tổ chức                       |
-| **`u-uid`**            | định danh duy nhất toàn cầu, tốt nhất là URL chuẩn                            |
-| **`p-street-address`** | số nhà + tên đường                                                            |
-| **`p-locality`**       | thành phố/thị xã/làng                                                         |
-| **`p-country-name`**   | tên quốc gia                                                                  |
+| Thuộc tính             | Mô tả                                                   |
+| ---------------------- | ------------------------------------------------------- |
+| **`p-name`**           | Tên đầy đủ/định dạng của người hoặc tổ chức.            |
+| **`u-email`**          | địa chỉ email                                           |
+| **`u-photo`**          | ảnh của người hoặc tổ chức                              |
+| **`u-url`**            | trang chủ hoặc URL khác đại diện cho người hoặc tổ chức |
+| **`u-uid`**            | định danh duy nhất toàn cầu, tốt nhất là URL chuẩn      |
+| **`p-street-address`** | số nhà + tên đường                                      |
+| **`p-locality`**       | thành phố/thị xã/làng                                   |
+| **`p-country-name`**   | tên quốc gia                                            |
 
 #### Ví dụ h-card lồng nhau
 
@@ -164,13 +164,13 @@ Ví dụ h-entry dưới dạng bài đăng blog:
 
 #### Thuộc tính
 
-| Thuộc tính         | Mô tả                                               |
-| ------------------ | --------------------------------------------------- |
-| **`p-name`**       | tên/tiêu đề entry                                   |
-| **`p-author`**     | người đã viết entry, tùy chọn nhúng h-card          |
-| **`dt-published`** | thời điểm entry được xuất bản                       |
-| **`p-summary`**    | tóm tắt ngắn entry                                  |
-| **`e-content`**    | nội dung đầy đủ của entry                           |
+| Thuộc tính         | Mô tả                                      |
+| ------------------ | ------------------------------------------ |
+| **`p-name`**       | tên/tiêu đề entry                          |
+| **`p-author`**     | người đã viết entry, tùy chọn nhúng h-card |
+| **`dt-published`** | thời điểm entry được xuất bản              |
+| **`p-summary`**    | tóm tắt ngắn entry                         |
+| **`e-content`**    | nội dung đầy đủ của entry                  |
 
 #### Ví dụ h-entry phản hồi được phân tích
 
@@ -289,9 +289,9 @@ Ví dụ h-entry dưới dạng bài đăng blog:
 
 #### Thuộc tính
 
-| Thuộc tính     | Mô tả                                              |
-| -------------- | -------------------------------------------------- |
-| **`p-name`**   | tên của nguồn cấp dữ liệu                          |
+| Thuộc tính     | Mô tả                                                |
+| -------------- | ---------------------------------------------------- |
+| **`p-name`**   | tên của nguồn cấp dữ liệu                            |
 | **`p-author`** | tác giả của nguồn cấp dữ liệu, tùy chọn nhúng h-card |
 
 #### Phần tử con
@@ -332,13 +332,13 @@ Ví dụ h-entry dưới dạng bài đăng blog:
 
 #### Thuộc tính
 
-| Thuộc tính       | Mô tả                                                   |
-| ---------------- | ------------------------------------------------------- |
-| **`p-name`**     | tên sự kiện (hoặc tiêu đề)                              |
-| **`p-summary`**  | tóm tắt ngắn về sự kiện                                 |
-| **`dt-start`**   | ngày giờ sự kiện bắt đầu                                |
-| **`dt-end`**     | ngày giờ sự kiện kết thúc                               |
-| **`p-location`** | nơi tổ chức sự kiện, tùy chọn nhúng h-card              |
+| Thuộc tính       | Mô tả                                      |
+| ---------------- | ------------------------------------------ |
+| **`p-name`**     | tên sự kiện (hoặc tiêu đề)                 |
+| **`p-summary`**  | tóm tắt ngắn về sự kiện                    |
+| **`dt-start`**   | ngày giờ sự kiện bắt đầu                   |
+| **`dt-end`**     | ngày giờ sự kiện kết thúc                  |
+| **`p-location`** | nơi tổ chức sự kiện, tùy chọn nhúng h-card |
 
 #### Ví dụ h-event được phân tích
 

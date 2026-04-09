@@ -30,7 +30,7 @@ Total: 251 pages
 - [x] web/html/how_to/add_a_hit_map_on_top_of_an_image
 - [ ] web/html/how_to/communicate_with_other_pages
 
-## Reference -- Attributes (36 pages)
+## Reference — Attributes (36 pages)
 
 - [x] web/html/reference/attributes/index.md
 - [x] web/html/reference/attributes/accept
@@ -63,11 +63,12 @@ Total: 251 pages
 - [ ] web/html/reference/attributes/defer
 - [ ] web/html/reference/attributes/dir
 - [x] web/html/reference/attributes/disabled
-- [ ] *(remaining attributes)*
+- [ ] _(remaining attributes)_
 
-## Reference -- Elements (161 pages)
+## Reference — Elements (161 pages)
 
 ### Document / metadata
+
 - [x] web/html/reference/elements/html
 - [x] web/html/reference/elements/head
 - [x] web/html/reference/elements/title
@@ -80,6 +81,7 @@ Total: 251 pages
 - [x] web/html/reference/elements/body
 
 ### Sectioning
+
 - [x] web/html/reference/elements/article
 - [x] web/html/reference/elements/section
 - [x] web/html/reference/elements/nav
@@ -92,6 +94,7 @@ Total: 251 pages
 - [x] web/html/reference/elements/address
 
 ### Text content
+
 - [x] web/html/reference/elements/p
 - [x] web/html/reference/elements/blockquote
 - [x] web/html/reference/elements/pre
@@ -108,6 +111,7 @@ Total: 251 pages
 - [x] web/html/reference/elements/menu
 
 ### Inline text
+
 - [x] web/html/reference/elements/a
 - [x] web/html/reference/elements/abbr
 - [x] web/html/reference/elements/b
@@ -139,6 +143,7 @@ Total: 251 pages
 - [x] web/html/reference/elements/wbr
 
 ### Embedded content
+
 - [x] web/html/reference/elements/img
 - [x] web/html/reference/elements/audio
 - [x] web/html/reference/elements/video
@@ -153,6 +158,7 @@ Total: 251 pages
 - [x] web/html/reference/elements/area
 
 ### Forms
+
 - [x] web/html/reference/elements/form
 - [x] web/html/reference/elements/input
 - [x] web/html/reference/elements/button
@@ -169,6 +175,7 @@ Total: 251 pages
 - [x] web/html/reference/elements/progress
 
 ### Tables
+
 - [x] web/html/reference/elements/table
 - [x] web/html/reference/elements/thead
 - [x] web/html/reference/elements/tbody
@@ -181,14 +188,15 @@ Total: 251 pages
 - [x] web/html/reference/elements/colgroup
 
 ### Interactive / scripting
+
 - [x] web/html/reference/elements/details
 - [x] web/html/reference/elements/summary
 - [x] web/html/reference/elements/dialog
 - [x] web/html/reference/elements/slot
 - [x] web/html/reference/elements/template
-- [ ] *(remaining elements)*
+- [ ] _(remaining elements)_
 
-## Reference -- Global attributes (35 pages)
+## Reference — Global attributes (35 pages)
 
 - [x] web/html/reference/global_attributes/index.md
 - [x] web/html/reference/global_attributes/accesskey
@@ -196,7 +204,7 @@ Total: 251 pages
 - [x] web/html/reference/global_attributes/autofocus
 - [x] web/html/reference/global_attributes/class
 - [x] web/html/reference/global_attributes/contenteditable
-- [ ] web/html/reference/global_attributes/data-*
+- [ ] web/html/reference/global_attributes/data-\*
 - [x] web/html/reference/global_attributes/dir
 - [x] web/html/reference/global_attributes/draggable
 - [x] web/html/reference/global_attributes/enterkeyhint
@@ -220,4 +228,4 @@ Total: 251 pages
 - [x] web/html/reference/global_attributes/tabindex
 - [x] web/html/reference/global_attributes/title
 - [x] web/html/reference/global_attributes/translate
-- [ ] *(remaining global_attributes)*
+- [ ] _(remaining global_attributes)_
