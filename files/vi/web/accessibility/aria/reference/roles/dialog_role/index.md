@@ -16,9 +16,12 @@ Vai trò `dialog` được dùng để đánh dấu một hộp thoại hoặc c
   role="dialog"
   aria-labelledby="dialog1Title"
   aria-describedby="dialog1Desc">
-  <h2 id="dialog1Title">Thông tin cá nhân của bạn đã được cập nhật thành công</h2>
+  <h2 id="dialog1Title">
+    Thông tin cá nhân của bạn đã được cập nhật thành công
+  </h2>
   <p id="dialog1Desc">
-    Bạn có thể thay đổi thông tin bất cứ lúc nào trong phần tài khoản người dùng.
+    Bạn có thể thay đổi thông tin bất cứ lúc nào trong phần tài khoản người
+    dùng.
   </p>
   <button>Đóng</button>
 </div>
@@ -46,9 +49,12 @@ Nếu hộp thoại đã có thanh tiêu đề hiển thị, văn bản trong th
   role="dialog"
   aria-labelledby="dialog1Title"
   aria-describedby="dialog1Desc">
-  <h2 id="dialog1Title">Thông tin cá nhân của bạn đã được cập nhật thành công</h2>
+  <h2 id="dialog1Title">
+    Thông tin cá nhân của bạn đã được cập nhật thành công
+  </h2>
   <p id="dialog1Desc">
-    Bạn có thể thay đổi thông tin bất cứ lúc nào trong phần tài khoản người dùng.
+    Bạn có thể thay đổi thông tin bất cứ lúc nào trong phần tài khoản người
+    dùng.
   </p>
   <button>Đóng</button>
 </div>
@@ -98,7 +104,9 @@ Khi hộp thoại được gắn nhãn đúng cách và tiêu điểm được c
   aria-labelledby="dialog1Title"
   aria-describedby="dialog1Desc">
   <h2 id="dialog1Title">Biểu mẫu đăng ký</h2>
-  <p id="dialog1Desc">Chúng tôi sẽ không chia sẻ thông tin này với bên thứ ba.</p>
+  <p id="dialog1Desc">
+    Chúng tôi sẽ không chia sẻ thông tin này với bên thứ ba.
+  </p>
   <form>
     <p>
       <label for="firstName">Tên</label>
