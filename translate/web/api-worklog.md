@@ -157,6 +157,17 @@ Planned pages:
 2. `Web/API/AmbientLightSensor/AmbientLightSensor`
 3. `Web/API/AmbientLightSensor/illuminance`
 
+## Batch 21
+
+Translate the `AnimationEffect` interface and its core timing methods together so the timing terminology stays consistent across the Web Animations API batch.
+
+Planned pages:
+
+1. `Web/API/AnimationEffect`
+2. `Web/API/AnimationEffect/getComputedTiming`
+3. `Web/API/AnimationEffect/getTiming`
+4. `Web/API/AnimationEffect/updateTiming`
+
 ## Batch 7
 
 Continue with the `AbsoluteOrientationSensor` pair to cover the interface and constructor together as a compact sensor batch.
@@ -194,3 +205,29 @@ Planned pages:
 9. `Web/API/AnalyserNode/maxDecibels`
 10. `Web/API/AnalyserNode/minDecibels`
 11. `Web/API/AnalyserNode/smoothingTimeConstant`
+
+## Batch 17
+
+Translate the `AnimationPlaybackEvent` and `AnimationTimeline` family together so the animation timing terminology stays aligned across the interface and properties.
+
+Planned pages:
+
+1. `Web/API/AnimationPlaybackEvent`
+2. `Web/API/AnimationPlaybackEvent/AnimationPlaybackEvent`
+3. `Web/API/AnimationPlaybackEvent/currentTime`
+4. `Web/API/AnimationPlaybackEvent/timelineTime`
+5. `Web/API/AnimationTimeline`
+6. `Web/API/AnimationTimeline/currentTime`
+7. `Web/API/AnimationTimeline/duration`
+
+## Batch 22
+
+Translate the `AnimationEvent` family together so the interface, constructor, and instance properties keep their animation terminology aligned in one compact batch.
+
+Planned pages:
+
+1. `Web/API/AnimationEvent`
+2. `Web/API/AnimationEvent/AnimationEvent`
+3. `Web/API/AnimationEvent/animationName`
+4. `Web/API/AnimationEvent/elapsedTime`
+5. `Web/API/AnimationEvent/pseudoElement`
