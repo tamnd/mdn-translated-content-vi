@@ -55,15 +55,15 @@ Một vài điểm quan trọng cần nhớ khi dùng member `id`:
 
 Giả sử `start_url` của ứng dụng là `https://example.com/my-app/home`. Bảng sau minh họa cách các giá trị `id` khác nhau trong manifest sẽ được phân giải:
 
-| `id` trong manifest | `id` đã phân giải | Giải thích |
-| --- | --- | --- |
-| undefined | `https://example.com/my-app/home` | Mặc định là `start_url` |
-| `""` | `https://example.com/my-app/home` | Chuỗi rỗng phân giải thành `start_url` |
-| `/` | `https://example.com/` | URL tương đối với root |
-| `foo?x=y` | `https://example.com/foo?x=y` | Đường dẫn tương đối được phân giải theo origin của `start_url` với tham số truy vấn được giữ nguyên |
-| `foo#heading` | `https://example.com/foo` | Đường dẫn tương đối được phân giải theo origin của `start_url` với fragment bị xóa |
-| `https://anothersite.com/foo` | `https://example.com/my-app/home` | URL khác origin không được phép, nên quay về `start_url` |
-| `😀` | `https://example.com/%F0%9F%98%80` | Ký tự không phải ASCII được mã hóa trong URL |
+| `id` trong manifest           | `id` đã phân giải                  | Giải thích                                                                                          |
+| ----------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
+| undefined                     | `https://example.com/my-app/home`  | Mặc định là `start_url`                                                                             |
+| `""`                          | `https://example.com/my-app/home`  | Chuỗi rỗng phân giải thành `start_url`                                                              |
+| `/`                           | `https://example.com/`             | URL tương đối với root                                                                              |
+| `foo?x=y`                     | `https://example.com/foo?x=y`      | Đường dẫn tương đối được phân giải theo origin của `start_url` với tham số truy vấn được giữ nguyên |
+| `foo#heading`                 | `https://example.com/foo`          | Đường dẫn tương đối được phân giải theo origin của `start_url` với fragment bị xóa                  |
+| `https://anothersite.com/foo` | `https://example.com/my-app/home`  | URL khác origin không được phép, nên quay về `start_url`                                            |
+| `😀`                          | `https://example.com/%F0%9F%98%80` | Ký tự không phải ASCII được mã hóa trong URL                                                        |
 
 ## Ví dụ
 

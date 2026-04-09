@@ -71,8 +71,8 @@ Với scope đặt thành `/trails/`:
 - Khi xem các trang và thư mục con bên dưới `/trails/` (như `trail-list.html` và `/trails/settings/index.html`), người dùng sẽ có trải nghiệm giao diện giống ứng dụng mà không có điều khiển trình duyệt (hình bên trái).
 - Khi điều hướng tới các trang trong các thư mục con như `/blog/`, nằm ngoài scope của ứng dụng, giao diện giống ứng dụng vẫn còn nhưng người dùng sẽ thấy địa chỉ website và các điều khiển trình duyệt khác (hình bên phải).
 
-| Trang trong scope | Trang ngoài scope |
-| --- | --- |
+| Trang trong scope                                                                                              | Trang ngoài scope                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | ![Trang danh sách đường mòn hiển thị giao diện giống ứng dụng không có điều khiển trình duyệt](trail-list.png) | ![Trang blog hiển thị địa chỉ website và điều khiển trình duyệt trong khi vẫn giữ giao diện giống ứng dụng](blog.png) |
 
 ### Ảnh hưởng của scope lên các trang được liên kết sâu
