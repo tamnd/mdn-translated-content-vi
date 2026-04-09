@@ -74,13 +74,13 @@ Hầu hết trình duyệt đều cung cấp một trình gỡ lỗi có thể n
 
 Giống như HTML, XML cung cấp {{glossary("character reference", "các tham chiếu ký tự")}} để tham chiếu tới một số ký tự đặc biệt dành riêng (chẳng hạn dấu lớn hơn vốn được dùng cho thẻ). Có năm ký tự như vậy mà bạn nên biết:
 
-| Entity     | Ký tự | Mô tả                                |
-| ---------- | ----- | ------------------------------------ |
-| &amp;lt;   | <     | Dấu nhỏ hơn                          |
-| &amp;gt;   | >     | Dấu lớn hơn                          |
-| &amp;amp;  | &     | Dấu và                               |
-| &amp;quot; | "     | Một dấu ngoặc kép                    |
-| &amp;apos; | '     | Một dấu nháy đơn (hoặc dấu nháy)     |
+| Entity     | Ký tự | Mô tả                            |
+| ---------- | ----- | -------------------------------- |
+| &amp;lt;   | <     | Dấu nhỏ hơn                      |
+| &amp;gt;   | >     | Dấu lớn hơn                      |
+| &amp;amp;  | &     | Dấu và                           |
+| &amp;quot; | "     | Một dấu ngoặc kép                |
+| &amp;apos; | '     | Một dấu nháy đơn (hoặc dấu nháy) |
 
 Mặc dù chỉ có 5 tham chiếu ký tự, hay thực thể, được khai báo, bạn vẫn có thể thêm nhiều hơn bằng cách dùng [Document Type Definition](/en-US/docs/Glossary/Doctype) của tài liệu. Ví dụ, để tạo một thực thể mới `&warning;`, bạn có thể làm như sau:
 

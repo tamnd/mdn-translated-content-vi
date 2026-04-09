@@ -63,8 +63,7 @@ Bây giờ bạn có thể "truy vấn" tài liệu bằng các biểu thức XP
 ```js
 // hiển thị họ của tất cả mọi người trong tài liệu
 let results = evaluateXPath(people, "//person/@last-name");
-for (const i in results)
-  console.log(`Người #${i} có họ ${results[i].value}`);
+for (const i in results) console.log(`Người #${i} có họ ${results[i].value}`);
 
 // lấy node người thứ 2
 results = evaluateXPath(people, "/people/person[2]");

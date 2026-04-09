@@ -26,11 +26,11 @@ Một chuỗi.
 
 ### Ví dụ
 
-| Ví dụ XPath                      | Kết quả          |
-| -------------------------------- | ---------------- |
-| `substring-before('aa-bb','-')` | `aa`             |
+| Ví dụ XPath                     | Kết quả        |
+| ------------------------------- | -------------- |
+| `substring-before('aa-bb','-')` | `aa`           |
 | `substring-before('aa-bb','a')` | `(chuỗi rỗng)` |
-| `substring-before('aa-bb','b')` | `aa-`            |
+| `substring-before('aa-bb','b')` | `aa-`          |
 | `substring-before('aa-bb','q')` | (chuỗi rỗng)   |
 
 ## Thông số kỹ thuật

@@ -339,18 +339,18 @@ let thisItemEl = thisLevel.iterateNext();
 
 #### Các hằng số được định nghĩa của XPathResult
 
-| Hằng số kiểu kết quả | Giá trị | Mô tả                                                                                                                                                                                          |
-| ---------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ANY_TYPE                     | 0     | Một tập kết quả chứa bất kỳ kiểu nào tự nhiên sinh ra từ việc đánh giá biểu thức. Lưu ý rằng nếu kết quả là một node-set thì UNORDERED_NODE_ITERATOR_TYPE luôn là kiểu kết quả. |
-| NUMBER_TYPE                  | 1     | Một kết quả chứa một số đơn lẻ. Điều này hữu ích, ví dụ, trong một biểu thức XPath dùng hàm `count()`.                                                                                |
-| STRING_TYPE                  | 2     | Một kết quả chứa một chuỗi đơn lẻ.                                                                                                                                                                 |
-| BOOLEAN_TYPE                 | 3     | Một kết quả chứa một giá trị boolean đơn lẻ. Điều này hữu ích, ví dụ, trong một biểu thức XPath dùng hàm `not()`.                                                                           |
-| UNORDERED_NODE_ITERATOR_TYPE | 4     | Một node-set kết quả chứa tất cả các node khớp với biểu thức. Các node không nhất thiết theo cùng thứ tự như chúng xuất hiện trong tài liệu.                                             |
-| ORDERED_NODE_ITERATOR_TYPE   | 5     | Một node-set kết quả chứa tất cả các node khớp với biểu thức. Các node trong tập kết quả có cùng thứ tự như chúng xuất hiện trong tài liệu.                                              |
-| UNORDERED_NODE_SNAPSHOT_TYPE | 6     | Một node-set kết quả chứa ảnh chụp nhanh của tất cả các node khớp với biểu thức. Các node không nhất thiết theo cùng thứ tự như chúng xuất hiện trong tài liệu.                                |
-| ORDERED_NODE_SNAPSHOT_TYPE   | 7     | Một node-set kết quả chứa ảnh chụp nhanh của tất cả các node khớp với biểu thức. Các node trong tập kết quả có cùng thứ tự như chúng xuất hiện trong tài liệu.                                 |
-| ANY_UNORDERED_NODE_TYPE      | 8     | Một node-set kết quả chứa bất kỳ một node đơn lẻ nào khớp với biểu thức. Node này không nhất thiết là node đầu tiên trong tài liệu khớp với biểu thức.                                    |
-| FIRST_ORDERED_NODE_TYPE      | 9     | Một node-set kết quả chứa node đầu tiên trong tài liệu khớp với biểu thức.                                                                                                             |
+| Hằng số kiểu kết quả         | Giá trị | Mô tả                                                                                                                                                                           |
+| ---------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ANY_TYPE                     | 0       | Một tập kết quả chứa bất kỳ kiểu nào tự nhiên sinh ra từ việc đánh giá biểu thức. Lưu ý rằng nếu kết quả là một node-set thì UNORDERED_NODE_ITERATOR_TYPE luôn là kiểu kết quả. |
+| NUMBER_TYPE                  | 1       | Một kết quả chứa một số đơn lẻ. Điều này hữu ích, ví dụ, trong một biểu thức XPath dùng hàm `count()`.                                                                          |
+| STRING_TYPE                  | 2       | Một kết quả chứa một chuỗi đơn lẻ.                                                                                                                                              |
+| BOOLEAN_TYPE                 | 3       | Một kết quả chứa một giá trị boolean đơn lẻ. Điều này hữu ích, ví dụ, trong một biểu thức XPath dùng hàm `not()`.                                                               |
+| UNORDERED_NODE_ITERATOR_TYPE | 4       | Một node-set kết quả chứa tất cả các node khớp với biểu thức. Các node không nhất thiết theo cùng thứ tự như chúng xuất hiện trong tài liệu.                                    |
+| ORDERED_NODE_ITERATOR_TYPE   | 5       | Một node-set kết quả chứa tất cả các node khớp với biểu thức. Các node trong tập kết quả có cùng thứ tự như chúng xuất hiện trong tài liệu.                                     |
+| UNORDERED_NODE_SNAPSHOT_TYPE | 6       | Một node-set kết quả chứa ảnh chụp nhanh của tất cả các node khớp với biểu thức. Các node không nhất thiết theo cùng thứ tự như chúng xuất hiện trong tài liệu.                 |
+| ORDERED_NODE_SNAPSHOT_TYPE   | 7       | Một node-set kết quả chứa ảnh chụp nhanh của tất cả các node khớp với biểu thức. Các node trong tập kết quả có cùng thứ tự như chúng xuất hiện trong tài liệu.                  |
+| ANY_UNORDERED_NODE_TYPE      | 8       | Một node-set kết quả chứa bất kỳ một node đơn lẻ nào khớp với biểu thức. Node này không nhất thiết là node đầu tiên trong tài liệu khớp với biểu thức.                          |
+| FIRST_ORDERED_NODE_TYPE      | 9       | Một node-set kết quả chứa node đầu tiên trong tài liệu khớp với biểu thức.                                                                                                      |
 
 ## Xem thêm
 
