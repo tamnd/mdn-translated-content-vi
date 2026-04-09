@@ -5,3 +5,4 @@ _githistory.json
 .DS_Store
 .idea
 *.log
+.codex-automation/
