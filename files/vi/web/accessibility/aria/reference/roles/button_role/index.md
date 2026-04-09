@@ -82,10 +82,10 @@ Ví dụ, nút tắt tiếng trên một trình phát âm thanh có nhãn "mute"
 
 ### Tương tác bàn phím
 
-| Phím | Chức năng |
-| --- | --- |
+| Phím             | Chức năng      |
+| ---------------- | -------------- |
 | <kbd>Enter</kbd> | Kích hoạt nút. |
-| <kbd>Space</kbd> | Kích hoạt nút |
+| <kbd>Space</kbd> | Kích hoạt nút  |
 
 Sau khi nút được kích hoạt, tiêu điểm sẽ được đặt tùy theo kiểu hành động mà nút thực hiện. Ví dụ, nếu nhấp nút để mở một hộp thoại, tiêu điểm nên chuyển tới hộp thoại. Nếu nút đóng hộp thoại, tiêu điểm nên quay lại nút đã mở hộp thoại, trừ khi chức năng được thực hiện trong bối cảnh hộp thoại dẫn hợp lý tới một phần tử khác. Nếu nút làm thay đổi ngữ cảnh hiện tại, chẳng hạn tắt và bật một tệp âm thanh, thì tiêu điểm thường vẫn ở trên nút.
 
@@ -189,7 +189,9 @@ Trong đoạn này, một phần tử {{HTMLElement("span")}} được chuyển 
 ```html
 <button type="button">Tắt tiếng âm thanh</button>
 
-<span role="button" tabindex="0" aria-pressed="false"> Tắt tiếng âm thanh </span>
+<span role="button" tabindex="0" aria-pressed="false">
+  Tắt tiếng âm thanh
+</span>
 
 <audio
   id="audio"
