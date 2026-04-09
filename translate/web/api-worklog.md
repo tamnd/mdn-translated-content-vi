@@ -176,3 +176,21 @@ Planned pages:
 2. `Web/API/ANGLE_instanced_arrays/drawArraysInstancedANGLE`
 3. `Web/API/ANGLE_instanced_arrays/drawElementsInstancedANGLE`
 4. `Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE`
+
+## Batch 12
+
+Translate the `AnalyserNode` Web Audio family together so the interface, constructor, methods, and tuning properties stay consistent across one batch.
+
+Planned pages:
+
+1. `Web/API/AnalyserNode`
+2. `Web/API/AnalyserNode/AnalyserNode`
+3. `Web/API/AnalyserNode/fftSize`
+4. `Web/API/AnalyserNode/frequencyBinCount`
+5. `Web/API/AnalyserNode/getByteFrequencyData`
+6. `Web/API/AnalyserNode/getByteTimeDomainData`
+7. `Web/API/AnalyserNode/getFloatFrequencyData`
+8. `Web/API/AnalyserNode/getFloatTimeDomainData`
+9. `Web/API/AnalyserNode/maxDecibels`
+10. `Web/API/AnalyserNode/minDecibels`
+11. `Web/API/AnalyserNode/smoothingTimeConstant`
