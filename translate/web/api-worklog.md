@@ -94,3 +94,16 @@ Planned pages:
 6. `Web/API/DOMStringList/item`
 7. `Web/API/DOMStringList/length`
 8. `Web/API/Screen_Orientation_API`
+
+## Batch 5
+
+Continue with a compact `AbstractRange` DOM batch that adds one interface page, its five read-only properties, and the required local diagrams.
+
+Planned pages:
+
+1. `Web/API/AbstractRange`
+2. `Web/API/AbstractRange/collapsed`
+3. `Web/API/AbstractRange/endContainer`
+4. `Web/API/AbstractRange/endOffset`
+5. `Web/API/AbstractRange/startContainer`
+6. `Web/API/AbstractRange/startOffset`
