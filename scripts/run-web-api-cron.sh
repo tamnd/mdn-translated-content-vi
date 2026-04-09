@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+
 REPO_DIR="/Users/apple/github/tamnd/mdn-translated-content-vi"
 STATE_DIR="$REPO_DIR/.codex-automation/web-api"
 LOCK_DIR="$STATE_DIR/lock"
