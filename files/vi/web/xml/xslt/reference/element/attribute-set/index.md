@@ -5,7 +5,7 @@ page-type: xslt-element
 sidebar: xmlsidebar
 ---
 
-Phần tử `<xsl:attribute-set>` tạo một tập thuộc tính có tên, sau đó có thể áp dụng toàn bộ tập đó cho tài liệu đầu ra, theo cách tương tự như các style có tên trong CSS.
+Phần tử `<xsl:attribute-set>` tạo ra một tập hợp thuộc tính có tên, sau đó có thể được áp dụng nguyên vẹn cho tài liệu đầu ra, theo cách tương tự như các kiểu được đặt tên trong CSS.
 
 ## Cú pháp
 
@@ -23,15 +23,15 @@ Phần tử `<xsl:attribute-set>` tạo một tập thuộc tính có tên, sau 
 ### Thuộc tính tùy chọn
 
 - `use-attribute-sets`
-  - : Xây dựng một tập thuộc tính từ các tập thuộc tính khác. Tên của các tập được đóng góp phải được ngăn cách bằng khoảng trắng và không được trực tiếp hoặc gián tiếp tự lồng vào chính nó.
+  - : Xây dựng một tập thuộc tính từ các tập thuộc tính khác. Tên của các tập đóng góp phải được phân tách bằng ký tự khoảng trắng và không được trực tiếp hoặc gián tiếp chứa chính chúng.
 
-### Loại
+### Kiểu
 
-Top-level, phải là phần tử con của `<xsl:stylesheet>` hoặc `<xsl:transform>`.
+Phần tử cấp cao nhất, phải là phần tử con của `<xsl:stylesheet>` hoặc `<xsl:transform>`.
 
-## Thông số kỹ thuật
+## Đặc tả
 
-XSLT, section 7.1.4.
+XSLT, phần 7.1.4.
 
 ## Hỗ trợ Gecko
 
