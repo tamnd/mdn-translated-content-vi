@@ -147,7 +147,7 @@ Planned pages:
 4. `Web/API/AesGcmParams`
 5. `Web/API/AesKeyGenParams`
 
-## Batch 9
+## Batch 11
 
 Translate the `AmbientLightSensor` interface, constructor, and illuminance property together so the sensor terminology stays consistent across the compact batch.
 
@@ -165,3 +165,14 @@ Planned pages:
 
 1. `Web/API/AbsoluteOrientationSensor`
 2. `Web/API/AbsoluteOrientationSensor/AbsoluteOrientationSensor`
+
+## Batch 9
+
+Translate the `ANGLE_instanced_arrays` WebGL extension and its related methods together so the terminology stays aligned across the extension API.
+
+Planned pages:
+
+1. `Web/API/ANGLE_instanced_arrays`
+2. `Web/API/ANGLE_instanced_arrays/drawArraysInstancedANGLE`
+3. `Web/API/ANGLE_instanced_arrays/drawElementsInstancedANGLE`
+4. `Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE`
