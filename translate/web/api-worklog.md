@@ -135,6 +135,18 @@ Planned pages:
 4. `Web/API/Accelerometer/y`
 5. `Web/API/Accelerometer/z`
 
+## Batch 10
+
+Translate the AES parameter dictionaries as one small Web Crypto batch so the shared terminology stays consistent across encryption parameter pages.
+
+Planned pages:
+
+1. `Web/API/AesCbcParams`
+2. `Web/API/AesCtrParams`
+3. `Web/API/AesDerivedKeyParams`
+4. `Web/API/AesGcmParams`
+5. `Web/API/AesKeyGenParams`
+
 ## Batch 9
 
 Translate the `AmbientLightSensor` interface, constructor, and illuminance property together so the sensor terminology stays consistent across the compact batch.
