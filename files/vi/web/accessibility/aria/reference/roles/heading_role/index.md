@@ -89,8 +89,8 @@ Cách tốt nhất để dùng vai trò này là **không dùng nó**, và thay 
 
 Thay vì dùng vai trò ARIA `heading`, hãy dùng phần tử HTML ngữ nghĩa:
 
-| Phần tử HTML                              | vai trò `heading`                        |
-| ----------------------------------------- | ---------------------------------------- |
+| Phần tử HTML                              | vai trò `heading`                     |
+| ----------------------------------------- | ------------------------------------- |
 | {{HTMLElement("Heading_Elements", "h1")}} | `<div role="heading" aria-level="1">` |
 | {{HTMLElement("Heading_Elements", "h2")}} | `<div role="heading" aria-level="2">` |
 | {{HTMLElement("Heading_Elements", "h3")}} | `<div role="heading" aria-level="3">` |
