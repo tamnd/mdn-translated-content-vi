@@ -53,3 +53,17 @@ Planned pages:
 - Push each commit to the same PR branch.
 - After about 20 translated pages, add a human-written PR comment summarizing completed work.
 - Repeat until the Web API section is complete, then add a final full summary comment.
+
+## Batch 2
+
+Continue with a compact Abort API batch to keep momentum high with small, reviewable DOM pages.
+
+Planned pages:
+
+1. `Web/API/AbortController`
+2. `Web/API/AbortController/abort`
+3. `Web/API/AbortController/AbortController`
+4. `Web/API/AbortController/signal`
+5. `Web/API/AbortSignal`
+6. `Web/API/AbortSignal/aborted`
+7. `Web/API/AbortSignal/reason`
