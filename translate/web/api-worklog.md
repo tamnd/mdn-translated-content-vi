@@ -107,3 +107,24 @@ Planned pages:
 4. `Web/API/AbstractRange/endOffset`
 5. `Web/API/AbstractRange/startContainer`
 6. `Web/API/AbstractRange/startOffset`
+
+## Batch 6
+
+Continue with a compact `Accelerometer` sensor batch that keeps the interface and its coordinate properties together for consistent terminology.
+
+Planned pages:
+
+1. `Web/API/Accelerometer`
+2. `Web/API/Accelerometer/Accelerometer`
+3. `Web/API/Accelerometer/x`
+4. `Web/API/Accelerometer/y`
+5. `Web/API/Accelerometer/z`
+
+## Batch 7
+
+Continue with the `AbsoluteOrientationSensor` pair to cover the interface and constructor together as a compact sensor batch.
+
+Planned pages:
+
+1. `Web/API/AbsoluteOrientationSensor`
+2. `Web/API/AbsoluteOrientationSensor/AbsoluteOrientationSensor`
