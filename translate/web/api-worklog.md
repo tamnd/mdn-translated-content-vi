@@ -79,3 +79,18 @@ Planned pages:
 3. `Web/API/AbortSignal/any_static`
 4. `Web/API/AbortSignal/throwIfAborted`
 5. `Web/API/AbortSignal/timeout_static`
+
+## Batch 4
+
+Use another 8-page small-page batch to reach the 40-page milestone with compact DOM and overview content.
+
+Planned pages:
+
+1. `Web/API`
+2. `Web/API/HTMLDocument`
+3. `Web/API/DOMStringMap`
+4. `Web/API/DOMStringList`
+5. `Web/API/DOMStringList/contains`
+6. `Web/API/DOMStringList/item`
+7. `Web/API/DOMStringList/length`
+8. `Web/API/Screen_Orientation_API`
