@@ -67,3 +67,15 @@ Planned pages:
 5. `Web/API/AbortSignal`
 6. `Web/API/AbortSignal/aborted`
 7. `Web/API/AbortSignal/reason`
+
+## Batch 3
+
+Expand the `AbortSignal` coverage with the interface's linked event and methods.
+
+Planned pages:
+
+1. `Web/API/AbortSignal/abort_event`
+2. `Web/API/AbortSignal/abort_static`
+3. `Web/API/AbortSignal/any_static`
+4. `Web/API/AbortSignal/throwIfAborted`
+5. `Web/API/AbortSignal/timeout_static`
