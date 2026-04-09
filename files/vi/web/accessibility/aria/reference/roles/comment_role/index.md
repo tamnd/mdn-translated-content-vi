@@ -20,8 +20,8 @@ Bình luận liên quan được đánh dấu bằng một cấu trúc HTML bọ
 ```html
 <p>
   Phần sau của bài hát là một đoạn crescendo tăng dần chậm, đạt đỉnh ở
-  <span role="mark" aria-details="thread-1">đoạn cuối của đoạn solo guitar</span>,
-  rồi nhanh chóng lắng xuống.
+  <span role="mark" aria-details="thread-1">đoạn cuối của đoạn solo guitar</span
+  >, rồi nhanh chóng lắng xuống.
 </p>
 
 <div role="comment" id="thread-1" data-author="chris">
@@ -40,8 +40,8 @@ Vì `aria-details` giờ có thể nhận nhiều ID, chúng ta có thể liên 
 ```html
 <p>
   Phần sau của bài hát là một đoạn crescendo tăng dần chậm, đạt đỉnh ở
-  <mark aria-details="thread-1 thread-2">đoạn cuối của đoạn solo guitar</mark>, rồi
-  nhanh chóng lắng xuống.
+  <mark aria-details="thread-1 thread-2">đoạn cuối của đoạn solo guitar</mark>,
+  rồi nhanh chóng lắng xuống.
 </p>
 
 <div role="comment" id="thread-1" data-author="chris">
