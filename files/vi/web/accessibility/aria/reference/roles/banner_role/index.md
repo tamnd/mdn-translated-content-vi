@@ -41,7 +41,9 @@ Không có.
 
 ```html
 <div role="banner">
-  <a href="#main" id="skipToMain" class="skiptocontent">Bỏ qua tới nội dung chính</a>
+  <a href="#main" id="skipToMain" class="skiptocontent"
+    >Bỏ qua tới nội dung chính</a
+  >
   <img src="images/w3c.png" alt="Logo W3C" />
   <h1>WAI-ARIA Landmarks</h1>
   <p>Xác định các phân đoạn của trang để dễ điều hướng</p>
@@ -53,7 +55,9 @@ Chúng ta cũng có thể viết ví dụ trên bằng phần tử HTML `header`
 
 ```html
 <header>
-  <a href="#main" id="skipToMain" class="skiptocontent">Bỏ qua tới nội dung chính</a>
+  <a href="#main" id="skipToMain" class="skiptocontent"
+    >Bỏ qua tới nội dung chính</a
+  >
   <img src="images/w3c.png" alt="Logo W3C" />
   <h1>WAI-ARIA Landmarks</h1>
   <p>Xác định các phân đoạn của trang để dễ điều hướng</p>
