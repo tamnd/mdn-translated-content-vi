@@ -248,8 +248,20 @@ Với {{SVGElement("animate")}}, {{SVGElement("animateMotion")}}, {{SVGElement("
       fill="freeze" />
   </rect>
 
-  <rect x="60" y="15" rx="5" ry="5" width="30" height="20" fill="blue" id="startButton">
-    <set attributeName="fill" to="red" begin="startButton.click" end="startButton.mouseup" />
+  <rect
+    x="60"
+    y="15"
+    rx="5"
+    ry="5"
+    width="30"
+    height="20"
+    fill="blue"
+    id="startButton">
+    <set
+      attributeName="fill"
+      to="red"
+      begin="startButton.click"
+      end="startButton.mouseup" />
   </rect>
   <text x="75" y="30" font-size="10" text-anchor="middle" pointer-events="none">
     Click me.

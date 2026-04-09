@@ -38,8 +38,9 @@ svg {
 <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
   <circle cx="5" cy="5" r="4">
     <desc>
-      Tôi là một hình tròn và mô tả đó ở đây để cho thấy cách tôi có thể được
-      mô tả, nhưng liệu có thật sự cần thiết phải mô tả một hình tròn đơn giản như tôi không?
+      Tôi là một hình tròn và mô tả đó ở đây để cho thấy cách tôi có thể được mô
+      tả, nhưng liệu có thật sự cần thiết phải mô tả một hình tròn đơn giản như
+      tôi không?
     </desc>
   </circle>
 </svg>

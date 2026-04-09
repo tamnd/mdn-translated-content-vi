@@ -218,4 +218,3 @@ Dưới đây là các chuỗi tính năng cho thuộc tính `requiredFeatures`.
   - : Trình duyệt hỗ trợ các thuộc tính sự kiện `onfocusin`, `onfocusout`, `onactivate`, `onclick`, `onmousedown`, `onmouseup`, `onmouseover`, `onmousemove`, `onmouseout` và `onload` [event attributes](/en-US/docs/Web/SVG/Reference/Attribute#event_attributes)
 - `http://www.w3.org/TR/SVG11/feature#AnimationEventsAttribute`
   - : Trình duyệt hỗ trợ các thuộc tính sự kiện `onbegin`, `onend`, `onrepeat` và `onload` [event attributes](/en-US/docs/Web/SVG/Reference/Attribute#event_attributes)
-

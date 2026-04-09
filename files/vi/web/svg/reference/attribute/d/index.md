@@ -289,10 +289,7 @@ svg {
 
 ```html
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <path
-    fill="none"
-    stroke="red"
-    d="M10 10 L90 10 L90 90 L10 90 Z" />
+  <path fill="none" stroke="red" d="M10 10 L90 10 L90 90 L10 90 Z" />
 </svg>
 ```
 

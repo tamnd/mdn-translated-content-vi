@@ -31,9 +31,7 @@ Phần tử này triển khai giao diện {{domxref("SVGFETileElement")}}.
   height="200"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>
-    Lát ô logo MDN với phần đầu linh vật Mozilla có trên logo
-  </title>
+  <title>Lát ô logo MDN với phần đầu linh vật Mozilla có trên logo</title>
   <defs>
     <!-- Xác định vùng của bộ lọc là hộp bao của logo MDN đang được lọc.
          Các tham số này sẽ tạo ra đầu ra phủ cùng một vùng như hình ảnh. -->

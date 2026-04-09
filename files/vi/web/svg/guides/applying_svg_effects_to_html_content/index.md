@@ -258,3 +258,5 @@ pre.target:hover {
       <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
     </filter>
   </defs>
+</svg>
+```

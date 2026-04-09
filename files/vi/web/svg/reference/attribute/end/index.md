@@ -218,3 +218,4 @@ Bạn có thể dùng thuộc tính này với các phần tử SVG sau:
   <line x1="10" y1="30" x2="110" y2="30" stroke="grey" stroke-width=".5" />
   <line x1="10" y1="55" x2="110" y2="55" stroke="grey" stroke-width=".5" />
 </svg>
+```
