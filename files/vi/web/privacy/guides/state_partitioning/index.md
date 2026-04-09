@@ -157,11 +157,11 @@ Firefox có một số tính năng giúp việc kiểm thử dễ dàng hơn.
 Sau đây là tổng quan về các thông điệp được ghi vào web console khi tương tác với lưu trữ trong ngữ cảnh bên thứ ba.
 Trong các ví dụ sau, `a.example` là site cấp cao nhất nhúng frame bên thứ ba `b.example`.
 
-| Lý do | Thông điệp trong console |
-| --- | --- |
-| Lưu trữ của một frame bên thứ ba được phân vùng | Partitioned cookie or storage access was provided to "b.example" because it is loaded in the third-party context and storage partitioning is enabled. |
-| Quyền truy cập vào cookie chưa phân vùng được cấp thông qua [Storage access heuristics](#storage_access_heuristics) | Storage access automatically granted for First-Party isolation "b.example" on "a.example". |
-| Quyền truy cập vào cookie chưa phân vùng được cấp thông qua [StorageAccessAPI](/en-US/docs/Web/API/Document/requestStorageAccess) | Storage access granted for origin "b.example" on "a.example". |
+| Lý do                                                                                                                             | Thông điệp trong console                                                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lưu trữ của một frame bên thứ ba được phân vùng                                                                                   | Partitioned cookie or storage access was provided to "b.example" because it is loaded in the third-party context and storage partitioning is enabled. |
+| Quyền truy cập vào cookie chưa phân vùng được cấp thông qua [Storage access heuristics](#storage_access_heuristics)               | Storage access automatically granted for First-Party isolation "b.example" on "a.example".                                                            |
+| Quyền truy cập vào cookie chưa phân vùng được cấp thông qua [StorageAccessAPI](/en-US/docs/Web/API/Document/requestStorageAccess) | Storage access granted for origin "b.example" on "a.example".                                                                                         |
 
 ### Xóa quyền truy cập lưu trữ bên thứ ba
 
@@ -200,11 +200,11 @@ Có thể tắt phân vùng mạng bằng pref `privacy.partition.network_state`
 
 Để tắt phân vùng lưu trữ động cho tất cả site, bạn có thể dùng tùy chọn `network.cookie.cookieBehavior`:
 
-| Giá trị | Mô tả |
-| --- | --- |
-| 5 | Phân vùng lưu trữ bên thứ ba. |
-| 4 | Từ chối tracker (Phân vùng lưu trữ bị tắt). |
-| 0 | Cho phép tất cả lưu trữ (Phân vùng lưu trữ bị tắt). |
+| Giá trị | Mô tả                                               |
+| ------- | --------------------------------------------------- |
+| 5       | Phân vùng lưu trữ bên thứ ba.                       |
+| 4       | Từ chối tracker (Phân vùng lưu trữ bị tắt).         |
+| 0       | Cho phép tất cả lưu trữ (Phân vùng lưu trữ bị tắt). |
 
 Các giá trị khác của tùy chọn này có thể vô hiệu hóa hoàn toàn lưu trữ bên thứ ba.
 
