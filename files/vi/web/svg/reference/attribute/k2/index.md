@@ -1,0 +1,96 @@
+---
+title: k2
+slug: Web/SVG/Reference/Attribute/k2
+page-type: svg-attribute
+browser-compat: svg.elements.feComposite.k2
+sidebar: svgref
+---
+
+Thuộc tính **`k2`** xác định một trong các giá trị được dùng trong thao tác `arithmetic` của filter primitive {{SVGElement("feComposite")}}.
+
+Việc tổng hợp pixel được tính bằng công thức sau:
+
+```js
+result = k1 * i1 * i2 + k2 * i1 + k3 * i2 + k4;
+```
+
+Bạn có thể dùng thuộc tính này với phần tử SVG sau:
+
+- {{SVGElement("feComposite")}}
+
+## Ví dụ
+
+```css hidden
+html,
+body,
+svg {
+  height: 100%;
+}
+```
+
+```html
+<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg">
+  <filter id="composite1" x="0" y="0" width="100%" height="100%">
+    <feComposite
+      in2="SourceGraphic"
+      operator="arithmetic"
+      k1="1"
+      k2="1"
+      k3="0"
+      k4="0" />
+  </filter>
+  <filter id="composite2" x="0" y="0" width="100%" height="100%">
+    <feComposite
+      in2="SourceGraphic"
+      operator="arithmetic"
+      k1="1"
+      k2="10"
+      k3="0"
+      k4="0" />
+  </filter>
+
+  <image
+    href="mdn.svg"
+    x="0"
+    y="0"
+    width="200"
+    height="200"
+    filter="url(#composite1)" />
+  <image
+    href="mdn.svg"
+    x="220"
+    y="0"
+    width="200"
+    height="200"
+    filter="url(#composite2)" />
+</svg>
+```
+
+{{EmbedLiveSample("Example", "420", "200")}}
+
+## Ghi chú sử dụng
+
+<table class="properties">
+  <tbody>
+    <tr>
+      <th scope="row">Giá trị</th>
+      <td>{{cssxref("number")}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Giá trị mặc định</th>
+      <td><code>0</code></td>
+    </tr>
+    <tr>
+      <th scope="row">Có thể hoạt ảnh</th>
+      <td>Có</td>
+    </tr>
+  </tbody>
+</table>
+
+## Thông số kỹ thuật
+
+{{Specifications}}
+
+## Khả năng tương thích trình duyệt
+
+{{Compat}}
