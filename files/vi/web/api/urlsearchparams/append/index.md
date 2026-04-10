@@ -8,7 +8,9 @@ browser-compat: api.URLSearchParams.append
 
 {{ApiRef("URL API")}} {{AvailableInWorkers}}
 
-Phương thức **`append()`** của giao diện {{domxref("URLSearchParams")}} thêm một cặp tên/giá trị được chỉ định như một tham số truy vấn mới.
+Phương thức **`append()`** của giao diện {{domxref("URLSearchParams")}} thêm một cặp khóa/giá trị được chỉ định như một tham số truy vấn mới.
+
+Như ví dụ bên dưới, nếu cùng một khóa được thêm nhiều lần, nó sẽ xuất hiện nhiều lần trong chuỗi tham số cho mỗi giá trị.
 
 ## Cú pháp
 
@@ -19,9 +21,9 @@ append(name, value)
 ### Tham số
 
 - `name`
-  - : Tên của tham số truy vấn.
+  - : Tên của tham số cần thêm.
 - `value`
-  - : Giá trị của tham số truy vấn.
+  - : Giá trị của tham số cần thêm.
 
 ### Giá trị trả về
 
@@ -29,11 +31,15 @@ Không có ({{jsxref("undefined")}}).
 
 ## Ví dụ
 
+### Thêm cùng một tham số nhiều lần
+
 ```js
-const url = new URL("https://example.com?foo=1");
-const params = url.searchParams;
-params.append("bar", 2);
-console.log(url.href); // "https://example.com/?foo=1&bar=2"
+const url = new URL("https://example.com?foo=1&bar=2");
+const params = new URLSearchParams(url.search);
+
+// Thêm một tham số foo thứ hai.
+params.append("foo", 4);
+// Chuỗi truy vấn bây giờ là: 'foo=1&bar=2&foo=4'
 ```
 
 ## Thông số kỹ thuật
@@ -46,4 +52,5 @@ console.log(url.href); // "https://example.com/?foo=1&bar=2"
 
 ## Xem thêm
 
-- {{domxref("URLSearchParams.set()")}}
+- {{domxref("URL")}}
+- [Google Developers: Thao tác URL dễ dàng với URLSearchParams](https://developer.chrome.com/blog/urlsearchparams/)

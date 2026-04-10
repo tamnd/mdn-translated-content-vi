@@ -6,23 +6,30 @@ page-type: web-api-instance-method
 browser-compat: api.URLSearchParams.forEach
 ---
 
-{{ApiRef("URL API")}} {{AvailableInWorkers}}
+{{APIRef("URL API")}} {{AvailableInWorkers}}
 
 Phương thức **`forEach()`** của giao diện {{domxref("URLSearchParams")}} cho phép lặp qua tất cả các giá trị có trong đối tượng này thông qua một hàm callback.
 
 ## Cú pháp
 
 ```js-nolint
-forEach(callbackFn)
-forEach(callbackFn, thisArg)
+forEach(callback)
+forEach(callback, thisArg)
 ```
 
 ### Tham số
 
-- `callbackFn`
-  - : Hàm được gọi cho mỗi cặp khóa/giá trị.
+- `callback`
+  - : Hàm được thực thi trên mỗi phần tử, được truyền các đối số sau:
+    - `value`
+      - : Giá trị của mục hiện đang được xử lý trong đối tượng `URLSearchParams`.
+    - `key`
+      - : Khóa của mục hiện đang được xử lý trong đối tượng `URLSearchParams`.
+    - `searchParams`
+      - : Đối tượng `URLSearchParams` mà `forEach()` được gọi.
+
 - `thisArg` {{optional_inline}}
-  - : Giá trị để dùng làm `this` khi thực thi `callbackFn`.
+  - : Giá trị dùng làm `this` khi thực thi `callback`.
 
 ### Giá trị trả về
 
@@ -31,10 +38,20 @@ Không có ({{jsxref("undefined")}}).
 ## Ví dụ
 
 ```js
-const params = new URLSearchParams("foo=1&bar=2");
-params.forEach((value, key) => {
-  console.log(key, value);
+// Tạo đối tượng URLSearchParams kiểm thử
+const searchParams = new URLSearchParams("key1=value1&key2=value2");
+
+// Log các giá trị
+searchParams.forEach((value, key) => {
+  console.log(value, key);
 });
+```
+
+Kết quả là:
+
+```plain
+value1 key1
+value2 key2
 ```
 
 ## Thông số kỹ thuật
@@ -44,3 +61,7 @@ params.forEach((value, key) => {
 ## Tương thích trình duyệt
 
 {{Compat}}
+
+## Xem thêm
+
+- Giao diện {{domxref("URL")}}.

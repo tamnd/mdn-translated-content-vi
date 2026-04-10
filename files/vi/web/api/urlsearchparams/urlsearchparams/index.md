@@ -22,7 +22,7 @@ new URLSearchParams(options)
 - `options` {{optional_inline}}
   - : Một trong các dạng sau:
     - Một chuỗi, sẽ được phân tích từ định dạng `application/x-www-form-urlencoded`. Ký tự `'?'` đứng đầu sẽ bị bỏ qua. Đây là dạng duy nhất giải mã [mã hóa phần trăm](/en-US/docs/Glossary/Percent-encoding), và giải mã `+` thành U+0020 SPACE.
-    - Một chuỗi literal gồm các cặp tên-giá trị, hoặc bất kỳ đối tượng nào - chẳng hạn như đối tượng {{domxref("FormData")}} - có một [iterator](/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators#iterators) tạo ra một chuỗi các cặp chuỗi. Lưu ý rằng các mục {{domxref("File")}} sẽ được tuần tự hóa thành `[object File]` thay vì tên tệp của chúng (như trong một biểu mẫu `application/x-www-form-urlencoded`).
+    - Một chuỗi literal gồm các cặp tên-giá trị, hoặc bất kỳ đối tượng nào — chẳng hạn như đối tượng {{domxref("FormData")}} — có một [iterator](/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators#iterators) tạo ra một chuỗi các cặp chuỗi. Lưu ý rằng các mục {{domxref("File")}} sẽ được tuần tự hóa thành `[object File]` thay vì tên tệp của chúng (như trong một biểu mẫu `application/x-www-form-urlencoded`).
     - Một record gồm các khóa chuỗi và giá trị chuỗi. Lưu ý rằng lồng nhau không được hỗ trợ.
 
 ### Giá trị trả về
@@ -45,7 +45,7 @@ const params1a = url.searchParams;
 const params2 = new URLSearchParams("foo=1&bar=2");
 const params2a = new URLSearchParams("?foo=1&bar=2");
 
-// Truyền vào một chuỗi cặp
+// Truyền vào một chuỗi các cặp
 const params3 = new URLSearchParams([
   ["foo", "1"],
   ["bar", "2"],

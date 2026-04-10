@@ -6,9 +6,9 @@ page-type: web-api-instance-method
 browser-compat: api.URLSearchParams.entries
 ---
 
-{{ApiRef("URL API")}} {{AvailableInWorkers}}
+{{APIRef("URL API")}} {{AvailableInWorkers}}
 
-Phương thức **`entries()`** của giao diện {{domxref("URLSearchParams")}} trả về một {{jsxref("Iteration_protocols","iterator")}} cho phép lặp qua tất cả các cặp khóa/giá trị có trong đối tượng này theo đúng thứ tự chúng xuất hiện trong chuỗi truy vấn.
+Phương thức **`entries()`** của giao diện {{domxref("URLSearchParams")}} trả về một {{jsxref("Iteration_protocols",'iterator')}} cho phép lặp qua tất cả các cặp khóa/giá trị có trong đối tượng này. Iterator trả về các cặp khóa/giá trị theo đúng thứ tự chúng xuất hiện trong chuỗi truy vấn. Khóa và giá trị của mỗi cặp đều là chuỗi.
 
 ## Cú pháp
 
@@ -16,17 +16,31 @@ Phương thức **`entries()`** của giao diện {{domxref("URLSearchParams")}}
 entries()
 ```
 
+### Tham số
+
+Không có.
+
 ### Giá trị trả về
 
-Một {{jsxref("Iteration_protocols", "iterator")}}.
+Trả về một {{jsxref("Iteration_protocols","iterator")}}.
 
 ## Ví dụ
 
 ```js
-const params = new URLSearchParams("foo=1&bar=2");
-for (const pair of params.entries()) {
-  console.log(pair);
+// Tạo đối tượng URLSearchParams kiểm thử
+const searchParams = new URLSearchParams("key1=value1&key2=value2");
+
+// Hiển thị các cặp khóa/giá trị
+for (const [key, value] of searchParams.entries()) {
+  console.log(`${key}, ${value}`);
 }
+```
+
+Kết quả là:
+
+```plain
+key1, value1
+key2, value2
 ```
 
 ## Thông số kỹ thuật
@@ -36,3 +50,7 @@ for (const pair of params.entries()) {
 ## Tương thích trình duyệt
 
 {{Compat}}
+
+## Xem thêm
+
+- Giao diện {{domxref("URL")}}.

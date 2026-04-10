@@ -6,9 +6,9 @@ page-type: web-api-instance-method
 browser-compat: api.URLSearchParams.values
 ---
 
-{{ApiRef("URL API")}} {{AvailableInWorkers}}
+{{APIRef("URL API")}} {{AvailableInWorkers}}
 
-Phương thức **`values()`** của giao diện {{domxref("URLSearchParams")}} trả về một {{jsxref("Iteration_protocols", "iterator")}} cho phép lặp qua tất cả các giá trị của các cặp khóa/giá trị có trong đối tượng này.
+Phương thức **`values()`** của giao diện {{domxref("URLSearchParams")}} trả về một {{jsxref("Iteration_protocols",'iterator')}} cho phép lặp qua tất cả các giá trị có trong đối tượng này. Các giá trị là chuỗi.
 
 ## Cú pháp
 
@@ -16,17 +16,45 @@ Phương thức **`values()`** của giao diện {{domxref("URLSearchParams")}} 
 values()
 ```
 
+### Tham số
+
+Không có.
+
 ### Giá trị trả về
 
-Một {{jsxref("Iteration_protocols", "iterator")}}.
+Trả về một {{jsxref("Iteration_protocols","iterator")}}.
 
 ## Ví dụ
 
+Ví dụ sau truyền một chuỗi truy vấn URL vào constructor `URLSearchParams`, sau đó dùng iterator do `values()` trả về để in các giá trị ra console.
+
 ```js
-const params = new URLSearchParams("foo=1&bar=2");
-for (const value of params.values()) {
+const searchParams = new URLSearchParams("key1=value1&key2=value2");
+
+for (const value of searchParams.values()) {
   console.log(value);
 }
+```
+
+Kết quả là:
+
+```plain
+value1
+value2
+```
+
+Ví dụ này làm gần như tương tự như trên, nhưng trước tiên ép iterator thành một mảng.
+
+```js
+const searchParams = new URLSearchParams("key1=value1&key2=value2");
+
+console.log(Array.from(searchParams.values()));
+```
+
+Kết quả là:
+
+```plain
+['value1', 'value2']
 ```
 
 ## Thông số kỹ thuật
@@ -36,3 +64,7 @@ for (const value of params.values()) {
 ## Tương thích trình duyệt
 
 {{Compat}}
+
+## Xem thêm
+
+- Giao diện {{domxref("URL")}}.

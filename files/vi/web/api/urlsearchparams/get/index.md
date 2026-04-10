@@ -19,17 +19,26 @@ get(name)
 ### Tham số
 
 - `name`
-  - : Tên của tham số truy vấn.
+  - : Tên của tham số cần trả về.
 
 ### Giá trị trả về
 
-Một chuỗi hoặc `null`.
+Một chuỗi nếu tham số truy vấn đã cho tồn tại; ngược lại, **`null`**.
 
 ## Ví dụ
 
+Nếu URL trang của bạn là `https://example.com/?name=Jonathan&age=18`, bạn có thể phân tích các tham số 'name' và 'age' bằng cách dùng:
+
 ```js
-const params = new URLSearchParams("foo=1&bar=2&foo=3");
-console.log(params.get("foo")); // "1"
+let params = new URLSearchParams(document.location.search);
+let name = params.get("name"); // là chuỗi "Jonathan"
+let age = parseInt(params.get("age"), 10); // là số 18
+```
+
+Yêu cầu một tham số không có trong chuỗi truy vấn sẽ trả về **`null`**:
+
+```js
+let address = params.get("address"); // null
 ```
 
 ## Thông số kỹ thuật

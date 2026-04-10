@@ -6,15 +6,19 @@ page-type: web-api-instance-method
 browser-compat: api.URLSearchParams.sort
 ---
 
-{{ApiRef("URL API")}} {{AvailableInWorkers}}
+{{APIRef("URL API")}} {{AvailableInWorkers}}
 
-Phương thức **`sort()`** của giao diện {{domxref("URLSearchParams")}} sắp xếp tất cả các cặp khóa/giá trị, nếu có, theo khóa của chúng.
+Phương thức **`URLSearchParams.sort()`** sắp xếp tất cả các cặp khóa/giá trị có trong đối tượng này tại chỗ và trả về `undefined`. Các cặp khóa/giá trị được sắp xếp theo giá trị của {{glossary("UTF-16", "mã UTF-16")}} của các khóa. Phương thức này sử dụng thuật toán sắp xếp ổn định (tức là thứ tự tương đối giữa các cặp khóa/giá trị có cùng khóa sẽ được giữ nguyên).
 
 ## Cú pháp
 
 ```js-nolint
 sort()
 ```
+
+### Tham số
+
+Không có.
 
 ### Giá trị trả về
 
@@ -23,9 +27,20 @@ Không có ({{jsxref("undefined")}}).
 ## Ví dụ
 
 ```js
-const params = new URLSearchParams("b=2&a=1");
-params.sort();
-console.log(params.toString()); // "a=1&b=2"
+// Tạo đối tượng URLSearchParams kiểm thử
+const searchParams = new URLSearchParams("c=4&a=2&b=3&a=1");
+
+// Sắp xếp các cặp khóa/giá trị
+searchParams.sort();
+
+// Hiển thị chuỗi truy vấn đã sắp xếp
+console.log(searchParams.toString());
+```
+
+Kết quả là:
+
+```plain
+a=2&a=1&b=3&c=4
 ```
 
 ## Thông số kỹ thuật

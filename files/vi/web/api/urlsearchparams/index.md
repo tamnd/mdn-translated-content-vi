@@ -238,3 +238,7 @@ console.log(noEquals.toString()); // 'foo=&bar=baz'
 {{Compat}}
 
 ## Xem thêm
+
+- [Polyfill của `URLSearchParams` trong `core-js`](https://github.com/zloirock/core-js#url-and-urlsearchparams)
+- Giao diện {{domxref("URL")}}.
+- [Google Developers: Thao tác URL dễ dàng với URLSearchParams](https://developer.chrome.com/blog/urlsearchparams/)
