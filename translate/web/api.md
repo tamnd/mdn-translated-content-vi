@@ -17,7 +17,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/htmlelement (57 trang)
 - [x] api/nodelist (7 trang)
 - [x] api/htmlcollection (4 trang)
-- [ ] api/shadowroot (21 trang)
+- [x] api/shadowroot (21 trang)
 - [x] api/documenttype (8 trang)
 - [x] api/domtokenlist (15 trang)
 - [x] api/range (28 trang)
@@ -248,7 +248,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [ ] api/web_components (4 trang)
 - [ ] api/customelementregistry (8 trang)
-- [ ] api/shadowroot (21 trang) — xem DOM cốt lõi
+- [x] api/shadowroot (21 trang) — xem DOM cốt lõi
 - [ ] api/htmlslotelement (6 trang)
 - [ ] api/htmltemplateelement (7 trang)
 - [ ] api/elementinternals (64 trang)
