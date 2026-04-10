@@ -20,18 +20,19 @@ new CompositionEvent(type, options)
 ### Tham số
 
 - `type`
-  - : Một chuỗi chứa tên của sự kiện.
-    Chuỗi này phân biệt chữ hoa chữ thường và trình duyệt sẽ đặt nó thành `compositionstart`, `compositionupdate`, hoặc `compositionend`.
+  - : Một chuỗi với tên của sự kiện.
+    Phân biệt chữ hoa chữ thường và trình duyệt đặt thành `compositionstart`, `compositionupdate`, hoặc `compositionend`.
 - `options` {{optional_inline}}
-  - : Một đối tượng, ngoài các thuộc tính được định nghĩa trong {{domxref("UIEvent/UIEvent", "UIEvent()")}}, còn có các thuộc tính sau:
+  - : Một đối tượng mà, _ngoài các thuộc tính được định nghĩa trong {{domxref("UIEvent/UIEvent", "UIEvent()")}}_, có các thuộc tính sau:
     - `data` {{optional_inline}}
-      - : Một chuỗi dùng để khởi tạo thuộc tính {{domxref("CompositionEvent.data", "data")}} của {{domxref("CompositionEvent")}} mới. Với các sự kiện do trình duyệt tạo ra, giá trị này được đặt thành các ký tự do composition của IME tạo ra.
+      - : Một chuỗi dùng để khởi tạo thuộc tính {{domxref("CompositionEvent.data", "data")}} của đối tượng {{domxref("CompositionEvent")}} mới.
+        Các sự kiện do trình duyệt tạo đặt thuộc tính này thành các ký tự được tạo bởi quá trình soạn thảo IME.
 
 ### Giá trị trả về
 
 Một đối tượng {{domxref("CompositionEvent")}} mới.
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 
@@ -41,4 +42,4 @@ Một đối tượng {{domxref("CompositionEvent")}} mới.
 
 ## Xem thêm
 
-- {{domxref("CompositionEvent")}}, giao diện của các đối tượng mà hàm tạo này tạo ra.
+- {{domxref("CompositionEvent")}}, giao diện của các đối tượng mà nó tạo ra.

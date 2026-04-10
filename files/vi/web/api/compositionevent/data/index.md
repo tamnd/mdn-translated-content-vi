@@ -8,17 +8,17 @@ browser-compat: api.CompositionEvent.data
 
 {{APIRef("UI Events")}}
 
-Thuộc tính chỉ đọc **`data`** của giao diện {{domxref("CompositionEvent")}} trả về các ký tự do phương thức nhập đã tạo ra để phát sinh sự kiện; bản chất chính xác của giá trị này thay đổi tùy theo loại sự kiện đã tạo ra đối tượng `CompositionEvent`.
+Thuộc tính chỉ đọc **`data`** của giao diện {{domxref("CompositionEvent")}} trả về các ký tự được tạo bởi phương thức nhập đã kích hoạt sự kiện; bản chất chính xác của nó phụ thuộc vào loại sự kiện đã tạo ra đối tượng `CompositionEvent`.
 
 ## Giá trị
 
-Một chuỗi biểu diễn dữ liệu của sự kiện:
+Một chuỗi biểu diễn dữ liệu sự kiện:
 
-- Với sự kiện `compositionstart`, đây là văn bản hiện đang được chọn và sẽ bị thay thế bởi chuỗi đang được soạn. Giá trị này không thay đổi ngay cả khi nội dung làm thay đổi phạm vi chọn; thay vào đó, nó biểu thị chuỗi đã được chọn tại thời điểm composition bắt đầu.
-- Với `compositionupdate`, đây là chuỗi ở trạng thái hiện tại trong khi quá trình chỉnh sửa vẫn đang diễn ra.
-- Với sự kiện `compositionend`, đây là chuỗi đã được xác nhận vào trình soạn thảo.
+- Đối với sự kiện `compositionstart`, đây là văn bản hiện được chọn sẽ được thay thế bằng chuỗi đang được soạn thảo. Giá trị này không thay đổi ngay cả khi nội dung thay đổi phạm vi đã chọn; thay vào đó, nó cho biết chuỗi đã được chọn khi bắt đầu soạn thảo.
+- Đối với `compositionupdate`, đây là chuỗi hiện tại khi đang chỉnh sửa.
+- Đối với sự kiện `compositionend`, đây là chuỗi đã được xác nhận vào trình soạn thảo.
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

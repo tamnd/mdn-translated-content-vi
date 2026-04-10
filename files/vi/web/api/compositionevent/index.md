@@ -7,32 +7,32 @@ browser-compat: api.CompositionEvent
 
 {{APIRef("UI Events")}}
 
-DOM **`CompositionEvent`** biểu diễn các sự kiện xảy ra khi người dùng nhập văn bản theo cách gián tiếp.
+Giao diện DOM **`CompositionEvent`** biểu diễn các sự kiện xảy ra do người dùng nhập văn bản một cách gián tiếp.
 
 {{InheritanceDiagram}}
 
-## Hàm tạo
+## Constructor
 
 - {{domxref("CompositionEvent.CompositionEvent()", "CompositionEvent()")}}
-  - : Tạo một phiên bản đối tượng `CompositionEvent` mới.
+  - : Tạo một instance đối tượng `CompositionEvent` mới.
 
-## Thuộc tính thể hiện
+## Thuộc tính instance
 
-_Giao diện này cũng kế thừa các thuộc tính của phần tử cha là {{domxref("UIEvent")}} và phần tử tổ tiên là {{domxref("Event")}}._
+_Giao diện này cũng kế thừa các thuộc tính của cha nó, {{domxref("UIEvent")}}, và tổ tiên của nó — {{domxref("Event")}}._
 
 - {{domxref("CompositionEvent.data")}} {{ReadOnlyInline}}
-  - : Trả về các ký tự do phương thức nhập đã tạo ra để phát sinh sự kiện; giá trị này thay đổi tùy theo loại sự kiện đã tạo ra đối tượng `CompositionEvent`.
+  - : Trả về các ký tự được tạo bởi phương thức nhập đã kích hoạt sự kiện; giá trị cụ thể phụ thuộc vào loại sự kiện đã tạo ra đối tượng `CompositionEvent`.
 - {{domxref("CompositionEvent.locale")}} {{ReadOnlyInline}} {{deprecated_inline}} {{Non-standard_Inline}}
-  - : Trả về locale của phương thức nhập hiện tại (ví dụ: locale bố cục bàn phím nếu composition gắn với một {{glossary("Input method editor")}}).
+  - : Trả về ngôn ngữ của phương thức nhập hiện tại (ví dụ, ngôn ngữ bố cục bàn phím nếu quá trình soạn thảo liên quan đến một {{glossary("Input method editor")}}).
 
-## Phương thức thể hiện
+## Phương thức instance
 
-_Giao diện này cũng kế thừa các phương thức của phần tử cha là {{domxref("UIEvent")}} và phần tử tổ tiên là {{domxref("Event")}}._
+_Giao diện này cũng kế thừa các phương thức của cha nó, {{domxref("UIEvent")}}, và tổ tiên của nó — {{domxref("Event")}}._
 
 - {{domxref("CompositionEvent.initCompositionEvent()")}} {{deprecated_inline}}
   - : Khởi tạo các thuộc tính của một đối tượng `CompositionEvent`.
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 
