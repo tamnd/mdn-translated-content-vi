@@ -143,6 +143,13 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/clipboard (6 trang)
 - [x] api/clipboard_api (1 trang)
 
+## Truy cập thiết bị
+
+- [x] api/usb (5 trang)
+- [x] api/serial (3 trang)
+- [x] api/hid (5 trang)
+- [x] api/webhid_api (1 trang)
+
 ## API điều hướng và lịch sử
 
 - [x] api/navigation_api (1 trang)
