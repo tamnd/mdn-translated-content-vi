@@ -157,7 +157,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/notification (26 trang)
 - [x] api/push_api (2 trang)
 - [x] api/pushmanager (9 trang)
-- [ ] api/pushsubscription (8 trang)
+- [x] api/pushsubscription (8 trang)
 - [x] api/pushmessagedata (6 trang)
 
 ## Intersection / Resize / Mutation Observer
