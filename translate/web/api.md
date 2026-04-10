@@ -55,7 +55,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/storagemanager (5 trang)
 - [ ] api/indexeddb_api (4 trang)
 - [ ] api/idbdatabase (10 trang)
-- [ ] api/idbfactory (5 trang)
+- [x] api/idbfactory (5 trang)
 - [ ] api/idbobjectstore (21 trang)
 - [ ] api/idbtransaction (12 trang)
 - [ ] api/idbindex (16 trang)
