@@ -248,3 +248,12 @@ Planned pages:
 8. `Web/API/Animation/finish`
 9. `Web/API/Animation/finish_event`
 10. `Web/API/Animation/finished`
+
+## Batch 24
+
+Translate the `AudioDestinationNode` family together so the Web Audio destination interface and its channel-count property stay aligned in one compact batch.
+
+Planned pages:
+
+1. `Web/API/AudioDestinationNode`
+2. `Web/API/AudioDestinationNode/maxChannelCount`
