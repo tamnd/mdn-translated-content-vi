@@ -8,11 +8,11 @@ browser-compat: api.ServiceWorkerContainer.controllerchange_event
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Sự kiện **`controllerchange`** của giao diện {{domxref("ServiceWorkerContainer")}} được kích hoạt khi {{domxref("ServiceWorkerRegistration")}} được liên kết với tài liệu có một worker {{domxref("ServiceWorkerRegistration.active","đang hoạt động")}} mới.
+Sự kiện **`controllerchange`** của giao diện {{domxref("ServiceWorkerContainer")}} được kích hoạt khi {{domxref("ServiceWorkerRegistration")}} liên kết với tài liệu có được một worker {{domxref("ServiceWorkerRegistration.active","active")}} mới.
 
 ## Cú pháp
 
-Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập một thuộc tính trình xử lý sự kiện.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc đặt một thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("controllerchange", (event) => { })
@@ -22,7 +22,7 @@ oncontrollerchange = (event) => { }
 
 ## Loại sự kiện
 
-Một {{domxref("Event")}} tổng quát.
+Một {{domxref("Event")}} chung.
 
 ## Ví dụ
 

@@ -8,12 +8,7 @@ browser-compat: api.ServiceWorkerContainer.getRegistrations
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Phương thức **`getRegistrations()`** của
-giao diện {{domxref("ServiceWorkerContainer")}} lấy tất cả
-các {{domxref("ServiceWorkerRegistration")}} được liên kết với một
-`ServiceWorkerContainer`, trong một mảng. Phương thức trả về một
-{{jsxref("Promise")}} giải quyết thành một mảng các
-{{domxref("ServiceWorkerRegistration")}}.
+Phương thức **`getRegistrations()`** của giao diện {{domxref("ServiceWorkerContainer")}} lấy tất cả các {{domxref("ServiceWorkerRegistration")}} liên kết với một `ServiceWorkerContainer`, trong một mảng. Phương thức trả về một {{jsxref("Promise")}} resolve thành một mảng các {{domxref("ServiceWorkerRegistration")}}.
 
 ## Cú pháp
 
@@ -27,8 +22,7 @@ Không có.
 
 ### Giá trị trả về
 
-Một {{jsxref("Promise")}} giải quyết thành một mảng các
-đối tượng {{domxref("ServiceWorkerRegistration")}}.
+Một {{jsxref("Promise")}} resolve thành một mảng các đối tượng {{domxref("ServiceWorkerRegistration")}}.
 
 ## Ví dụ
 

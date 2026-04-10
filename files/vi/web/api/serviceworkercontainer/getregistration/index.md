@@ -8,11 +8,7 @@ browser-compat: api.ServiceWorkerContainer.getRegistration
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Phương thức **`getRegistration()`** của
-giao diện {{domxref("ServiceWorkerContainer")}} lấy một
-đối tượng {{domxref("ServiceWorkerRegistration")}} có URL phạm vi khớp với URL
-client được cung cấp. Phương thức trả về một {{jsxref("Promise")}} giải quyết thành
-một {{domxref("ServiceWorkerRegistration")}} hoặc `undefined`.
+Phương thức **`getRegistration()`** của giao diện {{domxref("ServiceWorkerContainer")}} lấy một đối tượng {{domxref("ServiceWorkerRegistration")}} có scope URL phù hợp với URL client được cung cấp. Phương thức trả về một {{jsxref("Promise")}} resolve thành một {{domxref("ServiceWorkerRegistration")}} hoặc `undefined`.
 
 ## Cú pháp
 
@@ -24,12 +20,11 @@ getRegistration(clientURL)
 ### Tham số
 
 - `clientURL` {{optional_inline}}
-  - : Đăng ký có phạm vi khớp với URL này sẽ được trả về. Các URL tương đối được giải quyết với client hiện tại làm cơ sở. Nếu tham số này không được cung cấp, URL của client hiện tại sẽ được sử dụng theo mặc định.
+  - : Registration có scope phù hợp với URL này sẽ được trả về. Các URL tương đối được phân giải với client hiện tại làm cơ sở. Nếu không cung cấp tham số này, URL của client hiện tại sẽ được sử dụng theo mặc định.
 
 ### Giá trị trả về
 
-Một {{jsxref("Promise")}} giải quyết thành một đối tượng {{domxref("ServiceWorkerRegistration")}}
-hoặc `undefined`.
+Một {{jsxref("Promise")}} resolve thành một đối tượng {{domxref("ServiceWorkerRegistration")}} hoặc `undefined`.
 
 ## Ví dụ
 
