@@ -280,7 +280,7 @@ Reviewed pages:
 
 Rechecked the `AudioDecoder` family against the English source after the previous verification. The Vietnamese pages remain aligned, and no page-level edits were necessary.
 
-## Batch 31
+## Batch 32
 
 Checked the `AudioParam` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
 
