@@ -38,8 +38,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/response (21 trang)
 - [x] api/headers (12 trang)
 - [x] api/xmlhttprequest (23 trang)
-- [ ] api/xmlhttprequest_api (6 trang)
-- [ ] api/xmlhttprequesteventtarget (8 trang)
+- [x] api/xmlhttprequest_api (6 trang)
+- [x] api/xmlhttprequesteventtarget (8 trang)
 - [x] api/websocket (14 trang)
 - [x] api/websockets_api (7 trang)
 - [x] api/websocketstream (6 trang)
@@ -130,22 +130,22 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Sự kiện và nhập liệu
 
-- [ ] api/keyboardevent (16 trang)
+- [x] api/keyboardevent (16 trang)
 - [ ] api/mouseevent (29 trang)
 - [ ] api/pointerevent (17 trang)
-- [ ] api/touchevent (9 trang)
-- [ ] api/inputevent (7 trang)
-- [ ] api/compositionevent (5 trang)
-- [ ] api/wheelevent (6 trang)
+- [x] api/touchevent (9 trang)
+- [x] api/inputevent (7 trang)
+- [x] api/compositionevent (5 trang)
+- [x] api/wheelevent (6 trang)
 - [ ] api/focusevent (3 trang)
 - [ ] api/dragevent (3 trang)
-- [ ] api/clipboardevent (3 trang)
-- [ ] api/clipboard (6 trang)
-- [ ] api/clipboard_api (1 trang)
+- [x] api/clipboardevent (3 trang)
+- [x] api/clipboard (6 trang)
+- [x] api/clipboard_api (1 trang)
 
 ## API điều hướng và lịch sử
 
-- [ ] api/navigation_api (1 trang)
+- [x] api/navigation_api (1 trang)
 - [ ] api/navigation (17 trang)
 - [ ] api/navigateevent (15 trang)
 - [ ] api/navigationhistoryentry (8 trang)
