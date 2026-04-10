@@ -275,7 +275,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/encoding_api (2 trang)
 - [x] api/textencoder (5 trang)
 - [x] api/textdecoder (6 trang)
-- [ ] api/formdata (11 trang)
+- [x] api/formdata (11 trang)
 - [ ] api/url_api (2 trang)
 - [ ] api/urlpattern (13 trang)
 - [ ] api/credential_management_api (2 trang)
