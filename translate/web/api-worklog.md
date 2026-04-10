@@ -279,3 +279,22 @@ Reviewed pages:
 ## Batch 26
 
 Rechecked the `AudioDecoder` family against the English source after the previous verification. The Vietnamese pages remain aligned, and no page-level edits were necessary.
+
+## Batch 27
+
+Checked the `AudioListener` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
+
+Reviewed pages:
+
+1. `Web/API/AudioListener`
+2. `Web/API/AudioListener/setOrientation`
+3. `Web/API/AudioListener/setPosition`
+4. `Web/API/AudioListener/forwardX`
+5. `Web/API/AudioListener/forwardY`
+6. `Web/API/AudioListener/forwardZ`
+7. `Web/API/AudioListener/positionX`
+8. `Web/API/AudioListener/positionY`
+9. `Web/API/AudioListener/positionZ`
+10. `Web/API/AudioListener/upX`
+11. `Web/API/AudioListener/upY`
+12. `Web/API/AudioListener/upZ`
