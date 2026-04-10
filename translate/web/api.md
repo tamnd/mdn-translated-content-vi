@@ -43,7 +43,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/websocket (14 trang)
 - [x] api/websockets_api (7 trang)
 - [x] api/websocketstream (6 trang)
-- [ ] api/webtransport (13 trang)
+- [x] api/webtransport (13 trang)
 - [x] api/eventsource (9 trang)
 - [x] api/broadcastchannel (7 trang)
 
