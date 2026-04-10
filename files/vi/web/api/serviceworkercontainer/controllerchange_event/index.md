@@ -8,7 +8,7 @@ browser-compat: api.ServiceWorkerContainer.controllerchange_event
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Sự kiện **`controllerchange`** của giao diện {{domxref("ServiceWorkerContainer")}} được kích hoạt khi {{domxref("ServiceWorkerRegistration")}} được liên kết với tài liệu có được một worker {{domxref("ServiceWorkerRegistration.active","đang hoạt động")}} mới.
+Sự kiện **`controllerchange`** của giao diện {{domxref("ServiceWorkerContainer")}} được kích hoạt khi {{domxref("ServiceWorkerRegistration")}} được liên kết với tài liệu có một worker {{domxref("ServiceWorkerRegistration.active","đang hoạt động")}} mới.
 
 ## Cú pháp
 
@@ -22,7 +22,7 @@ oncontrollerchange = (event) => { }
 
 ## Loại sự kiện
 
-Một {{domxref("Event")}} chung.
+Một {{domxref("Event")}} tổng quát.
 
 ## Ví dụ
 

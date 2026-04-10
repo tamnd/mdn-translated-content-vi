@@ -8,7 +8,7 @@ browser-compat: api.ServiceWorkerContainer.messageerror_event
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Sự kiện **`messageerror`** được gửi đến {{domxref("ServiceWorkerContainer")}} khi một thông báo đến được gửi đến worker được liên kết không thể được giải tuần tự hóa.
+Sự kiện **`messageerror`** được kích hoạt đến {{domxref("ServiceWorkerContainer")}} khi một thông điệp đến được gửi đến worker được liên kết không thể được giải tuần tự hóa.
 
 Sự kiện này không thể hủy và không nổi bọt.
 
@@ -30,22 +30,22 @@ Một {{domxref("MessageEvent")}}. Kế thừa từ {{domxref("Event")}}.
 
 ## Thuộc tính sự kiện
 
-_Giao diện này cũng kế thừa các thuộc tính từ cha của nó, {{domxref("Event")}}._
+_Giao diện này cũng kế thừa các thuộc tính từ giao diện cha, {{domxref("Event")}}._
 
 - {{domxref("MessageEvent.data")}} {{ReadOnlyInline}}
-  - : Dữ liệu được gửi bởi trình phát thông báo.
+  - : Dữ liệu được gửi bởi bộ phát thông điệp.
 - {{domxref("MessageEvent.origin")}} {{ReadOnlyInline}}
-  - : Một chuỗi đại diện cho nguồn gốc của trình phát thông báo.
+  - : Một chuỗi đại diện cho nguồn gốc của bộ phát thông điệp.
 - {{domxref("MessageEvent.lastEventId")}} {{ReadOnlyInline}}
   - : Một chuỗi đại diện cho một ID duy nhất cho sự kiện.
 - {{domxref("MessageEvent.source")}} {{ReadOnlyInline}}
-  - : Một `MessageEventSource` (có thể là một đối tượng {{glossary("WindowProxy")}}, {{domxref("MessagePort")}}, hoặc {{domxref("ServiceWorker")}}) đại diện cho trình phát thông báo.
+  - : Một `MessageEventSource` (có thể là một đối tượng {{glossary("WindowProxy")}}, {{domxref("MessagePort")}}, hoặc {{domxref("ServiceWorker")}}) đại diện cho bộ phát thông điệp.
 - {{domxref("MessageEvent.ports")}} {{ReadOnlyInline}}
-  - : Một mảng các đối tượng {{domxref("MessagePort")}} đại diện cho các cổng được liên kết với kênh mà thông báo đang được gửi qua (nếu phù hợp, ví dụ: trong channel messaging hoặc khi gửi thông báo đến một shared worker).
+  - : Một mảng các đối tượng {{domxref("MessagePort")}} đại diện cho các cổng được liên kết với kênh mà thông điệp đang được gửi qua (khi thích hợp, ví dụ: trong nhắn tin kênh hoặc khi gửi thông điệp đến shared worker).
 
 ## Ví dụ
 
-Trong ví dụ này, service worker lấy ID của client từ một sự kiện {{domxref("ServiceWorkerGlobalScope/fetch_event", "fetch")}} và sau đó gửi một thông báo bằng {{domxref("Client.postMessage")}}:
+Trong ví dụ này, service worker lấy ID của client từ một sự kiện {{domxref("ServiceWorkerGlobalScope/fetch_event", "fetch")}} và sau đó gửi cho nó một thông điệp bằng cách sử dụng {{domxref("Client.postMessage")}}:
 
 ```js
 // service-worker.js
@@ -62,7 +62,7 @@ self.addEventListener("fetch", (event) => {
 });
 ```
 
-Service worker có thể lắng nghe lỗi giải tuần tự hóa thông báo bằng cách lắng nghe sự kiện `messageerror`:
+Service worker có thể lắng nghe lỗi giải tuần tự hóa thông điệp bằng cách lắng nghe sự kiện `messageerror`:
 
 ```js
 // main.js
@@ -71,7 +71,7 @@ navigator.serviceWorker.addEventListener("messageerror", (event) => {
 });
 ```
 
-Ngoài ra, tập lệnh có thể lắng nghe lỗi giải tuần tự hóa thông báo bằng cách sử dụng `onmessageerror`:
+Hoặc, tập lệnh có thể lắng nghe lỗi giải tuần tự hóa thông điệp bằng cách sử dụng `onmessageerror`:
 
 ```js
 // main.js
@@ -93,5 +93,5 @@ navigator.serviceWorker.onmessageerror = (event) => {
 - {{domxref("ServiceWorkerContainer/message_event", "message")}}
 - {{domxref("Client.postMessage()")}}
 - [Sử dụng Service Workers](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-- [Ví dụ mã cơ bản về service workers](https://github.com/mdn/dom-examples/tree/main/service-worker/simple-service-worker)
+- [Mẫu mã service workers cơ bản](https://github.com/mdn/dom-examples/tree/main/service-worker/simple-service-worker)
 - [Sử dụng Web Workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
