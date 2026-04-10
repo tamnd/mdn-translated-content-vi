@@ -7,49 +7,49 @@ browser-compat: api.Cache
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Giao diện **`Cache`** cung cấp một cơ chế lưu trữ bền vững cho các cặp đối tượng {{domxref("Request")}} / {{domxref("Response")}} được lưu đệm trong bộ nhớ tồn tại lâu dài. Thời gian sống của một đối tượng `Cache` phụ thuộc vào trình duyệt, nhưng script của một origin đơn lẻ thường có thể trông cậy vào sự hiện diện của một đối tượng `Cache` đã được điền trước đó. Lưu ý rằng giao diện `Cache` được phơi bày cho cả phạm vi cửa sổ lẫn worker. Bạn không bắt buộc phải dùng nó cùng với service worker, dù nó được định nghĩa trong đặc tả service worker.
+Giao diện **`Cache`** cung cấp một cơ chế lưu trữ bền vững cho các cặp đối tượng {{domxref("Request")}} / {{domxref("Response")}} được lưu đệm trong bộ nhớ lâu dài. Thời gian tồn tại của một đối tượng `Cache` phụ thuộc vào trình duyệt, nhưng các tập lệnh của một origin thường có thể dựa vào sự hiện diện của một đối tượng `Cache` đã được điền trước đó. Lưu ý rằng giao diện `Cache` được tiếp xúc cả trong phạm vi cửa sổ lẫn worker. Bạn không bắt buộc phải sử dụng nó cùng với service worker, dù nó được định nghĩa trong đặc tả service worker.
 
-Một origin có thể có nhiều đối tượng `Cache` được đặt tên. Bạn chịu trách nhiệm triển khai cách script của mình (ví dụ trong một {{domxref("ServiceWorker")}}) xử lý việc cập nhật `Cache`. Các mục trong `Cache` sẽ không được cập nhật trừ khi được yêu cầu rõ ràng; chúng cũng không tự hết hạn trừ khi bị xóa. Hãy dùng {{domxref("CacheStorage.open", "CacheStorage.open()")}} để mở một đối tượng `Cache` có tên cụ thể, rồi gọi bất kỳ phương thức nào của `Cache` để duy trì `Cache`.
+Một origin có thể có nhiều đối tượng `Cache` được đặt tên. Bạn chịu trách nhiệm triển khai cách tập lệnh của mình (ví dụ: trong một {{domxref("ServiceWorker")}}) xử lý các cập nhật `Cache`. Các mục trong một `Cache` không được cập nhật trừ khi được yêu cầu rõ ràng; chúng không hết hạn trừ khi bị xóa. Hãy dùng {{domxref("CacheStorage.open", "CacheStorage.open()")}} để mở một đối tượng `Cache` được đặt tên cụ thể rồi gọi bất kỳ phương thức nào của `Cache` để duy trì `Cache`.
 
-Bạn cũng chịu trách nhiệm định kỳ dọn các mục cache. Mỗi trình duyệt đều có một giới hạn cứng về dung lượng lưu trữ cache mà một origin nhất định có thể sử dụng. Có thể ước lượng mức dùng quota của `Cache` qua phương thức {{domxref("StorageManager.estimate()")}}. Trình duyệt sẽ cố gắng hết sức để quản lý dung lượng đĩa, nhưng nó có thể xóa vùng lưu trữ `Cache` của một origin. Thông thường, trình duyệt sẽ xóa toàn bộ dữ liệu của một origin hoặc không xóa gì cả. Hãy đảm bảo bạn quản lý phiên bản cache theo tên và chỉ dùng cache từ phiên bản script có thể vận hành an toàn với chúng. Xem [Xóa cache cũ](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#deleting_old_caches) để biết thêm thông tin.
-
-> [!NOTE]
-> Thuật toán đối sánh khóa phụ thuộc vào [header VARY](https://www.fastly.com/blog/best-practices-using-vary-header) trong giá trị. Vì vậy, khi đối sánh một khóa mới, cần xem xét cả khóa lẫn giá trị của các mục trong đối tượng `Cache`.
+Bạn cũng chịu trách nhiệm dọn dẹp định kỳ các mục trong bộ nhớ đệm. Mỗi trình duyệt có giới hạn cứng về dung lượng bộ nhớ đệm mà một origin nhất định có thể sử dụng. Ước tính mức sử dụng hạn ngạch `Cache` có sẵn thông qua phương thức {{domxref("StorageManager.estimate()")}}. Trình duyệt cố gắng hết sức để quản lý dung lượng đĩa, nhưng có thể xóa bộ nhớ đệm `Cache` của một origin. Trình duyệt thường sẽ xóa toàn bộ dữ liệu của một origin hoặc không xóa gì cả. Hãy đảm bảo phiên bản hóa các bộ nhớ đệm theo tên và chỉ sử dụng chúng từ phiên bản tập lệnh có thể thao tác an toàn trên đó. Xem [Xóa bộ nhớ đệm cũ](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#deleting_old_caches) để biết thêm thông tin.
 
 > [!NOTE]
-> Caching API không tuân theo các header lưu đệm HTTP.
+> Thuật toán so khớp khóa phụ thuộc vào [tiêu đề VARY](https://www.fastly.com/blog/best-practices-using-vary-header) trong giá trị. Vì vậy việc so khớp một khóa mới cần nhìn vào cả khóa và giá trị của các mục trong đối tượng `Cache`.
 
-## Phương thức thực thể
+> [!NOTE]
+> API bộ nhớ đệm không tuân theo các tiêu đề HTTP caching.
+
+## Phương thức thể hiện
 
 - {{domxref("Cache.match()")}}
-  - : Trả về một {{jsxref("Promise")}} được giải quyết thành phản hồi gắn với yêu cầu khớp đầu tiên trong đối tượng `Cache`.
+  - : Trả về một {{jsxref("Promise")}} phân giải thành phản hồi liên kết với yêu cầu khớp đầu tiên trong đối tượng `Cache`.
 - {{domxref("Cache.matchAll()")}}
-  - : Trả về một {{jsxref("Promise")}} được giải quyết thành một mảng gồm mọi phản hồi khớp trong đối tượng `Cache`.
+  - : Trả về một {{jsxref("Promise")}} phân giải thành một mảng chứa tất cả các phản hồi khớp trong đối tượng `Cache`.
 - {{domxref("Cache.add()")}}
-  - : Nhận một URL, truy xuất nó và thêm đối tượng phản hồi thu được vào cache đã cho. Về mặt chức năng, điều này tương đương với việc gọi `fetch()`, rồi dùng `put()` để thêm kết quả vào cache.
+  - : Nhận một URL, lấy dữ liệu từ đó và thêm đối tượng phản hồi kết quả vào bộ nhớ đệm đã cho. Chức năng này tương đương với việc gọi `fetch()`, sau đó dùng `put()` để thêm kết quả vào bộ nhớ đệm.
 - {{domxref("Cache.addAll()")}}
-  - : Nhận một mảng URL, truy xuất chúng và thêm các đối tượng phản hồi thu được vào cache đã cho.
+  - : Nhận một mảng URL, lấy dữ liệu từ chúng và thêm các đối tượng phản hồi kết quả vào bộ nhớ đệm đã cho.
 - {{domxref("Cache.put()")}}
-  - : Nhận cả một yêu cầu lẫn phản hồi của nó và thêm chúng vào cache đã cho.
+  - : Nhận cả yêu cầu và phản hồi của nó rồi thêm vào bộ nhớ đệm đã cho.
 - {{domxref("Cache.delete()")}}
-  - : Tìm mục `Cache` có khóa là yêu cầu, trả về một {{jsxref("Promise")}} được giải quyết thành `true` nếu tìm thấy và xóa được một mục `Cache` khớp. Nếu không tìm thấy mục `Cache` nào, promise được giải quyết thành `false`.
+  - : Tìm mục `Cache` có khóa là yêu cầu đó, trả về một {{jsxref("Promise")}} phân giải thành `true` nếu tìm thấy và xóa được mục `Cache` khớp. Nếu không tìm thấy mục `Cache` nào, promise phân giải thành `false`.
 - {{domxref("Cache.keys()")}}
-  - : Trả về một {{jsxref("Promise")}} được giải quyết thành một mảng các khóa của `Cache`.
+  - : Trả về một {{jsxref("Promise")}} phân giải thành một mảng chứa các khóa `Cache`.
 
 ## Ví dụ
 
-Đoạn mã này lấy từ [mẫu service worker selective caching](https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/selective-caching/service-worker.js) (xem [bản chạy thử selective caching](https://googlechrome.github.io/samples/service-worker/selective-caching/)). Mã dùng {{domxref("CacheStorage.open()")}} để mở mọi đối tượng `Cache` có header `Content-Type` bắt đầu bằng `font/`.
+Đoạn mã này lấy từ [mẫu caching chọn lọc của service worker](https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/selective-caching/service-worker.js) (xem [live demo của selective caching](https://googlechrome.github.io/samples/service-worker/selective-caching/)). Mã dùng {{domxref("CacheStorage.open()")}} để mở bất kỳ đối tượng `Cache` nào có tiêu đề `Content-Type` bắt đầu bằng `font/`.
 
-Sau đó, mã dùng {{domxref("Cache.match()")}} để kiểm tra xem trong cache đã có phông chữ khớp hay chưa; nếu có thì trả về ngay. Nếu không có phông chữ khớp, mã sẽ lấy phông chữ từ mạng và dùng {{domxref("Cache.put()")}} để lưu đệm tài nguyên đã lấy.
+Sau đó mã dùng {{domxref("Cache.match()")}} để xem đã có phông chữ khớp nào trong bộ nhớ đệm hay chưa, và nếu có, trả về nó. Nếu không có phông chữ khớp, mã sẽ lấy phông chữ từ mạng và dùng {{domxref("Cache.put()")}} để lưu tài nguyên đã lấy vào bộ nhớ đệm.
 
-Mã xử lý các ngoại lệ phát sinh từ thao tác {{domxref("Window/fetch", "fetch()")}}. Lưu ý rằng phản hồi lỗi HTTP (ví dụ 404) sẽ không gây ra ngoại lệ. Nó sẽ trả về một đối tượng phản hồi bình thường với mã lỗi thích hợp.
+Mã xử lý các ngoại lệ phát sinh từ thao tác {{domxref("Window/fetch", "fetch()")}}. Lưu ý rằng một phản hồi HTTP lỗi (ví dụ: 404) sẽ không kích hoạt ngoại lệ. Nó sẽ trả về một đối tượng phản hồi bình thường có mã lỗi phù hợp.
 
-Đoạn mã này cũng cho thấy một thực hành tốt để quản lý phiên bản cache mà service worker sử dụng. Dù trong ví dụ này chỉ có một cache, cùng cách tiếp cận đó vẫn dùng được cho nhiều cache. Nó ánh xạ một mã định danh rút gọn của cache sang một tên cache cụ thể có phiên bản. Mã cũng xóa mọi cache không được nêu trong `CURRENT_CACHES`.
+Đoạn mã cũng cho thấy một phương pháp hay nhất để phiên bản hóa các bộ nhớ đệm mà service worker sử dụng. Dù ví dụ này chỉ có một bộ nhớ đệm, cách tiếp cận tương tự có thể dùng cho nhiều bộ nhớ đệm được phiên bản hóa. Nó ánh xạ một định danh viết tắt cho một bộ nhớ đệm sang một tên bộ nhớ đệm được phiên bản hóa cụ thể. Mã cũng xóa tất cả các bộ nhớ đệm không có tên trong `CURRENT_CACHES`.
 
-Trong ví dụ mã này, `caches` là một thuộc tính của {{domxref("ServiceWorkerGlobalScope")}}. Nó nắm giữ đối tượng `CacheStorage`, qua đó có thể truy cập giao diện {{domxref("CacheStorage")}}.
+Trong ví dụ mã, `caches` là một thuộc tính của {{domxref("ServiceWorkerGlobalScope")}}. Nó chứa đối tượng `CacheStorage`, qua đó có thể truy cập giao diện {{domxref("CacheStorage")}}.
 
 > [!NOTE]
-> Trong Chrome, truy cập `chrome://inspect/#service-workers` rồi nhấp liên kết "inspect" bên dưới service worker đã đăng ký để xem các câu lệnh ghi log cho nhiều hành động mà script [`service-worker.js`](https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/selective-caching/service-worker.js) đang thực hiện.
+> Trong Chrome, truy cập `chrome://inspect/#service-workers` và nhấp vào liên kết "inspect" bên dưới service worker đã đăng ký để xem các câu lệnh nhật ký cho các hành động khác nhau mà tập lệnh [`service-worker.js`](https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/selective-caching/service-worker.js) đang thực hiện.
 
 ```js
 const CACHE_VERSION = 1;
@@ -58,17 +58,17 @@ const CURRENT_CACHES = {
 };
 
 self.addEventListener("activate", (event) => {
-  // Delete all caches that aren't named in CURRENT_CACHES.
-  // While there is only one cache in this example, the same logic
-  // will handle the case where there are multiple versioned caches.
+  // Xóa mọi bộ nhớ đệm không có tên trong CURRENT_CACHES.
+  // Dù ví dụ này chỉ có một bộ nhớ đệm, logic tương tự
+  // sẽ xử lý trường hợp có nhiều bộ nhớ đệm được phiên bản hóa.
   const expectedCacheNamesSet = new Set(Object.values(CURRENT_CACHES));
   event.waitUntil(
     caches.keys().then((cacheNames) =>
       Promise.all(
         cacheNames.map((cacheName) => {
           if (!expectedCacheNamesSet.has(cacheName)) {
-            // If this cache name isn't present in the set of
-            // "expected" cache names, then delete it.
+            // Nếu tên bộ nhớ đệm này không có trong tập hợp
+            // tên bộ nhớ đệm "dự kiến", thì xóa nó.
             console.log("Deleting out of date cache:", cacheName);
             return caches.delete(cacheName);
           }
@@ -88,27 +88,27 @@ self.addEventListener("fetch", (event) => {
       .then((cache) => cache.match(event.request))
       .then((response) => {
         if (response) {
-          // If there is an entry in the cache for event.request,
-          // then response will be defined and we can just return it.
-          // Note that in this example, only font resources are cached.
+          // Nếu có một mục trong bộ nhớ đệm cho event.request,
+          // thì response sẽ được định nghĩa và ta có thể trả về nó.
+          // Lưu ý trong ví dụ này chỉ các tài nguyên phông chữ được lưu đệm.
           console.log(" Found response in cache:", response);
 
           return response;
         }
 
-        // Otherwise, if there is no entry in the cache for event.request,
-        // response will be undefined, and we need to fetch() the resource.
+        // Ngược lại, nếu không có mục nào trong bộ nhớ đệm cho event.request,
+        // response sẽ là undefined, và ta cần fetch() tài nguyên.
         console.log(
           " No response for %s found in cache. About to fetch " +
             "from network…",
           event.request.url,
         );
 
-        // We call .clone() on the request since we might use it
-        // in a call to cache.put() later on.
-        // Both fetch() and cache.put() "consume" the request,
-        // so we need to make a copy.
-        // (see https://developer.mozilla.org/en-US/docs/Web/API/Request/clone)
+        // Ta gọi .clone() trên request vì có thể dùng nó
+        // trong lời gọi cache.put() sau này.
+        // Cả fetch() và cache.put() đều "tiêu thụ" request,
+        // nên ta cần tạo một bản sao.
+        // (xem https://developer.mozilla.org/en-US/docs/Web/API/Request/clone)
         return fetch(event.request.clone()).then((response) => {
           console.log(
             "  Response for %s from network is: %O",
@@ -121,43 +121,41 @@ self.addEventListener("fetch", (event) => {
             response.headers.has("content-type") &&
             response.headers.get("content-type").match(/^font\//i)
           ) {
-            // This avoids caching responses that we know are errors
-            // (i.e. HTTP status code of 4xx or 5xx).
-            // We also only want to cache responses that correspond
-            // to fonts, i.e. have a Content-Type response header that
-            // starts with "font/".
-            // Note that for opaque filtered responses
+            // Tránh lưu đệm các phản hồi mà ta biết là lỗi
+            // (tức mã trạng thái HTTP 4xx hoặc 5xx).
+            // Ta cũng chỉ muốn lưu đệm các phản hồi tương ứng
+            // với phông chữ, tức có tiêu đề phản hồi Content-Type
+            // bắt đầu bằng "font/".
+            // Lưu ý rằng với các phản hồi đã lọc opaque
             // https://fetch.spec.whatwg.org/#concept-filtered-response-opaque
-            // we can't access to the response headers, so this check will
-            // always fail and the font won't be cached.
-            // All of the Google Web Fonts are served from a domain that
-            // supports CORS, so that isn't an issue here.
-            // It is something to keep in mind if you're attempting
-            // to cache other resources from a cross-origin
-            // domain that doesn't support CORS, though!
+            // ta không thể truy cập tiêu đề phản hồi, nên bước kiểm tra này sẽ
+            // luôn thất bại và phông chữ sẽ không được lưu đệm.
+            // Tất cả Google Web Fonts được phục vụ từ tên miền hỗ trợ CORS,
+            // nên đây không phải vấn đề ở đây.
+            // Đây là điều cần lưu tâm nếu bạn định
+            // lưu đệm tài nguyên khác từ tên miền cross-origin
+            // không hỗ trợ CORS!
             console.log("  Caching the response to", event.request.url);
-            // We call .clone() on the response to save a copy of it
-            // to the cache. By doing so, we get to keep the original
-            // response object which we will return back to the controlled
-            // page.
+            // Ta gọi .clone() trên phản hồi để lưu một bản sao
+            // vào bộ nhớ đệm. Bằng cách này, ta giữ được đối tượng
+            // phản hồi gốc để trả về cho trang được kiểm soát.
             // https://developer.mozilla.org/en-US/docs/Web/API/Request/clone
             cache.put(event.request, response.clone());
           } else {
             console.log("  Not caching the response to", event.request.url);
           }
 
-          // Return the original response object, which will be used to
-          // fulfill the resource request.
+          // Trả về đối tượng phản hồi gốc, sẽ được dùng để
+          // đáp ứng yêu cầu tài nguyên.
           return response;
         });
       })
       .catch((error) => {
-        // This catch() will handle exceptions that arise from the match()
-        // or fetch() operations.
-        // Note that a HTTP error response (e.g. 404) will NOT trigger
-        // an exception.
-        // It will return a normal response object that has the appropriate
-        // error code set.
+        // catch() này sẽ xử lý ngoại lệ phát sinh từ thao tác match()
+        // hoặc fetch().
+        // Lưu ý rằng một phản hồi lỗi HTTP (ví dụ 404) sẽ KHÔNG kích hoạt
+        // ngoại lệ.
+        // Nó sẽ trả về một đối tượng phản hồi bình thường có mã lỗi phù hợp.
         console.error("  Error in fetch handler:", error);
 
         throw error;
@@ -168,18 +166,18 @@ self.addEventListener("fetch", (event) => {
 
 ### Cookie và đối tượng Cache
 
-[Fetch API](/en-US/docs/Web/API/Fetch_API) yêu cầu các header {{httpheader("Set-Cookie")}} phải bị loại bỏ trước khi trả về một đối tượng {{domxref("Response")}} từ {{domxref("Window/fetch", "fetch()")}}. Vì vậy, một `Response` được lưu trong `Cache` sẽ không chứa header `Set-Cookie`, và do đó cũng sẽ không làm bất kỳ cookie nào được lưu.
+[Fetch API](/en-US/docs/Web/API/Fetch_API) yêu cầu tiêu đề {{httpheader("Set-Cookie")}} bị loại bỏ trước khi trả về đối tượng {{domxref("Response")}} từ {{domxref("Window/fetch", "fetch()")}}. Vì vậy một `Response` được lưu trong `Cache` sẽ không chứa tiêu đề `Set-Cookie`, và do đó sẽ không khiến cookie nào được lưu.
 
 ## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Khả năng tương thích với trình duyệt
 
 {{Compat}}
 
 ## Xem thêm
 
-- [Dùng Service Worker](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-- [Ví dụ mã service worker cơ bản](https://github.com/mdn/dom-examples/tree/main/service-worker/simple-service-worker)
-- [Dùng web worker](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+- [Sử dụng Service Workers](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+- [Ví dụ mã cơ bản về service workers](https://github.com/mdn/dom-examples/tree/main/service-worker/simple-service-worker)
+- [Sử dụng web workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)

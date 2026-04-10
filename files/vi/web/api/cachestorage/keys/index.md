@@ -8,7 +8,7 @@ browser-compat: api.CacheStorage.keys
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Phương thức **`keys()`** của giao diện {{domxref("CacheStorage")}} trả về một {{jsxref("Promise")}} sẽ phân giải với một mảng chứa các chuỗi tương ứng với mọi đối tượng {{domxref("Cache")}} có tên mà đối tượng {{domxref("CacheStorage")}} đang theo dõi, theo đúng thứ tự chúng được tạo ra.
+Phương thức **`keys()`** của giao diện {{domxref("CacheStorage")}} trả về một {{jsxref("Promise")}} sẽ phân giải với một mảng chứa các chuỗi tương ứng với mọi đối tượng {{domxref("Cache")}} có tên mà đối tượng {{domxref("CacheStorage")}} đang theo dõi theo thứ tự chúng được tạo.
 Dùng phương thức này để duyệt qua danh sách tất cả các đối tượng {{domxref("Cache")}}.
 
 Bạn có thể truy cập `CacheStorage` thông qua thuộc tính {{domxref("Window.caches")}} trong cửa sổ hoặc thông qua thuộc tính {{domxref("WorkerGlobalScope.caches")}} trong worker.
@@ -25,13 +25,13 @@ Không có.
 
 ### Giá trị trả về
 
-Một {{jsxref("Promise")}} phân giải với một mảng tên {{domxref("Cache")}} bên trong đối tượng {{domxref("CacheStorage")}}.
+Một {{jsxref("Promise")}} phân giải với một mảng chứa các tên {{domxref("Cache")}} bên trong đối tượng {{domxref("CacheStorage")}}.
 
 ## Ví dụ
 
-Trong đoạn mã này, chúng ta chờ một sự kiện {{domxref("ServiceWorkerGlobalScope.activate_event", "activate")}} xảy ra, rồi chạy một khối {{domxref("ExtendableEvent.waitUntil","waitUntil()")}} để dọn dẹp mọi bộ nhớ đệm cũ, không còn dùng đến trước khi service worker mới được kích hoạt.
-Ở đây chúng ta có một danh sách cho phép chứa tên của các bộ nhớ đệm mà chúng ta muốn giữ lại (`cacheAllowlist`).
-Chúng ta trả về các khóa của bộ nhớ đệm trong đối tượng {{domxref("CacheStorage")}} bằng `keys()`, rồi kiểm tra từng khóa xem nó có nằm trong danh sách cho phép hay không.
+Trong đoạn mã này, chúng ta chờ sự kiện {{domxref("ServiceWorkerGlobalScope.activate_event", "activate")}}, sau đó chạy một khối {{domxref("ExtendableEvent.waitUntil","waitUntil()")}} để dọn sạch mọi bộ nhớ đệm cũ không còn dùng trước khi một service worker mới được kích hoạt.
+Ở đây chúng ta có một danh sách cho phép chứa tên các bộ nhớ đệm muốn giữ lại (`cacheAllowlist`).
+Chúng ta lấy các khóa của các bộ nhớ đệm trong đối tượng {{domxref("CacheStorage")}} bằng `keys()`, sau đó kiểm tra từng khóa xem có nằm trong danh sách cho phép hay không.
 Nếu không, chúng ta xóa nó bằng {{domxref("CacheStorage.delete()")}}.
 
 ```js
@@ -63,6 +63,6 @@ this.addEventListener("activate", (event) => {
 
 ## Xem thêm
 
-- [Sử dụng Service Worker](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+- [Sử dụng Service Workers](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 - {{domxref("Cache")}}
 - {{domxref("Window.caches")}} và {{domxref("WorkerGlobalScope.caches")}}
