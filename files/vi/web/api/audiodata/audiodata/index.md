@@ -33,11 +33,11 @@ new AudioData(init)
     - `sampleRate`
       - : Một giá trị thập phân chứa tốc độ lấy mẫu theo Hz.
     - `numberOfFrames`
-      - : Một số nguyên chứa số frame trong mẫu này.
+      - : Một số nguyên chứa số khung mẫu trong mẫu này.
     - `numberOfChannels`
       - : Một số nguyên chứa số kênh trong mẫu này.
     - `timestamp`
-      - : Một số nguyên cho biết thời gian của dữ liệu tính bằng micro giây.
+      - : Một số nguyên cho biết dấu thời gian của dữ liệu tính bằng micro giây.
     - `data`
       - : Một mảng định kiểu chứa dữ liệu âm thanh của mẫu này.
     - `transfer`

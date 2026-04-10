@@ -21,11 +21,11 @@ allocationSize(options)
 - `options`
   - : Một đối tượng chứa các thành phần sau:
     - `planeIndex`
-      - : Chỉ số của plane mà bạn muốn lấy kích thước.
+      - : Chỉ số của mặt phẳng mà bạn muốn lấy kích thước.
     - `frameOffset` {{optional_inline}}
-      - : Một số nguyên cho biết độ dời vào dữ liệu plane, cho biết bắt đầu từ frame nào. Mặc định là `0`.
+      - : Một số nguyên cho biết độ lệch vào dữ liệu mặt phẳng, xác định bắt đầu từ khung mẫu nào. Mặc định là `0`.
     - `frameCount` {{optional_inline}}
-      - : Một số nguyên cho biết số lượng frame cần lấy kích thước. Nếu bị bỏ qua thì tất cả frame trong plane sẽ được dùng, bắt đầu từ frame được chỉ định trong `frameOffset`.
+      - : Một số nguyên cho biết số lượng khung mẫu cần lấy kích thước. Nếu bị bỏ qua thì tất cả khung mẫu trong mặt phẳng sẽ được dùng, bắt đầu từ khung mẫu được chỉ định trong `frameOffset`.
 
 ### Giá trị trả về
 

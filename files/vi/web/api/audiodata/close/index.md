@@ -22,7 +22,7 @@ Không có.
 
 ### Giá trị trả về
 
-`undefined`.
+Không có.
 
 ## Ví dụ
 

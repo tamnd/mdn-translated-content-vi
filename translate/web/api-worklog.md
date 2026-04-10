@@ -257,3 +257,21 @@ Planned pages:
 
 1. `Web/API/AudioDestinationNode`
 2. `Web/API/AudioDestinationNode/maxChannelCount`
+
+## Batch 25
+
+Checked the `AudioDecoder` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
+
+Reviewed pages:
+
+1. `Web/API/AudioDecoder`
+2. `Web/API/AudioDecoder/AudioDecoder`
+3. `Web/API/AudioDecoder/close`
+4. `Web/API/AudioDecoder/configure`
+5. `Web/API/AudioDecoder/decode`
+6. `Web/API/AudioDecoder/decodeQueueSize`
+7. `Web/API/AudioDecoder/dequeue_event`
+8. `Web/API/AudioDecoder/flush`
+9. `Web/API/AudioDecoder/isConfigSupported_static`
+10. `Web/API/AudioDecoder/reset`
+11. `Web/API/AudioDecoder/state`

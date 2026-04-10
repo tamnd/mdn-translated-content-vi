@@ -8,7 +8,7 @@ browser-compat: api.AudioData.copyTo
 
 {{APIRef("WebCodecs API")}}{{AvailableInWorkers("window_and_dedicated")}}
 
-Phương thức **`copyTo()`** của giao diện {{domxref("AudioData")}} sao chép một plane của đối tượng `AudioData` sang một bộ đệm đích.
+Phương thức **`copyTo()`** của giao diện {{domxref("AudioData")}} sao chép một mặt phẳng của đối tượng `AudioData` sang một bộ đệm đích.
 
 ## Cú pháp
 
@@ -23,11 +23,11 @@ copyTo(destination, options)
 - `options`
   - : Một đối tượng chứa các thành phần sau:
     - `planeIndex`
-      - : Chỉ số của plane cần sao chép từ đó.
+      - : Chỉ số của mặt phẳng cần sao chép từ đó.
     - `frameOffset` {{optional_inline}}
-      - : Một số nguyên cho biết độ dời vào dữ liệu plane, cho biết bắt đầu sao chép từ frame nào. Mặc định là `0`.
+      - : Một số nguyên cho biết độ lệch vào dữ liệu mặt phẳng, xác định bắt đầu sao chép từ khung mẫu nào. Mặc định là `0`.
     - `frameCount` {{optional_inline}}
-      - : Một số nguyên cho biết số frame cần sao chép. Nếu bị bỏ qua thì tất cả frame trong plane sẽ được sao chép, bắt đầu từ frame được chỉ định trong `frameOffset`.
+      - : Một số nguyên cho biết số khung mẫu cần sao chép. Nếu bị bỏ qua thì tất cả khung mẫu trong mặt phẳng sẽ được sao chép, bắt đầu từ khung mẫu được chỉ định trong `frameOffset`.
 
 ### Giá trị trả về
 
@@ -40,12 +40,12 @@ copyTo(destination, options)
 - {{jsxref("RangeError")}}
   - : Được ném ra nếu một trong các điều kiện sau được đáp ứng:
     - Độ dài của mẫu lớn hơn độ dài của đích.
-    - Định dạng của đối tượng `AudioData` mô tả một định dạng planar, nhưng `options.planeIndex` nằm ngoài số lượng plane sẵn có.
+    - Định dạng của đối tượng `AudioData` mô tả một định dạng planar, nhưng `options.planeIndex` nằm ngoài số lượng mặt phẳng sẵn có.
     - Định dạng của đối tượng `AudioData` mô tả một định dạng interleaved, nhưng `options.planeIndex` lớn hơn `0`.
 
 ## Ví dụ
 
-Ví dụ sau sao chép plane ở chỉ số `1` sang một bộ đệm đích.
+Ví dụ sau sao chép mặt phẳng ở chỉ số `1` sang một bộ đệm đích.
 
 ```js
 AudioData.copyTo(AudioBuffer, { planeIndex: 1 });

@@ -13,7 +13,7 @@ Giao diện **`AudioData`** của [WebCodecs API](/en-US/docs/Web/API/WebCodecs_
 
 ## Mô tả
 
-Một rãnh âm thanh bao gồm một luồng các mẫu âm thanh, trong đó mỗi mẫu biểu diễn một khoảnh khắc âm thanh đã được ghi lại. Một đối tượng `AudioData` là cách biểu diễn của một mẫu như vậy. Khi làm việc cùng với các giao diện của [Insertable Streams API](/en-US/docs/Web/API/Insertable_Streams_for_MediaStreamTrack_API), bạn có thể chia một luồng thành các đối tượng `AudioData` riêng lẻ bằng {{domxref("MediaStreamTrackProcessor")}}, hoặc tạo một rãnh âm thanh từ một luồng frame bằng {{domxref("MediaStreamTrackGenerator")}}.
+Một rãnh âm thanh bao gồm một luồng các mẫu âm thanh, trong đó mỗi mẫu biểu diễn một khoảnh khắc âm thanh đã được ghi lại. Một đối tượng `AudioData` là cách biểu diễn của một mẫu như vậy. Khi làm việc cùng với các giao diện của [Insertable Streams API](/en-US/docs/Web/API/Insertable_Streams_for_MediaStreamTrack_API), bạn có thể chia một luồng thành các đối tượng `AudioData` riêng lẻ bằng {{domxref("MediaStreamTrackProcessor")}}, hoặc tạo một rãnh âm thanh từ một luồng khung mẫu bằng {{domxref("MediaStreamTrackGenerator")}}.
 
 > [!NOTE]
 > Tìm hiểu thêm về âm thanh trên web trong [Các khái niệm về âm thanh số](/en-US/docs/Web/Media/Guides/Formats/Audio_concepts).
@@ -22,7 +22,7 @@ Một rãnh âm thanh bao gồm một luồng các mẫu âm thanh, trong đó m
 
 Một đối tượng `AudioData` chứa một tham chiếu đến **tài nguyên đa phương tiện** được gắn kèm. Tài nguyên đa phương tiện này chứa dữ liệu mẫu âm thanh thực tế mà đối tượng mô tả. Một tài nguyên đa phương tiện được user agent duy trì cho đến khi không còn được một đối tượng `AudioData` nào tham chiếu tới nữa, ví dụ khi gọi {{domxref("AudioData.close()")}}.
 
-### Plane và định dạng âm thanh
+### Các mặt phẳng và định dạng âm thanh
 
 Để lấy định dạng mẫu của một `AudioData`, hãy dùng thuộc tính {{domxref("AudioData.format")}}. Định dạng có thể được mô tả là **xen kẽ** (interleaved) hoặc **phẳng** (planar). Trong các định dạng xen kẽ, các mẫu âm thanh từ những kênh khác nhau được bố trí trong một bộ đệm duy nhất, gọi là một **plane**. Plane này chứa số phần tử bằng {{domxref("AudioData.numberOfFrames")}} \* {{domxref("AudioData.numberOfChannels")}}.
 
@@ -40,7 +40,7 @@ Trong định dạng phẳng, số lượng plane bằng {{domxref("AudioData.nu
 - {{domxref("AudioData.sampleRate")}} {{ReadOnlyInline}}
   - : Trả về tốc độ lấy mẫu của âm thanh theo Hz.
 - {{domxref("AudioData.numberOfFrames")}} {{ReadOnlyInline}}
-  - : Trả về số frame.
+  - : Trả về số khung mẫu.
 - {{domxref("AudioData.numberOfChannels")}} {{ReadOnlyInline}}
   - : Trả về số kênh âm thanh.
 - {{domxref("AudioData.duration")}} {{ReadOnlyInline}}
