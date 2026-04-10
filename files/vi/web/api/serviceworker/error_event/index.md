@@ -8,7 +8,7 @@ browser-compat: api.ServiceWorker.error_event
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Sự kiện `error` được kích hoạt bất cứ khi nào một lỗi xảy ra trong service worker.
+Sự kiện `error` được kích hoạt bất cứ khi nào xảy ra lỗi trong service worker.
 
 ## Cú pháp
 
@@ -22,20 +22,20 @@ onerror = (event) => { }
 
 ## Loại sự kiện
 
-Một {{domxref("Event")}} chung.
+Một {{domxref("Event")}} tổng quát.
 
 ## Ví dụ
 
-Đoạn mã sau lấy một handle đến đối tượng {{domxref("ServiceWorker")}} thông qua {{domxref("ServiceWorkerRegistration.active")}} và thiết lập một trình xử lý `onerror` trên đối tượng kết quả:
+Đoạn mã sau đây lấy một tham chiếu đến đối tượng {{domxref("ServiceWorker")}} thông qua {{domxref("ServiceWorkerRegistration.active")}} và thiết lập trình xử lý `onerror` trên đối tượng kết quả:
 
 ```js
-// in the page being controlled
+// trong trang đang được điều khiển
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("service-worker.js");
 
   navigator.serviceWorker.ready.then((registration) => {
     registration.active.onerror = (event) => {
-      console.log("An error occurred in the service worker!");
+      console.log("Đã xảy ra lỗi trong service worker!");
     };
   });
 }

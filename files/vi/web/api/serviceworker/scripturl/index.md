@@ -8,7 +8,7 @@ browser-compat: api.ServiceWorker.scriptURL
 
 {{APIRef("Service Workers API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
-Trả về URL tập lệnh đã tuần tự hóa của `ServiceWorker` được định nghĩa là một phần của [`ServiceWorkerRegistration`](/en-US/docs/Web/API/ServiceWorkerRegistration).
+Trả về URL tập lệnh đã được tuần tự hóa của `ServiceWorker` được định nghĩa như một phần của [`ServiceWorkerRegistration`](/en-US/docs/Web/API/ServiceWorkerRegistration).
 Phải có cùng nguồn gốc với tài liệu đăng ký
 `ServiceWorker`.
 

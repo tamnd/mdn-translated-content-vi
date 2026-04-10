@@ -22,11 +22,12 @@ onstatechange = (event) => { }
 
 ## Loại sự kiện
 
-Một {{domxref("Event")}} chung.
+Một {{domxref("Event")}} tổng quát.
 
 ## Ví dụ
 
-Đoạn mã này được lấy từ [mẫu registration-events của service worker](https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/registration-events/index.html) ([demo trực tiếp](https://googlechrome.github.io/samples/service-worker/registration-events/)). Mã lắng nghe bất kỳ thay đổi nào trong {{domxref("ServiceWorker.state")}} và trả về giá trị của nó.
+Đoạn mã này trích từ [mẫu sự kiện đăng ký service worker](https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/registration-events/index.html) ([xem trực tiếp](https://googlechrome.github.io/samples/service-worker/registration-events/)). Mã lắng nghe mọi thay đổi trong {{domxref("ServiceWorker.state")}}
+và trả về giá trị của nó.
 
 ```js
 let serviceWorker;
@@ -49,16 +50,17 @@ if (serviceWorker) {
 }
 ```
 
-Lưu ý rằng khi `statechange` được kích hoạt, các tham chiếu của service worker có thể đã thay đổi. Ví dụ:
+Lưu ý rằng khi `statechange` được kích hoạt, các tham chiếu của service worker có thể đã
+thay đổi. Ví dụ:
 
 ```js
 navigator.serviceWorker.register("/sw.js").then((swr) => {
   swr.installing.state = "installing";
   swr.installing.onstatechange = () => {
     swr.installing = null;
-    // At this point, swr.waiting OR swr.active might be true. This is because the statechange
-    // event gets queued, meanwhile the underlying worker may have gone into the waiting
-    // state and will be immediately activated if possible.
+    // Tại thời điểm này, swr.waiting HOẶC swr.active có thể là true. Điều này là do sự kiện statechange
+    // được đưa vào hàng đợi, trong khi đó worker cơ bản có thể đã chuyển sang trạng thái waiting
+    // và sẽ được kích hoạt ngay lập tức nếu có thể.
   };
 });
 ```
