@@ -280,6 +280,25 @@ Reviewed pages:
 
 Rechecked the `AudioDecoder` family against the English source after the previous verification. The Vietnamese pages remain aligned, and no page-level edits were necessary.
 
+## Batch 28
+
+Checked the `AudioParam` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
+
+Reviewed pages:
+
+1. `Web/API/AudioParam`
+2. `Web/API/AudioParam/value`
+3. `Web/API/AudioParam/setValueAtTime`
+4. `Web/API/AudioParam/linearRampToValueAtTime`
+5. `Web/API/AudioParam/exponentialRampToValueAtTime`
+6. `Web/API/AudioParam/setTargetAtTime`
+7. `Web/API/AudioParam/setValueCurveAtTime`
+8. `Web/API/AudioParam/cancelScheduledValues`
+9. `Web/API/AudioParam/cancelAndHoldAtTime`
+10. `Web/API/AudioParam/defaultValue`
+11. `Web/API/AudioParam/maxValue`
+12. `Web/API/AudioParam/minValue`
+
 ## Batch 27
 
 Checked the `AudioListener` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
