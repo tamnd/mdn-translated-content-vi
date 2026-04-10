@@ -7,38 +7,38 @@ browser-compat: api.Clipboard
 
 {{APIRef("Clipboard API")}}{{SecureContext_Header}}
 
-Giao diện **`Clipboard`** của [Clipboard API](/en-US/docs/Web/API/Clipboard_API) cung cấp quyền truy cập đọc và ghi vào nội dung của bảng nhớ tạm hệ thống.
+Giao diện **`Clipboard`** của [API Clipboard](/en-US/docs/Web/API/Clipboard_API) cung cấp khả năng đọc và ghi vào nội dung của clipboard hệ thống.
 Điều này cho phép ứng dụng web triển khai các tính năng cắt, sao chép và dán.
 
 {{InheritanceDiagram}}
 
-Bảng nhớ tạm hệ thống được cung cấp thông qua thuộc tính toàn cục {{domxref("Navigator.clipboard")}}.
+Clipboard hệ thống được truy cập thông qua thuộc tính toàn cục {{domxref("Navigator.clipboard")}}.
 
-Tất cả các phương thức của Clipboard API đều hoạt động bất đồng bộ; chúng trả về một {{jsxref("Promise")}} được giải quyết sau khi việc truy cập bảng nhớ tạm hoàn tất.
-Promise sẽ bị từ chối nếu quyền truy cập bảng nhớ tạm không được cấp.
+Tất cả các phương thức của Clipboard API hoạt động bất đồng bộ; chúng trả về một {{jsxref("Promise")}} sẽ được phân giải khi việc truy cập clipboard hoàn tất.
+Promise sẽ bị từ chối nếu việc truy cập clipboard bị từ chối.
 
-Mọi phương thức đều yêu cầu [ngữ cảnh bảo mật](/en-US/docs/Web/Security/Defenses/Secure_Contexts).
-Các yêu cầu bổ sung khi sử dụng API này được thảo luận trong phần [Lưu ý về bảo mật](/en-US/docs/Web/API/Clipboard_API#security_considerations) của trang tổng quan API.
+Tất cả các phương thức đều yêu cầu [secure context](/en-US/docs/Web/Security/Defenses/Secure_Contexts).
+Các yêu cầu bổ sung để sử dụng API được thảo luận trong phần [Consideration về bảo mật](/en-US/docs/Web/API/Clipboard_API#security_considerations) của chủ đề tổng quan API.
 
-## Phương thức thể hiện
+## Phương thức instance
 
-_`Clipboard` dựa trên giao diện {{domxref("EventTarget")}} và bao gồm các phương thức của giao diện đó._
+_`Clipboard` dựa trên giao diện {{domxref("EventTarget")}}, và bao gồm các phương thức của nó._
 
 - {{domxref("Clipboard.read()","read()")}}
-  - : Yêu cầu dữ liệu bất kỳ (chẳng hạn như hình ảnh) từ bảng nhớ tạm, trả về một {{jsxref("Promise")}} được giải quyết với một mảng các đối tượng {{domxref("ClipboardItem")}} chứa nội dung của bảng nhớ tạm.
+  - : Yêu cầu dữ liệu tùy ý (chẳng hạn như hình ảnh) từ clipboard, trả về một {{jsxref("Promise")}} phân giải với mảng các đối tượng {{domxref("ClipboardItem")}} chứa nội dung của clipboard.
 - {{domxref("Clipboard.readText()","readText()")}}
-  - : Yêu cầu văn bản từ bảng nhớ tạm hệ thống, trả về một {{jsxref("Promise")}} được hoàn thành bằng một chuỗi chứa văn bản trên bảng nhớ tạm khi nó sẵn sàng.
+  - : Yêu cầu văn bản từ clipboard hệ thống, trả về một {{jsxref("Promise")}} được phân giải với chuỗi chứa văn bản của clipboard khi nó sẵn sàng.
 - {{domxref("Clipboard.write()","write()")}}
-  - : Ghi dữ liệu bất kỳ vào bảng nhớ tạm hệ thống, trả về một {{jsxref("Promise")}} được giải quyết khi thao tác hoàn tất.
+  - : Ghi dữ liệu tùy ý vào clipboard hệ thống, trả về một {{jsxref("Promise")}} phân giải khi thao tác hoàn tất.
 - {{domxref("Clipboard.writeText()","writeText()")}}
-  - : Ghi văn bản vào bảng nhớ tạm hệ thống, trả về một {{jsxref("Promise")}} được giải quyết sau khi văn bản đã được sao chép hoàn toàn vào bảng nhớ tạm.
+  - : Ghi văn bản vào clipboard hệ thống, trả về một {{jsxref("Promise")}} được phân giải khi văn bản đã được sao chép hoàn toàn vào clipboard.
 
 ## Sự kiện
 
 - {{domxref("Clipboard.clipboardchange_event","clipboardchange")}} {{experimental_inline}}
-  - : Được kích hoạt khi nội dung bảng nhớ tạm hệ thống thay đổi theo bất kỳ cách nào, ví dụ thông qua lệnh sao chép của hệ thống hoặc qua một phương thức API như {{domxref("Clipboard.writeText()")}}.
+  - : Được kích hoạt khi nội dung clipboard hệ thống thay đổi theo bất kỳ cách nào, ví dụ qua lệnh sao chép của hệ thống, hoặc qua phương thức API như {{domxref("Clipboard.writeText()")}}.
 
-## Thông số kỹ thuật
+## Các đặc tả kỹ thuật
 
 {{Specifications}}
 

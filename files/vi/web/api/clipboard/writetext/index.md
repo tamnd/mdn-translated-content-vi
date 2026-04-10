@@ -8,7 +8,7 @@ browser-compat: api.Clipboard.writeText
 
 {{APIRef("Clipboard API")}} {{securecontext_header}}
 
-Phương thức **`writeText()`** của giao diện {{domxref("Clipboard")}} ghi văn bản được chỉ định vào bảng nhớ tạm hệ thống, trả về một {{jsxref("Promise")}} được giải quyết sau khi bảng nhớ tạm hệ thống đã được cập nhật.
+Phương thức **`writeText()`** của giao diện {{domxref("Clipboard")}} ghi văn bản đã chỉ định vào clipboard hệ thống, trả về một {{jsxref("Promise")}} được phân giải khi clipboard hệ thống được cập nhật.
 
 ## Cú pháp
 
@@ -19,26 +19,26 @@ writeText(newClipText)
 ### Tham số
 
 - `newClipText`
-  - : Chuỗi sẽ được ghi vào bảng nhớ tạm.
+  - : Chuỗi sẽ được ghi vào clipboard.
 
 ### Giá trị trả về
 
-Một {{jsxref("Promise")}} được giải quyết sau khi nội dung bảng nhớ tạm đã được cập nhật.
+Một {{jsxref("Promise")}} được phân giải khi nội dung của clipboard đã được cập nhật.
 
 ### Ngoại lệ
 
 - `NotAllowedError` {{domxref("DOMException")}}
-  - : Được ném ra nếu không được phép ghi vào bảng nhớ tạm.
+  - : Ném ra nếu việc ghi vào clipboard không được cho phép.
 
-## Lưu ý về bảo mật
+## Consideration về bảo mật
 
-Việc ghi vào bảng nhớ tạm chỉ có thể được thực hiện trong [ngữ cảnh bảo mật](/en-US/docs/Web/Security/Defenses/Secure_Contexts).
+Việc ghi vào clipboard chỉ có thể được thực hiện trong [secure context](/en-US/docs/Web/Security/Defenses/Secure_Contexts).
 
-Các yêu cầu bảo mật bổ sung được trình bày trong phần [Lưu ý về bảo mật](/en-US/docs/Web/API/Clipboard_API#security_considerations) của trang tổng quan API.
+Các yêu cầu bảo mật bổ sung được đề cập trong phần [Consideration về bảo mật](/en-US/docs/Web/API/Clipboard_API#security_considerations) của chủ đề tổng quan API.
 
 ## Ví dụ
 
-Ví dụ này đặt nội dung của bảng nhớ tạm thành chuỗi "\<empty clipboard>".
+Ví dụ này đặt nội dung của clipboard thành chuỗi "\<empty clipboard>".
 
 ```js
 button.addEventListener("click", () => writeClipboardText("<empty clipboard>"));
@@ -52,7 +52,7 @@ async function writeClipboardText(text) {
 }
 ```
 
-## Thông số kỹ thuật
+## Các đặc tả kỹ thuật
 
 {{Specifications}}
 
@@ -62,8 +62,8 @@ async function writeClipboardText(text) {
 
 ## Xem thêm
 
-- [Clipboard API](/en-US/docs/Web/API/Clipboard_API)
-- [Image support for Async Clipboard article](https://web.dev/articles/async-clipboard)
+- [API Clipboard](/en-US/docs/Web/API/Clipboard_API)
+- [Bài viết về hỗ trợ hình ảnh cho Async Clipboard](https://web.dev/articles/async-clipboard)
 - {{domxref("Clipboard.write()")}}
 - {{domxref("Clipboard.read()")}}
 - {{domxref("Clipboard.readText()")}}

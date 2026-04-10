@@ -8,10 +8,10 @@ browser-compat: api.Clipboard.read
 
 {{APIRef("Clipboard API")}} {{securecontext_header}}
 
-Phương thức **`read()`** của giao diện {{domxref("Clipboard")}} yêu cầu một bản sao nội dung của bảng nhớ tạm, hoàn thành {{jsxref("Promise")}} được trả về với dữ liệu đó.
+Phương thức **`read()`** của giao diện {{domxref("Clipboard")}} yêu cầu bản sao nội dung của clipboard, phân giải {{jsxref("Promise")}} trả về với dữ liệu.
 
-Về lý thuyết, phương thức này có thể trả về dữ liệu tùy ý (không giống {{domxref("Clipboard.readText", "readText()")}}, vốn chỉ có thể trả về văn bản).
-Trình duyệt thường hỗ trợ đọc dữ liệu văn bản, HTML và hình ảnh PNG.
+Về lý thuyết, phương thức này có thể trả về dữ liệu tùy ý (khác với {{domxref("Clipboard.readText", "readText()")}}, chỉ có thể trả về văn bản).
+Các trình duyệt thường hỗ trợ đọc văn bản, HTML và dữ liệu hình ảnh PNG.
 
 ## Cú pháp
 
@@ -25,37 +25,37 @@ read(formats)
 - `formats` {{optional_inline}}
   - : Một đối tượng tùy chọn với các thuộc tính sau:
     - `unsanitized` {{optional_inline}}
-      - : Một {{jsxref("Array")}} gồm các chuỗi chứa kiểu MIME của những định dạng dữ liệu không nên bị làm sạch khi đọc từ bảng nhớ tạm.
+      - : Một {{jsxref("Array")}} chuỗi chứa các kiểu MIME của các định dạng dữ liệu không nên được sanitizing khi đọc từ clipboard.
 
-        Một số trình duyệt có thể làm sạch dữ liệu trên bảng nhớ tạm khi đọc để ngăn nội dung độc hại bị dán vào tài liệu. Ví dụ, Chrome (và các trình duyệt khác dựa trên Chromium) làm sạch dữ liệu HTML bằng cách loại bỏ các thẻ `<script>` và nội dung có khả năng nguy hiểm khác. Hãy dùng mảng `unsanitized` để chỉ định danh sách các kiểu MIME không nên bị làm sạch.
+        Một số trình duyệt có thể sanitize dữ liệu clipboard khi nó được đọc, để ngăn chặn nội dung độc hại được dán vào tài liệu. Ví dụ: Chrome (và các trình duyệt dựa trên Chromium khác) sanitizes dữ liệu HTML bằng cách loại bỏ các thẻ `<script>` và các nội dung có khả năng nguy hiểm khác. Sử dụng mảng `unsanitized` để chỉ định danh sách các kiểu MIME không nên được sanitizing.
 
 ### Giá trị trả về
 
-Một {{jsxref("Promise")}} được giải quyết với một mảng các đối tượng {{domxref("ClipboardItem")}} chứa nội dung của bảng nhớ tạm.
+Một {{jsxref("Promise")}} phân giải với mảng các đối tượng {{domxref("ClipboardItem")}} chứa nội dung của clipboard.
 
 ### Ngoại lệ
 
 - `NotAllowedError` {{domxref("DOMException")}}
-  - : Được ném ra nếu không được phép đọc từ bảng nhớ tạm.
+  - : Ném ra nếu việc đọc từ clipboard không được cho phép.
 
-## Lưu ý về bảo mật
+## Consideration về bảo mật
 
-Việc đọc từ bảng nhớ tạm chỉ có thể được thực hiện trong [ngữ cảnh bảo mật](/en-US/docs/Web/Security/Defenses/Secure_Contexts).
+Việc đọc từ clipboard chỉ có thể được thực hiện trong [secure context](/en-US/docs/Web/Security/Defenses/Secure_Contexts).
 
-Các yêu cầu bảo mật bổ sung được trình bày trong phần [Lưu ý về bảo mật](/en-US/docs/Web/API/Clipboard_API#security_considerations) của trang tổng quan API.
+Các yêu cầu bảo mật bổ sung được đề cập trong phần [Consideration về bảo mật](/en-US/docs/Web/API/Clipboard_API#security_considerations) của chủ đề tổng quan API.
 
 ## Ví dụ
 
-### Đọc dữ liệu hình ảnh từ bảng nhớ tạm
+### Đọc dữ liệu hình ảnh từ clipboard
 
-Ví dụ này sử dụng phương thức `read()` để đọc dữ liệu hình ảnh từ bảng nhớ tạm và dán nó vào một phần tử {{HTMLElement("img")}}.
+Ví dụ này sử dụng phương thức `read()` để đọc dữ liệu hình ảnh từ clipboard và dán nó vào phần tử {{HTMLElement("img")}}.
 
 #### HTML
 
 ```html
-<img id="source" src="butterfly.jpg" alt="Một con bướm" />
-<img id="destination" src="" alt="Hình ảnh đã dán" />
-<button id="reload" type="button">Tải lại</button>
+<img id="source" src="butterfly.jpg" alt="A butterfly" />
+<img id="destination" src="" alt="Pasted image" />
+<button id="reload" type="button">Reload</button>
 <p id="log"></p>
 ```
 
@@ -76,16 +76,16 @@ img {
 
 #### JavaScript
 
-Đoạn mã này cung cấp cách ghi lại mọi lỗi vào phần tử có id là `log`.
+Mã này cung cấp cơ chế ghi lại bất kỳ lỗi nào vào phần tử có id `log`.
 
 ```js
 const logElement = document.querySelector("#log");
 function log(text) {
-  logElement.innerText = `Lỗi: ${text}`;
+  logElement.innerText = `Error: ${text}`;
 }
 ```
 
-Chúng ta cũng thêm mã để tải lại và xóa ví dụ khi nút "Tải lại" được nhấn.
+Chúng ta cũng thêm mã để tải lại và xóa ví dụ khi nhấn nút "Reload".
 
 ```js
 const reload = document.querySelector("#reload");
@@ -95,8 +95,8 @@ reload.addEventListener("click", () => {
 });
 ```
 
-Phần mã còn lại sẽ đọc bảng nhớ tạm khi phần tử đích được nhấp vào và sao chép dữ liệu hình ảnh vào phần tử `destinationImage`.
-Nó ghi lại lỗi nếu không thể sử dụng phương thức `read()`, hoặc nếu bảng nhớ tạm không chứa dữ liệu ở định dạng PNG.
+Phần mã còn lại đọc clipboard khi phần tử đích được nhấp và sao chép dữ liệu hình ảnh vào phần tử `destinationImage`.
+Nó ghi lại lỗi nếu không thể sử dụng phương thức `read()`, hoặc nếu clipboard không chứa dữ liệu ở định dạng PNG.
 
 ```js
 const destinationImage = document.querySelector("#destination");
@@ -107,7 +107,7 @@ async function pasteImage() {
     const clipboardContents = await navigator.clipboard.read();
     for (const item of clipboardContents) {
       if (!item.types.includes("image/png")) {
-        throw new Error("Bảng nhớ tạm không chứa dữ liệu hình ảnh PNG.");
+        throw new Error("Clipboard does not contain PNG image data.");
       }
       const blob = await item.getType("image/png");
       destinationImage.src = URL.createObjectURL(blob);
@@ -120,27 +120,27 @@ async function pasteImage() {
 
 #### Kết quả
 
-Hãy sao chép ảnh con bướm ở bên trái bằng cách nhấp chuột phải vào ảnh rồi chọn "Copy image" trong menu ngữ cảnh.
-Sau đó nhấp vào khung trống ở bên phải.
-Ví dụ sẽ lấy dữ liệu hình ảnh từ bảng nhớ tạm và hiển thị hình ảnh trong khung trống.
+Sao chép hình ảnh bướm bên trái bằng cách nhấp chuột phải vào hình ảnh và chọn "Copy image" từ menu ngữ cảnh.
+Sau đó nhấp vào khung trống bên phải.
+Ví dụ sẽ fetch dữ liệu hình ảnh từ clipboard và hiển thị hình ảnh trong khung trống.
 
 {{EmbedLiveSample("Reading image data from clipboard", "100%", "250", "", "", "", "clipboard-read")}}
 
 > [!NOTE]
-> Nếu được hỏi, hãy cấp quyền để dán hình ảnh.
+> Nếu được nhắc, hãy cấp quyền để dán hình ảnh.
 
-### Đọc dữ liệu từ bảng nhớ tạm
+### Đọc dữ liệu từ clipboard
 
-Ví dụ này sử dụng phương thức `read()` để đọc dữ liệu từ bảng nhớ tạm và ghi lại bất kỳ dữ liệu nào đang được lưu trong bảng nhớ tạm.
+Ví dụ này sử dụng phương thức `read()` để đọc dữ liệu từ clipboard và ghi lại bất kỳ dữ liệu nào được lưu trữ trong clipboard.
 
-Ví dụ này khác với phiên bản trước ở chỗ nó sẽ hiển thị các đối tượng {{domxref("ClipboardItem")}} là văn bản, HTML và hình ảnh (thay vì chỉ hiển thị hình ảnh).
+Điều này khác với phiên bản trước ở chỗ nó sẽ hiển thị các đối tượng {{domxref("ClipboardItem")}} văn bản, HTML và hình ảnh (thay vì chỉ hình ảnh).
 
 #### HTML
 
 ```html
-<img id="source_jpg" src="butterfly.jpg" alt="Ảnh bướm JPG" />
-<div id="destination">Nhấp vào đây để sao chép dữ liệu bảng nhớ tạm.</div>
-<button id="reload" type="button">Tải lại</button>
+<img id="source_jpg" src="butterfly.jpg" alt="JPG butterfly image" />
+<div id="destination">Nhấp vào đây để sao chép dữ liệu clipboard.</div>
+<button id="reload" type="button">Reload</button>
 <p id="log"></p>
 ```
 
@@ -169,16 +169,16 @@ img {
 
 #### JavaScript
 
-Đoạn mã này cung cấp cách ghi lại mọi lỗi vào phần tử có id là `log`.
+Mã này cung cấp cơ chế ghi lại bất kỳ lỗi nào vào phần tử có id `log`.
 
 ```js
 const logElement = document.querySelector("#log");
 function log(text) {
-  logElement.innerText = `Lỗi: ${text}`;
+  logElement.innerText = `Error: ${text}`;
 }
 ```
 
-Chúng ta cũng thêm mã để tải lại và xóa ví dụ khi nút "Tải lại" được nhấn.
+Chúng ta cũng thêm mã để tải lại và xóa ví dụ khi nhấn nút "Reload".
 
 ```js
 const reload = document.querySelector("#reload");
@@ -188,25 +188,25 @@ reload.addEventListener("click", () => {
 });
 ```
 
-Phần mã còn lại sẽ đọc bảng nhớ tạm khi phần tử đích được nhấp vào và hiển thị từng phần tử {{domxref("ClipboardItem")}} cùng với kiểu MIME của nó.
-Nó ghi lại lỗi nếu không thể sử dụng phương thức `read()`, hoặc nếu bảng nhớ tạm chứa bất kỳ kiểu MIME nào khác.
+Phần mã còn lại đọc clipboard khi phần tử đích được nhấp và hiển thị từng phần tử {{domxref("ClipboardItem")}} cùng với kiểu MIME của nó.
+Nó ghi lại lỗi nếu không thể sử dụng phương thức `read()`, hoặc nếu clipboard chứa bất kỳ kiểu MIME nào khác.
 
 ```js
 const destinationDiv = document.querySelector("#destination");
 destinationDiv.addEventListener("click", pasteData);
 
 async function pasteData() {
-  destinationDiv.innerText = ""; // Xóa văn bản bên trong
+  destinationDiv.innerText = ""; // Xóa inner text
   try {
     const clipboardContents = await navigator.clipboard.read();
     for (const item of clipboardContents) {
       for (const mimeType of item.types) {
         const mimeTypeElement = document.createElement("p");
-        mimeTypeElement.innerText = `Kiểu MIME: ${mimeType}`;
+        mimeTypeElement.innerText = `MIME type: ${mimeType}`;
         destinationDiv.appendChild(mimeTypeElement);
         if (mimeType === "image/png") {
           const pngImage = new Image();
-          pngImage.alt = "Hình PNG từ bảng nhớ tạm";
+          pngImage.alt = "PNG image from clipboard";
           const blob = await item.getType("image/png");
           pngImage.src = URL.createObjectURL(blob);
           destinationDiv.appendChild(pngImage);
@@ -223,7 +223,7 @@ async function pasteData() {
           clipPlain.innerText = blobText;
           destinationDiv.appendChild(clipPlain);
         } else {
-          throw new Error(`${mimeType} không được hỗ trợ.`);
+          throw new Error(`${mimeType} not supported.`);
         }
       }
     }
@@ -235,20 +235,20 @@ async function pasteData() {
 
 #### Kết quả
 
-Hãy sao chép một ít văn bản hoặc ảnh con bướm (JPG) bên dưới (để sao chép ảnh, hãy nhấp chuột phải vào ảnh rồi chọn "Copy image" trong menu ngữ cảnh).
-Chọn khung được chỉ định bên dưới để dán thông tin này từ bảng nhớ tạm vào trong khung.
+Sao chép một số văn bản hoặc hình ảnh bướm (JPG) bên dưới (để sao chép hình ảnh, nhấp chuột phải vào chúng và chọn "Copy image" từ menu ngữ cảnh).
+Chọn khung được chỉ dẫn bên dưới để dán thông tin này từ clipboard vào khung.
 
 {{EmbedLiveSample("Reading data from the clipboard", "100%", "500", "", "", "", "clipboard-read")}}
 
 Lưu ý:
 
-- Dù ảnh con bướm là tệp JPG, khi đọc từ bảng nhớ tạm nó sẽ là PNG.
-- Nếu được hỏi, bạn sẽ cần cấp quyền để dán hình ảnh.
-- Điều này có thể không hoạt động trên các trình duyệt Chromium vì khung mẫu không được cấp quyền [Permissions-Policy](/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy) `clipboard-read` và `clipboard-write` ([được các trình duyệt Chromium yêu cầu](/en-US/docs/Web/API/Clipboard_API#security_considerations)).
+- Mặc dù hình ảnh bướm là tệp JPG, khi đọc từ clipboard nó là PNG.
+- Nếu được nhắc, bạn sẽ cần cấp quyền để dán hình ảnh.
+- Điều này có thể không hoạt động trên các trình duyệt chromium vì khung mẫu không được cấp quyền [Permissions-Policy](/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy) `clipboard-read` và `clipboard-write` ([yêu cầu bởi trình duyệt Chromium](/en-US/docs/Web/API/Clipboard_API#security_considerations)).
 
-### Đọc HTML chưa làm sạch từ bảng nhớ tạm
+### Đọc HTML chưa sanitizing từ clipboard
 
-Ví dụ này sử dụng tham số `formats` để đọc dữ liệu HTML từ bảng nhớ tạm và lấy mã ở dạng ban đầu của nó, không để trình duyệt làm sạch trước.
+Ví dụ này sử dụng tham số `formats` để đọc dữ liệu HTML từ clipboard và nhận mã ở dạng ban đầu, mà không cần trình browser sanitize trước.
 
 #### HTML
 
@@ -297,7 +297,7 @@ copyButton.addEventListener("click", async () => {
   try {
     await navigator.clipboard.write(data);
   } catch (error) {
-    destinationTextarea.value = `Ghi vào bảng nhớ tạm thất bại: ${error}`;
+    destinationTextarea.value = `Clipboard write failed: ${error}`;
   }
 });
 
@@ -318,9 +318,9 @@ pasteButton.addEventListener("click", async () => {
     const clipboardContents = await navigator.clipboard.read();
     const html = await getHTMLFromClipboardContents(clipboardContents);
     destinationTextarea.value =
-      html || "Không tìm thấy dữ liệu HTML trong bảng nhớ tạm.";
+      html || "Could not find HTML data in the clipboard.";
   } catch (error) {
-    destinationTextarea.value = `Đọc bảng nhớ tạm thất bại: ${error}`;
+    destinationTextarea.value = `Clipboard read failed: ${error}`;
   }
 });
 
@@ -331,20 +331,20 @@ pasteUnsanitizedButton.addEventListener("click", async () => {
     });
     const html = await getHTMLFromClipboardContents(clipboardContents);
     destinationTextarea.value =
-      html || "Không tìm thấy dữ liệu HTML trong bảng nhớ tạm.";
+      html || "Could not find HTML data in the clipboard.";
   } catch (error) {
-    destinationTextarea.value = `Đọc bảng nhớ tạm thất bại: ${error}`;
+    destinationTextarea.value = `Clipboard read failed: ${error}`;
   }
 });
 ```
 
 #### Kết quả
 
-Trước tiên, hãy nhấp vào nút "Copy HTML" để ghi mã HTML từ textarea đầu tiên vào bảng nhớ tạm. Sau đó, nhấp vào nút "Paste HTML" hoặc nút "Paste unsanitized HTML" để dán mã HTML đã được làm sạch hoặc chưa được làm sạch vào textarea thứ hai.
+Đầu tiên nhấp vào nút "Copy HTML" để ghi mã HTML từ textarea đầu tiên vào clipboard. Sau đó nhấp vào nút "Paste HTML" hoặc nút "Paste unsanitized HTML" để dán mã HTML đã được sanitize hoặc chưa được sanitize vào textarea thứ hai.
 
 {{EmbedLiveSample("Reading unsanitized HTML from the clipboard", "100%", "250", "", "", "", "clipboard-read; clipboard-write")}}
 
-## Thông số kỹ thuật
+## Các đặc tả kỹ thuật
 
 {{Specifications}}
 
@@ -354,7 +354,7 @@ Trước tiên, hãy nhấp vào nút "Copy HTML" để ghi mã HTML từ textar
 
 ## Xem thêm
 
-- [Clipboard API](/en-US/docs/Web/API/Clipboard_API)
+- [API Clipboard](/en-US/docs/Web/API/Clipboard_API)
 - [Unblocking clipboard access](https://web.dev/articles/async-clipboard) trên web.dev
 - [Unsanitized HTML in the Async Clipboard API](https://developer.chrome.com/docs/web-platform/unsanitized-html-async-clipboard) trên developer.chrome.com
 - {{domxref("Clipboard.readText()")}}
