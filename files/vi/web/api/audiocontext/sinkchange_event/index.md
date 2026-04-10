@@ -12,7 +12,7 @@ browser-compat: api.AudioContext.sinkchange_event
 
 Sự kiện **`sinkchange`** của giao diện {{domxref("AudioContext")}} được kích hoạt khi thiết bị đầu ra âm thanh (và do đó là {{domxref("AudioContext.sinkId")}}) đã thay đổi.
 
-## Syntax
+## Cú pháp
 
 Dùng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc đặt một thuộc tính xử lý sự kiện.
 
@@ -22,13 +22,13 @@ addEventListener("sinkchange", (event) => { })
 onsinkchange = (event) => { }
 ```
 
-## Event type
+## Kiểu sự kiện
 
 {{domxref("Event")}}.
 
 {{InheritanceDiagram("Event")}}
 
-## Examples
+## Ví dụ
 
 Một trình nghe sự kiện `sinkchange` có thể được dùng để báo cáo việc thay đổi thiết bị đầu ra âm thanh. Lưu ý rằng nếu {{domxref("AudioContext.sinkId", "sinkId")}} chứa một đối tượng {{domxref("AudioSinkInfo")}}, điều đó cho biết âm thanh đã được đổi sang trạng thái không phát trên bất kỳ thiết bị đầu ra nào.
 
@@ -44,15 +44,15 @@ audioCtx.addEventListener("sinkchange", () => {
 
 Xem [ví dụ kiểm thử SetSinkId](https://mdn.github.io/dom-examples/audiocontext-setsinkid/) của chúng tôi để có mã hoạt động (đồng thời xem [mã nguồn](https://github.com/mdn/dom-examples/tree/main/audiocontext-setsinkid)).
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Change the destination output device in Web Audio](https://developer.chrome.com/blog/audiocontext-setsinkid/)
 - {{domxref("AudioContext.setSinkId()")}}

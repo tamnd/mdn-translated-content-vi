@@ -12,21 +12,21 @@ Phương thức `suspend()` của giao diện {{ domxref("AudioContext") }} tạ
 
 Phương thức này sẽ khiến ngoại lệ `INVALID_STATE_ERR` được ném ra nếu được gọi trên một {{domxref("OfflineAudioContext")}}.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 suspend()
 ```
 
-### Parameters
+### Tham số
 
 Không có.
 
-### Return value
+### Giá trị trả về
 
 Một {{jsxref("Promise")}} hoàn tất với {{jsxref('undefined')}}. Promise sẽ bị từ chối nếu ngữ cảnh đã bị đóng.
 
-## Examples
+## Ví dụ
 
 Đoạn mã sau được lấy từ [bản demo AudioContext states](https://github.com/mdn/webaudio-examples/blob/main/audiocontext-states/index.html) của chúng tôi ([xem chạy trực tiếp](https://mdn.github.io/webaudio-examples/audiocontext-states/).) Khi nút tạm dừng/tiếp tục được nhấn, {{domxref("BaseAudioContext/state", "AudioContext.state")}} được kiểm tra: nếu là `running` thì gọi `suspend()`; nếu là `suspended` thì gọi {{domxref("AudioContext/resume", "resume()")}}. Trong mỗi trường hợp, nhãn văn bản của nút được cập nhật tương ứng sau khi promise hoàn tất.
 
@@ -44,15 +44,15 @@ susResBtn.onclick = () => {
 };
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 - [Web Audio API](/en-US/docs/Web/API/Web_Audio_API)

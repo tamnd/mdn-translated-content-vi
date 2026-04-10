@@ -16,13 +16,13 @@ Phương thức **`setSinkId()`** của giao diện {{domxref("AudioContext")}} 
 
 Ngoài ra, tính năng này có thể bị chặn bởi [Permissions Policy](/en-US/docs/Web/HTTP/Guides/Permissions_Policy) [`speaker-selection`](/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy/speaker-selection).
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setSinkId(sinkId)
 ```
 
-### Parameters
+### Tham số
 
 - `sinkId`
   - : Sink ID của thiết bị mà bạn muốn đặt làm thiết bị đầu ra âm thanh. Giá trị này có thể thuộc một trong các kiểu sau:
@@ -31,13 +31,13 @@ setSinkId(sinkId)
     - `AudioSinkOptions`
       - : Một đối tượng biểu diễn các tùy chọn khác nhau cho sink ID. Hiện tại đối tượng này chỉ có một thuộc tính là `type` với giá trị `none`. Việc thiết lập tham số này khiến âm thanh được xử lý mà không phát qua bất kỳ thiết bị đầu ra âm thanh nào. Đây là một lựa chọn hữu ích để giảm tiêu thụ điện năng khi bạn không cần phát lại cùng với xử lý.
 
-### Return value
+### Giá trị trả về
 
 Một {{jsxref("Promise")}} hoàn tất với giá trị `undefined`.
 
 Việc cố đặt sink ID thành chính giá trị hiện có của nó (tức giá trị được trả về bởi {{domxref("AudioContext.sinkId")}}) sẽ không ném lỗi, nhưng quá trình sẽ bị hủy ngay lập tức.
 
-### Exceptions
+### Ngoại lệ
 
 - `InvalidAccessError` {{domxref("DOMException")}}
   - : Được ném ra nếu việc truy cập thiết bị đầu ra âm thanh đã chọn thất bại.
@@ -46,7 +46,7 @@ Việc cố đặt sink ID thành chính giá trị hiện có của nó (tức 
 - `NotFoundError` {{domxref("DOMException")}}
   - : Được ném ra nếu `sinkId` được truyền vào không khớp với bất kỳ thiết bị âm thanh nào được tìm thấy trên hệ thống.
 
-## Examples
+## Ví dụ
 
 Trong [ví dụ kiểm thử SetSinkId](https://mdn.github.io/dom-examples/audiocontext-setsinkid/) của chúng tôi (hãy xem [mã nguồn](https://github.com/mdn/dom-examples/tree/main/audiocontext-setsinkid)), chúng tôi tạo một đồ thị âm thanh sinh ra một đoạn white noise dài ba giây bằng {{domxref("AudioBufferSourceNode")}}, đồng thời cho nó đi qua một {{domxref("GainNode")}} để giảm âm lượng bớt.
 
@@ -97,15 +97,15 @@ Chúng tôi cũng cung cấp cho người dùng một menu thả xuống để c
 
 Thiết bị đầu ra có thể được thay đổi trong khi đang phát âm thanh, cũng như trước hoặc giữa các lần phát.
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Change the destination output device in Web Audio](https://developer.chrome.com/blog/audiocontext-setsinkid/)
 - {{domxref("AudioContext.sinkId")}}

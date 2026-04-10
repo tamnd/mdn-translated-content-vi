@@ -14,26 +14,26 @@ Thuộc tính chỉ đọc **`outputLatency`** của giao diện {{domxref("Audi
 
 Giá trị này thay đổi tùy theo nền tảng và phần cứng hiện có.
 
-## Value
+## Giá trị
 
 Một số thực double biểu diễn độ trễ đầu ra theo giây.
 
-## Examples
+## Ví dụ
 
 ```js
 const audioCtx = new AudioContext();
 console.log(audioCtx.outputLatency);
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 - [Web Audio API](/en-US/docs/Web/API/Web_Audio_API)

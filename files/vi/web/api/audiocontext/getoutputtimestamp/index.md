@@ -16,24 +16,24 @@ Hai giá trị đó là:
   Về cơ bản, đây là thời gian tính từ khi audio context được tạo lần đầu.
 - `AudioTimestamp.performanceTime`: Giá trị ước tính của thời điểm frame mẫu tương ứng với giá trị `contextTime` được lưu đã được render bởi thiết bị đầu ra âm thanh, theo cùng đơn vị và cùng gốc thời gian với {{domxref("performance.now()")}}. Đây là thời gian tính từ khi tài liệu chứa audio context được render lần đầu.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getOutputTimestamp()
 ```
 
-### Parameters
+### Tham số
 
 Không có.
 
-### Return value
+### Giá trị trả về
 
 Một đối tượng `AudioTimestamp`, có các thuộc tính sau.
 
 - `contextTime`: Một thời điểm trong hệ tọa độ thời gian của {{domxref("BaseAudioContext/currentTime","currentTime")}} đối với `BaseAudioContext`; tức là thời gian sau khi audio context được tạo lần đầu.
 - `performanceTime`: Một thời điểm trong hệ tọa độ thời gian của giao diện `Performance`; tức là thời gian sau khi tài liệu chứa audio context được render lần đầu.
 
-## Examples
+## Ví dụ
 
 Trong đoạn mã sau, chúng ta bắt đầu phát một tệp âm thanh sau khi người dùng nhấn nút phát, và đồng thời khởi động một vòng lặp `requestAnimationFrame` liên tục xuất `contextTime` và `performanceTime`.
 
@@ -68,10 +68,10 @@ function outputTimestamps() {
 }
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}

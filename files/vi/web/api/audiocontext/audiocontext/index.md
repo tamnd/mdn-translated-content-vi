@@ -10,14 +10,14 @@ browser-compat: api.AudioContext.AudioContext
 
 Hàm tạo **`AudioContext()`** tạo một đối tượng {{domxref("AudioContext")}} mới, đối tượng này biểu diễn một đồ thị xử lý âm thanh được tạo thành từ các mô-đun âm thanh liên kết với nhau, mỗi mô-đun được biểu diễn bởi một {{domxref("AudioNode")}}.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 new AudioContext()
 new AudioContext(options)
 ```
 
-### Parameters
+### Tham số
 
 - `options` {{optional_inline}}
   - : Một đối tượng dùng để cấu hình ngữ cảnh. Các thuộc tính khả dụng gồm:
@@ -41,16 +41,16 @@ new AudioContext(options)
         - Một chuỗi biểu diễn sink ID, ví dụ được lấy qua thuộc tính `deviceId` của các đối tượng {{domxref("MediaDeviceInfo")}} được trả về bởi {{domxref("MediaDevices.enumerateDevices()")}}.
         - Một đối tượng biểu diễn các tùy chọn khác nhau cho sink ID. Hiện tại, đối tượng này chỉ có một thuộc tính là `type` với giá trị `none`. Thiết lập tham số này khiến âm thanh được xử lý mà không phát qua bất kỳ thiết bị đầu ra âm thanh nào.
 
-### Return value
+### Giá trị trả về
 
 Một thể hiện {{domxref("AudioContext")}} mới.
 
-### Exceptions
+### Ngoại lệ
 
 - `NotSupportedError` {{domxref("DOMException")}}
   - : Được ném ra nếu `sampleRate` được chỉ định không được ngữ cảnh hỗ trợ.
 
-## Usage notes
+## Ghi chú sử dụng
 
 Đặc tả không đi quá sâu vào các chi tiết như user agent nên hỗ trợ bao nhiêu audio context, hoặc yêu cầu độ trễ tối thiểu hay tối đa (nếu có), vì vậy các chi tiết này có thể khác nhau giữa các trình duyệt. Hãy nhớ kiểm tra các giá trị đó nếu chúng quan trọng với bạn.
 
@@ -58,7 +58,7 @@ Một thể hiện {{domxref("AudioContext")}} mới.
 
 ### Google Chrome
 
-#### Giới hạn audio context trên mỗi tab trong Chrome
+#### Giới hạn audio context theo từng tab trong Chrome
 
 Trước phiên bản 66, Google Chrome chỉ hỗ trợ tối đa sáu audio context _trên mỗi tab_ cùng lúc.
 
@@ -69,7 +69,7 @@ Chrome ném ra ngoại lệ {{jsxref("TypeError")}} với thông báo
 "The provided value '...' is not a valid enum value of type
 AudioContextLatencyCategory".
 
-## Example
+## Ví dụ
 
 Ví dụ này tạo một {{domxref("AudioContext")}} mới cho âm thanh tương tác (tối ưu cho độ trễ), với tốc độ lấy mẫu 44,1 kHz và một đầu ra âm thanh cụ thể.
 
@@ -81,14 +81,14 @@ const audioCtx = new AudioContext({
 });
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Hàm tạo {{domxref("OfflineAudioContext.OfflineAudioContext()", "OfflineAudioContext()")}}

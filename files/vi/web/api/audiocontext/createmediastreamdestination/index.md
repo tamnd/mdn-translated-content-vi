@@ -14,21 +14,21 @@ Phương thức `createMediaStreamDestination()` của giao diện {{ domxref("A
 
 Để biết thêm chi tiết về các media stream destination node, hãy xem trang tham chiếu {{domxref("MediaStreamAudioDestinationNode")}}.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 createMediaStreamDestination()
 ```
 
-### Parameters
+### Tham số
 
 Không có.
 
-### Return value
+### Giá trị trả về
 
 Một {{domxref("MediaStreamAudioDestinationNode")}}.
 
-## Examples
+## Ví dụ
 
 Trong ví dụ đơn giản sau, chúng ta tạo một {{domxref("MediaStreamAudioDestinationNode")}}, một {{ domxref("OscillatorNode") }} và một {{ domxref("MediaRecorder") }} (vì vậy ví dụ hiện tại chỉ hoạt động trong Firefox và Chrome). `MediaRecorder` được thiết lập để ghi thông tin từ `MediaStreamDestinationNode`.
 
@@ -78,14 +78,14 @@ mediaRecorder.onstop = (evt) => {
 > [!NOTE]
 > Bạn có thể [xem ví dụ này trực tiếp](https://mdn.github.io/webaudio-examples/create-media-stream-destination/index.html), hoặc [nghiên cứu mã nguồn](https://github.com/mdn/webaudio-examples/blob/main/create-media-stream-destination/index.html) trên GitHub.
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)

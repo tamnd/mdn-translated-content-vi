@@ -12,22 +12,22 @@ Phương thức `createMediaElementSource()` của giao diện {{ domxref("Audio
 
 Để biết thêm chi tiết về các media element audio source node, hãy xem trang tham chiếu {{ domxref("MediaElementAudioSourceNode") }}.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 createMediaElementSource(myMediaElement)
 ```
 
-### Parameters
+### Tham số
 
 - `myMediaElement`
   - : Một đối tượng {{domxref("HTMLMediaElement")}} mà bạn muốn đưa vào đồ thị xử lý âm thanh để thao tác.
 
-### Return value
+### Giá trị trả về
 
 Một {{domxref("MediaElementAudioSourceNode")}}.
 
-## Examples
+## Ví dụ
 
 Ví dụ đơn giản này tạo một nguồn từ phần tử {{htmlelement("audio") }} bằng `createMediaElementSource()`, sau đó đưa âm thanh qua một {{ domxref("GainNode") }} trước khi chuyển tới {{ domxref("AudioDestinationNode") }} để phát. Khi con trỏ chuột di chuyển, hàm `updatePage()` được gọi và tính gain hiện tại theo tỉ lệ giữa vị trí Y của chuột và chiều cao tổng thể của cửa sổ. Vì vậy, bạn có thể tăng hoặc giảm âm lượng nhạc đang phát bằng cách di chuyển con trỏ chuột lên xuống.
 
@@ -69,14 +69,14 @@ gainNode.connect(audioCtx.destination);
 > [!NOTE]
 > Do hệ quả của việc gọi `createMediaElementSource()`, việc phát âm thanh từ {{domxref("HTMLMediaElement")}} sẽ được định tuyến lại vào đồ thị xử lý của AudioContext. Vì vậy, bạn vẫn có thể phát/tạm dừng phương tiện thông qua API của phần tử phương tiện và các nút điều khiển trình phát.
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)

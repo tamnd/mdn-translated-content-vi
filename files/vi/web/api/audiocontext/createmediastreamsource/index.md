@@ -12,22 +12,22 @@ Phương thức `createMediaStreamSource()` của giao diện {{ domxref("AudioC
 
 Để biết thêm chi tiết về các media stream audio source node, hãy xem trang tham chiếu {{domxref("MediaStreamAudioSourceNode")}}.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 createMediaStreamSource(stream)
 ```
 
-### Parameters
+### Tham số
 
 - `stream`
   - : Một {{domxref("MediaStream")}} đóng vai trò nguồn âm thanh để đưa vào đồ thị xử lý âm thanh cho việc sử dụng và thao tác.
 
-### Return value
+### Giá trị trả về
 
 Một đối tượng {{domxref("MediaStreamAudioSourceNode")}} mới biểu diễn nút âm thanh có phương tiện được lấy từ media stream nguồn đã chỉ định.
 
-## Examples
+## Ví dụ
 
 Trong ví dụ này, chúng ta lấy một media stream (âm thanh + video) từ {{domxref("navigator.getUserMedia")}}, đưa phương tiện vào một phần tử {{htmlelement("video")}} để phát rồi tắt tiếng âm thanh, nhưng đồng thời cũng đưa âm thanh vào một {{domxref("MediaStreamAudioSourceNode")}}.
 Tiếp theo, chúng ta đưa nguồn âm thanh này vào một {{ domxref("BiquadFilterNode") }} low-pass (về cơ bản đóng vai trò như bộ tăng cường bass),
@@ -98,14 +98,14 @@ pre.textContent = myScript.textContent;
 > [!NOTE]
 > Do hệ quả của việc gọi `createMediaStreamSource()`, âm thanh từ media stream sẽ được định tuyến lại vào đồ thị xử lý của {{domxref("AudioContext")}}. Vì vậy, bạn vẫn có thể phát/tạm dừng luồng thông qua API của phần tử phương tiện và các nút điều khiển trình phát.
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)

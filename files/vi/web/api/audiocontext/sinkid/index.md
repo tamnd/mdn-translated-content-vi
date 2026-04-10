@@ -12,7 +12,7 @@ browser-compat: api.AudioContext.sinkId
 
 Thuộc tính chỉ đọc **`sinkId`** của giao diện {{domxref("AudioContext")}} trả về sink ID của thiết bị đầu ra âm thanh hiện tại.
 
-## Value
+## Giá trị
 
 Thuộc tính này trả về một trong các giá trị sau, tùy thuộc vào cách sink ID được đặt:
 
@@ -23,7 +23,7 @@ Thuộc tính này trả về một trong các giá trị sau, tùy thuộc vào
 - Một đối tượng {{domxref("AudioSinkInfo")}}
   - : Nếu sink ID được đặt dưới dạng đối tượng tùy chọn (bằng {{domxref("AudioContext.setSinkId", "setSinkId()")}} hoặc tùy chọn `sinkId` của hàm tạo {{domxref("AudioContext.AudioContext", "AudioContext()")}}), `sinkId` sẽ trả về một đối tượng {{domxref("AudioSinkInfo")}} phản ánh cùng các giá trị đã đặt trong đối tượng tùy chọn ban đầu.
 
-## Examples
+## Ví dụ
 
 Trong [ví dụ kiểm thử SetSinkId](https://mdn.github.io/dom-examples/audiocontext-setsinkid/) của chúng tôi (hãy xem [mã nguồn](https://github.com/mdn/dom-examples/tree/main/audiocontext-setsinkid)), chúng tôi tạo một đồ thị âm thanh sinh ra một đoạn white noise dài ba giây bằng {{domxref("AudioBufferSourceNode")}}, đồng thời cho nó đi qua một {{domxref("GainNode")}} để giảm âm lượng bớt. Chúng tôi cũng cung cấp cho người dùng một menu thả xuống để họ có thể thay đổi thiết bị đầu ra âm thanh.
 
@@ -54,15 +54,15 @@ playBtn.addEventListener("click", () => {
 });
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Change the destination output device in Web Audio](https://developer.chrome.com/blog/audiocontext-setsinkid/)
 - {{domxref("AudioContext.setSinkId()")}}

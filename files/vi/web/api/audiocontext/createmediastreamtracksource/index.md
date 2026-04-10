@@ -12,22 +12,22 @@ Phương thức **`createMediaStreamTrackSource()`** của giao diện {{domxref
 
 Điều này khác với {{domxref("AudioContext.createMediaStreamSource", "createMediaStreamSource()")}}, vốn tạo một {{domxref("MediaStreamAudioSourceNode")}} có âm thanh đến từ audio track trong một {{domxref("MediaStream")}} được chỉ định mà {{domxref("MediaStreamTrack.id", "id")}} của nó đứng đầu theo thứ tự từ điển.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 createMediaStreamTrackSource(track)
 ```
 
-### Parameters
+### Tham số
 
 - `track`
   - : {{domxref("MediaStreamTrack")}} sẽ được dùng làm nguồn cho toàn bộ dữ liệu âm thanh của nút mới.
 
-### Return value
+### Giá trị trả về
 
 Một đối tượng {{domxref("MediaStreamTrackAudioSourceNode")}} đóng vai trò nguồn cho dữ liệu âm thanh có trong audio track được chỉ định.
 
-## Examples
+## Ví dụ
 
 Trong ví dụ này, {{domxref("MediaDevices.getUserMedia", "getUserMedia()")}} được dùng để yêu cầu quyền truy cập micro của người dùng. Khi quyền truy cập đó đã có, một audio context được thiết lập và một {{domxref("MediaStreamTrackAudioSourceNode")}} được tạo bằng `createMediaStreamTrackSource()`, lấy âm thanh từ audio track đầu tiên trong luồng được `getUserMedia()` trả về.
 
@@ -60,15 +60,15 @@ navigator.mediaDevices
   });
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Web Audio API
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)

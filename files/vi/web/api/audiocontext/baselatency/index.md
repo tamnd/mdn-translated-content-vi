@@ -13,11 +13,11 @@ Thuộc tính chỉ đọc **`baseLatency`** của giao diện {{domxref("AudioC
 > [!NOTE]
 > Bạn có thể yêu cầu một mức độ trễ nhất định trong lúc {{domxref("AudioContext.AudioContext()", "khởi tạo", "", "true")}} bằng tùy chọn `latencyHint`, nhưng trình duyệt có thể bỏ qua tùy chọn này.
 
-## Value
+## Giá trị
 
 Một số thực double biểu diễn độ trễ cơ sở theo giây.
 
-## Examples
+## Ví dụ
 
 ```js
 // độ trễ mặc định ("interactive")
@@ -29,15 +29,15 @@ const audioCtx2 = new AudioContext({ latencyHint: "playback" });
 console.log(audioCtx2.baseLatency); // 0.15
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 - [Web Audio API](/en-US/docs/Web/API/Web_Audio_API)

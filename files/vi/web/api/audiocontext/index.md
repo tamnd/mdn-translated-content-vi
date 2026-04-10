@@ -13,12 +13,12 @@ Một ngữ cảnh âm thanh điều khiển cả việc tạo các nút mà nó
 
 {{InheritanceDiagram}}
 
-## Constructor
+## Hàm tạo
 
 - {{domxref("AudioContext.AudioContext", "AudioContext()")}}
   - : Tạo và trả về một đối tượng `AudioContext` mới.
 
-## Instance properties
+## Thuộc tính thể hiện
 
 _Cũng kế thừa các thuộc tính từ giao diện cha của nó, {{domxref("BaseAudioContext")}}._
 
@@ -29,7 +29,7 @@ _Cũng kế thừa các thuộc tính từ giao diện cha của nó, {{domxref(
 - {{domxref("AudioContext.sinkId")}} {{ReadOnlyInline}} {{Experimental_Inline}} {{SecureContext_Inline}}
   - : Trả về sink ID của thiết bị đầu ra âm thanh hiện tại.
 
-## Instance methods
+## Phương thức thể hiện
 
 _Cũng kế thừa các phương thức từ giao diện cha của nó, {{domxref("BaseAudioContext")}}._
 
@@ -52,12 +52,12 @@ _Cũng kế thừa các phương thức từ giao diện cha của nó, {{domxre
 - {{domxref("AudioContext.suspend()")}}
   - : Tạm dừng dòng thời gian trong ngữ cảnh âm thanh, tạm thời ngừng truy cập phần cứng âm thanh và giảm mức sử dụng CPU/pin trong quá trình đó.
 
-## Events
+## Sự kiện
 
 - {{domxref("AudioContext/sinkchange_event", "sinkchange")}} {{Experimental_Inline}}
   - : Kích hoạt khi thiết bị đầu ra âm thanh (và do đó là {{domxref("AudioContext.sinkId")}}) đã thay đổi.
 
-## Examples
+## Ví dụ
 
 Khai báo một audio context cơ bản:
 
@@ -70,15 +70,15 @@ const finish = audioCtx.destination;
 // etc.
 ```
 
-## Specifications
+## Thông số kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Tương thích trình duyệt
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 - {{domxref("OfflineAudioContext")}}
