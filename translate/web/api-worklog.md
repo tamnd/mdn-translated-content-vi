@@ -275,3 +275,7 @@ Reviewed pages:
 9. `Web/API/AudioDecoder/isConfigSupported_static`
 10. `Web/API/AudioDecoder/reset`
 11. `Web/API/AudioDecoder/state`
+
+## Batch 26
+
+Rechecked the `AudioDecoder` family against the English source after the previous verification. The Vietnamese pages remain aligned, and no page-level edits were necessary.
