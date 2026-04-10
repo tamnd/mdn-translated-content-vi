@@ -45,7 +45,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/websocketstream (6 trang)
 - [ ] api/webtransport (13 trang)
 - [x] api/eventsource (9 trang)
-- [ ] api/broadcastchannel (7 trang)
+- [x] api/broadcastchannel (7 trang)
 
 ## Lưu trữ [ưu tiên cao]
 

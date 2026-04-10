@@ -123,57 +123,6 @@ function writeToScreen(message) {
   pElem.textContent = message;
   output.appendChild(pElem);
 }
-
-if (!("WebSocketStream" in self)) {
-  writeToScreen("Trình duyệt của bạn không hỗ trợ WebSocketStream");
-} else {
-  const wsURL = "ws://127.0.0.1/";
-  const wss = new WebSocketStream(wsURL);
-
-  console.log(wss.url);
-
-  async function start() {
-    const { readable, writable, extensions, protocol } = await wss.opened;
-    writeToScreen("ĐÃ KẾT NỐI");
-    closeBtn.disabled = false;
-    const reader = readable.getReader();
-    const writer = writable.getWriter();
-
-    writer.write("ping");
-    writeToScreen("ĐÃ GỬI: ping");
-
-    while (true) {
-      const { value, done } = await reader.read();
-      writeToScreen(`ĐÃ NHẬN: ${value}`);
-      if (done) {
-        break;
-      }
-
-      setTimeout(() => {
-        writer.write("ping");
-        writeToScreen("ĐÃ GỬI: ping");
-      }, 5000);
-    }
-  }
-
-  start();
-
-  wss.closed.then((result) => {
-    writeToScreen(
-      `ĐÃ NGẮT KẾT NỐI: mã ${result.closeCode}, thông điệp "${result.reason}"`,
-    );
-    console.log("Socket closed", result.closeCode, result.reason);
-  });
-
-  closeBtn.addEventListener("click", () => {
-    wss.close({
-      closeCode: 1000,
-      reason: "That's all folks",
-    });
-
-    closeBtn.disabled = true;
-  });
-}
 ```
 
 Tiếp theo, chúng ta tạo một cấu trúc `if...else` để phát hiện tính năng `WebSocketStream` và hiển thị thông báo phù hợp trên các trình duyệt không hỗ trợ:
