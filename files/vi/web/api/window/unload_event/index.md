@@ -29,7 +29,7 @@ Please note that the unload event also follows the document tree: parent frame u
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("unload", (event) => { })
@@ -39,7 +39,7 @@ onunload = (event) => { }
 
 ## Kiểu sự kiện
 
-A generic {{domxref("Event")}}.
+Một {{domxref("Event")}} chung.
 
 ## Event handler aliases
 
@@ -115,7 +115,7 @@ Below, the content of `child-frame.html`:
 
 When the parent frame is unloaded, events will be fired in the order described by the `console.log()` messages.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

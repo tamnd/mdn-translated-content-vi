@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức focus()"
+title: "Window: focus() method"
 short-title: focus()
 slug: Web/API/Window/focus
 page-type: web-api-instance-method
@@ -32,7 +32,7 @@ if (clicked) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

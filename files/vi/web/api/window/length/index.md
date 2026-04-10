@@ -23,7 +23,7 @@ if (window.length) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

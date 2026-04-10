@@ -16,7 +16,7 @@ This event is not cancelable and does not bubble.
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("gamepaddisconnected", (event) => { })
@@ -42,7 +42,7 @@ window.ongamepaddisconnected = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

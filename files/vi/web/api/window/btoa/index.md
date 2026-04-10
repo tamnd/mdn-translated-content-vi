@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức btoa()"
+title: "Window: btoa() method"
 short-title: btoa()
 slug: Web/API/Window/btoa
 page-type: web-api-instance-method
@@ -116,7 +116,7 @@ await dataUrlToBytes("data:application/octet-stream;base64,AAEC"); // Uint8Array
 > [!NOTE]
 > For supporting environments, also consider the native {{jsxref("Uint8Array.fromBase64()")}}, {{jsxref("Uint8Array.prototype.toBase64()")}}, and {{jsxref("Uint8Array.prototype.setFromBase64()")}} methods.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

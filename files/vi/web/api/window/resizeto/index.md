@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức resizeTo()"
+title: "Window: resizeTo() method"
 short-title: resizeTo()
 slug: Web/API/Window/resizeTo
 page-type: web-api-instance-method
@@ -43,7 +43,7 @@ function quarter() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

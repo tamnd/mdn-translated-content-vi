@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức scrollTo()"
+title: "Window: scrollTo() method"
 short-title: scrollTo()
 slug: Web/API/Window/scrollTo
 page-type: web-api-instance-method
@@ -67,7 +67,7 @@ and {{domxref("Window.scrollByPages()")}}.
 For scrolling elements, see {{domxref("Element.scrollTop")}} and
 {{domxref("Element.scrollLeft")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

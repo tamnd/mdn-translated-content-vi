@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức webkitConvertPointFromPageToNode()"
+title: "Window: webkitConvertPointFromPageToNode() method"
 short-title: webkitConvertPointFromPageToNode()
 slug: Web/API/Window/webkitConvertPointFromPageToNode
 page-type: web-api-instance-method
@@ -39,7 +39,7 @@ webkitConvertPointFromPageToNode(node, pagePoint)
 A `Point` object describing the specified location in the node's coordinate
 system.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This method was specified in [the defunct 20 March 2009 Working Draft of CSS 2D Transforms Module Level 3](https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320/). It is not present in the
 current CSS Transforms Module Level 1 Working Draft.

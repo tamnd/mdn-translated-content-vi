@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức matchMedia()"
+title: "Window: matchMedia() method"
 short-title: matchMedia()
 slug: Web/API/Window/matchMedia
 page-type: web-api-instance-method
@@ -91,7 +91,7 @@ A simple `<span>` to receive the output.
 
 See [Testing media queries programmatically](/en-US/docs/Web/CSS/Guides/Media_queries/Testing) for additional code examples.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

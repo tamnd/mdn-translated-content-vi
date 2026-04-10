@@ -16,7 +16,7 @@ This event works in much the same way as the {{domxref("Element")}} interface's 
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("scrollsnapchange", (event) => { })
@@ -66,7 +66,7 @@ window.addEventListener("scrollsnapchange", (event) => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -35,7 +35,7 @@ visible vertical scrollbar. Instead use
 {{domxref("element.scrollWidth","document.body.scrollWidth")}}. See also
 {{domxref("window.scrollMaxY")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This is not part of any specification.
 

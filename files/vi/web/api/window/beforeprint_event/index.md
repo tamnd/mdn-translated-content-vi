@@ -8,13 +8,13 @@ browser-compat: api.Window.beforeprint_event
 
 {{APIRef}}
 
-The **`beforeprint`** event is fired when the associated document is about to be printed or previewed for printing.
+Sự kiện **`beforeprint`** được kích hoạt khi tài liệu liên quan chuẩn bị được in hoặc xem trước khi in.
 
-The {{domxref("Window.afterprint_event", "afterprint")}} and `beforeprint` events allow pages to change their content before printing starts (perhaps to remove a banner, for example) and then revert those changes after printing has completed. In general, you should prefer the use of a [`@media print`](/en-US/docs/Web/CSS/Guides/Media_queries/Using#targeting_media_types) CSS at-rule, but it may be necessary to use these events in some cases.
+Các sự kiện {{domxref("Window.afterprint_event", "afterprint")}} và `beforeprint` cho phép các trang thay đổi nội dung trước khi bắt đầu in (ví dụ: để xóa biểu ngữ) và sau đó hoàn nguyên các thay đổi đó sau khi in xong. Nhìn chung, bạn nên ưu tiên sử dụng quy tắc CSS [`@media print`](/en-US/docs/Web/CSS/Guides/Media_queries/Using#targeting_media_types), nhưng có thể cần sử dụng các sự kiện này trong một số trường hợp.
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("beforeprint", (event) => { })
@@ -24,11 +24,11 @@ onbeforeprint = (event) => { }
 
 ## Kiểu sự kiện
 
-A generic {{domxref("Event")}}.
+Một {{domxref("Event")}} chung.
 
 ## Ví dụ
 
-Using `addEventListener()`:
+Sử dụng `addEventListener()`:
 
 ```js
 window.addEventListener("beforeprint", (event) => {
@@ -36,7 +36,7 @@ window.addEventListener("beforeprint", (event) => {
 });
 ```
 
-Using the `onbeforeprint` event handler property:
+Sử dụng thuộc tính trình xử lý sự kiện `onbeforeprint`:
 
 ```js
 window.onbeforeprint = (event) => {
@@ -44,7 +44,7 @@ window.onbeforeprint = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
@@ -54,4 +54,4 @@ window.onbeforeprint = (event) => {
 
 ## Xem thêm
 
-- Related events: {{domxref("Window/afterprint_event", "afterprint")}}
+- Các sự kiện liên quan: {{domxref("Window/afterprint_event", "afterprint")}}

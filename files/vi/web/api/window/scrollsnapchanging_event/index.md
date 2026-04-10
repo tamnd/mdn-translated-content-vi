@@ -16,7 +16,7 @@ This event works in much the same way as the {{domxref("Element")}} interface's 
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("scrollsnapchanging", (event) => { })
@@ -75,7 +75,7 @@ window.addEventListener("scrollsnapchanging", (event) => {
 
 At the start of the function, we select all elements that previously had the `pending` class applied and remove it, so that only the most recent pending snap target is styled.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

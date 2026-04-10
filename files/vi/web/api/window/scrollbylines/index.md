@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức scrollByLines()"
+title: "Window: scrollByLines() method"
 short-title: scrollByLines()
 slug: Web/API/Window/scrollByLines
 page-type: web-api-instance-method
@@ -45,7 +45,7 @@ document.getElementById("scroll-down").addEventListener("click", () => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This is not part of any specification.
 

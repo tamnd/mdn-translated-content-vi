@@ -8,18 +8,18 @@ browser-compat: api.Window.beforeinstallprompt_event
 
 {{APIRef}}
 
-Sự kiện **`beforeinstallprompt`** được kích hoạt khi trình duyệt phát hiện ra rằng một trang web có thể được [cài đặt dưới dạng Progressive Web App](/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable).
+The **`beforeinstallprompt`** event fires when the browser has detected that a website can be [installed as a Progressive Web App](/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable).
 
-Không có thời gian đảm bảo sự kiện này được kích hoạt, nhưng nó thường xảy ra khi tải trang.
+There's no guaranteed time this event is fired, but it usually happens on page load.
 
-Cách sử dụng điển hình cho sự kiện này là khi một ứng dụng web muốn cung cấp giao diện người dùng cài đặt riêng trong ứng dụng, thay vì giao diện chung do trình duyệt cung cấp. Điều này cho phép ứng dụng cung cấp thêm ngữ cảnh về ứng dụng, giải thích cho người dùng lý do tại sao họ có thể muốn cài đặt nó.
+The typical use for this event is when a web app wants to provide its own in-app UI inviting the user to install the app, rather than the generic one provided by the browser. This enables the app to provide more context about the app, explaining to the user why they might want to install it.
 
-Trong kịch bản này, trình xử lý cho sự kiện này sẽ:
+In this scenario, the handler for this event will:
 
-- Giữ tham chiếu đến đối tượng {{domxref("BeforeInstallPromptEvent")}} được truyền vào
-- Hiển thị giao diện cài đặt trong ứng dụng (mặc định nên ẩn vì không phải tất cả trình duyệt đều hỗ trợ cài đặt).
+- Keep a reference to the {{domxref("BeforeInstallPromptEvent")}} object that's passed into it
+- Reveal its in-app installation UI (this should be hidden by default, because not all browsers will support installation).
 
-Khi người dùng sử dụng giao diện cài đặt trong ứng dụng để cài đặt, giao diện cài đặt gọi phương thức {{domxref("BeforeInstallPromptEvent.prompt()", "prompt()")}} của đối tượng `BeforeInstallPromptEvent` đã lưu để hiển thị lời nhắc cài đặt.
+When the user uses the in-app installation UI to install the app, the in-app installation UI calls the {{domxref("BeforeInstallPromptEvent.prompt()", "prompt()")}} method of the retained `BeforeInstallPromptEvent` object to show the installation prompt.
 
 ## Cú pháp
 
@@ -33,37 +33,37 @@ onbeforeinstallprompt = (event) => { }
 
 ## Kiểu sự kiện
 
-Một {{domxref("BeforeInstallPromptEvent")}}. Kế thừa từ {{domxref("Event")}}.
+A {{domxref("BeforeInstallPromptEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("BeforeInstallPromptEvent")}}
 
-## Thuộc tính sự kiện
+## Event properties
 
-_Kế thừa thuộc tính từ cha, {{domxref("Event")}}._
+_Inherits properties from its parent, {{domxref("Event")}}._
 
 - {{domxref("BeforeInstallPromptEvent.platforms")}} {{ReadOnlyInline}}{{Non-standard_Inline}} {{Experimental_Inline}}
-  - : Trả về một mảng chuỗi chứa các nền tảng mà sự kiện được phân phối. Điều này được cung cấp cho các tác nhân người dùng muốn trình bày lựa chọn phiên bản cho người dùng, ví dụ: "web" hoặc "play" cho phép người dùng chọn giữa phiên bản web hoặc phiên bản Android.
+  - : Returns an array of string items containing the platforms on which the event was dispatched. This is provided for user agents that want to present a choice of versions to the user such as, for example, "web" or "play" which would allow the user to choose between a web version or an Android version.
 - {{domxref("BeforeInstallPromptEvent.userChoice")}} {{ReadOnlyInline}}{{Non-standard_Inline}} {{Experimental_Inline}}
-  - : Trả về một {{jsxref("Promise")}} giải quyết thành một đối tượng mô tả lựa chọn của người dùng khi được nhắc cài đặt ứng dụng.
+  - : Returns a {{jsxref("Promise")}} that resolves to an object describing the user's choice when they were prompted to install the app.
 
-## Phương thức sự kiện
+## Event methods
 
 - {{domxref("BeforeInstallPromptEvent.prompt()")}}{{Non-standard_Inline}} {{Experimental_Inline}}
-  - : Hiển thị lời nhắc hỏi người dùng có muốn cài đặt ứng dụng không. Phương thức này trả về một {{jsxref("Promise")}} giải quyết thành một đối tượng mô tả lựa chọn của người dùng khi được nhắc cài đặt ứng dụng.
+  - : Show a prompt asking the user if they want to install the app. This method returns a {{jsxref("Promise")}} that resolves to an object describing the user's choice when they were prompted to install the app.
 
 ## Ví dụ
 
-Trong ví dụ sau, ứng dụng cung cấp nút cài đặt riêng với `id` là `"install"`. Ban đầu nút này bị ẩn.
+In the following example an app provides its own install button, which has an `id` of `"install"`. Initially the button is hidden.
 
 ```html
-<button id="install" hidden>Cài đặt</button>
+<button id="install" hidden>Install</button>
 ```
 
-Trình xử lý `beforeinstallprompt`:
+The `beforeinstallprompt` handler:
 
-- Hủy sự kiện, điều này ngăn trình duyệt hiển thị giao diện cài đặt riêng trên một số nền tảng
-- Gán đối tượng `BeforeInstallPromptEvent` vào một biến để sử dụng sau
-- Hiển thị nút cài đặt của ứng dụng.
+- Cancels the event, which prevents the browser displaying its own install UI on some platforms
+- Assigns the `BeforeInstallPromptEvent` object to a variable, so it can be used later
+- Reveals the app's install button.
 
 ```js
 let installPrompt = null;
@@ -76,10 +76,10 @@ window.addEventListener("beforeinstallprompt", (event) => {
 });
 ```
 
-Khi được nhấp, nút cài đặt của ứng dụng sẽ:
+When clicked, the app's install button:
 
-- Gọi phương thức {{domxref("BeforeInstallPromptEvent.prompt()", "prompt()")}} của đối tượng sự kiện đã lưu, để kích hoạt lời nhắc cài đặt.
-- Đặt lại trạng thái bằng cách xóa biến `installPrompt` và ẩn nút lại.
+- Calls the {{domxref("BeforeInstallPromptEvent.prompt()", "prompt()")}} method of the stored event object, to trigger the installation prompt.
+- Resets its state by clearing the `installPrompt` variable and hiding itself again.
 
 ```js
 installButton.addEventListener("click", async () => {

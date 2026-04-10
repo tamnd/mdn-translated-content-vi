@@ -31,7 +31,7 @@ For security reasons the `History` object doesn't allow the non-privileged code 
 
 There is no way to clear the session history or to disable the back/forward navigation from unprivileged code. The closest available solution is the {{domxref("Location.replace", "location.replace()")}} method, which replaces the current item of the session history with the provided URL.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

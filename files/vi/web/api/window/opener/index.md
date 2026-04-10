@@ -61,7 +61,7 @@ leaves it [`null`](/en-US/docs/Web/JavaScript/Reference/Operators/null):
   loaded in a different browsing context, it won't have a reference to the opening
   window.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

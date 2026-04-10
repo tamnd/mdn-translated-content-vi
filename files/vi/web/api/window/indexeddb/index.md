@@ -30,7 +30,7 @@ function openDB() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

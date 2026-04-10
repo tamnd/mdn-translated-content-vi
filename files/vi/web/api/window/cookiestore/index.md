@@ -14,7 +14,7 @@ The **`cookieStore`** read-only property of the {{domxref("Window")}} interface 
 
 A {{domxref("CookieStore")}} object instance.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

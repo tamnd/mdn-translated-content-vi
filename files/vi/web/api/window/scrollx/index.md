@@ -37,7 +37,7 @@ if (window.scrollX > 400) {
 
 The `pageXOffset` property is an alias for the `scrollX` property. This means if you haven't re-assigned either property, `window.pageXOffset === window.scrollX` is always true.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

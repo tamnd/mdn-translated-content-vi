@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức moveTo()"
+title: "Window: moveTo() method"
 short-title: moveTo()
 slug: Web/API/Window/moveTo
 page-type: web-api-instance-method
@@ -43,7 +43,7 @@ function origin() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -20,7 +20,7 @@ status bar.
 
 A string.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

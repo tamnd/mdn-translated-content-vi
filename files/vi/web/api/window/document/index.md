@@ -20,7 +20,7 @@ A [document](/en-US/docs/Web/API/Document) object.
 console.log(window.document.title);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

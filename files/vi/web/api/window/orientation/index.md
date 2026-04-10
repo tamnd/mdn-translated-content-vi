@@ -16,7 +16,7 @@ Its only possible values are `-90`, `0`, `90`, and `180`. Positive values are co
 
 This property is deprecated. Use the {{domxref("Screen.orientation")}} property instead, available on the {{domxref("window.screen")}} property.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

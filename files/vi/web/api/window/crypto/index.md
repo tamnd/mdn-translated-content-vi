@@ -49,7 +49,7 @@ document.querySelector("button").addEventListener("click", genRandomNumbers);
 
 {{EmbedLiveSample('Examples')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

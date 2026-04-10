@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức queueMicrotask()"
+title: "Window: queueMicrotask() method"
 short-title: queueMicrotask()
 slug: Web/API/Window/queueMicrotask
 page-type: web-api-instance-method
@@ -73,7 +73,7 @@ MyElement.prototype.loadData = function (url) {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

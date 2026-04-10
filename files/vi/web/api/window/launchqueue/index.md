@@ -38,7 +38,7 @@ if ("launchQueue" in window) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

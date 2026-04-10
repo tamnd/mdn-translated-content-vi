@@ -16,7 +16,7 @@ Performance entries are per context. If you create a mark on the main thread (or
 
 A {{domxref("Performance")}} object offering access to performance and timing-related information about code running in the window's scope.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

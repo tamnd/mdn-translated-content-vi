@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức requestAnimationFrame()"
+title: "Window: requestAnimationFrame() method"
 short-title: requestAnimationFrame()
 slug: Web/API/Window/requestAnimationFrame
 page-type: web-api-instance-method
@@ -151,7 +151,7 @@ function animate() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

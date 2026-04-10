@@ -22,7 +22,7 @@ A {{domxref("Navigation")}} object instance.
 let currentNavEntries = window.navigation.entries();
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

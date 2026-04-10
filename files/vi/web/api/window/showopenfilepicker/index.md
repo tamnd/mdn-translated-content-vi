@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức showOpenFilePicker()"
+title: "Window: showOpenFilePicker() method"
 short-title: showOpenFilePicker()
 slug: Web/API/Window/showOpenFilePicker
 page-type: web-api-instance-method
@@ -106,7 +106,7 @@ async function getFile() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

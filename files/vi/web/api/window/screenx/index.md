@@ -75,7 +75,7 @@ if (!window.screenLeft) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

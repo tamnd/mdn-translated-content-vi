@@ -20,7 +20,7 @@ coordinates.
 
 The `window.mozInnerScreenY` property is a floating point, read-only value; it has no default value.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This feature is not part of any current specification. It is not on track to become a standard.
 

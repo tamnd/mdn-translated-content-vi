@@ -23,7 +23,7 @@ The following example shows how a window can retrieve cached data.
 caches.open("v1").then((cache) => cache.match("/list"));
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

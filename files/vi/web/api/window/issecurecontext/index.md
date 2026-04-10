@@ -14,7 +14,7 @@ The **`isSecureContext`** read-only property of the {{domxref("Window")}} interf
 
 A boolean.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -69,7 +69,7 @@ if (window.crossOriginIsolated) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

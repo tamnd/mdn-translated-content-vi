@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức moveBy()"
+title: "Window: moveBy() method"
 short-title: moveBy()
 slug: Web/API/Window/moveBy
 page-type: web-api-instance-method
@@ -45,7 +45,7 @@ function budge() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

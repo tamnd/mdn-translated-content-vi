@@ -15,7 +15,7 @@ The **`online`** event of the {{domxref("Window")}} interface is fired when the 
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("online", (event) => { })
@@ -25,7 +25,7 @@ ononline = (event) => { }
 
 ## Kiểu sự kiện
 
-A generic {{domxref("Event")}}.
+Một {{domxref("Event")}} chung.
 
 ## Event handler aliases
 
@@ -49,7 +49,7 @@ window.ononline = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

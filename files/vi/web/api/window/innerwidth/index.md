@@ -77,7 +77,7 @@ window.addEventListener("resize", updateSize);
 
 You can also {{LiveSampleLink('Demo', 'view the results of the demo code in a separate page')}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

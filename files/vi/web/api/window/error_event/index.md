@@ -14,7 +14,7 @@ This event is only generated for script errors thrown synchronously, such as dur
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("error", (event) => { })
@@ -171,7 +171,7 @@ scriptError.addEventListener("click", () => {
 
 {{ EmbedLiveSample('Live_example', '100%', '150px') }}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

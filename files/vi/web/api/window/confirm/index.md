@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức confirm()"
+title: "Window: confirm() method"
 short-title: confirm()
 slug: Web/API/Window/confirm
 page-type: web-api-instance-method
@@ -62,7 +62,7 @@ Dialog boxes are modal windows — they prevent the user from accessing the rest
 For this reason, you should not overuse any function that creates a dialog box or a modal window.
 Alternatively, a {{HTMLElement("dialog")}} element can be used for confirmations.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

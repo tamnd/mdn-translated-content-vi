@@ -33,7 +33,7 @@ await window.documentPictureInPicture.requestWindow({
 // …
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

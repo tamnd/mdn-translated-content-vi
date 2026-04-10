@@ -17,7 +17,7 @@ You _should_ avoid using this property in new code, and should instead use the {
 > [!NOTE]
 > This property can be fragile, in that there may be situations in which the returned `Event` is not the expected value. In addition, `Window.event` is not accurate for events dispatched within {{Glossary("shadow tree", "shadow trees")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -53,7 +53,7 @@ const browserName = getBrowserName(navigator.userAgent);
 console.log(`You are using: ${browserName}`);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

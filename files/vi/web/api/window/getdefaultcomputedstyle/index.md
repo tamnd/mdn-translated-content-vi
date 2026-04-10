@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức getDefaultComputedStyle()"
+title: "Window: getDefaultComputedStyle() method"
 short-title: getDefaultComputedStyle()
 slug: Web/API/Window/getDefaultComputedStyle
 page-type: web-api-instance-method
@@ -99,7 +99,7 @@ using the `:visited` pseudo-selector. See <https://blog.mozilla.org/security/201
 and <https://hacks.mozilla.org/2010/03/privacy-related-changes-coming-to-css-vistited/>
 for details of the examples of how this is implemented.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 Proposed to the CSS working group.
 

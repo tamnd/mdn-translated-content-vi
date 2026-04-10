@@ -21,7 +21,7 @@ An object containing a single property:
 - `visible` {{ReadOnlyInline}}
   - : A boolean property, `false` if this `Window` is a popup, and `true` otherwise.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -38,7 +38,7 @@ customElements.define(
 
 See our [web-components-examples](https://github.com/mdn/web-components-examples/) repo for more usage examples.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

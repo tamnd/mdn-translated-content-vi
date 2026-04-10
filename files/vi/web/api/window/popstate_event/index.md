@@ -12,7 +12,7 @@ The **`popstate`** event of the {{domxref("Window")}} interface is fired when th
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("popstate", (event) => { })
@@ -113,7 +113,7 @@ history.go(2); // Logs "location: http://example.com/example.html?page=3, state:
 
 Note that even though the original history entry (for `http://example.com/example.html`) has no state object associated with it, a `popstate` event is still fired when we activate that entry after the second call to `history.back()`.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

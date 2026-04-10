@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức scrollByPages()"
+title: "Window: scrollByPages() method"
 short-title: scrollByPages()
 slug: Web/API/Window/scrollByPages
 page-type: web-api-instance-method
@@ -39,7 +39,7 @@ window.scrollByPages(1);
 window.scrollByPages(-1);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 DOM Level 0. Not part of specification.
 

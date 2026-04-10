@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức setInterval()"
+title: "Window: setInterval() method"
 short-title: setInterval()
 slug: Web/API/Window/setInterval
 page-type: web-api-instance-method
@@ -253,7 +253,7 @@ document.getElementById("stop").addEventListener("click", stopTextColor);
 
 {{EmbedLiveSample("Example_2:_Alternating_two_colors")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -56,7 +56,7 @@ function refreshPopupWindow() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

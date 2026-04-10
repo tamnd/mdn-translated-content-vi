@@ -30,7 +30,7 @@ if (window.parent !== window.top) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

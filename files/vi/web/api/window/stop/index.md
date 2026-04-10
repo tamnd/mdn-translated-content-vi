@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức stop()"
+title: "Window: stop() method"
 short-title: stop()
 slug: Web/API/Window/stop
 page-type: web-api-instance-method
@@ -35,7 +35,7 @@ None ({{jsxref("undefined")}}).
 window.stop();
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

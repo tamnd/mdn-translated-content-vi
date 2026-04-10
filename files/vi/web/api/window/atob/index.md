@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức atob()"
+title: "Window: atob() method"
 short-title: atob()
 slug: Web/API/Window/atob
 page-type: web-api-instance-method
@@ -8,14 +8,14 @@ browser-compat: api.atob
 
 {{APIRef("HTML DOM")}}
 
-Phương thức **`atob()`** của giao diện {{domxref("Window")}} giải mã một
-chuỗi dữ liệu đã được mã hóa bằng phương thức {{glossary("Base64")}}. Bạn có thể sử dụng
-phương thức {{domxref("Window.btoa()")}} để mã hóa và truyền
-dữ liệu có thể gây ra vấn đề truyền tải, sau đó truyền đi và sử dụng
-phương thức `atob()` để giải mã lại dữ liệu. Ví dụ: bạn có thể mã hóa,
-truyền tải và giải mã các ký tự điều khiển như giá trị {{Glossary("ASCII")}} từ 0 đến 31.
+The **`atob()`** method of the {{domxref("Window")}} interface decodes a
+string of data which has been encoded using {{glossary("Base64")}} encoding. You can use
+the {{domxref("Window.btoa()")}} method to encode and transmit
+data which may otherwise cause communication problems, then transmit it and use the
+`atob()` method to decode the data again. For example, you can encode,
+transmit, and decode control characters such as {{Glossary("ASCII")}} values 0 through 31.
 
-Ngoài ra, hãy cân nhắc sử dụng phương thức {{jsxref("Uint8Array.fromBase64()")}}, phương thức này tạo ra một đối tượng `Uint8Array` từ một chuỗi được mã hóa base64. Kết quả là một mảng byte, dễ xử lý hơn so với chuỗi chứa các byte thô.
+Also consider using the {{jsxref("Uint8Array.fromBase64()")}} method, which creates a `Uint8Array` object from a base64-encoded string. It results in a byte array, which is easier to work with than a string containing raw bytes.
 
 ## Cú pháp
 
@@ -23,28 +23,28 @@ Ngoài ra, hãy cân nhắc sử dụng phương thức {{jsxref("Uint8Array.fro
 atob(encodedData)
 ```
 
-### Tham số
+### Parameters
 
 - `encodedData`
-  - : Một chuỗi được mã hóa base64, sử dụng bảng chữ cái được tạo bởi {{domxref("Window.btoa()")}}.
+  - : A base64-encoded string, using the alphabet produced by {{domxref("Window.btoa()")}}.
 
-### Giá trị trả về
+### Return value
 
-Một chuỗi nhị phân chứa các byte thô được giải mã từ `encodedData`. Chuỗi trong JavaScript được mã hóa dưới dạng {{glossary("UTF-16")}}, nghĩa là mỗi ký tự phải có mã code point nhỏ hơn 256, đại diện cho một byte dữ liệu.
+A binary string containing raw bytes decoded from `encodedData`. Strings in JavaScript are encoded as {{glossary("UTF-16")}}, so this means each character must have a code point less than 256, representing one byte of data.
 
-### Ngoại lệ
+### Exceptions
 
 - `InvalidCharacterError` {{domxref("DOMException")}}
-  - : Được ném ra nếu `encodedData` không phải là base64 hợp lệ.
+  - : Thrown if `encodedData` is not valid base64.
 
 ## Ví dụ
 
 ```js
-const encodedData = window.btoa("Hello, world"); // mã hóa một chuỗi
-const decodedData = window.atob(encodedData); // giải mã chuỗi
+const encodedData = window.btoa("Hello, world"); // encode a string
+const decodedData = window.atob(encodedData); // decode the string
 ```
 
-Để biết thêm ví dụ, xem phương thức {{domxref("Window.btoa()")}}.
+For more examples, see the {{domxref("Window.btoa()")}} method.
 
 ## Đặc tả kỹ thuật
 
@@ -56,8 +56,8 @@ const decodedData = window.atob(encodedData); // giải mã chuỗi
 
 ## Xem thêm
 
-- [Polyfill của `atob`](https://github.com/zloirock/core-js#base64-utility-methods) có sẵn trong [`core-js`](https://github.com/zloirock/core-js)
+- [A polyfill of `atob`](https://github.com/zloirock/core-js#base64-utility-methods) is available in [`core-js`](https://github.com/zloirock/core-js)
 - [`data` URLs](/en-US/docs/Web/URI/Reference/Schemes/data)
-- {{domxref("WorkerGlobalScope.atob()")}}: cùng phương thức, nhưng trong phạm vi worker.
+- {{domxref("WorkerGlobalScope.atob()")}}: the same method, but in worker scopes.
 - {{domxref("Window.btoa()")}}
 - {{jsxref("Uint8Array.fromBase64()")}}

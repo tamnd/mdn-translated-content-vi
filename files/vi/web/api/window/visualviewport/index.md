@@ -14,7 +14,7 @@ The **`visualViewport`** read-only property of the {{domxref("Window")}} interfa
 
 A {{domxref("VisualViewport")}} object.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

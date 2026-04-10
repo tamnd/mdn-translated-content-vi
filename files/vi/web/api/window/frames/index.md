@@ -35,7 +35,7 @@ for (let i = 0; i < frames.length; i++) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

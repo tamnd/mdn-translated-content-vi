@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức blur()"
+title: "Window: blur() method"
 short-title: blur()
 slug: Web/API/Window/blur
 page-type: web-api-instance-method
@@ -37,7 +37,7 @@ None ({{jsxref("undefined")}}).
 window.blur();
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

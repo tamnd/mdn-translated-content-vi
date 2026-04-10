@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức print()"
+title: "Window: print() method"
 short-title: print()
 slug: Web/API/Window/print
 page-type: web-api-instance-method
@@ -28,7 +28,7 @@ None.
 
 None ({{jsxref("undefined")}}).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

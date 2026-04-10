@@ -62,7 +62,7 @@ inputForm.onsubmit = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

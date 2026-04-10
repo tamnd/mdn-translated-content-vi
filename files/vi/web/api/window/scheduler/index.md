@@ -42,7 +42,7 @@ if ("scheduler" in window) {
 
 For comprehensive example code showing to use the API see [Prioritized Task Scheduling API > Examples](/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#examples).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

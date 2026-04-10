@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức scroll()"
+title: "Window: scroll() method"
 short-title: scroll()
 slug: Web/API/Window/scroll
 page-type: web-api-instance-method
@@ -68,7 +68,7 @@ and {{domxref("Window.scrollByPages()")}}.
 For scrolling elements, see {{domxref("Element.scrollTop")}} and
 {{domxref("Element.scrollLeft")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

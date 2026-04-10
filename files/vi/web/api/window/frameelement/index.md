@@ -33,7 +33,7 @@ if (frameEl) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

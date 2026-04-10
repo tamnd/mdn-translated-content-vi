@@ -27,7 +27,7 @@ const currentViewport = window.viewport;
 const segments = window.viewport.segments;
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

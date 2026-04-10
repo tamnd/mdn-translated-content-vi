@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức getSelection()"
+title: "Window: getSelection() method"
 short-title: getSelection()
 slug: Web/API/Window/getSelection
 page-type: web-api-instance-method
@@ -76,7 +76,7 @@ used to work around this.
 Notice also the difference between _selection_ and _focus_.
 {{domxref("Document.activeElement")}} returns the focused element.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

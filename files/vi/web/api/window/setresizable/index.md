@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức setResizable()"
+title: "Window: setResizable() method"
 short-title: setResizable()
 slug: Web/API/Window/setResizable
 page-type: web-api-instance-method
@@ -27,7 +27,7 @@ None.
 
 None ({{jsxref("undefined")}}).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 Not part of any current specifications.
 

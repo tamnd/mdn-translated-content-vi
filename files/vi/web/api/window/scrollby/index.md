@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức scrollBy()"
+title: "Window: scrollBy() method"
 short-title: scrollBy()
 slug: Web/API/Window/scrollBy
 page-type: web-api-instance-method
@@ -67,7 +67,7 @@ window.scrollBy({
 {{domxref("window.scroll()")}} scrolls to an absolute position in the document. See also
 {{domxref("window.scrollByLines()")}} and {{domxref("window.scrollByPages()")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -426,7 +426,7 @@ const showBookmark = (() => {
 })();
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức releaseEvents()"
+title: "Window: releaseEvents() method"
 short-title: releaseEvents()
 slug: Web/API/Window/releaseEvents
 page-type: web-api-instance-method
@@ -49,7 +49,7 @@ Note that you can pass a list of events to this method using the following synta
 See also [`window.captureEvents`](/en-US/docs/Web/API/Window/captureEvents)
 ({{Deprecated_Inline}}).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -20,7 +20,7 @@ coordinates.
 
 The `window.mozInnerScreenX` property is a floating point, read-only value; it has no default value.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 Not part of any W3C technical
 specification or recommendation.

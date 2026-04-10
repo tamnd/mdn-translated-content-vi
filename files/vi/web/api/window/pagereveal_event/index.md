@@ -14,7 +14,7 @@ This is useful in the case of cross-document (MPA) [view transitions](/en-US/doc
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("pagereveal", (event) => { })
@@ -89,7 +89,7 @@ window.addEventListener("pagereveal", async (e) => {
 > [!NOTE]
 > See [List of Chrome DevRel team members](https://view-transitions.chrome.dev/profiles/mpa/) for the live demo this code is taken from.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức postMessage()"
+title: "Window: postMessage() method"
 short-title: postMessage()
 slug: Web/API/Window/postMessage
 page-type: web-api-instance-method
@@ -183,7 +183,7 @@ Content scripts should use {{WebExtAPIRef("runtime.sendMessage")}} to communicat
 
 Lastly, dispatching a message to a page at a `file:` URL currently requires that the `targetOrigin` argument be `"*"`. `file://` cannot be used as a security restriction; this restriction may be modified in the future.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

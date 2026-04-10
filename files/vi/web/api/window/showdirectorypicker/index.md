@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức showDirectoryPicker()"
+title: "Window: showDirectoryPicker() method"
 short-title: showDirectoryPicker()
 slug: Web/API/Window/showDirectoryPicker
 page-type: web-api-instance-method
@@ -66,7 +66,7 @@ async function getDir() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

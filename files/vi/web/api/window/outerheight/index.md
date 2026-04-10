@@ -22,7 +22,7 @@ The following figure shows the difference between `outerHeight` and `innerHeight
 
 ![innerHeight vs. outerHeight illustration](firefoxinnervsouterheight2.png)
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

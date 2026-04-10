@@ -14,7 +14,7 @@ The **`trustedTypes`** read-only property of the {{domxref("Window")}} interface
 
 A {{domxref("TrustedTypePolicyFactory")}} object.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -22,7 +22,7 @@ The last two mechanisms are legacy features; best practice is to trigger the dia
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("beforeunload", (event) => { })
@@ -103,7 +103,7 @@ When the `<input>` value is non-empty, if you try to close, navigate, or reload 
 
 {{EmbedLiveSample("Examples", "100%", 50)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

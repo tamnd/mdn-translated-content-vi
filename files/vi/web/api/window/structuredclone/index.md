@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức structuredClone()"
+title: "Window: structuredClone() method"
 short-title: structuredClone()
 slug: Web/API/Window/structuredClone
 page-type: web-api-instance-method
@@ -138,7 +138,7 @@ console.log(int32View2[0]);
 const int32View1 = new Int32Array(object1.buffer);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

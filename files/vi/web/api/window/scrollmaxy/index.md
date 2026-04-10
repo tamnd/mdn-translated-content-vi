@@ -36,7 +36,7 @@ visible horizontal scrollbar. Instead use
 {{domxref("element.scrollHeight","document.body.scrollHeight")}}. See also
 {{domxref("window.scrollMaxX")}} and {{domxref("window.scrollTo")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This is not part of any specification.
 

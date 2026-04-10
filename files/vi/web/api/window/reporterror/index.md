@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức reportError()"
+title: "Window: reportError() method"
 short-title: reportError()
 slug: Web/API/Window/reportError
 page-type: web-api-instance-method
@@ -81,7 +81,7 @@ function fetchUser(userId) {
 
 By using `reportError()` instead of letting the error go uncaught, subsequent code execution is not interrupted, while still ensuring that the error is logged and can be analyzed. For example, this function can be called in a test runner without extra `try...catch` handling.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

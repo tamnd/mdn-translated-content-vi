@@ -27,7 +27,7 @@ if (screen.pixelDepth < 8) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

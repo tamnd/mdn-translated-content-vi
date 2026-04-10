@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức queryLocalFonts()"
+title: "Window: queryLocalFonts() method"
 short-title: queryLocalFonts()
 slug: Web/API/Window/queryLocalFonts
 page-type: web-api-instance-method
@@ -114,7 +114,7 @@ async function computeOutlineFormat() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

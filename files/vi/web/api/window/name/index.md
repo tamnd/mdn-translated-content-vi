@@ -52,7 +52,7 @@ const otherTab = window.open("url1", "_blank");
 if (otherTab) otherTab.name = "other-tab";
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

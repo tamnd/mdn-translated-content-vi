@@ -20,7 +20,7 @@ If the resize event is triggered too many times for your application, see [Optim
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("resize", (event) => { })
@@ -30,7 +30,7 @@ onresize = (event) => { }
 
 ## Kiểu sự kiện
 
-A generic {{domxref("Event")}}.
+Một {{domxref("Event")}} chung.
 
 ## Ví dụ
 
@@ -77,7 +77,7 @@ You could set up the event handler using the [`addEventListener()`](/en-US/docs/
 window.addEventListener("resize", reportWindowSize);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

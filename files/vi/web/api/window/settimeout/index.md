@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức setTimeout()"
+title: "Window: setTimeout() method"
 short-title: setTimeout()
 slug: Web/API/Window/setTimeout
 page-type: web-api-instance-method
@@ -443,7 +443,7 @@ document.getElementById("cancel").addEventListener("click", clearMessage);
 
 See also the {{domxref("Window.clearTimeout", "clearTimeout()")}} example.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

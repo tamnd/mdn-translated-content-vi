@@ -34,7 +34,7 @@ const w4 = window.self;
 // w1, w2, w3, w4 all strictly equal, but only w2 will function in workers
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

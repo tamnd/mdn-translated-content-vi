@@ -14,7 +14,7 @@ This event is not cancelable and does not bubble.
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("deviceorientationabsolute", (event) => { })
@@ -43,7 +43,7 @@ A {{domxref("DeviceOrientationEvent")}}. Inherits from {{domxref("Event")}}.
 - `DeviceOrientationEvent.webkitCompassAccuracy` {{Non-standard_Inline}} {{ReadOnlyInline}}
   - : The accuracy of the compass given as a positive or negative deviation. It's usually 10.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

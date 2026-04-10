@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức setImmediate()"
+title: "Window: setImmediate() method"
 short-title: setImmediate()
 slug: Web/API/Window/setImmediate
 page-type: web-api-instance-method
@@ -49,7 +49,7 @@ The feature can be emulated in a few different ways:
 
 All of these techniques are incorporated into a [robust setImmediate polyfill](https://github.com/YuzuJS/setImmediate).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 Not part of any current specifications.
 The [Efficient Script Yielding](https://w3c.github.io/setImmediate/#si-setImmediate) specification is no longer being worked on.

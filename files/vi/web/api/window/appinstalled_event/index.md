@@ -8,9 +8,9 @@ browser-compat: api.Window.appinstalled_event
 
 {{APIRef}}
 
-Sự kiện **`appinstalled`** của [Web Manifest API](/en-US/docs/Web/Progressive_web_apps/Manifest) được kích hoạt khi trình duyệt đã cài đặt thành công một trang dưới dạng ứng dụng.
+The **`appinstalled`** event of the [Web Manifest API](/en-US/docs/Web/Progressive_web_apps/Manifest) is fired when the browser has successfully installed a page as an application.
 
-Sự kiện này không thể hủy và không nổi bọt.
+This event is not cancelable and does not bubble.
 
 ## Cú pháp
 
@@ -28,19 +28,19 @@ Một {{domxref("Event")}} chung.
 
 ## Ví dụ
 
-Bạn có thể sử dụng sự kiện `appinstalled` trong phương thức {{domxref("EventTarget/addEventListener", "addEventListener")}}:
+You can use the `appinstalled` event in an {{domxref("EventTarget/addEventListener", "addEventListener")}} method:
 
 ```js
 window.addEventListener("appinstalled", () => {
-  console.log("Cảm ơn bạn đã cài đặt ứng dụng của chúng tôi!");
+  console.log("Thank you for installing our app!");
 });
 ```
 
-Hoặc sử dụng thuộc tính trình xử lý sự kiện `onappinstalled`:
+Or use the `onappinstalled` event handler property:
 
 ```js
 window.onappinstalled = () => {
-  console.log("Cảm ơn bạn đã cài đặt ứng dụng của chúng tôi!");
+  console.log("Thank you for installing our app!");
 };
 ```
 

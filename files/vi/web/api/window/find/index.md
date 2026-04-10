@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức find()"
+title: "Window: find() method"
 short-title: find()
 slug: Web/API/Window/find
 page-type: web-api-instance-method
@@ -84,7 +84,7 @@ document.getElementById("find-orange").addEventListener("click", () => {
 In some browsers, `Window.find()` selects (highlights) the found content on
 the site.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This is not part of any specification.
 

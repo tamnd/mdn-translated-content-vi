@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức cancelAnimationFrame()"
+title: "Window: cancelAnimationFrame() method"
 short-title: cancelAnimationFrame()
 slug: Web/API/Window/cancelAnimationFrame
 page-type: web-api-instance-method
@@ -48,7 +48,7 @@ myReq = requestAnimationFrame(step);
 cancelAnimationFrame(myReq);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

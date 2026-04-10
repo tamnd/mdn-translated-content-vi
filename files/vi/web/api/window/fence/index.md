@@ -31,7 +31,7 @@ window.fence.reportEvent({
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

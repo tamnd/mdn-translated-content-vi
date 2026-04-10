@@ -41,7 +41,7 @@ The `External` object has the following methods:
   </tbody>
 </table>
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

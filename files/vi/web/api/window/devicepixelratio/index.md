@@ -144,7 +144,7 @@ To test the example, try zooming the page in and out, and note the difference in
 
 {{EmbedLiveSample("Monitoring_screen_resolution_or_zoom_level_changes", "100%", 300)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

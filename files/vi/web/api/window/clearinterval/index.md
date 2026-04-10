@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức clearInterval()"
+title: "Window: clearInterval() method"
 short-title: clearInterval()
 slug: Web/API/Window/clearInterval
 page-type: web-api-instance-method
@@ -37,7 +37,7 @@ None ({{jsxref("undefined")}}).
 
 See {{domxref("Window.setInterval", "setInterval()")}} for examples.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

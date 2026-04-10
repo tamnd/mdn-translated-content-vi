@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức createImageBitmap()"
+title: "Window: createImageBitmap() method"
 short-title: createImageBitmap()
 slug: Web/API/Window/createImageBitmap
 page-type: web-api-instance-method
@@ -120,7 +120,7 @@ image.src = "50x50.jpg";
 
 {{EmbedLiveSample("Creating sprites from a sprite sheet", "100%", "250")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

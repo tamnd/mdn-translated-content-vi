@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức open()"
+title: "Window: open() method"
 short-title: open()
 slug: Web/API/Window/open
 page-type: web-api-instance-method
@@ -292,7 +292,7 @@ When extreme changes in context are explicitly identified before they occur, the
 - [G200: Opening new windows and tabs from a link only when necessary](https://www.w3.org/TR/WCAG20-TECHS/G200.html)
 - [G201: Giving users advanced warning when opening a new window](https://www.w3.org/TR/WCAG20-TECHS/G201.html)
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

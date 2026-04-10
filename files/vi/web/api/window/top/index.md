@@ -23,7 +23,7 @@ window objects.
 This property is especially useful when you are dealing with a window that is in a
 subframe of a parent or parents, and you want to get to the top-level frameset.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

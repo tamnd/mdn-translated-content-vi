@@ -16,7 +16,7 @@ To change the size of a window, see {{domxref("window.resizeBy()")}} and {{domxr
 
 To get the inner width of a window, i.e., the width of the page being displayed, see {{domxref("window.innerWidth")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

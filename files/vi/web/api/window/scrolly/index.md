@@ -41,7 +41,7 @@ relative scroll functions such as {{domxref("window.scrollBy", "scrollBy()")}},
 
 The `pageYOffset` property is an alias for the `scrollY` property. This means if you haven't re-assigned either property, `window.pageYOffset === window.scrollY` is always true.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

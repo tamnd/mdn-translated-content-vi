@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức showSaveFilePicker()"
+title: "Window: showSaveFilePicker() method"
 short-title: showSaveFilePicker()
 slug: Web/API/Window/showSaveFilePicker
 page-type: web-api-instance-method
@@ -88,7 +88,7 @@ async function getNewFileHandle() {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

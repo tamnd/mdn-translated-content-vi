@@ -14,7 +14,7 @@ This is useful for debugging and for providing fallback error handling for unexp
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("unhandledrejection", (event) => { })
@@ -85,7 +85,7 @@ window.addEventListener("unhandledrejection", (event) => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

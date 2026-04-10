@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức resizeBy()"
+title: "Window: resizeBy() method"
 short-title: resizeBy()
 slug: Web/API/Window/resizeBy
 page-type: web-api-instance-method
@@ -70,7 +70,7 @@ The window you create must respect the Same Origin Policy. If the window you ope
 not in the same origin as the current window, you will not be able to resize, or access
 any information on, that window/tab.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

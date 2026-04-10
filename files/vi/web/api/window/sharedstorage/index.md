@@ -27,7 +27,7 @@ window.sharedStorage
   .then(() => console.log("Value saved to shared storage"));
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

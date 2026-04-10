@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức dump()"
+title: "Window: dump() method"
 short-title: dump()
 slug: Web/API/Window/dump
 page-type: web-api-instance-method
@@ -29,7 +29,7 @@ dump(message)
 
 None ({{jsxref("undefined")}}).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This feature is not part of any specification.
 

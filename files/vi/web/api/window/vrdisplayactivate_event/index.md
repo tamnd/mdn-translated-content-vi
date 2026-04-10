@@ -20,7 +20,7 @@ This event is not cancelable and does not bubble.
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("vrdisplayactivate", (event) => { })
@@ -63,7 +63,7 @@ window.onvrdisplayactivate = () => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This event was part of the old [WebVR API](https://immersive-web.github.io/webvr/spec/1.1/) that has been superseded by the [WebXR Device API](https://immersive-web.github.io/webxr/). It is no longer on track to becoming a standard.
 

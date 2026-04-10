@@ -39,7 +39,7 @@ In supporting browsers, if the document loaded in the `<iframe>` were to run the
 console.log(window.credentialless);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

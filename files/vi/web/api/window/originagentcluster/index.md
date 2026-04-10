@@ -22,7 +22,7 @@ To request that the browser assign this window to an origin-keyed agent cluster,
 
 Note that the origin-keyed agent cluster feature is only supported in {{glossary("Secure Context", "secure contexts")}}. If a site is not a secure context, the `window.originAgentCluster` will always return `false`.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

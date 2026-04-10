@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức fetchLater()"
+title: "Window: fetchLater() method"
 short-title: fetchLater()
 slug: Web/API/Window/fetchLater
 page-type: web-api-instance-method
@@ -166,7 +166,7 @@ iframe.remove();
 detachedWindow.fetchLater("https://origin.example.com");
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

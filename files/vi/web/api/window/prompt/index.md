@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức prompt()"
+title: "Window: prompt() method"
 short-title: prompt()
 slug: Web/API/Window/prompt
 page-type: web-api-instance-method
@@ -96,7 +96,7 @@ For example, if their answer should be a Number, you should cast the value to Nu
 const number = Number(window.prompt("Type a number", ""));
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

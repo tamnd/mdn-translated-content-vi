@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức captureEvents()"
+title: "Window: captureEvents() method"
 short-title: captureEvents()
 slug: Web/API/Window/captureEvents
 page-type: web-api-instance-method
@@ -26,7 +26,7 @@ None.
 
 None ({{jsxref("undefined")}}).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

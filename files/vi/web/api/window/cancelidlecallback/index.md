@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức cancelIdleCallback()"
+title: "Window: cancelIdleCallback() method"
 short-title: cancelIdleCallback()
 slug: Web/API/Window/cancelIdleCallback
 page-type: web-api-instance-method
@@ -32,7 +32,7 @@ None ({{jsxref("undefined")}}).
 See our [complete example](/en-US/docs/Web/API/Background_Tasks_API#example)
 in the article [Cooperative Scheduling of Background Tasks API](/en-US/docs/Web/API/Background_Tasks_API).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức getComputedStyle()"
+title: "Window: getComputedStyle() method"
 short-title: getComputedStyle()
 slug: Web/API/Window/getComputedStyle
 page-type: web-api-instance-method
@@ -137,7 +137,7 @@ const result = getComputedStyle(h3, "::after").content;
 console.log("the generated content is: ", result); // returns ' rocks!'
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

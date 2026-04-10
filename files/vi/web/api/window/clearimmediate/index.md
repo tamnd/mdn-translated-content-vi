@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức clearImmediate()"
+title: "Window: clearImmediate() method"
 short-title: clearImmediate()
 slug: Web/API/Window/clearImmediate
 page-type: web-api-instance-method
@@ -40,7 +40,7 @@ document.getElementById("button").addEventListener(() => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 Not part of any current specifications.
 The [Efficient Script Yielding](https://w3c.github.io/setImmediate/#si-setImmediate)

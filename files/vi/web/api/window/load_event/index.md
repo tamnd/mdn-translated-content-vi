@@ -23,7 +23,7 @@ To avoid running a script before the DOM it manipulates has been fully construct
 
 ## Cú pháp
 
-Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
+Sử dụng tên sự kiện trong các phương thức như {{domxref("EventTarget.addEventListener", "addEventListener()")}}, hoặc thiết lập thuộc tính trình xử lý sự kiện.
 
 ```js-nolint
 addEventListener("load", (event) => { })
@@ -33,7 +33,7 @@ onload = (event) => { }
 
 ## Kiểu sự kiện
 
-A generic {{domxref("Event")}}.
+Một {{domxref("Event")}} chung.
 
 ## Ví dụ
 
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 {{ EmbedLiveSample('Live_example', '100%', '160px') }}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 

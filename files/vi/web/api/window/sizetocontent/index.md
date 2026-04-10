@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức sizeToContent()"
+title: "Window: sizeToContent() method"
 short-title: sizeToContent()
 slug: Web/API/Window/sizeToContent
 page-type: web-api-instance-method
@@ -38,7 +38,7 @@ None ({{jsxref("undefined")}}).
 window.sizeToContent();
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 This feature is not part of any specification.
 

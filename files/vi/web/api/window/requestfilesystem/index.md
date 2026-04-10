@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức requestFileSystem()"
+title: "Window: requestFileSystem() method"
 short-title: requestFileSystem()
 slug: Web/API/Window/requestFileSystem
 page-type: web-api-instance-method
@@ -50,7 +50,7 @@ requestFileSystem(type, size, successCallback, errorCallback)
 
 None ({{jsxref("undefined")}}).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 As this method was removed from the [File and Directory Entries API](https://wicg.github.io/entries-api/) proposal, it has no official W3C or WHATWG specification. It is no longer on track to become a standard.
 

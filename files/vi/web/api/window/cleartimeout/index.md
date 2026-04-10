@@ -1,5 +1,5 @@
 ---
-title: "Window: phương thức clearTimeout()"
+title: "Window: clearTimeout() method"
 short-title: clearTimeout()
 slug: Web/API/Window/clearTimeout
 page-type: web-api-instance-method
@@ -70,7 +70,7 @@ window.addEventListener("click", () => alarm.setup());
 Passing an invalid ID to `clearTimeout()` silently does nothing; no
 exception is thrown.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
