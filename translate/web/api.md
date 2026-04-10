@@ -277,7 +277,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/textdecoder (6 trang)
 - [x] api/formdata (11 trang)
 - [ ] api/url_api (2 trang)
-- [ ] api/urlpattern (13 trang)
+- [x] api/urlpattern (13 trang)
 - [ ] api/credential_management_api (2 trang)
 - [x] api/gamepad_api (2 trang)
 - [x] api/gamepad (13 trang)
