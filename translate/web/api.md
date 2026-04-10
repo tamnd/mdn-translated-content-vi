@@ -155,8 +155,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [ ] api/notifications_api (2 trang)
 - [x] api/notification (26 trang)
-- [ ] api/push_api (2 trang)
-- [ ] api/pushmanager (9 trang)
+- [x] api/push_api (2 trang)
+- [x] api/pushmanager (9 trang)
 - [ ] api/pushsubscription (8 trang)
 - [ ] api/pushmessagedata (6 trang)
 
