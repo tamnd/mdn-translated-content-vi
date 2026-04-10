@@ -1,5 +1,5 @@
 ---
-title: "CompressionStream: thuộc tính writable"
+title: "CompressionStream: Thuộc tính writable"
 short-title: writable
 slug: Web/API/CompressionStream/writable
 page-type: web-api-instance-property
@@ -16,7 +16,7 @@ Một {{domxref("WritableStream")}}.
 
 ## Ví dụ
 
-Ví dụ này tạo một `CompressionStream` thực hiện nén gzip. Nó ghi một số dữ liệu nhị phân vào luồng `writable`, rồi đọc dữ liệu đã nén từ luồng `readable`.
+Ví dụ này tạo một `CompressionStream` thực hiện nén gzip. Nó ghi một số dữ liệu nhị phân vào stream `writable`, sau đó đọc dữ liệu đã nén từ stream `readable`.
 
 ```js
 const stream = new CompressionStream("gzip");
@@ -41,11 +41,11 @@ while (!done) {
 console.log(new Uint8Array(output).toBase64()); // H4sIAAAAAAAAE/NIzcnJ11Eozy/KSVEEAObG5usNAAAA
 ```
 
-## Thông số kỹ thuật
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Khả năng tương thích với trình duyệt
+## Tương thích trình duyệt
 
 {{Compat}}
 

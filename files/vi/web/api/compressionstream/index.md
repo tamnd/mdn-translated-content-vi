@@ -7,23 +7,23 @@ browser-compat: api.CompressionStream
 
 {{APIRef("Compression Streams API")}}{{AvailableInWorkers}}
 
-Giao diện **`CompressionStream`** của {{domxref('Compression Streams API','','',' ')}} nén một luồng dữ liệu. Nó triển khai cùng một dạng như {{domxref("TransformStream")}}, cho phép dùng trong {{domxref("ReadableStream.pipeThrough()")}} và các phương thức tương tự.
+Giao diện **`CompressionStream`** thuộc {{domxref('Compression Streams API','','',' ')}} dùng để nén một luồng dữ liệu. Giao diện này có hình dạng giống như {{domxref("TransformStream")}}, cho phép sử dụng trong {{domxref("ReadableStream.pipeThrough()")}} và các phương thức tương tự.
 
-## Constructor
+## Bộ khởi tạo
 
 - {{domxref("CompressionStream.CompressionStream", "CompressionStream()")}}
   - : Tạo một `CompressionStream` mới.
 
-## Thuộc tính thực thể
+## Thuộc tính thể hiện
 
 - {{domxref("CompressionStream.readable")}}
-  - : Trả về thực thể {{domxref("ReadableStream")}} do đối tượng này điều khiển.
+  - : Trả về thể hiện {{domxref("ReadableStream")}} được điều khiển bởi đối tượng này.
 - {{domxref("CompressionStream.writable")}}
-  - : Trả về thực thể {{domxref("WritableStream")}} do đối tượng này điều khiển.
+  - : Trả về thể hiện {{domxref("WritableStream")}} được điều khiển bởi đối tượng này.
 
 ## Ví dụ
 
-Trong ví dụ này, một luồng được nén bằng nén gzip.
+Trong ví dụ này, một luồng được nén bằng thuật toán gzip.
 
 ```js
 const compressedReadableStream = inputReadableStream.pipeThrough(
@@ -31,11 +31,11 @@ const compressedReadableStream = inputReadableStream.pipeThrough(
 );
 ```
 
-## Thông số kỹ thuật
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Khả năng tương thích với trình duyệt
+## Tương thích trình duyệt
 
 {{Compat}}
 
