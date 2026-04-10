@@ -226,10 +226,10 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/geolocation_api (2 trang)
 - [x] api/geolocation (4 trang)
 - [x] api/geolocationcoordinates (9 trang)
-- [ ] api/sensor_apis (1 trang)
+- [x] api/sensor_apis (1 trang)
 - [ ] api/accelerometer (5 trang)
-- [ ] api/gyroscope (5 trang)
-- [ ] api/magnetometer (5 trang)
+- [x] api/gyroscope (5 trang)
+- [x] api/magnetometer (5 trang)
 - [ ] api/ambientlightsensor (3 trang)
 - [ ] _(các giao diện cảm biến còn lại)_
 
