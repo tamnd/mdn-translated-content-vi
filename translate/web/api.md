@@ -40,7 +40,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/xmlhttprequest (23 trang)
 - [ ] api/xmlhttprequest_api (6 trang)
 - [ ] api/xmlhttprequesteventtarget (8 trang)
-- [ ] api/websocket (14 trang)
+- [x] api/websocket (14 trang)
 - [x] api/websockets_api (7 trang)
 - [x] api/websocketstream (6 trang)
 - [ ] api/webtransport (13 trang)
