@@ -34,7 +34,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## Fetch / XHR / Mạng [ưu tiên cao]
 
 - [x] api/fetch_api (3 trang)
-- [ ] api/request (26 trang)
+- [x] api/request (26 trang)
 - [ ] api/response (21 trang)
 - [x] api/headers (12 trang)
 - [ ] api/xmlhttprequest (23 trang)
