@@ -27,7 +27,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/treewalker (12 trang)
 - [x] api/nodeiterator (9 trang)
 - [ ] api/location (15 trang)
-- [ ] api/history (9 trang)
+- [x] api/history (9 trang)
 - [ ] api/url (20 trang)
 - [ ] api/urlsearchparams (15 trang)
 
