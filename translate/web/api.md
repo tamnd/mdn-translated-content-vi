@@ -25,7 +25,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/mutationobserver (5 trang)
 - [ ] api/mutationrecord (10 trang)
 - [x] api/treewalker (12 trang)
-- [ ] api/nodeiterator (9 trang)
+- [x] api/nodeiterator (9 trang)
 - [ ] api/location (15 trang)
 - [ ] api/history (9 trang)
 - [ ] api/url (20 trang)
@@ -88,7 +88,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/htmloutputelement (15 trang)
 - [ ] api/htmlfieldsetelement (12 trang)
 - [ ] api/htmldialogElement (10 trang)
-- [ ] _(các giao diện `html_` còn lại)_*
+- [ ] _(các giao diện `html_` còn lại)\_\*
 
 ## Canvas / Đồ họa 2D [ưu tiên cao]
 
@@ -199,7 +199,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/rtcrtpreceiver (10 trang)
 - [ ] api/rtcrtptransceiver (9 trang)
 - [ ] api/rtcstatsreport (9 trang)
-- [ ] _(các giao diện `rtc_` còn lại)_*
+- [ ] _(các giao diện `rtc_` còn lại)\_\*
 
 ## Mô hình đối tượng CSS (CSSOM)
 
@@ -209,7 +209,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/cssstylesheet (11 trang)
 - [ ] api/cssrule (5 trang)
 - [ ] api/css (7 trang)
-- [ ] _(các giao diện `css_` còn lại)_*
+- [ ] _(các giao diện `css_` còn lại)\_\*
 
 ## Hiệu năng
 
@@ -219,7 +219,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/performanceresourcetiming (26 trang)
 - [ ] api/performancenavigationtiming (15 trang)
 - [ ] api/performanceobserver (6 trang)
-- [ ] _(các giao diện `performance_` còn lại)_*
+- [ ] _(các giao diện `performance_` còn lại)\_\*
 
 ## Geolocation và cảm biến
 
@@ -242,7 +242,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/gpu (4 trang)
 - [ ] api/gpudevice (26 trang)
 - [ ] api/gpucommandencoder (15 trang)
-- [ ] _(các giao diện `webgl_`/`gpu*` còn lại)*_
+- [ ] _(các giao diện `webgl_`/`gpu*` còn lại)*\_
 
 ## Web Components
 
@@ -314,4 +314,4 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/web_bluetooth_api (1 trang)
 - [ ] api/web_nfc_api (1 trang)
 - [ ] api/trusted_types_api (1 trang)
-- [ ] _(các giao diện `api/_` còn lại)_*
+- [ ] _(các giao diện `api/_` còn lại)\_\*
