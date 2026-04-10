@@ -53,7 +53,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/storage (7 trang)
 - [x] api/storageevent (8 trang)
 - [x] api/storagemanager (5 trang)
-- [ ] api/indexeddb_api (4 trang)
+- [x] api/indexeddb_api (4 trang)
 - [ ] api/idbdatabase (10 trang)
 - [x] api/idbfactory (5 trang)
 - [ ] api/idbobjectstore (21 trang)
