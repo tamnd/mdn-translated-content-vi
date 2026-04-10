@@ -64,7 +64,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/idbrequest (8 trang)
 - [x] api/cachestorage (6 trang)
 - [ ] api/cache (8 trang)
-- [ ] api/filesystemfilehandle (4 trang)
+- [x] api/filesystemfilehandle (4 trang)
 - [x] api/filesystemdirectoryhandle (8 trang)
 - [x] api/filesystemhandle (7 trang)
 
