@@ -124,8 +124,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/readablestream (9 trang)
 - [x] api/writablestream (6 trang)
 - [x] api/transformstream (4 trang)
-- [ ] api/readablestreamdefaultreader (6 trang)
-- [ ] api/writablestreamdefaultwriter (9 trang)
+- [x] api/readablestreamdefaultreader (6 trang)
+- [x] api/writablestreamdefaultwriter (9 trang)
 - [ ] _(các giao diện stream còn lại)_
 
 ## Sự kiện và nhập liệu
