@@ -66,7 +66,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/cache (8 trang)
 - [ ] api/filesystemfilehandle (4 trang)
 - [ ] api/filesystemdirectoryhandle (8 trang)
-- [ ] api/filesystemhandle (7 trang)
+- [x] api/filesystemhandle (7 trang)
 
 ## Phần tử HTML (giao diện DOM) [ưu tiên cao]
 
