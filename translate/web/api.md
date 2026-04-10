@@ -113,7 +113,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/serviceworker (6 trang)
 - [x] api/service_worker_api (2 trang)
 - [ ] api/serviceworkercontainer (10 trang)
-- [ ] api/serviceworkerregistration (19 trang)
+- [x] api/serviceworkerregistration (19 trang)
 - [ ] api/serviceworkerglobalscope (25 trang)
 - [ ] api/scheduler (3 trang)
 - [ ] api/prioritized_task_scheduling_api (1 trang)
