@@ -149,7 +149,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/navigation (17 trang)
 - [ ] api/navigateevent (15 trang)
 - [ ] api/navigationhistoryentry (8 trang)
-- [ ] api/history_api (2 trang)
+- [x] api/history_api (2 trang)
 
 ## Thông báo và Push
 
