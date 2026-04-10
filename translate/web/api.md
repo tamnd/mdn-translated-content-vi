@@ -103,19 +103,19 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Worker và lập lịch
 
-- [ ] api/web_workers_api (5 trang)
-- [ ] api/worker (7 trang)
-- [ ] api/workerglobalscope (34 trang)
+- [x] api/web_workers_api (5 trang)
+- [x] api/worker (7 trang)
+- [x] api/workerglobalscope (34 trang)
 - [ ] api/workernavigator (26 trang)
-- [ ] api/sharedworker (4 trang)
+- [x] api/sharedworker (4 trang)
 - [ ] api/sharedworkerglobalscope (4 trang)
 - [ ] api/dedicatedworkerglobalscope (9 trang)
 - [x] api/serviceworker (6 trang)
 - [x] api/service_worker_api (2 trang)
 - [x] api/serviceworkercontainer (10 trang)
 - [x] api/serviceworkerregistration (19 trang)
-- [ ] api/serviceworkerglobalscope (25 trang)
-- [ ] api/scheduler (3 trang)
+- [x] api/serviceworkerglobalscope (25 trang)
+- [x] api/scheduler (3 trang)
 - [ ] api/prioritized_task_scheduling_api (1 trang)
 
 ## API Streams
