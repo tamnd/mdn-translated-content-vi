@@ -49,10 +49,10 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Lưu trữ [ưu tiên cao]
 
-- [ ] api/web_storage_api (2 trang)
+- [x] api/web_storage_api (2 trang)
 - [ ] api/storage (7 trang)
 - [ ] api/storageevent (8 trang)
-- [ ] api/storagemanager (5 trang)
+- [x] api/storagemanager (5 trang)
 - [ ] api/indexeddb_api (4 trang)
 - [ ] api/idbdatabase (10 trang)
 - [ ] api/idbfactory (5 trang)
