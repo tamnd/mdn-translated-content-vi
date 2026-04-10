@@ -8,12 +8,12 @@ browser-compat: api.DocumentFragment.getElementById
 
 {{ ApiRef("DOM") }}
 
-Phương thức **`getElementById()`** của {{domxref("DocumentFragment")}} trả về một đối tượng {{domxref("Element")}} đại diện cho phần tử có thuộc tính {{domxref("Element.id", "id")}} khớp với chuỗi được chỉ định. Vì các ID của phần tử phải là duy nhất nếu được chỉ định, đây là một cách hữu ích để truy cập nhanh vào một phần tử cụ thể.
+Phương thức **`getElementById()`** của {{domxref("DocumentFragment")}} trả về một đối tượng {{domxref("Element")}} đại diện cho phần tử có thuộc tính {{domxref("Element.id", "id")}} khớp với chuỗi đã chỉ định. Vì ID của phần tử được yêu cầu là duy nhất nếu được chỉ định, chúng là một cách hữu ích để truy cập nhanh vào một phần tử cụ thể.
 
-Nếu bạn cần truy cập vào một phần tử không có ID, bạn có thể dùng {{domxref("Document.querySelector", "querySelector()")}} để tìm phần tử bằng bất kỳ {{Glossary("CSS selector", "bộ chọn")}} nào.
+Nếu bạn cần truy cập vào một phần tử không có ID, bạn có thể sử dụng {{domxref("Document.querySelector", "querySelector()")}} để tìm phần tử bằng bất kỳ {{Glossary("CSS selector", "bộ chọn CSS")}} nào.
 
 > [!NOTE]
-> ID nên là duy nhất bên trong một document fragment. Nếu có hai hoặc nhiều phần tử trong một document fragment có cùng ID, phương thức này sẽ trả về phần tử đầu tiên tìm thấy.
+> ID nên là duy nhất trong một phân đoạn tài liệu. Nếu hai hoặc nhiều phần tử trong một phân đoạn tài liệu có cùng ID, phương thức này trả về phần tử đầu tiên được tìm thấy.
 
 ## Cú pháp
 
@@ -22,28 +22,28 @@ getElementById(id)
 ```
 
 > [!NOTE]
-> Phần viết hoa `"Id"` trong tên phương thức _phải_ chính xác để mã hoạt động; `getElementByID()` _không_ hợp lệ và sẽ không hoạt động, dù nó có thể trông tự nhiên hơn.
+> Cách viết hoa của `"Id"` trong tên của phương thức này _phải_ chính xác để mã hoạt động; `getElementByID()` _không_ hợp lệ và sẽ không hoạt động, dù có vẻ tự nhiên.
 
 ### Tham số
 
 - `id`
-  - : ID của phần tử cần tìm. ID là một chuỗi phân biệt chữ hoa chữ thường và là duy nhất trong document fragment: chỉ một phần tử nên có một ID bất kỳ.
+  - : ID của phần tử cần xác định vị trí. ID là một chuỗi phân biệt chữ hoa thường và là duy nhất trong phân đoạn tài liệu: chỉ một phần tử nên có bất kỳ ID nào.
 
 ### Giá trị trả về
 
-Một đối tượng {{domxref("Element")}} mô tả phần tử DOM khớp với ID đã chỉ định, hoặc `null` nếu không tìm thấy phần tử phù hợp nào trong document fragment.
+Một đối tượng {{domxref("Element")}} mô tả đối tượng phần tử DOM khớp với ID đã chỉ định, hoặc `null` nếu không tìm thấy phần tử khớp nào trong phân đoạn tài liệu.
 
 ## Ví dụ
 
-### Mở rộng một danh sách phần tử
+### Mở rộng danh sách các phần tử
 
-Trong ví dụ này, tài liệu chứa một danh sách với một mục duy nhất là `Cherry`. Chúng ta cũng tạo một document fragment chứa bốn mục nữa là `Apple`, `Orange`, `Banana`, và `Melon`.
+Trong ví dụ này, tài liệu chứa một danh sách với một mục `Cherry`. Chúng ta cũng tạo một phân đoạn tài liệu chứa bốn mục khác, `Apple`, `Orange`, `Banana`, và `Melon`.
 
-Sau đó chúng ta ghi lại kết quả của việc dùng `getElementById()` để tìm `Apple` và `Cherry` trong tài liệu và trong fragment. Tại thời điểm này, `Cherry` chỉ xuất hiện trong tài liệu còn `Apple` chỉ xuất hiện trong fragment.
+Sau đó, chúng ta ghi kết quả của việc sử dụng `getElementById()` để tìm `Apple` và `Cherry` trong tài liệu và trong phân đoạn. Tại thời điểm này, `Cherry` chỉ xuất hiện trong tài liệu trong khi `Apple` chỉ xuất hiện trong phân đoạn.
 
-Nếu bạn nhấp vào "Add fragment to document", chúng ta sẽ thêm fragment vào danh sách bên trong tài liệu, rồi ghi lại kết quả tìm cả `Apple` và `Cherry` trong tài liệu và trong fragment. Lần này, cả `Apple` và `Cherry` đều xuất hiện trong tài liệu, và không phần tử nào còn xuất hiện trong fragment.
+Nếu bạn nhấp "Add fragment to document", chúng ta nối phân đoạn vào danh sách trong tài liệu, và một lần nữa ghi kết quả của việc tìm kiếm cả `Apple` và `Cherry` trong tài liệu và trong phân đoạn. Lần này, cả `Apple` và `Cherry` đều xuất hiện trong tài liệu, và không xuất hiện trong phân đoạn.
 
-Điều này là do khi thêm một fragment vào tài liệu, các nút của fragment sẽ được di chuyển vào DOM, để lại một `DocumentFragment` rỗng.
+Điều này là do việc nối một phân đoạn vào tài liệu sẽ di chuyển các nút của phân đoạn vào DOM, để lại một `DocumentFragment` rỗng.
 
 #### HTML
 
@@ -69,7 +69,7 @@ button {
 #### JavaScript
 
 ```js
-// Tạo document fragment với nội dung ban đầu của nó
+// Create the document fragment with its initial content
 const fragment = new DocumentFragment();
 ["Apple", "Orange", "Banana", "Melon"].forEach((fruit) => {
   const li = document.createElement("li");
@@ -78,13 +78,13 @@ const fragment = new DocumentFragment();
   fragment.append(li);
 });
 
-// Khi nút được nhấp, thêm fragment vào danh sách
+// When the button is clicked, add the fragment to the list
 document.getElementById("add").addEventListener("click", () => {
   document.querySelector("ul").append(fragment);
   displayStatus();
 });
 
-// Ghi lại kết quả của cả hai lần getElementById()
+// Log the results of both getElementById()
 function displayStatus() {
   const log = document.getElementById("log");
   log.textContent = "";
@@ -97,7 +97,7 @@ function displayStatus() {
     }\n`;
   });
 
-  // Xóa khung xem fragment và điền lại nội dung hiện tại
+  // Empty the fragment viewer and fill it with the current content
   const fragmentViewer = document.getElementById("fragment");
   while (fragmentViewer.hasChildNodes()) {
     fragmentViewer.removeChild(fragmentViewer.lastChild);
@@ -107,10 +107,10 @@ function displayStatus() {
   }
 }
 
-// Ghi lại trạng thái ban đầu
+// Log the initial state
 displayStatus();
 
-// Gắn nút reset
+// Hook the reset button
 document.getElementById("reset").addEventListener("click", () => {
   document.location.reload();
 });
@@ -120,7 +120,7 @@ document.getElementById("reset").addEventListener("click", () => {
 
 {{EmbedLiveSample('Examples', '100%', '410px')}}
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

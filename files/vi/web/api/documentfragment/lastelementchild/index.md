@@ -8,11 +8,11 @@ browser-compat: api.DocumentFragment.lastElementChild
 
 {{ APIRef("DOM") }}
 
-Thuộc tính chỉ đọc **`DocumentFragment.lastElementChild`** trả về phần tử con {{domxref("Element")}} cuối cùng của document fragment, hoặc `null` nếu không có phần tử con nào.
+Thuộc tính chỉ đọc **`DocumentFragment.lastElementChild`** trả về phần tử {{domxref("Element")}} con cuối cùng của phân đoạn tài liệu, hoặc `null` nếu không có phần tử con nào.
 
 ## Giá trị
 
-Một {{domxref("Element")}} là phần tử con cuối cùng của đối tượng, hoặc `null` nếu không có phần tử nào.
+Một {{domxref("Element")}} là phần tử `Element` con cuối cùng của đối tượng, hoặc `null` nếu không có phần tử nào.
 
 ## Ví dụ
 
@@ -26,7 +26,7 @@ fragment.appendChild(paragraph);
 fragment.lastElementChild; // <p>
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

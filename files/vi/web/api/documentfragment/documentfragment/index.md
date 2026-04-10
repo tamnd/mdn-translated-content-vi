@@ -24,7 +24,7 @@ Không có.
 
 Một đối tượng {{domxref("DocumentFragment")}} mới.
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

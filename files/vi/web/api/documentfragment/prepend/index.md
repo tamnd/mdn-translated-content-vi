@@ -8,9 +8,9 @@ browser-compat: api.DocumentFragment.prepend
 
 {{APIRef("DOM")}}
 
-Phương thức **`DocumentFragment.prepend()`** chèn một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi trước phần tử con đầu tiên của document fragment. Chuỗi sẽ được chèn dưới dạng các nút {{domxref("Text")}} tương ứng.
+Phương thức **`DocumentFragment.prepend()`** chèn một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi trước phần tử con đầu tiên của phân đoạn tài liệu. Các chuỗi được chèn dưới dạng các nút {{domxref("Text")}} tương đương.
 
-Phương thức này thêm một phần tử con lên đầu `DocumentFragment`. Để thêm lên đầu một phần tử bất kỳ trong cây, hãy xem {{domxref("Element.prepend()")}}.
+Phương thức này thêm một phần tử con vào trước `DocumentFragment`. Để thêm vào trước một phần tử bất kỳ trong cây, xem {{domxref("Element.prepend()")}}.
 
 ## Cú pháp
 
@@ -23,7 +23,7 @@ prepend(param1, param2, /* …, */ paramN)
 ### Tham số
 
 - `param1`, …, `paramN`
-  - : Một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi để chèn vào.
+  - : Một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi cần chèn.
 
 ### Giá trị trả về
 
@@ -32,11 +32,11 @@ Không có ({{jsxref("undefined")}}).
 ### Ngoại lệ
 
 - `HierarchyRequestError` {{DOMxRef("DOMException")}}
-  - : Được ném ra khi nút không thể được chèn tại vị trí đã chỉ định trong cây phân cấp.
+  - : Được ném khi nút không thể được chèn tại vị trí đã chỉ định trong hệ thống phân cấp.
 
 ## Ví dụ
 
-### Thêm một phần tử lên đầu document fragment
+### Thêm một phần tử vào trước phân đoạn tài liệu
 
 ```js
 let fragment = new DocumentFragment();
@@ -48,7 +48,7 @@ fragment.prepend(div);
 fragment.children; // HTMLCollection [<div>, <p>]
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

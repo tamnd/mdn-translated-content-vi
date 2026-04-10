@@ -8,14 +8,13 @@ browser-compat: api.DocumentFragment.children
 
 {{ APIRef("DOM") }}
 
-Thuộc tính chỉ đọc **`children`** trả về một {{domxref("HTMLCollection")}} động
-chứa tất cả {{domxref("Element", "phần tử")}} con của document fragment mà nó được gọi trên đó.
+Thuộc tính chỉ đọc **`children`** trả về một {{domxref("HTMLCollection")}} trực tiếp chứa tất cả các {{domxref("Element","phần tử")}} con của phân đoạn tài liệu mà nó được gọi.
 
 ## Giá trị
 
-Một {{domxref("HTMLCollection")}} là một tập hợp động, có thứ tự của các phần tử DOM là con của document fragment. Bạn có thể truy cập các nút con riêng lẻ trong tập hợp bằng phương thức {{domxref("HTMLCollection.item()", "item()")}} của tập hợp, hoặc bằng ký pháp kiểu mảng của JavaScript.
+Một {{ domxref("HTMLCollection") }} là một tập hợp trực tiếp, có thứ tự của các phần tử DOM là con của phân đoạn tài liệu. Bạn có thể truy cập các phần tử con riêng lẻ trong tập hợp bằng cách sử dụng phương thức {{domxref("HTMLCollection.item()", "item()")}} trên tập hợp, hoặc bằng cách sử dụng ký hiệu kiểu mảng JavaScript.
 
-Nếu document fragment không có phần tử con nào, thì `children` là một danh sách rỗng với `length` bằng `0`.
+Nếu phân đoạn tài liệu không có phần tử con nào, thì `children` là một danh sách rỗng với `length` bằng `0`.
 
 ## Ví dụ
 
@@ -29,7 +28,7 @@ fragment.appendChild(paragraph);
 fragment.children; // HTMLCollection [<p>]
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

@@ -8,9 +8,9 @@ browser-compat: api.DocumentFragment.append
 
 {{APIRef("DOM")}}
 
-Phương thức **`DocumentFragment.append()`** chèn một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi sau phần tử con cuối cùng của document fragment. Chuỗi sẽ được chèn dưới dạng các nút {{domxref("Text")}} tương ứng.
+Phương thức **`DocumentFragment.append()`** chèn một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi sau phần tử con cuối cùng của phân đoạn tài liệu. Các chuỗi được chèn dưới dạng các nút {{domxref("Text")}} tương đương.
 
-Phương thức này thêm một phần tử con vào `DocumentFragment`. Để thêm vào một phần tử bất kỳ trong cây, hãy xem {{domxref("Element.append()")}}.
+Phương thức này thêm một phần tử con vào `DocumentFragment`. Để thêm vào một phần tử bất kỳ trong cây, xem {{domxref("Element.append()")}}.
 
 ## Cú pháp
 
@@ -23,7 +23,7 @@ append(param1, param2, /* …, */ paramN)
 ### Tham số
 
 - `param1`, …, `paramN`
-  - : Một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi để chèn vào.
+  - : Một tập hợp các đối tượng {{domxref("Node")}} hoặc chuỗi cần chèn.
 
 ### Giá trị trả về
 
@@ -32,11 +32,11 @@ Không có ({{jsxref("undefined")}}).
 ### Ngoại lệ
 
 - `HierarchyRequestError` {{DOMxRef("DOMException")}}
-  - : Được ném ra khi nút không thể được chèn tại vị trí đã chỉ định trong cây phân cấp.
+  - : Được ném khi nút không thể được chèn tại vị trí đã chỉ định trong hệ thống phân cấp.
 
 ## Ví dụ
 
-### Thêm một phần tử vào document fragment
+### Thêm một phần tử vào phân đoạn tài liệu
 
 ```js
 let fragment = new DocumentFragment();
@@ -46,7 +46,7 @@ fragment.append(div);
 fragment.children; // HTMLCollection [<div>]
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

@@ -10,11 +10,11 @@ browser-compat: api.DocumentFragment.childElementCount
 
 Thuộc tính chỉ đọc **`DocumentFragment.childElementCount`** trả về số lượng phần tử con của một `DocumentFragment`.
 
-Để lấy số lượng phần tử con của một phần tử cụ thể, hãy xem {{domxref("Element.childElementCount")}}.
+Để lấy số lượng phần tử con của một phần tử cụ thể, xem {{domxref("Element.childElementCount")}}.
 
 ## Giá trị
 
-Một số biểu thị số lượng phần tử con của document fragment.
+Một số đại diện cho số lượng phần tử con của phân đoạn tài liệu.
 
 ## Ví dụ
 
@@ -28,7 +28,7 @@ fragment.appendChild(paragraph);
 fragment.childElementCount; // 1
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

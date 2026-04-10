@@ -8,11 +8,11 @@ browser-compat: api.DocumentFragment.firstElementChild
 
 {{ APIRef("DOM") }}
 
-Thuộc tính chỉ đọc **`DocumentFragment.firstElementChild`** trả về phần tử con {{domxref("Element")}} đầu tiên của document fragment, hoặc `null` nếu không có phần tử con nào.
+Thuộc tính chỉ đọc **`DocumentFragment.firstElementChild`** trả về {{domxref("Element")}} con đầu tiên của phân đoạn tài liệu, hoặc `null` nếu không có phần tử con nào.
 
 ## Giá trị
 
-Một {{domxref("Element")}} là phần tử con đầu tiên của đối tượng, hoặc `null` nếu không có phần tử nào.
+Một {{domxref("Element")}} là phần tử `Element` con đầu tiên của đối tượng, hoặc `null` nếu không có phần tử nào.
 
 ## Ví dụ
 
@@ -26,7 +26,7 @@ fragment.appendChild(paragraph);
 fragment.firstElementChild; // <p>
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 

@@ -8,7 +8,7 @@ browser-compat: api.DocumentFragment.querySelectorAll
 
 {{ApiRef("DOM")}}
 
-Phương thức **`DocumentFragment.querySelectorAll()`** trả về một {{domxref("NodeList")}} các phần tử bên trong {{domxref("DocumentFragment")}} (dùng duyệt theo thứ tự tiền tố theo chiều sâu của các nút trong tài liệu) khớp với nhóm bộ chọn đã chỉ định.
+Phương thức **`DocumentFragment.querySelectorAll()`** trả về một {{domxref("NodeList")}} của các phần tử trong {{domxref("DocumentFragment")}} (sử dụng duyệt đệ quy các nút của tài liệu theo thứ tự trước) khớp với nhóm bộ chọn đã chỉ định.
 
 Nếu các bộ chọn được chỉ định trong tham số không hợp lệ, một {{domxref("DOMException")}} với giá trị `SYNTAX_ERR` sẽ được ném ra.
 
@@ -25,17 +25,17 @@ querySelectorAll(selectors)
 
 ### Giá trị trả về
 
-Một {{domxref("NodeList")}} không động chứa một đối tượng {{domxref("Element")}} cho mỗi phần tử khớp với ít nhất một trong các bộ chọn đã chỉ định, hoặc một {{domxref("NodeList")}} rỗng nếu không có kết quả khớp nào.
+Một {{domxref("NodeList")}} không trực tiếp chứa một đối tượng {{domxref("Element")}} cho mỗi phần tử khớp với ít nhất một trong các bộ chọn đã chỉ định hoặc một {{domxref("NodeList")}} rỗng trong trường hợp không có kết quả khớp.
 
 ## Ví dụ
 
-Ví dụ này trả về danh sách tất cả các phần tử `div` bên trong `DocumentFragment` có lớp là `note` hoặc `alert`:
+Ví dụ này trả về danh sách tất cả các phần tử `div` trong `DocumentFragment` có lớp là `note` hoặc `alert`:
 
 ```js
 const matches = documentFrag.querySelectorAll("div.note, div.alert");
 ```
 
-## Thông số kỹ thuật
+## Đặc điểm kỹ thuật
 
 {{Specifications}}
 
