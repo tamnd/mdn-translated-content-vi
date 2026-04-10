@@ -111,7 +111,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/sharedworkerglobalscope (4 trang)
 - [ ] api/dedicatedworkerglobalscope (9 trang)
 - [ ] api/serviceworker (6 trang)
-- [ ] api/service_worker_api (2 trang)
+- [x] api/service_worker_api (2 trang)
 - [ ] api/serviceworkercontainer (10 trang)
 - [ ] api/serviceworkerregistration (19 trang)
 - [ ] api/serviceworkerglobalscope (25 trang)
