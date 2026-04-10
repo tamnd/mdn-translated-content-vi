@@ -120,10 +120,10 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## API Streams
 
-- [ ] api/streams_api (5 trang)
-- [ ] api/readablestream (9 trang)
-- [ ] api/writablestream (6 trang)
-- [ ] api/transformstream (4 trang)
+- [x] api/streams_api (5 trang)
+- [x] api/readablestream (9 trang)
+- [x] api/writablestream (6 trang)
+- [x] api/transformstream (4 trang)
 - [ ] api/readablestreamdefaultreader (6 trang)
 - [ ] api/writablestreamdefaultwriter (9 trang)
 - [ ] _(các giao diện stream còn lại)_
@@ -162,9 +162,9 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Intersection / Resize / Mutation Observer
 
-- [ ] api/intersection_observer_api (2 trang)
-- [ ] api/intersectionobserver (12 trang)
-- [ ] api/intersectionobserverentry (9 trang)
+- [x] api/intersection_observer_api (2 trang)
+- [x] api/intersectionobserver (12 trang)
+- [x] api/intersectionobserverentry (9 trang)
 - [x] api/resize_observer_api (1 trang)
 - [x] api/resizeobserver (5 trang)
 - [x] api/resizeobserverentry (6 trang)
@@ -279,8 +279,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/url_api (2 trang)
 - [ ] api/urlpattern (13 trang)
 - [ ] api/credential_management_api (2 trang)
-- [ ] api/gamepad_api (2 trang)
-- [ ] api/gamepad (13 trang)
+- [x] api/gamepad_api (2 trang)
+- [x] api/gamepad (13 trang)
 - [ ] api/vibration_api (1 trang)
 - [ ] api/broadcast_channel_api (1 trang)
 - [ ] api/channel_messaging_api (2 trang)
