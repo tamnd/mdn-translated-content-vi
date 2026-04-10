@@ -165,9 +165,9 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/intersection_observer_api (2 trang)
 - [ ] api/intersectionobserver (12 trang)
 - [ ] api/intersectionobserverentry (9 trang)
-- [ ] api/resize_observer_api (1 trang)
-- [ ] api/resizeobserver (5 trang)
-- [ ] api/resizeobserverentry (6 trang)
+- [x] api/resize_observer_api (1 trang)
+- [x] api/resizeobserver (5 trang)
+- [x] api/resizeobserverentry (6 trang)
 - [x] api/mutationobserver (5 trang)
 
 ## Media và âm thanh / video
@@ -223,9 +223,9 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Geolocation và cảm biến
 
-- [ ] api/geolocation_api (2 trang)
-- [ ] api/geolocation (4 trang)
-- [ ] api/geolocationcoordinates (9 trang)
+- [x] api/geolocation_api (2 trang)
+- [x] api/geolocation (4 trang)
+- [x] api/geolocationcoordinates (9 trang)
 - [ ] api/sensor_apis (1 trang)
 - [ ] api/accelerometer (5 trang)
 - [ ] api/gyroscope (5 trang)
