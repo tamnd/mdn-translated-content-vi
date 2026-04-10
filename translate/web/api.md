@@ -9,7 +9,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [ ] api/document (147 trang)
 - [ ] api/element (215 trang)
-- [ ] api/node (31 trang)
+- [x] api/node (31 trang)
 - [ ] api/window (158 trang)
 - [x] api/eventtarget (5 trang)
 - [x] api/event (22 trang)
