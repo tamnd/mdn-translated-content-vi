@@ -22,7 +22,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/domtokenlist (15 trang)
 - [x] api/range (28 trang)
 - [x] api/selection (26 trang)
-- [ ] api/mutationobserver (5 trang)
+- [x] api/mutationobserver (5 trang)
 - [x] api/mutationrecord (10 trang)
 - [x] api/treewalker (12 trang)
 - [x] api/nodeiterator (9 trang)
@@ -168,7 +168,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/resize_observer_api (1 trang)
 - [ ] api/resizeobserver (5 trang)
 - [ ] api/resizeobserverentry (6 trang)
-- [ ] api/mutationobserver (5 trang)
+- [x] api/mutationobserver (5 trang)
 
 ## Media và âm thanh / video
 
