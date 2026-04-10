@@ -117,7 +117,7 @@ Do đó, có thể chọn phạm vi mà một {{domxref("AudioParam")}} sẽ tha
 
 {{Specifications}}
 
-## Khả năng tương thích với trình duyệt
+## Tương thích trình duyệt
 
 {{Compat}}
 

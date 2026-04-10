@@ -41,7 +41,7 @@ oscillator.channelInterpretation = "discrete";
 
 {{Specifications}}
 
-## Khả năng tương thích với trình duyệt
+## Tương thích trình duyệt
 
 {{Compat}}
 

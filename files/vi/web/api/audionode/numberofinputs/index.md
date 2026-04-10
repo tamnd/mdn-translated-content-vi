@@ -33,7 +33,7 @@ console.log(audioCtx.destination.numberOfInputs); // 1
 
 {{Specifications}}
 
-## Khả năng tương thích với trình duyệt
+## Tương thích trình duyệt
 
 {{Compat}}
 
