@@ -28,7 +28,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/nodeiterator (9 trang)
 - [x] api/location (15 trang)
 - [x] api/history (9 trang)
-- [ ] api/url (20 trang)
+- [x] api/url (20 trang)
 - [x] api/urlsearchparams (15 trang)
 
 ## Fetch / XHR / Mạng [ưu tiên cao]
