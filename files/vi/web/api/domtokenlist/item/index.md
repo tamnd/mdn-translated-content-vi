@@ -12,7 +12,7 @@ Phương thức **`item()`** của giao diện {{domxref("DOMTokenList")}} trả
 xác định theo vị trí của nó trong danh sách, tức chỉ số.
 
 > [!NOTE]
-> Phương thức này tương đương với [cú pháp dấu ngoặc vuông](/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#bracket_notation).
+> Phương thức này tương đương với [ký hiệu dấu ngoặc vuông](/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#bracket_notation).
 > Vì vậy `list.item(i)` giống với `list[i]`.
 
 ## Cú pháp
