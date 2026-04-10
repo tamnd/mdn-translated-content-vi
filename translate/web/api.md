@@ -26,10 +26,10 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/mutationrecord (10 trang)
 - [x] api/treewalker (12 trang)
 - [x] api/nodeiterator (9 trang)
-- [ ] api/location (15 trang)
+- [x] api/location (15 trang)
 - [x] api/history (9 trang)
 - [ ] api/url (20 trang)
-- [ ] api/urlsearchparams (15 trang)
+- [x] api/urlsearchparams (15 trang)
 
 ## Fetch / XHR / Mạng [ưu tiên cao]
 
