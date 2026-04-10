@@ -15,28 +15,28 @@ browser-compat: api.Element.outerHTML
 > You can mitigate this risk by always assigning `TrustedHTML` objects instead of strings and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types).
 > See [Security considerations](#security_considerations) for more information.
 
-The **`outerHTML`** attribute of the {{domxref("Element")}} interface gets or sets the HTML or XML markup of the element and its descendants, omitting any {{glossary("shadow tree", "shadow roots")}} in both cases.
+Thuộc tính **`outerHTML`** attribute of the {{domxref("Element")}} interface gets or sets the HTML or XML markup of the element and its descendants, omitting any {{glossary("shadow tree", "shadow roots")}} in both cases.
 
 To get or set the contents of an element, use the {{domxref("Element.innerHTML", "innerHTML")}} property instead.
 
-## Value
+## Giá trị
 
-Getting the property returns a string containing an HTML serialization of the `element` and its descendants.
+Getting the property trả về a string containing an HTML serialization of the `element` and its descendants.
 
 Setting the property accepts either a {{domxref("TrustedHTML")}} object or a string.
 The input is parsed as HTML and replaces the element and all its descendants with the result.
 When set to the `null` value, that `null` value is converted to the empty string (`""`), so `element.outerHTML = null` is equivalent to `element.outerHTML = ""`.
 
-### Exceptions
+### Ngoại lệ
 
 - `NoModificationAllowedError` {{domxref("DOMException")}}
   - : Thrown if an attempt was made to set `outerHTML` on an element which is a direct child of a {{domxref("Document")}}, such as {{domxref("Document.documentElement")}}.
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if an attempt was made to set `outerHTML` using an XML input which is not well-formed.
 - `TypeError`
-  - : Thrown if the property is set to a string when [Trusted Types](/en-US/docs/Web/API/Trusted_Types_API) are [enforced by a CSP](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) and no default policy is defined.
+  - : Thrown if the property được đặt là a string when [Trusted Types](/en-US/docs/Web/API/Trusted_Types_API) are [enforced by a CSP](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) and no default policy is defined.
 
-## Description
+## Mô tả
 
 `outerHTML` gets a serialization of the element, or sets HTML or XML that should be parsed to replace it within the element's parent.
 
@@ -96,7 +96,7 @@ element.outerHTML = name; // shows the alert
 You can mitigate these issues by always assigning {{domxref("TrustedHTML")}} objects instead of strings, and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) using the [`require-trusted-types-for`](/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/require-trusted-types-for) CSP directive.
 This ensures that the input is passed through a transformation function, which has the chance to [sanitize](/en-US/docs/Web/Security/Attacks/XSS#sanitization) the input to remove potentially dangerous markup before it is injected.
 
-## Examples
+## Ví dụ
 
 ### Getting the serialization of an element
 
@@ -122,7 +122,7 @@ console.log(contents);
 
 ### Replacing the element
 
-In this example we'll replace an element in the DOM by assigning HTML to the element's `outerHTML` property.
+Trong ví dụ này we'll replace an element in the DOM by assigning HTML to the element's `outerHTML` property.
 To mitigate the risk of XSS, we'll first create a `TrustedHTML` object from the string containing the HTML, and then assign that object to `outerHTML`.
 
 Trusted types are not yet supported on all browsers, so first we define the [trusted types tinyfill](/en-US/docs/Web/API/Trusted_Types_API#trusted_types_tinyfill).
@@ -133,7 +133,7 @@ if (typeof trustedTypes === "undefined")
   trustedTypes = { createPolicy: (n, rules) => rules };
 ```
 
-Next we create a {{domxref("TrustedTypePolicy")}} that defines a {{domxref("TrustedTypePolicy/createHTML", "createHTML()")}} for transforming an input string into {{domxref("TrustedHTML")}} instances.
+Next we create a {{domxref("TrustedTypePolicy")}} that định nghĩa a {{domxref("TrustedTypePolicy/createHTML", "createHTML()")}} for transforming an input string into {{domxref("TrustedHTML")}} instances.
 Commonly implementations of `createHTML()` use a library such as [DOMPurify](https://github.com/cure53/DOMPurify) to sanitize the input as shown below:
 
 ```js
@@ -151,7 +151,7 @@ const untrustedString = "<p>I might be XSS</p><img src='x' onerror='alert(1)'>";
 // Create a TrustedHTML instance using the policy
 const trustedHTML = policy.createHTML(untrustedString);
 
-// Inject the TrustedHTML (which contains a trusted string)
+// Inject the TrustedHTML (which chứa a trusted string)
 const element = document.querySelector("#container");
 element.outerHTML = trustedHTML; // Replaces the element with id "container"
 
@@ -162,15 +162,15 @@ element.outerHTML = trustedHTML; // Replaces the element with id "container"
 > While you can directly assign a string to `outerHTML` this is a [security risk](#security_considerations) if the string to be inserted might contain potentially malicious content.
 > You should use `TrustedHTML` to ensure that the content is sanitized before it is inserted, and you should set a CSP header to [enforce trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Serializing DOM trees into XML strings: {{domxref("XMLSerializer")}}
 - Parsing XML or HTML into DOM trees: {{domxref("DOMParser")}}

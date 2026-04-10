@@ -8,18 +8,18 @@ browser-compat: api.Element.lastElementChild
 
 {{ APIRef("DOM") }}
 
-The **`Element.lastElementChild`** read-only property
-returns an element's last child {{domxref("Element")}}, or `null` if there
+Thuộc tính **`Element.lastElementChild`** là thuộc tính chỉ đọc
+trả về an element's last child {{domxref("Element")}}, or `null` if there
 are no child elements.
 
 `Element.lastElementChild` includes only element nodes.
 To get all child nodes, including non-element nodes like text and comment nodes, use {{domxref("Node.lastChild")}}.
 
-## Value
+## Giá trị
 
-An {{domxref("Element")}} object, or `null`.
+Một {{domxref("Element")}} object, or `null`.
 
-## Examples
+## Ví dụ
 
 ```html
 <ul id="list">
@@ -35,15 +35,15 @@ console.log(list.lastElementChild.textContent);
 // logs "Third (3)"
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.previousElementSibling")}}
 - {{domxref("Element.firstElementChild")}}

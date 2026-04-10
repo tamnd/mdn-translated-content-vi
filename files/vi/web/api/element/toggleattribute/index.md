@@ -8,42 +8,42 @@ browser-compat: api.Element.toggleAttribute
 
 {{APIRef("DOM")}}
 
-The **`toggleAttribute()`** method of the {{domxref("Element")}} interface toggles a Boolean attribute on the given element, removing it if present and adding it if not present.
+Thuộc tính **`toggleAttribute()`** của giao diện {{domxref("Element")}} toggles a Boolean attribute on the given element, removing it if present and adding it if not present.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 toggleAttribute(name)
 toggleAttribute(name, force)
 ```
 
-### Parameters
+### Tham số
 
 - `name`
-  - : A string specifying the name of the attribute to be toggled.
+  - : Một chuỗi specifying the name of the attribute to be toggled.
     The attribute name is automatically converted to all lower-case when `toggleAttribute()` is called on an HTML element in an HTML document.
 - `force` {{optional_inline}}
-  - : A boolean value which has the following effects:
+  - : Một boolean value which has the following effects:
     - if not specified at all, the `toggleAttribute` method "toggles" the attribute named `name` — removing it if it is present, or else adding it if it is not present
     - if true, the `toggleAttribute` method adds an attribute named `name`
     - if false, the `toggleAttribute` method removes the attribute named `name`
 
-### Return value
+### Giá trị trả về
 
 `true` if attribute **`name`** is eventually
 present, and `false` otherwise.
 
-### Exceptions
+### Ngoại lệ
 
 - `InvalidCharacterError` {{domxref("DOMException")}}
-  - : The specified attribute `name` contains one or more characters that are not valid in attribute names.
+  - : The specified attribute `name` chứa one or more characters that are not valid in attribute names.
     The `name` must have at least one character, and may not contain ASCII whitespace, `NULL`, `/`, `=` or `>` (U+0000, U+002F, U+003D, or U+003E, respectively).
 
-## Examples
+## Ví dụ
 
 ### Basic usage
 
-In the following example, `toggleAttribute()` is used to toggle the `disabled` attribute of an {{HTMLElement("input")}}.
+Trong ví dụ sau, `toggleAttribute()` is used to toggle the `disabled` attribute of an {{HTMLElement("input")}}.
 
 ### HTML
 
@@ -66,15 +66,15 @@ button.addEventListener("click", () => {
 
 {{ EmbedLiveSample('Examples', '300', '50') }}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttribute()")}}
 - {{domxref("Element.getAttribute()")}}

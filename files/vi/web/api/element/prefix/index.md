@@ -8,17 +8,17 @@ browser-compat: api.Element.prefix
 
 {{APIRef("DOM")}}
 
-The **`Element.prefix`** read-only property returns the
+Thuộc tính **`Element.prefix`** là thuộc tính chỉ đọc trả về the
 namespace prefix of the specified element, or `null` if no prefix is
 specified.
 
-## Value
+## Giá trị
 
-A string.
+Một chuỗi.
 
-## Examples
+## Ví dụ
 
-The following logs "x" to the console.
+Các giá trị sau logs "x" to the console.
 
 ```xml
 <x:div onclick="console.log(this.prefix)"/>
@@ -29,15 +29,15 @@ The following logs "x" to the console.
 This will only work when a namespace-aware parser is used, i.e., when a document is
 served with an XML MIME type. This will not work for HTML documents.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.namespaceURI")}}
 - {{domxref("Element.localName")}}

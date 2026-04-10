@@ -12,7 +12,7 @@ The `pointerover` event is fired when a pointing device is moved into an element
 
 `pointerover` events have the same problems as {{domxref("Element/mouseover_event", "mouseover")}}. If the target element has child elements, `pointerout` and `pointerover` events fire as the pointer moves over the boundaries of these elements too, not just the target element itself. Usually, {{domxref("Element/pointerenter_event", "pointerenter")}} and {{domxref("Element/pointerleave_event", "pointerleave")}} events' behavior is more sensible, because they are not affected by moving into child elements.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ onpointerover = (event) => { }
 
 ## Event type
 
-A {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("PointerEvent")}}
 
@@ -57,11 +57,11 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
   - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
-  - : Indicates if the pointer represents the primary pointer of this pointer type.
+  - : Indicates if the pointer đại diện cho the primary pointer of this pointer type.
 
-## Examples
+## Ví dụ
 
-Using `addEventListener()`:
+Sử dụng `addEventListener()`:
 
 ```js
 const para = document.querySelector("p");
@@ -71,7 +71,7 @@ para.addEventListener("pointerover", (event) => {
 });
 ```
 
-Using the `onpointerover` event handler property:
+Sử dụng the `onpointerover` event handler property:
 
 ```js
 const para = document.querySelector("p");
@@ -81,15 +81,15 @@ para.onpointerover = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events
   - {{domxref('Element/gotpointercapture_event', 'gotpointercapture')}}

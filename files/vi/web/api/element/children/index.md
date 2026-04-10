@@ -13,7 +13,7 @@ which contains all of the child {{domxref("Element", "elements")}} of the elemen
 
 `Element.children` includes only element nodes. To get all child nodes, including non-element nodes like text and comment nodes, use {{domxref("Node.childNodes")}}.
 
-## Value
+## Giá trị
 
 An {{ domxref("HTMLCollection") }} which is a live, ordered collection of the DOM
 elements which are children of `node`. You can access the
@@ -24,7 +24,7 @@ JavaScript array-style notation.
 If the element has no element children, then `children` is an empty list with a
 `length` of `0`.
 
-## Examples
+## Ví dụ
 
 ```js
 const myElement = document.getElementById("foo");
@@ -33,14 +33,14 @@ for (const child of myElement.children) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Node.childNodes")}}

@@ -8,11 +8,11 @@ browser-compat: api.Element.mouseover_event
 
 {{APIRef("UI Events")}}
 
-The **`mouseover`** event is fired at an {{domxref("Element")}} when a pointing device (such as a mouse or trackpad) is used to move the cursor onto the element or one of its child elements.
+Thuộc tính **`mouseover`** is fired at an {{domxref("Element")}} when a pointing device (such as a mouse or trackpad) is used to move the cursor onto the element or one of its child elements.
 
 If the target element has child elements, `mouseout` and `mouseover` events fire as the mouse moves over the boundaries of these elements too, not just the target element itself. Usually, `mouseenter` and `mouseleave` events' behavior is more sensible, because they are not affected by moving into child elements.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ onmouseover = (event) => { }
 
 ## Event type
 
-A {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("MouseEvent")}}
 
@@ -80,9 +80,9 @@ _This interface also inherits properties of its parents, {{domxref("UIEvent")}} 
 - {{domxref("MouseEvent.y")}} {{ReadOnlyInline}}
   - : Alias for {{domxref("MouseEvent.clientY")}}.
 
-## Examples
+## Ví dụ
 
-The following example illustrates the difference between `mouseover` and {{domxref("Element/mouseenter_event", "mouseenter")}} events.
+Các giá trị sau example illustrates the difference between `mouseover` and {{domxref("Element/mouseenter_event", "mouseenter")}} events.
 
 ### HTML
 
@@ -128,15 +128,15 @@ test.addEventListener("mouseover", (event) => {
 
 {{EmbedLiveSample('Examples')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/mousedown_event", "mousedown")}}

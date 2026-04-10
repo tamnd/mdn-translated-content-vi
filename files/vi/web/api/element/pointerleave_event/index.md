@@ -10,7 +10,7 @@ browser-compat: api.Element.pointerleave_event
 
 The `pointerleave` event is fired when a pointing device is moved out of the hit test boundaries of an element. For pen devices, this event is fired when the stylus leaves the hover range detectable by the digitizer. Otherwise, `pointerleave` works the same as {{domxref("Element/mouseleave_event", "mouseleave")}}, and are dispatched at the same time. They are also dispatched at the same time as {{domxref("Element/mouseout_event", "mouseout")}} and {{domxref("Element/pointerout_event", "pointerout")}} events, if appropriate.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -22,7 +22,7 @@ onpointerleave = (event) => { }
 
 ## Event type
 
-A {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("PointerEvent")}}
 
@@ -55,11 +55,11 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
   - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
-  - : Indicates if the pointer represents the primary pointer of this pointer type.
+  - : Indicates if the pointer đại diện cho the primary pointer of this pointer type.
 
-## Examples
+## Ví dụ
 
-Using `addEventListener()`:
+Sử dụng `addEventListener()`:
 
 ```js
 const para = document.querySelector("p");
@@ -69,7 +69,7 @@ para.addEventListener("pointerleave", (event) => {
 });
 ```
 
-Using the `onpointerleave` event handler property:
+Sử dụng the `onpointerleave` event handler property:
 
 ```js
 const para = document.querySelector("p");
@@ -79,15 +79,15 @@ para.onpointerleave = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events
   - {{domxref('Element/gotpointercapture_event', 'gotpointercapture')}}

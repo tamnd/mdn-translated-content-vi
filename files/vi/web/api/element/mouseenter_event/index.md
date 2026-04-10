@@ -8,11 +8,11 @@ browser-compat: api.Element.mouseenter_event
 
 {{APIRef("UI Events")}}
 
-The **`mouseenter`** event is fired at an {{domxref("Element")}} when a pointing device (usually a mouse) is initially moved so that its hotspot is within the element at which the event was fired.
+Thuộc tính **`mouseenter`** is fired at an {{domxref("Element")}} when a pointing device (usually a mouse) is initially moved so that its hotspot is within the element at which the event was fired.
 
 Note that "moving into an element" refers to the element's position in the DOM tree, not to its visual position. For example, if a child element is positioned so it is placed outside its parent, then moving into the child element will trigger `mouseenter` on the parent element, even though the pointer is still outside the bounds of the parent element.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ onmouseenter = (event) => { }
 
 ## Event type
 
-A {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("MouseEvent")}}
 
@@ -80,7 +80,7 @@ _This interface also inherits properties of its parents, {{domxref("UIEvent")}} 
 - {{domxref("MouseEvent.y")}} {{ReadOnlyInline}}
   - : Alias for {{domxref("MouseEvent.clientY")}}.
 
-## Usage notes
+## Ghi chú sử dụng
 
 Though similar to {{domxref("Element/mouseover_event", "mouseover")}}, `mouseenter` differs in that it doesn't [bubble](/en-US/docs/Web/API/Event/bubbles) and it isn't sent to any descendants when the pointer is moved from one of its descendants' physical space to its own physical space. Other than that, enter and over events for the same situation are dispatched at the same time, if appropriate.
 
@@ -99,13 +99,13 @@ With deep hierarchies, the number of `mouseenter` events sent can be quite huge 
 
 Combined with the corresponding `mouseleave` (which is fired at the element when the mouse exits its content area), the `mouseenter` event acts in a very similar way to the CSS {{cssxref(':hover')}} pseudo-class.
 
-## Examples
+## Ví dụ
 
 The [`mouseover`](/en-US/docs/Web/API/Element/mouseover_event#examples) documentation has an example illustrating the difference between `mouseover` and `mouseenter`.
 
 ### mouseenter
 
-The following trivial example uses the `mouseenter` event to change the border on the `div` when the mouse enters the space allotted to it. It then adds an item to the list with the number of the `mouseenter` or `mouseleave` event.
+Các giá trị sau trivial example uses the `mouseenter` event to change the border on the `div` when the mouse enters the space allotted to it. It then adds an item to the list with the number of the `mouseenter` or `mouseleave` event.
 
 #### HTML
 
@@ -168,15 +168,15 @@ function addListItem(text) {
 
 {{EmbedLiveSample('mouseenter')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/mousedown_event", "mousedown")}}

@@ -8,28 +8,28 @@ browser-compat: api.Element.computedStyleMap
 
 {{APIRef("CSS Typed Object Model API")}}
 
-The **`computedStyleMap()`** method of
-the {{domxref("Element")}} interface returns a {{domxref("StylePropertyMapReadOnly")}}
+Thuộc tính **`computedStyleMap()`** method of
+the {{domxref("Element")}} interface trả về a {{domxref("StylePropertyMapReadOnly")}}
 interface which provides a read-only representation of a CSS declaration block that is
 an alternative to {{domxref("CSSStyleDeclaration")}}.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 computedStyleMap()
 ```
 
-### Parameters
+### Tham số
 
 None.
 
-### Return value
+### Giá trị trả về
 
-A {{domxref("StylePropertyMapReadOnly")}} object.
+Một {{domxref("StylePropertyMapReadOnly")}} object.
 
-Unlike {{domxref("Window.getComputedStyle")}}, the return value contains [computed values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#computed_value), not [resolved values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#resolved_value). For most properties, they are the same, except a few layout-related properties, where the resolved value is the [used value](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#used_value) instead of the computed value. See the [comparison with `getComputedStyle()`](#comparison_with_getcomputedstyle) example for details.
+Unlike {{domxref("Window.getComputedStyle")}}, the return value chứa [computed values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#computed_value), not [resolved values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#resolved_value). For most properties, they are the same, except a few layout-related properties, where the resolved value is the [used value](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#used_value) instead of the computed value. See the [comparison with `getComputedStyle()`](#comparison_with_getcomputedstyle) example for details.
 
-## Examples
+## Ví dụ
 
 ### Getting default styles
 
@@ -91,11 +91,11 @@ and `margin-bottom` default computed values.
 
 ### Comparison with getComputedStyle()
 
-{{domxref("Window.getComputedStyle()")}} returns [resolved values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#resolved_value), while `computedStyleMap()` returns [computed values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#computed_value). These are usually the same, but for some properties, the resolved value is the [used value](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#used_value) instead of the computed value. For example, percentage values for widths are resolved to pixel values _post-layout_, so the used values are in pixels, while the computed values are still in percentages.
+{{domxref("Window.getComputedStyle()")}} trả về [resolved values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#resolved_value), while `computedStyleMap()` trả về [computed values](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#computed_value). These are usually the same, but for some properties, the resolved value is the [used value](/en-US/docs/Web/CSS/Guides/Cascade/Property_value_processing#used_value) instead of the computed value. For example, percentage values for widths are resolved to pixel values _post-layout_, so the used values are in pixels, while the computed values are still in percentages.
 
-Note that the way we present it makes the two APIs seem more similar than they are. `computedStyleMap()` contains [CSS Typed OM](/en-US/docs/Web/API/CSS_Typed_OM_API) objects, while `getComputedStyle()` contains strings. The former presents the same information in a more structured and processable way.
+Note that the way we present it makes the two APIs seem more similar than they are. `computedStyleMap()` chứa [CSS Typed OM](/en-US/docs/Web/API/CSS_Typed_OM_API) objects, while `getComputedStyle()` chứa strings. The former presents the same information in a more structured and processable way.
 
-In this example, the `width` property is specified as a percentage, so the computed value is given as a percentage, but the resolved value is given in pixels. The `height` is always in pixels. The `background-color` is a named color, but it is computed to an RGB value.
+Trong ví dụ này, the `width` property is specified as a percentage, so the computed value is given as a percentage, but the resolved value is given in pixels. The `height` is always in pixels. The `background-color` is a named color, but it is computed to an RGB value.
 
 ```html
 <div class="container">
@@ -137,14 +137,14 @@ computedValues.get("background-color") = ${computedValues.get(
 
 {{EmbedLiveSample("comparison_with_getcomputedstyle", "", 350)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Window.getComputedStyle()")}}

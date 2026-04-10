@@ -15,27 +15,27 @@ browser-compat: api.Element.setAttributeNS
 > You can mitigate this risk by always passing the appropriate trusted type object ({{domxref("TrustedHTML")}}, {{domxref("TrustedScript")}}, or {{domxref("TrustedScriptURL")}}) instead of strings for those attributes that require them, and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types).
 > See [Security considerations](/en-US/docs/Web/API/Element/setAttribute#security_considerations) in {{domxref("Element.setAttribute()")}} for more information.
 
-The **`setAttributeNS()`** method of the {{domxref("Element")}} interface adds a new attribute or changes the value of an attribute with the given namespace and name.
+Thuộc tính **`setAttributeNS()`** của giao diện {{domxref("Element")}} adds a new attribute or changes the value of an attribute with the given namespace and name.
 
 If you are working with HTML documents and you don't need to specify the requested attribute as being part of a specific namespace, use the {{domxref("Element.setAttribute()", "setAttribute()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setAttributeNS(namespaceURI, qualifiedName, value)
 ```
 
-### Parameters
+### Tham số
 
 - `namespaceURI`
-  - : A string specifying the namespace of the attribute to set, or the empty string.
+  - : Một chuỗi specifying the namespace of the attribute to set, or the empty string.
 
 - `qualifiedName`
-  - : A string identifying the attribute by its qualified name, which has the format `prefix:localName` or `localName`, where the parts are defined as:
+  - : Một chuỗi identifying the attribute by its qualified name, which has the format `prefix:localName` or `localName`, where the parts are defined as:
     - `prefix`
       - : A "short alias" for the namespace.
         The prefix is optional, but if it is specified the `namespaceURI` parameter must also be specified.
-        If the prefix is set to `xml` or `xmlns`, the `namespaceURI` must be set to `http://www.w3.org/XML/1998/namespace` or `http://www.w3.org/2000/xmlns/`, respectively.
+        If the prefix được đặt là `xml` or `xmlns`, the `namespaceURI` must be set to `http://www.w3.org/XML/1998/namespace` or `http://www.w3.org/2000/xmlns/`, respectively.
 
     - `localName`
       - : The local name of the attribute.
@@ -51,17 +51,17 @@ setAttributeNS(namespaceURI, qualifiedName, value)
 
     Trusted types are not enforced for other attributes, so a string or any trusted type may be passed.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `NamespaceError` {{domxref("DOMException")}}
   - : Thrown if the [`namespaceURI`](#namespaceURI) value is:
     - not a valid namespace URI.
     - set to the empty string when `prefix` has a value.
-    - not the value `http://www.w3.org/XML/1998/namespace` or `http://www.w3.org/2000/xmlns/` when [`prefix`](#prefix) is set to `xml` or `xmlns`, respectively.
+    - not the value `http://www.w3.org/XML/1998/namespace` or `http://www.w3.org/2000/xmlns/` when [`prefix`](#prefix) được đặt là `xml` or `xmlns`, respectively.
 - `InvalidCharacterError` {{domxref("DOMException")}}
   - : Thrown if either the [`prefix`](#prefix) or [`localName`](#localname) is not valid:
     - The `prefix` must have at least one character, and cannot contain ASCII whitespace, `NULL`, `/`, or `>` (U+0000, U+002F, or U+003E, respectively).
@@ -73,7 +73,7 @@ None ({{jsxref("undefined")}}).
 - `TypeError`
   - : Thrown if [`value`](#value) is passed a string instead of a trusted type object (for those attributes that require them) when [Trusted Types](/en-US/docs/Web/API/Trusted_Types_API) are [enforced by a CSP](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) and no default policy is defined.
 
-## Examples
+## Ví dụ
 
 ### Basic usage
 
@@ -90,15 +90,15 @@ d.setAttributeNS(
 
 The [Setting unsafe attributes](/en-US/docs/Web/API/Element/setAttribute#setting_unsafe_attributes) example in `setAttribute()` shows how you might use `setAttributeNS()` with the [trusted types](/en-US/docs/Web/API/Trusted_Types_API).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttributeNS()")}}
 - {{domxref("Element.getAttributeNS()")}}

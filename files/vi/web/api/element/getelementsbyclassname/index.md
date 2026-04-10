@@ -9,32 +9,32 @@ browser-compat: api.Element.getElementsByClassName
 {{APIRef("DOM")}}
 
 The {{domxref("Element")}} method
-**`getElementsByClassName()`** returns a live
-{{domxref("HTMLCollection")}} which contains every descendant element which has the
+**`getElementsByClassName()`** trả về a live
+{{domxref("HTMLCollection")}} which chứa every descendant element which has the
 specified class name or names.
 
 The method {{domxref("Document.getElementsByClassName", "getElementsByClassName()")}}
 on the {{domxref("Document")}} interface works essentially the same way, except it acts
 on the entire document, starting at the document root.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getElementsByClassName(names)
 ```
 
-### Parameters
+### Tham số
 
 - `names`
-  - : A string containing one or more class names to match on, separated
+  - : Một chuỗi chứa one or more class names to match on, separated
     by whitespace.
 
-### Return value
+### Giá trị trả về
 
-An {{domxref("HTMLCollection")}} providing a live-updating list of every element which
+Một {{domxref("HTMLCollection")}} providing a live-updating list of every element which
 is a member of every class in `names`.
 
-## Usage notes
+## Ghi chú sử dụng
 
 As always, the returned collection is _live_, meaning that it always reflects
 the current state of the DOM tree rooted at the element on which the function was
@@ -51,7 +51,7 @@ immediately removed from the collection.
 > class names are compared in a case-insensitive fashion. Otherwise, they're case
 > sensitive.
 
-## Examples
+## Ví dụ
 
 ### Matching a single class
 
@@ -62,7 +62,7 @@ provide that class name when calling `getElementsByClassName()`:
 element.getElementsByClassName("test");
 ```
 
-This example finds all elements that have a class of `test`, which are also
+Ví dụ này finds all elements that have a class of `test`, which are also
 a descendant of the element that has the `id` of `main`:
 
 ```js
@@ -123,10 +123,10 @@ const testDivs = Array.prototype.filter.call(
 );
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}

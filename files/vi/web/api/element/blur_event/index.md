@@ -8,7 +8,7 @@ browser-compat: api.Element.blur_event
 
 {{APIRef("UI Events")}}
 
-The **`blur`** event fires when an element has lost focus. The event does not bubble, but the related {{domxref("Element/focusout_event", "focusout")}} event that follows does bubble.
+Thuộc tính **`blur`** event fires when an element has lost focus. The event does not bubble, but the related {{domxref("Element/focusout_event", "focusout")}} event that follows does bubble.
 
 An element will lose focus if another element is selected.
 An element will also lose focus if a style that does not allow focus is applied, such as `hidden`, or if the element is removed from the document — in both of these cases focus moves to the `body` element (viewport).
@@ -20,7 +20,7 @@ The opposite of `blur` is the {{domxref("Element/focus_event", "focus")}} event,
 
 The `blur` event is not cancelable.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -43,7 +43,7 @@ _This interface also inherits properties from its parent {{domxref("UIEvent")}},
 - {{domxref("FocusEvent.relatedTarget")}}
   - : The element receiving focus, if any.
 
-## Examples
+## Ví dụ
 
 ### Simple example
 
@@ -125,17 +125,17 @@ form.addEventListener(
 
 {{EmbedLiveSample("Event_delegation", '100%', '50px')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
 The value of {{DOMxRef("Document.activeElement")}} varies across browsers while this event is being handled ([Firefox bug 452307](https://bugzil.la/452307)): IE10 sets it to the element that the focus will move to, while Firefox and Chrome often set it to the `body` of the document.
 
-## See also
+## Xem thêm
 
 - The {{domxref("HTMLElement.blur()")}} method
 - Related events: {{domxref("Element/focus_event", "focus")}}, {{domxref("Element/focusin_event", "focusin")}}, {{domxref("Element/focusout_event", "focusout")}}

@@ -8,9 +8,9 @@ browser-compat: api.Element.scrollLeft
 
 {{APIRef("DOM")}}
 
-The **`scrollLeft`** property of the {{domxref("Element")}} interface gets or sets the number of pixels by which an element's content is scrolled from its left edge. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number.
+Thuộc tính **`scrollLeft`** của giao diện {{domxref("Element")}} gets or sets the number of pixels by which an element's content is scrolled from its left edge. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number.
 
-## Value
+## Giá trị
 
 A double-precision floating-point value indicating the number of pixels by which the element is currently scrolled horizontally from the origin, where a positive value means the element is scrolled to the right (to reveal more content to the right). If the element isn't scrolled at all left or right, then `scrollLeft` is 0. If the document is not the active document, the returned value is 0. If the document is rendered on a subpixel-precise device, then the returned value is also subpixel-precise and may contain a decimal component.
 
@@ -20,7 +20,7 @@ Safari responds to overscrolling by updating `scrollLeft` beyond the maximum scr
 
 The `scrollLeft` property can be set, which causes the element to scroll to the specified horizontal position, in the same way as using {{domxref("Element.scroll()")}} with `behavior: "auto"`.
 
-## Examples
+## Ví dụ
 
 ### HTML
 
@@ -62,15 +62,15 @@ button.onclick = () => {
 
 {{EmbedLiveSample("Examples")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Determining the dimensions of elements](/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 - {{domxref("HTMLElement.offsetLeft")}}

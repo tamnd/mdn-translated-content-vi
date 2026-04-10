@@ -8,28 +8,28 @@ browser-compat: api.Element.setAttributeNode
 
 {{ APIRef("DOM") }}
 
-The **`setAttributeNode()`** method of the {{domxref("Element")}} interface adds a new {{domxref("Attr")}} node to the specified element.
+Thuộc tính **`setAttributeNode()`** của giao diện {{domxref("Element")}} adds a new {{domxref("Attr")}} node to the specified element.
 
 If you don't need to work with the attribute node (such as cloning from another element) before adding it, you can use the {{domxref("Element.setAttribute()", "setAttribute()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setAttributeNode(attribute)
 ```
 
-### Parameters
+### Tham số
 
 - `attribute`
   - : The {{domxref("Attr")}} node to add to the element.
 
-### Return value
+### Giá trị trả về
 
 The replaced attribute node, if any, returned by this function.
 
-## Examples
+## Ví dụ
 
-This example copies the `lang` attribute from one element to another.
+Ví dụ này copies the `lang` attribute from one element to another.
 
 ### HTML
 
@@ -53,18 +53,18 @@ console.log(d2.attributes[1].value);
 
 ## Notes
 
-If the attribute named already exists on the element, that attribute is replaced with
+If the attribute named already exists trên phần tử, that attribute is replaced with
 the new one and the replaced one is returned.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Document.createAttribute()")}}
 - {{domxref("Element.getAttributeNode()")}}

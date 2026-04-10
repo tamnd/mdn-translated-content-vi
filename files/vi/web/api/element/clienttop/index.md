@@ -8,17 +8,17 @@ browser-compat: api.Element.clientTop
 
 {{ APIRef("DOM") }}
 
-The **`clientTop`** read-only property of the {{domxref("Element")}} interface returns the width of the top border of an element in pixels.
+Thuộc tính **`clientTop`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface trả về the width of the top border of an element in pixels.
 
-All that lies between the `offsetTop` and `clientTop` is the element's border. This is because the `offsetTop` indicates the location of the top of the border (not the margin) while the client area starts immediately below the border, including padding. Therefore, the `clientTop` value is always equal to the `border-top-width`, rounded to integer. For example, if the computed `border-top-width` is zero, then `clientTop` is also zero.
+All that lies between the `offsetTop` and `clientTop` is the element's border. This is because the `offsetTop` cho biết the location of the top of the border (not the margin) while the client area starts immediately below the border, including padding. Therefore, the `clientTop` value is always equal to the `border-top-width`, rounded to integer. For example, if the computed `border-top-width` is zero, then `clientTop` is also zero.
 
-## Value
+## Giá trị
 
-An integer.
+Một số nguyên.
 
-## Examples
+## Ví dụ
 
-In the following example, the client area has a white background and a 24px black `border-top`. The `clientTop` value is the distance from where the margin (yellow) area ends and the padding and content areas (white) begin: that is, 24px.
+Trong ví dụ sau, the client area has a white background and a 24px black `border-top`. The `clientTop` value is the distance from where the margin (yellow) area ends and the padding and content areas (white) begin: that is, 24px.
 
 ### HTML
 
@@ -57,15 +57,15 @@ In the following example, the client area has a white background and a 24px blac
 
 {{EmbedLiveSample("Examples", 400, 350)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Determining the dimensions of elements](/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 - {{domxref("HTMLElement.offsetTop")}}

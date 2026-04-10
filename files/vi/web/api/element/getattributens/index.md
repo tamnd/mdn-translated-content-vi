@@ -8,28 +8,28 @@ browser-compat: api.Element.getAttributeNS
 
 {{APIRef("DOM")}}
 
-The **`getAttributeNS()`** method of the {{domxref("Element")}}
-interface returns the string value of the attribute with the specified namespace and
+Thuộc tính **`getAttributeNS()`** method of the {{domxref("Element")}}
+interface trả về the string value of the attribute with the specified namespace and
 name. If the named attribute does not exist, the value returned will either be
 `null` or `""` (the empty string); see [Notes](#notes) for
 details.
 
 If you are working with HTML documents and you don't need to specify the requested attribute as being part of a specific namespace, use the {{domxref("Element.getAttribute()", "getAttribute()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getAttributeNS(namespace, name)
 ```
 
-### Parameters
+### Tham số
 
 - `namespace`
   - : The namespace in which to look for the specified attribute.
 - `name`
   - : The name of the attribute to look for.
 
-### Return value
+### Giá trị trả về
 
 The string value of the specified attribute. If the attribute doesn't exist, the result
 is `null`.
@@ -40,9 +40,9 @@ is `null`.
 > was not typically implemented this way since null makes more sense. The DOM4
 > specification now says this method should return null for non-existent attributes.
 
-## Examples
+## Ví dụ
 
-The following SVG document reads the value of the `foo` attribute in a
+Các giá trị sau SVG document reads the value of the `foo` attribute in a
 custom namespace.
 
 ```xml
@@ -103,15 +103,15 @@ browsers return an empty string. For that reason, you should use
 existence prior to calling `getAttributeNS()` if it is possible that the
 requested attribute does not exist on the specified element.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttributeNS()")}}
 - {{domxref("Element.setAttributeNS()")}}

@@ -8,7 +8,7 @@ browser-compat: api.Element.input_event
 
 {{APIRef("UI Events")}}
 
-The **`input`** event fires when the `value` of an {{HTMLElement("input")}}, {{HTMLElement("select")}}, or {{HTMLElement("textarea")}} element has been changed as a direct result of a user action (such as typing in a textbox or checking a checkbox).
+Thuộc tính **`input`** fires when the `value` of an {{HTMLElement("input")}}, {{HTMLElement("select")}}, or {{HTMLElement("textarea")}} element has been changed as a direct result of a user action (such as typing in a textbox or checking a checkbox).
 
 The event also applies to elements with {{domxref("HTMLElement.contentEditable", "contenteditable")}} enabled, and to any element when {{domxref("Document.designMode", "designMode")}} is turned on. In the case of `contenteditable` and `designMode`, the event target is the _editing host_. If these properties apply to multiple elements, the editing host is the nearest ancestor element whose parent isn't editable.
 
@@ -18,7 +18,7 @@ For {{htmlelement("textarea")}} and {{htmlelement("input")}} elements that accep
 
 The `input` event is fired every time the `value` of the element changes. This is unlike the {{domxref("HTMLElement/change_event", "change")}} event, which only fires when the value is committed, such as by pressing the enter key or selecting a value from a list of options. Note that the `input` event is not fired when JavaScript changes an element's `value` programmatically.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -30,7 +30,7 @@ oninput = (event) => { }
 
 ## Event type
 
-An {{domxref("InputEvent")}}. Inherits from {{domxref("UIEvent")}}.
+Một {{domxref("InputEvent")}}. Inherits from {{domxref("UIEvent")}}.
 
 {{InheritanceDiagram("InputEvent")}}
 
@@ -47,9 +47,9 @@ _This interface inherits properties from its parents, {{DOMxRef("UIEvent")}} and
 - {{DOMxRef("InputEvent.isComposing")}} {{ReadOnlyInline}}
   - : Returns a {{JSxRef("Boolean")}} value indicating if the event is fired after {{domxref("Element/compositionstart_event", "compositionstart")}} and before {{domxref("Element/compositionend_event", "compositionend")}}.
 
-## Examples
+## Ví dụ
 
-This example logs the value whenever you change the value of the {{HtmlElement("input")}} element.
+Ví dụ này logs the value whenever you change the value of the {{HtmlElement("input")}} element.
 
 ### HTML
 
@@ -75,15 +75,15 @@ function updateValue(e) {
 
 {{EmbedLiveSample("Examples")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events
   - {{domxref("Element/beforeinput_event", "beforeinput")}}

@@ -12,7 +12,7 @@ The `mousemove` event is fired at an element when a pointing device (usually a m
 
 These events happen whether or not any mouse buttons are pressed. They can fire at a very high rate, depends on how fast the user moves the mouse, how fast the machine is, what other tasks and processes are happening, etc.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ onmousemove = (event) => { }
 
 ## Event type
 
-A {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("MouseEvent")}}
 
@@ -80,9 +80,9 @@ _This interface also inherits properties of its parents, {{domxref("UIEvent")}} 
 - {{domxref("MouseEvent.y")}} {{ReadOnlyInline}}
   - : Alias for {{domxref("MouseEvent.clientY")}}.
 
-## Examples
+## Ví dụ
 
-The following example uses the {{domxref("Element/mousedown_event", "mousedown")}}, `mousemove`, and {{domxref("Element/mouseup_event", "mouseup")}} events to allow the user to draw on an HTML [canvas](/en-US/docs/Web/API/Canvas_API). Its functionality is simple: the thickness of the line is set to 1, and the color is always black.
+Các giá trị sau example uses the {{domxref("Element/mousedown_event", "mousedown")}}, `mousemove`, and {{domxref("Element/mouseup_event", "mouseup")}} events to allow the user to draw on an HTML [canvas](/en-US/docs/Web/API/Canvas_API). Its functionality is simple: the thickness of the line được đặt là 1, and the color is always black.
 
 When the page loads, constants `myPics` and `context` are created to store a reference to the canvas and the 2d context we will use to draw.
 
@@ -90,7 +90,7 @@ Drawing begins when the `mousedown` event fires. First we store the x and y coor
 
 As the mouse moves over the page, the `mousemove` event fires. If `isDrawing` is true, the event handler calls the `drawLine` function to draw a line from the stored `x` and `y` values to the current location.
 
-When the `drawLine()` function returns, we adjust the coordinates and then save them in `x` and `y`.
+When the `drawLine()` function trả về, we adjust the coordinates and then save them in `x` and `y`.
 
 The `mouseup` event draws the final line segment, sets `x` and `y` to `0`, and stops further drawing by setting `isDrawing` to `false`.
 
@@ -163,15 +163,15 @@ function drawLine(context, x1, y1, x2, y2) {
 
 {{EmbedLiveSample("Examples", 640, 450)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/mousedown_event", "mousedown")}}

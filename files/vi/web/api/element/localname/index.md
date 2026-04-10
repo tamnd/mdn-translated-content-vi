@@ -8,14 +8,14 @@ browser-compat: api.Element.localName
 
 {{APIRef("DOM")}}
 
-The **`Element.localName`** read-only property returns the
+Thuộc tính **`Element.localName`** là thuộc tính chỉ đọc trả về the
 local part of the qualified name of an element.
 
-## Value
+## Giá trị
 
-A string representing the local part of the element's qualified name.
+Một chuỗi representing the local part of the element's qualified name.
 
-## Examples
+## Ví dụ
 
 (Must be served with XML content type, such as `text/xml` or
 `application/xhtml+xml`.)
@@ -64,17 +64,17 @@ particular XML documents. For example, in the qualified name
 ```
 
 > [!NOTE]
-> While the property returns the case of the internal DOM storage, which is lower case, note that {{domxref("element.tagName","tagName")}} property returns upper case for HTML elements in HTML DOMs.
+> While the property trả về the case of the internal DOM storage, which is lower case, note that {{domxref("element.tagName","tagName")}} property trả về upper case for HTML elements in HTML DOMs.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.tagName")}}
 - {{domxref("Element.namespaceURI")}}

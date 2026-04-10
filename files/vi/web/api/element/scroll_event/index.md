@@ -8,10 +8,10 @@ browser-compat: api.Element.scroll_event
 
 {{APIRef("CSSOM view API")}}
 
-The **`scroll`** event fires when an element has been scrolled.
+Thuộc tính **`scroll`** fires when an element has been scrolled.
 To detect when scrolling has completed, see the {{domxref("Element/scrollend_event", "scrollend")}} event of `Element`.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -25,15 +25,15 @@ onscroll = (event) => { }
 
 A generic {{domxref("Event")}}.
 
-## Examples
+## Ví dụ
 
-The following examples show how to use the `scroll` event with an event listener and with the `onscroll` event handler property.
+Các giá trị sau examples show how to use the `scroll` event with an event listener and with the `onscroll` event handler property.
 The {{DOMxRef("Window.setTimeout", "setTimeout()")}} method is used to {{glossary("throttle")}} the event handler because `scroll` events can fire at a high rate.
 For additional examples that use {{DOMxRef("Window.requestAnimationFrame()", "requestAnimationFrame()")}}, see the `Document` {{domxref("Document/scroll_event", "scroll")}} event page.
 
-### Using `scroll` with an event listener
+### Sử dụng `scroll` with an event listener
 
-The following example shows how to use the `scroll` event to detect when the user is scrolling inside an element:
+Các giá trị sau example shows how to use the `scroll` event to detect when the user is scrolling inside an element:
 
 ```html
 <div id="scroll-box">
@@ -72,11 +72,11 @@ element.addEventListener("scroll", (event) => {
 });
 ```
 
-{{EmbedLiveSample("Using_scroll_with_an_event_listener", "100%", 120)}}
+{{EmbedLiveSample("Sử dụng_scroll_with_an_event_listener", "100%", 120)}}
 
-### Using `onscroll` event handler property
+### Sử dụng `onscroll` event handler property
 
-The following example shows how to use the `onscroll` event handler property to detect when the user is scrolling:
+Các giá trị sau example shows how to use the `onscroll` event handler property to detect when the user is scrolling:
 
 ```html
 <div id="scroll-box">
@@ -115,17 +115,17 @@ element.onscroll = (event) => {
 };
 ```
 
-{{EmbedLiveSample("Using_onscroll_event_handler_property", "100%", 120)}}
+{{EmbedLiveSample("Sử dụng_onscroll_event_handler_property", "100%", 120)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Element `scrollend` event](/en-US/docs/Web/API/Element/scrollend_event)
 - [Document `scroll` event](/en-US/docs/Web/API/Document/scroll_event)

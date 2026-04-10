@@ -8,13 +8,13 @@ browser-compat: api.Element.focusout_event
 
 {{APIRef("UI Events")}}
 
-The **`focusout`** event fires when an element has lost focus, after the {{domxref("Element/blur_event", "blur")}} event. The two events differ in that `focusout` bubbles, while `blur` does not.
+Thuộc tính **`focusout`** fires when an element has lost focus, after the {{domxref("Element/blur_event", "blur")}} event. The two events differ in that `focusout` bubbles, while `blur` does not.
 
 The opposite of `focusout` is the {{domxref("Element/focusin_event", "focusin")}} event, which fires when the element has received focus.
 
 The `focusout` event is not cancelable.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -26,7 +26,7 @@ onfocusout = (event) => { }
 
 ## Event type
 
-A {{domxref("FocusEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("FocusEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("FocusEvent")}}
 
@@ -37,7 +37,7 @@ _This interface also inherits properties from its parent {{domxref("UIEvent")}},
 - {{domxref("FocusEvent.relatedTarget")}}
   - : The element receiving focus, if any.
 
-## Examples
+## Ví dụ
 
 ### Live example
 
@@ -74,18 +74,18 @@ form.addEventListener("focusout", (event) => {
 
 {{EmbedLiveSample("Live_example", '100%', '50px')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
 > [!NOTE]
 > The _UI Events_ specification describes an [order of focus events](/en-US/docs/Web/API/FocusEvent#order_of_events) that's different from what current browsers implement.
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events: {{domxref("Element/blur_event", "blur")}}, {{domxref("Element/focus_event", "focus")}}, {{domxref("Element/focusin_event", "focusin")}}
 - [Focusing: focus/blur](https://javascript.info/focus-blur)

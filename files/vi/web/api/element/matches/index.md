@@ -8,29 +8,29 @@ browser-compat: api.Element.matches
 
 {{APIRef("DOM")}}
 
-The **`matches()`** method of the {{domxref("Element")}} interface tests whether the element would be selected by the specified [CSS selector](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
+Thuộc tính **`matches()`** của giao diện {{domxref("Element")}} tests whether the element would be selected by the specified [CSS selector](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 matches(selectors)
 ```
 
-### Parameters
+### Tham số
 
 - `selectors`
-  - : A string containing valid [CSS selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors) to test the {{domxref("Element")}} against.
+  - : Một chuỗi chứa valid [CSS selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors) to test the {{domxref("Element")}} against.
 
-### Return value
+### Giá trị trả về
 
 `true` if the {{domxref("Element")}} matches the `selectors`. Otherwise, `false`.
 
-### Exceptions
+### Ngoại lệ
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if `selectors` cannot be parsed as a CSS selector list.
 
-## Examples
+## Ví dụ
 
 ### HTML
 
@@ -57,15 +57,15 @@ for (const bird of birds) {
 This will log "The Philippine eagle is endangered!" to the console, since the element
 has indeed a `class` attribute with value `endangered`.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [CSS selectors](/en-US/docs/Web/CSS/Guides/Selectors) module
 - Other {{domxref("Element")}} methods that take selectors: {{domxref("Element.querySelector()")}}, {{domxref("Element.querySelectorAll()")}}, and {{domxref("element.closest()")}}.

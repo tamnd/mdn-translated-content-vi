@@ -8,26 +8,26 @@ browser-compat: api.Element.querySelector
 
 {{APIRef("DOM")}}
 
-The **`querySelector()`** method of the {{domxref("Element")}}
-interface returns the first element that is a descendant of the element on which it is
+Thuộc tính **`querySelector()`** method of the {{domxref("Element")}}
+interface trả về the first element that is a descendant of the element on which it is
 invoked that matches the specified group of selectors.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 querySelector(selectors)
 ```
 
-### Parameters
+### Tham số
 
 - `selectors`
-  - : A string containing one or more selectors to match. This string
+  - : Một chuỗi chứa one or more selectors to match. This string
     must be a valid CSS selector string; if it isn't, a `SyntaxError` exception
     is thrown.
 
     Note that the HTML specification does not require attribute values to be valid CSS identifiers. If a [`class`](/en-US/docs/Web/HTML/Reference/Global_attributes/class) or [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) attribute value is not a valid CSS identifier, then you must escape it before using it in a selector, either by calling {{domxref("CSS.escape_static", "CSS.escape()")}} on the value, or using one of the techniques described in [Escaping characters](/en-US/docs/Web/CSS/Reference/Values/ident#escaping_characters). See [Escaping attribute values](#escaping_attribute_values) for an example.
 
-### Return value
+### Giá trị trả về
 
 The first descendant element of `baseElement` which matches the specified
 group of `selectors`. The entire hierarchy of elements is considered when
@@ -40,12 +40,12 @@ returned by the `querySelector()` method.
 
 If no matches are found, the returned value is `null`.
 
-### Exceptions
+### Ngoại lệ
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if the specified `selectors` are invalid.
 
-## Examples
+## Ví dụ
 
 Let's consider a few examples.
 
@@ -62,7 +62,7 @@ const el = document.body.querySelector(
 
 ### Get direct descendants using the :scope pseudo-class
 
-This example uses the {{cssxref(":scope")}} pseudo-class to retrieve direct children of the `parentElement` element.
+Ví dụ này uses the {{cssxref(":scope")}} pseudo-class to retrieve direct children of the `parentElement` element.
 
 #### HTML
 
@@ -108,7 +108,7 @@ allChildren.forEach((item) => item.classList.add("red"));
 
 ### The entire hierarchy counts
 
-This example demonstrates that the hierarchy of the entire document is considered when
+Ví dụ này demonstrates that the hierarchy of the entire document is considered when
 applying `selectors`, so that levels outside the specified
 `baseElement` are still considered when locating matches.
 
@@ -150,7 +150,7 @@ selector).
 
 ### Escaping attribute values
 
-This example shows that if an HTML document contains an [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) which is not a valid [CSS identifier](/en-US/docs/Web/CSS/Reference/Values/ident), then we must escape the attribute value before using it in `querySelector()`.
+Ví dụ này minh họa that if an HTML document chứa an [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) which is not a valid [CSS identifier](/en-US/docs/Web/CSS/Reference/Values/ident), then we must escape the attribute value before using it in `querySelector()`.
 
 #### HTML
 
@@ -233,15 +233,15 @@ Clicking the first button gives an error, while the second and third buttons wor
 See {{domxref("Document.querySelector()")}} for additional examples of the proper
 format for the `selectors`.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Selection and traversal on the DOM tree](/en-US/docs/Web/API/Document_Object_Model/Selection_and_traversal_on_the_DOM_tree)
 - [Attribute selectors](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) in the CSS

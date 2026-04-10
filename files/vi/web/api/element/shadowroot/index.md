@@ -9,11 +9,11 @@ browser-compat: api.Element.shadowRoot
 {{APIRef("Shadow DOM")}}
 
 The `Element.shadowRoot` read-only property
-represents the shadow root hosted by the element.
+đại diện cho the shadow root hosted by the element.
 
 Use {{DOMxRef("Element.attachShadow()")}} to add a shadow root to an existing element.
 
-## Value
+## Giá trị
 
 A {{DOMxRef("ShadowRoot")}} object instance, or `null` if the associated
 shadow root was attached with its {{DOMxRef("ShadowRoot.mode", "mode")}} set to
@@ -21,9 +21,9 @@ shadow root was attached with its {{DOMxRef("ShadowRoot.mode", "mode")}} set to
 
 Some built-in elements, such as {{HTMLElement("input")}} and {{HTMLElement("img")}}, have user-agent shadow roots that are closed to script. Therefore, their `shadowRoot` property is always `null`.
 
-## Examples
+## Ví dụ
 
-The following snippets are taken from our [life-cycle-callbacks](https://github.com/mdn/web-components-examples/tree/main/life-cycle-callbacks)
+Các giá trị sau snippets are taken from our [life-cycle-callbacks](https://github.com/mdn/web-components-examples/tree/main/life-cycle-callbacks)
 example ([see it live also](https://mdn.github.io/web-components-examples/life-cycle-callbacks/)), which creates an element that displays a square of a size and color
 specified in the element's attributes.
 
@@ -71,10 +71,10 @@ function updateStyle(elem) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}

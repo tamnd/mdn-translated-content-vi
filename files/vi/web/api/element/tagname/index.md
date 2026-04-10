@@ -8,8 +8,8 @@ browser-compat: api.Element.tagName
 
 {{ApiRef("DOM")}}
 
-The **`tagName`** read-only property
-of the {{domxref("Element")}} interface returns the tag name of the element on which
+Thuộc tính **`tagName`** là thuộc tính chỉ đọc
+of the {{domxref("Element")}} interface trả về the tag name of the element on which
 it's called.
 
 For example, if the element is an {{HTMLElement("img")}}, its
@@ -17,14 +17,14 @@ For example, if the element is an {{HTMLElement("img")}}, its
 differently for XML/XHTML documents). Note: You can use the {{domxref("Element.localName", "localName")}} property
 to access the Element's local name — which for the case in the example is `img` (lowercase).
 
-## Value
+## Giá trị
 
-A string indicating the element's tag name. This string's capitalization depends on the
+Một chuỗi indicating the element's tag name. This string's capitalization depends on the
 document type:
 
 - For DOM trees which represent HTML documents, the returned tag name is always in the
   canonical upper-case form. For example, `tagName` called on a
-  {{HTMLElement("div")}} element returns `"DIV"`.
+  {{HTMLElement("div")}} element trả về `"DIV"`.
 - The tag names of elements in an XML DOM tree are returned in the same case in which
   they're written in the original XML file. If an XML document includes a tag
   `"<SomeTag>"`, then the `tagName` property's value is
@@ -34,7 +34,7 @@ For {{domxref("Element")}} objects, the value of `tagName` is the same as
 the value of the {{domxref("Node.nodeName", "nodeName")}} property the element object
 inherits from {{domxref("Node")}}.
 
-## Examples
+## Ví dụ
 
 ### HTML
 
@@ -54,14 +54,14 @@ In XHTML (or any other XML format), the original case will be maintained, so
 In HTML, `"SPAN"` would be output instead regardless of the case used while
 creating the original document.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.localName")}}

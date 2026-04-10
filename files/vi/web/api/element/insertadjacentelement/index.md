@@ -8,21 +8,21 @@ browser-compat: api.Element.insertAdjacentElement
 
 {{APIRef("DOM")}}
 
-The **`insertAdjacentElement()`** method of the
+Thuộc tính **`insertAdjacentElement()`** method of the
 {{domxref("Element")}} interface inserts a given element node at a given position
 relative to the element it is invoked upon.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 insertAdjacentElement(position, element)
 ```
 
-### Parameters
+### Tham số
 
 - `position`
-  - : A string representing the position relative to the
-    `targetElement`; must match (case-insensitively) one of the following
+  - : Một chuỗi representing the position relative to the
+    `targetElement`; must match (case-insensitively) một trong các giá trị sau
     strings:
     - `'beforebegin'`: Before the
       `targetElement` itself.
@@ -36,11 +36,11 @@ insertAdjacentElement(position, element)
 - `element`
   - : The element to be inserted into the tree.
 
-### Return value
+### Giá trị trả về
 
 The element that was inserted, or `null`, if the insertion failed.
 
-### Exceptions
+### Ngoại lệ
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if the `position` specified is not a recognized value.
@@ -64,11 +64,11 @@ The element that was inserted, or `null`, if the insertion failed.
 > `afterend` positions work only if the node is in a tree and has an element
 > parent.
 
-## Examples
+## Ví dụ
 
 ### Inserting before and after
 
-In this example we have a row of square boxes. The user can select a box by clicking on it: this gives the box a different border, to show that it is selected.
+Trong ví dụ này we have a row of square boxes. The user can select a box by clicking on it: this gives the box a different border, to show that it is selected.
 
 If a box is selected, and the user presses the "Insert before" or "Insert after" buttons, then the code creates a new box, gives it a random color, and inserts it before or after the selected box.
 
@@ -164,15 +164,15 @@ resetBtn.addEventListener("click", () => window.location.reload(true));
 
 {{embedlivesample("Inserting before and after", "", "200")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.insertAdjacentHTML()")}}
 - {{domxref("Element.insertAdjacentText()")}}

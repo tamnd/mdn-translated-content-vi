@@ -8,19 +8,19 @@ browser-compat: api.Element.scrollWidth
 
 {{APIRef("DOM")}}
 
-The **`scrollWidth`** read-only property of the {{domxref("Element")}} interface is a measurement of the width of an element's content, including content not visible on the screen due to overflow.
+Thuộc tính **`scrollWidth`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface is a measurement of the width of an element's content, including content not visible on the screen due to overflow.
 
 The `scrollWidth` value is equal to the minimum width the element would require in order to fit all the content in the viewport without using a horizontal scrollbar. The width is measured in the same way as {{domxref("Element.clientWidth", "clientWidth")}}: it includes the element's padding, but not its border, margin or vertical scrollbar (if present). It can also include the width of pseudo-elements such as {{cssxref("::before")}} or {{cssxref("::after")}}. If the element's content can fit without a need for horizontal scrollbar, its `scrollWidth` is equal to {{domxref("Element.clientWidth", "clientWidth")}}.
 
-## Value
+## Giá trị
 
-An integer.
+Một số nguyên.
 
-## Examples
+## Ví dụ
 
 ### Detecting overflowing content
 
-In this example, we use the `scrollWidth` property to check if the content of an element is overflowing its boundaries. We have two `div` elements, the first with a width of `100px`, and the second without a fixed width. Their content is exactly the same, and we display a message about whether each one is overflowing its container.
+Trong ví dụ này, we use the `scrollWidth` property to check if the content of an element is overflowing its boundaries. We have two `div` elements, the first with a width of `100px`, and the second without a fixed width. Their content is exactly the same, and we display a message about whether each one is overflowing its container.
 
 #### HTML
 
@@ -100,15 +100,15 @@ Click the buttons to check if the content is overflowing the containers.
 
 {{EmbedLiveSample("detecting_overflowing_content", "100%", "190")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Determining the dimensions of elements](/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 - {{domxref("HTMLElement.offsetWidth")}}

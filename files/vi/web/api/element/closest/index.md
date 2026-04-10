@@ -8,29 +8,29 @@ browser-compat: api.Element.closest
 
 {{APIRef("DOM")}}
 
-The **`closest()`** method of the {{domxref("Element")}} interface traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified [CSS selector](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
+Thuộc tính **`closest()`** của giao diện {{domxref("Element")}} traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified [CSS selector](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 closest(selectors)
 ```
 
-### Parameters
+### Tham số
 
 - `selectors`
-  - : A string of valid [CSS selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors) to match the {{domxref("Element")}} and its ancestors against.
+  - : Một chuỗi of valid [CSS selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors) to match the {{domxref("Element")}} and its ancestors against.
 
-### Return value
+### Giá trị trả về
 
 The closest ancestor {{domxref("Element")}} or itself, which matches the `selectors`. If there are no such element, `null`.
 
-### Exceptions
+### Ngoại lệ
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if the `selectors` is not a valid CSS selector.
 
-## Examples
+## Ví dụ
 
 ### HTML
 
@@ -64,11 +64,11 @@ console.log(el.closest("article > div")); // <div id="div-01">
 console.log(el.closest(":not(div)")); // <article>
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
@@ -79,7 +79,7 @@ console.log(el.closest(":not(div)")); // <article>
   indirectly) to the context object, for example the {{domxref("Document")}} object in
   the case of the normal DOM.
 
-## See also
+## Xem thêm
 
 - [CSS selectors](/en-US/docs/Web/CSS/Guides/Selectors) module
 - Other {{domxref("Element")}} methods that take selectors: {{domxref("Element.querySelector()")}}, {{domxref("Element.querySelectorAll()")}}, and {{domxref("Element.matches()")}}.

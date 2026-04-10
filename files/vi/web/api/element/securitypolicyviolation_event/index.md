@@ -8,9 +8,9 @@ browser-compat: api.Element.securitypolicyviolation_event
 
 {{APIRef("Reporting API")}}
 
-The **`securitypolicyviolation`** event is fired when a [Content Security Policy](/en-US/docs/Web/HTTP/Guides/CSP) is violated.
+Thuộc tính **`securitypolicyviolation`** is fired when a [Content Security Policy](/en-US/docs/Web/HTTP/Guides/CSP) is violated.
 
-The event is fired on the element when there is a violation of the CSP policy.
+The event is fired trên phần tử when there is a violation of the CSP policy.
 
 This event [bubbles](/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling) to the {{domxref("Window")}} object, and is [composed](/en-US/docs/Web/API/Event/composed).
 
@@ -18,7 +18,7 @@ This event [bubbles](/en-US/docs/Learn_web_development/Core/Scripting/Event_bubb
 > You should generally add the handler for this event to a top level object (i.e., {{domxref("Window")}} or {{domxref("Document")}}).
 > While HTML elements can technically be the target of the `securitypolicyviolation` event, in reality this event does not fire on them—for example, a blocked `<img>` source directly triggers this event on `document` as the target, instead of bubbling from the `<img>` element.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -30,11 +30,11 @@ onsecuritypolicyviolation = (event) => { }
 
 ## Event type
 
-A {{domxref("SecurityPolicyViolationEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("SecurityPolicyViolationEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("SecurityPolicyViolationEvent")}}
 
-## Examples
+## Ví dụ
 
 ### Listening for securitypolicyviolation on Window
 
@@ -50,15 +50,15 @@ window.addEventListener("securitypolicyviolation", (e) => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - The {{domxref("Document/securitypolicyviolation_event", "securitypolicyviolation")}} event of the {{domxref("Document")}} interface
 - The {{domxref("WorkerGlobalScope/securitypolicyviolation_event", "securitypolicyviolation")}} event of the {{domxref("WorkerGlobalScope")}} interface

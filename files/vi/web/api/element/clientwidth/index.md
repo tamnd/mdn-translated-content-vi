@@ -8,27 +8,27 @@ browser-compat: api.Element.clientWidth
 
 {{APIRef("DOM")}}
 
-The **`clientWidth`** read-only property of the {{domxref("Element")}} interface is zero for inline elements and elements with no CSS; otherwise, it's the inner width of an element in pixels. It includes padding but excludes borders, margins, and vertical scrollbars (if present).
+Thuộc tính **`clientWidth`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface is zero for inline elements and elements with no CSS; otherwise, it's the inner width of an element in pixels. It includes padding but excludes borders, margins, and vertical scrollbars (if present).
 
 When `clientWidth` is used on the root element (the `<html>` element), (or on `<body>` if the document is in quirks mode), the viewport's width (excluding any scrollbar) is returned.
 
-## Value
+## Giá trị
 
-An integer.
+Một số nguyên.
 
-## Examples
+## Ví dụ
 
 ![An example element with large padding, border and margin. clientWidth is the inner width of the element including its padding, and excluding its margin, border, and vertical scrollbar.](dimensions-client.png)
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Determining the dimensions of elements](/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 - {{domxref("HTMLElement.offsetWidth")}}

@@ -8,26 +8,26 @@ browser-compat: api.Element.moveBefore
 
 {{APIRef("DOM")}}
 
-The **`moveBefore()`** method of the {{domxref("Element")}} interface moves a given {{domxref("Node")}} inside the invoking node as a direct child, before a given reference node.
+Thuộc tính **`moveBefore()`** của giao diện {{domxref("Element")}} moves a given {{domxref("Node")}} inside the invoking node as a direct child, before a given reference node.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 moveBefore(movedNode, referenceNode)
 ```
 
-### Parameters
+### Tham số
 
 - `movedNode`
-  - : A {{domxref("Node")}} representing the node to be moved. Note that this must be an {{domxref("Element")}} or a {{domxref("CharacterData")}} node.
+  - : Một {{domxref("Node")}} representing the node to be moved. Note that this must be an {{domxref("Element")}} or a {{domxref("CharacterData")}} node.
 - `referenceNode`
-  - : A {{domxref("Node")}} that `movedNode` will be moved before, or `null`. If the value is `null`, `movedNode` is inserted at the end of the invoking node's child nodes.
+  - : Một {{domxref("Node")}} that `movedNode` will be moved before, or `null`. If the value is `null`, `movedNode` is inserted at the end of the invoking node's child nodes.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `HierarchyRequestError` {{jsxref("TypeError")}}
   - : Thrown in any of the following situations:
@@ -40,7 +40,7 @@ None ({{jsxref("undefined")}}).
 - `TypeError` {{jsxref("TypeError")}}
   - : The second argument was not supplied.
 
-## Description
+## Mô tả
 
 The `moveBefore()` method moves a given node to a new place in the DOM. It provides similar functionality to the {{domxref("Node.insertBefore()")}} method, except that it doesn't remove and then reinsert the node. This means that the state of the node (which would be reset if moving it with `insertBefore()` and similar mechanisms) is preserved after the move. This includes:
 
@@ -66,13 +66,13 @@ In such cases, `moveBefore()` will fail with a `HierarchyRequestError` exception
 
 ### Moving custom elements while preserving state
 
-Each time a [custom element's](/en-US/docs/Web/API/Web_components/Using_custom_elements) position in the DOM is updated via `Element.moveBefore()`, or similar methods such as {{domxref("Node.insertBefore()")}}, its `disconnectedCallback()` and `connectedCallback()` lifecycle callbacks are fired. Since these callbacks are typically used to implement any required initialization or cleanup code to run at the start or end of the element's lifecycle, running them when the element is moved (rather than removed or inserted) may cause problems with its state.
+Each time a [custom element's](/en-US/docs/Web/API/Web_components/Sử dụng_custom_elements) position in the DOM is updated via `Element.moveBefore()`, or similar methods such as {{domxref("Node.insertBefore()")}}, its `disconnectedCallback()` and `connectedCallback()` lifecycle callbacks are fired. Since these callbacks are typically used to implement any required initialization or cleanup code to run at the start or end of the element's lifecycle, running them when the element is moved (rather than removed or inserted) may cause problems with its state.
 
 You can use the `connectedMoveCallback()` callback to preserve a custom element's state. When using `moveBefore()` to move a custom element, `connectedMoveCallback()` is run instead of `connectedCallback()` and `disconnectedCallback()`.
 
-See [Moving custom elements](/en-US/docs/Web/API/Web_components/Using_custom_elements#lifecycle_callbacks_and_state-preserving_moves) for further information.
+See [Moving custom elements](/en-US/docs/Web/API/Web_components/Sử dụng_custom_elements#lifecycle_callbacks_and_state-preserving_moves) for further information.
 
-## Examples
+## Ví dụ
 
 ### Basic `moveBefore()` usage
 
@@ -80,7 +80,7 @@ In this demo we illustrate basic usage of `moveBefore()`.
 
 #### HTML
 
-The HTML features an {{htmlelement("article")}} element containing a {{htmlelement("div")}} element and two {{htmlelement("section")}} elements. The `<div>` contains a {{htmlelement("button")}}, which we later use to move it.
+The HTML features an {{htmlelement("article")}} element containing a {{htmlelement("div")}} element and two {{htmlelement("section")}} elements. The `<div>` chứa a {{htmlelement("button")}}, which we later use to move it.
 
 ```html live-sample___movebefore-basic
 <article id="wrapper">
@@ -157,7 +157,7 @@ In this demo we provide multiple mechanisms to move a `<div>` element containing
 
 #### HTML
 
-The HTML features an {{htmlelement("article")}} element containing two {{htmlelement("section")}} elements. The first `<section>` element contains a {{htmlelement("div")}} element containing the YouTube embed code. We also have a {{htmlelement("div")}} element containing three {{htmlelement("button")}} elements, to which we will add functionality to move the embed `<div>` between sections via JavaScript later on.
+The HTML features an {{htmlelement("article")}} element containing two {{htmlelement("section")}} elements. The first `<section>` element chứa a {{htmlelement("div")}} element containing the YouTube embed code. We also have a {{htmlelement("div")}} element containing three {{htmlelement("button")}} elements, to which we will add functionality to move the embed `<div>` between sections via JavaScript later on.
 
 ```html live-sample___movebefore-state
 <article id="wrapper">
@@ -270,15 +270,15 @@ The rendered example looks like this:
 
 Try playing the YouTube embed and then clicking each `<button>` a couple of times to toggle the `<div>` element screen position from left to right. Note how, in the case of `insertBefore()` and `prepend()`, the embed state is reset after each move so it needs to be restarted. However, in the case of `moveBefore()`, the state is preserved after each move.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Document.moveBefore()")}}
 - {{domxref("DocumentFragment.moveBefore()")}}

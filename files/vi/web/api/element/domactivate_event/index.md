@@ -10,9 +10,9 @@ browser-compat: api.Element.DOMActivate_event
 
 {{APIRef}}{{Deprecated_Header}}
 
-The **`DOMActivate`** event is fired at an element when it becomes active, such as when it is clicked on using the mouse or a keypress is used to navigate to it.
+Thuộc tính **`DOMActivate`** is fired at an element when it becomes active, such as when it is clicked on using the mouse or a keypress is used to navigate to it.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}.
 
@@ -25,13 +25,13 @@ addEventListener("DOMActivate", (event) => { })
 
 ## Event type
 
-A {{domxref("UIEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("UIEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("UIEvent")}}
 
-## Examples
+## Ví dụ
 
-This example listens for `DOMActivate` on a {{HtmlElement("button")}} element and displays its {{domxref("UIEvent/detail", "detail")}}.
+Ví dụ này listens for `DOMActivate` on a {{HtmlElement("button")}} element and displays its {{domxref("UIEvent/detail", "detail")}}.
 
 ### HTML
 
@@ -55,15 +55,15 @@ Note that `detail` of the `DOMActivate` event may have browser-specific behavior
 
 {{EmbedLiveSample("Examples")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("UIEvent")}}
 - {{domxref("Element/click_event", "click")}}

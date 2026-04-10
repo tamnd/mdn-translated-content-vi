@@ -10,22 +10,22 @@ browser-compat: api.Element.scrollLeftMax
 
 {{APIRef("DOM")}}{{Non-standard_header}}
 
-The **`Element.scrollLeftMax`** read-only property returns a
+Thuộc tính **`Element.scrollLeftMax`** là thuộc tính chỉ đọc trả về a
 number representing the maximum left scroll offset possible for the
 element.
 
-## Value
+## Giá trị
 
-A number.
+Một số.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 _This property is not part of any specification._
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.scrollTopMax")}} giving the same information for the other axis.

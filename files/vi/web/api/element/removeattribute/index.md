@@ -12,29 +12,29 @@ The {{domxref("Element")}} method
 **`removeAttribute()`** removes the attribute with the
 specified name from the element.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 removeAttribute(attrName)
 ```
 
-### Parameters
+### Tham số
 
 - `attrName`
-  - : A string specifying the name of the attribute to remove from the
+  - : Một chuỗi specifying the name of the attribute to remove from the
     element. If the specified attribute does not exist, `removeAttribute()`
-    returns without generating an error.
+    trả về without generating an error.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-## Usage notes
+## Ghi chú sử dụng
 
 You should use `removeAttribute()` instead of setting the attribute value to `null` either directly or using {{domxref("Element.setAttribute", "setAttribute()")}}.
 Many attributes will not behave as expected if you set them to `null`.
 
-## Examples
+## Ví dụ
 
 ```js
 // Given: <div id="div1" disabled width="200px">
@@ -42,15 +42,15 @@ document.getElementById("div1").removeAttribute("disabled");
 // Now: <div id="div1" width="200px">
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttribute()")}}
 - {{domxref("Element.getAttribute()")}}

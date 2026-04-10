@@ -8,15 +8,15 @@ browser-compat: api.Element.scrollHeight
 
 {{APIRef("DOM")}}
 
-The **`scrollHeight`** read-only property of the {{domxref("Element")}} interface is a measurement of the height of an element's content, including content not visible on the screen due to overflow.
+Thuộc tính **`scrollHeight`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface is a measurement of the height of an element's content, including content not visible on the screen due to overflow.
 
 ![The user's viewport is an element with four regions labeled padding-top, border-top, border-bottom, padding-bottom. The scroll height goes from the container's padding top to the end of the padding bottom, well beyond the top and bottom of the viewport.](scrollheight.png)
 
 The `scrollHeight` value is equal to the minimum height the element would require in order to fit all the content in the viewport without using a vertical scrollbar. The height is measured in the same way as {{domxref("Element.clientHeight", "clientHeight")}}: it includes the element's padding, but not its border, margin or horizontal scrollbar (if present). It can also include the height of pseudo-elements such as {{cssxref("::before")}} or {{cssxref("::after")}}. If the element's content can fit without a need for vertical scrollbar, its `scrollHeight` is equal to {{domxref("Element.clientHeight", "clientHeight")}}.
 
-## Value
+## Giá trị
 
-An integer.
+Một số nguyên.
 
 ## Problems and solutions
 
@@ -28,7 +28,7 @@ An integer.
 Math.abs(element.scrollHeight - element.clientHeight - element.scrollTop) <= 1;
 ```
 
-The following will _not_ work all the time because `scrollTop` can contain decimals:
+Các giá trị sau will _not_ work all the time because `scrollTop` can contain decimals:
 
 ```js
 element.scrollHeight - Math.abs(element.scrollTop) === element.clientHeight;
@@ -36,7 +36,7 @@ element.scrollHeight - Math.abs(element.scrollTop) === element.clientHeight;
 
 ### Determine if the content of an element is overflowing
 
-This function returns a boolean value indicating if the content of an element is overflowing its bounds:
+This function trả về a boolean value indicating if the content of an element is overflowing its bounds:
 
 ```js
 function isOverflowing(element) {
@@ -55,7 +55,7 @@ function isScrollable(element) {
 }
 ```
 
-## Examples
+## Ví dụ
 
 ### Checking that the user has read a text
 
@@ -189,15 +189,15 @@ toNextStep.addEventListener("click", () => {
 
 {{EmbedLiveSample('Checking_that_the_user_has_read_a_text', 640, 250)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Determining the dimensions of elements](/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 - {{domxref("HTMLElement.offsetHeight")}}

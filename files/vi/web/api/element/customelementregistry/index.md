@@ -8,19 +8,19 @@ browser-compat: api.Element.customElementRegistry
 
 {{APIRef("Web Components")}}
 
-The **`customElementRegistry`** read-only property of the {{domxref("Element")}} interface returns the {{domxref("CustomElementRegistry")}} object associated with this element, or `null` if one has not been set.
+Thuộc tính **`customElementRegistry`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface trả về the {{domxref("CustomElementRegistry")}} object associated with this element, or `null` if one has not been set.
 
-An element's `customElementRegistry` is set when the element is created (for example, via {{domxref("Document.createElement()")}} with the `customElementRegistry` option, or when parsed in a context that has a scoped registry). Once set to a `CustomElementRegistry` object, it cannot be changed. The registry determines which [custom element](/en-US/docs/Web/API/Web_components/Using_custom_elements) definitions are used when the element is [upgraded](/en-US/docs/Web/API/CustomElementRegistry/upgrade).
+An element's `customElementRegistry` is set when the element is created (for example, via {{domxref("Document.createElement()")}} with the `customElementRegistry` option, or when parsed in a context that has a scoped registry). Once set to a `CustomElementRegistry` object, it cannot be changed. The registry determines which [custom element](/en-US/docs/Web/API/Web_components/Sử dụng_custom_elements) definitions are used when the element is [upgraded](/en-US/docs/Web/API/CustomElementRegistry/upgrade).
 
-## Value
+## Giá trị
 
-A {{domxref("CustomElementRegistry")}} object, or `null`.
+Một {{domxref("CustomElementRegistry")}} object, or `null`.
 
-## Examples
+## Ví dụ
 
 ### Accessing an element's custom element registry
 
-This example creates a scoped registry, attaches it to a shadow root, and then reads back the `customElementRegistry` property from an element inside the shadow tree to confirm it matches the scoped registry.
+Ví dụ này creates a scoped registry, attaches it to a shadow root, and then reads back the `customElementRegistry` property from an element inside the shadow tree to confirm it matches the scoped registry.
 
 ```js
 const myRegistry = new CustomElementRegistry();
@@ -45,17 +45,17 @@ const el = shadow.querySelector("my-element");
 console.log(el.customElementRegistry === myRegistry); // true
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Document.customElementRegistry")}}
 - {{domxref("ShadowRoot.customElementRegistry")}}
 - {{domxref("CustomElementRegistry")}}
-- [Using custom elements](/en-US/docs/Web/API/Web_components/Using_custom_elements)
+- [Sử dụng custom elements](/en-US/docs/Web/API/Web_components/Sử dụng_custom_elements)

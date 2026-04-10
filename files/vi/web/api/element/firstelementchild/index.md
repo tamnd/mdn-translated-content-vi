@@ -8,18 +8,18 @@ browser-compat: api.Element.firstElementChild
 
 {{ APIRef("DOM") }}
 
-The **`Element.firstElementChild`** read-only property
-returns an element's first child {{domxref("Element")}}, or `null` if there
+Thuộc tính **`Element.firstElementChild`** là thuộc tính chỉ đọc
+trả về an element's first child {{domxref("Element")}}, or `null` if there
 are no child elements.
 
 `Element.firstElementChild` includes only element nodes.
 To get all child nodes, including non-element nodes like text and comment nodes, use {{domxref("Node.firstChild")}}.
 
-## Value
+## Giá trị
 
-An {{domxref("Element")}} object, or `null`.
+Một {{domxref("Element")}} object, or `null`.
 
-## Examples
+## Ví dụ
 
 ```html
 <ul id="list">
@@ -35,15 +35,15 @@ console.log(list.firstElementChild.textContent);
 // logs "First (1)"
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.nextElementSibling")}}
 - {{domxref("Element.lastElementChild")}}

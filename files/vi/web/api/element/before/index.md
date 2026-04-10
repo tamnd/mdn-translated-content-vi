@@ -8,12 +8,12 @@ browser-compat: api.Element.before
 
 {{APIRef("DOM")}}
 
-The **`Element.before()`** method inserts a set of
+Thuộc tính **`Element.before()`** method inserts a set of
 {{domxref("Node")}} objects or strings in the children list of this
 `Element`'s parent, just before this `Element`.
 Strings are inserted as equivalent {{domxref("Text")}} nodes.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 before(param1)
@@ -21,21 +21,21 @@ before(param1, param2)
 before(param1, param2, /* …, */ paramN)
 ```
 
-### Parameters
+### Tham số
 
 - `param1`, …, `paramN`
   - : A set of {{domxref("Node")}} objects or strings to insert.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `HierarchyRequestError` {{DOMxRef("DOMException")}}
   - : Thrown when the node cannot be inserted at the specified point in the hierarchy.
 
-## Examples
+## Ví dụ
 
 ### Inserting an element
 
@@ -78,15 +78,15 @@ console.log(container.outerHTML);
 // "<div><span></span>Text<p></p></div>"
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.after()")}}
 - {{domxref("Element.append()")}}

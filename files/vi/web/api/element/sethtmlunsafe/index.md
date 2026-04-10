@@ -18,33 +18,33 @@ browser-compat: api.Element.setHTMLUnsafe
 > [!NOTE]
 > {{domxref("Element.setHTML()")}} should almost always be used instead of this method — on browsers where it is supported — as it always removes XSS-unsafe HTML entities.
 
-The **`setHTMLUnsafe()`** method of the {{domxref("Element")}} interface is used to parse HTML input into a {{domxref("DocumentFragment")}}, optionally filtering out unwanted elements and attributes, and those that don't belong in the context, and then using it to replace the element's subtree in the DOM.
+Thuộc tính **`setHTMLUnsafe()`** của giao diện {{domxref("Element")}} is used to parse HTML input into a {{domxref("DocumentFragment")}}, optionally filtering out unwanted elements and attributes, and those that don't belong in the context, and then using it to replace the element's subtree in the DOM.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setHTMLUnsafe(input)
 setHTMLUnsafe(input, options)
 ```
 
-### Parameters
+### Tham số
 
 - `input`
-  - : A {{domxref("TrustedHTML")}} instance or string defining HTML to be parsed.
+  - : Một {{domxref("TrustedHTML")}} instance or string defining HTML to be parsed.
 - `options` {{optional_inline}}
   - : An options object with the following optional parameters:
     - `sanitizer` {{optional_inline}}
-      - : A {{domxref("Sanitizer")}} or {{domxref("SanitizerConfig")}} object that defines what elements of the input will be allowed or removed.
+      - : Một {{domxref("Sanitizer")}} or {{domxref("SanitizerConfig")}} object that định nghĩa what elements of the input will be allowed or removed.
         This can also be a string with the value `"default"`, which applies a `Sanitizer` with the (XSS-safe) [default sanitizer configuration](/en-US/docs/Web/API/HTML_Sanitizer_API/Default_sanitizer_configuration).
-        If not specified, no sanitizer is used.
+        Nếu không được chỉ định, no sanitizer is used.
 
         Note that if you're using the same configuration multiple times, it's expected to be more efficient to use a `Sanitizer` and modify it when you need to.
 
-### Return value
+### Giá trị trả về
 
 None (`undefined`).
 
-### Exceptions
+### Ngoại lệ
 
 - `TypeError`
   - : This is thrown if:
@@ -55,13 +55,13 @@ None (`undefined`).
       - string that does not have the value `"default"`.
       - value that is not a {{domxref("Sanitizer")}}, {{domxref("SanitizerConfig")}}, or string.
 
-## Description
+## Mô tả
 
-The **`setHTMLUnsafe()`** method is used to parse an HTML input into a {{domxref("DocumentFragment")}}, optionally sanitizing it of unwanted elements and attributes, and discarding elements that the HTML specification doesn't allow in the target element (such as {{htmlelement("li")}} inside a {{htmlelement("div")}}).
+Thuộc tính **`setHTMLUnsafe()`** method is used to parse an HTML input into a {{domxref("DocumentFragment")}}, optionally sanitizing it of unwanted elements and attributes, and discarding elements that the HTML specification doesn't allow in the target element (such as {{htmlelement("li")}} inside a {{htmlelement("div")}}).
 The `DocumentFragment` is then used to replace the element's subtree in the DOM.
 
 Unlike with {{domxref("Element.innerHTML")}}, [declarative shadow roots](/en-US/docs/Web/HTML/Reference/Elements/template#declarative_shadow_dom) in the input will be parsed into the DOM.
-If the string of HTML defines more than one [declarative shadow root](/en-US/docs/Web/HTML/Reference/Elements/template#declarative_shadow_dom) in a particular shadow host then only the first {{domxref("ShadowRoot")}} is created — subsequent declarations are parsed as `<template>` elements within that shadow root.
+If the string of HTML định nghĩa more than one [declarative shadow root](/en-US/docs/Web/HTML/Reference/Elements/template#declarative_shadow_dom) in a particular shadow host then only the first {{domxref("ShadowRoot")}} is created — subsequent declarations are parsed as `<template>` elements within that shadow root.
 
 `setHTMLUnsafe()` doesn't perform any sanitization by default.
 If no sanitizer is passed as a parameter, all HTML entities in the input will be injected.
@@ -69,14 +69,14 @@ It is therefore potentially even less safe that {{domxref("Element.innerHTML")}}
 
 ### Security considerations
 
-The suffix "Unsafe" in the method name indicates that it does not enforce removal of all XSS-unsafe HTML entities (unlike {{domxref("Element.setHTML()")}}).
+The suffix "Unsafe" in the method name cho biết that it does not enforce removal of all XSS-unsafe HTML entities (unlike {{domxref("Element.setHTML()")}}).
 While it can do so if used with an appropriate sanitizer, it doesn't have to use an effective sanitizer, or any sanitizer at all!
 The method is therefore a possible vector for [cross-site scripting (XSS)](/en-US/docs/Web/Security/Attacks/XSS) attacks, where potentially unsafe strings provided by a user are injected into the DOM without first being sanitized.
 
 You should mitigate this risk by always passing {{domxref("TrustedHTML")}} objects instead of strings, and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) using the [`require-trusted-types-for`](/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/require-trusted-types-for) CSP directive.
 This ensures that the input is passed through a transformation function, which has the chance to [sanitize](/en-US/docs/Web/Security/Attacks/XSS#sanitization) the input to remove potentially dangerous markup (such as {{htmlelement("script")}} elements and event handler attributes), before it is injected.
 
-Using `TrustedHTML` makes it possible to audit and check that sanitization code is effective in just a few places, rather than scattered across all your injection sinks.
+Sử dụng `TrustedHTML` makes it possible to audit and check that sanitization code is effective in just a few places, rather than scattered across all your injection sinks.
 You should not have to pass a sanitizer to the method when using `TrustedHTML`.
 
 If for any reason you can't use `TrustedHTML` (or even better, `setHTML()`) then the next safest option is to use `setHTMLUnsafe()` with the [default sanitizer configuration](/en-US/docs/Web/API/HTML_Sanitizer_API/Default_sanitizer_configuration).
@@ -86,7 +86,7 @@ If for any reason you can't use `TrustedHTML` (or even better, `setHTML()`) then
 `setHTMLUnsafe()` should almost never be used if {{domxref("Element.setHTML()")}} is available, because there are very few (if any) cases where user-provided HTML input should need to include XSS-unsafe elements.
 Not only is `setHTML()` safe, but it avoids having to consider trusted types.
 
-Using `setHTMLUnsafe()` might be appropriate if:
+Sử dụng `setHTMLUnsafe()` might be appropriate if:
 
 - You can't use `setHTML()` or trusted types (for whatever reason) and you want to have the safest possible filtering.
   In this case you might use `setHTMLUnsafe()` with the default {{domxref("Sanitizer")}} to filter all XSS-unsafe elements.
@@ -100,7 +100,7 @@ Using `setHTMLUnsafe()` might be appropriate if:
   While this is still unsafe, it is safer than allowing all of them.
 
 For the last point, consider a situation where your code relies on being able to use unsafe `onclick` handlers.
-The following code shows the effect of the different methods and sanitizers for this case.
+Các giá trị sau code shows the effect of the different methods and sanitizers for this case.
 
 ```js
 const target = document.querySelector("#target");
@@ -124,7 +124,7 @@ config.allowAttribute("onclick");
 target.setHTMLUnsafe(input, { sanitizer: configLessSafe });
 ```
 
-## Examples
+## Ví dụ
 
 ### setHTMLUnsafe() with Trusted Types
 
@@ -137,7 +137,7 @@ if (typeof trustedTypes === "undefined")
   trustedTypes = { createPolicy: (n, rules) => rules };
 ```
 
-Next we create a {{domxref("TrustedTypePolicy")}} that defines a {{domxref("TrustedTypePolicy/createHTML", "createHTML()")}} for transforming an input string into {{domxref("TrustedHTML")}} instances.
+Next we create a {{domxref("TrustedTypePolicy")}} that định nghĩa a {{domxref("TrustedTypePolicy/createHTML", "createHTML()")}} for transforming an input string into {{domxref("TrustedHTML")}} instances.
 Commonly implementations of `createHTML()` use a library such as [DOMPurify](https://github.com/cure53/DOMPurify) to sanitize the input as shown below:
 
 ```js
@@ -166,9 +166,9 @@ const target = document.getElementById("target");
 target.setHTMLUnsafe(trustedHTML);
 ```
 
-### Using setHTMLUnsafe() without Trusted Types
+### Sử dụng setHTMLUnsafe() without Trusted Types
 
-This example demonstrates the case where we aren't using trusted types, so we'll be passing sanitizer arguments.
+Ví dụ này demonstrates the case where we aren't using trusted types, so we'll be passing sanitizer arguments.
 
 The code creates an untrusted string and shows a number of ways a sanitizer can be passed to the method.
 
@@ -195,8 +195,8 @@ target.setHTMLUnsafe(untrustedString, {
 
 ### `setHTMLUnsafe()` live example
 
-This example provides a "live" demonstration of the method when called with different sanitizers.
-The code defines buttons that you can click to inject a string of HTML.
+Ví dụ này provides a "live" demonstration of the method when called with different sanitizers.
+The code định nghĩa buttons that you can click to inject a string of HTML.
 One button injects the HTML without sanitizing it at all, and the second uses a custom sanitizer that allows `<script>` elements but not other unsafe items.
 The original string and injected HTML are logged so you can inspect the results in each case.
 
@@ -206,7 +206,7 @@ The original string and injected HTML are logged so you can inspect the results 
 
 #### HTML
 
-The HTML defines two {{htmlelement("button")}} elements for calling the method with different sanitizers, another button to reset the example, and a {{htmlelement("div")}} element to inject the string into.
+The HTML định nghĩa two {{htmlelement("button")}} elements for calling the method with different sanitizers, another button to reset the example, and a {{htmlelement("div")}} element to inject the string into.
 
 ```html
 <button id="buttonNoSanitizer" type="button">None</button>
@@ -244,7 +244,7 @@ if ("Sanitizer" in window) {
 ```
 
 First we define the string to sanitize, which will be the same for all cases.
-This contains the {{htmlelement("script")}} element and the `onclick` handler, both of which are considered XSS-unsafe.
+This chứa the {{htmlelement("script")}} element and the `onclick` handler, both of which are considered XSS-unsafe.
 We also define the handler for the reload button.
 
 ```js
@@ -317,15 +317,15 @@ With this approach you can create safe HTML, but you aren't forced to.
 
 {{EmbedLiveSample("setHTMLUnsafe() live example","100","450px")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("ShadowRoot.setHTMLUnsafe()")}}
 - {{domxref("Element.innerHTML")}}

@@ -8,7 +8,7 @@ browser-compat: api.Element.pointercancel_event
 
 {{APIRef("Pointer Events")}}
 
-The **`pointercancel`** event is fired when the browser determines that there are unlikely to be any more pointer events, or if after the {{domxref("Element/pointerdown_event", "pointerdown")}} event is fired, the pointer is then used to manipulate the viewport by panning, zooming, or scrolling.
+Thuộc tính **`pointercancel`** is fired when the browser determines that there are unlikely to be any more pointer events, or if after the {{domxref("Element/pointerdown_event", "pointerdown")}} event is fired, the pointer is then used to manipulate the viewport by panning, zooming, or scrolling.
 
 Some examples of situations that will trigger a `pointercancel` event:
 
@@ -21,7 +21,7 @@ Some examples of situations that will trigger a `pointercancel` event:
 > [!NOTE]
 > After the `pointercancel` event is fired, the browser will also send {{domxref("Element/pointerout_event", "pointerout")}} followed by {{domxref("Element/pointerleave_event", "pointerleave")}}.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -33,7 +33,7 @@ onpointercancel = (event) => { }
 
 ## Event type
 
-A {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("PointerEvent")}}
 
@@ -66,11 +66,11 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
   - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
-  - : Indicates if the pointer represents the primary pointer of this pointer type.
+  - : Indicates if the pointer đại diện cho the primary pointer of this pointer type.
 
-## Examples
+## Ví dụ
 
-Using `addEventListener()`:
+Sử dụng `addEventListener()`:
 
 ```js
 const para = document.querySelector("p");
@@ -80,7 +80,7 @@ para.addEventListener("pointercancel", (event) => {
 });
 ```
 
-Using the `onpointercancel` event handler property:
+Sử dụng the `onpointercancel` event handler property:
 
 ```js
 const para = document.querySelector("p");
@@ -90,15 +90,15 @@ para.onpointercancel = (event) => {
 };
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events
   - {{domxref('Element/gotpointercapture_event', 'gotpointercapture')}}

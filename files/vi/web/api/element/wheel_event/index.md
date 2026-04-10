@@ -8,7 +8,7 @@ browser-compat: api.Element.wheel_event
 
 {{APIRef("UI Events")}}
 
-The **`wheel`** event fires when the user rotates a wheel button on a pointing device (typically a mouse). It is also fired for related devices that simulate wheel actions, such as trackpads and mouse balls.
+Thuộc tính **`wheel`** fires when the user rotates a wheel button on a pointing device (typically a mouse). It is also fired for related devices that simulate wheel actions, such as trackpads and mouse balls.
 
 This event replaces the non-standard deprecated {{domxref("Element/mousewheel_event", "mousewheel")}} event.
 
@@ -22,7 +22,7 @@ Therefore, do not rely on the `wheel` event's `delta*` properties to get the scr
 
 The `wheel` event is cancelable. In some browsers, only the first `wheel` event in a sequence is cancelable, and later events are non-cancelable. If the event is canceled, no scrolling or zooming is performed. This may cause performance issues as the browser has to wait for every wheel event to be processed before actually scrolling the content. You can avoid this by setting `passive: true` when calling {{domxref("EventTarget.addEventListener", "addEventListener()")}}, which may cause the browser to generate non-cancelable `wheel` events.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -34,7 +34,7 @@ onwheel = (event) => { }
 
 ## Event type
 
-A {{domxref("WheelEvent")}}. Inherits from {{domxref("MouseEvent")}}, {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("WheelEvent")}}. Inherits from {{domxref("MouseEvent")}}, {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("WheelEvent")}}
 
@@ -64,11 +64,11 @@ _This interface inherits properties from its ancestors, {{DOMxRef("MouseEvent")}
 - {{DOMxRef("WheelEvent.wheelDeltaY")}} {{ReadOnlyInline}} {{deprecated_inline}}
   - : Returns an integer representing the vertical scroll amount.
 
-## Examples
+## Ví dụ
 
 ### Scaling an element via the wheel
 
-This example shows how to scale an element using the mouse (or other pointing device) wheel.
+Ví dụ này minh họa how to scale an element using the mouse (or other pointing device) wheel.
 
 ```html
 <div>Scale me with your mouse wheel.</div>
@@ -120,14 +120,14 @@ The event handler can also be set up using the {{domxref("EventTarget/addEventLi
 el.addEventListener("wheel", zoom, { passive: false });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("WheelEvent")}}

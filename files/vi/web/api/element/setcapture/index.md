@@ -19,25 +19,25 @@ to this element until the mouse button is released or {{domxref("document.releas
 > support and you are probably looking for {{domxref("element.setPointerCapture")}} instead,
 > from the Pointer Events API.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setCapture(retargetToElement)
 ```
 
-### Parameters
+### Tham số
 
 - `retargetToElement`
   - : If `true`, all events are targeted directly to this element; if
     `false`, events can also fire at descendants of this element.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-## Examples
+## Ví dụ
 
-In this example, the current mouse coordinates are drawn while you mouse around after
+Trong ví dụ này, the current mouse coordinates are drawn while you mouse around after
 clicking and holding down on an element.
 
 ```html
@@ -87,15 +87,15 @@ if (btn.setCapture) {
 The element may not be scrolled completely to the top or bottom, depending on the
 layout of other elements.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 Not part of any specification.
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{ domxref("document.releaseCapture()") }}
 - {{domxref("element.setPointerCapture")}}

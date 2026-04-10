@@ -8,24 +8,24 @@ browser-compat: api.Element.getBoundingClientRect
 
 {{APIRef("DOM")}}
 
-The **`Element.getBoundingClientRect()`** method returns a
+Thuộc tính **`Element.getBoundingClientRect()`** method trả về a
 {{domxref("DOMRect")}} object providing information about the size of an element and its
 position relative to the [viewport](/en-US/docs/Glossary/Viewport).
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getBoundingClientRect()
 ```
 
-### Parameters
+### Tham số
 
 None.
 
-### Return value
+### Giá trị trả về
 
 The returned value is a {{domxref("DOMRect")}} object which is the smallest rectangle
-which contains the entire element, including its padding and border-width. The
+which chứa the entire element, including its padding and border-width. The
 `left`, `top`, `right`, `bottom`,
 `x`, `y`, `width`, and `height` properties
 describe the position and size of the overall rectangle in pixels. Properties other than
@@ -63,7 +63,7 @@ properties (these can be obtained using {{domxref("window.scrollY")}} and
 {{domxref("window.scrollX")}}) to get a bounding rectangle which is independent from the
 current scrolling position.
 
-## Examples
+## Ví dụ
 
 ### Basic
 
@@ -109,7 +109,7 @@ element, in each case.
 
 ### Scrolling
 
-This example demonstrates how bounding client rect is changing when document is scrolled.
+Ví dụ này demonstrates how bounding client rect is changing when document is scrolled.
 
 ```html
 <div id="example"></div>
@@ -155,14 +155,14 @@ update();
 
 {{EmbedLiveSample('Scrolling', '100%', 640)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.getClientRects", "getClientRects()")}}

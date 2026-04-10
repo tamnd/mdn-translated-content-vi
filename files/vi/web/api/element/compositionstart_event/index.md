@@ -8,11 +8,11 @@ browser-compat: api.Element.compositionstart_event
 
 {{APIRef("UI Events")}}
 
-The **`compositionstart`** event is fired when a text composition system such as an {{glossary("input method editor")}} starts a new composition session.
+Thuộc tính **`compositionstart`** is fired when a text composition system such as an {{glossary("input method editor")}} starts a new composition session.
 
 For example, this event could be fired after a user starts entering a Chinese character using a [Pinyin](https://en.wikipedia.org/wiki/Pinyin) {{glossary("Input method editor")}}.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ oncompositionstart = (event) => { }
 
 ## Event type
 
-A {{domxref("CompositionEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("CompositionEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("CompositionEvent")}}
 
@@ -37,7 +37,7 @@ _This interface also inherits properties of its parent, {{domxref("UIEvent")}}, 
 - {{domxref("CompositionEvent.locale")}} {{ReadOnlyInline}} {{deprecated_inline}}
   - : Returns the locale of current input method (for example, the keyboard layout locale if the composition is associated with IME).
 
-## Examples
+## Ví dụ
 
 ```js
 const inputElement = document.querySelector('input[type="text"]');
@@ -130,14 +130,14 @@ inputElement.addEventListener("compositionend", handleEvent);
 
 {{ EmbedLiveSample('Live_example', '100%', '180px') }}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events: {{domxref("Element/compositionend_event", "compositionend")}}, {{domxref("Element/compositionupdate_event", "compositionupdate")}}.

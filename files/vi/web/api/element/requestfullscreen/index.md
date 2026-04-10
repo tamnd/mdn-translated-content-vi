@@ -8,7 +8,7 @@ browser-compat: api.Element.requestFullscreen
 
 {{APIRef("Fullscreen API")}}
 
-The **`Element.requestFullscreen()`**
+Thuộc tính **`Element.requestFullscreen()`**
 method issues an asynchronous request to make the element be displayed in fullscreen
 mode.
 
@@ -19,20 +19,20 @@ it's now in full screen mode. If permission is denied, the promise is rejected a
 element receives a {{domxref("Element/fullscreenerror_event", "fullscreenerror")}} event instead. If the element has been
 detached from the original document, then the document receives these events instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 requestFullscreen()
 requestFullscreen(options)
 ```
 
-### Parameters
+### Tham số
 
 - `options` {{optional_inline}}
-  - : An object that controls the behavior of the transition to fullscreen mode. The available options are:
+  - : Một đối tượng that controls the behavior of the transition to fullscreen mode. The available options are:
     - `navigationUI` {{optional_inline}}
       - : Controls whether or not to show navigation UI while the element is in fullscreen mode.
-        The default value is `"auto"`, which indicates that the browser should decide what to do.
+        The default value is `"auto"`, which cho biết that the browser should decide what to do.
         - `"hide"`
           - : The browser's navigation interface will be hidden
             and the entire dimensions of the screen will be allocated to the display of the element.
@@ -46,16 +46,16 @@ requestFullscreen(options)
     - `screen` {{optional_inline}} {{experimental_inline}}
       - : Specifies on which screen you want to put the element in fullscreen mode. This takes a {{domxref("ScreenDetailed")}} object as a value, representing the chosen screen.
 
-### Return value
+### Giá trị trả về
 
 A {{JSxRef("Promise")}} which is resolved with a value of `undefined` when
 the transition to full screen is complete.
 
-### Exceptions
+### Ngoại lệ
 
 _Rather than throw a traditional exception, the `requestFullscreen()`
 procedure announces error conditions by rejecting the `Promise` it has
-returned. The rejection handler receives one of the following exception values:_
+returned. The rejection handler receives một trong các giá trị sau exception values:_
 
 - {{jsxref("TypeError")}}
   - : The `TypeError` exception may be delivered in any of the following
@@ -72,7 +72,7 @@ returned. The rejection handler receives one of the following exception values:_
 
 [Transient user activation](/en-US/docs/Web/Security/Defenses/User_activation) is required. The user has to interact with the page or a UI element in order for this feature to work.
 
-## Usage notes
+## Ghi chú sử dụng
 
 ### Compatible elements
 
@@ -100,11 +100,11 @@ It's also important to listen for `fullscreenchange` to be aware when, for
 example, the user manually toggles fullscreen mode, or when the user switches
 applications, causing your application to temporarily exit fullscreen mode.
 
-## Examples
+## Ví dụ
 
 ### Requesting fullscreen mode
 
-This example toggles the {{HTMLElement("video")}} element in and out of fullscreen mode when the <kbd>Enter</kbd> or <kbd>Shift</kbd> + <kbd>F</kbd> keys are pressed.
+Ví dụ này toggles the {{HTMLElement("video")}} element in and out of fullscreen mode when the <kbd>Enter</kbd> or <kbd>Shift</kbd> + <kbd>F</kbd> keys are pressed.
 The script checks whether the document is currently in fullscreen using {{domxref("document.fullscreenElement")}}.
 If the document is in fullscreen, it calls {{domxref("document.exitFullscreen()")}} to exit.
 Otherwise, it calls `requestFullscreen()` on the `<video>` element:
@@ -167,9 +167,9 @@ kbd {
 
 {{embedlivesample("requesting_fullscreen_mode", , "400", "", "", "", "fullscreen")}}
 
-### Using navigationUI
+### Sử dụng navigationUI
 
-In this example, the entire document is placed into fullscreen mode by calling
+Trong ví dụ này, the entire document is placed into fullscreen mode by calling
 `requestFullscreen()` on the document's
 {{DOMxRef("Document.documentElement")}}, which is the document's root
 {{HTMLElement("html")}} element.
@@ -190,7 +190,7 @@ elem
 The promise's resolve handler does nothing, but if the promise is rejected, an error
 message is displayed by calling {{DOMxRef("Window.alert", "alert()")}}.
 
-### Using the screen option
+### Sử dụng the screen option
 
 If you wanted to make the element fullscreen on the primary OS screen, you could use code like the following:
 
@@ -205,17 +205,17 @@ try {
 }
 ```
 
-The {{domxref("Window.getScreenDetails()")}} method is used to retrieve the {{domxref("ScreenDetails")}} object for the current device, which contains {{domxref("ScreenDetailed")}} objects representing the different available screens.
+The {{domxref("Window.getScreenDetails()")}} method is used to retrieve the {{domxref("ScreenDetails")}} object for the current device, which chứa {{domxref("ScreenDetailed")}} objects representing the different available screens.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API)
 - {{DOMxRef("Document.exitFullscreen()")}}

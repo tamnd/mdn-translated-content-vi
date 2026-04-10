@@ -8,27 +8,27 @@ browser-compat: api.Element.currentCSSZoom
 
 {{APIRef("DOM")}}
 
-The **`currentCSSZoom`** read-only property of the {{domxref("Element")}} interface provides the "effective" [CSS `zoom`](/en-US/docs/Web/CSS/Reference/Properties/zoom) of an element, taking into account the zoom applied to the element and all its parent elements.
+Thuộc tính **`currentCSSZoom`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface provides the "effective" [CSS `zoom`](/en-US/docs/Web/CSS/Reference/Properties/zoom) of an element, taking into account the zoom applied to the element and all its parent elements.
 
 The value calculated by multiplying the CSS `zoom` values of the element and all of its parents.
 For example, if three elements with zoom values of 2, 1.5, and 3, are nested within each other, the most deeply nested element will have a `currentCSSZoom` value of 9.
-If the element doesn't have a CSS box, for example because `display: none` is set on the element or one of its parents, then the `currentCSSZoom` is set to 1.
+If the element doesn't have a CSS box, for example because `display: none` is set trên phần tử or one of its parents, then the `currentCSSZoom` được đặt là 1.
 
 Note that some methods, such as {{domxref("Element.getBoundingClientRect()")}}, return dimensions and position that are relative to the viewport, and hence include the effects of CSS `zoom`.
 Other properties and methods return values that are relative to the element itself, and do not include the effects of zooming.
 These include, for example, `client*` properties such as {{domxref("Element.clientHeight")}}, `scroll*()` methods like {{domxref("Element.scroll()")}}, and `offset*` properties such as {{domxref("HTMLElement.offsetHeight")}}.
 The `currentCSSZoom` property can be used to scale these values to adjust for the effects of zooming.
 
-## Value
+## Giá trị
 
-A number indicating the effective CSS zoom on the element, or 1 if the element is not rendered.
+Một số indicating the effective CSS zoom trên phần tử, or 1 if the element is not rendered.
 
-## Examples
+## Ví dụ
 
-This example demonstrates how the `currentCSSZoom` is calculated.
+Ví dụ này demonstrates how the `currentCSSZoom` is calculated.
 
-First we define a nested structure of `<div>` elements where the "parent" is unzoomed and contains a nested element "child1" that has `zoom: 2` applied, which in turn contains a nested element "child2" with `zoom: 3` applied.
-The "child2" element contains two nested elements, one of which is not rendered, and neither of which have the zoom property applied.
+First we define a nested structure of `<div>` elements where the "parent" is unzoomed and chứa a nested element "child1" that has `zoom: 2` applied, which in turn chứa a nested element "child2" with `zoom: 3` applied.
+The "child2" element chứa two nested elements, one of which is not rendered, and neither of which have the zoom property applied.
 
 ```html
 <div id="parent">
@@ -99,14 +99,14 @@ The final `<div>` is not rendered and therefore has a `currentCSSZoom` value of 
 
 {{EmbedLiveSample('Examples', '100%', "400px")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [CSS `zoom`](/en-US/docs/Web/CSS/Reference/Properties/zoom)

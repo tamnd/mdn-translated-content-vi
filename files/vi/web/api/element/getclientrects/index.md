@@ -8,24 +8,24 @@ browser-compat: api.Element.getClientRects
 
 {{APIRef("DOM")}}
 
-The **`getClientRects()`** method of the {{domxref("Element")}}
-interface returns a collection of {{DOMxRef("DOMRect")}} objects that indicate the
+Thuộc tính **`getClientRects()`** method of the {{domxref("Element")}}
+interface trả về a collection of {{DOMxRef("DOMRect")}} objects that indicate the
 bounding rectangles for each [CSS border box](/en-US/docs/Web/CSS/Guides/Box_model/Introduction) in a client.
 
 Most elements only have one border box each, but a multiline [inline-level element](/en-US/docs/Glossary/Inline-level_content) (such as a multiline
 {{HTMLElement("span")}} element, by default) has a border box around each line.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getClientRects()
 ```
 
-### Parameters
+### Tham số
 
 None.
 
-### Return value
+### Giá trị trả về
 
 The returned value is a collection of {{DOMxRef("DOMRect")}} objects, one for each CSS
 border box associated with the element. Each {{DOMxRef("DOMRect")}} object describes the border box, in pixels, with the top-left
@@ -53,7 +53,7 @@ coordinates can still be meaningful.
 
 Fractional pixel offsets are possible.
 
-## Examples
+## Ví dụ
 
 These examples draw client rects in various colors. Note that the JavaScript function
 that paints the client rects is connected to the markup via the class
@@ -103,7 +103,7 @@ Example 2: This HTML creates three ordered lists. Client rects are painted for t
 element in the third block.
 
 ```html
-<h3>A list</h3>
+<h3>Một danh sách</h3>
 <p>
   Note that the border box doesn't include the number, so neither do the client
   rects.
@@ -255,14 +255,14 @@ function addClientRectsOverlay(elt) {
 
 {{EmbedLiveSample('Examples', 680, 650)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{DOMxRef("Element.getBoundingClientRect()")}}

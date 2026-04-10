@@ -8,17 +8,17 @@ browser-compat: api.Element.classList
 
 {{APIRef("DOM")}}
 
-The read-only **`classList`** property of the {{domxref("Element")}} interface contains a live {{domxref("DOMTokenList")}} collection representing the `class` attribute of the element. This can then be used to manipulate the class list.
+The read-only **`classList`** của giao diện {{domxref("Element")}} chứa a live {{domxref("DOMTokenList")}} collection representing the `class` attribute of the element. This can then be used to manipulate the class list.
 
-Using `classList` is a convenient alternative to accessing an element's list of classes as a space-delimited string via {{domxref("element.className")}}.
+Sử dụng `classList` is a convenient alternative to accessing an element's list of classes as a space-delimited string via {{domxref("element.className")}}.
 
-## Value
+## Giá trị
 
-A {{domxref("DOMTokenList")}} object representing the contents of the element's `class` attribute. If the `class` attribute is not set or empty, it returns an empty `DOMTokenList`, i.e., a `DOMTokenList` with the `length` property equal to `0`.
+Một {{domxref("DOMTokenList")}} object representing the contents of the element's `class` attribute. If the `class` attribute is not set or empty, it trả về an empty `DOMTokenList`, i.e., a `DOMTokenList` with the `length` property equal to `0`.
 
 Although the `classList` property itself is read-only in the sense that you can't replace the `DOMTokenList` object, you can still assign to the `classList` property directly, which is equivalent to assigning to its {{domxref("DOMTokenList/value", "value")}} property. You can also modify the `DOMTokenList` object using the {{domxref("DOMTokenList/add", "add()")}}, {{domxref("DOMTokenList/remove", "remove()")}}, {{domxref("DOMTokenList/replace", "replace()")}}, and {{domxref("DOMTokenList/toggle", "toggle()")}} methods.
 
-## Examples
+## Ví dụ
 
 ```js
 const div = document.createElement("div");
@@ -41,7 +41,7 @@ div.classList.toggle("visible");
 div.classList.toggle("visible", i < 10);
 
 // false
-console.log(div.classList.contains("foo"));
+console.log(div.classList.chứa("foo"));
 
 // add or remove multiple classes
 div.classList.add("foo", "bar", "baz");
@@ -56,15 +56,15 @@ div.classList.remove(...cls);
 div.classList.replace("foo", "bar");
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.className")}}
 - {{domxref("DOMTokenList")}}

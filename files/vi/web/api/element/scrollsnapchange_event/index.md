@@ -10,11 +10,11 @@ browser-compat: api.Element.scrollsnapchange_event
 
 {{APIRef}}{{SeeCompatTable}}
 
-The **`scrollsnapchange`** event of the {{domxref("Element")}} interface is fired on the [scroll container](/en-US/docs/Glossary/Scroll_container) at the end of a scrolling operation when a new scroll snap target has been selected, just before the corresponding {{domxref("Element/scrollend_event", "scrollend")}} event fires.
+Thuộc tính **`scrollsnapchange`** of the {{domxref("Element")}} interface is fired on the [scroll container](/en-US/docs/Glossary/Scroll_container) at the end of a scrolling operation when a new scroll snap target has been selected, just before the corresponding {{domxref("Element/scrollend_event", "scrollend")}} event fires.
 
 A scrolling operation ends when the user finishes scrolling within a scroll container — for example using a touch gesture or by dragging the mouse pointer on a scroll bar — and releases the gesture.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -26,9 +26,9 @@ onscrollsnapchange = (event) => { }
 
 ## Event type
 
-A {{domxref("SnapEvent")}}, which inherits from the generic {{domxref("Event")}} type.
+Một {{domxref("SnapEvent")}}, which inherits from the generic {{domxref("Event")}} type.
 
-## Examples
+## Ví dụ
 
 ### Basic usage
 
@@ -51,7 +51,7 @@ main {
 }
 ```
 
-The following JavaScript snippet would cause the `scrollsnapchange` event to fire on the `<main>` element when one of its children becomes a newly-selected snap target. In the handler function, we set a `selected` class on the child referenced by the {{domxref("SnapEvent.snapTargetBlock")}} property, which could be used to style it to look like it has been selected (for example, with an animation) when the event fires.
+Các giá trị sau JavaScript snippet would cause the `scrollsnapchange` event to fire on the `<main>` element when one of its children becomes a newly-selected snap target. In the handler function, we set a `selected` class on the child referenced by the {{domxref("SnapEvent.snapTargetBlock")}} property, which could be used to style it to look like it has been selected (for example, with an animation) when the event fires.
 
 ```js
 const scrollingElem = document.querySelector("main");
@@ -61,20 +61,20 @@ scrollingElem.addEventListener("scrollsnapchange", (event) => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} event
 - {{DOMxRef("Document/scrollend_event", "scrollend")}} event
 - {{domxref("SnapEvent")}}
 - CSS {{cssxref("scroll-snap-type")}} property
 - [CSS scroll snap module](/en-US/docs/Web/CSS/Guides/Scroll_snap)
-- [Using scroll snap events](/en-US/docs/Web/CSS/Guides/Scroll_snap/Using_scroll_snap_events)
+- [Sử dụng scroll snap events](/en-US/docs/Web/CSS/Guides/Scroll_snap/Sử dụng_scroll_snap_events)
 - [Scroll Snap Events](https://developer.chrome.com/blog/scroll-snap-events) on developer.chrome.com (2024)

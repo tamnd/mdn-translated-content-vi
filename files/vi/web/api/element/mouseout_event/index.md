@@ -8,13 +8,13 @@ browser-compat: api.Element.mouseout_event
 
 {{APIRef("UI Events")}}
 
-The **`mouseout`** event is fired at an {{domxref("Element")}} when a pointing device (usually a mouse) is used to move the cursor so that it is no longer contained within the element or one of its children.
+Thuộc tính **`mouseout`** is fired at an {{domxref("Element")}} when a pointing device (usually a mouse) is used to move the cursor so that it is no longer contained within the element or one of its children.
 
 `mouseout` is also delivered to an element if the cursor enters a child element, because the child element obscures the visible area of the element.
 
 If the target element has child elements, `mouseout` and `mouseover` events fire as the mouse moves over the boundaries of these elements too, not just the target element itself. Usually, {{domxref("Element/mouseenter_event", "mouseenter")}} and {{domxref("Element/mouseleave_event", "mouseleave")}} events' behavior is more sensible, because they are not affected by moving into child elements.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -26,7 +26,7 @@ onmouseout = (event) => { }
 
 ## Event type
 
-A {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("MouseEvent")}}
 
@@ -82,13 +82,13 @@ _This interface also inherits properties of its parents, {{domxref("UIEvent")}} 
 - {{domxref("MouseEvent.y")}} {{ReadOnlyInline}}
   - : Alias for {{domxref("MouseEvent.clientY")}}.
 
-## Examples
+## Ví dụ
 
-The following examples show the use of the `mouseout` event.
+Các giá trị sau examples show the use of the `mouseout` event.
 
 ### mouseout and mouseleave
 
-The following example illustrates the difference between `mouseout` and {{domxref("Element/mouseleave_event", "mouseleave")}} events. The `mouseleave` event is added to the {{HTMLElement("ul")}} to color the list purple whenever the mouse exits the `<ul>`. `mouseout` is added to the list to color the targeted element orange when the mouse exits it.
+Các giá trị sau example illustrates the difference between `mouseout` and {{domxref("Element/mouseleave_event", "mouseleave")}} events. The `mouseleave` event is added to the {{HTMLElement("ul")}} to color the list purple whenever the mouse exits the `<ul>`. `mouseout` is added to the list to color the targeted element orange when the mouse exits it.
 
 When you try this out, you'll find that `mouseout` is delivered to the individual list items, while `mouseleave` goes to the overall list, courtesy of the hierarchy of the items and the fact that list items obscure the underlying `<ul>`.
 
@@ -135,15 +135,15 @@ test.addEventListener("mouseout", (event) => {
 
 {{EmbedLiveSample("mouseout_and_mouseleave", 640, 200)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/mousedown_event", "mousedown")}}

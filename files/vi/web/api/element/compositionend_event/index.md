@@ -8,11 +8,11 @@ browser-compat: api.Element.compositionend_event
 
 {{APIRef("UI Events")}}
 
-The **`compositionend`** event is fired when a text composition system such as an {{glossary("input method editor")}} completes or cancels the current composition session.
+Thuộc tính **`compositionend`** is fired when a text composition system such as an {{glossary("input method editor")}} completes or cancels the current composition session.
 
 For example, this event could be fired after a user finishes entering a Chinese character using a [Pinyin](https://en.wikipedia.org/wiki/Pinyin) {{glossary("Input method editor")}}.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ oncompositionend = (event) => { }
 
 ## Event type
 
-A {{domxref("CompositionEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("CompositionEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("CompositionEvent")}}
 
@@ -37,7 +37,7 @@ _This interface also inherits properties of its parent, {{domxref("UIEvent")}}, 
 - {{domxref("CompositionEvent.locale")}} {{ReadOnlyInline}} {{deprecated_inline}}
   - : Returns the locale of the current input method (for example, the keyboard layout locale if the composition is associated with an {{glossary("Input method editor")}}).
 
-## Examples
+## Ví dụ
 
 ```js
 const inputElement = document.querySelector('input[type="text"]');
@@ -133,14 +133,14 @@ inputElement.addEventListener("compositionend", handleEvent);
 
 {{ EmbedLiveSample('Live_example', '100%', '180px') }}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events: {{domxref("Element/compositionstart_event", "compositionstart")}}, {{domxref("Element/compositionupdate_event", "compositionupdate")}}.

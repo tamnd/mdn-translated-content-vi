@@ -8,17 +8,17 @@ browser-compat: api.Element.scrollBy
 
 {{APIRef("CSSOM view API")}}
 
-The **`scrollBy()`** method of the {{domxref("Element")}}
+Thuộc tính **`scrollBy()`** method of the {{domxref("Element")}}
 interface scrolls an element by the given amount.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 scrollBy(xCoord, yCoord)
 scrollBy(options)
 ```
 
-### Parameters
+### Tham số
 
 - `xCoord`
   - : The horizontal pixel value that you want to
@@ -27,7 +27,7 @@ scrollBy(options)
   - : The vertical pixel value that you want to scroll
     by.
 - `options`
-  - : An object containing the following properties:
+  - : Một đối tượng containing the following properties:
     - `top`
       - : Specifies the number of pixels along the Y axis to scroll the window or element.
     - `left`
@@ -35,18 +35,18 @@ scrollBy(options)
     - `behavior`
       - : Specifies whether the scrolling should animate smoothly (`smooth`), happen instantly in a single jump (`instant`), or let the browser choose (`auto`, default).
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-## Examples
+## Ví dụ
 
 ```js
 // scroll an element
 element.scrollBy(300, 300);
 ```
 
-Using `options`:
+Sử dụng `options`:
 
 ```js
 element.scrollBy({
@@ -56,10 +56,10 @@ element.scrollBy({
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}

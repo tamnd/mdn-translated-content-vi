@@ -8,10 +8,10 @@ browser-compat: api.Element.click_event
 
 {{APIRef("UI Events")}}
 
-An element receives a **`click`** event when any of the following occurs:
+An element receives a **`click`** when any of the following occurs:
 
 - A pointing-device button (such as a mouse's primary button) is both pressed and released while the pointer is located inside the element.
-- A touch gesture is performed on the element.
+- A touch gesture is performed trên phần tử.
 - Any user interaction that is equivalent to a click, such as pressing the <kbd>Space</kbd> key or <kbd>Enter</kbd> key while the element is focused. Note that this only applies to elements with a default key event handler, and therefore, excludes other elements that have been made focusable by setting the [`tabindex`](/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex) attribute.
 
 If the button is pressed on one element and the pointer is moved outside the element before the button is released, the event is fired on the most specific ancestor element that contained both elements.
@@ -20,7 +20,7 @@ If the button is pressed on one element and the pointer is moved outside the ele
 
 The event is a device-independent event — meaning it can be activated by touch, keyboard, mouse, and any other mechanism provided by assistive technology.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -32,7 +32,7 @@ onclick = (event) => { }
 
 ## Event type
 
-A {{domxref("PointerEvent")}}. Inherits from {{domxref("MouseEvent")}}.
+Một {{domxref("PointerEvent")}}. Inherits from {{domxref("MouseEvent")}}.
 
 {{InheritanceDiagram("PointerEvent")}}
 
@@ -66,15 +66,15 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
   - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
-  - : Indicates if the pointer represents the primary pointer of this pointer type.
+  - : Indicates if the pointer đại diện cho the primary pointer of this pointer type.
 
-## Usage notes
+## Ghi chú sử dụng
 
 The {{domxref("PointerEvent")}} object passed into the event handler for `click` has its {{domxref("UIEvent/detail", "detail")}} property set to the number of times the {{domxref("Event.target", "target")}} was clicked. In other words, `detail` will be 2 for a double-click, 3 for triple-click, and so forth. This counter resets after a short interval without any clicks occurring; the specifics of how long that interval is may vary from browser to browser and across platforms. The interval is also likely to be affected by user preferences; for example, accessibility options may extend this interval to make it easier to perform multiple clicks with adaptive interfaces.
 
-## Examples
+## Ví dụ
 
-This example displays the number of consecutive clicks on a {{HtmlElement("button")}}.
+Ví dụ này displays the number of consecutive clicks on a {{HtmlElement("button")}}.
 
 ### HTML
 
@@ -98,15 +98,15 @@ Try making rapid, repeated clicks on the button to increase the click count. If 
 
 {{EmbedLiveSample("Examples")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/auxclick_event", "auxclick")}}

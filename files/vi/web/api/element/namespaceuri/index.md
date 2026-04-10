@@ -8,15 +8,15 @@ browser-compat: api.Element.namespaceURI
 
 {{APIRef("DOM")}}
 
-The **`Element.namespaceURI`** read-only property returns the namespace URI of the element, or `null` if the element is not in a namespace.
+Thuộc tính **`Element.namespaceURI`** là thuộc tính chỉ đọc trả về the namespace URI of the element, or `null` if the element is not in a namespace.
 
-## Value
+## Giá trị
 
-A string, or `null`.
+Một chuỗi, or `null`.
 
-## Examples
+## Ví dụ
 
-In this snippet, an element is being examined for its {{domxref("Element.localName", "localName")}} and its `namespaceURI`. If the `namespaceURI` returns the XUL namespace and the `localName` returns "browser", then the node is understood to be a XUL `<browser/>`.
+In this snippet, an element is being examined for its {{domxref("Element.localName", "localName")}} and its `namespaceURI`. If the `namespaceURI` trả về the XUL namespace and the `localName` trả về "browser", then the node is understood to be a XUL `<browser/>`.
 
 ```js
 if (
@@ -38,15 +38,15 @@ You can create an element with the specified `namespaceURI` using the [`document
 
 The DOM does not handle or enforce namespace validation per se. It is up to the DOM application to do any validation necessary. Also note that the namespace prefix, once it is associated with a particular element, cannot be changed.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.localName")}}
 - {{domxref("Element.prefix")}}

@@ -8,7 +8,7 @@ browser-compat: api.Element.copy_event
 
 {{APIRef("Clipboard API")}}
 
-The **`copy`** event of the [Clipboard API](/en-US/docs/Web/API/Clipboard_API) fires when the user initiates a copy action through the browser's user interface.
+Thuộc tính **`copy`** of the [Clipboard API](/en-US/docs/Web/API/Clipboard_API) fires when the user initiates a copy action through the browser's user interface.
 
 The event's default action is to copy the selection (if any) to the clipboard.
 
@@ -20,7 +20,7 @@ It's possible to construct and dispatch a [synthetic](/en-US/docs/Web/API/Docume
 
 This event [bubbles](/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling) up the DOM tree, eventually to {{domxref("Document")}} and {{domxref("Window")}}, is [cancelable](/en-US/docs/Web/API/Event/cancelable) and is [composed](/en-US/docs/Web/API/Event/composed).
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -32,11 +32,11 @@ oncopy = (event) => { }
 
 ## Event type
 
-A {{domxref("ClipboardEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("ClipboardEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("ClipboardEvent")}}
 
-## Examples
+## Ví dụ
 
 ### Live example
 
@@ -74,15 +74,15 @@ source.addEventListener("copy", (event) => {
 
 {{ EmbedLiveSample('Live_example', '100%', '120px') }}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element/cut_event", "cut")}} event
 - {{domxref("Element/paste_event", "paste")}} event

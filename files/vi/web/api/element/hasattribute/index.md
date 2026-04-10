@@ -8,26 +8,26 @@ browser-compat: api.Element.hasAttribute
 
 {{APIRef("DOM")}}
 
-The **`Element.hasAttribute()`** method returns a
+Thuộc tính **`Element.hasAttribute()`** method trả về a
 **Boolean** value indicating whether the specified element has the
 specified attribute or not.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 hasAttribute(name)
 ```
 
-### Parameters
+### Tham số
 
 - `name`
   - : is a string representing the name of the attribute.
 
-### Return value
+### Giá trị trả về
 
-A boolean.
+Một boolean.
 
-## Examples
+## Ví dụ
 
 ```js
 const foo = document.getElementById("foo");
@@ -36,15 +36,15 @@ if (foo.hasAttribute("bar")) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttributes()")}}
 - {{domxref("Element.getAttribute()")}}

@@ -10,11 +10,11 @@ browser-compat: api.Element.beforexrselect_event
 
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
-The **`beforexrselect`** event is fired before WebXR select events ({{domxref("XRSession/select_event", "select")}}, {{domxref("XRSession/selectstart_event", "selectstart")}}, {{domxref("XRSession/selectend_event", "selectend")}}) are dispatched. It can be used to suppress XR world input events while the user is interacting with a DOM overlay UI.
+Thuộc tính **`beforexrselect`** event is fired before WebXR select events ({{domxref("XRSession/select_event", "select")}}, {{domxref("XRSession/selectstart_event", "selectstart")}}, {{domxref("XRSession/selectend_event", "selectend")}}) are dispatched. It can be used to suppress XR world input events while the user is interacting with a DOM overlay UI.
 
 This event [bubbles](/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling), is [cancelable](/en-US/docs/Web/API/Event/cancelable) and is [composed](/en-US/docs/Web/API/Event/composed).
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -37,7 +37,7 @@ An {{domxref("XRSessionEvent")}}. Inherits from {{domxref("Event")}}.
 
 ## Event availability
 
-The **`beforexrselect`** event is a global event and available to the following interfaces:
+Thuộc tính **`beforexrselect`** event is a global event and available to the following interfaces:
 
 - {{domxref("Window")}}
 - {{domxref("Document")}}
@@ -45,7 +45,7 @@ The **`beforexrselect`** event is a global event and available to the following 
 - {{domxref("SVGElement")}}
 - {{domxref("MathMLElement")}}
 
-## Examples
+## Ví dụ
 
 To suppress WebXR select events ({{domxref("XRSession/select_event", "select")}}, {{domxref("XRSession/selectstart_event", "selectstart")}}, {{domxref("XRSession/selectend_event", "selectend")}}), an application can listen for the `beforexrselect` event. The event bubbles, so a call to {{domxref("Event/preventDefault", "preventDefault()")}} on the DOM overlay element will prevent any WebXR select events within this container allowing interaction with the DOM element and avoiding duplicate event input to the XR world.
 
@@ -55,15 +55,15 @@ document
   .addEventListener("beforexrselect", (ev) => ev.preventDefault());
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("XRSession/select_event", "select")}} event
 - {{domxref("XRSession/selectstart_event", "selectstart")}} event

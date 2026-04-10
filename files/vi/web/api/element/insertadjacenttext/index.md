@@ -8,31 +8,31 @@ browser-compat: api.Element.insertAdjacentText
 
 {{APIRef("DOM")}}
 
-The **`insertAdjacentText()`** method of the {{domxref("Element")}} interface, given a relative position and a string, inserts a new text node at the given position relative to the element it is called from.
+Thuộc tính **`insertAdjacentText()`** của giao diện {{domxref("Element")}}, given a relative position and a string, inserts a new text node at the given position relative to the element it is called from.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 insertAdjacentText(where, data)
 ```
 
-### Parameters
+### Tham số
 
 - `where`
-  - : A string representing the position relative to the element the method is called from; must be one of the following strings:
+  - : Một chuỗi representing the position relative to the element the method is called from; must be một trong các giá trị sau strings:
     - `'beforebegin'`: Before the `element` itself.
     - `'afterbegin'`: Just inside the `element`, before its first child.
     - `'beforeend'`: Just inside the `element`, after its last child.
     - `'afterend'`: After the `element` itself.
 
 - `data`
-  - : A string from which to create a new text node to insert at the given position `where` relative to the element the method is called from.
+  - : Một chuỗi from which to create a new text node to insert at the given position `where` relative to the element the method is called from.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if `where` is not a recognized value.
@@ -54,7 +54,7 @@ None ({{jsxref("undefined")}}).
 > `afterend` positions work only if the node is in a tree and has an element
 > parent.
 
-## Examples
+## Ví dụ
 
 ```js
 beforeBtn.addEventListener("click", () => {
@@ -73,15 +73,15 @@ insert it before or after the existing paragraph text using
 `insertAdjacentText()`. Note that the existing text node is not added to —
 further text nodes are created containing the new additions.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.insertAdjacentElement()")}}
 - {{domxref("Element.insertAdjacentHTML()")}}

@@ -13,7 +13,7 @@ The {{domxref("Element")}} interface's
 containers such that the element on which `scrollIntoView()` is called is
 visible to the user.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 scrollIntoView()
@@ -21,10 +21,10 @@ scrollIntoView(alignToTop)
 scrollIntoView(options)
 ```
 
-### Parameters
+### Tham số
 
 - `alignToTop` {{optional_inline}}
-  - : A boolean value:
+  - : Một boolean value:
     - If `true`, the top of the element will be aligned to the top of the
       visible area of the scrollable ancestor. Corresponds to
       `scrollIntoViewOptions: {block: "start", inline: "nearest"}`. This is
@@ -34,9 +34,9 @@ scrollIntoView(options)
       `scrollIntoViewOptions: {block: "end", inline: "nearest"}`.
 
 - `options` {{optional_inline}}
-  - : An object with the following properties:
+  - : Một đối tượng with the following properties:
     - `behavior` {{optional_inline}}
-      - : Determines whether scrolling is instant or animates smoothly. Its value can be one of the following:
+      - : Determines whether scrolling is instant or animates smoothly. Its value can be một trong các giá trị sau:
         - `smooth`: scrolling should animate smoothly
         - `instant`: scrolling should happen instantly in a single jump
         - `auto`: scroll behavior is determined by the computed value of {{cssxref("scroll-behavior")}}
@@ -44,7 +44,7 @@ scrollIntoView(options)
         The default is `auto`.
 
     - `block` {{optional_inline}}
-      - : Defines the vertical alignment of the element within the scrollable ancestor container. Its value can be one of the following:
+      - : Defines the vertical alignment of the element within the scrollable ancestor container. Its value can be một trong các giá trị sau:
         - `start`: Aligns the element's top edge with the top of the scrollable container, making the element appear at the start of the visible area vertically.
         - `center`: Aligns the element vertically at the center of the scrollable container, positioning it in the middle of the visible area.
         - `end`: Aligns the element's bottom edge with the bottom of the scrollable container, placing the element at the end of the visible area vertically.
@@ -53,14 +53,14 @@ scrollIntoView(options)
         The default is `start`.
 
     - `container` {{optional_inline}}
-      - : Defines the scrollable ancestor container. Its value can be one of the following:
+      - : Defines the scrollable ancestor container. Its value can be một trong các giá trị sau:
         - `all`: All scrollable containers are impacted (including the viewport).
         - `nearest`: Only the nearest scrollable container is impacted by the scroll.
 
         The default is `all`.
 
     - `inline` {{optional_inline}}
-      - : Defines the horizontal alignment of the element within the scrollable ancestor container. Its value can be one of the following:
+      - : Defines the horizontal alignment of the element within the scrollable ancestor container. Its value can be một trong các giá trị sau:
         - `start`: Aligns the element's left edge with the left of the scrollable container, making the element appear at the start of the visible area horizontally.
         - `center`: Aligns the element horizontally at the center of the scrollable container, positioning it in the middle of the visible area.
         - `end`: Aligns the element's right edge with the right of the scrollable container, placing the element at the end of the visible area horizontally.
@@ -68,13 +68,13 @@ scrollIntoView(options)
 
         The default is `nearest`.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-## Examples
+## Ví dụ
 
-### Using scrollIntoView()
+### Sử dụng scrollIntoView()
 
 ```js
 const element = document.getElementById("box");
@@ -148,14 +148,14 @@ goToTop.addEventListener("click", () => {
 
 {{EmbedLiveSample("scroll-with-padding", "700", "300")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.scrollIntoViewIfNeeded()")}} {{non-standard_inline}}

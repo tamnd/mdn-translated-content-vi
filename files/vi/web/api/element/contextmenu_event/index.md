@@ -8,7 +8,7 @@ browser-compat: api.Element.contextmenu_event
 
 {{APIRef("Pointer Events")}}
 
-The **`contextmenu`** event fires when the user attempts to open a context menu. This event is typically triggered by clicking the right mouse button, or by pressing the context menu key.
+Thuộc tính **`contextmenu`** fires when the user attempts to open a context menu. This event is typically triggered by clicking the right mouse button, or by pressing the context menu key.
 
 In the latter case, the context menu is displayed at the bottom left of the focused element, unless the element is a tree, in which case the context menu is displayed at the bottom left of the current row.
 
@@ -17,7 +17,7 @@ Any right-click event that is not disabled (by calling the click event's {{domxr
 > [!NOTE]
 > An exception to this in Firefox: if the user holds down the <kbd>Shift</kbd> key while right-clicking, then the context menu will be shown without a `contextmenu` event being fired.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -29,7 +29,7 @@ oncontextmenu = (event) => { }
 
 ## Event type
 
-A {{domxref("PointerEvent")}}. Inherits from {{domxref("MouseEvent")}}.
+Một {{domxref("PointerEvent")}}. Inherits from {{domxref("MouseEvent")}}.
 
 {{InheritanceDiagram("PointerEvent")}}
 
@@ -63,13 +63,13 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
   - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
-  - : Indicates if the pointer represents the primary pointer of this pointer type.
+  - : Indicates if the pointer đại diện cho the primary pointer of this pointer type.
 
-## Examples
+## Ví dụ
 
 ### Canceling the `contextmenu` event
 
-In this example, the default action of the `contextmenu` event is canceled using `preventDefault()` when the `contextmenu` event is fired at the first paragraph. As a result, the first paragraph will do nothing when right-clicked, while the second paragraph will show the standard context menu offered by your browser.
+Trong ví dụ này, the default action of the `contextmenu` event is canceled using `preventDefault()` when the `contextmenu` event is fired at the first paragraph. As a result, the first paragraph will do nothing when right-clicked, while the second paragraph will show the standard context menu offered by your browser.
 
 > [!NOTE]
 > In Firefox, if you hold down the <kbd>Shift</kbd> key while right-clicking, then the context menu is shown without the `contextmenu` event being fired. Therefore, canceling the event does not stop the context menu from being shown.
@@ -95,15 +95,15 @@ noContext.addEventListener("contextmenu", (e) => {
 
 {{EmbedLiveSample("Canceling the contextmenu event")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/auxclick_event", "auxclick")}}

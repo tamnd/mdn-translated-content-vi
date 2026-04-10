@@ -8,30 +8,30 @@ browser-compat: api.Element.getAttribute
 
 {{APIRef("DOM")}}
 
-The **`getAttribute()`** method of the
-{{domxref("Element")}} interface returns the value of a specified attribute on the
+Thuộc tính **`getAttribute()`** method of the
+{{domxref("Element")}} interface trả về the value of a specified attribute on the
 element.
 
 If the given attribute does not exist, the value returned will be `null`.
 
 If you need to inspect the {{domxref("Attr")}} node's properties, you can use the {{domxref("Element.getAttributeNode()", "getAttributeNode()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getAttribute(attributeName)
 ```
 
-### Parameters
+### Tham số
 
 - `attributeName`
   - : The name of the attribute whose value you want to get.
 
-### Return value
+### Giá trị trả về
 
-A string containing the value of `attributeName` if the attribute exists, otherwise `null`.
+Một chuỗi chứa the value of `attributeName` if the attribute exists, otherwise `null`.
 
-## Examples
+## Ví dụ
 
 ```html
 <!-- example div in an HTML DOC -->
@@ -49,7 +49,7 @@ const lang = div1.getAttribute("lang");
 // null
 ```
 
-## Description
+## Mô tả
 
 ### Lower casing
 
@@ -64,7 +64,7 @@ hidden.
 
 ```js example-bad
 let nonce = script.getAttribute("nonce");
-// returns empty string
+// trả về empty string
 ```
 
 Instead of retrieving the nonce from the content attribute, use the
@@ -74,15 +74,15 @@ Instead of retrieving the nonce from the content attribute, use the
 let nonce = script.nonce;
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttribute()")}}
 - {{domxref("Element.setAttribute()")}}

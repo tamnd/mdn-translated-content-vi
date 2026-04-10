@@ -8,8 +8,8 @@ browser-compat: api.Element.id
 
 {{ ApiRef("DOM") }}
 
-The **`id`** property of the {{domxref("Element")}} interface
-represents the element's identifier, reflecting the
+Thuộc tính **`id`** của giao diện {{domxref("Element")}}
+đại diện cho the element's identifier, reflecting the
 [**`id`**](/en-US/docs/Web/HTML/Reference/Global_attributes/id)
 global attribute.
 
@@ -22,19 +22,19 @@ Another common case is to use an element's [ID as a selector](/en-US/docs/Web/CS
 > Identifiers are case-sensitive, but you should avoid creating
 > IDs that differ only in the capitalization.
 
-## Value
+## Giá trị
 
-A string.
+Một chuỗi.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - The DOM [**id**](/en-US/docs/Web/HTML/Reference/Global_attributes/id)
   global attribute.

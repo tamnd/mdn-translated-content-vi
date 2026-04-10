@@ -10,17 +10,17 @@ browser-compat: api.Element.elementTiming
 
 {{APIRef("DOM")}}{{SeeCompatTable}}
 
-The **`elementTiming`** property of the {{domxref("Element")}} interface identifies elements for observation in the {{domxref("PerformanceElementTiming")}} API. The `elementTiming` property reflects the value of the [`elementtiming`](/en-US/docs/Web/HTML/Reference/Attributes/elementtiming) attribute.
+Thuộc tính **`elementTiming`** của giao diện {{domxref("Element")}} identifies elements for observation in the {{domxref("PerformanceElementTiming")}} API. The `elementTiming` property reflects the value of the [`elementtiming`](/en-US/docs/Web/HTML/Reference/Attributes/elementtiming) attribute.
 
-## Value
+## Giá trị
 
-A string.
+Một chuỗi.
 
-## Examples
+## Ví dụ
 
 ### Logging the value of `elementTiming`
 
-In this example, adding the [`elementtiming`](/en-US/docs/Web/HTML/Reference/Attributes/elementtiming) attribute to the {{HTMLElement("img")}} element sets the image to be observed.
+Trong ví dụ này, adding the [`elementtiming`](/en-US/docs/Web/HTML/Reference/Attributes/elementtiming) attribute to the {{HTMLElement("img")}} element sets the image to be observed.
 
 ```html
 <img
@@ -39,15 +39,15 @@ console.log(el.elementTiming); // "big-image"
 
 For a more complete example on how to use the Element Timing API, see {{domxref("PerformanceElementTiming")}}.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("PerformanceElementTiming")}}
 - [`elementtiming`](/en-US/docs/Web/HTML/Reference/Attributes/elementtiming) HTML attribute

@@ -8,37 +8,37 @@ browser-compat: api.Element.getAttributeNames
 
 {{APIRef("DOM")}}
 
-The **`getAttributeNames()`** method of the
-{{domxref("Element")}} interface returns the attribute names of the element as an
-{{jsxref("Array")}} of strings. If the element has no attributes it returns an empty
+Thuộc tính **`getAttributeNames()`** method of the
+{{domxref("Element")}} interface trả về the attribute names of the element as an
+{{jsxref("Array")}} of strings. If the element has no attributes it trả về an empty
 array.
 
-Using `getAttributeNames()` along with
+Sử dụng `getAttributeNames()` along with
 {{domxref("Element.getAttribute","getAttribute()")}}, is a memory-efficient and
 performant alternative to accessing {{domxref("Element.attributes")}}.
 
 The names returned by **`getAttributeNames()`** are _qualified_ attribute names, meaning that attributes with a namespace prefix have their names returned with that namespace prefix (_not_ the actual namespace), followed by a colon, followed by the attribute name (for example, **`xlink:href`**), while any attributes which have no namespace prefix have their names returned as-is (for example, **`href`**).
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getAttributeNames()
 ```
 
-### Parameters
+### Tham số
 
 None.
 
-### Return value
+### Giá trị trả về
 
 An ({{jsxref("Array")}}) of strings.
 
-## Examples
+## Ví dụ
 
-The following example shows how:
+Các giá trị sau example shows how:
 
-- For an attribute which has a namespace prefix, `getAttributeNames()` returns that namespace prefix along with the attribute name.
-- For an attribute which has no namespace prefix, `getAttributeNames()` returns just the attribute name, as-is.
+- For an attribute which has a namespace prefix, `getAttributeNames()` trả về that namespace prefix along with the attribute name.
+- For an attribute which has no namespace prefix, `getAttributeNames()` trả về just the attribute name, as-is.
 
 It's important to understand that:
 
@@ -73,10 +73,10 @@ for (const name of element.getAttributeNames()) {
 // show new
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}

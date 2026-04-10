@@ -10,7 +10,7 @@ browser-compat: api.Element.beforematch_event
 
 An element receives a **`beforematch`** event when it is in the _hidden until found_ state and the browser is about to reveal its content because the user has found the content through the "find in page" feature or through fragment navigation.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ onbeforematch = (event) => { }
 
 A generic {{domxref("Event")}}.
 
-## Usage notes
+## Ghi chú sử dụng
 
 The HTML [`hidden`](/en-US/docs/Web/HTML/Reference/Global_attributes/hidden) attribute accepts a value `until-found`: when this value is specified, the element is hidden but its content will be accessible to the browser's "find in page" feature or to fragment navigation. When these features cause a scroll to an element in a "hidden until found" subtree, the browser will:
 
@@ -32,11 +32,11 @@ The HTML [`hidden`](/en-US/docs/Web/HTML/Reference/Global_attributes/hidden) att
 2. Remove the `hidden` attribute from the element
 3. Scroll to the element
 
-## Examples
+## Ví dụ
 
-### Using beforematch
+### Sử dụng beforematch
 
-In this example, we have two {{HTMLElement("div")}} elements.
+Trong ví dụ này, we have two {{HTMLElement("div")}} elements.
 The first is visible, while the second has the `hidden="until-found"` and `id="until-found-box"` attributes.
 The element with a `until-found-box` id has a dotted red border and a gray background.
 
@@ -99,18 +99,18 @@ The `beforematch` event fires, the text content is updated, and then the element
 
 To run the example again, click "Reload".
 
-{{EmbedLiveSample("Using beforematch", "", 300)}}
+{{EmbedLiveSample("Sử dụng beforematch", "", 300)}}
 
 If your browser does not support the `"until-found"` enumerated value of the `hidden` attribute, the second `<div>` will be hidden (as `hidden` was boolean prior to the addition of the `until-found` value).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - The HTML [`hidden`](/en-US/docs/Web/HTML/Reference/Global_attributes/hidden) attribute

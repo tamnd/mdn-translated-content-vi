@@ -8,28 +8,28 @@ browser-compat: api.Element.requestPointerLock
 
 {{APIRef("Pointer Lock API")}}
 
-The **`requestPointerLock()`** method of the {{domxref("Element")}} interface lets you asynchronously ask for the pointer to be locked on the given element.
+Thuộc tính **`requestPointerLock()`** của giao diện {{domxref("Element")}} lets you asynchronously ask for the pointer to be locked on the given element.
 
 To track the success or failure of the request, it is necessary to listen for the {{domxref("Document/pointerlockchange_event", "pointerlockchange")}} and {{domxref("Document/pointerlockerror_event", "pointerlockerror")}} events at the {{domxref("Document")}} level.
 
 > [!NOTE]
-> In the current specification, `requestPointerLock()` only communicates the success or failure of the request by firing {{domxref("Document/pointerlockchange_event", "pointerlockchange")}} or {{domxref("Document/pointerlockerror_event", "pointerlockerror")}} events. [A proposed update to the specification](https://github.com/w3c/pointerlock/pull/49) updates `requestPointerLock()` to return a {{jsxref("Promise")}} which communicates success or failure. This page documents the version that returns a {{jsxref("Promise")}}. However, note that this version is not yet a standard and is not implemented by all browsers. See [Browser compatibility](#browser_compatibility) for more information.
+> In the current specification, `requestPointerLock()` only communicates the success or failure of the request by firing {{domxref("Document/pointerlockchange_event", "pointerlockchange")}} or {{domxref("Document/pointerlockerror_event", "pointerlockerror")}} events. [A proposed update to the specification](https://github.com/w3c/pointerlock/pull/49) updates `requestPointerLock()` to return a {{jsxref("Promise")}} which communicates success or failure. This page documents the version that trả về a {{jsxref("Promise")}}. However, note that this version is not yet a standard and is not implemented by all browsers. See [Browser compatibility](#browser_compatibility) for more information.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 requestPointerLock()
 requestPointerLock(options)
 ```
 
-### Parameters
+### Tham số
 
 - `options` {{optional_inline}}
   - : An options object that can contain the following properties:
     - `unadjustedMovement` {{optional_inline}}
       - : Disables OS-level adjustment for mouse acceleration, and accesses raw mouse input instead. The default value is `false`; setting it to `true` will disable mouse acceleration.
 
-### Return value
+### Giá trị trả về
 
 A {{jsxref("Promise")}} that resolves with {{jsxref("undefined")}}.
 
@@ -43,7 +43,7 @@ If calling `requestPointerLock()` with {{domxref("Element.requestFullscreen()", 
 
 The `allow-pointer-lock` [sandbox token](/en-US/docs/Web/HTML/Reference/Elements/iframe#sandbox) must be added when calling `requestPointerLock()` in an {{htmlelement("iframe")}} element. Also, no other elements in other {{htmlelement("iframe")}} elements may be in pointer lock mode.
 
-## Examples
+## Ví dụ
 
 Pointer lock is often used in online games, when you want your mouse movement to be focused on controlling the game, without the distraction of the mouse pointer moving around, going outside the game area, or reaching the edge of the window.
 
@@ -73,15 +73,15 @@ For more example code, see:
 - {{domxref("Pointer Lock API", "Pointer Lock API", "", "nocode")}}
 - [Disable mouse acceleration to provide a better FPS gaming experience](https://web.dev/articles/disable-mouse-acceleration)
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{ domxref("Document.pointerLockElement") }}
 - {{ domxref("Document.exitPointerLock()") }}

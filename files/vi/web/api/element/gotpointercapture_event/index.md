@@ -8,9 +8,9 @@ browser-compat: api.Element.gotpointercapture_event
 
 {{APIRef("Pointer Events")}}
 
-The **`gotpointercapture`** event is fired when an element captures a pointer using [`setPointerCapture()`](/en-US/docs/Web/API/Element/setPointerCapture).
+Thuộc tính **`gotpointercapture`** is fired when an element captures a pointer using [`setPointerCapture()`](/en-US/docs/Web/API/Element/setPointerCapture).
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -22,7 +22,7 @@ ongotpointercapture = (event) => { }
 
 ## Event type
 
-A {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("PointerEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("PointerEvent")}}
 
@@ -55,11 +55,11 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
   - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
-  - : Indicates if the pointer represents the primary pointer of this pointer type.
+  - : Indicates if the pointer đại diện cho the primary pointer of this pointer type.
 
-## Examples
+## Ví dụ
 
-This example gets a `<p>` element and listens for the `gotpointercapture` event. It then calls `setPointerCapture()` on the element on a `pointerdown` event, which will trigger `gotpointercapture`.
+Ví dụ này gets a `<p>` element and listens for the `gotpointercapture` event. It then calls `setPointerCapture()` trên phần tử on a `pointerdown` event, which will trigger `gotpointercapture`.
 
 ```js
 const para = document.querySelector("p");
@@ -87,15 +87,15 @@ para.addEventListener("pointerdown", (event) => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related events
   - {{domxref('Element/lostpointercapture_event', 'lostpointercapture')}}

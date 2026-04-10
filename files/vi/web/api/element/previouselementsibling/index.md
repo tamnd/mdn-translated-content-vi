@@ -8,15 +8,15 @@ browser-compat: api.Element.previousElementSibling
 
 {{APIRef("DOM")}}
 
-The **`Element.previousElementSibling`**
-read-only property returns the {{domxref("Element")}} immediately prior to the specified
+Thuộc tính **`Element.previousElementSibling`**
+read-only property trả về the {{domxref("Element")}} immediately prior to the specified
 one in its parent's {{domxref("Element.children", "children")}} list, or `null` if the specified element is the first one in the list.
 
-## Value
+## Giá trị
 
-An {{domxref("Element")}} object, or `null`.
+Một {{domxref("Element")}} object, or `null`.
 
-## Examples
+## Ví dụ
 
 ```html
 <div id="div-01">Here is div-01</div>
@@ -35,7 +35,7 @@ while (el) {
 }
 ```
 
-This example outputs the following into the page when it loads:
+Ví dụ này outputs the following into the page when it loads:
 
 ```plain
 Siblings of div-03:
@@ -45,14 +45,14 @@ DIV
 DIV
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.nextElementSibling")}}

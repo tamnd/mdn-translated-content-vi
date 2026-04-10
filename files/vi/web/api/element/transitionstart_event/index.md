@@ -8,11 +8,11 @@ browser-compat: api.Element.transitionstart_event
 
 {{APIRef}}
 
-The **`transitionstart`** event is fired when a [CSS transition](/en-US/docs/Web/CSS/Guides/Transitions/Using) has actually started, i.e., after any {{cssxref("transition-delay")}} has ended.
+Thuộc tính **`transitionstart`** is fired when a [CSS transition](/en-US/docs/Web/CSS/Guides/Transitions/Sử dụng) has actually started, i.e., after any {{cssxref("transition-delay")}} has ended.
 
 This event is not cancelable.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -24,7 +24,7 @@ ontransitionstart = (event) => { }
 
 ## Event type
 
-A {{domxref("TransitionEvent")}}. Inherits from {{domxref("Event")}}.
+Một {{domxref("TransitionEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("TransitionEvent")}}
 
@@ -33,13 +33,13 @@ A {{domxref("TransitionEvent")}}. Inherits from {{domxref("Event")}}.
 _Also inherits properties from its parent {{domxref("Event")}}_.
 
 - {{domxref("TransitionEvent.propertyName")}} {{ReadOnlyInline}}
-  - : A string containing the name CSS property associated with the transition.
+  - : Một chuỗi chứa the name CSS property associated with the transition.
 - {{domxref("TransitionEvent.elapsedTime")}} {{ReadOnlyInline}}
   - : A `float` giving the amount of time the transition has been running, in seconds, when this event fired. This value is not affected by the {{cssxref("transition-delay")}} property.
 - {{domxref("TransitionEvent.pseudoElement")}} {{ReadOnlyInline}}
-  - : A string, starting with `::`, containing the name of the [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) the animation runs on. If the transition doesn't run on a pseudo-element but on the element, an empty string: `''`.
+  - : Một chuỗi, starting with `::`, containing the name of the [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) the animation runs on. If the transition doesn't run on a pseudo-element but trên phần tử, an empty string: `''`.
 
-## Examples
+## Ví dụ
 
 This code adds a listener to the `transitionstart` event:
 
@@ -59,7 +59,7 @@ element.ontransitionstart = () => {
 
 ### Live example
 
-In the following example, we have a simple {{htmlelement("div")}} element, styled with a transition that includes a delay:
+Trong ví dụ sau, we have a simple {{htmlelement("div")}} element, styled with a transition that includes a delay:
 
 ```html
 <div class="transition">Hover over me</div>
@@ -108,15 +108,15 @@ The difference is that:
 - transitionrun fires when the transition is created (i.e., at the start of any delay).
 - transitionstart fires when the actual animation has begun (i.e., at the end of any delay).
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - The {{domxref("TransitionEvent")}} interface
 - CSS properties: {{cssxref("transition")}}, {{cssxref("transition-delay")}}, {{cssxref("transition-duration")}}, {{cssxref("transition-property")}}, {{cssxref("transition-timing-function")}}

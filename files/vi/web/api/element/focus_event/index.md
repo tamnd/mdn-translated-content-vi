@@ -8,13 +8,13 @@ browser-compat: api.Element.focus_event
 
 {{APIRef("UI Events")}}
 
-The **`focus`** event fires when an element has received focus. The event does not bubble, but the related {{domxref("Element/focusin_event", "focusin")}} event that follows does bubble.
+Thuộc tính **`focus`** fires when an element has received focus. The event does not bubble, but the related {{domxref("Element/focusin_event", "focusin")}} event that follows does bubble.
 
 The opposite of `focus` is the {{domxref("Element/blur_event", "blur")}} event, which fires when the element has _lost_ focus.
 
 The `focus` event is not cancelable.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -26,7 +26,7 @@ onfocus = (event) => { }
 
 ## Event type
 
-A {{domxref("FocusEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("FocusEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("FocusEvent")}}
 
@@ -37,7 +37,7 @@ _This interface also inherits properties from its parent {{domxref("UIEvent")}},
 - {{domxref("FocusEvent.relatedTarget")}}
   - : The element losing focus, if any.
 
-## Examples
+## Ví dụ
 
 ### Simple example
 
@@ -119,15 +119,15 @@ form.addEventListener(
 
 {{EmbedLiveSample("Event_delegation", '100%', '50px')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - The {{domxref("HTMLElement.focus()")}} method
 - Related events: {{domxref("Element/blur_event", "blur")}}, {{domxref("Element/focusin_event", "focusin")}}, {{domxref("Element/focusout_event", "focusout")}}

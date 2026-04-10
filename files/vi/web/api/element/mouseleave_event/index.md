@@ -8,7 +8,7 @@ browser-compat: api.Element.mouseleave_event
 
 {{APIRef("UI Events")}}
 
-The **`mouseleave`** event is fired at an {{domxref("Element")}} when the cursor of a pointing device (usually a mouse) is moved out of it.
+Thuộc tính **`mouseleave`** is fired at an {{domxref("Element")}} when the cursor of a pointing device (usually a mouse) is moved out of it.
 
 `mouseleave` and {{domxref("Element/mouseout_event", "mouseout")}} are similar but differ in that `mouseleave` does not bubble and `mouseout` does. This means that `mouseleave` is fired when the pointer has exited the element _and_ all of its descendants, whereas `mouseout` is fired when the pointer leaves the element _or_ leaves one of the element's descendants, because of bubbling (even if the pointer is still within the element). Other than that, leave and out events for the same situation are dispatched at the same time, if appropriate.
 
@@ -16,7 +16,7 @@ The `mouseleave` and `mouseout` events will not be triggered when the element is
 
 Note that "moving out of an element" refers to the element's position in the DOM tree, not to its visual position. For example, if two sibling elements are positioned so one is placed inside the other, then moving from the outer element into the inner element will trigger `mouseleave` on the outer element, even though the pointer is still in the bounds of the outer element.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -28,7 +28,7 @@ onmouseleave = (event) => { }
 
 ## Event type
 
-A {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
+Một {{domxref("MouseEvent")}}. Inherits from {{domxref("UIEvent")}} and {{domxref("Event")}}.
 
 {{InheritanceDiagram("MouseEvent")}}
 
@@ -96,13 +96,13 @@ One `mouseleave` event is sent to each element of the hierarchy when leaving the
 
 One single `mouseout` event is sent to the deepest element of the DOM tree, then it bubbles up the hierarchy until it is canceled by a handler or reaches the root.
 
-## Examples
+## Ví dụ
 
 The [`mouseout`](/en-US/docs/Web/API/Element/mouseout_event#examples) documentation has an example illustrating the difference between `mouseout` and `mouseleave`.
 
 ### mouseleave
 
-The following trivial example uses the `mouseenter` event to change the border on the `<div>` when the mouse enters the space allotted to it. It then adds an item to the list with the number of the `mouseenter` or `mouseleave` event.
+Các giá trị sau trivial example uses the `mouseenter` event to change the border on the `<div>` when the mouse enters the space allotted to it. It then adds an item to the list with the number of the `mouseenter` or `mouseleave` event.
 
 #### HTML
 
@@ -165,15 +165,15 @@ function addListItem(text) {
 
 {{EmbedLiveSample('mouseleave')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/mousedown_event", "mousedown")}}

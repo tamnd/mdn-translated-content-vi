@@ -8,20 +8,20 @@ browser-compat: api.Element.slot
 
 {{APIRef("Shadow DOM")}}
 
-The **`slot`** property of the {{domxref("Element")}} interface
-returns the name of the shadow DOM slot the element is inserted in.
+Thuộc tính **`slot`** của giao diện {{domxref("Element")}}
+trả về the name of the shadow DOM slot the element is inserted in.
 
-A slot is a placeholder inside a [web component](/en-US/docs/Web/API/Web_components) that users can fill with their own markup (see [Using templates and slots](/en-US/docs/Web/API/Web_components/Using_templates_and_slots) for more information).
+A slot is a placeholder inside a [web component](/en-US/docs/Web/API/Web_components) that users can fill with their own markup (see [Sử dụng templates and slots](/en-US/docs/Web/API/Web_components/Sử dụng_templates_and_slots) for more information).
 
-## Value
+## Giá trị
 
-A string.
+Một chuỗi.
 
-## Examples
+## Ví dụ
 
 In our [simple-template example](https://github.com/mdn/web-components-examples/tree/main/simple-template) ([see it live](https://mdn.github.io/web-components-examples/simple-template/)), we create a trivial custom element example called
 `<my-paragraph>` in which a shadow root is attached and then populated
-using the contents of a template that contains a slot named `my-text`.
+using the contents of a template that chứa a slot named `my-text`.
 
 When `<my-paragraph>` is used in the document, the slot is populated
 by a slottable element by including it inside the element with a
@@ -42,10 +42,10 @@ let slottedSpan = document.querySelector("my-paragraph span");
 console.log(slottedSpan.slot); // logs 'my-text'
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}

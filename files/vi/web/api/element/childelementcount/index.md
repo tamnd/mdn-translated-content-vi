@@ -8,10 +8,10 @@ browser-compat: api.Element.childElementCount
 
 {{ APIRef("DOM") }}
 
-The **`Element.childElementCount`** read-only property
+Thuộc tính **`Element.childElementCount`** read-only property
 returns the number of child elements of this element.
 
-## Examples
+## Ví dụ
 
 ```js
 let sidebar = document.getElementById("sidebar");
@@ -20,15 +20,15 @@ if (sidebar.childElementCount > 0) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Document.childElementCount")}}
 - {{domxref("DocumentFragment.childElementCount")}}

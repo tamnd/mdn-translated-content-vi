@@ -8,31 +8,31 @@ browser-compat: api.Element.removeAttributeNode
 
 {{ APIRef("DOM") }}
 
-The **`removeAttributeNode()`** method of the {{domxref("Element")}} interface removes the specified {{domxref("Attr")}} node from the element.
+Thuộc tính **`removeAttributeNode()`** của giao diện {{domxref("Element")}} removes the specified {{domxref("Attr")}} node from the element.
 
 If you don't need to inspect the attribute node before removing it, you can use the {{domxref("Element.removeAttribute()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 removeAttributeNode(attributeNode)
 ```
 
-### Parameters
+### Tham số
 
 - `attributeNode`
   - : The attribute node to remove from the element.
 
-### Return value
+### Giá trị trả về
 
 The attribute node that was removed.
 
-### Exceptions
+### Ngoại lệ
 
 - `NotFoundError` {{DOMxRef("DOMException")}}
   - : Thrown when the element's attribute list does not contain the attribute node.
 
-## Examples
+## Ví dụ
 
 ```js
 // Given: <div id="foo" lang="en-US" />
@@ -52,15 +52,15 @@ There is no `removeAttributeNodeNS` method; the
 `removeAttributeNode` method can remove both namespaced attributes and
 non-namespaced attributes.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Document.createAttribute()")}}
 - {{domxref("Element.getAttributeNode()")}}

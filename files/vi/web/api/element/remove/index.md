@@ -8,26 +8,26 @@ browser-compat: api.Element.remove
 
 {{APIRef("DOM")}}
 
-The **`Element.remove()`** method removes the element from its parent node.
+Thuộc tính **`Element.remove()`** method removes the element from its parent node.
 If it has no parent node, calling `remove()` does nothing.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 remove()
 ```
 
-### Parameters
+### Tham số
 
 None.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-## Examples
+## Ví dụ
 
-### Using `remove()`
+### Sử dụng `remove()`
 
 ```html
 <div id="div-01">Here is div-01</div>
@@ -52,15 +52,15 @@ with (node) {
 // ReferenceError: remove is not defined
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("CharacterData.remove()")}}
 - {{domxref("DocumentType.remove()")}}

@@ -8,38 +8,38 @@ browser-compat: api.Element.setHTML
 
 {{APIRef("HTML Sanitizer API")}}
 
-The **`setHTML()`** method of the {{domxref("Element")}} interface provides an XSS-safe method to parse and sanitize a string of HTML and insert it into the DOM as a subtree of the element.
+Thuộc tính **`setHTML()`** của giao diện {{domxref("Element")}} provides an XSS-safe method to parse and sanitize a string of HTML and insert it into the DOM as a subtree of the element.
 
 The method removes any elements and attributes that are considered XSS-unsafe, even if allowed by a passed sanitizer.
 Notably, the following elements are always removed: {{HTMLElement("script")}}, {{HTMLElement("frame")}}, {{HTMLElement("iframe")}}, {{HTMLElement("embed")}}, {{HTMLElement("object")}}, {{SVGElement("use")}}, and event handler attributes.
 
 It is recommended (if supported) as a drop-in replacement for {{domxref("Element.innerHTML")}} when setting a user-provided string of HTML.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setHTML(input)
 setHTML(input, options)
 ```
 
-### Parameters
+### Tham số
 
 - `input`
-  - : A string defining HTML to be sanitized and injected into the element.
+  - : Một chuỗi defining HTML to be sanitized and injected into the element.
 - `options` {{optional_inline}}
   - : An options object with the following optional parameters:
     - `sanitizer`
-      - : A {{domxref("Sanitizer")}} or {{domxref("SanitizerConfig")}} object which defines what elements of the input will be allowed or removed, or the string `"default"` for the default configuration.
+      - : Một {{domxref("Sanitizer")}} or {{domxref("SanitizerConfig")}} object which định nghĩa what elements of the input will be allowed or removed, or the string `"default"` for the default configuration.
         The method will remove any XSS-unsafe elements and attributes, even if allowed by the sanitizer.
-        If not specified, the [default sanitizer configuration](/en-US/docs/Web/API/HTML_Sanitizer_API/Default_sanitizer_configuration) is used.
+        Nếu không được chỉ định, the [default sanitizer configuration](/en-US/docs/Web/API/HTML_Sanitizer_API/Default_sanitizer_configuration) is used.
 
         Note that if you're using the same configuration multiple times, it's expected to be more efficient to use a `Sanitizer` and modify it when you need to.
 
-### Return value
+### Giá trị trả về
 
 None (`undefined`).
 
-### Exceptions
+### Ngoại lệ
 
 - `TypeError`
   - : This is thrown if `options.sanitizer` is passed a:
@@ -48,9 +48,9 @@ None (`undefined`).
     - string that does not have the value `"default"`.
     - value that is not a {{domxref("Sanitizer")}}, {{domxref("SanitizerConfig")}}, or string.
 
-## Description
+## Mô tả
 
-The **`setHTML()`** method provides an XSS-safe method to parse and sanitize a string of HTML into a {{domxref("DocumentFragment")}}, and then insert it into the DOM as a subtree of the element.
+Thuộc tính **`setHTML()`** method provides an XSS-safe method to parse and sanitize a string of HTML into a {{domxref("DocumentFragment")}}, and then insert it into the DOM as a subtree of the element.
 
 `setHTML()` drops any elements in the HTML input string that are invalid in the context of the current element, such as a {{htmlelement("col")}} element outside of a {{htmlelement("table")}}.
 It then removes any HTML entities that aren't allowed by the sanitizer configuration, and further removes any XSS-unsafe elements or attributes — whether or not they are allowed by the sanitizer.
@@ -66,11 +66,11 @@ It should also be used instead of {{domxref("Element.setHTMLUnsafe()")}}, unless
 
 Note that since this method always sanitizes input strings of XSS-unsafe entities, it is not secured or validated using the [Trusted Types API](/en-US/docs/Web/API/Trusted_Types_API).
 
-## Examples
+## Ví dụ
 
 ### Basic usage
 
-This example shows some of the ways you can use `setHTML()` to sanitize and inject a string of HTML.
+Ví dụ này minh họa some of the ways you can use `setHTML()` to sanitize and inject a string of HTML.
 
 ```js
 // Define unsanitized string of HTML
@@ -97,13 +97,13 @@ target.setHTML(unsanitizedString, {
 
 ### `setHTML()` live example
 
-This example provides a "live" demonstration of the method when called with different sanitizers.
-The code defines buttons that you can click to sanitize and inject a string of HTML using a default and a custom sanitizer, respectively.
+Ví dụ này provides a "live" demonstration of the method when called with different sanitizers.
+The code định nghĩa buttons that you can click to sanitize and inject a string of HTML using a default and a custom sanitizer, respectively.
 The original string and sanitized HTML are logged so you can inspect the results in each case.
 
 #### HTML
 
-The HTML defines two {{htmlelement("button")}} elements for applying different sanitizers, another button to reset the example, and a {{htmlelement("div")}} element to inject the string into.
+The HTML định nghĩa two {{htmlelement("button")}} elements for applying different sanitizers, another button to reset the example, and a {{htmlelement("div")}} element to inject the string into.
 
 ```html
 <button id="buttonDefault" type="button">Default</button>
@@ -141,7 +141,7 @@ if ("Sanitizer" in window) {
 ```
 
 First we define the string to sanitize, which will be the same for all cases.
-This contains the {{htmlelement("script")}} element and the `onclick` handler, both of which are considered XSS-unsafe.
+This chứa the {{htmlelement("script")}} element and the `onclick` handler, both of which are considered XSS-unsafe.
 We also define the handler for the reload button.
 
 ```js
@@ -214,15 +214,15 @@ However while the `data-` attribute is removed with the default sanitizer, it is
 
 {{EmbedLiveSample("setHTML() live example","100","450px")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.setHTMLUnsafe()")}}
 - {{domxref("ShadowRoot.setHTML()")}} and {{domxref("ShadowRoot.setHTMLUnsafe()")}}

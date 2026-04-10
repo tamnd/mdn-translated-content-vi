@@ -8,11 +8,11 @@ browser-compat: api.Element.replaceChildren
 
 {{APIRef("DOM")}}
 
-The **`Element.replaceChildren()`** method replaces the
+Thuộc tính **`Element.replaceChildren()`** method replaces the
 existing children of a {{domxref("Node")}} with a specified new set of children. These
 can be string or {{domxref("Node")}} objects.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 replaceChildren(param1)
@@ -20,23 +20,23 @@ replaceChildren(param1, param2)
 replaceChildren(param1, param2, /* …, */ paramN)
 ```
 
-### Parameters
+### Tham số
 
 - `param1`, …, `paramN`
   - : A set of {{domxref("Node")}} objects or strings to replace the
     `Element`'s existing children with. If no replacement objects are
     specified, then the `Element` is emptied of all child nodes.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `HierarchyRequestError` {{DOMxRef("DOMException")}}
   - : Thrown when the [constraints of the node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
-## Examples
+## Ví dụ
 
 ### Emptying a node
 
@@ -159,15 +159,15 @@ The end result looks like this:
 
 {{EmbedLiveSample('Transferring_nodes_between_elements', '100%', '350')}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.prepend()")}}
 - {{domxref("Element.append()")}}

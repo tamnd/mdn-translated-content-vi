@@ -8,18 +8,18 @@ browser-compat: api.Element.attributes
 
 {{ APIRef("DOM") }}
 
-The **`Element.attributes`** property returns a live collection
+Thuộc tính **`Element.attributes`** property returns a live collection
 of all attribute nodes registered to the specified node. It is a
 {{domxref("NamedNodeMap")}}, not an `Array`, so it has no {{jsxref("Array")}}
 methods and the {{domxref("Attr")}} nodes' indexes may differ among browsers. To be more
 specific, `attributes` is a key/value pair of strings that represents any
 information regarding that attribute.
 
-## Value
+## Giá trị
 
 A {{domxref("NamedNodeMap")}} object.
 
-## Examples
+## Ví dụ
 
 ### Basic examples
 
@@ -68,15 +68,15 @@ btn.addEventListener("click", () => {
 
 {{EmbedLiveSample('enumerating_elements_attributes', 100, 300)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("NamedNodeMap")}}, the interface of the returned object
 - Cross-browser compatibility considerations: on [quirksmode](https://quirksmode.org/dom/core/#attributes)

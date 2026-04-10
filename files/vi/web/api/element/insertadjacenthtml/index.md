@@ -15,18 +15,18 @@ browser-compat: api.Element.insertAdjacentHTML
 > You can reduce the risk by assigning {{domxref("TrustedHTML")}} objects instead of strings, and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) using the [`require-trusted-types-for`](/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/require-trusted-types-for) CSP directive.
 > This ensures that the input is passed through a transformation function, which has the chance to [sanitize](/en-US/docs/Web/Security/Attacks/XSS#sanitization) the input to remove potentially dangerous markup, such as {{htmlelement("script")}} elements and event handler attributes.
 
-The **`insertAdjacentHTML()`** method of the {{domxref("Element")}} interface parses the specified input as HTML or XML and inserts the resulting nodes into the DOM tree at a specified position.
+Thuộc tính **`insertAdjacentHTML()`** của giao diện {{domxref("Element")}} parses the specified input as HTML or XML and inserts the resulting nodes into the DOM tree at a specified position.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 insertAdjacentHTML(position, input)
 ```
 
-### Parameters
+### Tham số
 
 - `position`
-  - : A string representing the position relative to the element. Must be one of the following strings:
+  - : Một chuỗi representing the position relative to the element. Must be một trong các giá trị sau strings:
     - `"beforebegin"`
       - : Before the element. Only valid if the element is in the DOM tree and has a parent element.
     - `"afterbegin"`
@@ -36,15 +36,15 @@ insertAdjacentHTML(position, input)
     - `"afterend"`
       - : After the element. Only valid if the element is in the DOM tree and has a parent element.
 - `input`
-  - : A {{domxref("TrustedHTML")}} instance or string defining the HTML or XML to be parsed.
+  - : Một {{domxref("TrustedHTML")}} instance or string defining the HTML or XML to be parsed.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
-This method may raise a {{domxref("DOMException")}} of one of the following types:
+This method may raise a {{domxref("DOMException")}} of một trong các giá trị sau types:
 
 - `NoModificationAllowedError` {{domxref("DOMException")}}
   - : Thrown if `position` is `"beforebegin"` or `"afterend"` and the element either does not have a parent or its parent is the `Document` object.
@@ -53,9 +53,9 @@ This method may raise a {{domxref("DOMException")}} of one of the following type
     - `position` is not one of the four listed values.
     - The input is XML that is not well-formed.
 - `TypeError`
-  - : Thrown if the property is set to a string when [Trusted Types](/en-US/docs/Web/API/Trusted_Types_API) are [enforced by a CSP](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) and no default policy is defined.
+  - : Thrown if the property được đặt là a string when [Trusted Types](/en-US/docs/Web/API/Trusted_Types_API) are [enforced by a CSP](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) and no default policy is defined.
 
-## Description
+## Mô tả
 
 The `insertAdjacentHTML()` method does not reparse the element it is being used on, and thus it does not corrupt the existing elements inside that element. This avoids the extra step of serialization, making it much faster than direct {{domxref("Element.innerHTML", "innerHTML")}} manipulation.
 
@@ -84,11 +84,11 @@ This ensures that the input is passed through a transformation function, which h
 The {{domxref("Element.insertAdjacentText()")}} method or {{domxref("Node.textContent")}} should be used when you know that the user provided content should be plain text.
 This inserts the input as raw text instead of parsing it as HTML.
 
-## Examples
+## Ví dụ
 
 ### Inserting HTML
 
-This example demonstrates the four insertion positions.
+Ví dụ này demonstrates the four insertion positions.
 All inserted text is bold, while text inserted inside the element is further styled as red monotype (code).
 
 #### HTML
@@ -164,15 +164,15 @@ reset.addEventListener("click", () => {
 
 {{EmbedLiveSample("Inserting HTML", 100, 100)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.insertAdjacentElement()")}}
 - {{domxref("Element.insertAdjacentText()")}}

@@ -8,11 +8,11 @@ browser-compat: api.Element.replaceWith
 
 {{APIRef("DOM")}}
 
-The **`Element.replaceWith()`** method replaces this
+Thuộc tính **`Element.replaceWith()`** method replaces this
 `Element` in the children list of its parent with a set of
 {{domxref("Node")}} objects or strings. Strings are inserted as equivalent {{domxref("Text")}} nodes.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 replaceWith(param1)
@@ -20,23 +20,23 @@ replaceWith(param1, param2)
 replaceWith(param1, param2, /* …, */ paramN)
 ```
 
-### Parameters
+### Tham số
 
 - `param1`, …, `paramN`
   - : A set of {{domxref("Node")}} objects or strings to replace.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `HierarchyRequestError` {{DOMxRef("DOMException")}}
   - : Thrown when the node cannot be inserted at the specified point in the hierarchy.
 
-## Examples
+## Ví dụ
 
-### Using `replaceWith()`
+### Sử dụng `replaceWith()`
 
 ```js
 const div = document.createElement("div");
@@ -62,15 +62,15 @@ with (node) {
 // ReferenceError: replaceWith is not defined
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Node.replaceChild()")}}
 - {{domxref("NodeList")}}

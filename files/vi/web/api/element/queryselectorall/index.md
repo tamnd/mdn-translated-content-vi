@@ -9,20 +9,20 @@ browser-compat: api.Element.querySelectorAll
 {{APIRef("DOM")}}
 
 The {{domxref("Element")}} method **`querySelectorAll()`**
-returns a static (not live) {{domxref("NodeList")}} representing a list of elements
+trả về a static (not live) {{domxref("NodeList")}} representing a list of elements
 matching the specified group of selectors which are descendants of the element on which
 the method was called.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 querySelectorAll(selectors)
 ```
 
-### Parameters
+### Tham số
 
 - `selectors`
-  - : A string containing one or more selectors to match. This string
+  - : Một chuỗi chứa one or more selectors to match. This string
     must be a valid CSS selector string; if it isn't, a `SyntaxError` exception
     is thrown.
 
@@ -30,7 +30,7 @@ querySelectorAll(selectors)
 
     The selectors are applied to the entire document, not just the particular element on which `querySelectorAll()` is called. To restrict the selector to the element on which `querySelectorAll()` is called, include the {{cssxref(":scope")}} pseudo-class at the start of the selector. See the [selector scope](#selector_scope) example.
 
-### Return value
+### Giá trị trả về
 
 A non-live {{domxref("NodeList")}} containing one {{domxref("Element")}} object for
 each descendant node that matches at least one of the specified selectors. The elements are in document order — that is, parents before children, earlier siblings before later siblings.
@@ -39,16 +39,16 @@ each descendant node that matches at least one of the specified selectors. The e
 > If the specified `selectors` include a [CSS pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), the returned list
 > is always empty.
 
-### Exceptions
+### Ngoại lệ
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Thrown if the syntax of the specified `selectors` string is not valid.
 
-## Examples
+## Ví dụ
 
 ### Getting all elements with a custom data value
 
-This example uses the [attribute selector](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) to select multiple elements with a `data-name` data attribute that contains "funnel-chart-percent".
+Ví dụ này uses the [attribute selector](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) to select multiple elements with a `data-name` data attribute that chứa "funnel-chart-percent".
 
 ```html
 <section class="box" id="sect1">
@@ -73,7 +73,7 @@ contained within the element `myBox`:
 const matches = myBox.querySelectorAll("p");
 ```
 
-This example returns a list of all {{HTMLElement("div")}} elements within
+Ví dụ này trả về a list of all {{HTMLElement("div")}} elements within
 `myBox` with a class of either `note` or `alert`:
 
 ```js
@@ -89,7 +89,7 @@ const container = document.querySelector("#test");
 const matches = container.querySelectorAll("div.highlighted > p");
 ```
 
-This example uses an [attribute selector](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) to return a list of the {{HTMLElement("iframe")}} elements in the document
+Ví dụ này uses an [attribute selector](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) to return a list of the {{HTMLElement("iframe")}} elements in the document
 that contain an attribute named `"data-src"`:
 
 ```js
@@ -133,7 +133,7 @@ The `querySelectorAll()` method applies its selectors to the whole document: the
 
 #### HTML
 
-In this example the HTML contains:
+Trong ví dụ này the HTML chứa:
 
 - two buttons: `#select` and `#select-scope`
 - three nested `<div>` elements: `#outer`, `#subject`, and `#inner`
@@ -198,13 +198,13 @@ selectScope.addEventListener("click", () => {
 
 {{EmbedLiveSample("Selector scope", "", 300)}}
 
-When we press "Select", the selector selects all elements with an ID of `inner` that also have an ancestor with an ID of `outer`. Note that even though `#outer` is outside the `#subject` element, it is still used in selection, so our `#inner` element is found.
+When we press "Select", the selector selects all elements có ID là `inner` that also have an ancestor có ID là `outer`. Note that even though `#outer` is outside the `#subject` element, it is still used in selection, so our `#inner` element is found.
 
 When we press "Select with :scope", the `:scope` pseudo-class restricts the selector scope to `#subject`, so `#outer` is not used in selector matching, and we don't find the `#inner` element.
 
 ### Escaping attribute values
 
-This example shows that if an HTML document contains an [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) which is not a valid [CSS identifier](/en-US/docs/Web/CSS/Reference/Values/ident), then we must escape the attribute value before using it in `querySelectorAll()`.
+Ví dụ này minh họa that if an HTML document chứa an [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) which is not a valid [CSS identifier](/en-US/docs/Web/CSS/Reference/Values/ident), then we must escape the attribute value before using it in `querySelectorAll()`.
 
 #### HTML
 
@@ -282,15 +282,15 @@ Clicking the first button gives an error, while the second and third buttons wor
 
 {{embedlivesample("escaping_attribute_values", "", 200)}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Selection and traversal on the DOM tree](/en-US/docs/Web/API/Document_Object_Model/Selection_and_traversal_on_the_DOM_tree)
 - [Attribute selectors](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) in the CSS

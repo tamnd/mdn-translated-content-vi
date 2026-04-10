@@ -8,15 +8,15 @@ browser-compat: api.Element.className
 
 {{APIRef("DOM")}}
 
-The **`className`** property of the
+Thuộc tính **`className`** property of the
 {{domxref("Element")}} interface gets and sets the value of the [`class` attribute](/en-US/docs/Web/HTML/Reference/Global_attributes/class)
 of the specified element.
 
-## Value
+## Giá trị
 
-A string variable representing the class or space-separated classes of the current element.
+Một chuỗi variable representing the class or space-separated classes of the current element.
 
-## Examples
+## Ví dụ
 
 ```js
 const el = document.getElementById("item");
@@ -33,7 +33,7 @@ manipulate the DOM.
 the `element` is an {{domxref("SVGElement")}}. It is easier to get/set the
 `class` attribute of an element using {{domxref("Element.getAttribute")}} and
 {{domxref("Element.setAttribute")}} if you are dealing with SVG elements. However, take
-into account that {{domxref("Element.getAttribute")}} returns
+into account that {{domxref("Element.getAttribute")}} trả về
 [`null`](/en-US/docs/Web/JavaScript/Reference/Operators/null)
 instead of `""` if the `element` has an empty [`class` attribute](/en-US/docs/Web/HTML/Reference/Global_attributes/class).
 
@@ -46,14 +46,14 @@ const myClass = elm.getAttribute("class");
 > `class` is the name of an **HTML Attribute**, while
 > `className` is the name of a **DOM Property**.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("element.classList")}}

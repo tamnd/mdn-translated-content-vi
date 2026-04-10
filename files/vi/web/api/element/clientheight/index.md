@@ -8,29 +8,29 @@ browser-compat: api.Element.clientHeight
 
 {{APIRef("DOM")}}
 
-The **`clientHeight`** read-only property of the {{domxref("Element")}} interface is zero for elements with no CSS or inline layout boxes; otherwise, it's the inner height of an element in pixels. It includes padding but excludes borders, margins, and horizontal scrollbars (if present).
+Thuộc tính **`clientHeight`** là thuộc tính chỉ đọc of the {{domxref("Element")}} interface is zero for elements with no CSS or inline layout boxes; otherwise, it's the inner height of an element in pixels. It includes padding but excludes borders, margins, and horizontal scrollbars (if present).
 
 `clientHeight` can be calculated as: CSS `height` + CSS `padding` - height of horizontal scrollbar (if present).
 
 When `clientHeight` is used on the root element (the `<html>` element), (or on `<body>` if the document is in quirks mode), the viewport's height (excluding any scrollbar) is returned.
 
-## Value
+## Giá trị
 
-An integer.
+Một số nguyên.
 
-## Examples
+## Ví dụ
 
 ![How clientHeight property determines the inner height of an element considering the height and padding](dimensions-client.png)
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Determining the dimensions of elements](/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 - {{domxref("HTMLElement.offsetHeight")}}

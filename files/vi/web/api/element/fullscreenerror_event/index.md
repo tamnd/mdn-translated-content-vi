@@ -8,7 +8,7 @@ browser-compat: api.Element.fullscreenerror_event
 
 {{APIRef("Fullscreen API")}}
 
-The **`fullscreenerror`** event is fired when the browser cannot switch to fullscreen mode.
+Thuộc tính **`fullscreenerror`** is fired when the browser cannot switch to fullscreen mode.
 
 As with the [`fullscreenchange` event](/en-US/docs/Web/API/Element/fullscreenchange_event), two `fullscreenerror` events are fired; the first is sent to the {{domxref("Element")}} which failed to change modes, and the second is sent to the {{domxref("Document")}} which owns that element.
 
@@ -16,7 +16,7 @@ For some reasons that switching into fullscreen mode might fail, see [the guide 
 
 This event is not cancelable.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -30,7 +30,7 @@ onfullscreenerror = (event) => { }
 
 A generic {{domxref("Event")}}.
 
-## Examples
+## Ví dụ
 
 ```js
 const requestor = document.querySelector("div");
@@ -47,15 +47,15 @@ requestor.onfullscreenerror = handleError;
 requestor.requestFullscreen();
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [`fullscreenchange`](/en-US/docs/Web/API/Element/fullscreenchange_event)
 - [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API)

@@ -15,21 +15,21 @@ browser-compat: api.Element.setAttribute
 > You can mitigate this risk by always passing the appropriate trusted type object ({{domxref("TrustedHTML")}}, {{domxref("TrustedScript")}}, or {{domxref("TrustedScriptURL")}}) instead of strings for those attributes that require them, and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types).
 > See [Security considerations](#security_considerations) for more information.
 
-The **`setAttribute()`** method of the {{domxref("Element")}} interface sets the value of an attribute on the specified element.
+Thuộc tính **`setAttribute()`** của giao diện {{domxref("Element")}} sets the value of an attribute on the specified element.
 If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
 
 If you need to work with the {{domxref("Attr")}} node (such as cloning from another element) before adding it, you can use the {{domxref("Element.setAttributeNode()", "setAttributeNode()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 setAttribute(qualifiedName, value)
 ```
 
-### Parameters
+### Tham số
 
 - `qualifiedName`
-  - : A string containing the qualified name of the attribute whose value is to be set.
+  - : Một chuỗi chứa the qualified name of the attribute whose value is to be set.
     The attribute name is automatically converted to all lower-case when `setAttribute()` is called on an HTML element in an HTML document.
 
     The format of the qualified name is `prefix:localName` or `localName`, where the parts are defined as:
@@ -51,15 +51,15 @@ setAttribute(qualifiedName, value)
 
     A specified non-string value specified is converted automatically into a string.
 
-    Boolean attributes are considered to be `true` if they're present on the element at all.
+    Boolean attributes are considered to be `true` if they're present trên phần tử at all.
     You should set `value` to the empty string (`""`) or the attribute's name, with no leading or trailing whitespace.
     See the [example](#examples) below for a practical demonstration.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `InvalidCharacterError` {{domxref("DOMException")}}
   - : Thrown if either the [`prefix`](#prefix) or [`localName`](#localname) is not valid:
@@ -72,7 +72,7 @@ None ({{jsxref("undefined")}}).
 - `TypeError`
   - : Thrown if [`value`](#value) is passed a string instead of a trusted type object (for those attributes that require them) when [Trusted Types](/en-US/docs/Web/API/Trusted_Types_API) are [enforced by a CSP](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) and no default policy is defined.
 
-## Description
+## Mô tả
 
 **`setAttribute()`** sets the value of an attribute on the specified element.
 If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
@@ -101,11 +101,11 @@ You might similarly inject untrusted HTML into the DOM by setting the {{domxref(
 You can mitigate these issues by always assigning the appropriate trusted type object ({{domxref("TrustedHTML")}}, {{domxref("TrustedScript")}}, or {{domxref("TrustedScriptURL")}}) for each property instead of strings, and [enforcing trusted types](/en-US/docs/Web/API/Trusted_Types_API#using_a_csp_to_enforce_trusted_types) using the [`require-trusted-types-for`](/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/require-trusted-types-for) CSP directive.
 This ensures that the input is passed through a transformation function which might, for example, remove potentially dangerous markup from HTML before it is injected.
 
-## Examples
+## Ví dụ
 
 ### Setting safe attributes
 
-This example uses `setAttribute()` to set the `name` and `disabled` attributes on a {{HTMLElement("button")}}.
+Ví dụ này uses `setAttribute()` to set the `name` and `disabled` attributes on a {{HTMLElement("button")}}.
 These attributes are both XSS-safe.
 Since their values are not executed or parsed as HTML into the DOM, we don't need to pass trusted types.
 
@@ -178,7 +178,7 @@ You can press the "Toggle" button to disable and enable the "helloButton".
 
 ### Setting unsafe attributes
 
-In this example we'll show how you might mitigate the risks of calling `setAttributes()` to set the {{domxref("HTMLIFrameElement.srcdoc", "srcdoc")}} attribute on an {{htmlelement("iframe")}}.
+Trong ví dụ này we'll show how you might mitigate the risks of calling `setAttributes()` to set the {{domxref("HTMLIFrameElement.srcdoc", "srcdoc")}} attribute on an {{htmlelement("iframe")}}.
 This attribute sets the source HTML of a frame, and can hence inject potentially untrusted or unsafe code into the DOM.
 
 The approach would be similar for setting {{domxref("HTMLScriptElement.src","src")}} on HTML script elements, {{domxref("SVGScriptElement.href","href")}} on SVG script elements, and the `onXxxx` event handler attributes: the main difference is that you pass them different trusted type objects.
@@ -191,7 +191,7 @@ if (typeof trustedTypes === "undefined")
   trustedTypes = { createPolicy: (n, rules) => rules };
 ```
 
-Next we create a {{domxref("TrustedTypePolicy")}} that defines a {{domxref("TrustedTypePolicy/createHTML", "createHTML()")}} for transforming an input string into {{domxref("TrustedHTML")}} instances.
+Next we create a {{domxref("TrustedTypePolicy")}} that định nghĩa a {{domxref("TrustedTypePolicy/createHTML", "createHTML()")}} for transforming an input string into {{domxref("TrustedHTML")}} instances.
 Commonly, implementations of `createHTML()` use a library such as [DOMPurify](https://github.com/cure53/DOMPurify) to sanitize the input, as shown below:
 
 ```js
@@ -209,20 +209,20 @@ const untrustedString = "<p>I might be XSS</p><img src='x' onerror='alert(1)'>";
 // Create a TrustedHTML instance using the policy
 const trustedHTML = policy.createHTML(untrustedString);
 
-// Inject the TrustedHTML (which contains a trusted string)
+// Inject the TrustedHTML (which chứa a trusted string)
 const iframeElement = document.querySelector("#an_iframe");
 iframeElement.setAttribute("srcdoc", trustedHTML);
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.hasAttribute()")}}
 - {{domxref("Element.getAttribute()")}}

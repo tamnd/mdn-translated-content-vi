@@ -8,28 +8,28 @@ browser-compat: api.Element.hasAttributeNS
 
 {{ APIRef("DOM") }}
 
-The **`hasAttributeNS()`** method of the {{domxref("Element")}} interface returns a boolean value indicating whether the current element has the specified attribute with the specified namespace.
+Thuộc tính **`hasAttributeNS()`** của giao diện {{domxref("Element")}} trả về a boolean value indicating whether the current element has the specified attribute with the specified namespace.
 
 If you are working with HTML documents and you don't need to specify the requested attribute as being part of a specific namespace, use the {{domxref("Element.hasAttribute()", "hasAttribute()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 hasAttributeNS(namespace,localName)
 ```
 
-### Parameters
+### Tham số
 
 - `namespace`
-  - : A string specifying the namespace of the attribute.
+  - : Một chuỗi specifying the namespace of the attribute.
 - `localName`
   - : The name of the attribute.
 
-### Return value
+### Giá trị trả về
 
-A boolean.
+Một boolean.
 
-## Examples
+## Ví dụ
 
 ```js
 // Check that the attribute exists before you set a value
@@ -41,15 +41,15 @@ if (
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.getAttributeNS()")}}
 - {{domxref("Element.setAttributeNS()")}}

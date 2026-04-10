@@ -13,22 +13,22 @@ Returns the specified attribute of the specified element, as an {{domxref("Attr"
 This method is useful if you need the attribute's [instance properties](/en-US/docs/Web/API/Attr#instance_properties).
 If you only need the attribute's value, you can use the {{domxref("Element.getAttribute()", "getAttribute()")}} method instead.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getAttributeNode(attrName)
 ```
 
-### Parameters
+### Tham số
 
 - `attrName`
-  - : A string containing the name of the attribute.
+  - : Một chuỗi chứa the name of the attribute.
 
-### Return value
+### Giá trị trả về
 
 An `Attr` node for the attribute.
 
-## Examples
+## Ví dụ
 
 ```js
 // html: <div id="top" />
@@ -43,15 +43,15 @@ When called on an HTML element in a DOM flagged as an HTML document, `getAttribu
 
 The `Attr` node inherits from `Node`, but is not considered a part of the document tree. Common `Node` attributes like [parentNode](/en-US/docs/Web/API/Node/parentNode), [previousSibling](/en-US/docs/Web/API/Node/previousSibling), and [nextSibling](/en-US/docs/Web/API/Node/nextSibling) are `null` for an `Attr` node. You can, however, get the element to which the attribute belongs with the `ownerElement` property.
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Document.createAttribute()")}}
 - {{domxref("Element.setAttributeNode()")}}

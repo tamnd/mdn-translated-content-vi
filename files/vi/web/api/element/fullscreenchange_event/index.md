@@ -8,7 +8,7 @@ browser-compat: api.Element.fullscreenchange_event
 
 {{APIRef("Fullscreen API")}}
 
-The **`fullscreenchange`** event is fired immediately after an {{domxref("Element")}} switches into or out of fullscreen mode.
+Thuộc tính **`fullscreenchange`** is fired immediately after an {{domxref("Element")}} switches into or out of fullscreen mode.
 
 This event is sent to the `Element` which is transitioning into or out of fullscreen mode.
 
@@ -16,7 +16,7 @@ To find out whether the `Element` is entering or exiting fullscreen mode, check 
 
 This event is not cancelable.
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -30,9 +30,9 @@ onfullscreenchange = (event) => { }
 
 A generic {{domxref("Event")}}.
 
-## Examples
+## Ví dụ
 
-In this example, a handler for the `fullscreenchange` event is added to the element whose ID is `fullscreen-div`.
+Trong ví dụ này, a handler for the `fullscreenchange` event is added to the element whose ID is `fullscreen-div`.
 
 If the user clicks on the "Toggle Fullscreen Mode" button, the `click` handler will toggle fullscreen mode for the `div`. If `document.fullscreenElement` has a value it will exit fullscreen mode. If not, the div will be placed into fullscreen mode.
 
@@ -84,15 +84,15 @@ document
   });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - [Document: fullscreenchange event](/en-US/docs/Web/API/Document/fullscreenchange_event)
 - [Element: fullscreenerror event](/en-US/docs/Web/API/Element/fullscreenerror_event)

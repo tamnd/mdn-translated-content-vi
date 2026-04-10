@@ -8,12 +8,12 @@ browser-compat: api.Element.prepend
 
 {{APIRef("DOM")}}
 
-The **`Element.prepend()`** method inserts a set of
+Thuộc tính **`Element.prepend()`** method inserts a set of
 {{domxref("Node")}} objects or strings before the first child
 of the {{domxref("Element")}}. Strings are inserted as
 equivalent {{domxref("Text")}} nodes.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 prepend(param1)
@@ -21,21 +21,21 @@ prepend(param1, param2)
 prepend(param1, param2, /* …, */ paramN)
 ```
 
-### Parameters
+### Tham số
 
 - `param1`, …, `paramN`
   - : A set of {{domxref("Node")}} objects or strings to insert.
 
-### Return value
+### Giá trị trả về
 
 None ({{jsxref("undefined")}}).
 
-### Exceptions
+### Ngoại lệ
 
 - `HierarchyRequestError` {{DOMxRef("DOMException")}}
   - : Thrown when the node cannot be inserted at the specified point in the hierarchy.
 
-## Examples
+## Ví dụ
 
 ### Prepending an element
 
@@ -83,15 +83,15 @@ with (div) {
 // ReferenceError: prepend is not defined
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{domxref("Element.append()")}}
 - {{domxref("Node.appendChild()")}}

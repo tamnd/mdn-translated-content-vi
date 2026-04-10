@@ -8,18 +8,18 @@ browser-compat: api.Element.getElementsByTagNameNS
 
 {{APIRef("DOM")}}
 
-The **`Element.getElementsByTagNameNS()`** method returns a
+Thuộc tính **`Element.getElementsByTagNameNS()`** method trả về a
 live {{domxref("HTMLCollection")}} of elements with the given tag name belonging to the
 given namespace. It is similar to {{Domxref("Document.getElementsByTagNameNS")}}, except
 that its search is restricted to descendants of the specified element.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 getElementsByTagNameNS(namespaceURI, localName)
 ```
 
-### Parameters
+### Tham số
 
 - `namespaceURI`
   - : The namespace URI of elements to look for (see
@@ -31,11 +31,11 @@ getElementsByTagNameNS(namespaceURI, localName)
     special value `"*"`, which matches all elements (see
     {{domxref("Element.localName")}} and {{domxref("Attr.localName")}}).
 
-### Return value
+### Giá trị trả về
 
 A live {{domxref("HTMLCollection")}} of found elements in the order they appear in the tree.
 
-## Examples
+## Ví dụ
 
 ```js
 // Check the alignment on a number of cells in a table in an XHTML document.
@@ -53,10 +53,10 @@ for (const cell of cells) {
 }
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}

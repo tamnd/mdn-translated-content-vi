@@ -17,7 +17,7 @@ In the case of `contenteditable` and `designMode`, the event target is the **edi
 > [!NOTE]
 > Not every user modification results in `beforeinput` firing. Also the event may fire but be non-cancelable. This may happen when the modification is done by autocomplete, by accepting a correction from a spell checker, by password manager autofill, by {{Glossary("Input method editor", "IME")}}, or in other ways. The details vary by browser and OS. To override the edit behavior in all situations, the code needs to handle the `input` event and possibly revert any modifications that were not handled by the `beforeinput` handler. See bugs [1673558](https://bugzil.la/1673558) and [1763669](https://bugzil.la/1763669).
 
-## Syntax
+## Cú pháp
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
@@ -46,7 +46,7 @@ _This interface inherits properties from its parents, {{DOMxRef("UIEvent")}} and
 - {{DOMxRef("InputEvent.isComposing")}} {{ReadOnlyInline}}
   - : Returns a {{JSxRef("Boolean")}} value indicating if the event is fired after {{domxref("Element/compositionstart_event", "compositionstart")}} and before {{domxref("Element/compositionend_event", "compositionend")}}.
 
-## Examples
+## Ví dụ
 
 ### Feature Detection
 
@@ -89,14 +89,14 @@ function updateValue(e) {
 
 {{EmbedLiveSample("Simple_logger")}}
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - Related event: {{domxref("Element/input_event", "input")}}

@@ -8,27 +8,27 @@ browser-compat: api.Element.hasPointerCapture
 
 {{APIRef("DOM")}}
 
-The **`hasPointerCapture()`** method of the
+Thuộc tính **`hasPointerCapture()`** method of the
 {{domxref("Element")}} interface checks whether the element on which it is invoked has
 [pointer capture](/en-US/docs/Web/API/Pointer_events#pointer_capture) for the pointer identified by the given pointer ID.
 
-## Syntax
+## Cú pháp
 
 ```js-nolint
 hasPointerCapture(pointerId)
 ```
 
-### Parameters
+### Tham số
 
 - `pointerId`
   - : The {{domxref("PointerEvent.pointerId", "pointerId")}} of a
     {{domxref("PointerEvent")}} object.
 
-### Return value
+### Giá trị trả về
 
-A boolean value — `true` if the element does have pointer capture for the pointer identified by the given pointer ID, `false` if it doesn't.
+Một boolean value — `true` if the element does have pointer capture for the pointer identified by the given pointer ID, `false` if it doesn't.
 
-## Examples
+## Ví dụ
 
 ```html
 <div id="target">Touch this element with a pointer.</div>
@@ -52,15 +52,15 @@ el.addEventListener("pointerdown", (ev) => {
 });
 ```
 
-## Specifications
+## Đặc tả kỹ thuật
 
 {{Specifications}}
 
-## Browser compatibility
+## Trình duyệt hỗ trợ
 
 {{Compat}}
 
-## See also
+## Xem thêm
 
 - {{ domxref("Element.setPointerCapture()")}}
 - {{ domxref("Element.releasePointerCapture()")}}
