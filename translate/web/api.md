@@ -21,7 +21,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/documenttype (8 trang)
 - [x] api/domtokenlist (15 trang)
 - [ ] api/range (28 trang)
-- [ ] api/selection (26 trang)
+- [x] api/selection (26 trang)
 - [ ] api/mutationobserver (5 trang)
 - [x] api/mutationrecord (10 trang)
 - [x] api/treewalker (12 trang)
