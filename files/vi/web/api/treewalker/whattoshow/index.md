@@ -8,11 +8,11 @@ browser-compat: api.TreeWalker.whatToShow
 
 {{ APIRef("DOM") }}
 
-Thuộc tính chỉ đọc **`TreeWalker.whatToShow`** trả về một bitmask cho biết các loại [nút](/en-US/docs/Web/API/Node) nào sẽ được hiển thị. Các nút không khớp sẽ bị bỏ qua, nhưng nút con của chúng vẫn có thể được bao gồm nếu phù hợp.
+Thuộc tính chỉ đọc **`TreeWalker.whatToShow`** trả về một bitmask cho biết các loại [nút](/vi/docs/Web/API/Node) nào sẽ được hiển thị. Các nút không khớp sẽ bị bỏ qua, nhưng nút con của chúng vẫn có thể được bao gồm nếu phù hợp.
 
 ## Giá trị
 
-Một số nguyên không âm. Danh sách các giá trị có thể dùng xem tại [`document.createTreeWalker()`](/en-US/docs/Web/API/Document/createTreeWalker#whattoshow).
+Một số nguyên không âm. Danh sách các giá trị có thể dùng xem tại [`document.createTreeWalker()`](/vi/docs/Web/API/Document/createTreeWalker#whattoshow).
 
 ## Ví dụ
 
