@@ -20,7 +20,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/shadowroot (21 trang)
 - [x] api/documenttype (8 trang)
 - [x] api/domtokenlist (15 trang)
-- [ ] api/range (28 trang)
+- [x] api/range (28 trang)
 - [x] api/selection (26 trang)
 - [ ] api/mutationobserver (5 trang)
 - [x] api/mutationrecord (10 trang)
