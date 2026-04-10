@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính GlobalCompositeOperation"
-short-title: toàn cầuCompositeOperation
+title: "CanvasRenderingContext2D: globalCompositeOperation property"
+short-title: globalCompositeOperation
 slug: Web/API/CanvasRenderingContext2D/globalCompositeOperation
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.globalCompositeOperation
@@ -8,72 +8,76 @@ browser-compat: api.CanvasRenderingContext2D.globalCompositeOperation
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.globalCompositeOperation`** của API Canvas 2D đặt loại thao tác tổng hợp sẽ áp dụng khi vẽ các hình dạng mới.
+The
+**`CanvasRenderingContext2D.globalCompositeOperation`**
+property of the Canvas 2D API sets the type of compositing operation to apply when
+drawing new shapes.
 
-Xem thêm [Compositing and clipping](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing) trong [Canvas Tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
+See also [Compositing and clipping](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing) in the [Canvas Tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-## Giá trị
+## Value
 
-Một chuỗi xác định thao tác nào trong chế độ tổng hợp hoặc chế độ hòa trộn sẽ sử dụng. Đây có thể là bất kỳ giá trị nào sau đây:
+A string identifying which of the compositing or blending mode operations to use. This may be any of the following values:
 
 - `"source-over"`
-- : Đây là cài đặt mặc định và vẽ các hình dạng mới lên trên nội dung canvas hiện có.
+  - : This is the default setting and draws new shapes on top of the existing canvas content.
 - `"source-in"`
-- : Hình dạng mới chỉ được vẽ khi cả hình dạng mới và khung vẽ đích chồng lên nhau. Mọi thứ khác đều được minh bạch.
+  - : The new shape is drawn only where both the new shape and the destination canvas overlap. Everything else is made transparent.
 - `"source-out"`
-- : Hình dạng mới được vẽ ở nơi nó không chồng lên nội dung canvas hiện có.
+  - : The new shape is drawn where it doesn't overlap the existing canvas content.
 - `"source-atop"`
-- : Hình dạng mới chỉ được vẽ ở nơi nó chồng lên nội dung canvas hiện có.
+  - : The new shape is only drawn where it overlaps the existing canvas content.
 - `"destination-over"`
-- : Các hình dạng mới được vẽ phía sau nội dung canvas hiện có.
+  - : New shapes are drawn behind the existing canvas content.
 - `"destination-in"`
-- : Nội dung canvas hiện có được lưu giữ ở nơi cả hình dạng mới và nội dung canvas hiện có chồng lên nhau. Mọi thứ khác đều được minh bạch.
+  - : The existing canvas content is kept where both the new shape and existing canvas content overlap. Everything else is made transparent.
 - `"destination-out"`
-- : Nội dung hiện có được giữ ở nơi nó không chồng lên hình dạng mới.
+  - : The existing content is kept where it doesn't overlap the new shape.
 - `"destination-atop"`
-- : Canvas hiện có chỉ được giữ ở nơi nó chồng lên hình dạng mới. Hình dạng mới được vẽ phía sau nội dung canvas.
+  - : The existing canvas is only kept where it overlaps the new shape. The new shape is drawn behind the canvas content.
 - `"lighter"`
-- : Khi cả hai hình chồng lên nhau, màu được xác định bằng cách cộng các giá trị màu.
+  - : Where both shapes overlap, the color is determined by adding color values.
 - `"copy"`
-- : Chỉ có hình dạng mới được hiển thị.
+  - : Only the new shape is shown.
 - `"xor"`
-- : Các hình dạng được làm trong suốt trong đó cả hai đều chồng lên nhau và được vẽ bình thường ở mọi nơi khác.
+  - : Shapes are made transparent where both overlap and drawn normal everywhere else.
 - `"multiply"`
-- : Các pixel của lớp trên cùng được nhân với các pixel tương ứng của lớp dưới cùng. Kết quả là một hình ảnh tối hơn.
+  - : The pixels of the top layer are multiplied with the corresponding pixels of the bottom layer. A darker picture is the result.
 - `"screen"`
-- : Các pixel được đảo ngược, nhân lên và đảo ngược lại. Kết quả là hình ảnh sáng hơn (ngược lại với `multiply`)
+  - : The pixels are inverted, multiplied, and inverted again. A lighter picture is the result (opposite of `multiply`)
 - `"overlay"`
-- : Sự kết hợp của `multiply`và`screen`. Phần tối ở lớp nền trở nên tối hơn và phần sáng trở nên nhạt hơn.
+  - : A combination of `multiply` and `screen`. Dark parts on the base layer become darker, and light parts become lighter.
 - `"darken"`
-- : Giữ lại các pixel tối nhất của cả hai lớp.
+  - : Retains the darkest pixels of both layers.
 - `"lighten"`
-- : Giữ lại các pixel nhẹ nhất của cả hai lớp.
+  - : Retains the lightest pixels of both layers.
 - `"color-dodge"`
-- : Chia lớp dưới cùng cho lớp trên cùng đảo ngược.
+  - : Divides the bottom layer by the inverted top layer.
 - `"color-burn"`
-- : Chia lớp dưới cùng đảo ngược cho lớp trên cùng và sau đó đảo ngược kết quả.
+  - : Divides the inverted bottom layer by the top layer, and then inverts the result.
 - `"hard-light"`
-- : Giống như `overlay`, sự kết hợp của`multiply`và`screen`— nhưng thay vào đó, lớp trên cùng và lớp dưới cùng được hoán đổi.
+  - : Like `overlay`, a combination of `multiply` and `screen` — but instead with the top layer and bottom layer swapped.
 - `"soft-light"`
-- : Một phiên bản nhẹ nhàng hơn của `hard-light`. Màu đen hoặc trắng thuần túy không tạo ra màu đen hoặc trắng thuần túy.
+  - : A softer version of `hard-light`. Pure black or white does not result in pure black or white.
 - `"difference"`
-- : Trừ lớp dưới cùng khỏi lớp trên cùng - hoặc ngược lại - để luôn nhận được giá trị dương.
+  - : Subtracts the bottom layer from the top layer — or the other way round — to always get a positive value.
 - `"exclusion"`
-- : Giống như `difference` nhưng có độ tương phản thấp hơn.
+  - : Like `difference`, but with lower contrast.
 - `"hue"`
-- : Bảo toàn độ sáng và sắc độ của lớp dưới cùng, đồng thời sử dụng màu sắc của lớp trên cùng.
+  - : Preserves the luma and chroma of the bottom layer, while adopting the hue of the top layer.
 - `"saturation"`
-- : Bảo toàn độ sáng và màu sắc của lớp dưới cùng, đồng thời sử dụng sắc độ của lớp trên cùng.
+  - : Preserves the luma and hue of the bottom layer, while adopting the chroma of the top layer.
 - `"color"`
-- : Bảo toàn độ sáng của lớp dưới cùng, đồng thời sử dụng màu sắc và sắc độ của lớp trên cùng.
+  - : Preserves the luma of the bottom layer, while adopting the hue and chroma of the top layer.
 - `"luminosity"`
-- : Giữ nguyên màu sắc và sắc độ của lớp dưới cùng, đồng thời sử dụng độ sáng của lớp trên cùng.
+  - : Preserves the hue and chroma of the bottom layer, while adopting the luma of the top layer.
 
-## Ví dụ
+## Examples
 
-### Thay đổi hoạt động tổng hợp
+### Changing the composite operation
 
-Ví dụ này sử dụng thuộc tính `globalCompositeOperation` để vẽ hai hình chữ nhật tự loại trừ chúng ở những nơi chúng chồng lên nhau.
+This example uses the `globalCompositeOperation` property to draw two
+rectangles that exclude themselves where they overlap.
 
 #### HTML
 
@@ -96,15 +100,15 @@ ctx.fillStyle = "red";
 ctx.fillRect(50, 50, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_the_composite_operation', 700, 180) }}
 
-### Trình diễn tất cả các giá trị
+### Demonstration of all values
 
-#### Giá trị toàn cầu
+#### Global values
 
-Mã này thiết lập các giá trị chung được sử dụng bởi phần còn lại của chương trình.
+This code sets up the global values used by the rest of the program.
 
 ```js
 const canvas1 = document.createElement("canvas");
@@ -181,9 +185,9 @@ canvas2.width = width;
 canvas2.height = height;
 ```
 
-#### Chương trình chính
+#### Main program
 
-Mã này,`runComposite()`, xử lý phần lớn công việc, dựa vào một số chức năng tiện ích để thực hiện các phần cứng.
+This code, `runComposite()`, handles the bulk of the work, relying on a number of utility functions to do the hard parts.
 
 ```js
 function createCanvas(op) {
@@ -258,9 +262,9 @@ function runComposite(op) {
 }
 ```
 
-#### Chức năng tiện ích
+#### Utility functions
 
-Chương trình dựa trên một số chức năng tiện ích.
+The program relies on a number of utility functions.
 
 ```js
 function lightMix() {
@@ -400,9 +404,9 @@ function createInterlace(size, color1, color2) {
 const op8x8 = createInterlace(8, "white", "#eeeeee");
 ```
 
-#### Bắt đầu chạy
+#### Start running
 
-Cuối cùng, chúng tôi gọi các hàm để thiết lập mọi thứ chuyển động.
+Finally, we call the functions to set everything in motion.
 
 ```js
 lightMix();
@@ -410,19 +414,19 @@ colorSphere();
 runComposite(op8x8);
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample("Demonstration of all values", "100%", 7250)}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.globalAlpha")}}

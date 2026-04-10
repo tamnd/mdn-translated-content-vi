@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức beginPath()"
+title: "CanvasRenderingContext2D: beginPath() method"
 short-title: beginPath()
 slug: Web/API/CanvasRenderingContext2D/beginPath
 page-type: web-api-instance-method
@@ -8,32 +8,34 @@ browser-compat: api.CanvasRenderingContext2D.beginPath
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.beginPath()`** của API Canvas 2D bắt đầu một đường dẫn mới bằng cách làm trống danh sách các đường dẫn con. Gọi
-phương thức này khi bạn muốn tạo một đường dẫn mới.
+The
+**`CanvasRenderingContext2D.beginPath()`**
+method of the Canvas 2D API starts a new path by emptying the list of sub-paths. Call
+this method when you want to create a new path.
 
-> [!LƯU Ý]
-> Để tạo một đường dẫn con mới, tức là một đường dẫn phù hợp với đường dẫn hiện tại
-> trạng thái canvas, bạn có thể sử dụng {{domxref("CanvasRenderingContext2D.moveTo()")}}.
+> [!NOTE]
+> To create a new sub-path, i.e., one matching the current
+> canvas state, you can use {{domxref("CanvasRenderingContext2D.moveTo()")}}.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 beginPath()
 ```
 
-### Tham số
+### Parameters
 
-Không.
+None.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Tạo đường dẫn riêng biệt
+### Creating distinct paths
 
-Ví dụ này tạo ra hai đường dẫn, mỗi đường dẫn chứa một dòng.
+This example creates two paths, each of which contains a single line.
 
 #### HTML
 
@@ -43,8 +45,8 @@ Ví dụ này tạo ra hai đường dẫn, mỗi đường dẫn chứa một d
 
 #### JavaScript
 
-Phương thức `beginPath()` được gọi trước khi bắt đầu mỗi dòng, để chúng
-có thể được vẽ bằng các màu khác nhau.
+The `beginPath()` method is called before beginning each line, so that they
+may be drawn with different colors.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -65,19 +67,19 @@ ctx.lineTo(120, 120);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Creating_distinct_paths', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.closePath()")}}

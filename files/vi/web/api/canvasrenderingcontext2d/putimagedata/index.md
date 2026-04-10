@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức putImageData()"
+title: "CanvasRenderingContext2D: putImageData() method"
 short-title: putImageData()
 slug: Web/API/CanvasRenderingContext2D/putImageData
 page-type: web-api-instance-method
@@ -8,58 +8,63 @@ browser-compat: api.CanvasRenderingContext2D.putImageData
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.putImageData()`** của API Canvas 2D vẽ dữ liệu từ đối tượng {{domxref("ImageData")}} đã cho lên canvas. Nếu một hình chữ nhật bẩn được cung cấp thì chỉ các pixel từ hình chữ nhật đó được sơn. Phương pháp này không bị ảnh hưởng bởi ma trận chuyển đổi canvas.
+The **`CanvasRenderingContext2D.putImageData()`**
+method of the Canvas 2D API paints data from the given {{domxref("ImageData")}} object
+onto the canvas. If a dirty rectangle is provided, only the pixels from that rectangle
+are painted. This method is not affected by the canvas transformation matrix.
 
-> [!LƯU Ý]
-> Dữ liệu hình ảnh có thể được lấy từ canvas bằng cách sử dụng
-> phương pháp {{domxref("CanvasRenderingContext2D.getImageData()", "getImageData()")}}.
+> [!NOTE]
+> Image data can be retrieved from a canvas using the
+> {{domxref("CanvasRenderingContext2D.getImageData()", "getImageData()")}} method.
 
-Bạn có thể tìm thêm thông tin về `putImageData()` và thao tác chung đối với nội dung canvas trong bài viết [Pixel manipulation with canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas).
+You can find more information about `putImageData()` and general
+manipulation of canvas contents in the article [Pixel manipulation with canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas).
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 putImageData(imageData, dx, dy)
 putImageData(imageData, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight)
 ```
 
-### Tham số
+### Parameters
 
 - `imageData`
-- : Một đối tượng {{domxref("ImageData")}} chứa mảng giá trị pixel.
+  - : An {{domxref("ImageData")}} object containing the array of pixel values.
 - `dx`
-- : Vị trí nằm ngang (tọa độ x) để đặt dữ liệu hình ảnh vào
-  canvas đích.
+  - : Horizontal position (x coordinate) at which to place the image data in the
+    destination canvas.
 - `dy`
-- : Vị trí dọc (tọa độ y) để đặt dữ liệu hình ảnh vào đích
-  canvas.
-- `dirtyX`{{optional_inline}}
-- : Vị trí nằm ngang (tọa độ x) của góc trên bên trái nơi chứa dữ liệu hình ảnh
-  sẽ được trích xuất. Mặc định là `0`.
-- `dirtyY`{{optional_inline}}
-- : Vị trí dọc (tọa độ y) của góc trên bên trái nơi dữ liệu hình ảnh
-  sẽ được trích xuất. Mặc định là `0`.
-- `dirtyWidth`{{optional_inline}}
-- : Chiều rộng của hình chữ nhật cần sơn. Mặc định về chiều rộng của dữ liệu hình ảnh.
-- `dirtyHeight`{{optional_inline}}
-- : Chiều cao của hình chữ nhật cần sơn. Mặc định là chiều cao của dữ liệu hình ảnh.
+  - : Vertical position (y coordinate) at which to place the image data in the destination
+    canvas.
+- `dirtyX` {{optional_inline}}
+  - : Horizontal position (x coordinate) of the top-left corner from which the image data
+    will be extracted. Defaults to `0`.
+- `dirtyY` {{optional_inline}}
+  - : Vertical position (y coordinate) of the top-left corner from which the image data
+    will be extracted. Defaults to `0`.
+- `dirtyWidth` {{optional_inline}}
+  - : Width of the rectangle to be painted. Defaults to the width of the image data.
+- `dirtyHeight` {{optional_inline}}
+  - : Height of the rectangle to be painted. Defaults to the height of the image data.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-### Ngoại lệ
+### Exceptions
 
-- `NotSupportedError`{{domxref("DOMException")}}
-- : Bị ném nếu bất kỳ đối số nào là vô hạn.
-- `InvalidStateError`{{domxref("DOMException")}}
-- : Bị ném nếu dữ liệu của đối tượng `ImageData` đã bị tách ra.
+- `NotSupportedError` {{domxref("DOMException")}}
+  - : Thrown if any of the arguments is infinite.
+- `InvalidStateError` {{domxref("DOMException")}}
+  - : Thrown if the `ImageData` object's data has been detached.
 
-## Ví dụ
+## Examples
 
-### Hiểu putImageData
+### Understanding putImageData
 
-Để hiểu rõ thuật toán này thực hiện những gì, đây là cách triển khai dựa trên {{domxref("CanvasRenderingContext2D.fillRect()")}}.
+To understand what this algorithm does under the hood, here is an implementation on top
+of {{domxref("CanvasRenderingContext2D.fillRect()")}}.
 
 #### HTML
 
@@ -106,16 +111,16 @@ const imagedata = ctx.getImageData(0, 0, 100, 100);
 putImageData(ctx, imagedata, 150, 0, 50, 50, 25, 25);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Understanding_putImageData', 700, 180) }}
 
-### Mất dữ liệu do tối ưu hóa trình duyệt
+### Data loss due to browser optimization
 
-> [!CẢNH BÁO]
-> Do tính chất mất mát của việc chuyển đổi sang và từ các giá trị màu alpha được nhân trước,
-> các pixel vừa được đặt bằng `putImageData()` có thể được trả về
-> tương đương `getImageData()` dưới dạng các giá trị khác nhau.
+> [!WARNING]
+> Due to the lossy nature of converting to and from premultiplied alpha color values,
+> pixels that have just been set using `putImageData()` might be returned to
+> an equivalent `getImageData()` as different values.
 
 #### JavaScript
 
@@ -137,24 +142,24 @@ const pixels2 = imgData2.data;
 console.log("after:", pixels2);
 ```
 
-Đầu ra có thể trông giống như:
+The output might look like:
 
 ```plain
 before: Uint8ClampedArray(4) [ 1, 127, 255, 1 ]
 after: Uint8ClampedArray(4) [ 255, 255, 255, 1 ]
 ```
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
-- đối tượng {{domxref("ImageData")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
+- {{domxref("ImageData")}} object
 - {{domxref("CanvasRenderingContext2D.getImageData()")}}
 - [Pixel manipulation with canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)

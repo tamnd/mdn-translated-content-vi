@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức biến đổi()"
-short-title: biến đổi()
+title: "CanvasRenderingContext2D: transform() method"
+short-title: transform()
 slug: Web/API/CanvasRenderingContext2D/transform
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.transform
@@ -8,52 +8,57 @@ browser-compat: api.CanvasRenderingContext2D.transform
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.transform()`** của API Canvas 2D nhân phép biến đổi hiện tại với ma trận được mô tả bằng các đối số của phương thức này. Điều này cho phép bạn chia tỷ lệ, xoay, dịch (di chuyển) và nghiêng ngữ cảnh.
+The
+**`CanvasRenderingContext2D.transform()`**
+method of the Canvas 2D API multiplies the current transformation with the matrix
+described by the arguments of this method. This lets you scale, rotate, translate
+(move), and skew the context.
 
-> [!LƯU Ý]
-> Xem thêm
-> phương thức{{domxref("CanvasRenderingContext2D.setTransform()", "setTransform()")}}, trong đó
-> đặt lại biến đổi hiện tại thành ma trận nhận dạng và sau đó gọi
+> [!NOTE]
+> See also the
+> {{domxref("CanvasRenderingContext2D.setTransform()", "setTransform()")}} method, which
+> resets the current transform to the identity matrix and then invokes
 > `transform()`.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 transform(a, b, c, d, e, f)
 ```
 
-Ma trận biến đổi được mô tả như sau: `[a c e; b d f; 0 0 1]`.
+The transformation matrix is described by: <math><semantics><mrow><mo>[</mo><mtable columnalign="center center center" rowspacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd><mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation encoding="TeX">\left[ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics></math>.
 
-### Tham số
+### Parameters
 
 - `a` (`m11`)
-  - : Ô ở hàng đầu tiên và cột đầu tiên của ma trận.
+  - : The cell in the first row and first column of the matrix.
 - `b` (`m12`)
-  - : Ô ở hàng thứ hai và cột đầu tiên của ma trận.
+  - : The cell in the second row and first column of the matrix.
 - `c` (`m21`)
-  - : Ô ở hàng đầu tiên và cột thứ hai của ma trận.
+  - : The cell in the first row and second column of the matrix.
 - `d` (`m22`)
-  - : Ô ở hàng thứ hai và cột thứ hai của ma trận.
+  - : The cell in the second row and second column of the matrix.
 - `e` (`m41`)
-  - : Ô ở hàng đầu tiên và cột thứ ba của ma trận.
+  - : The cell in the first row and third column of the matrix.
 - `f` (`m42`)
-  - : Ô ở hàng thứ hai và cột thứ ba của ma trận.
+  - : The cell in the second row and third column of the matrix.
 
-Nếu một điểm ban đầu có tọa độ `(x, y)`, thì sau khi biến đổi nó sẽ có tọa độ `(ax + cy + e, bx + dy + f)`. Điều này có nghĩa là:
+If a point originally had coordinates <math><semantics><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="TeX">(x, y)</annotation></semantics></math>, then after the transformation it will have coordinates <math><semantics><mrow><mo>(</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>c</mi><mi>y</mi><mo>+</mo><mi>e</mi><mo>,</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi><mo>+</mo><mi>f</mi><mo>)</mo></mrow><annotation encoding="TeX">(ax + cy + e, bx + dy + f)</annotation></semantics></math>. This means:
 
-- `e` và `f` kiểm soát việc dịch theo chiều ngang và chiều dọc của ngữ cảnh.
-- Khi `b` và `c` là `0`, `a` và `d` sẽ kiểm soát tỷ lệ theo chiều ngang và chiều dọc của ngữ cảnh.
-- Khi `a` và `d` là `1`, `b` và `c` kiểm soát độ lệch ngang và dọc của ngữ cảnh.
+- `e` and `f` control the horizontal and vertical translation of the context.
+- When `b` and `c` are `0`, `a` and `d` control the horizontal and vertical scaling of the context.
+- When `a` and `d` are `1`, `b` and `c` control the horizontal and vertical skewing of the context.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Nghiêng một hình dạng
+### Skewing a shape
 
-Ví dụ này nghiêng một hình chữ nhật theo cả chiều dọc (`.2`) và chiều ngang (`.8`). Tỷ lệ và phép tịnh tiến không thay đổi.
+This example skews a rectangle both vertically (`.2`) and horizontally
+(`.8`). Scaling and translation remain unchanged.
 
 #### HTML
 
@@ -71,19 +76,19 @@ ctx.transform(1, 0.2, 0.8, 1, 0, 0);
 ctx.fillRect(0, 0, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Skewing_a_shape', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.setTransform()")}}

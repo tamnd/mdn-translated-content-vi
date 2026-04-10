@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính ShadowOffsetX"
-short-title: bóngOffsetX
+title: "CanvasRenderingContext2D: shadowOffsetX property"
+short-title: shadowOffsetX
 slug: Web/API/CanvasRenderingContext2D/shadowOffsetX
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.shadowOffsetX
@@ -8,24 +8,31 @@ browser-compat: api.CanvasRenderingContext2D.shadowOffsetX
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.shadowOffsetX`** của API Canvas 2D chỉ định khoảng cách mà bóng sẽ được bù theo chiều ngang.
+The
+**`CanvasRenderingContext2D.shadowOffsetX`**
+property of the Canvas 2D API specifies the distance that shadows will be offset
+horizontally.
 
-> [!LƯU Ý]
-> Bóng chỉ được vẽ nếu
-> Thuộc tính{{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}}được đặt thành
-> một giá trị không minh bạch. Một trong các{{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}},`shadowOffsetX`, hoặc
-> thuộc tính{{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}}phải
-> cũng khác 0.
+> [!NOTE]
+> Shadows are only drawn if the
+> {{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}} property is set to
+> a non-transparent value. One of the {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}}, `shadowOffsetX`, or
+> {{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}} properties must
+> be non-zero, as well.
 
-## Giá trị
+## Value
 
-Một float xác định khoảng cách mà bóng sẽ được bù theo chiều ngang. Giá trị dương ở bên phải và âm ở bên trái. Giá trị mặc định là`0`(không có offset theo chiều ngang). Các giá trị{{jsxref("Infinity")}}và{{jsxref("NaN")}}bị bỏ qua.
+A float specifying the distance that shadows will be offset horizontally. Positive values are to the right, and negative to the left. The default value is `0` (no horizontal offset). {{jsxref("Infinity")}} and {{jsxref("NaN")}} values are ignored.
 
-## Ví dụ
+## Examples
 
-### Di chuyển bóng theo chiều ngang
+### Moving a shadow horizontally
 
-Ví dụ này thêm bóng mờ vào hình chữ nhật. Thuộc tính{{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}}đặt màu của nó,`shadowOffsetX`đặt độ lệch của nó là 25 đơn vị ở bên phải và{{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}}đặt cho nó mức độ mờ là 10.
+This example adds a blurred shadow to a rectangle. The
+{{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}} property sets its
+color, `shadowOffsetX` sets its offset 25 units to the right, and
+{{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}} gives it a blur level
+of 10.
 
 #### HTML
 
@@ -49,21 +56,21 @@ ctx.fillStyle = "blue";
 ctx.fillRect(20, 20, 150, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Moving_a_shadow_horizontally', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.shadowOffsetY")}}
 - {{domxref("CanvasRenderingContext2D.shadowColor")}}
 - {{domxref("CanvasRenderingContext2D.shadowBlur")}}

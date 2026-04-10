@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức MeasureText()"
-short-title: đoText()
+title: "CanvasRenderingContext2D: measureText() method"
+short-title: measureText()
 slug: Web/API/CanvasRenderingContext2D/measureText
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.measureText
@@ -8,32 +8,35 @@ browser-compat: api.CanvasRenderingContext2D.measureText
 
 {{APIRef("Canvas API")}}
 
-Phương thức `CanvasRenderingContext2D.measureText()` trả về một đối tượng {{domxref("TextMetrics")}} chứa thông tin về văn bản được đo (chẳng hạn như chiều rộng của nó chẳng hạn).
+The
+`CanvasRenderingContext2D.measureText()`
+method returns a {{domxref("TextMetrics")}} object that contains information about the
+measured text (such as its width, for example).
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 measureText(text)
 ```
 
-### Tham số
+### Parameters
 
 - `text`
-- : Chuỗi văn bản cần đo.
+  - : The text string to measure.
 
-### Giá trị trả về
+### Return value
 
-Một đối tượng {{domxref("TextMetrics")}}.
+A {{domxref("TextMetrics")}} object.
 
-## Ví dụ
+## Examples
 
-Với phần tử {{HTMLElement("canvas")}} này:
+Given this {{HTMLElement("canvas")}} element:
 
 ```html
 <canvas id="canvas"></canvas>
 ```
 
-… bạn có thể nhận được một đối tượng {{domxref("TextMetrics")}} bằng cách sử dụng đoạn mã sau:
+… you can get a {{domxref("TextMetrics")}} object using the following code:
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -43,15 +46,15 @@ let text = ctx.measureText("Hello world");
 console.log(text.width); // 56;
 ```
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("TextMetrics")}}

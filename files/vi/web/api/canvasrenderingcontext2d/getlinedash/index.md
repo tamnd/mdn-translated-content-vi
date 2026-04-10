@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức getLineDash()"
+title: "CanvasRenderingContext2D: getLineDash() method"
 short-title: getLineDash()
 slug: Web/API/CanvasRenderingContext2D/getLineDash
 page-type: web-api-instance-method
@@ -8,27 +8,32 @@ browser-compat: api.CanvasRenderingContext2D.getLineDash
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`getLineDash()`** của giao diện {{domxref("CanvasRenderingContext2D")}} của API Canvas 2D lấy mẫu gạch ngang hiện tại.
+The **`getLineDash()`** method of the Canvas 2D API's
+{{domxref("CanvasRenderingContext2D")}} interface gets the current line dash pattern.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 getLineDash()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Một số {{jsxref("Array")}} gồm các số xác định khoảng cách để lần lượt vẽ một đường thẳng và một khoảng cách (theo đơn vị không gian tọa độ). Nếu số khi thiết lập các phần tử là số lẻ thì các phần tử của mảng sẽ được sao chép và nối. Ví dụ: đặt dấu gạch ngang thành `[5, 15, 25]`sẽ dẫn đến việc lấy lại`[5, 15, 25, 5, 15, 25]`.
+An {{jsxref("Array")}} of numbers that specify distances to alternately draw a line and
+a gap (in coordinate space units). If the number, when setting the elements, is odd, the
+elements of the array get copied and concatenated. For example, setting the line dash to
+`[5, 15, 25]` will result in getting back
+`[5, 15, 25, 5, 15, 25]`.
 
-## Ví dụ
+## Examples
 
-### Lấy cài đặt dấu gạch ngang dòng hiện tại
+### Getting the current line dash setting
 
-Ví dụ này minh họa phương thức `getLineDash()`.
+This example demonstrates the `getLineDash()` method.
 
 #### HTML
 
@@ -38,7 +43,9 @@ Ví dụ này minh họa phương thức `getLineDash()`.
 
 #### JavaScript
 
-Như được đặt bởi {{domxref("CanvasRenderingContext2D.setLineDash()", "setLineDash()")}}, các nét bao gồm các đường rộng 10 đơn vị, với khoảng cách 20 đơn vị ở giữa mỗi dòng.
+As set by {{domxref("CanvasRenderingContext2D.setLineDash()", "setLineDash()")}},
+strokes consist of lines that are 10 units wide, with spaces of 20 units in between each
+line.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -54,20 +61,20 @@ ctx.lineTo(300, 50);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Getting_the_current_line_dash_setting', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.setLineDash()")}}
 - {{domxref("CanvasRenderingContext2D.lineDashOffset")}}

@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức resetTransform()"
+title: "CanvasRenderingContext2D: resetTransform() method"
 short-title: resetTransform()
 slug: Web/API/CanvasRenderingContext2D/resetTransform
 page-type: web-api-instance-method
@@ -8,27 +8,30 @@ browser-compat: api.CanvasRenderingContext2D.resetTransform
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.resetTransform()`** của API Canvas 2D đặt lại phép biến đổi hiện tại thành ma trận nhận dạng.
+The
+**`CanvasRenderingContext2D.resetTransform()`**
+method of the Canvas 2D API resets the current transform to the identity matrix.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 resetTransform()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Đặt lại ma trận
+### Resetting the matrix
 
-Ví dụ này vẽ một hình chữ nhật xoay sau khi sửa đổi ma trận và sau đó đặt lại ma trận bằng phương thức`resetTransform()`.
+This example draws a rotated rectangle after modifying the matrix, and then resets the
+matrix using the `resetTransform()` method.
 
 #### HTML
 
@@ -38,7 +41,8 @@ Ví dụ này vẽ một hình chữ nhật xoay sau khi sửa đổi ma trận 
 
 #### JavaScript
 
-Phương thức{{domxref("CanvasRenderingContext2D.rotate()", "rotate()")}}xoay ma trận biến đổi 45°. Phương thức{{domxref("CanvasRenderingContext2D.fillRect()", "fillRect()")}}vẽ một hình chữ nhật được tô màu, được điều chỉnh theo ma trận đó.
+The {{domxref("CanvasRenderingContext2D.rotate()", "rotate()")}} method rotates the
+transformation matrix by 45°. The {{domxref("CanvasRenderingContext2D.fillRect()", "fillRect()")}} method draws a filled rectangle, adjusted according to that matrix.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -52,13 +56,16 @@ ctx.fillRect(60, 0, 100, 30);
 ctx.resetTransform();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Resetting_the_matrix', 700, 180) }}
 
-### Tiếp tục với ma trận chính quy
+### Continuing with a regular matrix
 
-Bất cứ khi nào bạn vẽ xong các hình dạng đã biến đổi, bạn nên gọi`resetTransform()`trước khi hiển thị bất kỳ thứ gì khác. Trong ví dụ này, hai hình đầu tiên được vẽ bằng phép biến đổi nghiêng và hai hình cuối được vẽ bằng phép biến đổi đồng nhất (thông thường).
+Whenever you're done drawing transformed shapes, you should call
+`resetTransform()` before rendering anything else. In this example, the first
+two shapes are drawn with a skew transformation, and the last two are drawn with the
+identity (regular) transformation.
 
 #### HTML
 
@@ -85,28 +92,28 @@ ctx.fillRect(40, 40, 50, 20);
 ctx.fillRect(40, 90, 50, 20);
 ```
 
-#### Kết quả
+#### Result
 
-Các hình chữ nhật nghiêng có màu xám và các hình chữ nhật không nghiêng có màu đỏ.
+The skewed rectangles are gray, and the non-skewed rectangles are red.
 
 {{ EmbedLiveSample('Continuing_with_a_regular_matrix', 700, 180) }}
 
 ## Polyfill
 
-Bạn cũng có thể sử dụng phương thức{{domxref("CanvasRenderingContext2D.setTransform()", "setTransform()")}}để đặt lại phép biến đổi hiện tại thành ma trận nhận dạng, như sau:
+You can also use the {{domxref("CanvasRenderingContext2D.setTransform()", "setTransform()")}} method to reset the current transform to the identity matrix, like so:
 
 ```js
 ctx.setTransform(1, 0, 0, 1, 0, 0);
 ```
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

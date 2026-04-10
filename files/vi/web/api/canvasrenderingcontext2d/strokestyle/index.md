@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính StrokeStyle"
-short-title: đột quỵPhong cách
+title: "CanvasRenderingContext2D: strokeStyle property"
+short-title: strokeStyle
 slug: Web/API/CanvasRenderingContext2D/strokeStyle
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.strokeStyle
@@ -8,28 +8,30 @@ browser-compat: api.CanvasRenderingContext2D.strokeStyle
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.strokeStyle`** của API Canvas 2D chỉ định màu sắc, độ chuyển màu hoặc mẫu sẽ sử dụng cho các nét (đường viền) xung quanh hình dạng. Mặc định là`black`.
+The **`CanvasRenderingContext2D.strokeStyle`** property of the
+Canvas 2D API specifies the color, gradient, or pattern to use for the strokes
+(outlines) around shapes. The default is `black`.
 
-> [!LƯU Ý]
-> Để biết thêm ví dụ về kiểu nét và tô màu, hãy xem[Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors)trong[Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
+> [!NOTE]
+> For more examples of stroke and fill styles, see [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) in the [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-## Giá trị
+## Value
 
-Một trong những điều sau đây:
+One of the following:
 
 - `color`
-  - : Một chuỗi được phân tích cú pháp là[CSS](/en-US/docs/Web/CSS)
-    Giá trị{{cssxref("&lt;color&gt;")}}.
+  - : A string parsed as [CSS](/en-US/docs/Web/CSS)
+    {{cssxref("&lt;color&gt;")}} value.
 - `gradient`
-  - : Đối tượng{{domxref("CanvasGradient")}}(gradient tuyến tính hoặc hướng tâm).
+  - : A {{domxref("CanvasGradient")}} object (a linear or radial gradient).
 - `pattern`
-  - : Đối tượng{{domxref("CanvasPattern")}}(hình ảnh lặp lại).
+  - : A {{domxref("CanvasPattern")}} object (a repeating image).
 
-## Ví dụ
+## Examples
 
-### Thay đổi màu nét của hình
+### Changing the stroke color of a shape
 
-Ví dụ này áp dụng màu nét viền màu xanh lam cho hình chữ nhật.
+This example applies a blue stroke color to a rectangle.
 
 #### HTML
 
@@ -47,13 +49,17 @@ ctx.strokeStyle = "blue";
 ctx.strokeRect(10, 10, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_the_stroke_color_of_a_shape', 700, 160) }}
 
-### Tạo nhiều màu nét bằng cách sử dụng vòng lặp
+### Creating multiple stroke colors using loops
 
-Trong ví dụ này, chúng tôi sử dụng hai vòng lặp`for`và phương thức{{domxref("CanvasRenderingContext2D.arc", "arc()")}}để vẽ một lưới các vòng tròn, mỗi vòng có một màu nét khác nhau. Để đạt được điều này, chúng tôi sử dụng hai biến`i`và`j`để tạo màu RGB duy nhất cho mỗi vòng tròn và chỉ sửa đổi giá trị xanh lục và xanh lam. (Kênh màu đỏ có giá trị cố định.)
+In this example, we use two `for` loops and the
+{{domxref("CanvasRenderingContext2D.arc", "arc()")}} method to draw a grid of circles,
+each having a different stroke color. To achieve this, we use the two variables
+`i` and `j` to generate a unique RGB color for each circle, and
+only modify the green and blue values. (The red channel has a fixed value.)
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -75,21 +81,22 @@ for (let i = 0; i < 6; i++) {
 }
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("Creating_multiple_stroke_colors_using_loops", "", "180")}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific note
 
-Trong các trình duyệt dựa trên WebKit và Blink, phương thức không chuẩn và không được dùng nữa`ctx.setStrokeColor()`được triển khai cùng với thuộc tính này.
+In WebKit- and Blink-based browsers, the non-standard and deprecated method
+`ctx.setStrokeColor()` is implemented in addition to this property.
 
 ```js
 setStrokeColor(color);
@@ -100,8 +107,8 @@ setStrokeColor(r, g, b, a);
 setStrokeColor(c, m, y, k, a);
 ```
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasGradient")}}
 - {{domxref("CanvasPattern")}}

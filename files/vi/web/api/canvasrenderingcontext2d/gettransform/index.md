@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức getTransform()"
+title: "CanvasRenderingContext2D: getTransform() method"
 short-title: getTransform()
 slug: Web/API/CanvasRenderingContext2D/getTransform
 page-type: web-api-instance-method
@@ -8,40 +8,45 @@ browser-compat: api.CanvasRenderingContext2D.getTransform
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.getTransform()`** của API Canvas 2D truy xuất ma trận chuyển đổi hiện tại đang được áp dụng cho ngữ cảnh.
+The **`CanvasRenderingContext2D.getTransform()`** method of the Canvas 2D API retrieves the current transformation matrix being applied to the context.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 getTransform()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Một đối tượng {{domxref("DOMMatrix")}}.
+A {{domxref("DOMMatrix")}} object.
 
-Ma trận biến đổi được mô tả bởi:
+The transformation matrix is described by:
 
 <!-- prettier-ignore-start -->
 <math display="block">
- <semantics><mrow><mo>[</mo><mtable columnalign="center center center" rowspacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd><mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation encoding="TeX">\left [ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics>
+  <semantics><mrow><mo>[</mo><mtable columnalign="center center center" rowspacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd><mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation encoding="TeX">\left[ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics>
 </math>
 <!-- prettier-ignore-end -->
 
-> [!LƯU Ý]
-> Đối tượng được trả về không hoạt động nên việc cập nhật nó sẽ không hoạt động
-> ảnh hưởng đến ma trận biến đổi hiện tại và cập nhật phép biến đổi hiện tại
-> ma trận sẽ không ảnh hưởng đến `DOMMatrix` đã được trả về.
+> [!NOTE]
+> The returned object is not live, so updating it will not
+> affect the current transformation matrix, and updating the current transformation
+> matrix will not affect an already returned `DOMMatrix`.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ sau, chúng ta có hai phần tử {{htmlelement("canvas")}}. Chúng tôi áp dụng một phép biến đổi cho bối cảnh của bối cảnh đầu tiên bằng cách sử dụng {{domxref("CanvasRenderingContext2D.setTransform()")}} và vẽ một hình vuông trên đó, sau đó truy xuất ma trận từ nó bằng cách sử dụng `getTransform()`.
+In the following example, we have two {{htmlelement("canvas")}} elements. We apply a
+transform to the first one's context using
+{{domxref("CanvasRenderingContext2D.setTransform()")}} and draw a square on it, then
+retrieve the matrix from it using `getTransform()`.
 
-Sau đó, chúng tôi áp dụng trực tiếp ma trận được truy xuất vào ngữ cảnh canvas thứ hai bằng cách chuyển trực tiếp đối tượng `DOMMatrix`tới`setTransform()` và vẽ một vòng tròn trên đó.
+We then apply the retrieved matrix directly to the second canvas context by passing the
+`DOMMatrix` object directly to `setTransform()`, and draw a circle
+on it.
 
 ### HTML
 
@@ -76,19 +81,19 @@ ctx2.arc(50, 50, 50, 0, 2 * Math.PI);
 ctx2.fill();
 ```
 
-### Kết quả
+### Result
 
 {{ EmbedLiveSample('Examples', "100%", 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.transform()")}}

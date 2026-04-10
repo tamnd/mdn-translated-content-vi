@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức reset()"
-short-title: cài lại()
+title: "CanvasRenderingContext2D: reset() method"
+short-title: reset()
 slug: Web/API/CanvasRenderingContext2D/reset
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.reset
@@ -8,29 +8,30 @@ browser-compat: api.CanvasRenderingContext2D.reset
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.reset()`** của API Canvas 2D đặt lại ngữ cảnh hiển thị về trạng thái mặc định, cho phép nó được sử dụng lại để vẽ nội dung khác mà không cần phải đặt lại rõ ràng tất cả các thuộc tính.
+The **`CanvasRenderingContext2D.reset()`** method of the Canvas 2D API resets the rendering context to its default state, allowing it to be reused for drawing something else without having to explicitly reset all the properties.
 
-Việc đặt lại sẽ xóa bộ đệm sao lưu, ngăn xếp trạng thái vẽ, mọi đường dẫn và kiểu đã xác định. Điều này bao gồm ma trận [transformation](/en-US/docs/Web/API/CanvasRenderingContext2D#transformations) hiện tại, thuộc tính [compositing](/en-US/docs/Web/API/CanvasRenderingContext2D#compositing), vùng cắt, danh sách gạch ngang,[line styles](/en-US/docs/Web/API/CanvasRenderingContext2D#line_styles),[text styles](/en-US/docs/Web/API/CanvasRenderingContext2D#text_styles),[shadows](/en-US/docs/Web/API/CanvasRenderingContext2D#shadows),[image smoothing](/en-US/docs/Web/API/CanvasRenderingContext2D#image_smoothing),[filters](/en-US/docs/Web/API/CanvasRenderingContext2D#filters), v.v.
+Resetting clears the backing buffer, drawing state stack, any defined paths, and styles.
+This includes the current [transformation](/en-US/docs/Web/API/CanvasRenderingContext2D#transformations) matrix, [compositing](/en-US/docs/Web/API/CanvasRenderingContext2D#compositing) properties, clipping region, dash list, [line styles](/en-US/docs/Web/API/CanvasRenderingContext2D#line_styles), [text styles](/en-US/docs/Web/API/CanvasRenderingContext2D#text_styles), [shadows](/en-US/docs/Web/API/CanvasRenderingContext2D#shadows), [image smoothing](/en-US/docs/Web/API/CanvasRenderingContext2D#image_smoothing), [filters](/en-US/docs/Web/API/CanvasRenderingContext2D#filters), and so on.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 reset()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-Ví dụ này cho thấy cách chúng ta có thể sử dụng `reset()` để xóa hoàn toàn bối cảnh trước khi vẽ lại.
+This example shows how we can use `reset()` to completely clear the context before redrawing.
 
-Đầu tiên chúng ta xác định một nút và một khung vẽ.
+First we define a button and a canvas.
 
 ```css
 #toggle-reset {
@@ -43,7 +44,8 @@ Ví dụ này cho thấy cách chúng ta có thể sử dụng `reset()` để x
 <canvas id="my-house" width="500" height="200"></canvas>
 ```
 
-Đầu tiên, mã sẽ nhận được bối cảnh `2d` cho canvas. Sau đó, nó xác định các hàm có thể sử dụng ngữ cảnh để vẽ hình chữ nhật và hình tròn tương ứng.
+The code first gets a `2d` context for the canvas.
+It then defines functions that can use the context to draw a rectangle and a circle, respectively.
 
 ```js
 // Get the 2d context
@@ -77,7 +79,9 @@ function drawCircle() {
 }
 ```
 
-Sau đó chúng ta vẽ hình chữ nhật bằng chức năng của nó. Nút chuyển đổi vẽ hình tròn và hình chữ nhật. Lưu ý cách gọi `reset()` trước khi vẽ để xóa ngữ cảnh.
+We then draw the rectangle using its function.
+The button toggles drawing the circle and rectangle.
+Note how `reset()` is called before drawing to clear the context.
 
 ```js
 drawRect();
@@ -97,18 +101,18 @@ myButton.addEventListener("click", () => {
 });
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("Examples", 500, 250)}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

@@ -6,26 +6,26 @@ page-type: guide
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Drawing_shapes", "Web/API/Canvas_API/Tutorial/Drawing_text")}}
 
-Trong chương về [vẽ hình](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes), chúng tôi chỉ sử dụng kiểu đường kẻ và kiểu tô mặc định. Ở đây chúng ta sẽ khám phá các tùy chọn canvas mà chúng ta có sẵn để làm cho bản vẽ của chúng ta hấp dẫn hơn một chút. Bạn sẽ học cách thêm các màu sắc, kiểu đường nét, độ dốc, mẫu và bóng khác nhau vào bản vẽ của mình.
+In the chapter about [drawing shapes](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes), we used only the default line and fill styles. Here we will explore the canvas options we have at our disposal to make our drawings a little more attractive. You will learn how to add different colors, line styles, gradients, patterns and shadows to your drawings.
 
 > [!NOTE]
-> Trình đọc màn hình không thể truy cập nội dung canvas. Nếu canvas chỉ mang tính chất trang trí, hãy đưa `role="presentation"` vào thẻ mở `<canvas>`. Nếu không, hãy đưa văn bản mô tả làm giá trị của thuộc tính [`aria-label`](/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label) trực tiếp trên chính phần tử canvas hoặc bao gồm nội dung dự phòng được đặt trong thẻ canvas mở và đóng. Nội dung canvas không phải là một phần của DOM nhưng nội dung dự phòng lồng nhau thì có.
+> Canvas content is not accessible to screen readers. If the canvas is purely decorative, include `role="presentation"` on the `<canvas>` opening tag. Otherwise, include descriptive text as the value of the [`aria-label`](/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label) attribute directly on the canvas element itself or include fallback content placed within the opening and closing canvas tag. Canvas content is not part of the DOM, but nested fallback content is.
 
-## Màu sắc
+## Colors
 
-Cho đến nay chúng ta mới chỉ thấy các phương pháp của bối cảnh vẽ. Nếu chúng ta muốn áp dụng màu cho một hình, có hai thuộc tính quan trọng mà chúng ta có thể sử dụng: `fillStyle` và `strokeStyle`.
+Up until now we have only seen methods of the drawing context. If we want to apply colors to a shape, there are two important properties we can use: `fillStyle` and `strokeStyle`.
 
 - {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle = color")}}
-  - : Đặt kiểu được sử dụng khi điền hình.
+  - : Sets the style used when filling shapes.
 - {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle = color")}}
-  - : Đặt kiểu cho đường viền của hình dạng.
+  - : Sets the style for shapes' outlines.
 
-`color` là một chuỗi đại diện cho CSS {{cssxref("&lt;color&gt;")}}, đối tượng chuyển màu hoặc đối tượng mẫu. Chúng ta sẽ xem xét các đối tượng gradient và mẫu sau. Theo mặc định, màu nét và màu tô được đặt thành màu đen (giá trị màu CSS `#000000`).
+`color` is a string representing a CSS {{cssxref("&lt;color&gt;")}}, a gradient object, or a pattern object. We'll look at gradient and pattern objects later. By default, the stroke and fill color are set to black (CSS color value `#000000`).
 
 > [!NOTE]
-> Khi bạn đặt thuộc tính `strokeStyle` và/hoặc `fillStyle`, giá trị mới sẽ trở thành mặc định cho tất cả các hình dạng được vẽ từ đó trở đi. Đối với mỗi hình dạng bạn muốn có màu khác nhau, bạn sẽ cần gán lại thuộc tính `fillStyle` hoặc `strokeStyle`.
+> When you set the `strokeStyle` and/or `fillStyle` property, the new value becomes the default for all shapes being drawn from then on. For every shape you want in a different color, you will need to reassign the `fillStyle` or `strokeStyle` property.
 
-Theo thông số kỹ thuật, các chuỗi hợp lệ mà bạn có thể nhập phải là giá trị CSS {{cssxref("&lt;color&gt;")}}. Mỗi ví dụ sau đây mô tả cùng một màu.
+The valid strings you can enter should, according to the specification, be CSS {{cssxref("&lt;color&gt;")}} values. Each of the following examples describe the same color.
 
 ```js
 // these all set the fillStyle to 'orange'
@@ -36,9 +36,9 @@ ctx.fillStyle = "rgb(255 165 0)";
 ctx.fillStyle = "rgb(255 165 0 / 100%)";
 ```
 
-### Ví dụ về `fillStyle`
+### A `fillStyle` example
 
-Trong ví dụ này, một lần nữa chúng ta sử dụng hai vòng lặp `for` để vẽ một lưới các hình chữ nhật, mỗi lưới có một màu khác nhau. Hình ảnh thu được sẽ trông giống như ảnh chụp màn hình. Không có gì quá ngoạn mục xảy ra ở đây. Chúng tôi sử dụng hai biến `i` và `j` để tạo màu RGB duy nhất cho mỗi hình vuông và chỉ sửa đổi các giá trị màu đỏ và xanh lục. Kênh màu xanh có giá trị cố định. Bằng cách sửa đổi các kênh, bạn có thể tạo ra tất cả các loại bảng màu. Bằng cách tăng dần các bước, bạn có thể đạt được thứ gì đó trông giống như bảng màu mà Photoshop sử dụng.
+In this example, we once again use two `for` loops to draw a grid of rectangles, each in a different color. The resulting image should look something like the screenshot. There is nothing too spectacular happening here. We use the two variables `i` and `j` to generate a unique RGB color for each square, and only modify the red and green values. The blue channel has a fixed value. By modifying the channels, you can generate all kinds of palettes. By increasing the steps, you can achieve something that looks like the color palettes Photoshop uses.
 
 ```js
 function draw() {
@@ -64,13 +64,13 @@ function draw() {
 draw();
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("A_fillStyle_example", "", "160")}}
 
-### Ví dụ về `strokeStyle`
+### A `strokeStyle` example
 
-Ví dụ này tương tự như ví dụ ở trên, nhưng sử dụng thuộc tính `strokeStyle` để thay đổi màu sắc của đường viền của hình dạng. Chúng tôi sử dụng phương pháp `arc()` để vẽ hình tròn thay vì hình vuông.
+This example is similar to the one above, but uses the `strokeStyle` property to change the colors of the shapes' outlines. We use the `arc()` method to draw circles instead of squares.
 
 ```js
 function draw() {
@@ -96,20 +96,20 @@ function draw() {
 draw();
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("A_strokeStyle_example", "", "160")}}
 
-## Minh bạch
+## Transparency
 
-Ngoài việc vẽ các hình mờ lên canvas, chúng ta cũng có thể vẽ các hình bán trong suốt (hoặc mờ). Điều này được thực hiện bằng cách đặt thuộc tính `globalAlpha` hoặc bằng cách gán màu bán trong suốt cho nét và/hoặc kiểu tô màu.
+In addition to drawing opaque shapes to the canvas, we can also draw semi-transparent (or translucent) shapes. This is done by either setting the `globalAlpha` property or by assigning a semi-transparent color to the stroke and/or fill style.
 
 - {{domxref("CanvasRenderingContext2D.globalAlpha", "globalAlpha = transparencyValue")}}
-  - : Áp dụng giá trị trong suốt đã chỉ định cho tất cả các hình dạng trong tương lai được vẽ trên khung vẽ. Giá trị phải nằm trong khoảng từ 0,0 (hoàn toàn trong suốt) đến 1,0 (hoàn toàn mờ). Giá trị này theo mặc định là 1,0 (hoàn toàn mờ).
+  - : Applies the specified transparency value to all future shapes drawn on the canvas. The value must be between 0.0 (fully transparent) to 1.0 (fully opaque). This value is 1.0 (fully opaque) by default.
 
-Thuộc tính `globalAlpha` có thể hữu ích nếu bạn muốn vẽ nhiều hình trên khung vẽ với độ trong suốt tương tự, nhưng mặt khác, nói chung sẽ hữu ích hơn khi đặt độ trong suốt trên từng hình dạng khi đặt màu của chúng.
+The `globalAlpha` property can be useful if you want to draw a lot of shapes on the canvas with similar transparency, but otherwise it's generally more useful to set the transparency on individual shapes when setting their colors.
 
-Vì thuộc tính `strokeStyle` và `fillStyle` chấp nhận giá trị màu CSS rgb nên chúng ta có thể sử dụng ký hiệu sau để gán màu trong suốt cho chúng.
+Because the `strokeStyle` and `fillStyle` properties accept CSS rgb color values, we can use the following notation to assign a transparent color to them.
 
 ```js
 // Assigning transparent colors to stroke and fill style
@@ -118,11 +118,11 @@ ctx.strokeStyle = "rgb(255 0 0 / 50%)";
 ctx.fillStyle = "rgb(255 0 0 / 50%)";
 ```
 
-Hàm `rgb()` có một tham số bổ sung tùy chọn. Tham số cuối cùng đặt giá trị trong suốt của màu cụ thể này. Phạm vi hợp lệ được chỉ định dưới dạng phần trăm giữa `0%` (hoàn toàn trong suốt) và `100%` (hoàn toàn mờ) hoặc dưới dạng số giữa `0.0` (tương đương với `0%`) và `1.0` (tương đương với `100%`).
+The `rgb()` function has an optional extra parameter. The last parameter sets the transparency value of this particular color. The valid range is specified as a percentage between `0%` (fully transparent) and `100%` (fully opaque) or as a number between `0.0` (equivalent to `0%`) and `1.0` (equivalent to `100%`).
 
-### Ví dụ về `globalAlpha`
+### A `globalAlpha` example
 
-Trong ví dụ này, chúng ta sẽ vẽ nền gồm bốn hình vuông có màu khác nhau. Trên hết, chúng ta sẽ vẽ một tập hợp các vòng tròn bán trong suốt. Thuộc tính `globalAlpha` được đặt ở `0.2`, thuộc tính này sẽ được sử dụng cho tất cả các hình dạng kể từ thời điểm đó trở đi. Mỗi bước trong vòng lặp `for` vẽ một tập hợp các vòng tròn có bán kính tăng dần. Kết quả cuối cùng là một gradient xuyên tâm. Bằng cách chồng nhiều vòng tròn lên nhau, chúng tôi giảm độ trong suốt của các vòng tròn đã được vẽ một cách hiệu quả. Bằng cách tăng số bước và thực tế là vẽ nhiều vòng tròn hơn, nền sẽ hoàn toàn biến mất khỏi giữa hình ảnh.
+In this example, we'll draw a background of four different colored squares. On top of these, we'll draw a set of semi-transparent circles. The `globalAlpha` property is set at `0.2` which will be used for all shapes from that point on. Every step in the `for` loop draws a set of circles with an increasing radius. The final result is a radial gradient. By overlaying ever more circles on top of each other, we effectively reduce the transparency of the circles that have already been drawn. By increasing the step count and in effect drawing more circles, the background would completely disappear from the center of the image.
 
 ```js
 function draw() {
@@ -160,9 +160,9 @@ draw();
 
 {{EmbedLiveSample("A_globalAlpha_example", "", "160")}}
 
-### Một ví dụ sử dụng `rgb()` với độ trong suốt alpha
+### An example using `rgb()` with alpha transparency
 
-Trong ví dụ thứ hai này, chúng ta làm điều gì đó tương tự như ví dụ trên, nhưng thay vì vẽ các vòng tròn chồng lên nhau, tôi đã vẽ các hình chữ nhật nhỏ với độ mờ tăng dần. Sử dụng `rgb()` mang lại cho bạn khả năng kiểm soát và linh hoạt hơn một chút vì chúng ta có thể đặt kiểu tô và nét riêng lẻ.
+In this second example, we do something similar to the one above, but instead of drawing circles on top of each other, I've drawn small rectangles with increasing opacity. Using `rgb()` gives you a little more control and flexibility because we can set the fill and stroke style individually.
 
 ```js
 function draw() {
@@ -198,34 +198,34 @@ draw();
 
 {{EmbedLiveSample("An_example_using_rgb_with_alpha_transparency", "", "160")}}
 
-## Kiểu đường kẻ
+## Line styles
 
-Có một số thuộc tính cho phép chúng ta tạo kiểu cho các dòng.
+There are several properties which allow us to style lines.
 
 - {{domxref("CanvasRenderingContext2D.lineWidth", "lineWidth = value")}}
-  - : Thiết lập độ rộng của đường vẽ trong tương lai.
+  - : Sets the width of lines drawn in the future.
 - {{domxref("CanvasRenderingContext2D.lineCap", "lineCap = type")}}
-  - : Thiết lập sự xuất hiện của phần cuối của dòng.
+  - : Sets the appearance of the ends of lines.
 - {{domxref("CanvasRenderingContext2D.lineJoin", "lineJoin = type")}}
-  - : Đặt hình thức của các "góc" nơi các đường giao nhau.
+  - : Sets the appearance of the "corners" where lines meet.
 - {{domxref("CanvasRenderingContext2D.miterLimit", "miterLimit = value")}}
-  - : Thiết lập giới hạn trên góc vát khi hai đường nối với nhau ở một góc nhọn, để cho phép bạn kiểm soát độ dày của đường giao nhau.
+  - : Establishes a limit on the miter when two lines join at a sharp angle, to let you control how thick the junction becomes.
 - {{domxref("CanvasRenderingContext2D.getLineDash", "getLineDash()")}}
-  - : Trả về mảng mẫu gạch ngang dòng hiện tại chứa số chẵn các số không âm.
+  - : Returns the current line dash pattern array containing an even number of non-negative numbers.
 - {{domxref("CanvasRenderingContext2D.setLineDash", "setLineDash(segments)")}}
-  - : Đặt mẫu gạch ngang hiện tại.
+  - : Sets the current line dash pattern.
 - {{domxref("CanvasRenderingContext2D.lineDashOffset", "lineDashOffset = value")}}
-  - : Chỉ định vị trí bắt đầu một mảng gạch ngang trên một dòng.
+  - : Specifies where to start a dash array on a line.
 
-Bạn sẽ hiểu rõ hơn về những gì chúng làm bằng cách xem các ví dụ bên dưới.
+You'll get a better understanding of what these do by looking at the examples below.
 
-### Ví dụ về `lineWidth`
+### A `lineWidth` example
 
-Thuộc tính này thiết lập độ dày của đường hiện tại. Giá trị phải là số dương. Theo mặc định, giá trị này được đặt thành 1,0 đơn vị.
+This property sets the current line thickness. Values must be positive numbers. By default this value is set to 1.0 units.
 
-Độ rộng của đường là độ dày của nét có tâm trên đường dẫn đã cho. Nói cách khác, khu vực được vẽ mở rộng bằng một nửa chiều rộng đường ở hai bên của đường dẫn. Vì tọa độ canvas không tham chiếu trực tiếp các pixel nên phải đặc biệt chú ý để có được các đường ngang và dọc rõ nét.
+The line width is the thickness of the stroke centered on the given path. In other words, the area that's drawn extends to half the line width on either side of the path. Because canvas coordinates do not directly reference pixels, special care must be taken to obtain crisp horizontal and vertical lines.
 
-Trong ví dụ dưới đây, 10 đường thẳng được vẽ với độ rộng đường tăng dần. Đường ở phía bên trái rộng 1,0 đơn vị. Tuy nhiên, các đường có độ dày ngoài cùng bên trái và tất cả các đường có chiều rộng số nguyên lẻ khác không xuất hiện sắc nét do vị trí của đường dẫn.
+In the example below, 10 straight lines are drawn with increasing line widths. The line on the far left is 1.0 units wide. However, the leftmost and all other odd-integer-width thickness lines do not appear crisp, because of the path's positioning.
 
 ```js
 function draw() {
@@ -251,24 +251,24 @@ draw();
 {{EmbedLiveSample("A_lineWidth_example", "", "160")}}
 
 > [!NOTE]
-> Nếu bạn thắc mắc về các đường xuất hiện màu xám gần cạnh thay vì màu đen, hãy kiểm tra phần [Thấy các cạnh mờ?](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#seeing_blurry_edges) ở chương trước.
+> If you are wondering about the lines appearing gray near the edge instead of black, check the [Seeing blurry edges?](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#seeing_blurry_edges) section in the previous chapter.
 
-### Ví dụ về `lineCap`
+### A `lineCap` example
 
-Thuộc tính `lineCap` xác định cách vẽ điểm cuối của mỗi đường. Có ba giá trị có thể có cho thuộc tính này và đó là: `butt`, `round` và `square`. Theo mặc định, thuộc tính này được đặt thành `butt`:
+The `lineCap` property determines how the end points of every line are drawn. There are three possible values for this property and those are: `butt`, `round` and `square`. By default this property is set to `butt`:
 
 - `butt`
-  - : Các đầu của dòng được bình phương tại điểm cuối.
+  - : The ends of lines are squared off at the endpoints.
 - `round`
-  - : Các đầu dòng được làm tròn.
+  - : The ends of lines are rounded.
 - `square`
-  - : Các đầu của đường thẳng được bình phương bằng cách thêm một hộp có chiều rộng bằng nhau và chiều cao bằng một nửa độ dày của đường thẳng.
+  - : The ends of lines are squared off by adding a box with an equal width and half the height of the line's thickness.
 
-Chỉ điểm đầu và điểm cuối của đường dẫn bị ảnh hưởng: nếu đường dẫn được đóng bằng `closePath()` thì không có điểm bắt đầu và điểm cuối cuối cùng; thay vào đó, tất cả các điểm cuối trong đường dẫn được kết nối với phân đoạn trước và phân đoạn tiếp theo được đính kèm bằng cách sử dụng cài đặt hiện tại của kiểu `lineJoin`.
+Only start and final endpoints of a path are affected: if a path is closed with `closePath()`, there's no start and final endpoint; instead, all endpoints in the path are connected to their attached previous and next segment using the current setting of the `lineJoin` style.
 
-Trong ví dụ này, chúng ta sẽ vẽ ba đường, mỗi đường có một giá trị khác nhau cho thuộc tính `lineCap`. Tôi cũng đã thêm hai hướng dẫn để thấy sự khác biệt chính xác giữa ba hướng dẫn này. Mỗi dòng này bắt đầu và kết thúc chính xác trên các hướng dẫn này.
+In this example, we'll draw three lines, each with a different value for the `lineCap` property. I also added two guides to see the exact differences between the three. Each of these lines starts and ends exactly on these guides.
 
-Dòng bên trái sử dụng tùy chọn `butt` mặc định. Bạn sẽ nhận thấy rằng nó được vẽ hoàn toàn ngang bằng với các đường dẫn. Cái thứ hai được đặt để sử dụng tùy chọn `round`. Điều này thêm một hình bán nguyệt vào cuối có bán kính bằng một nửa chiều rộng của đường thẳng. Dòng bên phải sử dụng tùy chọn `square`. Điều này thêm một hộp có chiều rộng bằng nhau và một nửa chiều cao của độ dày đường.
+The line on the left uses the default `butt` option. You'll notice that it's drawn completely flush with the guides. The second is set to use the `round` option. This adds a semicircle to the end that has a radius half the width of the line. The line on the right uses the `square` option. This adds a box with an equal width and half the height of the line thickness.
 
 ```js
 function draw() {
@@ -306,20 +306,20 @@ draw();
 
 {{EmbedLiveSample("A_lineCap_example", "", "160")}}
 
-### Ví dụ về `lineJoin`
+### A `lineJoin` example
 
-Thuộc tính `lineJoin` xác định cách hai đoạn kết nối (đường, cung hoặc đường cong) có độ dài khác 0 trong một hình được nối với nhau (các đoạn suy biến có độ dài bằng 0, có điểm cuối và điểm kiểm soát được chỉ định chính xác ở cùng một vị trí, sẽ bị bỏ qua).
+The `lineJoin` property determines how two connecting segments (of lines, arcs or curves) with non-zero lengths in a shape are joined together (degenerate segments with zero lengths, whose specified endpoints and control points are exactly at the same position, are skipped).
 
-Có ba giá trị có thể có cho thuộc tính này: `round`, `bevel` và `miter`. Theo mặc định, thuộc tính này được đặt thành `miter`. Lưu ý rằng cài đặt `lineJoin` không có hiệu lực nếu hai đoạn được kết nối có cùng hướng, vì sẽ không có vùng nối nào được thêm vào trong trường hợp này:
+There are three possible values for this property: `round`, `bevel` and `miter`. By default this property is set to `miter`. Note that the `lineJoin` setting has no effect if the two connected segments have the same direction, because no joining area will be added in this case:
 
 - `round`
-  - : Làm tròn các góc của hình bằng cách lấp đầy một cung đĩa bổ sung ở giữa điểm cuối chung của các đoạn được kết nối. Bán kính của các góc tròn này bằng một nửa chiều rộng của đường thẳng.
+  - : Rounds off the corners of a shape by filling an additional sector of disc centered at the common endpoint of connected segments. The radius for these rounded corners is equal to half the line width.
 - `bevel`
-  - : Lấp đầy một vùng hình tam giác bổ sung giữa điểm cuối chung của các đoạn được kết nối và các góc hình chữ nhật bên ngoài riêng biệt của mỗi đoạn.
+  - : Fills an additional triangular area between the common endpoint of connected segments, and the separate outside rectangular corners of each segment.
 - `miter`
-  - : Các đoạn đã kết nối được nối với nhau bằng cách mở rộng các cạnh bên ngoài của chúng để kết nối tại một điểm duy nhất, với tác dụng lấp đầy một khu vực hình thoi bổ sung. Cài đặt này được thực hiện bởi thuộc tính `miterLimit` được giải thích bên dưới.
+  - : Connected segments are joined by extending their outside edges to connect at a single point, with the effect of filling an additional lozenge-shaped area. This setting is effected by the `miterLimit` property which is explained below.
 
-Ví dụ bên dưới vẽ ba đường dẫn khác nhau, thể hiện từng đường dẫn trong số ba cài đặt thuộc tính `lineJoin` này; đầu ra được hiển thị ở trên.
+The example below draws three different paths, demonstrating each of these three `lineJoin` property settings; the output is shown above.
 
 ```js
 function draw() {
@@ -348,23 +348,23 @@ draw();
 
 {{EmbedLiveSample("A_lineJoin_example", "", "160")}}
 
-### Bản demo của thuộc tính `miterLimit`
+### A demo of the `miterLimit` property
 
-Như bạn đã thấy trong ví dụ trước, khi nối hai đường bằng tùy chọn `miter`, các cạnh bên ngoài của hai đường nối sẽ được kéo dài đến điểm chúng gặp nhau. Đối với các đường có góc lớn với nhau thì điểm này cách điểm nối bên trong không xa. Tuy nhiên, khi góc giữa mỗi đường giảm, khoảng cách (chiều dài góc 1) giữa các điểm này sẽ tăng theo cấp số nhân.
+As you've seen in the previous example, when joining two lines with the `miter` option, the outside edges of the two joining lines are extended up to the point where they meet. For lines which are at large angles with each other, this point is not far from the inside connection point. However, as the angles between each line decrease, the distance (miter length) between these points increases exponentially.
 
-Thuộc tính `miterLimit` xác định khoảng cách giữa điểm kết nối bên ngoài và điểm kết nối bên trong. Nếu hai đường vượt quá giá trị này, thay vào đó, một đường nối góc xiên sẽ được vẽ. Lưu ý rằng độ dài góc tối đa là tích của chiều rộng đường được đo trong hệ tọa độ hiện tại, bằng giá trị của thuộc tính `miterLimit` này (có giá trị mặc định là 10,0 trong HTML {{HTMLElement("canvas")}}), do đó `miterLimit` có thể được đặt độc lập với tỷ lệ hiển thị hiện tại hoặc bất kỳ phép biến đổi affine nào của đường dẫn: nó chỉ ảnh hưởng đến hình dạng được hiển thị hiệu quả của các cạnh đường.
+The `miterLimit` property determines how far the outside connection point can be placed from the inside connection point. If two lines exceed this value, a bevel join gets drawn instead. Note that the maximum miter length is the product of the line width measured in the current coordinate system, by the value of this `miterLimit` property (whose default value is 10.0 in the HTML {{HTMLElement("canvas")}}), so the `miterLimit` can be set independently from the current display scale or any affine transforms of paths: it only influences the effectively rendered shape of line edges.
 
-Chính xác hơn, giới hạn góc cắt là tỷ lệ tối đa được phép của chiều dài phần mở rộng (trong canvas HTML, nó được đo giữa góc ngoài của các cạnh được nối của đường và điểm cuối chung của các đoạn kết nối được chỉ định trong đường dẫn) đến một nửa chiều rộng của đường. Nó có thể được định nghĩa tương đương là tỷ lệ tối đa được phép của khoảng cách giữa các điểm bên trong và bên ngoài của điểm giao nhau của các cạnh với tổng chiều rộng của đường. Khi đó, nó bằng cosec của một nửa góc trong tối thiểu của các đoạn kết nối bên dưới mà không có đường nối góc nào được hiển thị mà chỉ có đường nối góc xiên:
+More exactly, the miter limit is the maximum allowed ratio of the extension length (in the HTML canvas, it is measured between the outside corner of the joined edges of the line and the common endpoint of connecting segments specified in the path) to half the line width. It can equivalently be defined as the maximum allowed ratio of the distance between the inside and outside points of junction of edges, to the total line width. It is then equal to the cosecant of half the minimum inner angle of connecting segments below which no miter join will be rendered, but only a bevel join:
 
 - `miterLimit` = **max** `miterLength` / `lineWidth` = 1 / **sin** ( **min** _θ_ / 2 )
-- Giới hạn góc vát mặc định là 10,0 sẽ loại bỏ tất cả các góc vát đối với các góc nhọn dưới khoảng 11 độ.
-- Giới hạn góc vát bằng √2 ≈ 1.4142136 (làm tròn) sẽ loại bỏ các góc vát đối với tất cả các góc nhọn, chỉ giữ các mối nối góc vát đối với các góc tù hoặc góc vuông.
-- Giới hạn giới hạn bằng 1.0 là hợp lệ nhưng sẽ vô hiệu hóa tất cả các giới hạn.
-- Các giá trị dưới 1,0 không hợp lệ đối với giới hạn góc cắt.
+- The default miter limit of 10.0 will strip all miters for sharp angles below about 11 degrees.
+- A miter limit equal to √2 ≈ 1.4142136 (rounded up) will strip miters for all acute angles, keeping miter joins only for obtuse or right angles.
+- A miter limit equal to 1.0 is valid but will disable all miters.
+- Values below 1.0 are invalid for the miter limit.
 
-Đây là một bản demo nhỏ trong đó bạn có thể đặt `miterLimit` một cách linh hoạt và xem điều này ảnh hưởng như thế nào đến các hình dạng trên khung vẽ. Các đường màu xanh hiển thị điểm bắt đầu và điểm kết thúc của từng đường trong mẫu hình zig-zag.
+Here's a little demo in which you can set `miterLimit` dynamically and see how this effects the shapes on the canvas. The blue lines show where the start and endpoints for each of the lines in the zig-zag pattern are.
 
-Nếu bạn chỉ định giá trị `miterLimit` dưới 4.2 trong bản demo này, thì không có góc nhìn thấy nào sẽ kết hợp với phần mở rộng góc vát mà chỉ có một góc xiên nhỏ gần các đường màu xanh lam; với `miterLimit` trên 10, hầu hết các góc trong bản demo này phải nối với một góc vát cách xa các đường màu xanh lam và có chiều cao giảm dần giữa các góc từ trái sang phải vì chúng kết nối với các góc đang phát triển; với các giá trị trung gian, các góc ở phía bên trái sẽ chỉ nối với một góc xiên gần các đường màu xanh lam và các góc ở phía bên phải có phần mở rộng góc vát (cũng có chiều cao giảm dần).
+If you specify a `miterLimit` value below 4.2 in this demo, none of the visible corners will join with a miter extension, but only with a small bevel near the blue lines; with a `miterLimit` above 10, most corners in this demo should join with a miter far away from the blue lines, and whose height is decreasing between corners from left to right because they connect with growing angles; with intermediate values, the corners on the left side will only join with a bevel near the blue lines, and the corners on the right side with a miter extension (also with a decreasing height).
 
 ```js
 function draw() {
@@ -428,11 +428,11 @@ redraw.addEventListener("click", draw);
 
 {{EmbedLiveSample("A_demo_of_the_miterLimit_property", "", "180")}}
 
-### Sử dụng dấu gạch ngang
+### Using line dashes
 
-Phương thức `setLineDash` và thuộc tính `lineDashOffset` chỉ định mẫu gạch ngang cho các dòng. Phương thức `setLineDash` chấp nhận danh sách các số chỉ định khoảng cách để lần lượt vẽ một đường và một khoảng cách, đồng thời thuộc tính `lineDashOffset` đặt phần bù ở vị trí bắt đầu mẫu.
+The `setLineDash` method and the `lineDashOffset` property specify the dash pattern for lines. The `setLineDash` method accepts a list of numbers that specifies distances to alternately draw a line and a gap and the `lineDashOffset` property sets an offset where to start the pattern.
 
-Trong ví dụ này, chúng ta đang tạo hiệu ứng đàn kiến ​​diễu hành. Nó là một kỹ thuật hoạt ảnh thường thấy trong các công cụ lựa chọn của các chương trình đồ họa máy tính. Nó giúp người dùng phân biệt đường viền lựa chọn với nền hình ảnh bằng cách tạo hiệu ứng cho đường viền. Trong phần sau của hướng dẫn này, bạn có thể tìm hiểu cách thực hiện điều này và các [hoạt ảnh cơ bản](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations).
+In this example we are creating a marching ants effect. It is an animation technique often found in selection tools of computer graphics programs. It helps the user to distinguish the selection border from the image background by animating the border. In a later part of this tutorial, you can learn how to do this and other [basic animations](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations).
 
 ```html hidden
 <canvas id="canvas" width="111" height="111" role="presentation"></canvas>
@@ -463,30 +463,30 @@ march();
 
 {{EmbedLiveSample("Using_line_dashes")}}
 
-## Độ dốc
+## Gradients
 
-Cũng giống như bất kỳ chương trình vẽ thông thường nào, chúng ta có thể tô và vẽ các hình dạng bằng cách sử dụng các gradient tuyến tính, xuyên tâm và hình nón. Chúng tôi tạo đối tượng {{domxref("CanvasGradient")}} bằng cách sử dụng một trong các phương pháp sau. Sau đó chúng ta có thể gán đối tượng này cho thuộc tính `fillStyle` hoặc `strokeStyle`.
+Just like any normal drawing program, we can fill and stroke shapes using linear, radial and conic gradients. We create a {{domxref("CanvasGradient")}} object by using one of the following methods. We can then assign this object to the `fillStyle` or `strokeStyle` properties.
 
 - {{domxref("CanvasRenderingContext2D.createLinearGradient", "createLinearGradient(x1, y1, x2, y2)")}}
-  - : Tạo một đối tượng gradient tuyến tính có điểm bắt đầu là (`x1`, `y1`) và điểm kết thúc là (`x2`, `y2`).
+  - : Creates a linear gradient object with a starting point of (`x1`, `y1`) and an end point of (`x2`, `y2`).
 - {{domxref("CanvasRenderingContext2D.createRadialGradient", "createRadialGradient(x1, y1, r1, x2, y2, r2)")}}
-  - : Tạo một gradient xuyên tâm. Các tham số biểu thị hai vòng tròn, một vòng tròn có tâm tại (`x1`, `y1`) và bán kính `r1`, vòng còn lại có tâm tại (`x2`, `y2`) với bán kính `r2`.
+  - : Creates a radial gradient. The parameters represent two circles, one with its center at (`x1`, `y1`) and a radius of `r1`, and the other with its center at (`x2`, `y2`) with a radius of `r2`.
 - {{domxref("CanvasRenderingContext2D.createConicGradient", "createConicGradient(angle, x, y)")}}
-  - : Tạo đối tượng gradient hình nón có góc bắt đầu là `angle` tính bằng radian, tại vị trí (`x`, `y`).
+  - : Creates a conic gradient object with a starting angle of `angle` in radians, at the position (`x`, `y`).
 
-Ví dụ:
+For example:
 
 ```js
 const lineargradient = ctx.createLinearGradient(0, 0, 150, 150);
 const radialgradient = ctx.createRadialGradient(75, 75, 0, 75, 75, 100);
 ```
 
-Khi chúng ta đã tạo một đối tượng `CanvasGradient`, chúng ta có thể gán màu cho nó bằng cách sử dụng phương thức `addColorStop()`.
+Once we've created a `CanvasGradient` object we can assign colors to it by using the `addColorStop()` method.
 
 - {{domxref("CanvasGradient.addColorStop", "gradient.addColorStop(position, color)")}}
-  - : Tạo điểm dừng màu mới trên đối tượng `gradient`. `position` là một số từ 0,0 đến 1,0 và xác định vị trí tương đối của màu trong dải màu và đối số `color` phải là một chuỗi biểu thị CSS {{cssxref("&lt;color&gt;")}}, cho biết màu mà dải màu sẽ đạt đến ở điểm bù đó trong quá trình chuyển đổi.
+  - : Creates a new color stop on the `gradient` object. The `position` is a number between 0.0 and 1.0 and defines the relative position of the color in the gradient, and the `color` argument must be a string representing a CSS {{cssxref("&lt;color&gt;")}}, indicating the color the gradient should reach at that offset into the transition.
 
-Bạn có thể thêm bao nhiêu điểm dừng màu vào một dải màu tùy ý. Dưới đây là một gradient tuyến tính rất đơn giản từ trắng sang đen.
+You can add as many color stops to a gradient as you need. Below is a very simple linear gradient from white to black.
 
 ```js
 const lineargradient = ctx.createLinearGradient(0, 0, 150, 150);
@@ -494,9 +494,9 @@ lineargradient.addColorStop(0, "white");
 lineargradient.addColorStop(1, "black");
 ```
 
-### Ví dụ về `createLinearGradient`
+### A `createLinearGradient` example
 
-Trong ví dụ này, chúng ta sẽ tạo hai gradient khác nhau. Như bạn có thể thấy ở đây, cả thuộc tính `strokeStyle` và `fillStyle` đều có thể chấp nhận đối tượng `canvasGradient` làm đầu vào hợp lệ.
+In this example, we'll create two different gradients. As you can see here, both the `strokeStyle` and `fillStyle` properties can accept a `canvasGradient` object as valid input.
 
 ```js
 function draw() {
@@ -531,15 +531,15 @@ function draw() {
 draw();
 ```
 
-Đầu tiên là độ dốc nền. Như bạn có thể thấy, chúng tôi đã gán hai màu ở cùng một vị trí. Bạn làm điều này để thực hiện những chuyển đổi màu sắc thật sắc nét—trong trường hợp này là từ trắng sang xanh lục. Thông thường, việc bạn xác định các điểm dừng màu theo thứ tự nào không quan trọng, nhưng trong trường hợp đặc biệt này, điều đó có tác dụng đáng kể. Nếu bạn giữ các bài tập theo thứ tự bạn muốn chúng xuất hiện thì điều này sẽ không thành vấn đề.
+The first is a background gradient. As you can see, we assigned two colors at the same position. You do this to make very sharp color transitions—in this case from white to green. Normally, it doesn't matter in what order you define the color stops, but in this special case, it does significantly. If you keep the assignments in the order you want them to appear, this won't be a problem.
 
-Trong gradient thứ hai, chúng tôi không chỉ định màu bắt đầu (ở vị trí 0,0) vì nó không thực sự cần thiết vì nó sẽ tự động lấy màu của điểm dừng màu tiếp theo. Do đó, việc gán màu đen ở vị trí 0,5 sẽ tự động làm cho độ dốc, từ điểm bắt đầu đến điểm dừng này, có màu đen.
+In the second gradient, we didn't assign the starting color (at position 0.0) since it wasn't strictly necessary, because it will automatically assume the color of the next color stop. Therefore, assigning the black color at position 0.5 automatically makes the gradient, from the start to this stop, black.
 
 {{EmbedLiveSample("A_createLinearGradient_example", "", "160")}}
 
-### Ví dụ về `createRadialGradient`
+### A `createRadialGradient` example
 
-Trong ví dụ này, chúng tôi sẽ xác định bốn gradient xuyên tâm khác nhau. Bởi vì chúng ta có quyền kiểm soát các điểm bắt đầu và kết thúc của dải chuyển màu, nên chúng ta có thể đạt được các hiệu ứng phức tạp hơn bình thường trong các dải chuyển màu xuyên tâm "cổ điển" mà chúng ta thấy trong Photoshop (nghĩa là một dải chuyển màu có một điểm trung tâm duy nhất trong đó dải chuyển màu mở rộng ra bên ngoài theo hình tròn).
+In this example, we'll define four different radial gradients. Because we have control over the start and closing points of the gradient, we can achieve more complex effects than we would normally have in the "classic" radial gradients we see in, for instance, Photoshop (that is, a gradient with a single center point where the gradient expands outward in a circular shape).
 
 ```js
 function draw() {
@@ -586,15 +586,15 @@ function draw() {
 draw();
 ```
 
-Trong trường hợp này, chúng tôi đã dịch chuyển điểm bắt đầu một chút so với điểm kết thúc để đạt được hiệu ứng 3D hình cầu. Tốt nhất bạn nên cố gắng tránh để các vòng tròn bên trong và bên ngoài chồng lên nhau vì điều này sẽ dẫn đến những hiệu ứng kỳ lạ khó dự đoán.
+In this case, we've offset the starting point slightly from the end point to achieve a spherical 3D effect. It's best to try to avoid letting the inside and outside circles overlap because this results in strange effects which are hard to predict.
 
-Điểm dừng màu cuối cùng trong mỗi gradient trong số bốn gradient sử dụng màu hoàn toàn trong suốt. Nếu bạn muốn có sự chuyển đổi đẹp mắt từ điểm dừng màu này sang điểm dừng màu trước đó, cả hai màu phải bằng nhau. Điều này không được thể hiện rõ ràng trong mã vì nó sử dụng hai phương thức màu CSS khác nhau để minh họa, nhưng ở gradient đầu tiên là `#019F62 = rgb(1 159 98 / 100%)`.
+The last color stop in each of the four gradients uses a fully transparent color. If you want to have a nice transition from this to the previous color stop, both colors should be equal. This isn't very obvious from the code because it uses two different CSS color methods as a demonstration, but in the first gradient `#019F62 = rgb(1 159 98 / 100%)`.
 
 {{EmbedLiveSample("A_createRadialGradient_example", "", "160")}}
 
-### Ví dụ về `createConicGradient`
+### A `createConicGradient` example
 
-Trong ví dụ này, chúng tôi sẽ xác định hai gradient hình nón khác nhau. Một gradient hình nón khác với một gradient xuyên tâm ở chỗ, thay vì tạo ra các vòng tròn, nó xoay quanh một điểm.
+In this example, we'll define two different conic gradients. A conic gradient differs from a radial gradient as, instead of creating circles, it circles around a point.
 
 ```js
 function draw() {
@@ -634,31 +634,31 @@ function draw() {
 draw();
 ```
 
-Dải màu chuyển màu đầu tiên được đặt ở giữa hình chữ nhật đầu tiên và di chuyển điểm dừng màu xanh lục ở đầu, sang điểm dừng màu trắng ở cuối. Góc bắt đầu ở 2 radian, điều này dễ nhận thấy vì đường đầu/cuối hướng về phía đông nam.
+The first gradient is positioned in the center of the first rectangle and moves a green color stop at the start, to a white one at the end. The angle starts at 2 radians, which is noticeable because of the beginning/end line pointing south east.
 
-Dải màu chuyển sắc thứ hai cũng được đặt ở giữa hình chữ nhật thứ hai. Cái này có nhiều điểm dừng màu, xen kẽ từ đen sang trắng ở mỗi phần tư vòng quay. Điều này mang lại cho chúng ta hiệu ứng ca rô.
+The second gradient is also positioned at the center of the second rectangle. This one has multiple color stops, alternating from black to white at each quarter of the rotation. This gives us the checkered effect.
 
 {{EmbedLiveSample("A_createConicGradient_example", "", "160")}}
 
-## Mẫu
+## Patterns
 
-Trong một trong các ví dụ ở trang trước, chúng ta đã sử dụng một loạt vòng lặp để tạo ra một mẫu hình ảnh. Tuy nhiên, có một phương pháp đơn giản hơn nhiều: phương pháp `createPattern()`.
+In one of the examples on the previous page, we used a series of loops to create a pattern of images. There is, however, a much simpler method: the `createPattern()` method.
 
 - {{domxref("CanvasRenderingContext2D.createPattern", "createPattern(image, type)")}}
-  - : Tạo và trả về một đối tượng mẫu canvas mới. `image` là nguồn của hình ảnh (nghĩa là {{domxref("HTMLImageElement")}}, {{domxref("SVGImageElement")}}, {{domxref("HTMLCanvasElement")}} khác hoặc {{domxref("OffscreenCanvas")}}, {{domxref("HTMLVideoElement")}} hoặc {{domxref("VideoFrame")}} hoặc {{domxref("ImageBitmap")}}). `type` là một chuỗi chỉ ra cách sử dụng hình ảnh.
+  - : Creates and returns a new canvas pattern object. `image` is the source of the image (that is, an {{domxref("HTMLImageElement")}}, a {{domxref("SVGImageElement")}}, another {{domxref("HTMLCanvasElement")}} or an {{domxref("OffscreenCanvas")}}, an {{domxref("HTMLVideoElement")}} or a {{domxref("VideoFrame")}}, or an {{domxref("ImageBitmap")}}). `type` is a string indicating how to use the image.
 
-Loại chỉ định cách sử dụng hình ảnh để tạo mẫu và phải là một trong các giá trị chuỗi sau:
+The type specifies how to use the image in order to create the pattern, and must be one of the following string values:
 
 - `repeat`
-  - : Xếp hình ảnh theo cả chiều dọc và chiều ngang.
+  - : Tiles the image in both vertical and horizontal directions.
 - `repeat-x`
-  - : Xếp hình ảnh theo chiều ngang nhưng không xếp theo chiều dọc.
+  - : Tiles the image horizontally but not vertically.
 - `repeat-y`
-  - : Xếp hình ảnh theo chiều dọc nhưng không xếp theo chiều ngang.
+  - : Tiles the image vertically but not horizontally.
 - `no-repeat`
-  - : Không xếp hình ảnh. Nó chỉ được sử dụng một lần.
+  - : Doesn't tile the image. It's used only once.
 
-Chúng tôi sử dụng phương pháp này để tạo đối tượng {{domxref("CanvasPattern")}} rất giống với các phương pháp chuyển màu mà chúng tôi đã thấy ở trên. Sau khi tạo mẫu, chúng ta có thể gán mẫu đó cho thuộc tính `fillStyle` hoặc `strokeStyle`. Ví dụ:
+We use this method to create a {{domxref("CanvasPattern")}} object which is very similar to the gradient methods we've seen above. Once we've created a pattern, we can assign it to the `fillStyle` or `strokeStyle` properties. For example:
 
 ```js
 const img = new Image();
@@ -667,11 +667,11 @@ const pattern = ctx.createPattern(img, "repeat");
 ```
 
 > [!NOTE]
-> Giống như phương pháp `drawImage()`, bạn phải đảm bảo hình ảnh bạn sử dụng đã được tải trước khi gọi phương thức này, nếu không mẫu có thể được vẽ không chính xác.
+> Like with the `drawImage()` method, you must make sure the image you use is loaded before calling this method or the pattern may be drawn incorrectly.
 
-### Ví dụ về `createPattern`
+### A `createPattern` example
 
-Trong ví dụ cuối cùng này, chúng tôi sẽ tạo một mẫu để gán cho thuộc tính `fillStyle`. Điều duy nhất đáng chú ý là việc sử dụng trình xử lý `onload` của hình ảnh. Điều này nhằm đảm bảo hình ảnh được tải trước khi được gán cho mẫu.
+In this last example, we'll create a pattern to assign to the `fillStyle` property. The only thing worth noting is the use of the image's `onload` handler. This is to make sure the image is loaded before it is assigned to the pattern.
 
 ```js
 function draw() {
@@ -699,31 +699,31 @@ draw();
 
 {{EmbedLiveSample("A_createPattern_example", "", "160")}}
 
-## Bóng tối
+## Shadows
 
-Việc sử dụng bóng chỉ bao gồm bốn thuộc tính:
+Using shadows involves just four properties:
 
 - {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX = float")}}
-  - : Cho biết khoảng cách theo chiều ngang mà bóng sẽ kéo dài từ đối tượng. Giá trị này không bị ảnh hưởng bởi ma trận chuyển đổi. Mặc định là 0.
+  - : Indicates the horizontal distance the shadow should extend from the object. This value isn't affected by the transformation matrix. The default is 0.
 - {{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY = float")}}
-  - : Cho biết khoảng cách theo chiều dọc mà bóng sẽ kéo dài từ vật thể. Giá trị này không bị ảnh hưởng bởi ma trận chuyển đổi. Mặc định là 0.
+  - : Indicates the vertical distance the shadow should extend from the object. This value isn't affected by the transformation matrix. The default is 0.
 - {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur = float")}}
-  - : Cho biết kích thước của hiệu ứng làm mờ; giá trị này không tương ứng với một số pixel và không bị ảnh hưởng bởi ma trận chuyển đổi hiện tại. Giá trị mặc định là 0.
+  - : Indicates the size of the blurring effect; this value doesn't correspond to a number of pixels and is not affected by the current transformation matrix. The default value is 0.
 - {{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor = color")}}
-  - : Giá trị màu CSS tiêu chuẩn biểu thị màu của hiệu ứng đổ bóng; theo mặc định, nó có màu đen hoàn toàn trong suốt.
+  - : A standard CSS color value indicating the color of the shadow effect; by default, it is fully-transparent black.
 
-Các thuộc tính `shadowOffsetX` và `shadowOffsetY` cho biết bóng sẽ kéo dài bao xa so với đối tượng theo hướng X và Y; những giá trị này không bị ảnh hưởng bởi ma trận biến đổi hiện tại. Sử dụng các giá trị âm để làm cho bóng kéo dài lên hoặc sang trái và các giá trị dương để làm cho bóng kéo dài xuống hoặc sang phải. Cả hai đều là 0 theo mặc định.
+The properties `shadowOffsetX` and `shadowOffsetY` indicate how far the shadow should extend from the object in the X and Y directions; these values aren't affected by the current transformation matrix. Use negative values to cause the shadow to extend up or to the left, and positive values to cause the shadow to extend down or to the right. These are both 0 by default.
 
-Thuộc tính `shadowBlur` cho biết kích thước của hiệu ứng làm mờ; giá trị này không tương ứng với một số pixel và không bị ảnh hưởng bởi ma trận chuyển đổi hiện tại. Giá trị mặc định là 0.
+The `shadowBlur` property indicates the size of the blurring effect; this value doesn't correspond to a number of pixels and is not affected by the current transformation matrix. The default value is 0.
 
-Thuộc tính `shadowColor` là giá trị màu CSS tiêu chuẩn cho biết màu của hiệu ứng đổ bóng; theo mặc định, nó có màu đen hoàn toàn trong suốt.
+The `shadowColor` property is a standard CSS color value indicating the color of the shadow effect; by default, it is fully-transparent black.
 
 > [!NOTE]
-> Bóng chỉ được vẽ cho `source-over` [các hoạt động tổng hợp](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing).
+> Shadows are only drawn for `source-over` [compositing operations](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing).
 
-### Ví dụ về văn bản bị đổ bóng
+### A shadowed text example
 
-Ví dụ này vẽ một chuỗi văn bản có hiệu ứng đổ bóng.
+This example draws a text string with a shadowing effect.
 
 ```js
 function draw() {
@@ -750,20 +750,20 @@ draw();
 
 {{EmbedLiveSample("A_shadowed_text_example")}}
 
-Chúng ta sẽ xem xét thuộc tính `font` và phương pháp `fillText` trong chương tiếp theo về [vẽ văn bản](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text).
+We will look at the `font` property and `fillText` method in the next chapter about [drawing text](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text).
 
-## Quy tắc điền canvas
+## Canvas fill rules
 
-Khi sử dụng `fill` (hoặc {{domxref("CanvasRenderingContext2D.clip", "clip")}} và {{domxref("CanvasRenderingContext2D.isPointInPath", "isPointInPath")}}), bạn có thể tùy ý cung cấp thuật toán quy tắc điền để xác định xem một điểm nằm trong hay ngoài đường dẫn và do đó liệu nó có được lấp đầy hay không. Điều này rất hữu ích khi một đường dẫn giao nhau hoặc được lồng vào nhau.
+When using `fill` (or {{domxref("CanvasRenderingContext2D.clip", "clip")}} and {{domxref("CanvasRenderingContext2D.isPointInPath", "isPointInPath")}}) you can optionally provide a fill rule algorithm by which to determine if a point is inside or outside a path and thus if it gets filled or not. This is useful when a path intersects itself or is nested.
 
-Có thể có hai giá trị:
+Two values are possible:
 
 - `nonzero`
-  - : [Quy tắc cuộn dây khác 0](https://en.wikipedia.org/wiki/Nonzero-rule), là quy tắc mặc định.
+  - : The [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule), which is the default rule.
 - `evenodd`
-  - : [Quy tắc cuộn dây chẵn-lẻ](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
+  - : The [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
 
-Trong ví dụ này, chúng tôi đang sử dụng quy tắc `evenodd`.
+In this example we are using the `evenodd` rule.
 
 ```js
 function draw() {

@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính textAlign"
-short-title: văn bảnCăn chỉnh
+title: "CanvasRenderingContext2D: textAlign property"
+short-title: textAlign
 slug: Web/API/CanvasRenderingContext2D/textAlign
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.textAlign
@@ -8,34 +8,41 @@ browser-compat: api.CanvasRenderingContext2D.textAlign
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.textAlign`** của API Canvas 2D chỉ định cách căn chỉnh văn bản hiện tại được sử dụng khi vẽ văn bản.
+The
+**`CanvasRenderingContext2D.textAlign`**
+property of the Canvas 2D API specifies the current text alignment used when drawing
+text.
 
-Căn chỉnh liên quan đến giá trị`x`của phương thức{{domxref("CanvasRenderingContext2D.fillText", "fillText()")}}. Ví dụ: nếu`textAlign`là`"center"`thì cạnh trái của văn bản sẽ là`x - (textWidth / 2)`.
+The alignment is relative to the `x` value of the
+{{domxref("CanvasRenderingContext2D.fillText", "fillText()")}} method. For example, if
+`textAlign` is `"center"`, then the text's left edge will be at
+`x - (textWidth / 2)`.
 
-## Giá trị
+## Value
 
-Các giá trị có thể:
+Possible values:
 
 - `"left"`
-  - : Văn bản được căn trái.
+  - : The text is left-aligned.
 - `"right"`
-  - : Văn bản được căn phải.
+  - : The text is right-aligned.
 - `"center"`
-  - : Văn bản được căn giữa.
+  - : The text is centered.
 - `"start"`
-  - : Văn bản được căn chỉnh ở đầu dòng thông thường (căn trái cho từ trái sang phải
-    ngôn ngữ, căn phải cho các ngôn ngữ từ phải sang trái).
+  - : The text is aligned at the normal start of the line (left-aligned for left-to-right
+    locales, right-aligned for right-to-left locales).
 - `"end"`
-  - : Văn bản được căn chỉnh ở cuối dòng thông thường (căn phải cho từ trái sang phải
-    ngôn ngữ, căn trái cho ngôn ngữ từ phải sang trái).
+  - : The text is aligned at the normal end of the line (right-aligned for left-to-right
+    locales, left-aligned for right-to-left locales).
 
-Giá trị mặc định là`"start"`.
+The default value is `"start"`.
 
-## Ví dụ
+## Examples
 
-### Căn chỉnh văn bản chung
+### General text alignment
 
-Ví dụ này minh họa ba giá trị "vật lý" của thuộc tính`textAlign`:`"left"`,`"center"`và`"right"`.
+This example demonstrates the three "physical" values of the `textAlign`
+property: `"left"`, `"center"`, and `"right"`.
 
 #### HTML
 
@@ -68,13 +75,17 @@ ctx.textAlign = "right";
 ctx.fillText("right-aligned", x, 130);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('General_text_alignment', 700, 180) }}
 
-### Căn chỉnh văn bản phụ thuộc vào hướng
+### Direction-dependent text alignment
 
-Ví dụ này minh họa hai giá trị phụ thuộc vào hướng của thuộc tính`textAlign`:`"start"`và`"end"`. Lưu ý rằng thuộc tính{{domxref("CanvasRenderingContext2D.direction", "direction")}}được chỉ định thủ công là`"ltr"`, mặc dù đây cũng là mặc định cho văn bản tiếng Anh.
+This example demonstrates the two direction-dependent values of the
+`textAlign` property: `"start"` and `"end"`. Note that
+the {{domxref("CanvasRenderingContext2D.direction", "direction")}} property is manually
+specified as `"ltr"`, although this is also the default for English-language
+text.
 
 #### HTML
 
@@ -98,18 +109,18 @@ ctx.textAlign = "end";
 ctx.fillText("End-aligned", canvas.width, 120);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Direction-dependent_text_alignment', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}

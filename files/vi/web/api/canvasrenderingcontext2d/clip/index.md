@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức clip()"
+title: "CanvasRenderingContext2D: clip() method"
 short-title: clip()
 slug: Web/API/CanvasRenderingContext2D/clip
 page-type: web-api-instance-method
@@ -8,27 +8,29 @@ browser-compat: api.CanvasRenderingContext2D.clip
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.clip()`** của API Canvas 2D biến đường dẫn hiện tại hoặc đường dẫn đã cho thành phần cắt hiện tại
-khu vực. Vùng cắt trước đó, nếu có, được giao với vùng hiện tại hoặc đã cho
-đường dẫn để tạo vùng cắt mới.
+The
+**`CanvasRenderingContext2D.clip()`**
+method of the Canvas 2D API turns the current or given path into the current clipping
+region. The previous clipping region, if any, is intersected with the current or given
+path to create the new clipping region.
 
-Trong hình ảnh bên dưới, đường viền màu đỏ tượng trưng cho vùng cắt có hình dạng giống như một ngôi sao.
-Chỉ những phần của mẫu bàn cờ nằm trong vùng cắt mới được
-được vẽ.
+In the image below, the red outline represents a clipping region shaped like a star.
+Only those parts of the checkerboard pattern that are within the clipping region get
+drawn.
 
-! [Star-shaped clipping region](canvas_clipping_path.png)
+![Star-shaped clipping region](canvas_clipping_path.png)
 
-> [!LƯU Ý]
-> Hãy lưu ý rằng vùng cắt chỉ được xây dựng từ
-> các hình dạng được thêm vào đường dẫn. Nó không hoạt động với các hình dạng nguyên thủy được vẽ trực tiếp vào
-> canvas, chẳng hạn như {{domxref("CanvasRenderingContext2D.fillRect()","fillRect()")}}.
-> Thay vào đó, bạn phải sử dụng {{domxref("CanvasRenderingContext2D.rect()","rect()")}} để
-> thêm một hình chữ nhật vào đường path trước khi gọi `clip()`.
+> [!NOTE]
+> Be aware that the clipping region is only constructed from
+> shapes added to the path. It doesn't work with shape primitives drawn directly to the
+> canvas, such as {{domxref("CanvasRenderingContext2D.fillRect()","fillRect()")}}.
+> Instead, you'd have to use {{domxref("CanvasRenderingContext2D.rect()","rect()")}} to
+> add a rectangular shape to the path before calling `clip()`.
 
-> [!LƯU Ý]
-> Đường dẫn clip không thể được hoàn nguyên trực tiếp. Bạn phải lưu trạng thái canvas của mình bằng {{domxref("CanvasRenderingContext2D/save", "save()")}} trước khi gọi `clip()` và khôi phục nó sau khi bạn vẽ xong vùng bị cắt bằng {{domxref("CanvasRenderingContext2D/restore", "restore()")}}.
+> [!NOTE]
+> Clip paths cannot be reverted directly. You must save your canvas state using {{domxref("CanvasRenderingContext2D/save", "save()")}} before calling `clip()`, and restore it once you have finished drawing in the clipped area using {{domxref("CanvasRenderingContext2D/restore", "restore()")}}.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 clip()
@@ -37,31 +39,31 @@ clip(fillRule)
 clip(path, fillRule)
 ```
 
-### Tham số
+### Parameters
 
 - `fillRule`
-- : Thuật toán xác định xem một điểm nằm trong hay ngoài phần cắt
-  khu vực. Các giá trị có thể:
-- `nonzero`
-- : [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule).
-  Quy tắc mặc định.
-- `evenodd`
-- : [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
+  - : The algorithm by which to determine if a point is inside or outside the clipping
+    region. Possible values:
+    - `nonzero`
+      - : The [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule).
+        Default rule.
+    - `evenodd`
+      - : The [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
 
 - `path`
-- : Đường dẫn {{domxref("Path2D")}} được sử dụng làm vùng cắt.
+  - : A {{domxref("Path2D")}} path to use as the clipping region.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Một vùng cắt đơn giản
+### A simple clipping region
 
-Ví dụ này sử dụng phương thức `clip()` để tạo vùng cắt theo
-thành hình cung tròn. Hai hình chữ nhật sau đó được vẽ; chỉ những phần bên trong
-vùng cắt được hiển thị.
+This example uses the `clip()` method to create a clipping region according
+to the shape of a circular arc. Two rectangles are then drawn; only those parts within
+the clipping region are rendered.
 
 #### HTML
 
@@ -71,7 +73,7 @@ vùng cắt được hiển thị.
 
 #### JavaScript
 
-Vùng cắt là một hình tròn đầy đủ, có tâm ở (100, 75) và bán kính là 50.
+The clipping region is a full circle, with its center at (100, 75), and a radius of 50.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -89,16 +91,16 @@ ctx.fillStyle = "orange";
 ctx.fillRect(0, 0, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('A_simple_clipping_region', 700, 180) }}
 
-### Chỉ định đường dẫn và fillRule
+### Specifying a path and a fillRule
 
-Ví dụ này lưu hai hình chữ nhật vào đối tượng Path2D, sau đó tạo thành đối tượng hiện tại
-cắt vùng bằng phương thức `clip()`. Quy tắc`"evenodd"`
-tạo một lỗ nơi các hình chữ nhật cắt giao nhau; theo mặc định (với
-quy tắc `"nonzero"`), sẽ không có lỗ.
+This example saves two rectangles to a Path2D object, which is then made the current
+clipping region using the `clip()` method. The `"evenodd"` rule
+creates a hole where the clipping rectangles intersect; by default (with the
+`"nonzero"` rule), there would be no hole.
 
 #### HTML
 
@@ -123,16 +125,17 @@ ctx.fillStyle = "blue";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Specifying_a_path_and_a_fillRule', 700, 180) }}
 
-### Tạo vùng cắt phức tạpVí dụ này sử dụng hai đường dẫn, hình tròn và hình vuông để tạo một phần cắt phức tạp
+### Creating a complex clipping region
 
-khu vực. Phương thức `clip()` được gọi hai lần, lần đầu tiên để thiết lập dòng điện
-cắt vùng vào vòng tròn bằng cách sử dụng đối tượng `Path2D`, sau đó lại cắt
-giao vùng cắt hình tròn với một hình vuông. Vùng cắt cuối cùng là một hình dạng
-biểu thị giao điểm của hình tròn và hình vuông.
+This example uses two paths, a circle and a square to create a complex clipping
+region. The `clip()` method is called twice, first to set the current
+clipping region to the circle using a `Path2D` object, then again to
+intersect the circle clipping region with a square. The final clipping region is a shape
+representing the intersection of the circle and the square.
 
 #### HTML
 
@@ -162,18 +165,18 @@ ctx.fillStyle = "blue";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Creating_a_complex_clipping_region', 300, 150) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

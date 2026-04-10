@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức createConicGradient()"
+title: "CanvasRenderingContext2D: createConicGradient() method"
 short-title: createConicGradient()
 slug: Web/API/CanvasRenderingContext2D/createConicGradient
 page-type: web-api-instance-method
@@ -8,37 +8,37 @@ browser-compat: api.CanvasRenderingContext2D.createConicGradient
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.createConicGradient()`** của API Canvas 2D tạo dải màu xung quanh một điểm có tọa độ nhất định.
+The **`CanvasRenderingContext2D.createConicGradient()`** method of the Canvas 2D API creates a gradient around a point with given coordinates.
 
-Phương thức này trả về một hình nón {{domxref("CanvasGradient")}}. Để áp dụng cho một hình dạng, trước tiên gradient phải được gán cho thuộc tính {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} hoặc {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}.
+This method returns a conic {{domxref("CanvasGradient")}}. To be applied to a shape, the gradient must first be assigned to the {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} or {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}} properties.
 
-> [!LƯU Ý]
-> Tọa độ gradient có tính toàn cục, tức là liên quan đến không gian tọa độ hiện tại. Khi áp dụng cho một hình dạng, tọa độ KHÔNG liên quan đến tọa độ của hình dạng đó.
+> [!NOTE]
+> Gradient coordinates are global, i.e., relative to the current coordinate space. When applied to a shape, the coordinates are NOT relative to the shape's coordinates.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 createConicGradient(startAngle, x, y)
 ```
 
-### Tham số
+### Parameters
 
 - `startAngle`
-- : Góc bắt đầu chuyển màu, tính bằng radian. Góc bắt đầu từ một đường thẳng nằm ngang ngay từ tâm và tiến hành theo chiều kim đồng hồ.
+  - : The angle at which to begin the gradient, in radians. The angle starts from a line going horizontally right from the center, and proceeds clockwise.
 - `x`
-- : Tọa độ trục x của tâm của gradient.
+  - : The x-axis coordinate of the center of the gradient.
 - `y`
-- : Tọa độ trục y của tâm của gradient.
+  - : The y-axis coordinate of the center of the gradient.
 
-### Giá trị trả về
+### Return value
 
-Hình nón {{domxref("CanvasGradient")}}.
+A conic {{domxref("CanvasGradient")}}.
 
-## Ví dụ
+## Examples
 
-### Tô hình chữ nhật bằng gradient hình nón
+### Filling a rectangle with a conic gradient
 
-Ví dụ này khởi tạo một gradient hình nón bằng phương thức `createConicGradient()`. Sau đó, năm điểm dừng màu nằm giữa tọa độ trung tâm sẽ được tạo. Cuối cùng, gradient được gán cho bối cảnh canvas và được hiển thị thành hình chữ nhật được tô đầy.
+This example initializes a conic gradient using the `createConicGradient()` method. Five color stops between around the center coordinate are then created. Finally, the gradient is assigned to the canvas context, and is rendered to a filled rectangle.
 
 #### HTML
 
@@ -69,21 +69,21 @@ ctx.fillStyle = gradient;
 ctx.fillRect(20, 20, 200, 200);
 ```
 
-#### Kết quả hình chữ nhật
+#### Rectangle result
 
 {{ EmbedLiveSample('Filling_a_rectangle_with_a_conic_gradient', 240, 240) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasGradient")}}
 - {{domxref("CanvasRenderingContext2D.createLinearGradient()")}}
 - {{domxref("CanvasRenderingContext2D.createRadialGradient()")}}

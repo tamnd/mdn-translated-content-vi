@@ -1,40 +1,40 @@
 ---
-title: Tổng hợp và cắt xén
+title: Compositing và clipping
 slug: Web/API/Canvas_API/Tutorial/Compositing
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Transformations", "Web/API/Canvas_API/Tutorial/Basic_animations")}}
 
-Trong tất cả [ví dụ trước](/en-US/docs/Web/API/Canvas_API/Tutorial/Transformations) của chúng tôi, các hình dạng luôn được vẽ chồng lên nhau. Điều này là quá đủ cho hầu hết các tình huống, nhưng nó hạn chế thứ tự xây dựng các hình dạng tổng hợp. Tuy nhiên, chúng ta có thể thay đổi hành vi này bằng cách đặt thuộc tính `globalCompositeOperation`. Ngoài ra, thuộc tính `clip` cho phép chúng ta ẩn những phần không mong muốn của hình dạng.
+In all of our [previous examples](/en-US/docs/Web/API/Canvas_API/Tutorial/Transformations), shapes were always drawn one on top of the other. This is more than adequate for most situations, but it limits the order in which composite shapes are built. We can, however, change this behavior by setting the `globalCompositeOperation` property. In addition, the `clip` property allows us to hide unwanted parts of shapes.
 
 ## `globalCompositeOperation`
 
-Chúng ta không chỉ có thể vẽ các hình dạng mới đằng sau các hình dạng hiện có mà còn có thể sử dụng nó để che đi các khu vực nhất định, xóa các phần khỏi canvas (không giới hạn ở các hình chữ nhật như phương pháp {{domxref("CanvasRenderingContext2D.clearRect", "clearRect()")}}), v.v.
+We can not only draw new shapes behind existing shapes but we can also use it to mask off certain areas, clear sections from the canvas (not limited to rectangles like the {{domxref("CanvasRenderingContext2D.clearRect", "clearRect()")}} method does) and more.
 
 - {{domxref("CanvasRenderingContext2D.globalCompositeOperation", "globalCompositeOperation = type")}}
-  - : Điều này đặt loại thao tác tổng hợp sẽ áp dụng khi vẽ các hình dạng mới, trong đó loại là một chuỗi xác định thao tác tổng hợp nào trong số mười hai thao tác tổng hợp sẽ sử dụng.
+  - : This sets the type of compositing operation to apply when drawing new shapes, where type is a string identifying which of the twelve compositing operations to use.
 
-## Cắt đường dẫn
+## Clipping paths
 
-Đường cắt giống như một hình dạng canvas bình thường nhưng nó hoạt động như một mặt nạ để ẩn những phần không mong muốn của hình dạng. Điều này được hiển thị trong hình ảnh dưới đây. Hình ngôi sao màu đỏ là đường cắt của chúng ta. Mọi thứ nằm ngoài đường dẫn này sẽ không được vẽ trên canvas.
+A clipping path is like a normal canvas shape but it acts as a mask to hide unwanted parts of shapes. This is visualized in the image below. The red star shape is our clipping path. Everything that falls outside of this path won't get drawn on the canvas.
 
-![Một bức vẽ có ngôi sao được viền màu đỏ. Bên trong ngôi sao trong suốt, được thể hiện bằng các ô lưới bên trong ngôi sao hiện rõ trong khi các ô lưới nằm bên ngoài ngôi sao bị mờ. ](canvas_clipping_path.png)
+![A canvas with a star outlined in red color. The inside of the star is transparent, as portrayed by the grid squares inside the star being clearly visible whereas the grid squares lying outside the star are blurred. ](canvas_clipping_path.png)
 
-Nếu chúng ta so sánh các đường dẫn cắt với thuộc tính `globalCompositeOperation` mà chúng ta đã thấy ở trên, thì chúng ta sẽ thấy hai chế độ tổng hợp đạt được hiệu ứng ít nhiều giống nhau trong `source-in` và `source-atop`. Sự khác biệt quan trọng nhất giữa hai đường này là các đường cắt không bao giờ thực sự được vẽ vào canvas và đường cắt không bao giờ bị ảnh hưởng khi thêm các hình dạng mới. Điều này làm cho các đường cắt trở nên lý tưởng để vẽ nhiều hình dạng trong một khu vực hạn chế.
+If we compare clipping paths to the `globalCompositeOperation` property we've seen above, we see two compositing modes that achieve more or less the same effect in `source-in` and `source-atop`. The most important differences between the two are that clipping paths are never actually drawn to the canvas and the clipping path is never affected by adding new shapes. This makes clipping paths ideal for drawing multiple shapes in a restricted area.
 
-Trong chương về [vẽ hình](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes), tôi chỉ đề cập đến các phương pháp `stroke()` và `fill()`, nhưng có một phương pháp thứ ba mà chúng ta có thể sử dụng với các đường dẫn, được gọi là `clip()`.
+In the chapter about [drawing shapes](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes) I only mentioned the `stroke()` and `fill()` methods, but there's a third method we can use with paths, called `clip()`.
 
 - {{domxref("CanvasRenderingContext2D.clip", "clip()")}}
-  - : Biến đường dẫn hiện đang được xây dựng thành đường cắt hiện tại.
+  - : Turns the path currently being built into the current clipping path.
 
-Bạn sử dụng `clip()` thay vì `closePath()` để đóng một đường dẫn và biến nó thành một đường cắt thay vì vuốt hoặc lấp đầy đường dẫn.
+You use `clip()` instead of `closePath()` to close a path and turn it into a clipping path instead of stroking or filling the path.
 
-Theo mặc định, phần tử {{HTMLElement("canvas")}} có đường cắt có cùng kích thước với chính canvas. Nói cách khác, không có sự cắt xén nào xảy ra.
+By default the {{HTMLElement("canvas")}} element has a clipping path that's the exact same size as the canvas itself. In other words, no clipping occurs.
 
-### Ví dụ về `clip`
+### A `clip` example
 
-Trong ví dụ này, chúng tôi sẽ sử dụng đường cắt hình tròn để hạn chế việc vẽ một tập hợp các ngôi sao ngẫu nhiên ở một vùng cụ thể.
+In this example, we'll use a circular clipping path to restrict the drawing of a set of random stars to a particular region.
 
 ```js
 function draw() {
@@ -97,17 +97,17 @@ function drawStar(ctx, r) {
 draw();
 ```
 
-Trong một vài dòng mã đầu tiên, chúng ta vẽ một hình chữ nhật màu đen có kích thước bằng canvas làm phông nền, sau đó dịch điểm gốc về giữa. Tiếp theo, chúng ta tạo đường cắt hình tròn bằng cách vẽ một cung và gọi `clip()`. Đường dẫn cắt cũng là một phần của trạng thái lưu canvas. Nếu chúng ta muốn giữ lại đường cắt ban đầu, chúng ta có thể lưu trạng thái canvas trước khi tạo đường dẫn mới.
+In the first few lines of code, we draw a black rectangle the size of the canvas as a backdrop, then translate the origin to the center. Next, we create the circular clipping path by drawing an arc and calling `clip()`. Clipping paths are also part of the canvas save state. If we wanted to keep the original clipping path we could have saved the canvas state before creating the new one.
 
-Mọi thứ được vẽ sau khi tạo đường cắt sẽ chỉ xuất hiện bên trong đường dẫn đó. Bạn có thể thấy rõ điều này trong gradient tuyến tính được vẽ tiếp theo. Sau đó, một tập hợp gồm 50 ngôi sao được định vị và chia tỷ lệ ngẫu nhiên sẽ được rút ra bằng cách sử dụng chức năng `drawStar()` tùy chỉnh. Một lần nữa các ngôi sao chỉ xuất hiện bên trong đường cắt đã xác định.
+Everything that's drawn after creating the clipping path will only appear inside that path. You can see this clearly in the linear gradient that's drawn next. After this a set of 50 randomly positioned and scaled stars is drawn, using the custom `drawStar()` function. Again the stars only appear inside the defined clipping path.
 
 {{EmbedLiveSample("A_clip_example", "", "160")}}
 
-### Đường cắt ngược
+### Inverse clipping path
 
-Không có cái gọi là mặt nạ cắt ngược. Tuy nhiên, chúng ta có thể xác định một mặt nạ lấp đầy toàn bộ canvas bằng một hình chữ nhật và có một lỗ trên đó dành cho những phần mà bạn muốn bỏ qua. Khi [vẽ hình có lỗ](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#shapes_with_holes), chúng ta cần vẽ lỗ theo hướng ngược lại với hình bên ngoài. Trong ví dụ dưới đây, chúng ta đục một lỗ trên bầu trời.
+There is no such thing as an inverse clipping mask. However, we can define a mask that fills the entire canvas with a rectangle and has a hole in it for the parts that you want to skip. When [drawing a shape with a hole](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#shapes_with_holes), we need to draw the hole in the opposite direction as the outer shape. In the example below we punch a hole into the sky.
 
-Hình chữ nhật không có hướng vẽ nhưng nó hoạt động như thể chúng ta vẽ theo chiều kim đồng hồ. Theo mặc định, lệnh cung cũng đi theo chiều kim đồng hồ, nhưng chúng ta có thể thay đổi hướng của nó bằng đối số cuối cùng.
+A rectangle does not have a drawing direction, but it behaves as if we drew it clockwise. By default, the arc command also goes clockwise, but we can change its direction with the last argument.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>

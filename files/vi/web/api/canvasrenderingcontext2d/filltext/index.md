@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức fillText()"
-short-title: điền văn bản()
+title: "CanvasRenderingContext2D: fillText() method"
+short-title: fillText()
 slug: Web/API/CanvasRenderingContext2D/fillText
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.fillText
@@ -8,49 +8,68 @@ browser-compat: api.CanvasRenderingContext2D.fillText
 
 {{APIRef("HTML DOM")}}
 
-Phương thức {{domxref("CanvasRenderingContext2D")}}**`fillText()`**, một phần của API Canvas 2D, vẽ một chuỗi văn bản tại tọa độ đã chỉ định, điền các ký tự của chuỗi bằng {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} hiện tại. Tham số tùy chọn cho phép chỉ định chiều rộng tối đa cho văn bản được hiển thị mà {{Glossary("user agent")}} sẽ đạt được bằng cách thu gọn văn bản hoặc bằng cách sử dụng cỡ chữ thấp hơn.
+The {{domxref("CanvasRenderingContext2D")}} method
+**`fillText()`**, part of the Canvas 2D API, draws a text string
+at the specified coordinates, filling the string's characters with the current
+{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}}. An optional parameter
+allows specifying a maximum width for the rendered text, which the {{Glossary("user agent")}} will achieve by condensing the text or by using a lower font size.
 
-Phương thức này vẽ trực tiếp vào khung vẽ mà không sửa đổi đường dẫn hiện tại, do đó, mọi lệnh gọi {{domxref("CanvasRenderingContext2D.fill()", "fill()")}} hoặc {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}} tiếp theo sẽ không ảnh hưởng đến nó.
+This method draws directly to the canvas without modifying the current path, so any
+subsequent {{domxref("CanvasRenderingContext2D.fill()", "fill()")}} or
+{{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}} calls will have no effect
+on it.
 
-Văn bản được hiển thị bằng cách sử dụng phông chữ và cấu hình bố cục văn bản như được xác định bởi các thuộc tính {{domxref("CanvasRenderingContext2D.font","font")}},{{domxref("CanvasRenderingContext2D.textAlign","textAlign")}},{{domxref("CanvasRenderingContext2D.textBaseline","textBaseline")}} và {{domxref("CanvasRenderingContext2D.direction","direction")}}.
+The text is rendered using the font and text layout configuration as defined by the
+{{domxref("CanvasRenderingContext2D.font","font")}},
+{{domxref("CanvasRenderingContext2D.textAlign","textAlign")}},
+{{domxref("CanvasRenderingContext2D.textBaseline","textBaseline")}}, and
+{{domxref("CanvasRenderingContext2D.direction","direction")}} properties.
 
-> [!LƯU Ý]
-> Để vẽ đường viền của các ký tự trong một chuỗi, hãy gọi ngữ cảnh
-> phương pháp {{domxref("CanvasRenderingContext2D.strokeText", "strokeText()")}}.
+> [!NOTE]
+> To draw the outlines of the characters in a string, call the context's
+> {{domxref("CanvasRenderingContext2D.strokeText", "strokeText()")}} method.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 fillText(text, x, y)
 fillText(text, x, y, maxWidth)
 ```
 
-### Tham số
+### Parameters
 
 - `text`
-- : Một chuỗi chỉ định chuỗi văn bản sẽ hiển thị trong ngữ cảnh.
-  Văn bản được hiển thị bằng cách sử dụng cài đặt được chỉ định bởi {{domxref("CanvasRenderingContext2D.font","font")}},{{domxref("CanvasRenderingContext2D.textAlign","textAlign")}},{{domxref("CanvasRenderingContext2D.textBaseline","textBaseline")}} và {{domxref("CanvasRenderingContext2D.direction","direction")}}.
+  - : A string specifying the text string to render into the context.
+    The text is rendered using the settings specified by
+    {{domxref("CanvasRenderingContext2D.font","font")}},
+    {{domxref("CanvasRenderingContext2D.textAlign","textAlign")}},
+    {{domxref("CanvasRenderingContext2D.textBaseline","textBaseline")}}, and
+    {{domxref("CanvasRenderingContext2D.direction","direction")}}.
 - `x`
-- : Tọa độ trục x của điểm bắt đầu vẽ văn bản, tính bằng pixel.
+  - : The x-axis coordinate of the point at which to begin drawing the text, in pixels.
 - `y`
-- : Tọa độ trục y của đường cơ sở để bắt đầu vẽ văn bản, tính bằng pixel.
-- `maxWidth`{{optional_inline}}
-- : Số pixel rộng tối đa mà văn bản có thể được hiển thị một lần. Nếu không được chỉ định,
-  không có giới hạn về chiều rộng của văn bản. Tuy nhiên, nếu giá trị này được cung cấp, tác nhân người dùng sẽ điều chỉnh độ sâu, chọn phông chữ cô đọng theo chiều ngang hơn (nếu có sẵn hoặc có thể được tạo mà không làm giảm chất lượng) hoặc thu nhỏ kích thước phông chữ nhỏ hơn để vừa với văn bản theo chiều rộng đã chỉ định.
+  - : The y-axis coordinate of the baseline on which to begin drawing the text, in pixels.
+- `maxWidth` {{optional_inline}}
+  - : The maximum number of pixels wide the text may be once rendered. If not specified,
+    there is no limit to the width of the text. However, if this value is provided, the
+    user agent will adjust the kerning, select a more horizontally condensed font (if one
+    is available or can be generated without loss of quality), or scale down to a smaller
+    font size in order to fit the text in the specified width.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Vẽ văn bản đầy
+### Drawing filled text
 
-Ví dụ này viết từ "Xin chào thế giới" bằng phương thức `fillText()`.
+This example writes the words "Hello world" using the `fillText()` method.
 
 #### HTML
 
-Đầu tiên, chúng ta cần một canvas để vẽ vào. Mã này tạo bối cảnh rộng 400 pixel và ngang 150 pixel.
+First, we need a canvas to draw into. This code creates a context 400 pixels wide and
+150 pixels across.
 
 ```html
 <canvas id="canvas" width="400" height="150"></canvas>
@@ -58,7 +77,7 @@ Ví dụ này viết từ "Xin chào thế giới" bằng phương thức `fillT
 
 #### JavaScript
 
-Mã JavaScript cho ví dụ này như sau.
+The JavaScript code for this example follows.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -68,17 +87,21 @@ ctx.font = "50px serif";
 ctx.fillText("Hello world", 50, 90);
 ```
 
-Mã này lấy tham chiếu đến {{HTMLElement("canvas")}}, sau đó lấy tham chiếu đến bối cảnh đồ họa 2D của nó.
+This code obtains a reference to the {{HTMLElement("canvas")}}, then gets a reference
+to its 2D graphics context.
 
-Với điều đó, chúng tôi đặt "serif"{{domxref("CanvasRenderingContext2D.font", "font")}} thành 50 pixel (phông chữ [serif](https://en.wikipedia.org/wiki/Serif) mặc định của người dùng), sau đó gọi `fillText()` để vẽ văn bản "Xin chào thế giới", bắt đầu từ tọa độ (50, 90).
+With that in hand, we set the {{domxref("CanvasRenderingContext2D.font", "font")}} to
+50-pixel-tall "serif" (the user's default [serif](https://en.wikipedia.org/wiki/Serif) font),
+then call `fillText()` to draw the text "Hello world," starting at the
+coordinates (50, 90).
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_filled_text', 700, 180) }}
 
-### Hạn chế kích thước văn bản
+### Restricting the text size
 
-Ví dụ này viết dòng chữ "Xin chào thế giới", giới hạn chiều rộng của nó ở mức 140 pixel.
+This example writes the words "Hello world," restricting its width to 140 pixels.
 
 #### HTML
 
@@ -96,19 +119,19 @@ ctx.font = "50px serif";
 ctx.fillText("Hello world", 50, 90, 140);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Restricting_the_text_size', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
 - [Drawing text](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text)
 - {{domxref("CanvasRenderingContext2D")}}

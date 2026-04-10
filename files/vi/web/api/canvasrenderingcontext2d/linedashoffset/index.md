@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính lineDashOffset"
-short-title: dòngDashOffset
+title: "CanvasRenderingContext2D: lineDashOffset property"
+short-title: lineDashOffset
 slug: Web/API/CanvasRenderingContext2D/lineDashOffset
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.lineDashOffset
@@ -8,21 +8,24 @@ browser-compat: api.CanvasRenderingContext2D.lineDashOffset
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.lineDashOffset`** của API Canvas 2D đặt độ lệch gạch ngang dòng hoặc "pha".
+The
+**`CanvasRenderingContext2D.lineDashOffset`**
+property of the Canvas 2D API sets the line dash offset, or "phase."
 
-> [!LƯU Ý]
-> Các đường được vẽ bằng cách gọi
-> phương pháp {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}}.
+> [!NOTE]
+> Lines are drawn by calling the
+> {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}} method.
 
-## Giá trị
+## Value
 
-Một float xác định mức độ lệch của dấu gạch ngang dòng. Giá trị mặc định là `0.0`.
+A float specifying the amount of the line dash offset. The default value is `0.0`.
 
-## Ví dụ
+## Examples
 
-### Bù đắp một dấu gạch ngang
+### Offsetting a line dash
 
-Ví dụ này vẽ hai đường đứt nét. Cái đầu tiên không có dấu gạch ngang. Cái thứ hai có độ lệch dấu gạch ngang là 4.
+This example draws two dashed lines. The first has no dash offset. The second has a
+dash offset of 4.
 
 #### HTML
 
@@ -53,15 +56,18 @@ ctx.lineTo(300, 100);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
-Đường có dấu gạch ngang được vẽ bằng màu đỏ.
+The line with a dash offset is drawn in red.
 
 {{ EmbedLiveSample('Offsetting_a_line_dash', 700, 180) }}
 
-### Kiến diễu hành
+### Marching ants
 
-Hiệu ứng [marching ants](https://en.wikipedia.org/wiki/Marching_ants) là một kỹ thuật hoạt hình thường thấy trong các công cụ lựa chọn của chương trình đồ họa máy tính. Nó giúp người dùng phân biệt đường viền lựa chọn với nền hình ảnh bằng cách tạo hiệu ứng cho đường viền.
+The [marching ants](https://en.wikipedia.org/wiki/Marching_ants) effect is
+an animation technique often found in selection tools of computer graphics programs. It
+helps the user to distinguish the selection border from the image background by
+animating the border.
 
 ```html hidden
 <canvas id="canvas"></canvas>
@@ -93,17 +99,17 @@ march();
 
 {{ EmbedLiveSample('Marching_ants', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.getLineDash()")}}
 - {{domxref("CanvasRenderingContext2D.setLineDash()")}}
 - [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors)

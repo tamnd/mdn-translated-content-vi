@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức bezierCurveTo()"
+title: "CanvasRenderingContext2D: bezierCurveTo() method"
 short-title: bezierCurveTo()
 slug: Web/API/CanvasRenderingContext2D/bezierCurveTo
 page-type: web-api-instance-method
@@ -8,42 +8,44 @@ browser-compat: api.CanvasRenderingContext2D.bezierCurveTo
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.bezierCurveTo()`** của API Canvas 2D thêm [Bézier curve](/en-US/docs/Glossary/Bezier_curve) khối vào hiện tại
-đường dẫn con. Nó yêu cầu ba điểm: hai điểm đầu tiên là điểm kiểm soát và điểm thứ ba
-là điểm cuối. Điểm bắt đầu là điểm mới nhất trong đường dẫn hiện tại, có thể
-được thay đổi bằng cách sử dụng {{domxref("CanvasRenderingContext2D.moveTo", "moveTo()")}} trước
-tạo đường cong Bézier.
+The
+**`CanvasRenderingContext2D.bezierCurveTo()`**
+method of the Canvas 2D API adds a cubic [Bézier curve](/en-US/docs/Glossary/Bezier_curve) to the current
+sub-path. It requires three points: the first two are control points and the third one
+is the end point. The starting point is the latest point in the current path, which can
+be changed using {{domxref("CanvasRenderingContext2D.moveTo", "moveTo()")}} before
+creating the Bézier curve.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
 ```
 
-### Tham số
+### Parameters
 
 - `cp1x`
-- : Tọa độ trục x của điểm điều khiển đầu tiên.
+  - : The x-axis coordinate of the first control point.
 - `cp1y`
-- : Tọa độ trục y của điểm điều khiển đầu tiên.
+  - : The y-axis coordinate of the first control point.
 - `cp2x`
-- : Tọa độ trục x của điểm điều khiển thứ hai.
+  - : The x-axis coordinate of the second control point.
 - `cp2y`
-- : Tọa độ trục y của điểm điều khiển thứ hai.
+  - : The y-axis coordinate of the second control point.
 - `x`
-- : Tọa độ trục x của điểm cuối.
+  - : The x-axis coordinate of the end point.
 - `y`
-- : Tọa độ trục y của điểm cuối.
+  - : The y-axis coordinate of the end point.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Cách hoạt động của bezierCurveTo
+### How bezierCurveTo works
 
-Ví dụ này cho thấy cách vẽ đường cong Bézier bậc ba.
+This example shows how a cubic Bézier curve is drawn.
 
 #### HTML
 
@@ -85,16 +87,16 @@ ctx.arc(cp2.x, cp2.y, 5, 0, 2 * Math.PI); // Control point two
 ctx.fill();
 ```
 
-#### Kết quả
+#### Result
 
-Trong ví dụ này, các điểm kiểm soát có màu đỏ và
-điểm bắt đầu và kết thúc có màu xanh.
+In this example, the control points are red and the
+start and end points are blue.
 
 {{ EmbedLiveSample('How_bezierCurveTo_works', 315, 165) }}
 
-### Đường cong Bézier đơn giản
+### A simple Bézier curve
 
-Ví dụ này vẽ đường cong Bézier đơn giản bằng `bezierCurveTo()`.
+This example draws a simple Bézier curve using `bezierCurveTo()`.
 
 #### HTML
 
@@ -104,8 +106,8 @@ Ví dụ này vẽ đường cong Bézier đơn giản bằng `bezierCurveTo()`.
 
 #### JavaScript
 
-Đường cong bắt đầu tại điểm được chỉ định bởi `moveTo()`: (30, 30). đầu tiên
-điểm kiểm soát được đặt tại (120, 160) và điểm thứ hai tại (180, 10). Đường cong kết thúc tại
+The curve begins at the point specified by `moveTo()`: (30, 30). The first
+control point is placed at (120, 160), and the second at (180, 10). The curve ends at
 (220, 140).
 
 ```js
@@ -118,19 +120,19 @@ ctx.bezierCurveTo(120, 160, 180, 10, 220, 140);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('A_simple_Bézier_curve', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - [Bézier curve](/en-US/docs/Glossary/Bezier_curve)

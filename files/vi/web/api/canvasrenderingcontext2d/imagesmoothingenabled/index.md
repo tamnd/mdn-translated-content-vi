@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính imageSmoothingEnabled"
-short-title: Làm mịn hình ảnhĐã bật
+title: "CanvasRenderingContext2D: imageSmoothingEnabled property"
+short-title: imageSmoothingEnabled
 slug: Web/API/CanvasRenderingContext2D/imageSmoothingEnabled
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.imageSmoothingEnabled
@@ -8,24 +8,31 @@ browser-compat: api.CanvasRenderingContext2D.imageSmoothingEnabled
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`imageSmoothingEnabled`** của giao diện {{domxref("CanvasRenderingContext2D")}}, một phần của [Canvas API](/en-US/docs/Web/API/Canvas_API), xác định xem hình ảnh được chia tỷ lệ có được làm mịn hay không (`true`, mặc định) hay không (`false`). Khi nhận được thuộc tính`imageSmoothingEnabled`, giá trị cuối cùng được đặt thành sẽ được trả về.
+The **`imageSmoothingEnabled`** property of the
+{{domxref("CanvasRenderingContext2D")}} interface, part of the [Canvas API](/en-US/docs/Web/API/Canvas_API), determines whether scaled images
+are smoothed (`true`, default) or not (`false`). On getting the
+`imageSmoothingEnabled` property, the last value it was set to is returned.
 
-Thuộc tính này hữu ích cho các trò chơi và ứng dụng khác sử dụng pixel art. Khi phóng to hình ảnh, thuật toán thay đổi kích thước mặc định sẽ làm mờ các pixel. Đặt thuộc tính này thành `false` để giữ lại độ sắc nét của pixel.
+This property is useful for games and other apps that use pixel art. When enlarging
+images, the default resizing algorithm will blur the pixels. Set this property to
+`false` to retain the pixels' sharpness.
 
-> [!LƯU Ý]
-> Bạn có thể điều chỉnh chất lượng làm mịn bằng
+> [!NOTE]
+> You can adjust the smoothing quality with the
 > {{domxref("CanvasRenderingContext2D.imageSmoothingQuality", "imageSmoothingQuality")}}
-> tài sản.
+> property.
 
-## Giá trị
+## Value
 
-Một giá trị boolean cho biết có làm mịn hình ảnh được chia tỷ lệ hay không. Giá trị mặc định là `true`.
+A boolean value indicating whether to smooth scaled images or not. The default value is `true`.
 
-## Ví dụ
+## Examples
 
-### Vô hiệu hóa làm mịn hình ảnh
+### Disabling image smoothing
 
-Ví dụ này so sánh ba hình ảnh. Hình ảnh đầu tiên được vẽ ở kích thước tự nhiên, hình ảnh thứ hai được chia tỷ lệ thành 3X và được vẽ với tính năng làm mịn hình ảnh được bật và hình ảnh thứ ba được chia tỷ lệ thành 3X nhưng được vẽ với tính năng làm mịn hình ảnh bị tắt.
+This example compares three images. The first image is drawn at its natural size, the
+second is scaled to 3X and drawn with image smoothing enabled, and the third is scaled
+to 3X but drawn with image smoothing disabled.
 
 #### HTML
 
@@ -61,20 +68,20 @@ img.onload = () => {
 };
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Disabling_image_smoothing', 700, 240) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.imageSmoothingQuality")}}
 - {{cssxref("image-rendering")}}

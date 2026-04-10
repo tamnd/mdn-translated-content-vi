@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức khôi phục()"
-short-title: khôi phục()
+title: "CanvasRenderingContext2D: restore() method"
+short-title: restore()
 slug: Web/API/CanvasRenderingContext2D/restore
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.restore
@@ -8,29 +8,35 @@ browser-compat: api.CanvasRenderingContext2D.restore
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.restore()`** của API Canvas 2D khôi phục trạng thái canvas được lưu gần đây nhất bằng cách bật mục nhập trên cùng trong ngăn xếp trạng thái vẽ. Nếu không có trạng thái được lưu, phương pháp này không làm gì cả.
+The
+**`CanvasRenderingContext2D.restore()`**
+method of the Canvas 2D API restores the most recently saved canvas state by popping the
+top entry in the drawing state stack. If there is no saved state, this method does
+nothing.
 
-Để biết thêm thông tin về[drawing state](/en-US/docs/Web/API/CanvasRenderingContext2D/save#description), hãy xem{{domxref("CanvasRenderingContext2D.save()")}}.
+For more information about the [drawing state](/en-US/docs/Web/API/CanvasRenderingContext2D/save#description), see {{domxref("CanvasRenderingContext2D.save()")}}.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 restore()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Khôi phục trạng thái đã lưu
+### Restoring a saved state
 
-Ví dụ này sử dụng phương thức`save()`để lưu trạng thái hiện tại và`restore()`để khôi phục nó sau này, để sau này bạn có thể vẽ một đường thẳng với trạng thái hiện tại.
+This example uses the `save()` method to save the current state and
+`restore()` to restore it later, so that you are able to draw a rect with the
+current state later.
 
 #### HTML
 
@@ -56,19 +62,19 @@ ctx.restore();
 ctx.fillRect(150, 40, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Restoring_a_saved_state', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.save()")}}

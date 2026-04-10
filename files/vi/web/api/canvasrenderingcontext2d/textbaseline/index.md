@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính textBaseline"
-short-title: văn bảnBaseline
+title: "CanvasRenderingContext2D: textBaseline property"
+short-title: textBaseline
 slug: Web/API/CanvasRenderingContext2D/textBaseline
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.textBaseline
@@ -8,35 +8,39 @@ browser-compat: api.CanvasRenderingContext2D.textBaseline
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.textBaseline`** của API Canvas 2D chỉ định đường cơ sở văn bản hiện tại được sử dụng khi vẽ văn bản.
+The
+**`CanvasRenderingContext2D.textBaseline`**
+property of the Canvas 2D API specifies the current text baseline used when drawing
+text.
 
-## Giá trị
+## Value
 
-Các giá trị có thể:
+Possible values:
 
 - `"top"`
-  - : Đường cơ sở của văn bản là phần trên cùng của hình vuông em.
+  - : The text baseline is the top of the em square.
 - `"hanging"`
-  - : Đường cơ sở của văn bản là đường cơ sở treo. (Được sử dụng bởi người Tây Tạng và người Ấn Độ khác
-    kịch bản.)
+  - : The text baseline is the hanging baseline. (Used by Tibetan and other Indic
+    scripts.)
 - `"middle"`
-  - : Đường cơ sở của văn bản là giữa hình vuông em.
+  - : The text baseline is the middle of the em square.
 - `"alphabetic"`
-  - : Đường cơ sở của văn bản là{{glossary("/Baseline/Typography", "alphabetic baseline")}}bình thường. Giá trị mặc định.
+  - : The text baseline is the normal {{glossary("/Baseline/Typography", "alphabetic baseline")}}. Default value.
 - `"ideographic"`
-  - : Đường cơ sở của văn bản là đường cơ sở của chữ tượng hình; đây là phần dưới cùng của cơ thể
-    các ký tự, nếu phần chính của các ký tự nhô ra phía dưới đường cơ sở của bảng chữ cái. (Được sử dụng bởi chữ viết tiếng Trung, tiếng Nhật và tiếng Hàn.)
+  - : The text baseline is the ideographic baseline; this is the bottom of the body of the
+    characters, if the main body of characters protrudes beneath the alphabetic baseline.
+    (Used by Chinese, Japanese, and Korean scripts.)
 - `"bottom"`
-  - : Đường cơ sở của văn bản là phần dưới cùng của hộp giới hạn. Điều này khác với
-    đường cơ sở ý thức hệ trong đó đường cơ sở ý thức hệ không tính đến hậu duệ.
+  - : The text baseline is the bottom of the bounding box. This differs from the
+    ideographic baseline in that the ideographic baseline doesn't consider descenders.
 
-Giá trị mặc định là`"alphabetic"`.
+The default value is `"alphabetic"`.
 
-## Ví dụ
+## Examples
 
-### So sánh giá trị tài sản
+### Comparison of property values
 
-Ví dụ này minh họa các giá trị thuộc tính`textBaseline`khác nhau.
+This example demonstrates the various `textBaseline` property values.
 
 #### HTML
 
@@ -72,13 +76,13 @@ baselines.forEach((baseline, index) => {
 });
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Comparison_of_property_values', 700, 550) }}
 
-### So sánh giá trị thuộc tính trên cùng một dòng
+### Comparison of property values on the same line
 
-Giống như ví dụ trước, ví dụ này minh họa các giá trị thuộc tính`textBaseline`khác nhau, nhưng trong trường hợp này tất cả chúng được xếp theo chiều ngang dọc theo cùng một đường — để dễ dàng thấy chúng khác nhau như thế nào.
+As with the previous example, this example demonstrates the various `textBaseline` property values, but in this case with all of them lined up horizontally along the same line — to make it easier to see how they differ from each other.
 
 #### HTML
 
@@ -119,18 +123,18 @@ baselines.forEach((baseline, index) => {
 });
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Comparison of property values on the same line', 900, 200) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}

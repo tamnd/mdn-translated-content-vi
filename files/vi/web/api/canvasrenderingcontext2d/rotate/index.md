@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức xoay ()"
-short-title: quay()
+title: "CanvasRenderingContext2D: rotate() method"
+short-title: rotate()
 slug: Web/API/CanvasRenderingContext2D/rotate
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.rotate
@@ -8,9 +8,11 @@ browser-compat: api.CanvasRenderingContext2D.rotate
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.rotate()`** của API Canvas 2D thêm phép xoay vào ma trận chuyển đổi.
+The
+**`CanvasRenderingContext2D.rotate()`**
+method of the Canvas 2D API adds a rotation to the transformation matrix.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 rotate(angle)
@@ -18,23 +20,26 @@ rotate(angle)
 
 ![Rectangular coordinate system with the rotation of the abscissa axis by the alpha angle](canvas_grid_rotate.png)
 
-### Tham số
+### Parameters
 
 - `angle`
-  - : Góc quay, theo chiều kim đồng hồ tính bằng radian. Bạn có thể sử dụng
-    `degree * Math.PI / 180`để tính radian từ độ.
+  - : The rotation angle, clockwise in radians. You can use
+    `degree * Math.PI / 180` to calculate a radian from a degree.
 
-Điểm trung tâm xoay luôn là gốc canvas. Để thay đổi điểm trung tâm, bạn sẽ cần di chuyển canvas bằng phương thức{{domxref("CanvasRenderingContext2D.translate", "translate()")}}.
+The rotation center point is always the canvas origin. To change the center point, you
+will need to move the canvas by using the
+{{domxref("CanvasRenderingContext2D.translate", "translate()")}} method.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Xoay một hình dạng
+### Rotating a shape
 
-Ví dụ này xoay một hình chữ nhật 45°. Lưu ý rằng tâm xoay là góc trên cùng bên trái của khung vẽ chứ không phải là vị trí tương ứng với bất kỳ hình dạng nào.
+This example rotates a rectangle by 45°. Note that the center of rotation is the
+top-left corner of the canvas, and not a location relative to any shape.
 
 #### HTML
 
@@ -66,21 +71,23 @@ ctx.fillRect(100, 0, 80, 20);
 ctx.setTransform(1, 0, 0, 1, 0, 0);
 ```
 
-#### Kết quả
+#### Result
 
-Tâm quay có màu xanh lam. Hình chữ nhật không xoay có màu xám và hình chữ nhật xoay có màu đỏ.
+The center of rotation is blue. The non-rotated rectangle is gray, and the rotated rectangle is red.
 
 {{ EmbedLiveSample('Rotating_a_shape', 700, 180) }}
 
-### Xoay một hình xung quanh tâm của nó
+### Rotating a shape around its center
 
-Ví dụ này xoay một hình xung quanh điểm trung tâm của nó. Để thực hiện việc này, các bước sau được áp dụng cho ma trận:
+This example rotates a shape around its center point. To do this, the following steps
+are applied to the matrix:
 
-1. Đầu tiên,{{domxref("CanvasRenderingContext2D.translate()", "translate()")}}di chuyển
-   gốc của ma trận tới tâm của hình.
-2. `rotate()`xoay ma trận theo số lượng mong muốn.
-3. Cuối cùng,`translate()`di chuyển điểm gốc của ma trận trở lại điểm bắt đầu
-   điểm. Điều này được thực hiện bằng cách áp dụng các giá trị tọa độ tâm của hình theo hướng âm.
+1. First, {{domxref("CanvasRenderingContext2D.translate()", "translate()")}} moves the
+   matrix's origin to the shape's center.
+2. `rotate()` rotates the matrix by the desired amount.
+3. Finally, `translate()` moves the matrix's origin back to its starting
+   point. This is done by applying the values of the shape's center coordinates in a
+   negative direction.
 
 #### HTML
 
@@ -90,7 +97,9 @@ Ví dụ này xoay một hình xung quanh điểm trung tâm của nó. Để th
 
 #### JavaScript
 
-Hình này là một hình chữ nhật có các góc ở (80, 60), chiều rộng 140, chiều cao 30. Tâm ngang của nó là (80 + 140/2) hoặc 150. Tâm dọc của nó là (60 + 30/2\) hoặc 75. Do đó, tâm nằm ở (150, 75).
+The shape is a rectangle with its corner at (80, 60), a width of 140, a height of 30.
+Its horizontal center is at (80 + 140 / 2), or 150. Its vertical center is at (60 + 30 /
+2\), or 75. Thus, the center point is at (150, 75).
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -110,20 +119,20 @@ ctx.fillStyle = "red";
 ctx.fillRect(80, 60, 140, 30);
 ```
 
-#### Kết quả
+#### Result
 
-Hình chữ nhật không xoay có màu xám và hình chữ nhật xoay có màu đỏ.
+The non-rotated rectangle is gray, and the rotated rectangle is red.
 
 {{ EmbedLiveSample('Rotating_a_shape_around_its_center', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

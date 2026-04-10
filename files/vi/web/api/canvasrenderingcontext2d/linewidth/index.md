@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính lineWidth"
-short-title: chiều rộng dòng
+title: "CanvasRenderingContext2D: lineWidth property"
+short-title: lineWidth
 slug: Web/API/CanvasRenderingContext2D/lineWidth
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.lineWidth
@@ -8,23 +8,25 @@ browser-compat: api.CanvasRenderingContext2D.lineWidth
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.lineWidth`** của API Canvas 2D đặt độ dày của đường kẻ.
+The
+**`CanvasRenderingContext2D.lineWidth`**
+property of the Canvas 2D API sets the thickness of lines.
 
-> [!LƯU Ý]
-> Các đường có thể được vẽ bằng
+> [!NOTE]
+> Lines can be drawn with the
 > {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}},
 > {{domxref("CanvasRenderingContext2D.strokeRect()", "strokeRect()")}},
-> và {{domxref("CanvasRenderingContext2D.strokeText()", "strokeText()")}}.
+> and {{domxref("CanvasRenderingContext2D.strokeText()", "strokeText()")}} methods.
 
-## Giá trị
+## Value
 
-Một số chỉ định độ rộng của đường, tính bằng đơn vị không gian tọa độ. Các giá trị 0, âm,{{jsxref("Infinity")}} và {{jsxref("NaN")}} bị bỏ qua. Giá trị này mặc định là `1.0`.
+A number specifying the line width, in coordinate space units. Zero, negative, {{jsxref("Infinity")}}, and {{jsxref("NaN")}} values are ignored. This value is `1.0` by default.
 
-## Ví dụ
+## Examples
 
-### Thay đổi độ rộng dòng
+### Changing line width
 
-Ví dụ này vẽ một đường thẳng và một hình chữ nhật, sử dụng chiều rộng đường thẳng là 15 đơn vị.
+This example draws a line and a rectangle, using a line width of 15 units.
 
 #### HTML
 
@@ -47,25 +49,25 @@ ctx.rect(40, 40, 70, 70);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_line_width', 700, 180) }}
 
-### Thêm ví dụ
+### More examples
 
-Để biết thêm ví dụ và giải thích về thuộc tính này, hãy xem [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) trong [Canvas Tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
+For more examples and explanation about this property, see [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) in the [Canvas Tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.lineCap")}}
 - {{domxref("CanvasRenderingContext2D.lineJoin")}}
 - [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors)

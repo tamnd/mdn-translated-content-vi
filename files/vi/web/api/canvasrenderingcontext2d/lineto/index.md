@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức lineTo()"
-short-title: dòngTo()
+title: "CanvasRenderingContext2D: lineTo() method"
+short-title: lineTo()
 slug: Web/API/CanvasRenderingContext2D/lineTo
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.lineTo
@@ -8,32 +8,38 @@ browser-compat: api.CanvasRenderingContext2D.lineTo
 
 {{APIRef("Canvas API")}}
 
-Phương thức {{domxref("CanvasRenderingContext2D")}}**`lineTo()`**, một phần của Canvas 2D API, thêm một đường thẳng vào đường dẫn phụ hiện tại bằng cách kết nối điểm cuối cùng của đường dẫn phụ với tọa độ`(x, y)` đã chỉ định.
+The {{domxref("CanvasRenderingContext2D")}} method
+**`lineTo()`**, part of the Canvas 2D API, adds a straight line
+to the current sub-path by connecting the sub-path's last point to the specified
+`(x, y)` coordinates.
 
-Giống như các phương thức khác sửa đổi đường dẫn hiện tại, phương thức này không trực tiếp hiển thị bất kỳ thứ gì. Để vẽ đường dẫn lên canvas, bạn có thể sử dụng các phương thức {{domxref("CanvasRenderingContext2D.fill", "fill()")}} hoặc {{domxref("CanvasRenderingContext2D.stroke", "stroke()")}}.
+Like other methods that modify the current path, this method does not directly render
+anything. To draw the path onto a canvas, you can use the
+{{domxref("CanvasRenderingContext2D.fill", "fill()")}} or
+{{domxref("CanvasRenderingContext2D.stroke", "stroke()")}} methods.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 lineTo(x, y)
 ```
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ trục x của điểm cuối của đường.
+  - : The x-axis coordinate of the line's end point.
 - `y`
-- : Tọa độ trục y của điểm cuối của đường.
+  - : The y-axis coordinate of the line's end point.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Vẽ một đường thẳng
+### Drawing a straight line
 
-Ví dụ này vẽ một đường thẳng bằng phương pháp `lineTo()`.
+This example draws a straight line using the `lineTo()` method.
 
 #### HTML
 
@@ -43,7 +49,7 @@ Ví dụ này vẽ một đường thẳng bằng phương pháp `lineTo()`.
 
 #### JavaScript
 
-Dòng bắt đầu ở (30, 50) và kết thúc ở (150, 100).
+The line begins at (30, 50) and ends at (150, 100).
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -55,13 +61,15 @@ ctx.lineTo(150, 100); // Draw a line to (150, 100)
 ctx.stroke(); // Render the path
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_a_straight_line', 700, 180) }}
 
-### Vẽ các đường kết nối
+### Drawing connected lines
 
-Mỗi lệnh gọi `lineTo()`(và các phương thức tương tự) sẽ tự động thêm vào đường dẫn phụ hiện tại, điều đó có nghĩa là tất cả các dòng sẽ được vuốt hoặc điền vào cùng nhau. Ví dụ này vẽ một chữ cái 'M' bằng một đường liền kề.
+Each call of `lineTo()` (and similar methods) automatically adds to the
+current sub-path, which means that all the lines will all be stroked or filled together.
+This example draws a letter 'M' with a single contiguous line.
 
 #### HTML
 
@@ -84,20 +92,20 @@ ctx.lineWidth = 15;
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_connected_lines', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.moveTo()")}}
 - {{domxref("CanvasRenderingContext2D.stroke()")}}

@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính ShadowBlur"
-short-title: bóngMờ
+title: "CanvasRenderingContext2D: shadowBlur property"
+short-title: shadowBlur
 slug: Web/API/CanvasRenderingContext2D/shadowBlur
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.shadowBlur
@@ -8,25 +8,29 @@ browser-compat: api.CanvasRenderingContext2D.shadowBlur
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.shadowBlur`** của API Canvas 2D chỉ định mức độ mờ được áp dụng cho bóng. Mặc định là`0`(không mờ).
+The
+**`CanvasRenderingContext2D.shadowBlur`**
+property of the Canvas 2D API specifies the amount of blur applied to shadows. The
+default is `0` (no blur).
 
-> [!LƯU Ý]
-> Bóng chỉ được vẽ nếu
-> Thuộc tính{{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}}được đặt thành
-> một giá trị không minh bạch. Một trong những`shadowBlur`,
-> {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}, hoặc
-> thuộc tính{{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}}phải
-> cũng khác 0.
+> [!NOTE]
+> Shadows are only drawn if the
+> {{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}} property is set to
+> a non-transparent value. One of the `shadowBlur`,
+> {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}, or
+> {{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}} properties must
+> be non-zero, as well.
 
-## Giá trị
+## Value
 
-Một số float không âm chỉ định mức độ mờ của bóng, trong đó`0`biểu thị không có độ mờ và số lớn hơn biểu thị mức độ mờ ngày càng nhiều. Giá trị này không tương ứng với một số pixel và không bị ảnh hưởng bởi ma trận chuyển đổi hiện tại. Giá trị mặc định là`0`. Các giá trị âm,{{jsxref("Infinity")}}và{{jsxref("NaN")}}bị bỏ qua.
+A non-negative float specifying the level of shadow blur, where `0` represents no blur and larger numbers represent increasingly more blur. This value doesn't correspond to a number of pixels, and is not affected by the current transformation matrix. The default value is `0`. Negative, {{jsxref("Infinity")}}, and {{jsxref("NaN")}} values are ignored.
 
-## Ví dụ
+## Examples
 
-### Thêm bóng vào hình dạng
+### Adding a shadow to a shape
 
-Ví dụ này thêm bóng mờ vào hình chữ nhật. Thuộc tính`shadowColor`đặt màu của nó và`shadowBlur`đặt mức độ mờ của nó.
+This example adds a blurred shadow to a rectangle. The `shadowColor`
+property sets its color, and `shadowBlur` sets its level of blurriness.
 
 #### HTML
 
@@ -49,21 +53,22 @@ ctx.fillStyle = "blue";
 ctx.fillRect(20, 20, 150, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Adding_a_shadow_to_a_shape', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific notes
 
-Trong các trình duyệt dựa trên WebKit và Blink, phương thức không chuẩn và không được dùng nữa`ctx.setShadow()`được triển khai bên cạnh thuộc tính này.
+In WebKit- and Blink-based browsers, the non-standard and deprecated method
+`ctx.setShadow()` is implemented besides this property.
 
 ```js
 setShadow(width, height, blur, color, alpha);
@@ -72,7 +77,7 @@ setShadow(width, height, blur, r, g, b, a);
 setShadow(width, height, blur, c, m, y, k, a);
 ```
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.shadowColor")}}

@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính fontKerning"
-short-title: phông chữKerning
+title: "CanvasRenderingContext2D: fontKerning property"
+short-title: fontKerning
 slug: Web/API/CanvasRenderingContext2D/fontKerning
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.fontKerning
@@ -8,29 +8,30 @@ browser-compat: api.CanvasRenderingContext2D.fontKerning
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.fontKerning`** của [Canvas API](/en-US/docs/Web/API/Canvas_API) chỉ định cách sử dụng thông tin về phông chữ.
+The **`CanvasRenderingContext2D.fontKerning`** property of the [Canvas API](/en-US/docs/Web/API/Canvas_API) specifies how font kerning information is used.
 
-Kerning điều chỉnh cách các chữ cái liền kề được đặt theo phông chữ tỷ lệ, cho phép chúng nằm sát khu vực thị giác của nhau nếu còn chỗ trống. Ví dụ: trong các phông chữ có độ chính xác cao, các ký tự `AV`,`Ta`và`We` lồng vào nhau và làm cho khoảng cách giữa các ký tự trở nên thống nhất và dễ đọc hơn so với văn bản tương đương không có độ sâu.
+Kerning adjusts how adjacent letters are spaced in a proportional font, allowing them to edge into each other's visual area if there is space available.
+For example, in well-kerned fonts, the characters `AV`, `Ta` and `We` nest together and make character spacing more uniform and pleasant to read than the equivalent text without kerning.
 
-Thuộc tính tương ứng với thuộc tính CSS {{cssxref("font-kerning")}}.
+The property corresponds to the {{cssxref("font-kerning")}} CSS property.
 
-## Giá trị
+## Value
 
-Thuộc tính có thể được sử dụng để lấy hoặc đặt giá trị.
+The property can be used to get or set the value.
 
-Các giá trị được phép là:
+Allowed values are:
 
 - `auto`
-- : Trình duyệt xác định có nên sử dụng font kerning hay không.
-  Ví dụ: một số trình duyệt sẽ tắt tính năng kerning trên các phông chữ nhỏ vì việc áp dụng tính năng này có thể gây hại cho khả năng đọc của văn bản.
+  - : The browser determines whether font kerning should be used or not.
+    For example, some browsers will disable kerning on small fonts, since applying it could harm the readability of text.
 - `normal`
-- : Thông tin về phông chữ được lưu trữ trong phông chữ phải được áp dụng.
+  - : Font kerning information stored in the font must be applied.
 - `none`
-- : Thông tin về phông chữ được lưu trữ trong phông chữ bị tắt.
+  - : Font kerning information stored in the font is disabled.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ này, chúng tôi hiển thị văn bản "AVA Ta We" bằng cách sử dụng từng giá trị được hỗ trợ của thuộc tính `textRendering`.
+In this example we display the text "AVA Ta We" using each of the supported values of the `textRendering` property.
 
 ### HTML
 
@@ -57,16 +58,16 @@ ctx.fontKerning = "none";
 ctx.fillText(`AVA Ta We (${ctx.fontKerning})`, 5, 110);
 ```
 
-### Kết quả
+### Result
 
-Lưu ý rằng chuỗi cuối cùng đã tắt tính năng kerning phông chữ, do đó các ký tự liền kề sẽ được trải đều.
+Note that the last string has font kerning disabled, so adjacent characters are evenly spread.
 
 {{ EmbedLiveSample('Examples', 700, 150) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}

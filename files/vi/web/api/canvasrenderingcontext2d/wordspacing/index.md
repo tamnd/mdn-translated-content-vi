@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính wordSpacing"
-short-title: Khoảng cách từ
+title: "CanvasRenderingContext2D: wordSpacing property"
+short-title: wordSpacing
 slug: Web/API/CanvasRenderingContext2D/wordSpacing
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.wordSpacing
@@ -8,19 +8,22 @@ browser-compat: api.CanvasRenderingContext2D.wordSpacing
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.wordSpacing`** của[Canvas API](/en-US/docs/Web/API/Canvas_API)chỉ định khoảng cách giữa các từ khi vẽ văn bản.
+The **`CanvasRenderingContext2D.wordSpacing`** property of the [Canvas API](/en-US/docs/Web/API/Canvas_API) specifies the spacing between words when drawing text.
 
-Điều này tương ứng với thuộc tính CSS{{cssxref("word-spacing")}}.
+This corresponds to the CSS {{cssxref("word-spacing")}} property.
 
-## Giá trị
+## Value
 
-Khoảng cách giữa các từ dưới dạng một chuỗi trong định dạng dữ liệu CSS{{cssxref("length")}}. Mặc định là`0px`.
+The word spacing as a string in the CSS {{cssxref("length")}} data format.
+The default is `0px`.
 
-Thuộc tính này có thể được sử dụng để lấy hoặc đặt khoảng cách. Giá trị thuộc tính sẽ không thay đổi nếu được đặt thành giá trị không hợp lệ/không thể phân tích cú pháp.
+The property can be used to get or set the spacing.
+The property value will remain unchanged if set to an invalid/unparsable value.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ này, chúng tôi hiển thị văn bản "Xin chào thế giới" ba lần, sử dụng thuộc tính`wordSpacing`để sửa đổi khoảng cách trong từng trường hợp. Khoảng cách cũng được hiển thị cho từng trường hợp, sử dụng giá trị của thuộc tính.
+In this example we display the text "Hello World" three times, using the `wordSpacing` property to modify the spacing in each case.
+The spacing is also displayed for each case, using the value of the property.
 
 ### HTML
 
@@ -48,18 +51,18 @@ ctx.wordSpacing = "30px";
 ctx.fillText(`Hello world (${ctx.wordSpacing})`, 10, 140);
 ```
 
-### Kết quả
+### Result
 
 {{ EmbedLiveSample('Examples', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
 - {{domxref("CanvasRenderingContext2D.letterSpacing")}}

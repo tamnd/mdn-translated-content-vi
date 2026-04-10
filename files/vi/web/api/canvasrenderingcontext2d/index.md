@@ -7,28 +7,31 @@ browser-compat: api.CanvasRenderingContext2D
 
 {{APIRef("Canvas API")}}
 
-Giao diện **`CanvasRenderingContext2D`**, một phần của [Canvas API](/en-US/docs/Web/API/Canvas_API), cung cấp bối cảnh hiển thị 2D cho bề mặt vẽ của phần tử {{HTMLElement("canvas")}}. Nó được sử dụng để vẽ hình dạng, văn bản, hình ảnh và các đối tượng khác.
+The **`CanvasRenderingContext2D`** interface, part of the [Canvas API](/en-US/docs/Web/API/Canvas_API), provides the 2D rendering context for the drawing surface of a {{HTMLElement("canvas")}} element.
+It is used for drawing shapes, text, images, and other objects.
 
-Các thuộc tính và phương thức của giao diện được mô tả trong phần tham khảo của trang này. [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial) cũng có nhiều lời giải thích, ví dụ và tài nguyên hơn.
+The interface's properties and methods are described in the reference section of this page.
+The [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial) has more explanation, examples, and resources, as well.
 
-Đối với [`OffscreenCanvas`](/en-US/docs/Web/API/OffscreenCanvas), có một giao diện tương đương cung cấp ngữ cảnh kết xuất. Bối cảnh hiển thị ngoài màn hình kế thừa hầu hết các thuộc tính và phương thức giống như`CanvasRenderingContext2D` và được mô tả chi tiết hơn trong trang tham chiếu {{domxref("OffscreenCanvasRenderingContext2D")}}.
+For [`OffscreenCanvas`](/en-US/docs/Web/API/OffscreenCanvas), there is an equivalent interface that provides the rendering context.
+The offscreen rendering context inherits most of the same properties and methods as the `CanvasRenderingContext2D` and is described in more detail in the {{domxref("OffscreenCanvasRenderingContext2D")}} reference page.
 
-## Ví dụ cơ bản
+## Basic example
 
-Để có phiên bản `CanvasRenderingContext2D`, trước tiên bạn phải có phần tử HTML`<canvas>` để làm việc với:
+To get a `CanvasRenderingContext2D` instance, you must first have an HTML `<canvas>` element to work with:
 
 ```html
 <canvas id="my-house" width="300" height="300"></canvas>
 ```
 
-Để lấy ngữ cảnh hiển thị 2D của canvas, hãy gọi {{domxref("HTMLCanvasElement.getContext()", "getContext()")}} trên phần tử `<canvas>`, cung cấp`'2d'` làm đối số:
+To get the canvas' 2D rendering context, call {{domxref("HTMLCanvasElement.getContext()", "getContext()")}} on the `<canvas>` element, supplying `'2d'` as the argument:
 
 ```js
 const canvas = document.getElementById("my-house");
 const ctx = canvas.getContext("2d");
 ```
 
-Với bối cảnh trong tay, bạn có thể vẽ bất cứ thứ gì bạn thích. Mã này vẽ một ngôi nhà:
+With the context in hand, you can draw anything you like. This code draws a house:
 
 ```js
 // Set line width
@@ -49,240 +52,240 @@ ctx.closePath();
 ctx.stroke();
 ```
 
-Bản vẽ kết quả trông như thế này:
+The resulting drawing looks like this:
 
 {{EmbedLiveSample("Basic_example", 700, 330)}}
 
-## Tham khảo
+## Reference
 
-### Bối cảnh
+### Context
 
 - {{domxref("CanvasRenderingContext2D.getContextAttributes()")}}
-- : Trả về một đối tượng chứa các thuộc tính ngữ cảnh được trình duyệt sử dụng. Thuộc tính bối cảnh có thể được yêu cầu khi sử dụng {{domxref("HTMLCanvasElement.getContext()")}} để tạo bối cảnh 2D.
+  - : Returns an object containing the context attributes used by the browser. Context attributes can be requested when using {{domxref("HTMLCanvasElement.getContext()")}} to create the 2D context.
 - {{domxref("CanvasRenderingContext2D.isContextLost()")}}
-- : Trả về `true` nếu ngữ cảnh hiển thị bị mất.
+  - : Returns `true` if the rendering context was lost.
 
-### Vẽ hình chữ nhật
+### Drawing rectangles
 
-Có ba phương pháp vẽ ngay hình chữ nhật vào khung vẽ.
+There are three methods that immediately draw rectangles to the canvas.
 
 - {{domxref("CanvasRenderingContext2D.clearRect()")}}
-- : Đặt tất cả pixel trong hình chữ nhật được xác định bởi điểm bắt đầu _(x, y)_ và kích thước _(width, Height)_ thành màu đen trong suốt, xóa mọi nội dung đã vẽ trước đó.
+  - : Sets all pixels in the rectangle defined by starting point _(x, y)_ and size _(width, height)_ to transparent black, erasing any previously drawn content.
 - {{domxref("CanvasRenderingContext2D.fillRect()")}}
-- : Vẽ một hình chữ nhật được tô đầy tại vị trí _(x, y)_ có kích thước được xác định bởi _width_ và _height_.
+  - : Draws a filled rectangle at _(x, y)_ position whose size is determined by _width_ and _height_.
 - {{domxref("CanvasRenderingContext2D.strokeRect()")}}
-- : Vẽ một hình chữ nhật có điểm bắt đầu tại _(x, y)_ và có chiều rộng _w_ và chiều cao _h_ trên khung vẽ, sử dụng kiểu nét vẽ hiện tại.
+  - : Paints a rectangle which has a starting point at _(x, y)_ and has a _w_ width and an _h_ height onto the canvas, using the current stroke style.
 
-### Vẽ văn bản
+### Drawing text
 
-Các phương pháp sau đây vẽ văn bản. Xem thêm đối tượng {{domxref("TextMetrics")}} để biết các thuộc tính văn bản.
+The following methods draw text. See also the {{domxref("TextMetrics")}} object for text properties.
 
 - {{domxref("CanvasRenderingContext2D.fillText()")}}
-- : Vẽ (điền) một văn bản nhất định tại vị trí (x, y) đã cho.
+  - : Draws (fills) a given text at the given (x, y) position.
 - {{domxref("CanvasRenderingContext2D.strokeText()")}}
-- : Vẽ (nét) một văn bản nhất định tại vị trí (x, y) đã cho.
+  - : Draws (strokes) a given text at the given (x, y) position.
 - {{domxref("CanvasRenderingContext2D.measureText()")}}
-- : Trả về một đối tượng {{domxref("TextMetrics")}}.
+  - : Returns a {{domxref("TextMetrics")}} object.
 
-### Kiểu đường
+### Line styles
 
-Các phương pháp và thuộc tính sau đây kiểm soát cách vẽ đường.
+The following methods and properties control how lines are drawn.
 
 - {{domxref("CanvasRenderingContext2D.lineWidth")}}
-- : Chiều rộng của dòng. Mặc định `1.0`.
+  - : Width of lines. Default `1.0`.
 - {{domxref("CanvasRenderingContext2D.lineCap")}}
-- : Kiểu kết thúc ở cuối dòng. Các giá trị có thể có:`butt`(mặc định),`round`,`square`.
+  - : Type of endings on the end of lines. Possible values: `butt` (default), `round`, `square`.
 - {{domxref("CanvasRenderingContext2D.lineJoin")}}
-- : Xác định loại góc nơi hai đường thẳng gặp nhau. Các giá trị có thể có:`round`,`bevel`,`miter`(mặc định).
+  - : Defines the type of corners where two lines meet. Possible values: `round`, `bevel`, `miter` (default).
 - {{domxref("CanvasRenderingContext2D.miterLimit")}}
-- : Tỷ lệ giới hạn miter. Mặc định `10`.
+  - : Miter limit ratio. Default `10`.
 - {{domxref("CanvasRenderingContext2D.getLineDash()")}}
-- : Trả về mảng mẫu gạch ngang dòng hiện tại chứa số chẵn các số không âm.
+  - : Returns the current line dash pattern array containing an even number of non-negative numbers.
 - {{domxref("CanvasRenderingContext2D.setLineDash()")}}
-- : Đặt mẫu gạch ngang hiện tại.
+  - : Sets the current line dash pattern.
 - {{domxref("CanvasRenderingContext2D.lineDashOffset")}}
-- : Chỉ định vị trí bắt đầu một mảng gạch ngang trên một dòng.
+  - : Specifies where to start a dash array on a line.
 
-### Kiểu văn bản
+### Text styles
 
-Các thuộc tính sau đây kiểm soát cách trình bày văn bản.
+The following properties control how text is laid out.
 
 - {{domxref("CanvasRenderingContext2D.font")}}
-- : Cài đặt phông chữ. Giá trị mặc định `"10px sans-serif"`.
+  - : Font setting. Default value `"10px sans-serif"`.
 - {{domxref("CanvasRenderingContext2D.textAlign")}}
-- : Cài đặt căn chỉnh văn bản. Các giá trị có thể có:`start`(mặc định),`end`,`left`,`right`,`center`.
+  - : Text alignment setting. Possible values: `start` (default), `end`, `left`, `right`, `center`.
 - {{domxref("CanvasRenderingContext2D.textBaseline")}}
-- : Cài đặt căn chỉnh đường cơ sở. Các giá trị có thể có:`top`,`hanging`,`middle`,`alphabetic`(mặc định),`ideographic`,`bottom`.
+  - : Baseline alignment setting. Possible values: `top`, `hanging`, `middle`, `alphabetic` (default), `ideographic`, `bottom`.
 - {{domxref("CanvasRenderingContext2D.direction")}}
-- : Tính định hướng. Các giá trị có thể có:`ltr`,`rtl`,`inherit`(mặc định).
+  - : Directionality. Possible values: `ltr`, `rtl`, `inherit` (default).
 - {{domxref("CanvasRenderingContext2D.letterSpacing")}}
-- : Khoảng cách chữ. Mặc định:`0px`.
+  - : Letter spacing. Default: `0px`.
 - {{domxref("CanvasRenderingContext2D.fontKerning")}}
-- : Kerning phông chữ. Các giá trị có thể có:`auto`(mặc định),`normal`,`none`.
+  - : Font kerning. Possible values: `auto` (default), `normal`, `none`.
 - {{domxref("CanvasRenderingContext2D.fontStretch")}}
-- : Kéo dài phông chữ. Các giá trị có thể có:`ultra-condensed`,`extra-condensed`,`condensed`,`semi-condensed`,`normal`(mặc định),`semi-expanded`,`expanded`,`extra-expanded`,`ultra-expanded`.
+  - : Font stretch. Possible values: `ultra-condensed`, `extra-condensed`, `condensed`, `semi-condensed`, `normal` (default), `semi-expanded`, `expanded`, `extra-expanded`, `ultra-expanded`.
 - {{domxref("CanvasRenderingContext2D.fontVariantCaps")}}
-- : Mũ biến thể phông chữ. Các giá trị có thể có:`normal`(mặc định),`small-caps`,`all-small-caps`,`petite-caps`,`all-petite-caps`,`unicase`,`titling-caps`.
+  - : Font variant caps. Possible values: `normal` (default), `small-caps`, `all-small-caps`, `petite-caps`, `all-petite-caps`, `unicase`, `titling-caps`.
 - {{domxref("CanvasRenderingContext2D.textRendering")}}
-- : Kết xuất văn bản. Các giá trị có thể có:`auto`(mặc định),`optimizeSpeed`,`optimizeLegibility`,`geometricPrecision`.
+  - : Text rendering. Possible values: `auto` (default), `optimizeSpeed`, `optimizeLegibility`, `geometricPrecision`.
 - {{domxref("CanvasRenderingContext2D.wordSpacing")}}
-- : Khoảng cách từ. Giá trị mặc định:`0px`
-- {{domxref("CanvasRenderingContext2D.lang")}}{{experimental_inline}}
-- : Lấy hoặc đặt ngôn ngữ của bối cảnh vẽ canvas.
+  - : Word spacing. Default value: `0px`
+- {{domxref("CanvasRenderingContext2D.lang")}} {{experimental_inline}}
+  - : Gets or sets the language of the canvas drawing context.
 
-### Kiểu tô và nét
+### Fill and stroke styles
 
-Kiểu tô được sử dụng cho màu sắc và kiểu dáng bên trong hình dạng và kiểu dáng nét vẽ được sử dụng cho các đường xung quanh hình.
+Fill styling is used for colors and styles inside shapes and stroke styling is used for the lines around shapes.
 
 - {{domxref("CanvasRenderingContext2D.fillStyle")}}
-- : Màu sắc hoặc kiểu dáng để sử dụng hình dạng bên trong. Mặc định là `black`.
+  - : Color or style to use inside shapes. Default is `black`.
 - {{domxref("CanvasRenderingContext2D.strokeStyle")}}
-- : Màu sắc hoặc kiểu dáng để sử dụng cho các đường xung quanh hình dạng. Mặc định là `black`.
+  - : Color or style to use for the lines around shapes. Default is `black`.
 
-### Độ dốc và mẫu
+### Gradients and patterns
 
 - {{domxref("CanvasRenderingContext2D.createConicGradient()")}}
-- : Tạo một gradient hình nón xung quanh một điểm được cho bởi tọa độ được biểu thị bằng các tham số.
+  - : Creates a conic gradient around a point given by coordinates represented by the parameters.
 - {{domxref("CanvasRenderingContext2D.createLinearGradient()")}}
-- : Tạo một gradient tuyến tính dọc theo đường được cho bởi tọa độ được biểu thị bằng các tham số.
+  - : Creates a linear gradient along the line given by the coordinates represented by the parameters.
 - {{domxref("CanvasRenderingContext2D.createRadialGradient()")}}
-- : Tạo một gradient hướng tâm được cho bởi tọa độ của hai vòng tròn được biểu thị bằng các tham số.
+  - : Creates a radial gradient given by the coordinates of the two circles represented by the parameters.
 - {{domxref("CanvasRenderingContext2D.createPattern()")}}
-- : Tạo một mẫu bằng cách sử dụng hình ảnh được chỉ định. Nó lặp lại nguồn theo các hướng được chỉ định bởi đối số lặp lại. Phương thức này trả về {{domxref("CanvasPattern")}}.
+  - : Creates a pattern using the specified image. It repeats the source in the directions specified by the repetition argument. This method returns a {{domxref("CanvasPattern")}}.
 
-### Bóng tối
+### Shadows
 
 - {{domxref("CanvasRenderingContext2D.shadowBlur")}}
-- : Chỉ định hiệu ứng làm mờ. Mặc định:`0`.
+  - : Specifies the blurring effect. Default: `0`.
 - {{domxref("CanvasRenderingContext2D.shadowColor")}}
-- : Màu sắc của bóng tối. Mặc định: màu đen hoàn toàn trong suốt.
+  - : Color of the shadow. Default: fully-transparent black.
 - {{domxref("CanvasRenderingContext2D.shadowOffsetX")}}
-- : Khoảng cách ngang bóng sẽ được bù đắp. Mặc định:`0`.
+  - : Horizontal distance the shadow will be offset. Default: `0`.
 - {{domxref("CanvasRenderingContext2D.shadowOffsetY")}}
-- : Khoảng cách theo chiều dọc bóng sẽ được bù đắp. Mặc định:`0`.
+  - : Vertical distance the shadow will be offset. Default: `0`.
 
-### Đường dẫn
+### Paths
 
-Các phương pháp sau đây có thể được sử dụng để thao tác đường dẫn của các đối tượng.
+The following methods can be used to manipulate paths of objects.
 
 - {{domxref("CanvasRenderingContext2D.beginPath()")}}
-- : Bắt đầu một đường dẫn mới bằng cách làm trống danh sách các đường dẫn phụ. Gọi phương thức này khi bạn muốn tạo một đường dẫn mới.
+  - : Starts a new path by emptying the list of sub-paths. Call this method when you want to create a new path.
 - {{domxref("CanvasRenderingContext2D.closePath()")}}
-- : Làm cho điểm của bút di chuyển trở lại điểm bắt đầu của đường dẫn phụ hiện tại. Nó cố gắng vẽ một đường thẳng từ điểm hiện tại đến điểm bắt đầu. Nếu hình đã được đóng hoặc chỉ có một điểm thì hàm này không có tác dụng gì.
+  - : Causes the point of the pen to move back to the start of the current sub-path. It tries to draw a straight line from the current point to the start. If the shape has already been closed or has only one point, this function does nothing.
 - {{domxref("CanvasRenderingContext2D.moveTo()")}}
-- : Di chuyển điểm bắt đầu của đường dẫn phụ mới tới tọa độ (x, y).
+  - : Moves the starting point of a new sub-path to the (x, y) coordinates.
 - {{domxref("CanvasRenderingContext2D.lineTo()")}}
-- : Kết nối điểm cuối cùng trong đường dẫn phụ hiện tại với tọa độ (x, y) đã chỉ định bằng một đường thẳng.
+  - : Connects the last point in the current sub-path to the specified (x, y) coordinates with a straight line.
 - {{domxref("CanvasRenderingContext2D.bezierCurveTo()")}}
-- : Thêm đường cong Bézier hình khối vào đường dẫn hiện tại.
+  - : Adds a cubic Bézier curve to the current path.
 - {{domxref("CanvasRenderingContext2D.quadraticCurveTo()")}}
-- : Thêm đường cong Bézier bậc hai vào đường dẫn hiện tại.
+  - : Adds a quadratic Bézier curve to the current path.
 - {{domxref("CanvasRenderingContext2D.arc()")}}
-- : Thêm một vòng cung tròn vào đường dẫn hiện tại.
+  - : Adds a circular arc to the current path.
 - {{domxref("CanvasRenderingContext2D.arcTo()")}}
-- : Thêm một cung vào đường dẫn hiện tại với các điểm điều khiển và bán kính đã cho, được nối với điểm trước đó bằng một đường thẳng.
+  - : Adds an arc to the current path with the given control points and radius, connected to the previous point by a straight line.
 - {{domxref("CanvasRenderingContext2D.ellipse()")}}
-- : Thêm một vòng cung hình elip vào đường dẫn hiện tại.
+  - : Adds an elliptical arc to the current path.
 - {{domxref("CanvasRenderingContext2D.rect()")}}
-- : Tạo đường dẫn cho hình chữ nhật tại vị trí (x, y) với kích thước được xác định bởi _width_ và _height_.
+  - : Creates a path for a rectangle at position (x, y) with a size that is determined by _width_ and _height_.
 - {{domxref("CanvasRenderingContext2D.roundRect()")}}
-- : Tạo đường dẫn cho hình chữ nhật tròn với vị trí, chiều rộng, chiều cao và bán kính góc được chỉ định.
+  - : Creates a path for a rounded rectangle with a specified position, width, height, and corner radii.
 
-### Vẽ đường dẫn
+### Drawing paths
 
 - {{domxref("CanvasRenderingContext2D.fill()")}}
-- : Điền vào các đường dẫn phụ hiện tại với kiểu điền hiện tại.
+  - : Fills the current sub-paths with the current fill style.
 - {{domxref("CanvasRenderingContext2D.stroke()")}}
-- : Tạo nét cho các đường dẫn phụ hiện tại với kiểu nét hiện tại.
+  - : Strokes the current sub-paths with the current stroke style.
 - {{domxref("CanvasRenderingContext2D.drawFocusIfNeeded()")}}
-- : Nếu một phần tử nhất định được tập trung, phương pháp này sẽ vẽ một vòng tiêu điểm xung quanh đường dẫn hiện tại.
+  - : If a given element is focused, this method draws a focus ring around the current path.
 - {{domxref("CanvasRenderingContext2D.clip()")}}
-- : Tạo một đường cắt từ các đường dẫn phụ hiện tại. Mọi thứ được vẽ sau `clip()` được gọi chỉ xuất hiện bên trong đường cắt. Để biết ví dụ, hãy xem [Clipping paths](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing) trong hướng dẫn Canvas.
+  - : Creates a clipping path from the current sub-paths. Everything drawn after `clip()` is called appears inside the clipping path only. For an example, see [Clipping paths](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing) in the Canvas tutorial.
 - {{domxref("CanvasRenderingContext2D.isPointInPath()")}}
-- : Báo cáo xem điểm đã chỉ định có nằm trong đường dẫn hiện tại hay không.
+  - : Reports whether or not the specified point is contained in the current path.
 - {{domxref("CanvasRenderingContext2D.isPointInStroke()")}}
-- : Báo cáo xem điểm đã chỉ định có nằm trong khu vực được chứa bởi nét của đường dẫn hay không.
+  - : Reports whether or not the specified point is inside the area contained by the stroking of a path.
 
-### chuyển đổi
+### Transformations
 
-Các đối tượng trong ngữ cảnh hiển thị `CanvasRenderingContext2D` có ma trận chuyển đổi hiện tại và các phương thức để thao tác với nó. Ma trận chuyển đổi được áp dụng khi tạo đường dẫn mặc định hiện tại, vẽ văn bản, hình dạng và các đối tượng {{domxref("Path2D")}}. Các phương thức được liệt kê bên dưới vẫn được giữ nguyên vì lý do lịch sử và khả năng tương thích vì các đối tượng {{domxref("DOMMatrix")}} hiện được sử dụng trong hầu hết các phần của API và thay vào đó sẽ được sử dụng trong tương lai.
+Objects in the `CanvasRenderingContext2D` rendering context have a current transformation matrix and methods to manipulate it. The transformation matrix is applied when creating the current default path, painting text, shapes and {{domxref("Path2D")}} objects. The methods listed below remain for historical and compatibility reasons as {{domxref("DOMMatrix")}} objects are used in most parts of the API nowadays and will be used in the future instead.
 
 - {{domxref("CanvasRenderingContext2D.getTransform()")}}
-- : Truy xuất ma trận chuyển đổi hiện tại đang được áp dụng cho ngữ cảnh.
+  - : Retrieves the current transformation matrix being applied to the context.
 - {{domxref("CanvasRenderingContext2D.rotate()")}}
-- : Thêm phép quay vào ma trận chuyển đổi. Đối số góc đại diện cho góc quay theo chiều kim đồng hồ và được biểu thị bằng radian.
+  - : Adds a rotation to the transformation matrix. The angle argument represents a clockwise rotation angle and is expressed in radians.
 - {{domxref("CanvasRenderingContext2D.scale()")}}
-- : Thêm phép chuyển đổi tỷ lệ cho các đơn vị canvas theo x theo chiều ngang và theo y theo chiều dọc.
+  - : Adds a scaling transformation to the canvas units by x horizontally and by y vertically.
 - {{domxref("CanvasRenderingContext2D.translate()")}}
-- : Thêm một phép biến đổi dịch bằng cách di chuyển canvas và điểm gốc của nó x theo chiều ngang và y theo chiều dọc trên lưới.
+  - : Adds a translation transformation by moving the canvas and its origin x horizontally and y vertically on the grid.
 - {{domxref("CanvasRenderingContext2D.transform()")}}
-- : Nhân ma trận biến đổi hiện tại với ma trận được mô tả bởi các đối số của nó.
+  - : Multiplies the current transformation matrix with the matrix described by its arguments.
 - {{domxref("CanvasRenderingContext2D.setTransform()")}}
-- : Đặt lại phép biến đổi hiện tại thành ma trận nhận dạng, sau đó gọi phương thức `transform()` với cùng các đối số.
+  - : Resets the current transform to the identity matrix, and then invokes the `transform()` method with the same arguments.
 - {{domxref("CanvasRenderingContext2D.resetTransform()")}}
-- : Đặt lại phép biến đổi hiện tại bằng ma trận nhận dạng.
+  - : Resets the current transform by the identity matrix.
 
-### Soạn
+### Compositing
 
 - {{domxref("CanvasRenderingContext2D.globalAlpha")}}
-- : Giá trị Alpha được áp dụng cho các hình dạng và hình ảnh trước khi chúng được tổng hợp vào khung vẽ. Mặc định `1.0`(mờ).
+  - : Alpha value that is applied to shapes and images before they are composited onto the canvas. Default `1.0` (opaque).
 - {{domxref("CanvasRenderingContext2D.globalCompositeOperation")}}
-- : Với `globalAlpha` được áp dụng, điều này sẽ đặt ra cách vẽ hình dạng và hình ảnh trên bitmap hiện có.
+  - : With `globalAlpha` applied this sets how shapes and images are drawn onto the existing bitmap.
 
-### Vẽ hình ảnh
+### Drawing images
 
 - {{domxref("CanvasRenderingContext2D.drawImage()")}}
-- : Vẽ hình ảnh được chỉ định. Phương pháp này có sẵn ở nhiều định dạng, mang lại sự linh hoạt cao trong việc sử dụng.
+  - : Draws the specified image. This method is available in multiple formats, providing a great deal of flexibility in its use.
 
-### Thao tác pixel
+### Pixel manipulation
 
-Xem thêm đối tượng {{domxref("ImageData")}}.
+See also the {{domxref("ImageData")}} object.
 
 - {{domxref("CanvasRenderingContext2D.createImageData()")}}
-- : Tạo một đối tượng {{domxref("ImageData")}} mới, trống với các kích thước được chỉ định. Tất cả các pixel trong đối tượng mới đều có màu đen trong suốt.
+  - : Creates a new, blank {{domxref("ImageData")}} object with the specified dimensions. All of the pixels in the new object are transparent black.
 - {{domxref("CanvasRenderingContext2D.getImageData()")}}
-- : Trả về một đối tượng {{domxref("ImageData")}} biểu thị dữ liệu pixel cơ bản cho vùng canvas được biểu thị bằng hình chữ nhật bắt đầu tại _(sx, sy)_ và có chiều rộng _sw_ và _sh_.
+  - : Returns an {{domxref("ImageData")}} object representing the underlying pixel data for the area of the canvas denoted by the rectangle which starts at _(sx, sy)_ and has an _sw_ width and _sh_ height.
 - {{domxref("CanvasRenderingContext2D.putImageData()")}}
-- : Vẽ dữ liệu từ đối tượng {{domxref("ImageData")}} đã cho lên bitmap. Nếu một hình chữ nhật bẩn được cung cấp thì chỉ các pixel từ hình chữ nhật đó được sơn.
+  - : Paints data from the given {{domxref("ImageData")}} object onto the bitmap. If a dirty rectangle is provided, only the pixels from that rectangle are painted.
 
-### Làm mịn hình ảnh
+### Image smoothing
 
 - {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled")}}
-- : Chế độ làm mịn ảnh; nếu bị tắt, hình ảnh sẽ không được làm mịn nếu thu nhỏ.
+  - : Image smoothing mode; if disabled, images will not be smoothed if scaled.
 - {{domxref("CanvasRenderingContext2D.imageSmoothingQuality")}}
-- : Cho phép bạn đặt chất lượng làm mịn hình ảnh.
+  - : Allows you to set the quality of image smoothing.
 
-### Trạng thái canvas
+### The canvas state
 
-Bối cảnh kết xuất `CanvasRenderingContext2D` chứa nhiều trạng thái kiểu vẽ khác nhau (thuộc tính cho kiểu đường, kiểu tô, kiểu bóng, kiểu văn bản). Các phương pháp sau đây giúp bạn làm việc với trạng thái đó:
+The `CanvasRenderingContext2D` rendering context contains a variety of drawing style states (attributes for line styles, fill styles, shadow styles, text styles). The following methods help you to work with that state:
 
 - {{domxref("CanvasRenderingContext2D.save()")}}
-- : Lưu trạng thái kiểu vẽ hiện tại bằng cách sử dụng một ngăn xếp để bạn có thể hoàn nguyên bất kỳ thay đổi nào bạn thực hiện đối với nó bằng cách sử dụng `restore()`.
+  - : Saves the current drawing style state using a stack so you can revert any change you make to it using `restore()`.
 - {{domxref("CanvasRenderingContext2D.restore()")}}
-- : Khôi phục trạng thái kiểu vẽ về phần tử cuối cùng trên 'ngăn xếp trạng thái' được lưu bởi `save()`.
+  - : Restores the drawing style state to the last element on the 'state stack' saved by `save()`.
 - {{domxref("CanvasRenderingContext2D.canvas")}}
-- : Tham chiếu ngược chỉ đọc tới {{domxref("HTMLCanvasElement")}}. Có thể là [`null`](/en-US/docs/Web/JavaScript/Reference/Operators/null) nếu nó không được liên kết với phần tử {{HTMLElement("canvas")}}.
+  - : A read-only back-reference to the {{domxref("HTMLCanvasElement")}}. Might be [`null`](/en-US/docs/Web/JavaScript/Reference/Operators/null) if it is not associated with a {{HTMLElement("canvas")}} element.
 - {{domxref("CanvasRenderingContext2D.getContextAttributes()")}}
-- : Trả về một đối tượng chứa các thuộc tính ngữ cảnh được trình duyệt sử dụng. Thuộc tính bối cảnh có thể được yêu cầu khi sử dụng {{domxref("HTMLCanvasElement.getContext()")}} để tạo bối cảnh 2D.
+  - : Returns an object containing the context attributes used by the browser. Context attributes can be requested when using {{domxref("HTMLCanvasElement.getContext()")}} to create the 2D context.
 - {{domxref("CanvasRenderingContext2D.reset()")}}
-- : Đặt lại bối cảnh kết xuất, bao gồm bộ đệm sao lưu, ngăn xếp trạng thái vẽ, đường dẫn và kiểu.
-- {{domxref("CanvasRenderingContext2D.isContextLost()")}}{{Experimental_Inline}}
-- : Trả về `true` nếu ngữ cảnh hiển thị bị mất.
+  - : Resets the rendering context, including the backing buffer, the drawing state stack, path, and styles.
+- {{domxref("CanvasRenderingContext2D.isContextLost()")}} {{Experimental_Inline}}
+  - : Returns `true` if the rendering context was lost.
 
-### Bộ lọc
+### Filters
 
 - {{domxref("CanvasRenderingContext2D.filter")}}
-- : Áp dụng bộ lọc CSS hoặc SVG cho khung vẽ, ví dụ: để thay đổi độ sáng hoặc độ mờ của nó.
+  - : Applies a CSS or SVG filter to the canvas, e.g., to change its brightness or blurriness.
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
 - {{domxref("HTMLCanvasElement")}}
 - {{HTMLElement("canvas")}}

@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính canvas"
+title: "CanvasRenderingContext2D: canvas property"
 short-title: canvas
 slug: Web/API/CanvasRenderingContext2D/canvas
 page-type: web-api-instance-property
@@ -8,24 +8,24 @@ browser-compat: api.CanvasRenderingContext2D.canvas
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.canvas`**, một phần của
-[Canvas API](/en-US/docs/Web/API/Canvas_API), là tham chiếu chỉ đọc cho
-Đối tượng {{domxref("HTMLCanvasElement")}} được liên kết với một bối cảnh nhất định.
+The **`CanvasRenderingContext2D.canvas`** property, part of the
+[Canvas API](/en-US/docs/Web/API/Canvas_API), is a read-only reference to the
+{{domxref("HTMLCanvasElement")}} object that is associated with a given context.
 
-## Giá trị
+## Value
 
-Một đối tượng {{domxref("HTMLCanvasElement")}}.
+A {{domxref("HTMLCanvasElement")}} object.
 
-## Ví dụ
+## Examples
 
-Cho phần tử {{HTMLElement("canvas")}} này:
+Given this {{HTMLElement("canvas")}} element:
 
 ```html
 <canvas id="canvas"></canvas>
 ```
 
-… bạn có thể lấy tham chiếu đến phần tử canvas trong
-`CanvasRenderingContext2D`bằng cách sử dụng thuộc tính`canvas`:
+… you can get a reference to the canvas element within the
+`CanvasRenderingContext2D` by using the `canvas` property:
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -33,15 +33,15 @@ const ctx = canvas.getContext("2d");
 ctx.canvas; // HTMLCanvasElement
 ```
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện {{domxref("CanvasRenderingContext2D")}}
+- {{domxref("CanvasRenderingContext2D")}} interface
 - [Canvas API](/en-US/docs/Web/API/Canvas_API)

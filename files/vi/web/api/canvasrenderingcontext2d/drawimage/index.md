@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức drawImage()"
+title: "CanvasRenderingContext2D: drawImage() method"
 short-title: drawImage()
 slug: Web/API/CanvasRenderingContext2D/drawImage
 page-type: web-api-instance-method
@@ -8,10 +8,10 @@ browser-compat: api.CanvasRenderingContext2D.drawImage
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.drawImage()`** của
-API Canvas 2D cung cấp các cách khác nhau để vẽ hình ảnh lên canvas.
+The **`CanvasRenderingContext2D.drawImage()`** method of the
+Canvas 2D API provides different ways to draw an image onto the canvas.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 drawImage(image, dx, dy)
@@ -19,68 +19,71 @@ drawImage(image, dx, dy, dWidth, dHeight)
 drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)
 ```
 
-! [drawImage](canvas_drawimage.jpg)
+![drawImage](canvas_drawimage.jpg)
 
-### Tham số-`image`
+### Parameters
 
-- : Một yếu tố để vẽ vào bối cảnh. Đặc điểm kỹ thuật cho phép mọi hình ảnh canvas
-  nguồn, cụ thể là
-  một {{domxref("HTMLImageElement")}},
-  một {{domxref("SVGImageElement")}},
-  một {{domxref("HTMLVideoElement")}},
-  một {{domxref("HTMLCanvasElement")}},
-  một {{domxref("ImageBitmap")}},
-  một {{domxref("OffscreenCanvas")}},
-  hoặc {{domxref("VideoFrame")}}.
+- `image`
+  - : An element to draw into the context. The specification permits any canvas image
+    source, specifically,
+    an {{domxref("HTMLImageElement")}},
+    an {{domxref("SVGImageElement")}},
+    an {{domxref("HTMLVideoElement")}},
+    an {{domxref("HTMLCanvasElement")}},
+    an {{domxref("ImageBitmap")}},
+    an {{domxref("OffscreenCanvas")}},
+    or a {{domxref("VideoFrame")}}.
 - `sx` {{optional_inline}}
-- : Tọa độ trục x của góc trên cùng bên trái của hình chữ nhật phụ của nguồn
-  `image` để vẽ vào bối cảnh đích. Sử dụng cú pháp 3 hoặc 5 đối số
-  để bỏ qua lập luận này.
+  - : The x-axis coordinate of the top left corner of the sub-rectangle of the source
+    `image` to draw into the destination context. Use the 3- or 5-argument syntax
+    to omit this argument.
 - `sy` {{optional_inline}}
-- : Tọa độ trục y của góc trên cùng bên trái của hình chữ nhật phụ của nguồn
-  `image` để vẽ vào bối cảnh đích. Sử dụng cú pháp 3 hoặc 5 đối số
-  để bỏ qua lập luận này.
+  - : The y-axis coordinate of the top left corner of the sub-rectangle of the source
+    `image` to draw into the destination context. Use the 3- or 5-argument syntax
+    to omit this argument.
 - `sWidth` {{optional_inline}}
-- : Chiều rộng của hình chữ nhật phụ của nguồn `image` để vẽ vào
-  bối cảnh điểm đến. Nếu không được chỉ định, toàn bộ hình chữ nhật từ tọa độ
-  được chỉ định bởi `sx`và`sy` ở góc dưới bên phải của
-  hình ảnh được sử dụng. Sử dụng cú pháp 3 hoặc 5 đối số để bỏ qua đối số này.
-  Giá trị âm làm tăng hình chữ nhật phụ theo hướng ngược lại, nhưng các pixel luôn được xử lý theo hướng ban đầu và hình ảnh không bị lật.
+  - : The width of the sub-rectangle of the source `image` to draw into the
+    destination context. If not specified, the entire rectangle from the coordinates
+    specified by `sx` and `sy` to the bottom-right corner of the
+    image is used. Use the 3- or 5-argument syntax to omit this argument.
+    Negative values grow the sub-rectangle in the opposite direction, but pixels are always processed in the original direction and the image is not flipped.
 - `sHeight` {{optional_inline}}
-- : Chiều cao của hình chữ nhật phụ của nguồn `image` để vẽ vào
-  bối cảnh điểm đến. Sử dụng cú pháp 3 hoặc 5 đối số để bỏ qua đối số này.
-  Giá trị âm làm tăng hình chữ nhật phụ theo hướng ngược lại, nhưng các pixel luôn được xử lý theo hướng ban đầu và hình ảnh không bị lật.
+  - : The height of the sub-rectangle of the source `image` to draw into the
+    destination context. Use the 3- or 5-argument syntax to omit this argument.
+    Negative values grow the sub-rectangle in the opposite direction, but pixels are always processed in the original direction and the image is not flipped.
 - `dx`
-- : Tọa độ trục x trong khung vẽ đích để đặt phần trên cùng bên trái
-  góc của nguồn `image`.
+  - : The x-axis coordinate in the destination canvas at which to place the top-left
+    corner of the source `image`.
 - `dy`
-- : Tọa độ trục y trong khung vẽ đích để đặt phần trên cùng bên trái
-  góc của nguồn `image`.
+  - : The y-axis coordinate in the destination canvas at which to place the top-left
+    corner of the source `image`.
 - `dWidth`
-- : Chiều rộng để vẽ `image` trong khung vẽ đích. Điều này cho phép
-  phóng to hình ảnh đã vẽ. Nếu không được chỉ định, hình ảnh sẽ không được chia tỷ lệ theo chiều rộng khi
-  được vẽ. Lưu ý rằng đối số này không có trong cú pháp 3 đối số.
-  Giá trị âm làm tăng hình chữ nhật phụ theo hướng ngược lại, nhưng các pixel luôn được xử lý theo hướng ban đầu và hình ảnh không bị lật.
+  - : The width to draw the `image` in the destination canvas. This allows
+    scaling of the drawn image. If not specified, the image is not scaled in width when
+    drawn. Note that this argument is not included in the 3-argument syntax.
+    Negative values grow the sub-rectangle in the opposite direction, but pixels are always processed in the original direction and the image is not flipped.
 - `dHeight`
-- : Chiều cao để vẽ `image` trong khung vẽ đích. Điều này cho phép
-  phóng to hình ảnh đã vẽ. Nếu không được chỉ định, hình ảnh sẽ không được chia tỷ lệ theo chiều cao khi
-  được vẽ. Lưu ý rằng đối số này không có trong cú pháp 3 đối số.
-  Giá trị âm làm tăng hình chữ nhật phụ theo hướng ngược lại, nhưng các pixel luôn được xử lý theo hướng ban đầu và hình ảnh không bị lật.### Giá trị trả về
+  - : The height to draw the `image` in the destination canvas. This allows
+    scaling of the drawn image. If not specified, the image is not scaled in height when
+    drawn. Note that this argument is not included in the 3-argument syntax.
+    Negative values grow the sub-rectangle in the opposite direction, but pixels are always processed in the original direction and the image is not flipped.
 
-Không có ({{jsxref("undefined")}}).
+### Return value
 
-### Ngoại lệ
+None ({{jsxref("undefined")}}).
+
+### Exceptions
 
 - `InvalidStateError` {{domxref("DOMException")}}
-- : Được ném khi hình ảnh không có dữ liệu hình ảnh hoặc nếu chiều rộng hoặc chiều cao hình chữ nhật của canvas hoặc nguồn bằng 0.
+  - : Thrown when the image has no image data or if the canvas or source rectangle width or height is zero.
 - `TypeMismatchError` {{domxref("DOMException")}}
-- : Được ném ra khi hình ảnh `null`hoặc`undefined` được truyền dưới dạng tham số.
+  - : Thrown when a `null` or `undefined` image is passed as parameter.
 
-## Ví dụ
+## Examples
 
-### Vẽ hình ảnh lên canvas
+### Drawing an image to the canvas
 
-Ví dụ này vẽ một hình ảnh vào khung vẽ bằng phương thức `drawImage()`.
+This example draws an image to the canvas using the `drawImage()` method.
 
 #### HTML
 
@@ -103,9 +106,9 @@ Ví dụ này vẽ một hình ảnh vào khung vẽ bằng phương thức `dra
 
 #### JavaScript
 
-Ảnh nguồn được lấy từ tọa độ (33, 71), có chiều rộng là 104 và
-chiều cao là 124. Nó được vẽ vào canvas tại (21, 20), ở đó nó có chiều rộng là 87
-và chiều cao là 104.
+The source image is taken from the coordinates (33, 71), with a width of 104 and a
+height of 124. It is drawn to the canvas at (21, 20), where it is given a width of 87
+and a height of 104.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -117,22 +120,22 @@ image.addEventListener("load", (e) => {
 });
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_an_image_to_the_canvas', 700, 180) }}
 
-### Hiểu kích thước phần tử nguồn
+### Understanding source element size
 
-Phương thức `drawImage()` sử dụng kích thước _intrinsic của phần tử nguồn trong CSS
-pixel_ khi vẽ.
+The `drawImage()` method uses the source element's _intrinsic size in CSS
+pixels_ when drawing.
 
-Ví dụ: nếu bạn tải `Image` và chỉ định các tham số kích thước tùy chọn
-trong [constructor](/en-US/docs/Web/API/HTMLImageElement/Image) của nó, bạn sẽ
-phải sử dụng các thuộc tính `naturalWidth`và`naturalHeight` của
-phiên bản được tạo để tính toán chính xác những thứ như vùng cắt và tỷ lệ, thay vào đó
-hơn `element.width`và`element.height`. Điều tương tự cũng xảy ra với
-`videoWidth`và`videoHeight` nếu phần tử là
-Phần tử {{htmlelement("video")}}, v.v.
+For example, if you load an `Image` and specify the optional size parameters
+in its [constructor](/en-US/docs/Web/API/HTMLImageElement/Image), you will
+have to use the `naturalWidth` and `naturalHeight` properties of
+the created instance to properly calculate things like crop and scale regions, rather
+than `element.width` and `element.height`. The same goes for
+`videoWidth` and `videoHeight` if the element is a
+{{htmlelement("video")}} element, and so on.
 
 #### HTML
 
@@ -168,31 +171,31 @@ function drawImageActualSize() {
 }
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample('Understanding_source_element_size', 700, 260)}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Ghi chú
+## Notes
 
-- `drawImage()` chỉ hoạt động chính xác trên {{domxref("HTMLVideoElement")}}
-  khi {{domxref("HTMLMediaElement.readyState")}} của nó lớn hơn 1 (tức là
-  Sự kiện **seek** được kích hoạt sau khi cài đặt `currentTime`
-  tài sản).
-- `drawImage()` sẽ luôn sử dụng kích thước _intrinsic của phần tử nguồn trong
-  CSS pixels_ khi vẽ, cắt xén và/hoặc chia tỷ lệ.
-- Ở một số phiên bản trình duyệt cũ hơn, `drawImage()` sẽ bỏ qua tất cả EXIF
-  siêu dữ liệu trong hình ảnh, bao gồm cả Định hướng. Hành vi này đặc biệt rắc rối
-  trên các thiết bị iOS. Bạn nên tự mình phát hiện Định hướng và sử dụng
-  `rotate()` để làm cho đúng.
+- `drawImage()` only works correctly on an {{domxref("HTMLVideoElement")}}
+  when its {{domxref("HTMLMediaElement.readyState")}} is greater than 1 (i.e.,
+  **seek** event fired after setting the `currentTime`
+  property).
+- `drawImage()` will always use the source element's _intrinsic size in
+  CSS pixels_ when drawing, cropping, and/or scaling.
+- In some older browser versions, `drawImage()` will ignore all EXIF
+  metadata in images, including the Orientation. This behavior is especially troublesome
+  on iOS devices. You should detect the Orientation yourself and use
+  `rotate()` to make it right.
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

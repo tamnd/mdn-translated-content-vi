@@ -6,20 +6,20 @@ page-type: guide
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Applying_styles_and_colors", "Web/API/Canvas_API/Tutorial/Using_images")}}
 
-Sau khi xem cách [áp dụng kiểu và màu](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) trong chương trước, bây giờ chúng ta sẽ xem cách vẽ văn bản lên canvas.
+After having seen how to [apply styles and colors](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) in the previous chapter, we will now have a look at how to draw text onto the canvas.
 
-## Vẽ văn bản
+## Drawing text
 
-Ngữ cảnh hiển thị canvas cung cấp hai phương thức để hiển thị văn bản:
+The canvas rendering context provides two methods to render text:
 
 - {{domxref("CanvasRenderingContext2D.fillText", "fillText(text, x, y [, maxWidth])")}}
-  - : Điền văn bản cho trước tại vị trí (x,y) đã cho. Tùy chọn với chiều rộng tối đa để vẽ.
+  - : Fills a given text at the given (x,y) position. Optionally with a maximum width to draw.
 - {{domxref("CanvasRenderingContext2D.strokeText", "strokeText(text, x, y [, maxWidth])")}}
-  - : Vuốt một văn bản nhất định tại vị trí (x,y) đã cho. Tùy chọn với chiều rộng tối đa để vẽ.
+  - : Strokes a given text at the given (x,y) position. Optionally with a maximum width to draw.
 
-### Ví dụ về `fillText`
+### A `fillText` example
 
-Văn bản được điền bằng `fillStyle` hiện tại.
+The text is filled using the current `fillStyle`.
 
 ```js
 function draw() {
@@ -39,9 +39,9 @@ draw();
 
 {{EmbedLiveSample("A_fillText_example", 310, 110)}}
 
-### Ví dụ về `strokeText`
+### A `strokeText` example
 
-Văn bản được điền bằng `strokeStyle` hiện tại.
+The text is filled using the current `strokeStyle`.
 
 ```js
 function draw() {
@@ -61,29 +61,29 @@ draw();
 
 {{EmbedLiveSample("A_strokeText_example", 310, 110)}}
 
-## Tạo kiểu cho văn bản
+## Styling text
 
-Trong các ví dụ trên, chúng tôi đã sử dụng thuộc tính `font` để làm cho văn bản lớn hơn một chút so với kích thước mặc định. Có một số thuộc tính khác cho phép bạn điều chỉnh cách hiển thị văn bản trên canvas:
+In the examples above we are already making use of the `font` property to make the text a bit larger than the default size. There are some more properties which let you adjust the way the text gets displayed on the canvas:
 
 - {{domxref("CanvasRenderingContext2D.font", "font = value")}}
-  - : Kiểu văn bản hiện tại đang được sử dụng khi vẽ văn bản. Chuỗi này sử dụng cú pháp tương tự như thuộc tính [CSS](/en-US/docs/Web/CSS) {{cssxref("font")}}. Phông chữ mặc định là sans-serif 10px.
+  - : The current text style being used when drawing text. This string uses the same syntax as the [CSS](/en-US/docs/Web/CSS) {{cssxref("font")}} property. The default font is 10px sans-serif.
 - {{domxref("CanvasRenderingContext2D.textAlign", "textAlign = value")}}
-  - : Cài đặt căn chỉnh văn bản. Các giá trị có thể có: `start`, `end`, `left`, `right` hoặc `center`. Giá trị mặc định là `start`.
+  - : Text alignment setting. Possible values: `start`, `end`, `left`, `right` or `center`. The default value is `start`.
 - {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline = value")}}
-  - : Cài đặt căn chỉnh đường cơ sở. Các giá trị có thể có: `top`, `hanging`, `middle`, `alphabetic`, `ideographic`, `bottom`. Giá trị mặc định là `alphabetic`.
+  - : Baseline alignment setting. Possible values: `top`, `hanging`, `middle`, `alphabetic`, `ideographic`, `bottom`. The default value is `alphabetic`.
 - {{domxref("CanvasRenderingContext2D.direction", "direction = value")}}
-  - : Tính định hướng. Các giá trị có thể có: `ltr`, `rtl`, `inherit`. Giá trị mặc định là `inherit`.
+  - : Directionality. Possible values: `ltr`, `rtl`, `inherit`. The default value is `inherit`.
 
-Những thuộc tính này có thể quen thuộc với bạn nếu bạn đã từng làm việc với CSS trước đây.
+These properties might be familiar to you, if you have worked with CSS before.
 
-Sơ đồ sau từ [HTML spec](https://html.spec.whatwg.org/multipage/canvas.html#text-styles) thể hiện các đường cơ sở khác nhau được thuộc tính `textBaseline` hỗ trợ.
+The following diagram from the [HTML spec](https://html.spec.whatwg.org/multipage/canvas.html#text-styles) demonstrates the various baselines supported by the `textBaseline` property.
 
-![Đường cơ sở phía trên gần như ở trên cùng của các ký tự trong một phông chữ, đường cơ sở treo là nơi neo một số ký tự như आ, phần giữa nằm giữa đường cơ sở phía trên và đường cơ sở phía dưới, đường cơ sở theo bảng chữ cái là nơi neo các ký tự như Á, ÿ, f và Ω, đường cơ sở dưới chữ tượng hình là nơi các ký tự như 私 và 達 được neo và đường cơ sở em-under gần như ở mức dưới cùng của glyphs trong một phông chữ. Phần trên cùng và dưới cùng của hộp giới hạn có thể cách xa các đường cơ sở này, do các ký tự kéo dài ra xa bên ngoài các đường cơ sở phần trên và phần dưới.](baselines.png)
+![The em-over baseline is roughly at the top of the glyphs in a font, the hanging baseline is where some glyphs like आ are anchored, the middle is half-way between the em-over and em-under baselines, the alphabetic baseline is where characters like Á, ÿ, f, and Ω are anchored, the ideographic-under baseline is where glyphs like 私 and 達 are anchored, and the em-under baseline is roughly at the bottom of the glyphs in a font. The top and bottom of the bounding box can be far from these baselines, due to glyphs extending far outside em-over and em-under baselines.](baselines.png)
 
-### Ví dụ về `textBaseline`
+### A `textBaseline` example
 
-Ví dụ này thể hiện các giá trị thuộc tính `textBaseline` khác nhau.
-Xem trang [`CanvasRenderingContext2D.textBaseline`](/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline) để biết thêm thông tin và ví dụ chi tiết.
+This example demonstrates the various `textBaseline` property values.
+See the [`CanvasRenderingContext2D.textBaseline`](/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline) page for more information and detailed examples.
 
 ```html hidden live-sample___textBaseline
 <canvas id="canvas" width="400" height="100"></canvas>
@@ -113,14 +113,14 @@ draw();
 
 {{EmbedLiveSample('textBaseline', 310, 110)}}
 
-## Đo văn bản nâng cao
+## Advanced text measurements
 
-Trong trường hợp bạn cần biết thêm chi tiết về văn bản, phương pháp sau đây cho phép bạn đo lường nó.
+In the case you need to obtain more details about the text, the following method allows you to measure it.
 
 - {{domxref("CanvasRenderingContext2D.measureText", "measureText()")}}
-  - : Trả về đối tượng {{domxref("TextMetrics")}} chứa chiều rộng, tính bằng pixel, mà văn bản đã chỉ định sẽ có khi được vẽ theo kiểu văn bản hiện tại.
+  - : Returns a {{domxref("TextMetrics")}} object containing the width, in pixels, that the specified text will be when drawn in the current text style.
 
-Đoạn mã sau đây cho thấy cách bạn có thể đo văn bản và lấy chiều rộng của nó.
+The following code snippet shows how you can measure a text and get its width.
 
 ```js
 function draw() {
@@ -130,10 +130,10 @@ function draw() {
 }
 ```
 
-## Mối lo ngại về khả năng tiếp cận
+## Accessibility concerns
 
-Phần tử `<canvas>` chỉ là một bitmap và không cung cấp thông tin về bất kỳ đối tượng được vẽ nào. Văn bản được viết trên canvas có thể gây ra vấn đề về mức độ dễ đọc đối với người dùng dựa vào độ phóng đại của màn hình. Các pixel trong phần tử canvas không chia tỷ lệ và có thể bị mờ khi phóng đại. Điều này là do chúng không phải là một tập hợp các pixel mà là một vectơ hình chữ cái. Khi phóng to nó, các pixel sẽ trở nên lớn hơn.
+The `<canvas>` element is just a bitmap and does not provide information about any drawn objects. Text written on canvas can cause legibility issues with users relying on screen magnification. The pixels within a canvas element do not scale and can become blurry with magnification. This is because they are not a vector but letter-shaped collection of pixels. When zooming in on it, the pixels become bigger.
 
-Nội dung canvas không được hiển thị với các công cụ trợ năng như HTML ngữ nghĩa. Nói chung, bạn nên tránh sử dụng canvas trong trang web hoặc ứng dụng có thể truy cập. Một cách khác là sử dụng các phần tử HTML hoặc SVG thay vì canvas.
+Canvas content is not exposed to accessibility tools like semantic HTML is. In general, you should avoid using canvas in an accessible website or app. An alternative is to use HTML elements or SVG instead of canvas.
 
 {{PreviousNext("Web/API/Canvas_API/Tutorial/Applying_styles_and_colors", "Web/API/Canvas_API/Tutorial/Using_images")}}

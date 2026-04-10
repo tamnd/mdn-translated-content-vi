@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính bộ lọc"
-short-title: lọc
+title: "CanvasRenderingContext2D: filter property"
+short-title: filter
 slug: Web/API/CanvasRenderingContext2D/filter
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.filter
@@ -8,64 +8,85 @@ browser-compat: api.CanvasRenderingContext2D.filter
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.filter`** của API Canvas 2D cung cấp các hiệu ứng bộ lọc như làm mờ và chuyển thang độ xám. Nó tương tự như thuộc tính CSS {{cssxref("filter")}} và chấp nhận các giá trị giống nhau.
+The
+**`CanvasRenderingContext2D.filter`**
+property of the Canvas 2D API provides filter effects such as blurring and grayscaling.
+It is similar to the CSS {{cssxref("filter")}} property and accepts the same values.
 
-## Giá trị
+## Value
 
-Thuộc tính `filter`chấp nhận giá trị`"none"` hoặc một hoặc nhiều hàm lọc sau trong một chuỗi.
+The `filter` property accepts a value of `"none"` or one or more
+of the following filter functions in a string.
 
 - {{cssxref("url_function", "url()")}}
-- : Một CSS {{cssxref("url_function", "url()")}}. Lấy bất kỳ URL nào phân giải thành phần tử bộ lọc SVG.
-  Đây có thể là ID của một phần tử, đường dẫn đến tệp XML bên ngoài hoặc thậm chí là giá trị SVG được mã hóa dữ liệu.
+  - : A CSS {{cssxref("url_function", "url()")}}. Takes any URL that resolves to SVG filter element.
+    This can be the ID of an element, a path to external XML file, or even a data encoded SVG value.
 - {{cssxref("filter-function/blur", "blur()")}}
-- : Một CSS {{cssxref("&lt;length&gt;")}}. Áp dụng hiệu ứng làm mờ Gaussian cho bản vẽ. Nó
-  xác định giá trị của độ lệch chuẩn cho hàm Gaussian, tức là có bao nhiêu pixel trên màn hình hòa vào nhau; do đó, giá trị lớn hơn sẽ tạo ra nhiều mờ hơn. Giá trị `0` giữ nguyên đầu vào.
+  - : A CSS {{cssxref("&lt;length&gt;")}}. Applies a Gaussian blur to the drawing. It
+    defines the value of the standard deviation to the Gaussian function, i.e., how many
+    pixels on the screen blend into each other; thus, a larger value will create more
+    blur. A value of `0` leaves the input unchanged.
 - {{cssxref("filter-function/brightness", "brightness()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Áp dụng hệ số nhân tuyến tính cho bản vẽ,
-  làm cho nó trông sáng hơn hoặc tối hơn. Giá trị dưới `100%`làm tối hình ảnh, trong khi giá trị trên`100%`làm sáng hình ảnh. Giá trị`0%`sẽ tạo ra một hình ảnh có màu đen hoàn toàn, trong khi giá trị`100%` không thay đổi đầu vào.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Applies a linear multiplier to the drawing,
+    making it appear brighter or darker. A value under `100%` darkens the
+    image, while a value over `100%` brightens it. A value of `0%`
+    will create an image that is completely black, while a value of `100%`
+    leaves the input unchanged.
 - {{cssxref("filter-function/contrast", "contrast()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Điều chỉnh độ tương phản của bản vẽ. MỘT
-  giá trị `0%`sẽ tạo ra một bản vẽ hoàn toàn màu đen. Giá trị`100%` giữ nguyên bản vẽ.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Adjusts the contrast of the drawing. A
+    value of `0%` will create a drawing that is completely black. A value of
+    `100%` leaves the drawing unchanged.
 - {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-- : Áp dụng hiệu ứng đổ bóng cho bản vẽ. Bóng đổ thực sự là một bóng mờ,
-  phiên bản offset của mặt nạ alpha của bản vẽ được vẽ bằng một màu cụ thể, được tổng hợp bên dưới bản vẽ. Hàm này có tối đa năm đối số: -`<offset-x>`
-- : Xem {{cssxref("&lt;length&gt;")}} để biết có thể
-  đơn vị. Chỉ định khoảng cách ngang của bóng. -`<offset-y>`
-- : Xem {{cssxref("&lt;length&gt;")}} để biết có thể
-  đơn vị. Chỉ định khoảng cách theo chiều dọc của bóng. -`<blur-radius>`
-- : Giá trị này càng lớn thì độ mờ càng lớn, vì vậy
-  cái bóng trở nên lớn hơn và nhẹ hơn. Giá trị âm không được phép. -`<color>`
-- : Xem các giá trị {{cssxref("&lt;color&gt;")}} để biết có thể
-  từ khóa và ký hiệu.
+  - : Applies a drop shadow effect to the drawing. A drop shadow is effectively a blurred,
+    offset version of the drawing's alpha mask drawn in a particular color, composited
+    below the drawing. This function takes up to five arguments:
+    - `<offset-x>`
+      - : See {{cssxref("&lt;length&gt;")}} for possible
+        units. Specifies the horizontal distance of the shadow.
+    - `<offset-y>`
+      - : See {{cssxref("&lt;length&gt;")}} for possible
+        units. Specifies the vertical distance of the shadow.
+    - `<blur-radius>`
+      - : The larger this value, the bigger the blur, so
+        the shadow becomes bigger and lighter. Negative values are not allowed.
+    - `<color>`
+      - : See {{cssxref("&lt;color&gt;")}} values for possible
+        keywords and notations.
 
 - {{cssxref("filter-function/grayscale", "grayscale()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Chuyển đổi bản vẽ sang thang độ xám. Một giá trị
-  của `100%`hoàn toàn có thang độ xám. Giá trị`0%` giữ nguyên bản vẽ.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Converts the drawing to grayscale. A value
+    of `100%` is completely grayscale. A value of `0%` leaves the
+    drawing unchanged.
 - {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-- : Một CSS {{cssxref("&lt;angle&gt;")}}. Áp dụng xoay màu sắc trên bản vẽ. Một giá trị
-  của `0deg` giữ nguyên đầu vào.
+  - : A CSS {{cssxref("&lt;angle&gt;")}}. Applies a hue rotation on the drawing. A value
+    of `0deg` leaves the input unchanged.
 - {{cssxref("filter-function/invert", "invert()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Đảo ngược bản vẽ. Một giá trị của
-  `100%`có nghĩa là đảo ngược hoàn toàn. Giá trị`0%` giữ nguyên bản vẽ.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Inverts the drawing. A value of
+    `100%` means complete inversion. A value of `0%` leaves the
+    drawing unchanged.
 - {{cssxref("filter-function/opacity", "opacity()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Áp dụng độ trong suốt cho bản vẽ. MỘT
-  giá trị `0%`có nghĩa là hoàn toàn minh bạch. Giá trị`100%` giữ nguyên bản vẽ.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Applies transparency to the drawing. A
+    value of `0%` means completely transparent. A value of `100%`
+    leaves the drawing unchanged.
 - {{cssxref("filter-function/saturate", "saturate()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Làm bão hòa bản vẽ. Một giá trị của
-  `0%`có nghĩa là hoàn toàn không bão hòa. Giá trị`100%` giữ nguyên bản vẽ.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Saturates the drawing. A value of
+    `0%` means completely un-saturated. A value of `100%` leaves the
+    drawing unchanged.
 - {{cssxref("filter-function/sepia", "sepia()")}}
-- : Một CSS {{cssxref("&lt;percentage&gt;")}}. Chuyển đổi bản vẽ sang màu nâu đỏ. Một giá trị của
-  `100%`có nghĩa là màu nâu đỏ hoàn toàn. Giá trị`0%` giữ nguyên bản vẽ.
+  - : A CSS {{cssxref("&lt;percentage&gt;")}}. Converts the drawing to sepia. A value of
+    `100%` means completely sepia. A value of `0%` leaves the
+    drawing unchanged.
 - `none`
-- : Không có bộ lọc nào được áp dụng. Giá trị ban đầu.
+  - : No filter is applied. Initial value.
 
-## Ví dụ
+## Examples
 
-Để xem những ví dụ này, hãy đảm bảo sử dụng trình duyệt hỗ trợ tính năng này; xem bảng tương thích bên dưới.
+To view these examples, make sure to use a browser that supports this feature; see the
+compatibility table below.
 
-### Áp dụng làm mờ
+### Applying a blur
 
-Ví dụ này làm mờ một đoạn văn bản bằng thuộc tính `filter`.
+This example blurs a piece of text using the `filter` property.
 
 #### HTML
 
@@ -84,13 +105,15 @@ ctx.font = "48px serif";
 ctx.fillText("Hello world", 50, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Applying_a_blur', 700, 180) }}
 
-### Áp dụng nhiều bộ lọc
+### Applying multiple filters
 
-Bạn có thể kết hợp bao nhiêu bộ lọc tùy thích. Ví dụ này áp dụng các bộ lọc `contrast`,`sepia`và`drop-shadow` cho ảnh tê giác.
+You can combine as many filters as you like. This example applies the
+`contrast`, `sepia`, and `drop-shadow` filters to a
+photo of a rhino.
 
 #### HTML
 
@@ -126,20 +149,20 @@ image.addEventListener("load", (e) => {
 });
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Applying_multiple_filters', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - CSS {{cssxref("filter")}}
 - CSS {{cssxref("&lt;filter-function&gt;")}}

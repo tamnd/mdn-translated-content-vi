@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức ellipse()"
-short-title: hình elip()
+title: "CanvasRenderingContext2D: ellipse() method"
+short-title: ellipse()
 slug: Web/API/CanvasRenderingContext2D/ellipse
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.ellipse
@@ -8,48 +8,56 @@ browser-compat: api.CanvasRenderingContext2D.ellipse
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.ellipse()`** của API Canvas 2D thêm một vòng cung hình elip vào đường dẫn phụ hiện tại.
+The
+**`CanvasRenderingContext2D.ellipse()`**
+method of the Canvas 2D API adds an elliptical arc to the current sub-path.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle)
 ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, counterclockwise)
 ```
 
-Phương thức `ellipse()`tạo một cung hình elip có tâm tại`(x, y)`với bán kính`radiusX`và`radiusY`. Đường dẫn bắt đầu tại`startAngle`và kết thúc tại`endAngle`và di chuyển theo hướng được cung cấp bởi`counterclockwise`(mặc định theo chiều kim đồng hồ).
+The `ellipse()` method creates an elliptical arc centered at
+`(x, y)` with the radii `radiusX` and `radiusY`. The
+path starts at `startAngle` and ends at `endAngle`, and travels in
+the direction given by `counterclockwise` (defaulting to clockwise).
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ trục x (ngang) của tâm hình elip.
+  - : The x-axis (horizontal) coordinate of the ellipse's center.
 - `y`
-- : Tọa độ trục y (dọc) của tâm hình elip.
+  - : The y-axis (vertical) coordinate of the ellipse's center.
 - `radiusX`
-- : Bán kính trục lớn của hình elip. Phải không âm.
+  - : The ellipse's major-axis radius. Must be non-negative.
 - `radiusY`
-- : Bán kính trục nhỏ của elip. Phải không âm.
+  - : The ellipse's minor-axis radius. Must be non-negative.
 - `rotation`
-- : Góc quay của hình elip, tính bằng radian.
+  - : The rotation of the ellipse, expressed in radians.
 - `startAngle`
-- : [eccentric angle](https://en.wikipedia.org/wiki/Angular_eccentricity) nơi hình elip bắt đầu, được đo theo chiều kim đồng hồ từ trục x dương
-  và biểu thị bằng radian.
+  - : The [eccentric angle](https://en.wikipedia.org/wiki/Angular_eccentricity) at which the ellipse starts, measured clockwise from the positive x-axis
+    and expressed in radians.
 - `endAngle`
-- : [eccentric angle](https://en.wikipedia.org/wiki/Angular_eccentricity) tại đó hình elip kết thúc, được đo theo chiều kim đồng hồ từ trục x dương và
-  được biểu thị bằng radian.
-- `counterclockwise`{{optional_inline}}
-- : Một giá trị boolean tùy chọn, nếu `true`, sẽ vẽ hình elip
-  ngược chiều kim đồng hồ (ngược chiều kim đồng hồ). Giá trị mặc định là `false`(theo chiều kim đồng hồ).
+  - : The [eccentric angle](https://en.wikipedia.org/wiki/Angular_eccentricity) at which the ellipse ends, measured clockwise from the positive x-axis and
+    expressed in radians.
+- `counterclockwise` {{optional_inline}}
+  - : An optional boolean value which, if `true`, draws the ellipse
+    counterclockwise (anticlockwise). The default value is `false`
+    (clockwise).
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Vẽ một hình elip đầy đủ
+### Drawing a full ellipse
 
-Ví dụ này vẽ một hình elip ở một góc π/4 radian (45°). Để tạo một hình elip đầy đủ, cung bắt đầu ở góc 0 radian (0°) và kết thúc ở góc 2π radian (360°).
+This example draws an ellipse at an angle of π/4 radians (45°). To
+make a full ellipse, the arc begins at an angle of 0 radians (0°), and
+ends at an angle of 2π radians (360°).
 
 #### HTML
 
@@ -76,13 +84,13 @@ ctx.lineTo(200, 0);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_a_full_ellipse', 700, 250) }}
 
-### Các cung hình elip khác nhau
+### Various elliptical arcs
 
-Ví dụ này tạo ra ba đường dẫn hình elip với các thuộc tính khác nhau.
+This example creates three elliptical paths with varying properties.
 
 #### HTML
 
@@ -112,19 +120,19 @@ ctx.ellipse(240, 75, 50, 30, Math.PI * 0.25, 0, Math.PI, true);
 ctx.fill();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Various_elliptical_arcs', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
-- Sử dụng {{domxref("CanvasRenderingContext2D.arc()")}} để vẽ cung tròn
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
+- Use {{domxref("CanvasRenderingContext2D.arc()")}} to draw a circular arc

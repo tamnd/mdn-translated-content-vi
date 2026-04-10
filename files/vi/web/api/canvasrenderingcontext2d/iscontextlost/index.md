@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức isContextLost()"
+title: "CanvasRenderingContext2D: isContextLost() method"
 short-title: isContextLost()
 slug: Web/API/CanvasRenderingContext2D/isContextLost
 page-type: web-api-instance-method
@@ -8,25 +8,28 @@ browser-compat: api.CanvasRenderingContext2D.isContextLost
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.isContextLost()`** của API Canvas 2D trả về`true` nếu ngữ cảnh kết xuất bị mất (và chưa được đặt lại). Điều này có thể xảy ra do trình điều khiển bị treo, hết bộ nhớ, v.v.
+The **`CanvasRenderingContext2D.isContextLost()`** method of the Canvas 2D API returns `true` if the rendering context is lost (and has not yet been reset).
+This might occur due to driver crashes, running out of memory, and so on.
 
-Nếu tác nhân người dùng phát hiện thấy bộ nhớ đệm canvas bị mất, nó sẽ kích hoạt [`contextlost`event](/en-US/docs/Web/API/HTMLCanvasElement/contextlost_event) tại [`HTMLCanvasElement`](/en-US/docs/Web/API/HTMLCanvasElement) được liên kết. Nếu sự kiện này không bị hủy, nó sẽ cố gắng đặt lại bộ nhớ sao lưu về trạng thái mặc định (điều này tương đương với việc gọi {{domxref("CanvasRenderingContext2D.reset()")}}). Khi thành công, nó sẽ kích hoạt [`contextrestored` event](/en-US/docs/Web/API/HTMLCanvasElement/contextrestored_event), cho biết rằng bối cảnh đã sẵn sàng để khởi tạo lại và vẽ lại.
+If the user agent detects that the canvas backing storage is lost it will fire the [`contextlost` event](/en-US/docs/Web/API/HTMLCanvasElement/contextlost_event) at the associated [`HTMLCanvasElement`](/en-US/docs/Web/API/HTMLCanvasElement).
+If this event is not cancelled it will attempt to reset the backing storage to the default state (this is equivalent to calling {{domxref("CanvasRenderingContext2D.reset()")}}).
+On success it will fire the [`contextrestored` event](/en-US/docs/Web/API/HTMLCanvasElement/contextrestored_event), indicating that the context is ready to reinitialize and redraw.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 isContextLost()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-`true`nếu ngữ cảnh hiển thị bị mất; `false` nếu không thì.
+`true` if the rendering context was lost; `false` otherwise.
 
-### Ví dụ
+### Examples
 
 ```js
 const ctx = canvas.getContext("2d");
@@ -36,16 +39,16 @@ if (ctx.isContextLost()) {
 }
 ```
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - [`HTMLCanvasElement: contextlost` event](/en-US/docs/Web/API/HTMLCanvasElement/contextlost_event)
 - [`HTMLCanvasElement: contextrestored` event](/en-US/docs/Web/API/HTMLCanvasElement/contextrestored_event)

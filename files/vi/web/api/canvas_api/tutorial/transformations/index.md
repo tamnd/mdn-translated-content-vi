@@ -1,26 +1,26 @@
 ---
-title: Các phép biến đổi
+title: Biến đổi
 slug: Web/API/Canvas_API/Tutorial/Transformations
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Using_images", "Web/API/Canvas_API/Tutorial/Compositing")}}
 
-Trước đó trong hướng dẫn này, chúng ta đã tìm hiểu về [khung canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes) và **không gian tọa độ**. Cho đến thời điểm hiện tại, chúng tôi chỉ sử dụng lưới mặc định và thay đổi kích thước của canvas tổng thể theo nhu cầu của mình. Với các phép biến đổi, có nhiều cách mạnh mẽ hơn để dịch gốc sang một vị trí khác, xoay lưới và thậm chí chia tỷ lệ.
+Earlier in this tutorial we've learned about the [canvas grid](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes) and the **coordinate space**. Until now, we only used the default grid and changed the size of the overall canvas for our needs. With transformations there are more powerful ways to translate the origin to a different position, rotate the grid and even scale it.
 
-## Lưu và khôi phục trạng thái
+## Saving and restoring state
 
-Trước khi xem xét các phương pháp chuyển đổi, chúng ta hãy xem xét hai phương pháp khác không thể thiếu khi bạn bắt đầu tạo các bản vẽ phức tạp hơn bao giờ hết.
+Before we look at the transformation methods, let's look at two other methods which are indispensable once you start generating ever more complex drawings.
 
 - {{domxref("CanvasRenderingContext2D.save", "save()")}}
-  - : Lưu toàn bộ trạng thái của canvas.
+  - : Saves the entire state of the canvas.
 - {{domxref("CanvasRenderingContext2D.restore", "restore()")}}
-  - : Khôi phục trạng thái canvas được lưu gần đây nhất.
+  - : Restores the most recently saved canvas state.
 
-Trạng thái canvas được lưu trữ trên một ngăn xếp. Mỗi khi phương thức `save()` được gọi, trạng thái vẽ hiện tại sẽ được đẩy lên ngăn xếp. Trạng thái vẽ bao gồm
+Canvas states are stored on a stack. Every time the `save()` method is called, the current drawing state is pushed onto the stack. A drawing state consists of
 
-- Các phép biến đổi đã được áp dụng (ví dụ: `translate`, `rotate` và `scale` – xem bên dưới).
-- Giá trị hiện tại của các thuộc tính sau:
+- The transformations that have been applied (i.e., `translate`, `rotate` and `scale` – see below).
+- The current values of the following attributes:
   - {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}
   - {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}}
   - {{domxref("CanvasRenderingContext2D.globalAlpha", "globalAlpha")}}
@@ -32,17 +32,18 @@ Trạng thái canvas được lưu trữ trên một ngăn xếp. Mỗi khi phư
   - {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}
   - {{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}}
   - {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}}
-  - {{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}} -{{domxref("CanvasRenderingContext2D.globalCompositeOperation", "globalCompositeOperation")}}
+  - {{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}}
+  - {{domxref("CanvasRenderingContext2D.globalCompositeOperation", "globalCompositeOperation")}}
   - {{domxref("CanvasRenderingContext2D.font", "font")}}
   - {{domxref("CanvasRenderingContext2D.textAlign", "textAlign")}}
-- {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}}
+  - {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}}
   - {{domxref("CanvasRenderingContext2D.direction", "direction")}}
   - {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}}.
-- [cutping path](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing#clipping_paths) hiện tại, chúng ta sẽ thấy trong phần tiếp theo.
+- The current [clipping path](/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing#clipping_paths), which we'll see in the next section.
 
-Bạn có thể gọi phương thức `save()` bao nhiêu lần tùy thích. Mỗi lần phương thức `restore()` được gọi, trạng thái đã lưu cuối cùng sẽ được bật ra khỏi ngăn xếp và tất cả các cài đặt đã lưu sẽ được khôi phục.
+You can call the `save()` method as many times as you like. Each time the `restore()` method is called, the last saved state is popped off the stack and all saved settings are restored.
 
-### Ví dụ về trạng thái canvas `save` và `restore`
+### A `save` and `restore` canvas state example
 
 ```js
 function draw() {
@@ -75,30 +76,30 @@ function draw() {
 draw();
 ```
 
-Bước đầu tiên là vẽ một hình chữ nhật lớn với các cài đặt mặc định. Tiếp theo, chúng ta lưu trạng thái này và thực hiện các thay đổi đối với màu tô. Sau đó chúng ta vẽ hình chữ nhật màu xanh thứ hai và nhỏ hơn và lưu trạng thái. Một lần nữa chúng ta thay đổi một số cài đặt vẽ và vẽ hình chữ nhật màu trắng bán trong suốt thứ ba.
+The first step is to draw a large rectangle with the default settings. Next we save this state and make changes to the fill color. We then draw the second and smaller blue rectangle and save the state. Again we change some drawing settings and draw the third semi-transparent white rectangle.
 
-Cho đến nay điều này khá giống với những gì chúng ta đã làm trong các phần trước. Tuy nhiên, khi chúng ta gọi câu lệnh `restore()` đầu tiên, trạng thái bản vẽ trên cùng sẽ bị xóa khỏi ngăn xếp và các cài đặt sẽ được khôi phục. Nếu chúng tôi chưa lưu trạng thái bằng `save()`, chúng tôi sẽ cần thay đổi màu tô và độ trong suốt theo cách thủ công để quay lại trạng thái trước đó. Điều này sẽ dễ dàng đối với hai thuộc tính, nhưng nếu chúng ta có nhiều hơn thế, mã của chúng ta sẽ trở nên rất dài, rất nhanh.
+So far this is pretty similar to what we've done in previous sections. However once we call the first `restore()` statement, the top drawing state is removed from the stack, and settings are restored. If we hadn't saved the state using `save()`, we would need to change the fill color and transparency manually in order to return to the previous state. This would be easy for two properties, but if we have more than that, our code would become very long, very fast.
 
-Khi câu lệnh `restore()` thứ hai được gọi, trạng thái ban đầu (trạng thái chúng ta thiết lập trước lệnh gọi đầu tiên tới `save`) sẽ được khôi phục và hình chữ nhật cuối cùng một lần nữa được vẽ bằng màu đen.
+When the second `restore()` statement is called, the original state (the one we set up before the first call to `save`) is restored and the last rectangle is once again drawn in black.
 
 {{EmbedLiveSample("A_save_and_restore_canvas_state_example", "", "160")}}
 
-## Dịch
+## Translating
 
-Phương thức chuyển đổi đầu tiên chúng ta sẽ xem xét là `translate()`. Phương thức này được sử dụng để di chuyển canvas và điểm gốc của nó đến một điểm khác trong lưới.
+The first of the transformation methods we'll look at is `translate()`. This method is used to move the canvas and its origin to a different point in the grid.
 
 - {{domxref("CanvasRenderingContext2D.translate", "translate(x, y)")}}
-  - : Di chuyển canvas và nguồn gốc của nó trên lưới. `x` cho biết khoảng cách di chuyển theo chiều ngang và `y` cho biết khoảng cách di chuyển lưới theo chiều dọc.
+  - : Moves the canvas and its origin on the grid. `x` indicates the horizontal distance to move, and `y` indicates how far to move the grid vertically.
 
-![Khung vẽ được đẩy xuống và sang phải hoặc được dịch, từ điểm gốc trên lưới theo đơn vị 'x' theo chiều ngang và đơn vị 'y' theo chiều dọc.](canvas_grid_translate.png)
+![The canvas is pushed down and to the right, or translated, from its origin point on the grid by 'x' units horizontally and 'y' units vertically.](canvas_grid_translate.png)
 
-Bạn nên lưu trạng thái canvas trước khi thực hiện bất kỳ chuyển đổi nào. Trong hầu hết các trường hợp, việc gọi phương thức `restore` sẽ dễ dàng hơn là phải thực hiện dịch ngược lại để trở về trạng thái ban đầu. Ngoài ra, nếu bạn đang dịch bên trong một vòng lặp và không lưu và khôi phục trạng thái canvas, bạn có thể sẽ thiếu một phần bản vẽ của mình vì nó được vẽ bên ngoài mép canvas.
+It's a good idea to save the canvas state before doing any transformations. In most cases, it is just easier to call the `restore` method than having to do a reverse translation to return to the original state. Also if you're translating inside a loop and don't save and restore the canvas state, you might end up missing part of your drawing, because it was drawn outside the canvas edge.
 
-### Ví dụ về `translate`
+### A `translate` example
 
-Ví dụ này thể hiện một số lợi ích của việc dịch nguồn gốc canvas. Nếu không có phương pháp `translate()`, tất cả các hình chữ nhật sẽ được vẽ ở cùng một vị trí (0,0). Phương thức `translate()` cũng cho phép chúng ta tự do đặt hình chữ nhật ở bất kỳ đâu trên canvas mà không cần phải điều chỉnh tọa độ theo cách thủ công trong hàm `fillRect()`. Điều này làm cho nó dễ hiểu và dễ sử dụng hơn một chút.
+This example demonstrates some of the benefits of translating the canvas origin. Without the `translate()` method, all of the rectangles would be drawn at the same position (0,0). The `translate()` method also gives us the freedom to place the rectangle anywhere on the canvas without having to manually adjust coordinates in the `fillRect()` function. This makes it a little easier to understand and use.
 
-Trong hàm `draw()`, chúng tôi gọi hàm `fillRect()` chín lần bằng cách sử dụng hai vòng lặp `for`. Trong mỗi vòng lặp, canvas được dịch, hình chữ nhật được vẽ và canvas được đưa trở lại trạng thái ban đầu. Lưu ý cách gọi tới `fillRect()` sử dụng cùng tọa độ mỗi lần, dựa vào `translate()` để điều chỉnh vị trí vẽ.
+In the `draw()` function, we call the `fillRect()` function nine times using two `for` loops. In each loop, the canvas is translated, the rectangle is drawn, and the canvas is returned back to its original state. Note how the call to `fillRect()` uses the same coordinates each time, relying on `translate()` to adjust the drawing position.
 
 ```js
 function draw() {
@@ -125,23 +126,23 @@ draw();
 
 {{EmbedLiveSample("A_translate_example", "", "160")}}
 
-## Xoay
+## Rotating
 
-Phương thức chuyển đổi thứ hai là `rotate()`. Chúng tôi sử dụng nó để xoay canvas xung quanh điểm gốc hiện tại.
+The second transformation method is `rotate()`. We use it to rotate the canvas around the current origin.
 
 - {{domxref("CanvasRenderingContext2D.rotate", "rotate(angle)")}}
-  - : Xoay canvas theo chiều kim đồng hồ quanh điểm gốc hiện tại theo số radian `angle`.
+  - : Rotates the canvas clockwise around the current origin by the `angle` number of radians.
 
-![Điểm gốc mặc định nằm ở trên cùng bên trái, 0 độ nằm ngang và sang phải. Điểm quay bắt đầu từ điểm gốc và đi theo chiều kim đồng hồ.](canvas_grid_rotate.png)
+![The default origin point is at the top left, 0 degrees is horizontal and to the right. The rotation point starts from the origin point and goes clockwise.](canvas_grid_rotate.png)
 
-Điểm trung tâm xoay luôn là gốc canvas. Để thay đổi điểm trung tâm, chúng ta sẽ cần di chuyển canvas bằng phương pháp `translate()`.
+The rotation center point is always the canvas origin. To change the center point, we will need to move the canvas by using the `translate()` method.
 
-### Ví dụ về `rotate`
+### A `rotate` example
 
-Trong ví dụ này, chúng ta sẽ sử dụng phương pháp `rotate()` để xoay hình chữ nhật trước tiên từ gốc canvas, sau đó từ tâm của hình chữ nhật với sự trợ giúp của `translate()`.
+In this example, we'll use the `rotate()` method to first rotate a rectangle from the canvas origin and then from the center of the rectangle itself with the help of `translate()`.
 
 > [!NOTE]
-> Góc được tính bằng radian, không phải độ. Để chuyển đổi, chúng tôi đang sử dụng: `radians = (Math.PI/180)*degrees`.
+> Angles are in radians, not degrees. To convert, we are using: `radians = (Math.PI/180)*degrees`.
 
 ```js
 function draw() {
@@ -175,7 +176,7 @@ function draw() {
 }
 ```
 
-Để xoay hình chữ nhật xung quanh tâm của chính nó, chúng ta dịch canvas vào giữa hình chữ nhật, sau đó xoay canvas, sau đó dịch canvas về 0,0, rồi vẽ hình chữ nhật.
+To rotate the rectangle around its own center, we translate the canvas to the center of the rectangle, then rotate the canvas, then translate the canvas back to 0,0, and then draw the rectangle.
 
 ```html hidden
 <canvas id="canvas" width="300" height="200"></canvas>
@@ -187,20 +188,20 @@ draw();
 
 {{EmbedLiveSample("A_rotate_example", "", "220")}}
 
-## Chia tỷ lệ
+## Scaling
 
-Phương thức chuyển đổi tiếp theo là chia tỷ lệ. Chúng tôi sử dụng nó để tăng hoặc giảm các đơn vị trong lưới canvas của mình. Điều này có thể được sử dụng để vẽ các hình dạng và bitmap được thu nhỏ hoặc phóng to.
+The next transformation method is scaling. We use it to increase or decrease the units in our canvas grid. This can be used to draw scaled down or enlarged shapes and bitmaps.
 
 - {{domxref("CanvasRenderingContext2D.scale", "scale(x, y)")}}
-  - : Chia tỷ lệ các đơn vị canvas theo x theo chiều ngang và theo y theo chiều dọc. Cả hai tham số đều là số thực. Các giá trị nhỏ hơn 1,0 sẽ làm giảm kích thước đơn vị và các giá trị trên 1,0 sẽ làm tăng kích thước đơn vị. Giá trị 1,0 để các đơn vị có cùng kích thước.
+  - : Scales the canvas units by x horizontally and by y vertically. Both parameters are real numbers. Values that are smaller than 1.0 reduce the unit size and values above 1.0 increase the unit size. Values of 1.0 leave the units the same size.
 
-Sử dụng số âm, bạn có thể thực hiện phản chiếu trục (ví dụ: sử dụng `translate(0,canvas.height); scale(1,-1);`, bạn sẽ có hệ tọa độ Descartes nổi tiếng, với gốc tọa độ ở góc dưới bên trái).
+Using negative numbers you can do axis mirroring (for example using `translate(0,canvas.height); scale(1,-1);` you will have the well-known Cartesian coordinate system, with the origin in the bottom left corner).
 
-Theo mặc định, một đơn vị trên canvas chính xác là một pixel. Ví dụ: nếu chúng ta áp dụng hệ số tỷ lệ là 0,5 thì đơn vị kết quả sẽ là 0,5 pixel và do đó các hình dạng sẽ được vẽ ở kích thước bằng một nửa. Theo cách tương tự, việc đặt hệ số tỷ lệ thành 2.0 sẽ tăng kích thước đơn vị và một đơn vị giờ đây sẽ trở thành hai pixel. Điều này dẫn đến hình dạng được vẽ lớn gấp đôi.
+By default, one unit on the canvas is exactly one pixel. If we apply, for instance, a scaling factor of 0.5, the resulting unit would become 0.5 pixels and so shapes would be drawn at half size. In a similar way setting the scaling factor to 2.0 would increase the unit size and one unit now becomes two pixels. This results in shapes being drawn twice as large.
 
-### Ví dụ về `scale`
+### A `scale` example
 
-Trong ví dụ cuối cùng này, chúng ta sẽ vẽ các hình có hệ số tỷ lệ khác nhau.
+In this last example, we'll draw shapes with different scaling factors.
 
 ```js
 function draw() {
@@ -229,38 +230,42 @@ draw();
 
 {{EmbedLiveSample("A_scale_example", "", "160")}}
 
-## Biến đổi
+## Transforms
 
-Cuối cùng, các phương pháp chuyển đổi sau đây cho phép sửa đổi trực tiếp ma trận chuyển đổi.
+Finally, the following transformation methods allow modifications directly to the transformation matrix.
 
 - {{domxref("CanvasRenderingContext2D.transform", "transform(a, b, c, d, e, f)")}}
-  - : Nhân ma trận biến đổi hiện tại với ma trận được mô tả bởi các đối số của nó. Ma trận biến đổi được mô tả bởi:
+  - : Multiplies the current transformation matrix with the matrix described by its arguments. The transformation matrix is described by:
 
-<!-- prettier-ignore-start -->
+    <!-- prettier-ignore-start -->
 
-<math display="block">
-      <semantics><mrow><mo>[</mo><mtable columnalign="center center center" rowspacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd> <mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>dZZPH27Z Z</mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd>ZZPH40Z Z0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation encoding="TeX">\left[ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics>
+    <math display="block">
+      <semantics><mrow><mo>[</mo><mtable columnalign="center center center" rowspacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd><mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation encoding="TeX">\left[ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics>
     </math>
     <!-- prettier-ignore-end -->
 
-Nếu bất kỳ đối số nào là [`Infinity`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) thì ma trận biến đổi phải được đánh dấu là vô hạn thay vì phương thức đưa ra một ngoại lệ.
+    If any of the arguments are [`Infinity`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) the transformation matrix must be marked as infinite instead of the method throwing an exception.
 
-Các tham số của chức năng này là:
+The parameters of this function are:
 
--`a` (`m11`)
-
-- : Tỉ lệ theo chiều ngang. -`b` (`m12`)
-- : Độ lệch ngang. -`c` (`m21`)
-- : Nghiêng dọc. -`d` (`m22`)
-- : Tỉ lệ theo chiều dọc. -`e` (`dx`)
-- : Di chuyển ngang. -`f` (`dy`)
-- : Di chuyển theo chiều dọc.
+- `a` (`m11`)
+  - : Horizontal scaling.
+- `b` (`m12`)
+  - : Horizontal skewing.
+- `c` (`m21`)
+  - : Vertical skewing.
+- `d` (`m22`)
+  - : Vertical scaling.
+- `e` (`dx`)
+  - : Horizontal moving.
+- `f` (`dy`)
+  - : Vertical moving.
 - {{domxref("CanvasRenderingContext2D.setTransform", "setTransform(a, b, c, d, e, f)")}}
-  - : Đặt lại phép biến đổi hiện tại thành ma trận nhận dạng, sau đó gọi phương thức `transform()` với cùng các đối số. Về cơ bản, điều này sẽ hoàn tác phép biến đổi hiện tại, sau đó thiết lập phép biến đổi đã chỉ định, tất cả chỉ trong một bước.
+  - : Resets the current transform to the identity matrix, and then invokes the `transform()` method with the same arguments. This basically undoes the current transformation, then sets the specified transform, all in one step.
 - {{domxref("CanvasRenderingContext2D.resetTransform", "resetTransform()")}}
-  - : Đặt lại phép biến đổi hiện tại thành ma trận nhận dạng. Điều này cũng giống như cách gọi: `ctx.setTransform(1, 0, 0, 1, 0, 0);`
+  - : Resets the current transform to the identity matrix. This is the same as calling: `ctx.setTransform(1, 0, 0, 1, 0, 0);`
 
-### Ví dụ cho `transform` và `setTransform`
+### Example for `transform` and `setTransform`
 
 ```js
 function draw() {

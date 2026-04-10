@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức createLinearGradient()"
+title: "CanvasRenderingContext2D: createLinearGradient() method"
 short-title: createLinearGradient()
 slug: Web/API/CanvasRenderingContext2D/createLinearGradient
 page-type: web-api-instance-method
@@ -8,58 +8,60 @@ browser-compat: api.CanvasRenderingContext2D.createLinearGradient
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.createLinearGradient()`** của API Canvas 2D tạo một dải màu dọc theo đường nối hai điểm đã cho
-tọa độ.
+The
+**`CanvasRenderingContext2D.createLinearGradient()`**
+method of the Canvas 2D API creates a gradient along the line connecting two given
+coordinates.
 
-! [The gradient transitions colors along the gradient line, starting at point x0, y0 and going to x1, y1, even if those points extend the gradient line beyond the edges of the element on which the gradient is drawn.](mdn-canvas-lineargradient.png)
+![The gradient transitions colors along the gradient line, starting at point x0, y0 and going to x1, y1, even if those points extend the gradient line beyond the edges of the element on which the gradient is drawn.](mdn-canvas-lineargradient.png)
 
-Phương thức này trả về {{domxref("CanvasGradient")}} tuyến tính. Để áp dụng cho một hình dạng,
-gradient trước tiên phải được gán cho
-{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} hoặc
-Thuộc tính {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}.
+This method returns a linear {{domxref("CanvasGradient")}}. To be applied to a shape,
+the gradient must first be assigned to the
+{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} or
+{{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}} properties.
 
-> [!LƯU Ý]
-> Tọa độ gradient có tính toàn cục, tức là liên quan đến tọa độ hiện tại
-> không gian tọa độ. Khi áp dụng cho một hình dạng, tọa độ KHÔNG liên quan đến
-> tọa độ của hình dạng.
+> [!NOTE]
+> Gradient coordinates are global, i.e., relative to the current
+> coordinate space. When applied to a shape, the coordinates are NOT relative to the
+> shape's coordinates.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 createLinearGradient(x0, y0, x1, y1)
 ```
 
-Phương thức `createLinearGradient()` được chỉ định bởi bốn tham số xác định
-điểm đầu và điểm cuối của đường gradient.
+The `createLinearGradient()` method is specified by four parameters defining
+the start and end points of the gradient line.
 
-### Tham số
+### Parameters
 
 - `x0`
-- : Tọa độ trục x của điểm bắt đầu.
+  - : The x-axis coordinate of the start point.
 - `y0`
-- : Tọa độ trục y của điểm bắt đầu.
+  - : The y-axis coordinate of the start point.
 - `x1`
-- : Tọa độ trục x của điểm cuối.
+  - : The x-axis coordinate of the end point.
 - `y1`
-- : Tọa độ trục y của điểm cuối.
+  - : The y-axis coordinate of the end point.
 
-### Giá trị trả về
+### Return value
 
-{{domxref("CanvasGradient")}} tuyến tính được khởi tạo với dòng được chỉ định.
+A linear {{domxref("CanvasGradient")}} initialized with the specified line.
 
-### Ngoại lệ
+### Exceptions
 
 - `NotSupportedError` {{domxref("DOMException")}}
-- : Được ném khi các giá trị không hữu hạn được truyền dưới dạng tham số.
+  - : Thrown when non-finite values are passed as parameters.
 
-## Ví dụ
+## Examples
 
-### Tô hình chữ nhật bằng gradient tuyến tính
+### Filling a rectangle with a linear gradient
 
-Ví dụ này khởi tạo một gradient tuyến tính bằng cách sử dụng
-Phương pháp `createLinearGradient()`. Ba điểm dừng màu giữa gradient
-điểm bắt đầu và điểm kết thúc sau đó được tạo ra. Cuối cùng, gradient được gán cho canvas
-bối cảnh và được hiển thị thành một hình chữ nhật đầy.
+This example initializes a linear gradient using the
+`createLinearGradient()` method. Three color stops between the gradient's
+start and end points are then created. Finally, the gradient is assigned to the canvas
+context, and is rendered to a filled rectangle.
 
 #### HTML
 
@@ -88,20 +90,20 @@ ctx.fillStyle = gradient;
 ctx.fillRect(20, 20, 200, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Filling_a_rectangle_with_a_linear_gradient', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.createRadialGradient()")}}
 - {{domxref("CanvasRenderingContext2D.createConicGradient()")}}

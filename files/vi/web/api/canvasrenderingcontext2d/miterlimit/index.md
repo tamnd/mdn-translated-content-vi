@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính miterLimit"
-short-title: giới hạn mũ
+title: "CanvasRenderingContext2D: miterLimit property"
+short-title: miterLimit
 slug: Web/API/CanvasRenderingContext2D/miterLimit
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.miterLimit
@@ -8,31 +8,32 @@ browser-compat: api.CanvasRenderingContext2D.miterLimit
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.miterLimit`** của API Canvas 2D đặt tỷ lệ giới hạn góc cắt.
+The **`CanvasRenderingContext2D.miterLimit`** property of the
+Canvas 2D API sets the miter limit ratio.
 
-> [!LƯU Ý]
-> Để biết thêm thông tin về bộ giảm nhẹ, hãy xem [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) trong [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
+> [!NOTE]
+> For more info about miters, see [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) in the [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-## Giá trị
+## Value
 
-Một số xác định tỷ lệ giới hạn góc vuông, tính bằng đơn vị không gian tọa độ. Các giá trị 0, âm,{{jsxref("Infinity")}} và {{jsxref("NaN")}} bị bỏ qua. Giá trị mặc định là `10.0`.
+A number specifying the miter limit ratio, in coordinate space units. Zero, negative, {{jsxref("Infinity")}}, and {{jsxref("NaN")}} values are ignored. The default value is `10.0`.
 
-## Ví dụ
+## Examples
 
-### Sử dụng thuộc tính `miterLimit`
+### Using the `miterLimit` property
 
-Xem chương [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors#a_demo_of_the_miterlimit_property) trong [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial) để biết thêm thông tin.
+See the chapter [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors#a_demo_of_the_miterlimit_property) in the [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial) for more information.
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.lineCap")}}
 - {{domxref("CanvasRenderingContext2D.lineJoin")}}

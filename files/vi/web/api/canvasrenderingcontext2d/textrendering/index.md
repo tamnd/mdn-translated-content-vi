@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính textRendering"
-short-title: kết xuất văn bản
+title: "CanvasRenderingContext2D: textRendering property"
+short-title: textRendering
 slug: Web/API/CanvasRenderingContext2D/textRendering
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.textRendering
@@ -8,31 +8,34 @@ browser-compat: api.CanvasRenderingContext2D.textRendering
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.textRendering`** của[Canvas API](/en-US/docs/Web/API/Canvas_API)cung cấp thông tin cho công cụ hiển thị về nội dung cần tối ưu hóa khi hiển thị văn bản.
+The **`CanvasRenderingContext2D.textRendering`** property of the [Canvas API](/en-US/docs/Web/API/Canvas_API) provides information to the rendering engine about what to optimize for when rendering text.
 
-Các giá trị tương ứng với thuộc tính SVG[`text-rendering`](/en-US/docs/Web/SVG/Reference/Attribute/text-rendering)(và thuộc tính CSS{{cssxref("text-rendering")}}).
+The values correspond to the SVG [`text-rendering`](/en-US/docs/Web/SVG/Reference/Attribute/text-rendering) attribute (and CSS {{cssxref("text-rendering")}} property).
 
-## Giá trị
+## Value
 
-Gợi ý hiển thị văn bản cho công cụ trình duyệt. Đây là một trong:
+A text-rendering hint to the browser engine.
+This one of:
 
 - `auto`
-  - : Trình duyệt đưa ra những phỏng đoán có căn cứ về thời điểm cần tối ưu hóa tốc độ, mức độ dễ đọc và độ chính xác hình học trong khi vẽ văn bản.
+  - : The browser makes educated guesses about when to optimize for speed, legibility, and geometric precision while drawing text.
 - `optimizeSpeed`
-  - : Trình duyệt nhấn mạnh tốc độ hiển thị hơn mức độ dễ đọc và độ chính xác hình học khi vẽ văn bản.
-    Nó vô hiệu hóa kerning và chữ ghép.
+  - : The browser emphasizes rendering speed over legibility and geometric precision when drawing text.
+    It disables kerning and ligatures.
 - `optimizeLegibility`
-  - : Trình duyệt nhấn mạnh mức độ dễ đọc về tốc độ hiển thị và độ chính xác hình học.
-    Điều này cho phép kerning và các chữ ghép tùy chọn.
+  - : The browser emphasizes legibility over rendering speed and geometric precision.
+    This enables kerning and optional ligatures.
 - `geometricPrecision`
-  - : Trình duyệt nhấn mạnh độ chính xác hình học về tốc độ hiển thị và mức độ dễ đọc.
-    Một số khía cạnh nhất định của phông chữ — chẳng hạn như kerning — không chia tỷ lệ tuyến tính. Đối với các yếu tố tỷ lệ lớn, bạn có thể thấy kết xuất văn bản kém đẹp nhưng kích thước đúng như bạn mong đợi (không làm tròn lên hoặc giảm xuống kích thước phông chữ gần nhất được hệ điều hành cơ bản hỗ trợ).
+  - : The browser emphasizes geometric precision over rendering speed and legibility.
+    Certain aspects of fonts — such as kerning — don't scale linearly.
+    For large scale factors, you might see less-than-beautiful text rendering, but the size is what you would expect (neither rounded up nor down to the nearest font size supported by the underlying operating system).
 
-Thuộc tính có thể được sử dụng để lấy hoặc đặt giá trị.
+The property can be used to get or set the value.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ này, chúng tôi hiển thị văn bản "Xin chào thế giới" bằng cách sử dụng từng giá trị được hỗ trợ của thuộc tính`textRendering`. Giá trị cũng được hiển thị cho từng trường hợp bằng cách đọc thuộc tính.
+In this example we display the text "Hello World" using each of the supported values of the `textRendering` property.
+The value is also displayed for each case by reading the property.
 
 ### HTML
 
@@ -63,14 +66,14 @@ ctx.textRendering = "geometricPrecision";
 ctx.fillText(`Hello world (${ctx.textRendering})`, 5, 110);
 ```
 
-### Kết quả
+### Result
 
 {{ EmbedLiveSample('Examples', 700, 230) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}

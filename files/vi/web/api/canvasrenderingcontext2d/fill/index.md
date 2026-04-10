@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức fill()"
-short-title: đổ đầy()
+title: "CanvasRenderingContext2D: fill() method"
+short-title: fill()
 slug: Web/API/CanvasRenderingContext2D/fill
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.fill
@@ -8,9 +8,12 @@ browser-compat: api.CanvasRenderingContext2D.fill
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.fill()`** của API Canvas 2D lấp đầy đường dẫn hiện tại hoặc đường dẫn nhất định bằng {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} hiện tại.
+The
+**`CanvasRenderingContext2D.fill()`**
+method of the Canvas 2D API fills the current or given path with the current
+{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}}.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 fill()
@@ -19,27 +22,30 @@ fill(fillRule)
 fill(path, fillRule)
 ```
 
-### Tham số
+### Parameters
 
 - `fillRule`
-- : Thuật toán để xác định xem một điểm nằm bên trong hay bên ngoài phần điền
-  vùng đất. Các giá trị có thể có: -`nonzero`
-- : [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule).
-  Quy tắc mặc định. -`evenodd`
-- : [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
+  - : The algorithm by which to determine if a point is inside or outside the filling
+    region.
+    Possible values:
+    - `nonzero`
+      - : The [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule).
+        Default rule.
+    - `evenodd`
+      - : The [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
 
 - `path`
-- : Đường dẫn {{domxref("Path2D")}} cần điền.
+  - : A {{domxref("Path2D")}} path to fill.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Điền vào một hình chữ nhật
+### Filling a rectangle
 
-Ví dụ này tô màu hình chữ nhật bằng phương thức `fill()`.
+This example fills a rectangle with the `fill()` method.
 
 #### HTML
 
@@ -56,13 +62,16 @@ ctx.rect(10, 10, 150, 100);
 ctx.fill();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Filling_a_rectangle', 700, 180) }}
 
-### Chỉ định đường dẫn và fillRule
+### Specifying a path and a fillRule
 
-Ví dụ này lưu một số đường giao nhau vào đối tượng Path2D. Phương thức `fill()`sau đó được sử dụng để hiển thị đối tượng trên canvas. Một lỗ trống được để trống ở tâm đối tượng bằng cách sử dụng quy tắc`"evenodd"`; theo mặc định (với quy tắc`"nonzero"`), lỗ hổng cũng sẽ được lấp đầy.
+This example saves some intersecting lines to a Path2D object. The `fill()`
+method is then used to render the object to the canvas. A hole is left unfilled in the
+object's center by using the `"evenodd"` rule; by default (with the
+`"nonzero"` rule), the hole would also be filled.
 
 #### HTML
 
@@ -91,19 +100,19 @@ ctx.fillStyle = "green";
 ctx.fill(region, "evenodd");
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Specifying_a_path_and_a_fillRule', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.fillStyle")}}

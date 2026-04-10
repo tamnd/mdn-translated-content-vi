@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức arc()"
+title: "CanvasRenderingContext2D: arc() method"
 short-title: arc()
 slug: Web/API/CanvasRenderingContext2D/arc
 page-type: web-api-instance-method
@@ -8,46 +8,48 @@ browser-compat: api.CanvasRenderingContext2D.arc
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.arc()`** của [Canvas 2D API](/en-US/docs/Web/API/CanvasRenderingContext2D) thêm một cung tròn vào đường dẫn con hiện tại.
+The
+**`CanvasRenderingContext2D.arc()`**
+method of the [Canvas 2D API](/en-US/docs/Web/API/CanvasRenderingContext2D) adds a circular arc to the current sub-path.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 arc(x, y, radius, startAngle, endAngle)
 arc(x, y, radius, startAngle, endAngle, counterclockwise)
 ```
 
-Phương pháp `arc()`tạo cung tròn có tâm tại`(x, y)`
-có bán kính `radius`. Đường dẫn bắt đầu tại`startAngle`, kết thúc
-tại `endAngle` và di chuyển theo hướng cho bởi
-`counterclockwise` (mặc định theo chiều kim đồng hồ).
+The `arc()` method creates a circular arc centered at `(x, y)`
+with a radius of `radius`. The path starts at `startAngle`, ends
+at `endAngle`, and travels in the direction given by
+`counterclockwise` (defaulting to clockwise).
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ ngang của tâm cung tròn.
+  - : The horizontal coordinate of the arc's center.
 - `y`
-- : Tọa độ dọc của tâm cung tròn.
+  - : The vertical coordinate of the arc's center.
 - `radius`
-- : Bán kính của cung tròn. Phải là số dương.
+  - : The arc's radius. Must be positive.
 - `startAngle`
-- : Góc tại đó cung bắt đầu tính bằng radian, được đo từ trục x dương.
+  - : The angle at which the arc starts in radians, measured from the positive x-axis.
 - `endAngle`
-- : Góc tại đó cung kết thúc tính bằng radian, được đo từ trục x dương.
+  - : The angle at which the arc ends in radians, measured from the positive x-axis.
 - `counterclockwise` {{optional_inline}}
-- : Một giá trị boolean tùy chọn. Nếu `true`, vẽ cung
-  ngược chiều kim đồng hồ giữa góc đầu và góc cuối. Mặc định là `false`
-  (theo chiều kim đồng hồ).
+  - : An optional boolean value. If `true`, draws the arc
+    counter-clockwise between the start and end angles. The default is `false`
+    (clockwise).
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Vẽ một vòng tròn đầy đủ
+### Drawing a full circle
 
-Ví dụ này vẽ một vòng tròn hoàn chỉnh bằng phương thức `arc()`.
+This example draws a complete circle with the `arc()` method.
 
 #### HTML
 
@@ -57,9 +59,9 @@ Ví dụ này vẽ một vòng tròn hoàn chỉnh bằng phương thức `arc()
 
 #### JavaScript
 
-Cung có tọa độ x là 100, tọa độ y là 75 và bán kính là 50.
-tạo một vòng tròn đầy đủ, cung bắt đầu ở góc 0 radian (0°), và
-kết thúc ở một góc 2π radian (360°).
+The arc is given an x-coordinate of 100, a y-coordinate of 75, and a radius of 50. To
+make a full circle, the arc begins at an angle of 0 radians (0°), and
+ends at an angle of 2π radians (360°).
 
 ```js
 const canvas = document.querySelector("canvas");
@@ -70,13 +72,13 @@ ctx.arc(100, 75, 50, 0, 2 * Math.PI);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_a_full_circle', 700, 180) }}
 
-### Các hình dạng khác nhau được thể hiện
+### Different shapes demonstrated
 
-Ví dụ này vẽ nhiều hình dạng khác nhau để thể hiện những gì có thể làm được với `arc()`.
+This example draws various shapes to show what is possible with `arc()`.
 
 ```html hidden
 <canvas width="150" height="200"></canvas>
@@ -108,19 +110,19 @@ for (let i = 0; i <= 3; i++) {
 }
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample('Different_shapes_demonstrated', "", "210")}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
-- Dùng {{domxref("CanvasRenderingContext2D.ellipse()")}} vẽ cung tròn elip.
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
+- Use {{domxref("CanvasRenderingContext2D.ellipse()")}} to draw an elliptical arc.

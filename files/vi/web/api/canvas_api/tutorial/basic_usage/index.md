@@ -1,35 +1,35 @@
 ---
-title: Cách dùng canvas cơ bản
+title: Cách sử dụng cơ bản của canvas
 slug: Web/API/Canvas_API/Tutorial/Basic_usage
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial", "Web/API/Canvas_API/Tutorial/Drawing_shapes")}}
 
-Hãy bắt đầu hướng dẫn này bằng cách xem xét chính phần tử {{HTMLElement("canvas")}} {{Glossary("HTML")}}. Ở cuối trang này, bạn sẽ biết cách thiết lập bối cảnh canvas 2D và đã vẽ một ví dụ đầu tiên trong trình duyệt của mình.
+Let's start this tutorial by looking at the {{HTMLElement("canvas")}} {{Glossary("HTML")}} element itself. At the end of this page, you will know how to set up a canvas 2D context and have drawn a first example in your browser.
 
-## Phần tử `<canvas>`
+## The `<canvas>` element
 
 ```html
 <canvas id="canvas" width="150" height="150"></canvas>
 ```
 
-Thoạt nhìn, {{HTMLElement("canvas")}} trông giống như phần tử {{HTMLElement("img")}}, với điểm khác biệt rõ ràng duy nhất là nó không có các thuộc tính `src` và `alt`. Thật vậy, phần tử `<canvas>` chỉ có hai thuộc tính, [`width`](/en-US/docs/Web/HTML/Reference/Elements/canvas#width) và [`height`](/en-US/docs/Web/HTML/Reference/Elements/canvas#height). Cả hai đều là tùy chọn và cũng có thể được đặt bằng {{Glossary("DOM")}} [properties](/en-US/docs/Web/API/HTMLCanvasElement). Khi không chỉ định thuộc tính `width` và `height`, canvas ban đầu sẽ có chiều rộng **300 pixel** và cao **150 pixel**. Phần tử có thể được điều chỉnh kích thước tùy ý bởi {{Glossary("CSS")}}, nhưng trong quá trình hiển thị, hình ảnh được điều chỉnh tỷ lệ để phù hợp với kích thước bố cục của nó: nếu kích thước CSS không tuân theo tỷ lệ của canvas ban đầu, nó sẽ bị biến dạng.
+At first sight a {{HTMLElement("canvas")}} looks like the {{HTMLElement("img")}} element, with the only clear difference being that it doesn't have the `src` and `alt` attributes. Indeed, the `<canvas>` element has only two attributes, [`width`](/en-US/docs/Web/HTML/Reference/Elements/canvas#width) and [`height`](/en-US/docs/Web/HTML/Reference/Elements/canvas#height). These are both optional and can also be set using {{Glossary("DOM")}} [properties](/en-US/docs/Web/API/HTMLCanvasElement). When no `width` and `height` attributes are specified, the canvas will initially be **300 pixels** wide and **150 pixels** high. The element can be sized arbitrarily by {{Glossary("CSS")}}, but during rendering the image is scaled to fit its layout size: if the CSS sizing doesn't respect the ratio of the initial canvas, it will appear distorted.
 
 > [!NOTE]
-> Nếu kết xuất của bạn có vẻ bị méo, hãy thử chỉ định rõ ràng các thuộc tính `width` và `height` của bạn trong thuộc tính `<canvas>` và không sử dụng CSS.
+> If your renderings seem distorted, try specifying your `width` and `height` attributes explicitly in the `<canvas>` attributes, and not using CSS.
 
-Thuộc tính [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) không dành riêng cho phần tử `<canvas>` nhưng là một trong [thuộc tính HTML toàn cầu](/en-US/docs/Web/HTML/Reference/Global_attributes) có thể được áp dụng cho bất kỳ phần tử HTML nào (ví dụ như [`class`](/en-US/docs/Web/HTML/Reference/Global_attributes/class)). Bạn nên cung cấp `id` vì điều này giúp việc xác định nó trong tập lệnh dễ dàng hơn nhiều.
+The [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) attribute isn't specific to the `<canvas>` element but is one of the [global HTML attributes](/en-US/docs/Web/HTML/Reference/Global_attributes) which can be applied to any HTML element (like [`class`](/en-US/docs/Web/HTML/Reference/Global_attributes/class) for instance). It is always a good idea to supply an `id` because this makes it much easier to identify it in a script.
 
-Phần tử `<canvas>` có thể được tạo kiểu giống như bất kỳ hình ảnh bình thường nào ({{cssxref("margin")}}, {{cssxref("border")}}, {{cssxref("background")}}…). Tuy nhiên, những quy tắc này không ảnh hưởng đến bản vẽ thực tế trên canvas. Chúng ta sẽ xem cách thực hiện điều này trong [chương dành riêng](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) của hướng dẫn này. Khi không có quy tắc tạo kiểu nào được áp dụng cho canvas, ban đầu nó sẽ hoàn toàn trong suốt.
+The `<canvas>` element can be styled just like any normal image ({{cssxref("margin")}}, {{cssxref("border")}}, {{cssxref("background")}}…). These rules, however, don't affect the actual drawing on the canvas. We'll see how this is done in a [dedicated chapter](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) of this tutorial. When no styling rules are applied to the canvas it will initially be fully transparent.
 
-### Nội dung có thể truy cập được
+### Accessible content
 
-Phần tử `<canvas>`, như các phần tử {{HTMLElement("img")}}, {{HTMLElement("video")}}, {{HTMLElement("audio")}} và {{HTMLElement("picture")}}, phải có thể truy cập được bằng cách cung cấp văn bản dự phòng để hiển thị khi phương tiện không tải hoặc người dùng không thể trải nghiệm nó như dự định. Bạn phải luôn cung cấp nội dung dự phòng, chú thích và văn bản thay thế phù hợp với loại phương tiện.
+The `<canvas>` element, like the {{HTMLElement("img")}}, {{HTMLElement("video")}}, {{HTMLElement("audio")}}, and {{HTMLElement("picture")}} elements, must be made accessible by providing fallback text to be displayed when the media doesn't load or the user is unable to experience it as intended. You should always provide fallback content, captions, and alternative text, as appropriate for the media type.
 
-Việc cung cấp nội dung dự phòng rất đơn giản: chỉ cần chèn nội dung thay thế bên trong phần tử `<canvas>` để trình đọc màn hình, trình thu thập thông tin và các bot tự động khác có thể truy cập. Theo mặc định, các trình duyệt sẽ bỏ qua nội dung bên trong vùng chứa, hiển thị canvas bình thường trừ khi `<canvas>` không được hỗ trợ.
+Providing fallback content is very straightforward: just insert the alternate content inside the `<canvas>` element to be accessed by screen readers, spiders, and other automated bots. Browsers, by default, will ignore the content inside the container, rendering the canvas normally unless `<canvas>` isn't supported.
 
-Ví dụ: chúng tôi có thể cung cấp mô tả văn bản về nội dung canvas hoặc cung cấp hình ảnh tĩnh của nội dung được hiển thị động. Điều này có thể trông giống như thế này:
+For example, we could provide a text description of the canvas content or provide a static image of the dynamically rendered content. This can look something like this:
 
 ```html
 <canvas id="stockGraph" width="150" height="150">
@@ -41,30 +41,30 @@ Ví dụ: chúng tôi có thể cung cấp mô tả văn bản về nội dung c
 </canvas>
 ```
 
-Việc yêu cầu người dùng sử dụng một trình duyệt khác hỗ trợ canvas không giúp ích gì cho những người dùng hoàn toàn không thể đọc canvas. Việc cung cấp văn bản dự phòng hữu ích hoặc DOM phụ sẽ bổ sung khả năng truy cập vào một phần tử không thể truy cập được.
+Telling the user to use a different browser that supports canvas does not help users who can't read the canvas at all. Providing useful fallback text or sub DOM adds accessibility to an otherwise non-accessible element.
 
-### Thẻ `</canvas>` bắt buộc
+### Required `</canvas>` tag
 
-Do cách cung cấp dự phòng, không giống như phần tử {{HTMLElement("img")}}, phần tử {{HTMLElement("canvas")}} **yêu cầu** thẻ đóng (`</canvas>`). Nếu thẻ này không xuất hiện thì phần còn lại của tài liệu sẽ được coi là nội dung dự phòng và sẽ không được hiển thị.
+As a consequence of the way fallback is provided, unlike the {{HTMLElement("img")}} element, the {{HTMLElement("canvas")}} element **requires** the closing tag (`</canvas>`). If this tag is not present, the rest of the document would be considered the fallback content and wouldn't be displayed.
 
-Nếu không cần nội dung dự phòng, `<canvas id="foo" role="presentation" …></canvas>` đơn giản hoàn toàn tương thích với tất cả các trình duyệt hỗ trợ canvas. Điều này chỉ nên được sử dụng nếu canvas hoàn toàn mang tính trình bày.
+If fallback content is not needed, a simple `<canvas id="foo" role="presentation" …></canvas>` is fully compatible with all browsers that support canvas at all. This should only be used if the canvas is purely presentational.
 
-## Bối cảnh kết xuất
+## The rendering context
 
-Phần tử {{HTMLElement("canvas")}} tạo một bề mặt vẽ có kích thước cố định hiển thị một hoặc nhiều **ngữ cảnh kết xuất**, được sử dụng để tạo và thao tác với nội dung được hiển thị. Trong hướng dẫn này, chúng tôi tập trung vào bối cảnh kết xuất 2D. Các bối cảnh khác có thể cung cấp các kiểu hiển thị khác nhau; ví dụ: [WebGL](/en-US/docs/Web/API/WebGL_API) sử dụng ngữ cảnh 3D dựa trên [OpenGL ES](https://www.khronos.org/opengles/).
+The {{HTMLElement("canvas")}} element creates a fixed-size drawing surface that exposes one or more **rendering contexts**, which are used to create and manipulate the content shown. In this tutorial, we focus on the 2D rendering context. Other contexts may provide different types of rendering; for example, [WebGL](/en-US/docs/Web/API/WebGL_API) uses a 3D context based on [OpenGL ES](https://www.khronos.org/opengles/).
 
-Canvas ban đầu trống. Để hiển thị nội dung nào đó, trước tiên tập lệnh cần truy cập vào ngữ cảnh hiển thị và vẽ lên nó. Phần tử {{HTMLElement("canvas")}} có một phương thức gọi là {{domxref("HTMLCanvasElement.getContext", "getContext()")}}, được sử dụng để lấy bối cảnh hiển thị và các chức năng vẽ của nó. `getContext()` lấy một tham số, loại ngữ cảnh. Đối với đồ họa 2D, chẳng hạn như đồ họa được đề cập trong hướng dẫn này, bạn chỉ định `"2d"` để nhận {{domxref("CanvasRenderingContext2D")}}.
+The canvas is initially blank. To display something, a script first needs to access the rendering context and draw on it. The {{HTMLElement("canvas")}} element has a method called {{domxref("HTMLCanvasElement.getContext", "getContext()")}}, used to obtain the rendering context and its drawing functions. `getContext()` takes one parameter, the type of context. For 2D graphics, such as those covered by this tutorial, you specify `"2d"` to get a {{domxref("CanvasRenderingContext2D")}}.
 
 ```js
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 ```
 
-Dòng đầu tiên trong tập lệnh truy xuất nút trong DOM đại diện cho phần tử {{HTMLElement("canvas")}} bằng cách gọi phương thức {{domxref("document.getElementById()")}}. Khi bạn có nút phần tử, bạn có thể truy cập ngữ cảnh bản vẽ bằng phương thức `getContext()` của nó.
+The first line in the script retrieves the node in the DOM representing the {{HTMLElement("canvas")}} element by calling the {{domxref("document.getElementById()")}} method. Once you have the element node, you can access the drawing context using its `getContext()` method.
 
-## Đang kiểm tra hỗ trợ
+## Checking for support
 
-Nội dung dự phòng được hiển thị trong các trình duyệt không hỗ trợ {{HTMLElement("canvas")}}. Các tập lệnh cũng có thể kiểm tra sự hỗ trợ theo chương trình bằng cách kiểm tra sự hiện diện của phương pháp `getContext()`. Đoạn mã của chúng tôi ở trên trở thành như thế này:
+The fallback content is displayed in browsers which do not support {{HTMLElement("canvas")}}. Scripts can also check for support programmatically by testing for the presence of the `getContext()` method. Our code snippet from above becomes something like this:
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -77,12 +77,12 @@ if (canvas.getContext) {
 }
 ```
 
-## Mẫu bộ xương
+## A skeleton template
 
-Đây là một mẫu tối giản mà chúng tôi sẽ sử dụng làm điểm khởi đầu cho các ví dụ sau.
+Here is a minimalistic template, which we'll be using as a starting point for later examples.
 
 > [!NOTE]
-> Việc nhúng tập lệnh vào trong HTML không phải là cách hay. Chúng tôi làm điều đó ở đây để giữ cho ví dụ ngắn gọn.
+> It is not good practice to embed a script inside HTML. We do it here to keep the example concise.
 
 ```html
 <!doctype html>
@@ -109,13 +109,13 @@ if (canvas.getContext) {
 </html>
 ```
 
-Tập lệnh bao gồm một hàm có tên `draw()`, được thực thi sau khi trang tải xong; điều này được thực hiện bằng cách đặt tập lệnh sau nội dung chính. Hàm này hoặc một hàm tương tự cũng có thể được gọi bằng cách sử dụng trình xử lý sự kiện {{domxref("Window.setTimeout", "setTimeout()")}}, {{domxref("Window.setInterval", "setInterval()")}} hoặc {{domxref("Window/load_event", "load")}}, miễn là trang được tải trước.
+The script includes a function called `draw()`, which is executed once the page finishes loading; this is done by putting the script after the main body content. This function, or one like it, could also be called using {{domxref("Window.setTimeout", "setTimeout()")}}, {{domxref("Window.setInterval", "setInterval()")}}, or the {{domxref("Window/load_event", "load")}} event handler, as long as the page has been loaded first.
 
-Tại thời điểm này, tài liệu này sẽ được hiển thị trống.
+At this point, this document should be rendered blank.
 
-## Một ví dụ đơn giản
+## A simple example
 
-Để bắt đầu, chúng ta hãy xem một ví dụ vẽ hai hình chữ nhật giao nhau, một trong số đó có độ trong suốt alpha. Chúng ta sẽ khám phá cách thức hoạt động chi tiết hơn trong các ví dụ sau. Cập nhật nội dung phần tử `script` của bạn thành:
+To begin, let's take a look at an example that draws two intersecting rectangles, one of which has alpha transparency. We'll explore how this works in more detail in later examples. Update your `script` element content to this:
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -141,7 +141,7 @@ function draw() {
 draw();
 ```
 
-Ví dụ này trông như thế này:
+This example looks like this:
 
 {{EmbedLiveSample("A_simple_example", "", "160")}}
 

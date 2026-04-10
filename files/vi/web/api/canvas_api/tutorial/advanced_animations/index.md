@@ -1,22 +1,22 @@
 ---
-title: Hoạt ảnh nâng cao
+title: Hoạt hình nâng cao
 slug: Web/API/Canvas_API/Tutorial/Advanced_animations
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Basic_animations", "Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas")}}
 
-Trong chương trước, chúng ta đã thực hiện một số [hoạt ảnh cơ bản](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations) và biết cách khiến mọi thứ chuyển động. Trong phần này, chúng ta sẽ xem xét kỹ hơn về chuyển động và sẽ thêm một số vật lý để làm cho hoạt ảnh của chúng ta nâng cao hơn.
+In the last chapter we made some [basic animations](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations) and got to know ways to get things moving. In this part we will have a closer look at the motion itself and are going to add some physics to make our animations more advanced.
 
-## Vẽ một quả bóng
+## Drawing a ball
 
-Chúng ta sẽ sử dụng một quả bóng cho nghiên cứu hoạt ảnh của mình, vì vậy trước tiên hãy vẽ quả bóng đó lên khung vẽ. Đoạn mã sau sẽ thiết lập cho chúng ta.
+We are going to use a ball for our animation studies, so let's first draw that ball onto the canvas. The following code will set us up.
 
 ```html
 <canvas id="canvas" width="600" height="300"></canvas>
 ```
 
-Như thường lệ, trước tiên chúng ta cần bối cảnh vẽ. Để vẽ quả bóng, chúng ta sẽ tạo một đối tượng `ball` chứa các thuộc tính và phương thức `draw()` để vẽ nó trên canvas.
+As usual, we need a drawing context first. To draw the ball, we will create a `ball` object which contains properties and a `draw()` method to paint it on the canvas.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -39,11 +39,11 @@ const ball = {
 ball.draw();
 ```
 
-Không có gì đặc biệt ở đây, quả bóng thực chất là một hình tròn đơn giản và được vẽ bằng phương pháp {{domxref("CanvasRenderingContext2D.arc()", "arc()")}}.
+Nothing special here, the ball is actually a simple circle and gets drawn with the help of the {{domxref("CanvasRenderingContext2D.arc()", "arc()")}} method.
 
-## Thêm vận tốc
+## Adding velocity
 
-Bây giờ chúng ta đã có một quả bóng, chúng ta đã sẵn sàng thêm một hoạt ảnh cơ bản như chúng ta đã học trong [chương cuối](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations) của hướng dẫn này. Một lần nữa, {{domxref("window.requestAnimationFrame()")}} giúp chúng ta điều khiển hoạt ảnh. Quả bóng chuyển động bằng cách thêm một vectơ vận tốc vào vị trí. Đối với mỗi khung hình, chúng tôi cũng {{domxref("CanvasRenderingContext2D.clearRect", "clear", "", 1)}} canvas để loại bỏ các vòng tròn cũ khỏi các khung hình trước đó.
+Now that we have a ball, we are ready to add a basic animation like we have learned in the [last chapter](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations) of this tutorial. Again, {{domxref("window.requestAnimationFrame()")}} helps us to control the animation. The ball gets moving by adding a velocity vector to the position. For each frame, we also {{domxref("CanvasRenderingContext2D.clearRect", "clear", "", 1)}} the canvas to remove old circles from prior frames.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -85,9 +85,9 @@ canvas.addEventListener("mouseout", (e) => {
 ball.draw();
 ```
 
-## Ranh giới
+## Boundaries
 
-Nếu không có bất kỳ thử nghiệm va chạm ranh giới nào, quả bóng của chúng tôi sẽ nhanh chóng chạy ra khỏi khung vẽ. Chúng ta cần kiểm tra xem vị trí `x` và `y` của quả bóng có nằm ngoài kích thước canvas hay không và đảo ngược hướng của vectơ vận tốc. Để làm như vậy, chúng tôi thêm các bước kiểm tra sau vào phương pháp `draw`:
+Without any boundary collision testing our ball runs out of the canvas quickly. We need to check if the `x` and `y` position of the ball is out of the canvas dimensions and invert the direction of the velocity vectors. To do so, we add the following checks to the `draw` method:
 
 ```js
 if (
@@ -104,9 +104,9 @@ if (
 }
 ```
 
-### Bản demo đầu tiên
+### First demo
 
-Chúng ta hãy xem nó hoạt động như thế nào cho đến nay.
+Let's see how it looks in action so far.
 
 #### HTML
 
@@ -176,24 +176,24 @@ canvas.addEventListener("mouseout", (e) => {
 ball.draw();
 ```
 
-#### Kết quả
+#### Result
 
-Di chuyển chuột vào khung vẽ để bắt đầu hoạt ảnh.
+Move your mouse into the canvas to start the animation.
 
 {{EmbedLiveSample("First_demo", "610", "340")}}
 
-## Tăng tốc
+## Acceleration
 
-Để làm cho chuyển động trở nên chân thực hơn, bạn có thể chơi với vận tốc như thế này, ví dụ:
+To make the motion more real, you can play with the velocity like this, for example:
 
 ```js
 ball.vy *= 0.99;
 ball.vy += 0.25;
 ```
 
-Điều này làm chậm vận tốc thẳng đứng của mỗi khung hình, để cuối cùng quả bóng sẽ nảy trên sàn.
+This slows down the vertical velocity each frame, so that the ball will just bounce on the floor in the end.
 
-### Bản demo thứ hai
+### Second demo
 
 #### HTML
 
@@ -265,20 +265,20 @@ canvas.addEventListener("mouseout", (e) => {
 ball.draw();
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample("Second_demo", "610", "340")}}
 
-## Hiệu ứng kéo dài
+## Trailing effect
 
-Cho đến bây giờ chúng tôi đã sử dụng phương pháp {{domxref("CanvasRenderingContext2D.clearRect", "clearRect")}} khi xóa các khung hình trước đó. Nếu bạn thay thế phương pháp này bằng {{domxref("CanvasRenderingContext2D.fillRect", "fillRect")}} bán trong suốt, bạn có thể dễ dàng tạo hiệu ứng kéo dài.
+Until now we have made use of the {{domxref("CanvasRenderingContext2D.clearRect", "clearRect")}} method when clearing prior frames. If you replace this method with a semi-transparent {{domxref("CanvasRenderingContext2D.fillRect", "fillRect")}}, you can easily create a trailing effect.
 
 ```js
 ctx.fillStyle = "rgb(255 255 255 / 30%)";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ```
 
-### Bản demo thứ ba
+### Third demo
 
 #### HTML
 
@@ -351,15 +351,15 @@ canvas.addEventListener("mouseout", (e) => {
 ball.draw();
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample("Third_demo", "610", "340")}}
 
-## Thêm điều khiển chuột
+## Adding mouse control
 
-Ví dụ: để kiểm soát bóng, chúng ta có thể làm cho nó di chuyển theo con chuột bằng cách sử dụng sự kiện [`mousemove`](/en-US/docs/Web/API/Element/mousemove_event). Sự kiện [`click`](/en-US/docs/Web/API/Element/click_event) thả bóng và để nó nảy trở lại.
+To get some control over the ball, we can make it follow our mouse using the [`mousemove`](/en-US/docs/Web/API/Element/mousemove_event) event, for example. The [`click`](/en-US/docs/Web/API/Element/click_event) event releases the ball and lets it bounce again.
 
-### Bản demo thứ tư
+### Fourth demo
 
 #### HTML
 
@@ -448,17 +448,17 @@ canvas.addEventListener("mouseout", (e) => {
 ball.draw();
 ```
 
-#### Kết quả
+#### Result
 
-Di chuyển quả bóng bằng chuột và thả nó ra bằng một cú nhấp chuột.
+Move the ball using your mouse and release it with a click.
 
 {{EmbedLiveSample("Fourth_demo", "610", "340")}}
 
-## Đột phá
+## Breakout
 
-Chương ngắn này chỉ giải thích một số kỹ thuật để tạo hoạt ảnh nâng cao hơn. Còn nhiều nữa! Bạn nghĩ thế nào về việc thêm một mái chèo, một số viên gạch và biến bản demo này thành một trò chơi [Breakout](https://en.wikipedia.org/wiki/Breakout_%28video_game%29)? Hãy xem khu vực [Phát triển trò chơi](/en-US/docs/Games) của chúng tôi để biết thêm các bài viết liên quan đến trò chơi.
+This short chapter only explains some techniques to create more advanced animations. There are many more! How about adding a paddle, some bricks, and turn this demo into a [Breakout](https://en.wikipedia.org/wiki/Breakout_%28video_game%29) game? Check out our [Game development](/en-US/docs/Games) area for more gaming related articles.
 
-## Xem thêm
+## See also
 
 - {{domxref("window.requestAnimationFrame()")}}
 

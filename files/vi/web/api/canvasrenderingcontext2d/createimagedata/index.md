@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức createImageData()"
+title: "CanvasRenderingContext2D: createImageData() method"
 short-title: createImageData()
 slug: Web/API/CanvasRenderingContext2D/createImageData
 page-type: web-api-instance-method
@@ -8,11 +8,11 @@ browser-compat: api.CanvasRenderingContext2D.createImageData
 
 {{APIRef("Canvas API")}}
 
-Phương pháp **`CanvasRenderingContext2D.createImageData()`** của
-API Canvas 2D tạo một đối tượng {{domxref("ImageData")}} mới, trống với
-các kích thước quy định. Tất cả các pixel trong đối tượng mới đều có màu đen trong suốt.
+The **`CanvasRenderingContext2D.createImageData()`** method of
+the Canvas 2D API creates a new, blank {{domxref("ImageData")}} object with the
+specified dimensions. All of the pixels in the new object are transparent black.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 createImageData(width, height)
@@ -20,51 +20,51 @@ createImageData(width, height, settings)
 createImageData(imagedata)
 ```
 
-### Tham số
+### Parameters
 
 - `width`
-- : Chiều rộng để cung cấp cho đối tượng `ImageData` mới. Một giá trị âm lật
-  hình chữ nhật quanh trục thẳng đứng.
+  - : The width to give the new `ImageData` object. A negative value flips the
+    rectangle around the vertical axis.
 - `height`
-- : Chiều cao để cung cấp cho đối tượng `ImageData` mới. Một giá trị âm lật
-  hình chữ nhật quanh trục hoành.
+  - : The height to give the new `ImageData` object. A negative value flips the
+    rectangle around the horizontal axis.
 - `settings` {{optional_inline}}
-- : Một đối tượng có các thuộc tính sau:
-- `colorSpace`
-- : Chỉ định không gian màu của dữ liệu hình ảnh. Có thể được đặt thành `"srgb"`cho [sRGB color space](https://en.wikipedia.org/wiki/SRGB) hoặc`"display-p3"` cho [display-p3 color space](https://en.wikipedia.org/wiki/DCI-P3).
-- `pixelFormat`
-- : Chỉ định định dạng pixel. Các giá trị có thể:
-- `"rgba-unorm8"`, dành cho RGBA với định dạng chuẩn hóa không dấu 8 bit cho mỗi thành phần, sử dụng {{jsxref("Uint8ClampedArray")}}.
-- `"rgba-float16"`, dành cho RGBA với 16 bit cho mỗi thành phần, sử dụng {{jsxref("Float16Array")}}. Giá trị pixel dấu phẩy động cho phép thể hiện màu sắc theo gam màu rộng tùy ý và dải động cao (HDR).
+  - : An object with the following properties:
+    - `colorSpace`
+      - : Specifies the color space of the image data. Can be set to `"srgb"` for the [sRGB color space](https://en.wikipedia.org/wiki/SRGB) or `"display-p3"` for the [display-p3 color space](https://en.wikipedia.org/wiki/DCI-P3).
+    - `pixelFormat`
+      - : Specifies the pixel format. Possible values:
+        - `"rgba-unorm8"`, for RGBA with 8 bit per component unsigned normalized format, using a {{jsxref("Uint8ClampedArray")}}.
+        - `"rgba-float16"`, for RGBA with 16 bits per component, using a {{jsxref("Float16Array")}}. Floating-point pixel values allow representing colors in arbitrarily wide gamuts and high dynamic range (HDR).
 - `imagedata`
-- : Một đối tượng `ImageData` hiện có để sao chép chiều rộng và chiều cao.
-  Bản thân hình ảnh này **không** được sao chép.
+  - : An existing `ImageData` object from which to copy the width and height.
+    The image itself is **not** copied.
 
-### Giá trị trả về
+### Return value
 
-Một đối tượng {{domxref("ImageData")}} mới có chiều rộng và chiều cao được chỉ định. cái mới
-đối tượng được lấp đầy bằng các pixel màu đen trong suốt.
+A new {{domxref("ImageData")}} object with the specified width and height. The new
+object is filled with transparent black pixels.
 
-### Ngoại lệ
+### Exceptions
 
 - `IndexSizeError` {{domxref("DOMException")}}
-- : Được ném nếu một trong hai đối số `width`hoặc`height` bằng 0.
+  - : Thrown if either of the `width` or `height` arguments is zero.
 
-## Ví dụ
+## Examples
 
-### Tạo một đối tượng ImageData trống
+### Creating a blank ImageData object
 
-Đoạn mã này tạo một đối tượng `ImageData` trống bằng cách sử dụng
-Phương pháp `createImageData()`.
+This snippet creates a blank `ImageData` object using the
+`createImageData()` method.
 
 ```html
 <canvas id="canvas"></canvas>
 ```
 
-Đối tượng được tạo có chiều rộng 100 pixel và chiều cao 50 pixel, tổng cộng là 5.000 pixel.
-Mỗi pixel trong đối tượng `ImageData` bao gồm bốn giá trị mảng, do đó
-thuộc tính {{domxref("ImageData.data", "data")}} của đối tượng có chiều dài 4 × 5.000 hoặc
-20.000.
+The generated object is 100 pixels wide and 50 pixels tall, making 5,000 pixels in all.
+Each pixel within an `ImageData` object consists of four array values, so the
+object's {{domxref("ImageData.data", "data")}} property has a length of 4 × 5,000, or
+20,000.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -75,17 +75,17 @@ console.log(imageData);
 // ImageData { width: 100, height: 50, data: Uint8ClampedArray[20000] }
 ```
 
-### Điền vào một đối tượng ImageData trống
+### Filling a blank ImageData object
 
-Ví dụ này tạo và lấp đầy một đối tượng `ImageData` mới bằng các pixel màu tím.
+This example creates and fills a new `ImageData` object with purple pixels.
 
 ```html
 <canvas id="canvas"></canvas>
 ```
 
-Vì mỗi pixel bao gồm bốn giá trị nên vòng lặp `for` lặp lại bằng cách
-bội số của bốn. Các giá trị mảng được liên kết với mỗi pixel là R (đỏ), G (xanh lục), B
-(màu xanh) và A (alpha), theo thứ tự đó.
+Since each pixel consists of four values, the `for` loop iterates by
+multiples of four. The array values associated with each pixel are R (red), G (green), B
+(blue), and A (alpha), in that order.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -105,24 +105,25 @@ for (let i = 0; i < imageData.data.length; i += 4) {
 ctx.putImageData(imageData, 20, 20);
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample("Filling_a_blank_ImageData_object", 700, 180)}}
 
-### Ví dụ khácĐể biết thêm ví dụ sử dụng `createImageData()`và`ImageData`
+### More examples
 
-đối tượng, xem [Pixel manipulation with canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas) và {{domxref("ImageData.data")}}.
+For more examples using `createImageData()` and the `ImageData`
+object, see [Pixel manipulation with canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas) and {{domxref("ImageData.data")}}.
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("ImageData")}}
 - [Pixel manipulation with canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)

@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức clearRect()"
+title: "CanvasRenderingContext2D: clearRect() method"
 short-title: clearRect()
 slug: Web/API/CanvasRenderingContext2D/clearRect
 page-type: web-api-instance-method
@@ -8,49 +8,51 @@ browser-compat: api.CanvasRenderingContext2D.clearRect
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.clearRect()`** của API Canvas 2D sẽ xóa các pixel trong vùng hình chữ nhật bằng cách đặt chúng thành
-màu đen trong suốt.
+The
+**`CanvasRenderingContext2D.clearRect()`**
+method of the Canvas 2D API erases the pixels in a rectangular area by setting them to
+transparent black.
 
-> [!LƯU Ý]
-> Cần lưu ý rằng `clearRect()` có thể gây ra các sự cố ngoài ý muốn
-> tác dụng phụ nếu bạn không phải là [using paths properly](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#drawing_paths). Đảm bảo gọi
-> {{domxref("CanvasRenderingContext2D.beginPath", "beginPath()")}} trước khi bắt đầu
-> rút vật phẩm mới sau khi gọi `clearRect()`.
+> [!NOTE]
+> Be aware that `clearRect()` may cause unintended
+> side effects if you're not [using paths properly](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#drawing_paths). Make sure to call
+> {{domxref("CanvasRenderingContext2D.beginPath", "beginPath()")}} before starting to
+> draw new items after calling `clearRect()`.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 clearRect(x, y, width, height)
 ```
 
-Phương pháp `clearRect()` đặt các pixel trong vùng hình chữ nhật thành
-minh bạch. Góc trên bên trái của hình chữ nhật nằm ở
-`(x, y)`và kích thước của nó được chỉ định bởi`width` và
+The `clearRect()` method sets the pixels in a rectangular area to
+transparent. The rectangle's top-left corner is at
+`(x, y)`, and its size is specified by `width` and
 `height`.
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ trục x của điểm bắt đầu hình chữ nhật.
+  - : The x-axis coordinate of the rectangle's starting point.
 - `y`
-- : Tọa độ trục y của điểm bắt đầu hình chữ nhật.
+  - : The y-axis coordinate of the rectangle's starting point.
 - `width`
-- : Chiều rộng của hình chữ nhật. Giá trị dương ở bên phải và âm ở bên trái.
+  - : The rectangle's width. Positive values are to the right, and negative to the left.
 - `height`
-- : Chiều cao của hình chữ nhật. Giá trị dương giảm, giá trị âm tăng.
+  - : The rectangle's height. Positive values are down, and negative are up.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Xóa toàn bộ canvas
+### Erasing the whole canvas
 
-Đoạn mã này sẽ xóa toàn bộ khung vẽ. Điều này thường được yêu cầu khi bắt đầu
-mỗi khung hình trong một hình ảnh động. Kích thước của vùng bị xóa được đặt bằng
-{{HtmlElement("canvas")}} của phần tử `width`và`height`
-thuộc tính.
+This code snippet erases the entire canvas. This is commonly required at the start of
+each frame in an animation. The dimensions of the cleared area are set to equal the
+{{HtmlElement("canvas")}} element's `width` and `height`
+attributes.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -58,10 +60,10 @@ const ctx = canvas.getContext("2d");
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 ```
 
-### Xóa một phần canvas
+### Erasing part of a canvas
 
-Ví dụ này vẽ một hình tam giác màu xanh lam trên nền màu vàng. các
-Phương pháp `clearRect()` sau đó sẽ xóa một phần canvas.
+This example draws a blue triangle on top of a yellowish background. The
+`clearRect()` method then erases part of the canvas.
 
 #### HTML
 
@@ -71,8 +73,8 @@ Phương pháp `clearRect()` sau đó sẽ xóa một phần canvas.
 
 #### JavaScript
 
-Vùng đã xóa có dạng hình chữ nhật, với góc trên bên trái là (10, 10). các
-khu vực trống có chiều rộng 120 và chiều cao 100.
+The cleared area is rectangular in shape, with its top-left corner at (10, 10). The
+cleared area has a width of 120 and a height of 100.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -96,20 +98,20 @@ ctx.fill();
 ctx.clearRect(10, 10, 120, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample('Erasing_part_of_a_canvas', 700, 180)}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.fillRect()")}}
 - {{domxref("CanvasRenderingContext2D.strokeRect()")}}

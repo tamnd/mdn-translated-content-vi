@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính letterSpacing"
-short-title: Khoảng cách chữ cái
+title: "CanvasRenderingContext2D: letterSpacing property"
+short-title: letterSpacing
 slug: Web/API/CanvasRenderingContext2D/letterSpacing
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.letterSpacing
@@ -8,19 +8,22 @@ browser-compat: api.CanvasRenderingContext2D.letterSpacing
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.letterSpacing`** của [Canvas API](/en-US/docs/Web/API/Canvas_API) chỉ định khoảng cách giữa các chữ cái khi vẽ văn bản.
+The **`CanvasRenderingContext2D.letterSpacing`** property of the [Canvas API](/en-US/docs/Web/API/Canvas_API) specifies the spacing between letters when drawing text.
 
-Điều này tương ứng với thuộc tính CSS {{cssxref("letter-spacing")}}.
+This corresponds to the CSS {{cssxref("letter-spacing")}} property.
 
-## Giá trị
+## Value
 
-Khoảng cách giữa các chữ cái dưới dạng một chuỗi trong định dạng dữ liệu CSS {{cssxref("length")}}. Mặc định là `0px`.
+The letter spacing as a string in the CSS {{cssxref("length")}} data format.
+The default is `0px`.
 
-Thuộc tính này có thể được sử dụng để lấy hoặc đặt khoảng cách. Giá trị thuộc tính sẽ không thay đổi nếu được đặt thành giá trị không hợp lệ/không thể phân tích cú pháp.
+The property can be used to get or set the spacing.
+The property value will remain unchanged if set to an invalid/unparsable value.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ này, chúng tôi hiển thị văn bản "Xin chào thế giới" ba lần, sử dụng thuộc tính `letterSpacing` để sửa đổi khoảng cách giữa các chữ cái trong từng trường hợp. Khoảng cách cũng được hiển thị cho từng trường hợp, sử dụng giá trị của thuộc tính.
+In this example we display the text "Hello World" three times, using the `letterSpacing` property to modify the letter spacing in each case.
+The spacing is also displayed for each case, using the value of the property.
 
 ### HTML
 
@@ -48,18 +51,18 @@ ctx.letterSpacing = "20px";
 ctx.fillText(`Hello world (${ctx.letterSpacing})`, 10, 140);
 ```
 
-### Kết quả
+### Result
 
 {{ EmbedLiveSample('Examples', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
 - {{domxref("CanvasRenderingContext2D.wordSpacing")}}

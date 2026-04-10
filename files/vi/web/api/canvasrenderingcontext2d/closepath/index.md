@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức closePath()"
+title: "CanvasRenderingContext2D: closePath() method"
 short-title: closePath()
 slug: Web/API/CanvasRenderingContext2D/closePath
 page-type: web-api-instance-method
@@ -8,36 +8,38 @@ browser-compat: api.CanvasRenderingContext2D.closePath
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.closePath()`** của API Canvas 2D cố gắng thêm một đường thẳng từ điểm hiện tại tới
-điểm bắt đầu của đường dẫn con hiện tại. Nếu hình đã được đóng hoặc chỉ có một
-điểm, chức năng này không làm gì cả.
+The
+**`CanvasRenderingContext2D.closePath()`**
+method of the Canvas 2D API attempts to add a straight line from the current point to
+the start of the current sub-path. If the shape has already been closed or has only one
+point, this function does nothing.
 
-Phương pháp này không vẽ trực tiếp bất cứ thứ gì lên canvas. Bạn có thể kết xuất đường dẫn bằng cách sử dụng
-{{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}} hoặc
-Phương pháp {{domxref("CanvasRenderingContext2D.fill()", "fill()")}}.
+This method doesn't draw anything to the canvas directly. You can render the path using
+the {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}} or
+{{domxref("CanvasRenderingContext2D.fill()", "fill()")}} methods.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 closePath()
 ```
 
-### Tham số
+### Parameters
 
-Không.
+None.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Đóng một hình tam giác
+### Closing a triangle
 
-Ví dụ này tạo hai cạnh (chéo) đầu tiên của một tam giác bằng cách sử dụng
-Phương pháp `lineTo()`. Sau đó, đáy của tam giác được tạo bằng
-Phương pháp `closePath()`, tự động kết nối đầu tiên và cuối cùng của hình dạng
-điểm.
+This example creates the first two (diagonal) sides of a triangle using the
+`lineTo()` method. After that, the triangle's base is created with the
+`closePath()` method, which automatically connects the shape's first and last
+points.
 
 #### HTML
 
@@ -47,7 +49,7 @@ Phương pháp `closePath()`, tự động kết nối đầu tiên và cuối c
 
 #### JavaScript
 
-Các góc của tam giác lần lượt là (20, 140), (120, 10) và (220, 140).
+The triangle's corners are at (20, 140), (120, 10), and (220, 140).
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -61,17 +63,17 @@ ctx.closePath(); // Line to bottom-left corner
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Closing_a_triangle', 700, 180) }}
 
-### Chỉ đóng một đường dẫn con
+### Closing just one sub-path
 
-Ví dụ này vẽ một khuôn mặt cười bao gồm ba đường dẫn con bị ngắt kết nối.
+This example draws a smiley face consisting of three disconnected sub-paths.
 
-> [!LƯU Ý]
-> Mặc dù `closePath()` được gọi sau khi tất cả các cung đã được
-> được tạo, chỉ cung cuối cùng (đường dẫn con) được đóng lại.
+> [!NOTE]
+> Although `closePath()` is called after all the arcs have been
+> created, only the last arc (sub-path) gets closed.
 
 #### HTML
 
@@ -81,7 +83,7 @@ Ví dụ này vẽ một khuôn mặt cười bao gồm ba đường dẫn con b
 
 #### JavaScript
 
-Hai cung đầu tiên tạo ra đôi mắt của khuôn mặt. Vòng cung cuối cùng tạo ra cái miệng.
+The first two arcs create the face's eyes. The last arc creates the mouth.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -98,19 +100,19 @@ ctx.lineWidth = 6;
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Closing_just_one_sub-path', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.beginPath()")}}

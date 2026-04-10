@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức isPointInPath()"
+title: "CanvasRenderingContext2D: isPointInPath() method"
 short-title: isPointInPath()
 slug: Web/API/CanvasRenderingContext2D/isPointInPath
 page-type: web-api-instance-method
@@ -8,9 +8,12 @@ browser-compat: api.CanvasRenderingContext2D.isPointInPath
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.isPointInPath()`** của API Canvas 2D báo cáo liệu điểm đã chỉ định có nằm trong đường dẫn hiện tại hay không.
+The
+**`CanvasRenderingContext2D.isPointInPath()`**
+method of the Canvas 2D API reports whether or not the specified point is contained in
+the current path.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 isPointInPath(x, y)
@@ -19,34 +22,37 @@ isPointInPath(path, x, y)
 isPointInPath(path, x, y, fillRule)
 ```
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ trục x của điểm cần kiểm tra, không bị ảnh hưởng bởi dòng điện
-  sự chuyển đổi của bối cảnh.
+  - : The x-axis coordinate of the point to check, unaffected by the current
+    transformation of the context.
 - `y`
-- : Tọa độ trục y của điểm cần kiểm tra, không bị ảnh hưởng bởi dòng điện
-  sự chuyển đổi của bối cảnh.
+  - : The y-axis coordinate of the point to check, unaffected by the current
+    transformation of the context.
 - `fillRule`
-- : Thuật toán để xác định xem một điểm nằm trong hay ngoài đường dẫn.
-  Các giá trị có thể có: -`nonzero`
-- : [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule).
-  Quy tắc mặc định. -`evenodd`
-- : [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
+  - : The algorithm by which to determine if a point is inside or outside the path.
+    Possible values:
+    - `nonzero`
+      - : The [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule).
+        Default rule.
+    - `evenodd`
+      - : The [even-odd winding rule](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule).
 
 - `path`
-- : Đường dẫn {{domxref("Path2D")}} để kiểm tra. Nếu không được chỉ định, đường dẫn hiện tại là
-  đã sử dụng.
+  - : A {{domxref("Path2D")}} path to check against. If unspecified, the current path is
+    used.
 
-### Giá trị trả về
+### Return value
 
-Giá trị boolean, là `true`nếu điểm được chỉ định có trong đường dẫn hiện tại hoặc đường dẫn được chỉ định, nếu không thì là`false`.
+A boolean value, which is `true` if the specified point is contained in the current or specified path, otherwise `false`.
 
-## Ví dụ
+## Examples
 
-### Kiểm tra một điểm trên đường dẫn hiện tại
+### Checking a point in the current path
 
-Ví dụ này sử dụng phương thức `isPointInPath()` để kiểm tra xem một điểm có nằm trong đường dẫn hiện tại hay không.
+This example uses the `isPointInPath()` method to check if a point is within
+the current path.
 
 #### HTML
 
@@ -67,13 +73,14 @@ ctx.fill();
 result.innerText = ctx.isPointInPath(30, 70);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Checking_a_point_in_the_current_path', 700, 220) }}
 
-### Kiểm tra một điểm trên đường dẫn đã chỉ định
+### Checking a point in the specified path
 
-Bất cứ khi nào bạn di chuyển chuột, ví dụ này sẽ kiểm tra xem con trỏ có nằm trong đường dẫn hình tròn `Path2D` hay không. Nếu có thì vòng tròn sẽ có màu xanh, nếu không thì sẽ có màu đỏ.
+Whenever you move the mouse, this example checks whether the cursor is in a circular
+`Path2D` path. If yes, the circle becomes green, otherwise it is red.
 
 #### HTML
 
@@ -105,23 +112,25 @@ canvas.addEventListener("mousemove", (event) => {
 });
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Checking_a_point_in_the_specified_path', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho tắc kè
+### Gecko-specific note
 
-- Trước Gecko 7.0 (Firefox 7.0 / Thunderbird 7.0 / SeaMonkey 2.4), phương pháp này
-  không thể nhân tọa độ của điểm đã chỉ định với ma trận biến đổi hiện tại trước khi so sánh nó với đường dẫn. Bây giờ phương pháp này hoạt động chính xác ngay cả khi bối cảnh được xoay, thu nhỏ hoặc chuyển đổi theo cách khác.
+- Prior to Gecko 7.0 (Firefox 7.0 / Thunderbird 7.0 / SeaMonkey 2.4), this method
+  incorrectly failed to multiply the specified point's coordinates by the current
+  transformation matrix before comparing it to the path. Now this method works correctly
+  even if the context is rotated, scaled, or otherwise transformed.
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

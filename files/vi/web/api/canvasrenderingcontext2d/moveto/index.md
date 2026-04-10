@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức moveTo()"
-short-title: di chuyển tới()
+title: "CanvasRenderingContext2D: moveTo() method"
+short-title: moveTo()
 slug: Web/API/CanvasRenderingContext2D/moveTo
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.moveTo
@@ -8,30 +8,34 @@ browser-compat: api.CanvasRenderingContext2D.moveTo
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.moveTo()`** của API Canvas 2D bắt đầu một đường dẫn phụ mới tại điểm được chỉ định bởi tọa độ`(x, y)` đã cho.
+The
+**`CanvasRenderingContext2D.moveTo()`**
+method of the Canvas 2D API begins a new sub-path at the point specified by the given
+`(x, y)` coordinates.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 moveTo(x, y)
 ```
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ trục x (ngang) của điểm.
+  - : The x-axis (horizontal) coordinate of the point.
 - `y`
-- : Tọa độ trục y (dọc) của điểm.
+  - : The y-axis (vertical) coordinate of the point.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Tạo nhiều đường dẫn phụ
+### Creating multiple sub-paths
 
-Ví dụ này sử dụng `moveTo()`để tạo hai đường dẫn phụ trong một đường dẫn duy nhất. Sau đó, cả hai đường dẫn phụ đều được hiển thị bằng một lệnh gọi`stroke()`.
+This example uses `moveTo()` to create two sub-paths within a single path.
+Both sub-paths are then rendered with a single `stroke()` call.
 
 #### HTML
 
@@ -41,7 +45,8 @@ Ví dụ này sử dụng `moveTo()`để tạo hai đường dẫn phụ trong 
 
 #### JavaScript
 
-Dòng đầu tiên bắt đầu ở (50, 50) và kết thúc ở (200, 50). Dòng thứ hai bắt đầu ở (50, 90\) và kết thúc ở (280, 120).
+The first line begins at (50, 50) and ends at (200, 50). The second line begins at (50,
+90\) and ends at (280, 120).
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -55,20 +60,20 @@ ctx.lineTo(280, 120);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Creating_multiple_sub-paths', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.lineTo()")}}
 - {{domxref("CanvasRenderingContext2D.stroke()")}}

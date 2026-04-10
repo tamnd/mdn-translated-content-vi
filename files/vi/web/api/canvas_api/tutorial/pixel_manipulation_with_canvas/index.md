@@ -1,27 +1,27 @@
 ---
-title: Thao tác pixel bằng canvas
+title: Thao tác pixel với canvas
 slug: Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Advanced_animations", "Web/API/Canvas_API/Tutorial/Optimizing_canvas")}}
 
-Cho đến bây giờ chúng ta vẫn chưa xem xét các pixel thực tế của canvas. Với đối tượng `ImageData`, bạn có thể trực tiếp đọc và ghi một mảng dữ liệu để thao tác dữ liệu pixel. Chúng tôi cũng sẽ xem xét cách kiểm soát việc làm mịn hình ảnh (khử răng cưa) và cách lưu hình ảnh từ canvas của bạn.
+Until now we haven't looked at the actual pixels of our canvas. With the `ImageData` object you can directly read and write a data array to manipulate pixel data. We will also look into how image smoothing (anti-aliasing) can be controlled and how to save images from your canvas.
 
-## Đối tượng ImageData
+## The ImageData object
 
-Đối tượng {{domxref("ImageData")}} đại diện cho dữ liệu pixel cơ bản của một vùng đối tượng canvas.
-Thuộc tính `data` của nó trả về {{jsxref("Uint8ClampedArray")}} (hoặc {{jsxref("Float16Array")}} nếu được yêu cầu) có thể được truy cập để xem dữ liệu pixel thô; mỗi pixel được biểu thị bằng bốn giá trị một byte (đỏ, lục, lam và alpha, theo thứ tự đó; nghĩa là định dạng "RGBA"). Mỗi thành phần màu được biểu thị bằng một số nguyên từ 0 đến 255. Mỗi thành phần được gán một chỉ mục liên tiếp trong mảng, với thành phần màu đỏ của pixel trên cùng bên trái nằm ở chỉ mục 0 trong mảng. Sau đó, các pixel sẽ đi từ trái sang phải, rồi đi xuống trong toàn mảng.
+The {{domxref("ImageData")}} object represents the underlying pixel data of an area of a canvas object.
+Its `data` property returns a {{jsxref("Uint8ClampedArray")}} (or {{jsxref("Float16Array")}} if requested) which can be accessed to look at the raw pixel data; each pixel is represented by four one-byte values (red, green, blue, and alpha, in that order; that is, "RGBA" format). Each color component is represented by an integer between 0 and 255. Each component is assigned a consecutive index within the array, with the top left pixel's red component being at index 0 within the array. Pixels then proceed from left to right, then downward, throughout the array.
 
-{{jsxref("Uint8ClampedArray")}} chứa `height` × `width` × 4 byte dữ liệu, với các giá trị chỉ mục nằm trong khoảng từ 0 đến (`height` × `width` × 4) - 1.
+The {{jsxref("Uint8ClampedArray")}} contains `height` × `width` × 4 bytes of data, with index values ranging from 0 to (`height` × `width` × 4) - 1.
 
-Ví dụ: để đọc giá trị của thành phần màu xanh lam từ pixel ở cột 200, hàng 50 trong ảnh, bạn sẽ làm như sau:
+For example, to read the blue component's value from the pixel at column 200, row 50 in the image, you would do the following:
 
 ```js
 const blueComponent = imageData.data[50 * (imageData.width * 4) + 200 * 4 + 2];
 ```
 
-Nếu được cung cấp một tập hợp tọa độ (X và Y), cuối cùng bạn có thể làm điều gì đó như thế này:
+If given a set of coordinates (X and Y), you may end up doing something like this:
 
 ```js
 const xCoord = 50;
@@ -38,49 +38,49 @@ const colorIndices = getColorIndicesForCoord(xCoord, yCoord, canvasWidth);
 const [redIndex, greenIndex, blueIndex, alphaIndex] = colorIndices;
 ```
 
-Bạn cũng có thể truy cập kích thước của mảng pixel theo byte bằng cách đọc thuộc tính `Uint8ClampedArray.length`:
+You may also access the size of the pixel array in bytes by reading the `Uint8ClampedArray.length` attribute:
 
 ```js
 const numBytes = imageData.data.length;
 ```
 
-## Tạo một đối tượng ImageData
+## Creating an ImageData object
 
-Để tạo một đối tượng `ImageData` mới, trống, bạn nên sử dụng phương thức {{domxref("CanvasRenderingContext2D.createImageData", "createImageData()")}}. Có hai phiên bản của phương pháp `createImageData()`:
+To create a new, blank `ImageData` object, you should use the {{domxref("CanvasRenderingContext2D.createImageData", "createImageData()")}} method. There are two versions of the `createImageData()` method:
 
 ```js
 const myImageData = ctx.createImageData(width, height);
 ```
 
-Điều này tạo ra một đối tượng `ImageData` mới với các kích thước được chỉ định. Tất cả các pixel được đặt trước để trong suốt.
+This creates a new `ImageData` object with the specified dimensions. All pixels are preset to transparent.
 
-Bạn cũng có thể tạo một đối tượng `ImageData` mới có cùng kích thước với đối tượng được chỉ định bởi `anotherImageData`. Tất cả các pixel của đối tượng mới đều được đặt trước thành màu đen trong suốt. **Điều này không sao chép dữ liệu hình ảnh!**
+You can also create a new `ImageData` object with the same dimensions as the object specified by `anotherImageData`. The new object's pixels are all preset to transparent black. **This does not copy the image data!**
 
 ```js
 const myImageData = ctx.createImageData(anotherImageData);
 ```
 
-## Lấy dữ liệu pixel cho ngữ cảnh
+## Getting the pixel data for a context
 
-Để có được đối tượng `ImageData` chứa bản sao dữ liệu pixel cho bối cảnh canvas, bạn có thể sử dụng phương thức `getImageData()`:
+To obtain an `ImageData` object containing a copy of the pixel data for a canvas context, you can use the `getImageData()` method:
 
 ```js
 const myImageData = ctx.getImageData(left, top, width, height);
 ```
 
-Phương thức này trả về một đối tượng `ImageData` biểu thị dữ liệu pixel cho vùng canvas có các góc được biểu thị bằng các điểm (`left`, `top`), (`left+width`, `top`), (`left`, `top+height`) và (`left+width`, `top+height`). Các tọa độ được chỉ định theo đơn vị không gian tọa độ canvas.
+This method returns an `ImageData` object representing the pixel data for the area of the canvas whose corners are represented by the points (`left`, `top`), (`left+width`, `top`), (`left`, `top+height`), and (`left+width`, `top+height`). The coordinates are specified in canvas coordinate space units.
 
 > [!NOTE]
-> Bất kỳ pixel nào bên ngoài canvas đều được trả về dưới dạng màu đen trong suốt trong đối tượng `ImageData` thu được.
+> Any pixels outside the canvas are returned as transparent black in the resulting `ImageData` object.
 
-Phương thức này cũng được thể hiện trong bài viết [Thao tác video bằng canvas](/en-US/docs/Web/API/Canvas_API/Manipulating_video_using_canvas).
+This method is also demonstrated in the article [Manipulating video using canvas](/en-US/docs/Web/API/Canvas_API/Manipulating_video_using_canvas).
 
-## Tạo bộ chọn màu
+## Creating a color picker
 
-Trong ví dụ này, chúng tôi đang sử dụng phương pháp [`getImageData()`](/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData) để hiển thị màu dưới con trỏ chuột.
-Để làm được điều này, chúng ta cần vị trí hiện tại của chuột, sau đó chúng ta tra cứu dữ liệu pixel tại vị trí đó trong mảng pixel mà [`getImageData()`](/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData) cung cấp.
-Cuối cùng, chúng tôi sử dụng dữ liệu mảng để đặt màu nền và văn bản trong `<div>` để hiển thị màu.
-Bấm vào ảnh sẽ thực hiện thao tác tương tự nhưng sử dụng màu đã chọn.
+In this example, we are using the [`getImageData()`](/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData) method to display the color under the mouse cursor.
+For this, we need the current position of the mouse, then we look up the pixel data at that position in the pixel array that [`getImageData()`](/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData) provides.
+Finally, we use the array data to set a background color and a text in the `<div>` to display the color.
+Clicking on the image will do the same operation but uses the selected color.
 
 ```html
 <table>
@@ -151,33 +151,33 @@ td {
 }
 ```
 
-Di con trỏ đến bất kỳ đâu trên hình ảnh để xem kết quả trong cột "Màu được di chuột".
-Nhấp vào bất kỳ vị trí nào trong ảnh để xem kết quả trong cột "Màu đã chọn".
+Hover your cursor anywhere over the image to see the result in the "Hovered color" column.
+Click anywhere in the image to see the result in the "Selected color" column.
 
 {{embedlivesample("creating_a_color_picker", , 300)}}
 
-## Vẽ dữ liệu pixel vào ngữ cảnh
+## Painting pixel data into a context
 
-Bạn có thể sử dụng phương thức [putImageData()](/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData) để vẽ dữ liệu pixel vào ngữ cảnh:
+You can use the [putImageData()](/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData) method to paint pixel data into a context:
 
 ```js
 ctx.putImageData(myImageData, dx, dy);
 ```
 
-Các tham số `dx` và `dy` cho biết tọa độ của thiết bị trong bối cảnh cần vẽ góc trên cùng bên trái của dữ liệu pixel mà bạn muốn vẽ.
+The `dx` and `dy` parameters indicate the device coordinates within the context at which to paint the top left corner of the pixel data you wish to draw.
 
-Ví dụ: để vẽ toàn bộ hình ảnh được đại diện bởi `myImageData` vào góc trên cùng bên trái của ngữ cảnh, bạn có thể làm như sau:
+For example, to paint the entire image represented by `myImageData` to the top left corner of the context, you can do the following:
 
 ```js
 ctx.putImageData(myImageData, 0, 0);
 ```
 
-## Thang màu xám và đảo màu
+## Grayscaling and inverting colors
 
-Trong ví dụ này, chúng tôi lặp lại tất cả các pixel để thay đổi giá trị của chúng, sau đó chúng tôi đặt mảng pixel đã sửa đổi trở lại canvas bằng cách sử dụng [putImageData()](/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData).
-Hàm `invert` trừ từng màu khỏi giá trị tối đa, `255`.
-Hàm `grayscale` sử dụng mức trung bình của màu đỏ, xanh lá cây và xanh lam. Ví dụ: bạn cũng có thể sử dụng giá trị trung bình có trọng số được tính theo công thức `x = 0.299r + 0.587g + 0.114b`.
-Xem [Grayscale](https://en.wikipedia.org/wiki/Grayscale) trên Wikipedia để biết thêm thông tin.
+In this example, we iterate over all pixels to change their values, then we put the modified pixel array back onto the canvas using [putImageData()](/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData).
+The `invert` function subtracts each color from the max value, `255`.
+The `grayscale` function uses the average of red, green and blue. You can also use a weighted average, given by the formula `x = 0.299r + 0.587g + 0.114b`, for example.
+See [Grayscale](https://en.wikipedia.org/wiki/Grayscale) on Wikipedia for more information.
 
 ```html
 <canvas id="canvas" width="300" height="227"></canvas>
@@ -269,13 +269,13 @@ for (const input of inputs) {
 }
 ```
 
-Nhấp vào các tùy chọn khác nhau để xem kết quả hoạt động.
+Click different options to view the result in action.
 
 {{embedlivesample("grayscaling_and_inverting_colors", , 300)}}
 
-## Thu phóng và khử răng cưa
+## Zooming and anti-aliasing
 
-Với sự trợ giúp của phương pháp {{domxref("CanvasRenderingContext2D.drawImage", "drawImage()")}}, canvas thứ hai và thuộc tính {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}}, chúng tôi có thể phóng to hình ảnh của mình và xem chi tiết. Canvas thứ ba không có {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}} cũng được vẽ để cho phép so sánh cạnh nhau.
+With the help of the {{domxref("CanvasRenderingContext2D.drawImage", "drawImage()")}} method, a second canvas, and the {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}} property, we are able to zoom in on our picture and see the details. A third canvas without {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}} is also drawn to allow a side by side comparison.
 
 ```html
 <table>
@@ -308,8 +308,8 @@ body {
 }
 ```
 
-Chúng ta lấy vị trí của chuột và cắt hình ảnh 5 pixel bên trái và bên trên thành 5 pixel bên phải và bên dưới.
-Sau đó, chúng tôi sao chép cái đó sang một canvas khác và thay đổi kích thước hình ảnh theo kích thước chúng tôi muốn. Trong khung thu phóng, chúng tôi thay đổi kích thước phần cắt 10 × 10 pixel của canvas gốc thành 200 × 200:
+We get the position of the mouse and crop an image of 5 pixels left and above to 5 pixels right and below.
+Then we copy that one over to another canvas and resize the image to the size we want it to. In the zoom canvas we resize a 10×10 pixel crop of the original canvas to 200×200:
 
 ```js
 const img = new Image();
@@ -355,30 +355,30 @@ function draw(image) {
 
 {{embedlivesample("zooming_and_anti-aliasing", , 300)}}
 
-## Lưu hình ảnh
+## Saving images
 
-{{domxref("HTMLCanvasElement")}} cung cấp phương pháp `toDataURL()`, rất hữu ích khi lưu hình ảnh. Nó trả về [URL](/en-US/docs/Web/URI/Reference/Schemes/data) dữ liệu chứa hình ảnh đại diện ở định dạng được chỉ định bởi tham số `type` (mặc định là [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)). Hình ảnh trả về có độ phân giải 96 dpi.
+The {{domxref("HTMLCanvasElement")}} provides a `toDataURL()` method, which is useful when saving images. It returns a [data URL](/en-US/docs/Web/URI/Reference/Schemes/data) containing a representation of the image in the format specified by the `type` parameter (defaults to [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)). The returned image is in a resolution of 96 dpi.
 
 > [!NOTE]
-> Xin lưu ý rằng nếu canvas chứa bất kỳ pixel nào được lấy từ một {{Glossary("origin")}} khác mà không sử dụng CORS thì canvas sẽ **bị nhiễm bẩn** và nội dung của nó không thể đọc và lưu được nữa.
-> Xem [Các bức vẽ bảo mật và bị nhiễm độc](/en-US/docs/Web/HTML/How_to/CORS_enabled_image#security_and_tainted_canvases).
+> Be aware that if the canvas contains any pixels that were obtained from another {{Glossary("origin")}} without using CORS, the canvas is **tainted** and its contents can no longer be read and saved.
+> See [Security and tainted canvases](/en-US/docs/Web/HTML/How_to/CORS_enabled_image#security_and_tainted_canvases).
 
 - {{domxref("HTMLCanvasElement.toDataURL", "canvas.toDataURL('image/png')")}}
-  - : Cài đặt mặc định. Tạo một hình ảnh PNG.
+  - : Default setting. Creates a PNG image.
 - {{domxref("HTMLCanvasElement.toDataURL", "canvas.toDataURL('image/jpeg', quality)")}}
-  - : Tạo hình ảnh JPG. Tùy chọn, bạn có thể cung cấp chất lượng trong phạm vi từ 0 đến 1, với một là chất lượng tốt nhất và với 0 là hầu như không thể nhận dạng được nhưng có kích thước tệp nhỏ.
+  - : Creates a JPG image. Optionally, you can provide a quality in the range from 0 to 1, with one being the best quality and with 0 almost not recognizable but small in file size.
 
-Ví dụ: khi bạn đã tạo URL dữ liệu từ canvas của mình, bạn có thể sử dụng nó làm nguồn của bất kỳ {{HTMLElement("img")}} nào hoặc đặt nó vào một siêu liên kết có [tải xuống thuộc tính](/en-US/docs/Web/HTML/Reference/Elements/a#download) để lưu nó vào đĩa chẳng hạn.
+Once you have generated a data URL from your canvas, you are able to use it as the source of any {{HTMLElement("img")}} or put it into a hyperlink with a [download attribute](/en-US/docs/Web/HTML/Reference/Elements/a#download) to save it to disc, for example.
 
-Bạn cũng có thể tạo {{domxref("Blob")}} từ canvas.
+You can also create a {{domxref("Blob")}} from the canvas.
 
 - {{domxref("HTMLCanvasElement.toBlob", "canvas.toBlob(callback, type, encoderOptions)")}}
-  - : Tạo đối tượng `Blob` đại diện cho hình ảnh có trong canvas.
+  - : Creates a `Blob` object representing the image contained in the canvas.
 
-## Xem thêm
+## See also
 
 - {{domxref("ImageData")}}
-- [Thao tác video bằng canvas](/en-US/docs/Web/API/Canvas_API/Manipulating_video_using_canvas)
-- [Tải xuống hình ảnh do API Canvas tạo bằng cách sử dụng toBlob](https://www.digitalocean.com/community/tutorials/js-canvas-toblob)
+- [Manipulating video using canvas](/en-US/docs/Web/API/Canvas_API/Manipulating_video_using_canvas)
+- [Download Canvas API-Generated Images Using toBlob](https://www.digitalocean.com/community/tutorials/js-canvas-toblob)
 
 {{PreviousNext("Web/API/Canvas_API/Tutorial/Advanced_animations", "Web/API/Canvas_API/Tutorial/Optimizing_canvas")}}

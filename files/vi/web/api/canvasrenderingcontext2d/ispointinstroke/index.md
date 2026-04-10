@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức isPointInStroke()"
+title: "CanvasRenderingContext2D: isPointInStroke() method"
 short-title: isPointInStroke()
 slug: Web/API/CanvasRenderingContext2D/isPointInStroke
 page-type: web-api-instance-method
@@ -8,34 +8,38 @@ browser-compat: api.CanvasRenderingContext2D.isPointInStroke
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.isPointInStroke()`** của API Canvas 2D báo cáo xem điểm được chỉ định có nằm trong khu vực được chứa bởi đường dẫn hay không.
+The
+**`CanvasRenderingContext2D.isPointInStroke()`**
+method of the Canvas 2D API reports whether or not the specified point is inside the
+area contained by the stroking of a path.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 isPointInStroke(x, y)
 isPointInStroke(path, x, y)
 ```
 
-### Tham số
+### Parameters
 
 - `x`
-- : Tọa độ trục x của điểm cần kiểm tra.
+  - : The x-axis coordinate of the point to check.
 - `y`
-- : Tọa độ trục y của điểm cần kiểm tra.
+  - : The y-axis coordinate of the point to check.
 - `path`
-- : Đường dẫn {{domxref("Path2D")}} để kiểm tra. Nếu không được chỉ định, đường dẫn hiện tại là
-  đã sử dụng.
+  - : A {{domxref("Path2D")}} path to check against. If unspecified, the current path is
+    used.
 
-### Giá trị trả về
+### Return value
 
-Một giá trị boolean, là `true`nếu điểm nằm trong vùng được chứa bởi nét của đường dẫn, nếu không thì là`false`.
+A boolean value, which is `true` if the point is inside the area contained by the stroking of a path, otherwise `false`.
 
-## Ví dụ
+## Examples
 
-### Kiểm tra một điểm trên đường dẫn hiện tại
+### Checking a point in the current path
 
-Ví dụ này sử dụng phương thức `isPointInStroke()` để kiểm tra xem một điểm có nằm trong khu vực nét của đường dẫn hiện tại hay không.
+This example uses the `isPointInStroke()` method to check if a point is
+within the area of the current path's stroke.
 
 #### HTML
 
@@ -56,13 +60,15 @@ ctx.stroke();
 result.innerText = ctx.isPointInStroke(50, 10);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Checking_a_point_in_the_current_path', 700, 220) }}
 
-### Kiểm tra một điểm trên đường dẫn đã chỉ định
+### Checking a point in the specified path
 
-Bất cứ khi nào bạn di chuyển chuột, ví dụ này sẽ kiểm tra xem con trỏ có nằm trong nét của đường dẫn hình elip `Path2D` hay không. Nếu có, nét vẽ của hình elip sẽ chuyển sang màu xanh lá cây, nếu không thì nó sẽ có màu đỏ.
+Whenever you move the mouse, this example checks whether the cursor is in the stroke of
+an elliptical `Path2D` path. If yes, the ellipse's stroke becomes green,
+otherwise it is red.
 
 #### HTML
 
@@ -101,18 +107,18 @@ canvas.addEventListener("mousemove", (event) => {
 });
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Checking_a_point_in_the_specified_path', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức createRadialGradient()"
+title: "CanvasRenderingContext2D: createRadialGradient() method"
 short-title: createRadialGradient()
 slug: Web/API/CanvasRenderingContext2D/createRadialGradient
 page-type: web-api-instance-method
@@ -8,60 +8,62 @@ browser-compat: api.CanvasRenderingContext2D.createRadialGradient
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.createRadialGradient()`** của API Canvas 2D tạo ra một gradient xuyên tâm bằng cách sử dụng kích thước và tọa độ của
-hai vòng tròn.
+The
+**`CanvasRenderingContext2D.createRadialGradient()`**
+method of the Canvas 2D API creates a radial gradient using the size and coordinates of
+two circles.
 
-Phương thức này trả về {{domxref("CanvasGradient")}}. Để được áp dụng cho một hình dạng,
-gradient trước tiên phải được gán cho thuộc tính {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} hoặc {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}.
+This method returns a {{domxref("CanvasGradient")}}. To be applied to a shape, the
+gradient must first be assigned to the {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} or {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}} properties.
 
-> [!LƯU Ý]
-> Tọa độ gradient có tính toàn cục, tức là liên quan đến tọa độ hiện tại
-> không gian tọa độ. Khi áp dụng cho một hình dạng, tọa độ KHÔNG liên quan đến
-> tọa độ của hình dạng.
+> [!NOTE]
+> Gradient coordinates are global, i.e., relative to the current
+> coordinate space. When applied to a shape, the coordinates are NOT relative to the
+> shape's coordinates.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 createRadialGradient(x0, y0, r0, x1, y1, r1)
 ```
 
-Phương pháp `createRadialGradient()` được chỉ định bởi sáu tham số, ba
-xác định vòng tròn bắt đầu của gradient và ba xác định vòng tròn kết thúc.
+The `createRadialGradient()` method is specified by six parameters, three
+defining the gradient's start circle, and three defining the end circle.
 
-### Tham số
+### Parameters
 
 - `x0`
-- : Tọa độ trục x của vòng tròn bắt đầu.
+  - : The x-axis coordinate of the start circle.
 - `y0`
-- : Tọa độ trục y của vòng tròn bắt đầu.
+  - : The y-axis coordinate of the start circle.
 - `r0`
-- : Bán kính của đường tròn xuất phát. Phải không âm và hữu hạn.
+  - : The radius of the start circle. Must be non-negative and finite.
 - `x1`
-- : Tọa độ trục x của đường tròn cuối.
+  - : The x-axis coordinate of the end circle.
 - `y1`
-- : Tọa độ trục y của đường tròn cuối.
+  - : The y-axis coordinate of the end circle.
 - `r1`
-- : Bán kính của đường tròn cuối. Phải không âm và hữu hạn.
+  - : The radius of the end circle. Must be non-negative and finite.
 
-### Giá trị trả về
+### Return value
 
-Một {{domxref("CanvasGradient")}} hướng tâm được khởi tạo với hai vòng tròn được chỉ định.
+A radial {{domxref("CanvasGradient")}} initialized with the two specified circles.
 
-### Ngoại lệ
+### Exceptions
 
 - `NotSupportedError` {{domxref("DOMException")}}
-- : Được ném khi các giá trị không hữu hạn được truyền vào tham số.
+  - : Thrown when non-finite values are passed in parameter.
 - `IndexSizeError` {{domxref("DOMException")}}
-- : Được ném khi bán kính âm được truyền vào tham số.
+  - : Thrown when a negative radius is passed in parameter.
 
-## Ví dụ
+## Examples
 
-### Tô hình chữ nhật bằng gradient xuyên tâm
+### Filling a rectangle with a radial gradient
 
-Ví dụ này khởi tạo một gradient xuyên tâm bằng cách sử dụng
-Phương pháp `createRadialGradient()`. Ba điểm dừng màu giữa hai điểm dừng của gradient
-vòng tròn sau đó được tạo ra. Cuối cùng, độ dốc được gán cho bối cảnh canvas và
-được hiển thị thành một hình chữ nhật đầy.
+This example initializes a radial gradient using the
+`createRadialGradient()` method. Three color stops between the gradient's two
+circles are then created. Finally, the gradient is assigned to the canvas context, and
+is rendered to a filled rectangle.
 
 #### HTML
 
@@ -90,20 +92,20 @@ ctx.fillStyle = gradient;
 ctx.fillRect(20, 20, 160, 160);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Filling_a_rectangle_with_a_radial_gradient', 700, 240) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.createLinearGradient()")}}
 - {{domxref("CanvasRenderingContext2D.createConicGradient()")}}

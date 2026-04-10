@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính ShadowColor"
-short-title: bóngMàu sắc
+title: "CanvasRenderingContext2D: shadowColor property"
+short-title: shadowColor
 slug: Web/API/CanvasRenderingContext2D/shadowColor
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.shadowColor
@@ -8,27 +8,35 @@ browser-compat: api.CanvasRenderingContext2D.shadowColor
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.shadowColor`** của API Canvas 2D chỉ định màu của bóng.
+The
+**`CanvasRenderingContext2D.shadowColor`**
+property of the Canvas 2D API specifies the color of shadows.
 
-Xin lưu ý rằng độ mờ được hiển thị của bóng sẽ bị ảnh hưởng bởi độ mờ của màu{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}}khi tô màu và độ mờ của màu{{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}khi vuốt.
+Be aware that the shadow's rendered opacity will be affected by the opacity of the
+{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}} color when filling, and
+of the {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}} color when
+stroking.
 
-> [!LƯU Ý]
-> Bóng chỉ được vẽ nếu`shadowColor`
-> thuộc tính được đặt thành giá trị không minh bạch. Một trong những
+> [!NOTE]
+> Shadows are only drawn if the `shadowColor`
+> property is set to a non-transparent value. One of the
 > {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}},
-> {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}, hoặc
-> thuộc tính{{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}}phải
-> cũng khác 0.
+> {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}, or
+> {{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}} properties must
+> be non-zero, as well.
 
-## Giá trị
+## Value
 
-Một chuỗi được phân tích cú pháp dưới dạng giá trị[CSS](/en-US/docs/Web/CSS){{cssxref("&lt;color&gt;")}}. Giá trị mặc định là màu đen hoàn toàn trong suốt.
+A string parsed as a [CSS](/en-US/docs/Web/CSS) {{cssxref("&lt;color&gt;")}} value. The default value is fully-transparent black.
 
-## Ví dụ
+## Examples
 
-### Thêm bóng vào hình dạng
+### Adding a shadow to shapes
 
-Ví dụ này thêm bóng vào hai hình vuông; cái đầu tiên được lấp đầy, và cái thứ hai được vuốt ve. Thuộc tính`shadowColor`đặt màu của bóng, trong khi`shadowOffsetX`và`shadowOffsetY`đặt vị trí của chúng so với hình dạng.
+This example adds a shadow to two squares; the first one is filled, and the second one
+is stroked. The `shadowColor` property sets the shadows' color, while
+`shadowOffsetX` and `shadowOffsetY` set their position relative to
+the shapes.
 
 #### HTML
 
@@ -55,13 +63,15 @@ ctx.lineWidth = 6;
 ctx.strokeRect(170, 20, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Adding_a_shadow_to_shapes', 700, 180) }}
 
-### Bóng trên các hình mờ
+### Shadows on translucent shapes
 
-Độ mờ của bóng bị ảnh hưởng bởi mức độ trong suốt của đối tượng cha của nó (ngay cả khi`shadowColor`chỉ định giá trị mờ hoàn toàn). Ví dụ này tạo nét và tô màu hình chữ nhật bằng màu mờ.
+A shadow's opacity is affected by the transparency level of its parent object (even
+when `shadowColor` specifies a completely opaque value). This example strokes
+and fills a rectangle with translucent colors.
 
 #### HTML
 
@@ -71,7 +81,9 @@ ctx.strokeRect(170, 20, 100, 100);
 
 #### JavaScript
 
-Giá trị alpha thu được của bóng đổ là`.8 * .2`hoặc`.16`. Alpha của bóng nét là`.8 * .6`hoặc`.48`.
+The resulting alpha value of the fill shadow is `.8 * .2`, or
+`.16`. The alpha of the stroke shadow is `.8 * .6`, or
+`.48`.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -93,21 +105,22 @@ ctx.strokeStyle = "rgb(0 0 255 / 60%)";
 ctx.strokeRect(10, 10, 150, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Shadows_on_translucent_shapes', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific notes
 
-Trong các trình duyệt dựa trên WebKit và Blink, phương thức không chuẩn và không được dùng nữa`ctx.setShadow()`được triển khai bên cạnh thuộc tính này.
+In WebKit- and Blink-based browsers, the non-standard and deprecated method
+`ctx.setShadow()` is implemented besides this property.
 
 ```js
 setShadow(width, height, blur, color, alpha);
@@ -116,6 +129,6 @@ setShadow(width, height, blur, r, g, b, a);
 setShadow(width, height, blur, c, m, y, k, a);
 ```
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}

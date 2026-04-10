@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức StrokeRect()"
-short-title: đột quỵRect()
+title: "CanvasRenderingContext2D: strokeRect() method"
+short-title: strokeRect()
 slug: Web/API/CanvasRenderingContext2D/strokeRect
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.strokeRect
@@ -8,38 +8,48 @@ browser-compat: api.CanvasRenderingContext2D.strokeRect
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.strokeRect()`** của API Canvas 2D vẽ một hình chữ nhật được viền (viền) theo{{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}hiện tại và các cài đặt ngữ cảnh khác.
+The
+**`CanvasRenderingContext2D.strokeRect()`**
+method of the Canvas 2D API draws a rectangle that is stroked (outlined) according to
+the current {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}} and other
+context settings.
 
-Phương thức này vẽ trực tiếp vào khung vẽ mà không sửa đổi đường dẫn hiện tại, do đó, mọi lệnh gọi{{domxref("CanvasRenderingContext2D.fill()", "fill()")}}hoặc{{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}}tiếp theo sẽ không ảnh hưởng đến nó.
+This method draws directly to the canvas without modifying the current path, so any
+subsequent {{domxref("CanvasRenderingContext2D.fill()", "fill()")}} or
+{{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}} calls will have no effect
+on it.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 strokeRect(x, y, width, height)
 ```
 
-Phương thức`strokeRect()`vẽ một hình chữ nhật có nét có điểm bắt đầu là`(x, y)`và có kích thước được chỉ định bởi`width`và`height`.
+The `strokeRect()` method draws a stroked rectangle whose starting point is
+at `(x, y)` and whose size is specified by `width` and
+`height`.
 
-### Tham số
+### Parameters
 
 - `x`
-  - : Tọa độ trục x của điểm bắt đầu của hình chữ nhật.
+  - : The x-axis coordinate of the rectangle's starting point.
 - `y`
-  - : Tọa độ trục y của điểm bắt đầu của hình chữ nhật.
+  - : The y-axis coordinate of the rectangle's starting point.
 - `width`
-  - : Chiều rộng của hình chữ nhật. Giá trị dương ở bên phải và âm ở bên trái.
+  - : The rectangle's width. Positive values are to the right, and negative to the left.
 - `height`
-  - : Chiều cao của hình chữ nhật. Giá trị dương giảm, giá trị âm tăng.
+  - : The rectangle's height. Positive values are down, and negative are up.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Một hình chữ nhật có nét vẽ đơn giản
+### A simple stroked rectangle
 
-Ví dụ này vẽ một hình chữ nhật có đường viền màu xanh lá cây bằng phương pháp`strokeRect()`.
+This example draws a rectangle with a green outline using the `strokeRect()`
+method.
 
 #### HTML
 
@@ -49,7 +59,8 @@ Ví dụ này vẽ một hình chữ nhật có đường viền màu xanh lá c
 
 #### JavaScript
 
-Góc trên bên trái của hình chữ nhật nằm ở (20, 10). Nó có chiều rộng là 160 và chiều cao là 100\.
+The rectangle's top-left corner is at (20, 10). It has a width of 160 and a height of
+100\.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -58,13 +69,13 @@ ctx.strokeStyle = "green";
 ctx.strokeRect(20, 10, 160, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('A_simple_stroked_rectangle', 700, 180) }}
 
-### Áp dụng các cài đặt ngữ cảnh khác nhau
+### Applying various context settings
 
-Ví dụ này vẽ một hình chữ nhật có bóng đổ và các đường viền dày, vát cạnh.
+This example draws a rectangle with a drop shadow and thick, beveled outlines.
 
 #### HTML
 
@@ -85,21 +96,21 @@ ctx.strokeStyle = "#3388ff";
 ctx.strokeRect(30, 30, 160, 90);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Applying_various_context_settings', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.strokeStyle")}}
 - {{domxref("CanvasRenderingContext2D.clearRect()")}}
 - {{domxref("CanvasRenderingContext2D.fillRect()")}}

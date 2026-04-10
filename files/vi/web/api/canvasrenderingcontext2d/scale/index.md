@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức tỉ lệ ()"
-short-title: tỉ lệ()
+title: "CanvasRenderingContext2D: scale() method"
+short-title: scale()
 slug: Web/API/CanvasRenderingContext2D/scale
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.scale
@@ -8,34 +8,42 @@ browser-compat: api.CanvasRenderingContext2D.scale
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.scale()`** của API Canvas 2D thêm phép chuyển đổi tỷ lệ cho các đơn vị canvas theo chiều ngang và/hoặc chiều dọc.
+The
+**`CanvasRenderingContext2D.scale()`**
+method of the Canvas 2D API adds a scaling transformation to the canvas units
+horizontally and/or vertically.
 
-Theo mặc định, một đơn vị trên khung vẽ chính xác là một pixel. Một phép biến đổi tỷ lệ sẽ sửa đổi hành vi này. Ví dụ: hệ số tỷ lệ 0,5 dẫn đến kích thước đơn vị là 0,5 pixel; do đó hình dạng được vẽ ở một nửa kích thước bình thường. Tương tự, hệ số tỷ lệ là 2,0 sẽ tăng kích thước đơn vị sao cho một đơn vị trở thành hai pixel; do đó hình dạng được vẽ ở kích thước gấp đôi bình thường.
+By default, one unit on the canvas is exactly one pixel. A scaling transformation
+modifies this behavior. For instance, a scaling factor of 0.5 results in a unit size of
+0.5 pixels; shapes are thus drawn at half the normal size. Similarly, a scaling factor
+of 2.0 increases the unit size so that one unit becomes two pixels; shapes are thus
+drawn at twice the normal size.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 scale(x, y)
 ```
 
-### Tham số
+### Parameters
 
 - `x`
-  - : Hệ số tỷ lệ theo hướng ngang. Giá trị âm lật các pixel trên
-    trục dọc. Giá trị`1`dẫn đến không có tỷ lệ theo chiều ngang.
+  - : Scaling factor in the horizontal direction. A negative value flips pixels across the
+    vertical axis. A value of `1` results in no horizontal scaling.
 - `y`
-  - : Hệ số tỷ lệ theo hướng thẳng đứng. Giá trị âm lật các pixel trên
-    trục ngang. Giá trị`1`dẫn đến không có tỷ lệ dọc.
+  - : Scaling factor in the vertical direction. A negative value flips pixels across the
+    horizontal axis. A value of `1` results in no vertical scaling.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Chia tỷ lệ một hình dạng
+### Scaling a shape
 
-Ví dụ này vẽ một hình chữ nhật có tỷ lệ. Sau đó, một hình chữ nhật không có tỷ lệ sẽ được vẽ để so sánh.
+This example draws a scaled rectangle. A non-scaled rectangle is then drawn for
+comparison.
 
 #### HTML
 
@@ -45,9 +53,12 @@ Ví dụ này vẽ một hình chữ nhật có tỷ lệ. Sau đó, một hình
 
 #### JavaScript
 
-Hình chữ nhật có chiều rộng được chỉ định là 8 và chiều cao là 20. Ma trận biến đổi chia tỷ lệ cho nó là 9x theo chiều ngang và 3x theo chiều dọc. Do đó, kích thước cuối cùng của nó là chiều rộng 72 và chiều cao 60.
+The rectangle has a specified width of 8 and a height of 20. The transformation matrix
+scales it by 9x horizontally and by 3x vertically. Thus, its final size is a width of 72
+and a height of 60.
 
-Lưu ý rằng vị trí của nó trên khung vẽ cũng thay đổi. Vì góc được chỉ định của nó là (10, 10\), góc được hiển thị của nó sẽ trở thành (90, 30).
+Notice that its position on the canvas also changes. Since its specified corner is (10,
+10\), its rendered corner becomes (90, 30).
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -66,17 +77,22 @@ ctx.fillStyle = "gray";
 ctx.fillRect(10, 10, 8, 20);
 ```
 
-#### Kết quả
+#### Result
 
-Hình chữ nhật được chia tỷ lệ có màu đỏ và hình chữ nhật không được chia tỷ lệ có màu xám.
+The scaled rectangle is red, and the non-scaled rectangle is gray.
 
 {{ EmbedLiveSample('Scaling_a_shape', 700, 180) }}
 
-### Lật đồ vật theo chiều ngang hoặc chiều dọc
+### Flipping things horizontally or vertically
 
-Bạn có thể sử dụng`scale(-1, 1)`để lật ngữ cảnh theo chiều ngang và`scale(1, -1)`để lật ngữ cảnh theo chiều dọc. Trong ví dụ này, dòng chữ "Xin chào thế giới!" được lật ngang.
+You can use `scale(-1, 1)` to flip the context horizontally and
+`scale(1, -1)` to flip it vertically. In this example, the words "Hello
+world!" are flipped horizontally.
 
-Lưu ý rằng lệnh gọi tới{{domxref("CanvasRenderingContext2D.fillText()", "fillText()")}}chỉ định tọa độ x âm. Điều này nhằm điều chỉnh hệ số tỷ lệ âm:`-280 * -1`trở thành`280`và văn bản được vẽ sang trái từ điểm đó.
+Note that the call to {{domxref("CanvasRenderingContext2D.fillText()", "fillText()")}}
+specifies a negative x coordinate. This is to adjust for the negative scaling factor:
+`-280 * -1` becomes `280`, and text is drawn leftwards from that
+point.
 
 #### HTML
 
@@ -96,18 +112,18 @@ ctx.fillText("Hello world!", -280, 90);
 ctx.setTransform(1, 0, 0, 1, 0, 0);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Flipping_things_horizontally_or_vertically', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

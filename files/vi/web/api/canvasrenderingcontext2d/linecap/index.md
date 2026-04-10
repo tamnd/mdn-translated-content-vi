@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính lineCap"
-short-title: dòngCap
+title: "CanvasRenderingContext2D: lineCap property"
+short-title: lineCap
 slug: Web/API/CanvasRenderingContext2D/lineCap
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.lineCap
@@ -8,30 +8,32 @@ browser-compat: api.CanvasRenderingContext2D.lineCap
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.lineCap`** của API Canvas 2D xác định hình dạng được sử dụng để vẽ điểm cuối của đường.
+The
+**`CanvasRenderingContext2D.lineCap`**
+property of the Canvas 2D API determines the shape used to draw the end points of lines.
 
-> [!LƯU Ý]
-> Các đường có thể được vẽ bằng
-> {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}},{{domxref("CanvasRenderingContext2D.strokeRect()", "strokeRect()")}},
-> và {{domxref("CanvasRenderingContext2D.strokeText()", "strokeText()")}}.
+> [!NOTE]
+> Lines can be drawn with the
+> {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}}, {{domxref("CanvasRenderingContext2D.strokeRect()", "strokeRect()")}},
+> and {{domxref("CanvasRenderingContext2D.strokeText()", "strokeText()")}} methods.
 
-## Giá trị
+## Value
 
-Một trong những điều sau đây:
+One of the following:
 
 - `"butt"`
-- : Các đầu của dòng được bình phương ở điểm cuối. Giá trị mặc định.
+  - : The ends of lines are squared off at the endpoints. Default value.
 - `"round"`
-- : Các đầu của dòng được làm tròn.
+  - : The ends of lines are rounded.
 - `"square"`
-- : Các đầu của dòng được bình phương bằng cách thêm một hộp có chiều rộng bằng nhau và một nửa
-  chiều cao của độ dày của đường.
+  - : The ends of lines are squared off by adding a box with an equal width and half the
+    height of the line's thickness.
 
-## Ví dụ
+## Examples
 
-### Thay đổi hình dạng của mũ dòng
+### Changing the shape of line caps
 
-Ví dụ này làm tròn giới hạn cuối của một đường thẳng.
+This example rounds the end caps of a straight line.
 
 #### HTML
 
@@ -53,15 +55,21 @@ ctx.lineTo(100, 100);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_the_shape_of_line_caps', 700, 180) }}
 
-### So sánh giới hạn dòng
+### Comparison of line caps
 
-Trong ví dụ này, ba dòng được vẽ, mỗi dòng có một giá trị khác nhau cho thuộc tính `lineCap`. Hai hướng dẫn để thấy sự khác biệt chính xác giữa ba hướng dẫn này được thêm vào. Mỗi dòng này bắt đầu và kết thúc chính xác trên các hướng dẫn này.
+In this example three lines are drawn, each with a different value for the
+`lineCap` property. Two guides to see the exact differences between the three
+are added. Each of these lines starts and ends exactly on these guides.
 
-Dòng bên trái sử dụng tùy chọn mặc định `"butt"`. Nó được vẽ hoàn toàn bằng phẳng với các hướng dẫn. Thứ hai được đặt để sử dụng tùy chọn`"round"`. Điều này thêm một hình bán nguyệt vào cuối có bán kính bằng một nửa chiều rộng của đường thẳng. Dòng bên phải sử dụng tùy chọn`"square"`. Điều này thêm một hộp có chiều rộng bằng nhau và một nửa chiều cao của độ dày đường.
+The line on the left uses the default `"butt"` option. It's drawn completely
+flush with the guides. The second is set to use the `"round"` option. This
+adds a semicircle to the end that has a radius half the width of the line. The line on
+the right uses the `"square"` option. This adds a box with an equal width and
+half the height of the line thickness.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -94,22 +102,22 @@ ctx.strokeStyle = "black";
 
 {{EmbedLiveSample("Comparison_of_line_caps", "180", "180")}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific notes
 
-- Trong Trình duyệt dựa trên WebKit và Blink, một phương thức không chuẩn và không được dùng nữa
-  `ctx.setLineCap()` được triển khai ngoài thuộc tính này.
+- In WebKit- and Blink-based Browsers, a non-standard and deprecated method
+  `ctx.setLineCap()` is implemented in addition to this property.
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.lineWidth")}}
 - {{domxref("CanvasRenderingContext2D.lineJoin")}}
 - [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors)

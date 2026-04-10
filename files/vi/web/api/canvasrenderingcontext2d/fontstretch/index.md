@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính fontStretch"
-short-title: phông chữCăng
+title: "CanvasRenderingContext2D: fontStretch property"
+short-title: fontStretch
 slug: Web/API/CanvasRenderingContext2D/fontStretch
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.fontStretch
@@ -8,19 +8,21 @@ browser-compat: api.CanvasRenderingContext2D.fontStretch
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.fontStretch`** của [Canvas API](/en-US/docs/Web/API/Canvas_API) chỉ định cách phông chữ có thể được mở rộng hoặc thu gọn khi vẽ văn bản.
+The **`CanvasRenderingContext2D.fontStretch`** property of the [Canvas API](/en-US/docs/Web/API/Canvas_API) specifies how the font may be expanded or condensed when drawing text.
 
-Thuộc tính tương ứng với thuộc tính CSS {{cssxref("font-stretch")}} khi được sử dụng với từ khóa (giá trị phần trăm không được hỗ trợ).
+The property corresponds to the {{cssxref("font-stretch")}} CSS property when used with keywords (percentage values are not supported).
 
-## Giá trị
+## Value
 
-Giá trị kéo dài phông chữ dưới dạng một chuỗi. Đây là một trong:`ultra-condensed`,`extra-condensed`,`condensed`,`semi-condensed`,`normal`(mặc định),`semi-expanded`,`expanded`,`extra-expanded`,`ultra-expanded`.
+The font stretch value as a string.
+This is one of: `ultra-condensed`, `extra-condensed`, `condensed`, `semi-condensed`, `normal` (default), `semi-expanded`, `expanded`, `extra-expanded`, `ultra-expanded`.
 
-Thuộc tính có thể được sử dụng để lấy hoặc đặt giá trị kéo dài phông chữ.
+The property can be used to get or set the font stretch value.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ này, chúng tôi hiển thị văn bản "Xin chào thế giới" bằng cách sử dụng từng giá trị được hỗ trợ của thuộc tính `fontStretch`. Giá trị kéo dài cũng được hiển thị cho từng trường hợp bằng cách đọc thuộc tính.
+In this example we display the text "Hello World" using each of the supported values of the `fontStretch` property.
+The stretch value is also displayed for each case by reading the property.
 
 ### HTML
 
@@ -30,16 +32,18 @@ Trong ví dụ này, chúng tôi hiển thị văn bản "Xin chào thế giới
 
 ### JavaScript
 
-Đầu tiên, chúng ta lấy canvas được khai báo trong tệp HTML và sử dụng nó để lấy `CanvasRenderingContext2D` mà sau này sẽ được sử dụng để vẽ văn bản.
+First we get the canvas declared in the HTML file and use it to get the `CanvasRenderingContext2D` that will later be used for drawing text.
 
 ```js
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 ```
 
-Bước tiếp theo trong ví dụ là tải một phông chữ có thể thay đổi theo trục chiều rộng. Điều này là cần thiết vì `fontStretch` chỉ có thể kéo dài phông chữ chứa thông tin về cách vẽ glyph khi kéo dài - nếu không, văn bản sẽ được vẽ bằng giá trị kéo dài phông chữ có sẵn gần nhất cho phông chữ, thường là chiều rộng bình thường.
+The next step in the example is to load a variable font that can be varied in the width axis.
+This is needed because `fontStretch` can only stretch a font that contains information about how glyphs are drawn when stretched — otherwise text will be drawn using the closest available font stretch value for the font, which will often be the normal width.
 
-Trong trường hợp này, chúng tôi sử dụng [`FontFace`](/en-US/docs/Web/API/FontFace) để xác định mặt phông chữ cho [Inconsolata](https://fonts.google.com/specimen/Inconsolata/tester) Google Font, hỗ trợ độ rộng phông chữ từ 50% đến 200% (cho phép chúng tôi thể hiện các giá trị`fontStretch`từ`ultra-condensed`đến`ultra-expanded`). Sau đó, chúng tôi thêm phần này vào [`FontFaceSet`](/en-US/docs/Web/API/FontFaceSet)([`document.fonts`](/en-US/docs/Web/API/Document/fonts)) của tài liệu để có thể sử dụng nó để vẽ.
+In this case we use [`FontFace`](/en-US/docs/Web/API/FontFace) to define a font face for the [Inconsolata](https://fonts.google.com/specimen/Inconsolata/tester) Google Font, which supports font widths from 50% to 200% (allowing us to demonstrate `fontStretch` values from `ultra-condensed` to `ultra-expanded`).
+We then add this to the document's [`FontFaceSet`](/en-US/docs/Web/API/FontFaceSet) ([`document.fonts`](/en-US/docs/Web/API/Document/fonts)) so that it can be used for drawing.
 
 ```js
 const fontFile = new FontFace(
@@ -51,9 +55,11 @@ const fontFile = new FontFace(
 document.fonts.add(fontFile);
 ```
 
-Đoạn mã bên dưới gọi [`FontFaceSet.load()`](/en-US/docs/Web/API/FontFaceSet/load) để tìm nạp và tải Google Font. Lưu ý rằng lệnh gọi này đặt kích thước phông chữ cần thiết và trả về lời hứa sẽ được giải quyết khi phông chữ được tải.
+The code below then calls [`FontFaceSet.load()`](/en-US/docs/Web/API/FontFaceSet/load) to fetch and load the Google Font.
+Note that this call sets the size of the font that is needed, and returns a promise that resolves when the font has been loaded.
 
-Sau đó, chúng tôi chỉ định mặt phông chữ mà chúng tôi đã tải xuống cho ngữ cảnh và sử dụng ngữ cảnh để vẽ văn bản vào khung vẽ ở mỗi cấp độ kéo dài của từ khóa. Lưu ý rằng một lần nữa kích thước của phông chữ mong muốn được chỉ định (điều này không nhất thiết phải khớp với kích thước phông chữ được tải).
+We then assign the font face we downloaded to the context, and use the context to draw text to the canvas at each of the keyword stretch levels.
+Note that again the size of the desired font is specified (this does not have to match the loaded font size).
 
 ```js
 document.fonts.load("30px Inconsolata").then(
@@ -95,14 +101,14 @@ document.fonts.load("30px Inconsolata").then(
 );
 ```
 
-### Kết quả
+### Result
 
 {{ EmbedLiveSample('Examples', 700, 300) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}

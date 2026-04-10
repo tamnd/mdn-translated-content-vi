@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính lineJoin"
-short-title: dòngTham gia
+title: "CanvasRenderingContext2D: lineJoin property"
+short-title: lineJoin
 slug: Web/API/CanvasRenderingContext2D/lineJoin
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.lineJoin
@@ -8,37 +8,45 @@ browser-compat: api.CanvasRenderingContext2D.lineJoin
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.lineJoin`** của API Canvas 2D xác định hình dạng được sử dụng để nối hai đoạn đường nơi chúng gặp nhau.
+The
+**`CanvasRenderingContext2D.lineJoin`**
+property of the Canvas 2D API determines the shape used to join two line segments where
+they meet.
 
-Thuộc tính này không có hiệu lực khi hai đoạn được kết nối có cùng hướng, vì sẽ không có vùng nối nào được thêm vào trong trường hợp này. Các đoạn suy biến có độ dài bằng 0 (tức là với tất cả các điểm cuối và điểm kiểm soát ở cùng một vị trí) cũng bị bỏ qua.
+This property has no effect wherever two connected segments have the same direction,
+because no joining area will be added in this case. Degenerate segments with a length of
+zero (i.e., with all endpoints and control points at the exact same position) are also
+ignored.
 
-> [!LƯU Ý]
-> Các đường có thể được vẽ bằng
+> [!NOTE]
+> Lines can be drawn with the
 > {{domxref("CanvasRenderingContext2D.stroke()", "stroke()")}},
 > {{domxref("CanvasRenderingContext2D.strokeRect()", "strokeRect()")}},
-> và {{domxref("CanvasRenderingContext2D.strokeText()", "strokeText()")}}.
+> and {{domxref("CanvasRenderingContext2D.strokeText()", "strokeText()")}} methods.
 
-## Giá trị
+## Value
 
-Có ba giá trị có thể có cho thuộc tính này:`"round"`,`"bevel"`và`"miter"`. Mặc định là`"miter"`.
+There are three possible values for this property: `"round"`, `"bevel"`, and `"miter"`. The default is `"miter"`.
 
-! [Three horizontal zigzag lines with round, bevel, and miter values, shown from top to bottom respectively.](canvas_linejoin.png)
+![Three horizontal zigzag lines with round, bevel, and miter values, shown from top to bottom respectively.](canvas_linejoin.png)
 
 - `"round"`
-- : Làm tròn các góc của hình bằng cách lấp đầy một khu vực đĩa bổ sung ở giữa
-  tại điểm cuối chung của các phân đoạn được kết nối. Bán kính của các góc tròn này bằng chiều rộng của đường thẳng.
+  - : Rounds off the corners of a shape by filling an additional sector of disc centered
+    at the common endpoint of connected segments. The radius for these rounded corners is
+    equal to the line width.
 - `"bevel"`
-- : Lấp đầy một vùng hình tam giác bổ sung giữa điểm cuối chung của kết nối
-  các đoạn và các góc hình chữ nhật bên ngoài riêng biệt của mỗi đoạn.
+  - : Fills an additional triangular area between the common endpoint of connected
+    segments, and the separate outside rectangular corners of each segment.
 - `"miter"`
-- : Các phân đoạn được kết nối được nối bằng cách mở rộng các cạnh bên ngoài của chúng để kết nối tại một
-  một điểm duy nhất, với tác dụng lấp đầy một khu vực hình thoi bổ sung. Cài đặt này bị ảnh hưởng bởi thuộc tính {{domxref("CanvasRenderingContext2D.miterLimit", "miterLimit")}}. Giá trị mặc định.
+  - : Connected segments are joined by extending their outside edges to connect at a
+    single point, with the effect of filling an additional lozenge-shaped area. This
+    setting is affected by the {{domxref("CanvasRenderingContext2D.miterLimit", "miterLimit")}} property. Default value.
 
-## Ví dụ
+## Examples
 
-### Thay đổi các kết nối trong một đường dẫn
+### Changing the joins in a path
 
-Ví dụ này áp dụng các đường nối tròn cho một đường dẫn.
+This example applies rounded line joins to a path.
 
 #### HTML
 
@@ -62,13 +70,14 @@ ctx.lineTo(280, 150);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_the_joins_in_a_path', 700, 180) }}
 
-### So sánh các đường nối
+### Comparison of line joins
 
-Ví dụ bên dưới vẽ ba đường dẫn khác nhau, thể hiện từng đường dẫn trong số ba tùy chọn `lineJoin`.
+The example below draws three different paths, demonstrating each of the three
+`lineJoin` options.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -92,22 +101,22 @@ ctx.lineWidth = 10;
 
 {{EmbedLiveSample("Comparison_of_line_joins", "", "180")}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific notes
 
-- Trong Trình duyệt dựa trên WebKit và Blink, một phương thức không chuẩn và không được dùng nữa
-  `ctx.setLineJoin()` được triển khai ngoài thuộc tính này.
+- In WebKit- and Blink-based Browsers, a non-standard and deprecated method
+  `ctx.setLineJoin()` is implemented in addition to this property.
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.lineCap")}}
 - {{domxref("CanvasRenderingContext2D.lineWidth")}}
 - [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors)

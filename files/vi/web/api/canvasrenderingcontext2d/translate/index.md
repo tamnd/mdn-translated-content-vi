@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức dịch()"
-short-title: dịch()
+title: "CanvasRenderingContext2D: translate() method"
+short-title: translate()
 slug: Web/API/CanvasRenderingContext2D/translate
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.translate
@@ -8,36 +8,42 @@ browser-compat: api.CanvasRenderingContext2D.translate
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.translate()`** của API Canvas 2D thêm phép biến đổi dịch vào ma trận hiện tại.
+The
+**`CanvasRenderingContext2D.translate()`**
+method of the Canvas 2D API adds a translation transformation to the current matrix.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 translate(x, y)
 ```
 
-Phương thức`translate()`thêm phép chuyển đổi dịch sang ma trận hiện tại bằng cách di chuyển khung vẽ và các đơn vị`x`gốc của nó theo chiều ngang và các đơn vị`y`theo chiều dọc trên lưới.
+The `translate()` method adds a translation transformation to the current
+matrix by moving the canvas and its origin `x` units horizontally and
+`y` units vertically on the grid.
 
 ![A canvas's origin moved on the x and y axes based on the values of the translate method.](canvas_grid_translate.png)
 
-### Tham số
+### Parameters
 
 - `x`
-  - : Khoảng cách di chuyển theo hướng ngang. Các giá trị dương ở bên phải và
-    âm sang trái.
+  - : Distance to move in the horizontal direction. Positive values are to the right, and
+    negative to the left.
 - `y`
-  - : Khoảng cách di chuyển theo hướng thẳng đứng. Giá trị dương giảm và giá trị âm
-    đang lên.
+  - : Distance to move in the vertical direction. Positive values are down, and negative
+    are up.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Di chuyển một hình dạng
+### Moving a shape
 
-Ví dụ này vẽ một hình vuông được di chuyển từ vị trí mặc định của nó bằng phương thức`translate()`. Sau đó, một hình vuông không di chuyển có cùng kích thước sẽ được rút ra để so sánh.
+This example draws a square that is moved from its default position by the
+`translate()` method. An unmoved square of the same size is then drawn for
+comparison.
 
 #### HTML
 
@@ -47,7 +53,8 @@ Ví dụ này vẽ một hình vuông được di chuyển từ vị trí mặc 
 
 #### JavaScript
 
-Phương thức`translate()`dịch ngữ cảnh theo chiều ngang 110 và chiều dọc 30. Hình vuông đầu tiên được dịch chuyển một lượng so với vị trí mặc định của nó.
+The `translate()` method translates the context by 110 horizontally and 30
+vertically. The first square is shifted by those amounts from its default position.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -66,20 +73,20 @@ ctx.fillStyle = "gray";
 ctx.fillRect(0, 0, 80, 80);
 ```
 
-#### Kết quả
+#### Result
 
-Hình vuông đã di chuyển có màu đỏ và hình vuông không di chuyển có màu xám.
+The moved square is red, and the unmoved square is gray.
 
 {{ EmbedLiveSample('Moving_a_shape', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

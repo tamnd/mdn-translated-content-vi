@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức setLineDash()"
+title: "CanvasRenderingContext2D: setLineDash() method"
 short-title: setLineDash()
 slug: Web/API/CanvasRenderingContext2D/setLineDash
 page-type: web-api-instance-method
@@ -8,33 +8,41 @@ browser-compat: api.CanvasRenderingContext2D.setLineDash
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`setLineDash()`** của giao diện{{domxref("CanvasRenderingContext2D")}}của API Canvas 2D đặt mẫu dấu gạch ngang được sử dụng khi vuốt các đường. Nó sử dụng một mảng các giá trị chỉ định độ dài xen kẽ của các dòng và khoảng trống mô tả mẫu.
+The **`setLineDash()`** method of the Canvas 2D API's
+{{domxref("CanvasRenderingContext2D")}} interface sets the line dash pattern used when
+stroking lines. It uses an array of values that specify alternating lengths of lines
+and gaps which describe the pattern.
 
-> [!LƯU Ý]
-> Để quay lại sử dụng đường liền nét, hãy đặt danh sách gạch ngang thành một
-> mảng trống.
+> [!NOTE]
+> To return to using solid lines, set the line dash list to an
+> empty array.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 setLineDash(segments)
 ```
 
-### Tham số
+### Parameters
 
 - `segments`
-  - : Một{{jsxref("Array")}}gồm các số xác định khoảng cách để lần lượt vẽ một
-    đường thẳng và khoảng trống (theo đơn vị không gian tọa độ). Nếu số phần tử trong mảng là số lẻ thì các phần tử của mảng sẽ được sao chép và ghép nối. Ví dụ:`[5, 15, 25]`sẽ trở thành`[5, 15, 25, 5, 15, 25]`. Nếu mảng trống, danh sách gạch ngang sẽ bị xóa và các nét dòng trở lại liền nét.
+  - : An {{jsxref("Array")}} of numbers that specify distances to alternately draw a
+    line and a gap (in coordinate space units). If the number of elements in the array
+    is odd, the elements of the array get copied and concatenated. For example,
+    `[5, 15, 25]` will become `[5, 15, 25, 5, 15, 25]`. If the
+    array is empty, the line dash list is cleared and line strokes return to being
+    solid.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Ví dụ cơ bản
+### Basic example
 
-Ví dụ này sử dụng phương thức`setLineDash()`để vẽ một đường đứt nét phía trên một đường liền nét.
+This example uses the `setLineDash()` method to draw a dashed line above a
+solid line.
 
 #### HTML
 
@@ -63,13 +71,13 @@ ctx.lineTo(300, 100);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Basic_example', 700, 180) }}
 
-### Một số mẫu thông dụng
+### Some common patterns
 
-Ví dụ này minh họa một loạt các mẫu gạch ngang phổ biến.
+This example illustrates a variety of common line dash patterns.
 
 #### HTML
 
@@ -79,7 +87,8 @@ Ví dụ này minh họa một loạt các mẫu gạch ngang phổ biến.
 
 #### JavaScript
 
-Hàm`drawDashedLine()`được tạo bên dưới giúp việc vẽ nhiều đường đứt nét trở nên đơn giản. Nó nhận một mảng mẫu làm tham số duy nhất của nó.
+The `drawDashedLine()` function created below makes the drawing of multiple
+dashed lines simple. It receives a pattern array as its only parameter.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -104,20 +113,20 @@ drawDashedLine([20, 3, 3, 3, 3, 3, 3, 3]);
 drawDashedLine([12, 3, 3]); // Equals [12, 3, 3, 12, 3, 3]
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Some_common_patterns', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.getLineDash()")}}
 - {{domxref("CanvasRenderingContext2D.lineDashOffset")}}

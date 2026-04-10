@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính imageSmoothingQuality"
-short-title: làm mịn hình ảnhChất lượng
+title: "CanvasRenderingContext2D: imageSmoothingQuality property"
+short-title: imageSmoothingQuality
 slug: Web/API/CanvasRenderingContext2D/imageSmoothingQuality
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.imageSmoothingQuality
@@ -8,31 +8,33 @@ browser-compat: api.CanvasRenderingContext2D.imageSmoothingQuality
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`imageSmoothingQuality`** của giao diện {{domxref("CanvasRenderingContext2D")}}, một phần của [Canvas API](/en-US/docs/Web/API/Canvas_API), cho phép bạn đặt chất lượng làm mịn hình ảnh.
+The **`imageSmoothingQuality`** property of the
+{{domxref("CanvasRenderingContext2D")}} interface, part of the [Canvas API](/en-US/docs/Web/API/Canvas_API), lets you set the quality of
+image smoothing.
 
-> [!LƯU Ý]
-> Để thuộc tính này có hiệu lực,
+> [!NOTE]
+> For this property to have an effect,
 > {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}}
-> phải là `true`.
+> must be `true`.
 
-## Giá trị
+## Value
 
-Một trong những điều sau đây:
+One of the following:
 
 - `"low"`
-- : Chất lượng thấp.
+  - : Low quality.
 - `"medium"`
-- : Chất lượng trung bình.
+  - : Medium quality.
 - `"high"`
-- : Chất lượng cao.
+  - : High quality.
 
-Giá trị mặc định là `"low"`.
+The default value is `"low"`.
 
-## Ví dụ
+## Examples
 
-### Cài đặt chất lượng làm mịn ảnh
+### Setting image smoothing quality
 
-Ví dụ này sử dụng thuộc tính `imageSmoothingQuality` với hình ảnh được chia tỷ lệ.
+This example uses the `imageSmoothingQuality` property with a scaled image.
 
 #### HTML
 
@@ -54,20 +56,20 @@ img.onload = () => {
 };
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Setting_image_smoothing_quality', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled")}}
 - {{cssxref("image-rendering")}}

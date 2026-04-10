@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính GlobalAlpha"
-short-title: toàn cầuAlpha
+title: "CanvasRenderingContext2D: globalAlpha property"
+short-title: globalAlpha
 slug: Web/API/CanvasRenderingContext2D/globalAlpha
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.globalAlpha
@@ -8,20 +8,24 @@ browser-compat: api.CanvasRenderingContext2D.globalAlpha
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.globalAlpha`** của API Canvas 2D chỉ định giá trị alpha (độ trong suốt) được áp dụng cho các hình dạng và hình ảnh trước khi chúng được vẽ lên canvas.
+The
+**`CanvasRenderingContext2D.globalAlpha`**
+property of the Canvas 2D API specifies the alpha (transparency) value that is applied
+to shapes and images before they are drawn onto the canvas.
 
-> [!LƯU Ý]
-> Xem thêm chương [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) trong [Canvas Tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
+> [!NOTE]
+> See also the chapter [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) in the [Canvas Tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-## Giá trị
+## Value
 
-Một số nằm trong khoảng từ `0.0`(hoàn toàn trong suốt) đến`1.0`(hoàn toàn mờ), bao gồm. Giá trị mặc định là`1.0`. Các giá trị nằm ngoài phạm vi đó, bao gồm {{jsxref("Infinity")}} và {{jsxref("NaN")}}, sẽ không được đặt và`globalAlpha` sẽ giữ nguyên giá trị trước đó.
+A number between `0.0` (fully transparent) and `1.0` (fully opaque), inclusive. The default value is `1.0`. Values outside that range, including {{jsxref("Infinity")}} and {{jsxref("NaN")}}, will not be set, and `globalAlpha` will retain its previous value.
 
-## Ví dụ
+## Examples
 
-### Vẽ các hình trong suốt
+### Drawing translucent shapes
 
-Ví dụ này sử dụng thuộc tính `globalAlpha` để vẽ hai hình chữ nhật bán trong suốt.
+This example uses the `globalAlpha` property to draw two semi-transparent
+rectangles.
 
 #### HTML
 
@@ -44,15 +48,21 @@ ctx.fillStyle = "red";
 ctx.fillRect(50, 50, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Drawing_translucent_shapes', 700, 180) }}
 
-### Xếp chồng các hình dạng trong suốt
+### Overlaying transparent shapes
 
-Ví dụ này minh họa tác dụng của việc chồng nhiều hình dạng trong suốt lên nhau. Chúng ta bắt đầu bằng cách vẽ một nền đồng nhất gồm bốn hình vuông có màu khác nhau. Tiếp theo, chúng tôi đặt thuộc tính `globalAlpha`thành`0.2`(mờ 20%); mức alpha này sẽ áp dụng cho tất cả các hình dạng trong suốt của chúng tôi. Sau đó, chúng ta sử dụng vòng lặp`for` để vẽ một loạt các vòng tròn có bán kính tăng dần.
+This example illustrates the effect of overlaying multiple transparent shapes on top of
+each other. We begin by drawing a solid background composed of four differently colored
+squares. Next, we set the `globalAlpha` property to `0.2` (20%
+opaque); this alpha level will apply to all of our transparent shapes. After that, we
+use a `for` loop to draw a series of circles with increasing radii.
 
-Với mỗi vòng tròn mới, độ mờ của các vòng tròn trước đó bên dưới sẽ tăng lên một cách hiệu quả. Nếu chúng ta tăng số bước (và do đó vẽ nhiều vòng tròn hơn), nền cuối cùng sẽ biến mất hoàn toàn khỏi tâm hình ảnh.
+With each new circle, the opacity of the previous circles underneath is effectively
+increased. If we were to increase the step count (and thus draw more circles), the
+background would eventually disappear completely from the center of the image.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -86,25 +96,26 @@ for (let i = 0; i < 7; i++) {
 
 {{EmbedLiveSample("Overlaying_transparent_shapes", "", "180")}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho tắc kè
+### Gecko-specific notes
 
-- Bắt đầu với Gecko 5.0, chỉ định giá trị không hợp lệ cho `globalAlpha` không
-  ném ra ngoại lệ `SYNTAX_ERR` lâu hơn; những điều này hiện đã được bỏ qua một cách chính xác.
+- Starting with Gecko 5.0, specifying invalid values for `globalAlpha` no
+  longer throws a `SYNTAX_ERR` exception; these are now correctly silently
+  ignored.
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific notes
 
-- Trong các trình duyệt dựa trên WebKit và Blink, một phương pháp không chuẩn và không được dùng nữa
-  `ctx.setAlpha()` được triển khai ngoài thuộc tính này.
+- In WebKit- and Blink-based browsers, a non-standard and deprecated method
+  `ctx.setAlpha()` is implemented in addition to this property.
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.globalCompositeOperation")}}

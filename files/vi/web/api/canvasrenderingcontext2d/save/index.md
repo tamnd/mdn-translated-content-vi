@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức save()"
-short-title: cứu()
+title: "CanvasRenderingContext2D: save() method"
+short-title: save()
 slug: Web/API/CanvasRenderingContext2D/save
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.save
@@ -8,36 +8,67 @@ browser-compat: api.CanvasRenderingContext2D.save
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.save()`** của API Canvas 2D lưu toàn bộ trạng thái của canvas bằng cách đẩy trạng thái hiện tại lên một ngăn xếp.
+The
+**`CanvasRenderingContext2D.save()`**
+method of the Canvas 2D API saves the entire state of the canvas by pushing the current
+state onto a stack.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 save()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Sự miêu tả
+## Description
 
-Trạng thái bản vẽ được lưu vào ngăn xếp bao gồm:
+The drawing state that gets saved onto a stack consists of:
 
-- Ma trận chuyển đổi hiện tại.
-- Vùng cắt hiện tại.
-- Danh sách dấu gạch ngang hiện tại.
-- Giá trị hiện tại của các thuộc tính sau: -{{domxref("CanvasRenderingContext2D.direction", "direction")}}-{{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}}-{{domxref("CanvasRenderingContext2D.filter", "filter")}}-{{domxref("CanvasRenderingContext2D.font", "font")}}-{{domxref("CanvasRenderingContext2D.fontKerning", "fontKerning")}}-{{domxref("CanvasRenderingContext2D.fontStretch", "fontStretch")}}-{{domxref("CanvasRenderingContext2D.fontVariantCaps", "fontVariantCaps")}}-{{domxref("CanvasRenderingContext2D.globalAlpha", "globalAlpha")}}-{{domxref("CanvasRenderingContext2D.globalCompositeOperation", "globalCompositeOperation")}}-{{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}}-{{domxref("CanvasRenderingContext2D.imageSmoothingQuality", "imageSmoothingQuality")}}-{{domxref("CanvasRenderingContext2D.letterSpacing", "letterSpacing")}}-{{domxref("CanvasRenderingContext2D.lineCap", "lineCap")}}-{{domxref("CanvasRenderingContext2D.lineDashOffset", "lineDashOffset")}}-{{domxref("CanvasRenderingContext2D.lineJoin", "lineJoin")}}-{{domxref("CanvasRenderingContext2D.lineWidth", "lineWidth")}}-{{domxref("CanvasRenderingContext2D.miterLimit", "miterLimit")}}-{{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}}-{{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}}-{{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}-{{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}}-{{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}-{{domxref("CanvasRenderingContext2D.textAlign", "textAlign")}}-{{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}}-{{domxref("CanvasRenderingContext2D.textRendering", "textRendering")}}-{{domxref("CanvasRenderingContext2D.wordSpacing", "wordSpacing")}}
+- The current transformation matrix.
+- The current clipping region.
+- The current dash list.
+- The current values of the following attributes:
+  - {{domxref("CanvasRenderingContext2D.direction", "direction")}}
+  - {{domxref("CanvasRenderingContext2D.fillStyle", "fillStyle")}}
+  - {{domxref("CanvasRenderingContext2D.filter", "filter")}}
+  - {{domxref("CanvasRenderingContext2D.font", "font")}}
+  - {{domxref("CanvasRenderingContext2D.fontKerning", "fontKerning")}}
+  - {{domxref("CanvasRenderingContext2D.fontStretch", "fontStretch")}}
+  - {{domxref("CanvasRenderingContext2D.fontVariantCaps", "fontVariantCaps")}}
+  - {{domxref("CanvasRenderingContext2D.globalAlpha", "globalAlpha")}}
+  - {{domxref("CanvasRenderingContext2D.globalCompositeOperation", "globalCompositeOperation")}}
+  - {{domxref("CanvasRenderingContext2D.imageSmoothingEnabled", "imageSmoothingEnabled")}}
+  - {{domxref("CanvasRenderingContext2D.imageSmoothingQuality", "imageSmoothingQuality")}}
+  - {{domxref("CanvasRenderingContext2D.letterSpacing", "letterSpacing")}}
+  - {{domxref("CanvasRenderingContext2D.lineCap", "lineCap")}}
+  - {{domxref("CanvasRenderingContext2D.lineDashOffset", "lineDashOffset")}}
+  - {{domxref("CanvasRenderingContext2D.lineJoin", "lineJoin")}}
+  - {{domxref("CanvasRenderingContext2D.lineWidth", "lineWidth")}}
+  - {{domxref("CanvasRenderingContext2D.miterLimit", "miterLimit")}}
+  - {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}}
+  - {{domxref("CanvasRenderingContext2D.shadowColor", "shadowColor")}}
+  - {{domxref("CanvasRenderingContext2D.shadowOffsetX", "shadowOffsetX")}}
+  - {{domxref("CanvasRenderingContext2D.shadowOffsetY", "shadowOffsetY")}}
+  - {{domxref("CanvasRenderingContext2D.strokeStyle", "strokeStyle")}}
+  - {{domxref("CanvasRenderingContext2D.textAlign", "textAlign")}}
+  - {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}}
+  - {{domxref("CanvasRenderingContext2D.textRendering", "textRendering")}}
+  - {{domxref("CanvasRenderingContext2D.wordSpacing", "wordSpacing")}}
 
-## Ví dụ
+## Examples
 
-### Lưu trạng thái bản vẽ
+### Saving the drawing state
 
-Ví dụ này sử dụng phương thức`save()`để lưu trạng thái hiện tại và`restore()`để khôi phục nó sau này, để sau này bạn có thể vẽ một đường thẳng với trạng thái hiện tại.
+This example uses the `save()` method to save the current state and
+`restore()` to restore it later, so that you are able to draw a rect with the
+current state later.
 
 #### HTML
 
@@ -63,19 +94,19 @@ ctx.restore();
 ctx.fillRect(150, 40, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Saving_the_drawing_state', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.restore()")}}

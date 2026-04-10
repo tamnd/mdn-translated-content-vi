@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức drawFocusIfNeeded()"
+title: "CanvasRenderingContext2D: drawFocusIfNeeded() method"
 short-title: drawFocusIfNeeded()
 slug: Web/API/CanvasRenderingContext2D/drawFocusIfNeeded
 page-type: web-api-instance-method
@@ -8,32 +8,35 @@ browser-compat: api.CanvasRenderingContext2D.drawFocusIfNeeded
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.drawFocusIfNeeded()`** của API Canvas 2D vẽ một vòng tiêu điểm xung quanh đường dẫn hiện tại hoặc đường dẫn nhất định, nếu
-phần tử được chỉ định được tập trung.
+The
+**`CanvasRenderingContext2D.drawFocusIfNeeded()`**
+method of the Canvas 2D API draws a focus ring around the current or given path, if the
+specified element is focused.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 drawFocusIfNeeded(element)
 drawFocusIfNeeded(path, element)
 ```
 
-### Tham số
+### Parameters
 
 - `element`
-- : Phần tử kiểm tra xem nó có focus hay không. -`path`
-- : Đường dẫn {{domxref("Path2D")}} để sử dụng.
+  - : The element to check whether it is focused or not.
+- `path`
+  - : A {{domxref("Path2D")}} path to use.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Quản lý tiêu điểm nút
+### Managing button focus
 
-Ví dụ này vẽ hai nút trên canvas. Phương pháp `drawFocusIfNeeded()`
-được sử dụng để vẽ vòng lấy nét khi thích hợp.
+This example draws two buttons on a canvas. The `drawFocusIfNeeded()` method
+is used to draw a focus ring when appropriate.
 
 #### HTML
 
@@ -106,18 +109,18 @@ function drawButton(el, x, y) {
 }
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample('Managing_button_focus', 700, 180)}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

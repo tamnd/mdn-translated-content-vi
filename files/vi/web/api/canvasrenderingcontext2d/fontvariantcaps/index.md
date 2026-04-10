@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính fontVariantCaps"
-short-title: phông chữBiến thểCaps
+title: "CanvasRenderingContext2D: fontVariantCaps property"
+short-title: fontVariantCaps
 slug: Web/API/CanvasRenderingContext2D/fontVariantCaps
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.fontVariantCaps
@@ -8,38 +8,41 @@ browser-compat: api.CanvasRenderingContext2D.fontVariantCaps
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.fontVariantCaps`** của [Canvas API](/en-US/docs/Web/API/Canvas_API) chỉ định cách viết hoa thay thế của văn bản được hiển thị.
+The **`CanvasRenderingContext2D.fontVariantCaps`** property of the [Canvas API](/en-US/docs/Web/API/Canvas_API) specifies an alternative capitalization of the rendered text.
 
-Điều này tương ứng với thuộc tính CSS {{cssxref("font-variant-caps")}}.
+This corresponds to the CSS {{cssxref("font-variant-caps")}} property.
 
-## Giá trị
+## Value
 
-Giá trị viết hoa thay thế phông chữ, là một trong:
+The font alternative capitalization value, which is one of:
 
-- `normal`(mặc định)
-- : Vô hiệu hóa việc sử dụng glyphs thay thế.
+- `normal` (default)
+  - : Deactivates of the use of alternate glyphs.
 - `small-caps`
-- : Cho phép hiển thị chữ hoa nhỏ (tính năng OpenType:`smcp`).
-  Các ký tự viết hoa nhỏ thường sử dụng dạng chữ hoa nhưng được giảm kích thước thành chữ thường.
+  - : Enables display of small capitals (OpenType feature: `smcp`).
+    Small-caps glyphs typically use the form of uppercase letters but are reduced to the size of lowercase letters.
 - `all-small-caps`
-- : Cho phép hiển thị chữ hoa nhỏ cho cả chữ hoa và chữ thường (tính năng OpenType:`c2sc`,`smcp`).
+  - : Enables display of small capitals for both upper and lowercase letters (OpenType features: `c2sc`, `smcp`).
 - `petite-caps`
-- : Cho phép hiển thị các chữ viết hoa nhỏ (tính năng OpenType:`pcap`).
+  - : Enables display of petite capitals (OpenType feature: `pcap`).
 - `all-petite-caps`
-- : Cho phép hiển thị chữ in hoa nhỏ cho cả chữ hoa và chữ thường (các tính năng của OpenType:`c2pc`,`pcap`).
+  - : Enables display of petite capitals for both upper and lowercase letters (OpenType features: `c2pc`, `pcap`).
 - `unicase`
-- : Cho phép hiển thị hỗn hợp chữ hoa nhỏ với chữ thường (tính năng OpenType:`unic`).
+  - : Enables display of mixture of small capitals for uppercase letters with normal lowercase letters (OpenType feature: `unic`).
 - `titling-caps`
-- : Cho phép hiển thị chữ hoa tiêu đề (tính năng OpenType:`titl`).
-  Các ký tự viết hoa thường được thiết kế để sử dụng với các chữ cái viết thường. Khi được sử dụng trong tất cả các chuỗi tiêu đề viết hoa, chúng có thể trông quá mạnh. Viết hoa tiêu đề được thiết kế đặc biệt cho tình huống này.
+  - : Enables display of titling capitals (OpenType feature: `titl`).
+    Uppercase letter glyphs are often designed for use with lowercase letters.
+    When used in all uppercase titling sequences they can appear too strong.
+    Titling capitals are designed specifically for this situation.
 
-Thuộc tính có thể được sử dụng để lấy hoặc đặt giá trị viết hoa phông chữ.
+The property can be used to get or set the font capitalization value.
 
-Lưu ý rằng có những lo ngại về khả năng truy cập đối với một số vấn đề này, được nêu trong chủ đề [`font-variant-caps`](/en-US/docs/Web/CSS/Reference/Properties/font-variant-caps#accessibility) tương ứng.
+Note that there are accessibility concerns with some of these, which are outlined in the corresponding [`font-variant-caps`](/en-US/docs/Web/CSS/Reference/Properties/font-variant-caps#accessibility) topic.
 
-## Ví dụ
+## Examples
 
-Trong ví dụ này, chúng tôi hiển thị văn bản "Xin chào thế giới" bằng cách sử dụng từng giá trị được hỗ trợ của thuộc tính `fontVariantCaps`. Giá trị cũng được hiển thị cho từng trường hợp bằng cách đọc thuộc tính.
+In this example we display the text "Hello World" using each of the supported values of the `fontVariantCaps` property.
+The value is also displayed for each case by reading the property.
 
 ### HTML
 
@@ -82,14 +85,14 @@ ctx.fontVariantCaps = "titling-caps";
 ctx.fillText(`Hello world (${ctx.fontVariantCaps})`, 5, 200);
 ```
 
-### Kết quả
+### Result
 
 {{ EmbedLiveSample('Examples', 700, 230) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}

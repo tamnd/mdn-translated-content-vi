@@ -1,18 +1,18 @@
 ---
-title: Thao tác video bằng canvas
+title: Thao tác video sử dụng canvas
 slug: Web/API/Canvas_API/Manipulating_video_using_canvas
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}}
 
-Bằng cách kết hợp các khả năng của phần tử [`video`](/en-US/docs/Web/HTML/Reference/Elements/video) với [`canvas`](/en-US/docs/Web/HTML/Reference/Elements/canvas), bạn có thể thao tác dữ liệu video trong thời gian thực để kết hợp nhiều hiệu ứng hình ảnh khác nhau vào video đang được hiển thị. Hướng dẫn này trình bày cách thực hiện khóa sắc độ (còn được gọi là "hiệu ứng màn hình xanh") bằng mã JavaScript.
+By combining the capabilities of the [`video`](/en-US/docs/Web/HTML/Reference/Elements/video) element with a [`canvas`](/en-US/docs/Web/HTML/Reference/Elements/canvas), you can manipulate video data in real time to incorporate a variety of visual effects to the video being displayed. This tutorial demonstrates how to perform chroma-keying (also known as the "green screen effect") using JavaScript code.
 
 {{EmbedGHLiveSample('dom-examples/canvas/chroma-keying/index.html', 700, 400) }}
 
-## Nội dung tài liệu
+## The document content
 
-Tài liệu HTML được sử dụng để hiển thị nội dung này được hiển thị bên dưới.
+The HTML document used to render this content is shown below.
 
 ```html
 <!doctype html>
@@ -56,18 +56,18 @@ Tài liệu HTML được sử dụng để hiển thị nội dung này đượ
 </html>
 ```
 
-Các điểm quan trọng cần rút ra từ vấn đề này là:
+The key bits to take away from this are:
 
-1. Tài liệu này thiết lập hai phần tử [`canvas`](/en-US/docs/Web/HTML/Reference/Elements/canvas), với ID `c1` và `c2`. Canvas `c1` được sử dụng để hiển thị khung hình hiện tại của video gốc, trong khi `c2` được sử dụng để hiển thị video sau khi thực hiện hiệu ứng khóa sắc độ; `c2` được tải sẵn hình ảnh tĩnh sẽ được sử dụng để thay thế nền xanh trong video.
-2. Mã JavaScript được nhập từ tập lệnh có tên `processor.js`.
+1. This document establishes two [`canvas`](/en-US/docs/Web/HTML/Reference/Elements/canvas) elements, with the IDs `c1` and `c2`. Canvas `c1` is used to display the current frame of the original video, while `c2` is used to display the video after performing the chroma-keying effect; `c2` is preloaded with the still image that will be used to replace the green background in the video.
+2. The JavaScript code is imported from a script named `processor.js`.
 
-## Mã JavaScript
+## The JavaScript code
 
-Mã JavaScript trong `processor.js` bao gồm ba phương thức.
+The JavaScript code in `processor.js` consists of three methods.
 
-### Đang khởi tạo trình phát phím sắc độ
+### Initializing the chroma-key player
 
-Phương thức `doLoad()` được gọi khi tài liệu HTML được tải lần đầu. Nhiệm vụ của phương thức này là chuẩn bị các biến cần thiết cho mã xử lý sắc độ và thiết lập trình xử lý sự kiện để chúng ta có thể phát hiện thời điểm người dùng bắt đầu phát video.
+The `doLoad()` method is called when the HTML document initially loads. This method's job is to prepare the variables needed by the chroma-key processing code, and to set up an event listener so we can detect when the user starts playing the video.
 
 ```js
 const processor = {};
@@ -90,13 +90,13 @@ processor.doLoad = function doLoad() {
 };
 ```
 
-Mã này lấy tham chiếu đến các phần tử trong tài liệu HTML được quan tâm đặc biệt, cụ thể là phần tử `video` và hai phần tử `canvas`. Nó cũng tìm nạp các tham chiếu đến bối cảnh đồ họa cho từng khung vẽ trong số hai khung vẽ. Chúng sẽ được sử dụng khi chúng ta thực sự thực hiện hiệu ứng sắc độ.
+This code grabs references to the elements in the HTML document that are of particular interest, namely the `video` element and the two `canvas` elements. It also fetches references to the graphics contexts for each of the two canvases. These will be used when we're actually doing the chroma-keying effect.
 
-Sau đó, `addEventListener()` được gọi để bắt đầu xem phần tử `video` để chúng tôi nhận được thông báo khi người dùng nhấn nút phát trên video. Để phản hồi khi người dùng bắt đầu phát lại, mã này sẽ tìm nạp chiều rộng và chiều cao của video, giảm một nửa kích thước của video (chúng tôi sẽ giảm một nửa kích thước của video khi thực hiện hiệu ứng khóa sắc độ), sau đó gọi phương thức `timerCallback()` để bắt đầu xem video và tính toán hiệu ứng hình ảnh.
+Then `addEventListener()` is called to begin watching the `video` element so that we obtain notification when the user presses the play button on the video. In response to the user beginning playback, this code fetches the width and height of the video, halving each (we will be halving the size of the video when we perform the chroma-keying effect), then calls the `timerCallback()` method to start watching the video and computing the visual effect.
 
-### Hẹn giờ gọi lại
+### The timer callback
 
-Lệnh gọi lại hẹn giờ ban đầu được gọi khi video bắt đầu phát (khi sự kiện "phát" xảy ra), sau đó chịu trách nhiệm thiết lập chính nó để được gọi định kỳ nhằm khởi chạy hiệu ứng khóa cho từng khung hình.
+The timer callback is called initially when the video starts playing (when the "play" event occurs), then takes responsibility for establishing itself to be called periodically in order to launch the keying effect for each frame.
 
 ```js
 processor.timerCallback = function timerCallback() {
@@ -110,15 +110,15 @@ processor.timerCallback = function timerCallback() {
 };
 ```
 
-Điều đầu tiên mà lệnh gọi lại thực hiện là kiểm tra xem video có đang phát hay không; nếu không, cuộc gọi lại sẽ quay lại ngay lập tức mà không cần làm gì cả.
+The first thing the callback does is check to see if the video is even playing; if it's not, the callback returns immediately without doing anything.
 
-Sau đó, nó gọi phương thức `computeFrame()`, thực hiện hiệu ứng khóa sắc độ trên khung hình video hiện tại.
+Then it calls the `computeFrame()` method, which performs the chroma-keying effect on the current video frame.
 
-Điều cuối cùng mà cuộc gọi lại thực hiện là gọi `setTimeout()` để tự lên lịch gọi lại càng sớm càng tốt. Trong thế giới thực, bạn có thể lên lịch thực hiện việc này dựa trên kiến ​​thức về tốc độ khung hình của video.
+The last thing the callback does is call `setTimeout()` to schedule itself to be called again as soon as possible. In the real world, you would probably schedule this to be done based on knowledge of the video's frame rate.
 
-### Thao tác với dữ liệu khung hình video
+### Manipulating the video frame data
 
-Phương thức `computeFrame()`, được hiển thị bên dưới, chịu trách nhiệm thực sự tìm nạp một khung dữ liệu và thực hiện hiệu ứng khóa sắc độ.
+The `computeFrame()` method, shown below, is responsible for actually fetching a frame of data and performing the chroma-keying effect.
 
 ```js
 processor.computeFrame = function () {
@@ -138,30 +138,30 @@ processor.computeFrame = function () {
 };
 ```
 
-Khi quy trình này được gọi, phần tử video sẽ hiển thị khung dữ liệu video gần đây nhất, trông giống như sau:
+When this routine is called, the video element is displaying the most recent frame of video data, which looks like this:
 
-![Một khung hình duy nhất của phần tử video. Có một người mặc áo phông đen. Màu nền là màu vàng.](video.png)
+![A single frame of the video element. There is a person wearing a black t-shirt. The background-color is yellow.](video.png)
 
-Khung hình video đó được sao chép vào ngữ cảnh đồ họa `ctx1` của khung vẽ đầu tiên, chỉ định chiều cao và chiều rộng bằng các giá trị mà chúng tôi đã lưu trước đó để vẽ khung ở kích thước một nửa. Lưu ý rằng bạn có thể chuyển phần tử video vào phương thức `drawImage()` của ngữ cảnh để vẽ khung hình video hiện tại vào ngữ cảnh. Kết quả là:
+That frame of video is copied into the graphics context `ctx1` of the first canvas, specifying as the height and width the values we previously saved to draw the frame at half size. Note that you can pass the video element into the context's `drawImage()` method to draw the current video frame into the context. The result is:
 
-![Một khung hình duy nhất của phần tử video. Có một người mặc áo phông đen. Màu nền là màu vàng. Đây là phiên bản nhỏ hơn của hình trên.](sourcectx.png)
+![A single frame of the video element. There is a person wearing a black t-shirt. The background-color is yellow. This is a smaller version of the picture above.](sourcectx.png)
 
-Gọi phương thức `getImageData()` trong ngữ cảnh đầu tiên sẽ tìm nạp bản sao dữ liệu đồ họa thô cho khung hình video hiện tại. Điều này cung cấp dữ liệu hình ảnh pixel 32 bit thô mà chúng ta có thể thao tác. Sau đó, chúng tôi tính toán số pixel trong hình ảnh bằng cách chia tổng kích thước dữ liệu hình ảnh của khung cho 4.
+Calling the `getImageData()` method on the first context fetches a copy of the raw graphics data for the current frame of video. This provides raw 32-bit pixel image data we can then manipulate. We then compute the number of pixels in the image by dividing the total size of the frame's image data by four.
 
-Vòng lặp `for` quét qua các pixel của khung, lấy ra các giá trị màu đỏ, xanh lục và xanh lam cho từng pixel và so sánh các giá trị với các số được xác định trước được sử dụng để phát hiện màn hình xanh lục sẽ được thay thế bằng hình nền tĩnh được nhập từ `foo.png`.
+The `for` loop scans through the frame's pixels, pulling out the red, green, and blue values for each pixel, and compares the values against predetermined numbers that are used to detect the green screen that will be replaced with the still background image imported from `foo.png`.
 
-Mỗi pixel trong dữ liệu hình ảnh của khung được tìm thấy nằm trong các tham số được coi là một phần của màn hình xanh có giá trị alpha được thay thế bằng 0, cho biết pixel đó hoàn toàn trong suốt. Kết quả là hình ảnh cuối cùng có toàn bộ khu vực màn hình xanh trong suốt 100%, do đó khi nó được vẽ vào bối cảnh đích bằng `ctx2.putImageData`, kết quả là một lớp phủ lên phông nền tĩnh.
+Every pixel in the frame's image data that is found that is within the parameters that are considered to be part of the green screen has its alpha value replaced with a zero, indicating that the pixel is entirely transparent. As a result, the final image has the entire green screen area 100% transparent, so that when it's drawn into the destination context using `ctx2.putImageData`, the result is an overlay onto the static backdrop.
 
-Hình ảnh kết quả trông như thế này:
+The resulting image looks like this:
 
-![Một khung hình duy nhất của phần tử video hiển thị cùng một người mặc áo phông đen như trong các ảnh trên. Hình nền khác: đó là logo Firefox.](output.png)
+![A single frame of the video element shows the same person wearing a black t-shirt as in the photos above. The background is different: it is the Firefox logo.](output.png)
 
-Việc này được thực hiện lặp đi lặp lại khi video phát, sao cho hết khung hình này đến khung hình khác được xử lý và hiển thị bằng hiệu ứng phím sắc độ.
+This is done repeatedly as the video plays, so that frame after frame is processed and displayed with the chroma-key effect.
 
-[Xem nguồn đầy đủ cho ví dụ này](https://github.com/mdn/dom-examples/tree/main/canvas/chroma-keying).
+[View the full source for this example](https://github.com/mdn/dom-examples/tree/main/canvas/chroma-keying).
 
-## Xem thêm
+## See also
 
-- [Công nghệ truyền thông web](/en-US/docs/Web/Media)
-- [Hướng dẫn về các loại và định dạng phương tiện trên web](/en-US/docs/Web/Media/Guides/Formats)
-- [Khu vực học tập: Video và âm thanh HTML](/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
+- [Web media technologies](/en-US/docs/Web/Media)
+- [Guide to media types and formats on the web](/en-US/docs/Web/Media/Guides/Formats)
+- [Learning area: HTML video and audio](/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)

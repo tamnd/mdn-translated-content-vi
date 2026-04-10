@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính direction"
+title: "CanvasRenderingContext2D: direction property"
 short-title: direction
 slug: Web/API/CanvasRenderingContext2D/direction
 page-type: web-api-instance-property
@@ -8,27 +8,30 @@ browser-compat: api.CanvasRenderingContext2D.direction
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.direction`** của API Canvas 2D chỉ định hướng văn bản hiện tại được sử dụng để vẽ văn bản.
+The
+**`CanvasRenderingContext2D.direction`**
+property of the Canvas 2D API specifies the current text direction used to draw text.
 
-## Giá trị
+## Value
 
-Các giá trị có thể:
+Possible values:
 
 - `"ltr"`
-- : Hướng văn bản từ trái sang phải.
+  - : The text direction is left-to-right.
 - `"rtl"`
-- : Hướng văn bản từ phải sang trái. -`"inherit"`
-- : Hướng văn bản được kế thừa từ phần tử {{HTMLElement("canvas")}} hoặc
-  {{domxref("Document")}} nếu thích hợp. Giá trị mặc định.
+  - : The text direction is right-to-left.
+- `"inherit"`
+  - : The text direction is inherited from the {{HTMLElement("canvas")}} element or the
+    {{domxref("Document")}} as appropriate. Default value.
 
-Giá trị mặc định là `"inherit"`.
+The default value is `"inherit"`.
 
-## Ví dụ
+## Examples
 
-### Thay đổi hướng văn bản
+### Changing text direction
 
-Ví dụ này vẽ hai đoạn văn bản. Cái đầu tiên là từ trái sang phải và cái thứ hai
-là từ phải sang trái. Lưu ý rằng "Xin chào!" trong `ltr`trở thành "!Hi" trong`rtl`.
+This example draws two pieces of text. The first one is left-to-right, and the second
+is right-to-left. Note that "Hi!" in `ltr` becomes "!Hi" in `rtl`.
 
 #### HTML
 
@@ -48,18 +51,18 @@ ctx.direction = "rtl";
 ctx.fillText("Hi!", 150, 130);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_text_direction', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}

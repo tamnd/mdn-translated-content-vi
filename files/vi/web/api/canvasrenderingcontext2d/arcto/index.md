@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức arcTo()"
+title: "CanvasRenderingContext2D: arcTo() method"
 short-title: arcTo()
 slug: Web/API/CanvasRenderingContext2D/arcTo
 page-type: web-api-instance-method
@@ -8,62 +8,63 @@ browser-compat: api.CanvasRenderingContext2D.arcTo
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.arcTo()`** của API Canvas 2D thêm một cung tròn vào đường dẫn con hiện tại, sử dụng các điểm kiểm soát và bán kính đã cho.
-Cung được tự động kết nối với điểm cuối cùng của đường dẫn bằng một đường thẳng nếu cần, ví dụ: nếu điểm bắt đầu và điểm kiểm soát nằm trên một đường thẳng.
+The **`CanvasRenderingContext2D.arcTo()`** method of the Canvas 2D API adds a circular arc to the current sub-path, using the given control points and radius.
+The arc is automatically connected to the path's latest point with a straight line if necessary, for example if the starting point and control points are in a line.
 
-Phương pháp này thường được sử dụng để tạo các góc tròn.
+This method is commonly used for making rounded corners.
 
-> [!LƯU Ý]
-> Bạn có thể nhận được kết quả không mong muốn khi sử dụng
-> bán kính tương đối lớn: đường nối của cung sẽ đi theo bất kỳ hướng nào
-> phải đáp ứng bán kính quy định.
+> [!NOTE]
+> You may get unexpected results when using a
+> relatively large radius: the arc's connecting line will go in whatever direction it
+> must to meet the specified radius.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 arcTo(x1, y1, x2, y2, radius)
 ```
 
-### Tham số
+### Parameters
 
 - `x1`
-- : Tọa độ trục x của điểm điều khiển đầu tiên.
+  - : The x-axis coordinate of the first control point.
 - `y1`
-- : Tọa độ trục y của điểm điều khiển đầu tiên.
+  - : The y-axis coordinate of the first control point.
 - `x2`
-- : Tọa độ trục x của điểm điều khiển thứ hai.
+  - : The x-axis coordinate of the second control point.
 - `y2`
-- : Tọa độ trục y của điểm điều khiển thứ hai.
+  - : The y-axis coordinate of the second control point.
 - `radius`
-- : Bán kính của cung tròn. Phải không âm.
+  - : The arc's radius. Must be non-negative.
 
-#### Ghi chú sử dụng
+#### Usage notes
 
-Giả sử <em>P<sub>0</sub></em> là điểm trên đường dẫn khi `arcTo()`được gọi, <em>P<sub>1</sub></em> = (`x1`,`y1`) và <em>P<sub>2</sub></em> = (`x2`,`y2`) lần lượt là điểm kiểm soát thứ nhất và thứ hai và _r_ là`radius` được chỉ định trong cuộc gọi:
+Assume <em>P<sub>0</sub></em> is the point on the path when `arcTo()` is called, <em>P<sub>1</sub></em> = (`x1`, `y1`) and <em>P<sub>2</sub></em> = (`x2`, `y2`) are the first and second control points, respectively, and _r_ is the `radius` specified in the call:
 
-- Nếu _r_ âm, `IndexSizeError` [exception](#exceptions) được nâng lên.
-- Nếu _r_ bằng 0, `arcTo()` hoạt động như thể <em>P<sub>0</sub></em>, <em>P<sub>1</sub></em> và <em>P<sub>2</sub></em> thẳng hàng (trên một dòng).
-- Trong trường hợp tất cả các điểm thẳng hàng thì vẽ một đường từ <em>P<sub>0</sub></em> đến <em>P<sub>1</sub></em> trừ khi các điểm <em>P<sub>0</sub></em> và <em>P<sub>1</sub></em> trùng nhau (có cùng tọa độ) thì không vẽ gì cả.
+- If _r_ is negative, an `IndexSizeError` [exception](#exceptions) is raised.
+- If _r_ is 0, `arcTo()` behaves as if <em>P<sub>0</sub></em>, <em>P<sub>1</sub></em>, and <em>P<sub>2</sub></em> are collinear (in a line).
+- In the case of all of the points being collinear, a line from <em>P<sub>0</sub></em> to <em>P<sub>1</sub></em> is drawn unless the points <em>P<sub>0</sub></em> and <em>P<sub>1</sub></em> are coincident (having the same coordinates), in which case nothing is drawn.
 
-Những điều kiện này có thể được tạo trong ví dụ [Constructing an arcTo() path](#constructing_an_arcto_path) bên dưới để xem kết quả.
+These conditions can be created in the [Constructing an arcTo() path](#constructing_an_arcto_path) example below to see the results.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-### Ngoại lệ
+### Exceptions
 
 - `IndexSizeError` {{domxref("DOMException")}}
-- : Bị ném nếu `radius` là giá trị âm.
+  - : Thrown if `radius` is a negative value.
 
-## Ví dụ
+## Examples
 
-### `arcTo()`hoạt động như thế nàoMột cách để hình dung về`arcTo()` là tưởng tượng hai đoạn thẳng: một
+### How `arcTo()` works
 
-từ điểm bắt đầu đến điểm kiểm soát đầu tiên và điểm khác từ đó đến điểm thứ hai
-điểm kiểm soát. Nếu không có `arcTo()`, hai phân đoạn này sẽ tạo thành một đường nét
-góc: `arcTo()` tạo một vòng cung tròn ở góc này và làm phẳng nó
-ra ngoài. Nói cách khác, cung tiếp tuyến với cả hai đoạn thẳng.
+One way to think about `arcTo()` is to imagine two straight segments: one
+from the starting point to a first control point, and another from there to a second
+control point. Without `arcTo()`, these two segments would form a sharp
+corner: `arcTo()` creates a circular arc at this corner and smooths it
+out. In other words, the arc is tangential to both segments.
 
 #### HTML
 
@@ -107,17 +108,17 @@ ctx.arc(50, 20, 5, 0, 2 * Math.PI); // Control point two
 ctx.fill();
 ```
 
-#### Kết quả
+#### Result
 
-Trong ví dụ này, đường dẫn được tạo bởi `arcTo()` có **dày và
-đen**. Các đường tiếp tuyến có màu xám, điểm kiểm soát có màu đỏ và điểm bắt đầu có màu xanh lam.
+In this example, the path created by `arcTo()` is **thick and
+black**. Tangent lines are gray, control points are red, and the start point is blue.
 
 {{ EmbedLiveSample('How_arcTo_works', 315, 170) }}
 
-### Tạo góc bo tròn
+### Creating a rounded corner
 
-Ví dụ này tạo một góc tròn bằng `arcTo()`. Đây là một trong những
-cách sử dụng phổ biến nhất của phương thức.
+This example creates a rounded corner using `arcTo()`. This is one of the
+method's most common uses.
 
 #### HTML
 
@@ -127,11 +128,11 @@ cách sử dụng phổ biến nhất của phương thức.
 
 #### JavaScript
 
-Cung bắt đầu tại điểm được chỉ định bởi `moveTo()`: (230, 20). Nó có hình dạng
-để khớp các điểm kiểm soát tại (90, 130) và (20, 20) và có bán kính là 50.
-Phương pháp `lineTo()` nối cung với (20, 20) bằng một đường thẳng. Lưu ý
-rằng điểm điều khiển thứ hai của cung và điểm được chỉ định bởi `lineTo()` là
-giống nhau, tạo ra một góc hoàn toàn nhẵn.
+The arc begins at the point specified by `moveTo()`: (230, 20). It is shaped
+to fit control points at (90, 130) and (20, 20), and has a radius of 50. The
+`lineTo()` method connects the arc to (20, 20) with a straight line. Note
+that the arc's second control point and the point specified by `lineTo()` are
+the same, which produces a totally smooth corner.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -159,16 +160,16 @@ labelPoint(p2);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Creating_a_rounded_corner', 315, 165) }}
 
-### Kết quả bán kính lớn
+### Result of a large radius
 
-Nếu bạn sử dụng bán kính tương đối lớn, cung có thể xuất hiện ở nơi mà bạn không ngờ tới.
-Trong ví dụ này, đường nối của cung nằm phía trên, thay vì phía dưới tọa độ
-được chỉ định bởi `moveTo()`. Điều này xảy ra vì bán kính quá lớn đối với
-cung vừa khớp hoàn toàn bên dưới điểm bắt đầu.
+If you use a relatively large radius, the arc may appear in a place you didn't expect.
+In this example, the arc's connecting line goes above, instead of below, the coordinate
+specified by `moveTo()`. This happens because the radius is too large for the
+arc to fit entirely below the starting point.
 
 #### HTML
 
@@ -189,24 +190,26 @@ ctx.lineTo(110, 130);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Result_of_a_large_radius', 315, 165) }}
 
-### Xây dựng đường dẫn arcTo()
+### Constructing an arcTo() path
 
-Bản demo hiển thị các đường bán vô hạn và đường tròn có tiếp tuyến tâm _C_
-đến các dòng tại <em>T<sub>1</sub></em> và <em>T<sub>2</sub></em> được sử dụng để
-xác định đường dẫn được hiển thị bởi `arcTo()`.
+The demo shows the semi-infinite lines and circle with center _C_ tangent
+to the lines at <em>T<sub>1</sub></em> and <em>T<sub>2</sub></em> used to
+determine the path rendered by `arcTo()`.
 
-Lưu ý rằng `arcTo` sẽ tạo một đường thẳng từ <em>P<sub>0</sub></em>
-đến <em>P<sub>1</sub></em> khi tất cả các điểm đều nằm trên một đường thẳng. Ngoài ra,
-không có gì được `arcTo` rút ra nếu <em>P<sub>0</sub></em> và
-<em>P<sub>1</sub></em> có cùng tọa độ.Ngoài khả năng thiết lập bán kính cung bằng thanh trượt, điểm ban đầu
-<em>P<sub>0</sub></em> và các điểm kiểm soát <em>P<sub>1</sub></em> và
-<em>P<sub>2</sub></em> có thể được di chuyển bằng cách kéo chúng bằng chuột
-nút trái xuống. Các giá trị số cũng có thể được chỉnh sửa và các phím mũi tên
-có thể được sử dụng để thay đổi phần tử được gạch chân đang được lấy nét.
+Note that `arcTo` will create a straight line from <em>P<sub>0</sub></em>
+to <em>P<sub>1</sub></em> when all points are in a line. Additionally,
+nothing is drawn by `arcTo` if <em>P<sub>0</sub></em> and
+<em>P<sub>1</sub></em> have the same coordinates.
+
+Besides being able to set the arc radius with the slider, the initial point
+<em>P<sub>0</sub></em> and control points <em>P<sub>1</sub></em> and
+<em>P<sub>2</sub></em> can be moved by dragging them with the mouse with the
+left button down. The numeric values can also be edited, and the arrow keys
+can be used to change an underlined element that is in focus.
 
 ```html hidden
 <div>
@@ -977,12 +980,12 @@ ConstructionPoints.print(state.T1, state.T2, state.C); // output pts
 
 {{ EmbedLiveSample("constructing_an_arcto_path", 350, 450) }}
 
-### Vẽ hoạt hình `arcTo()`
+### Animating `arcTo()` drawing
 
-Trong ví dụ này, bạn có thể thử nghiệm bán kính cung để xem cách
-con đường thay đổi. Đường đi được vẽ từ điểm bắt đầu _p0_ sử dụng `arcTo()` với các điểm kiểm soát
-_p1_ và _p2_ và bán kính thay đổi từ 0 đến bán kính tối đa được chọn bằng thanh trượt.
-Sau đó, lệnh gọi `lineTo()` sẽ hoàn thành đường dẫn đến _p2_.
+For this example, you can play around with the arc radius to see how
+the path changes. The path is drawn from the starting point _p0_ using `arcTo()` with control points
+_p1_ and _p2_ and a radius that varies from 0 to the maximum radius selected with the slider.
+Then a `lineTo()` call completes the path to _p2_.
 
 #### HTML
 
@@ -1048,18 +1051,18 @@ function loop(t) {
 loop(0);
 ```
 
-#### Kết quả
+#### Result
 
 {{EmbedLiveSample('animating_arcto_drawing', 315, 200) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này: {{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

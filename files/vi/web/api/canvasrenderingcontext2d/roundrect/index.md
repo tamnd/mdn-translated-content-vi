@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức roundRect()"
-short-title: vòngRect()
+title: "CanvasRenderingContext2D: roundRect() method"
+short-title: roundRect()
 slug: Web/API/CanvasRenderingContext2D/roundRect
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.roundRect
@@ -8,50 +8,59 @@ browser-compat: api.CanvasRenderingContext2D.roundRect
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.roundRect()`** của API Canvas 2D thêm hình chữ nhật bo tròn vào đường dẫn hiện tại.
+The **`CanvasRenderingContext2D.roundRect()`** method of the Canvas 2D API adds a rounded rectangle to the current path.
 
-Bán kính của các góc có thể được chỉ định theo cách tương tự như thuộc tính CSS{{cssxref("border-radius")}}.
+The radii of the corners can be specified in much the same way as the CSS {{cssxref("border-radius")}} property.
 
-Giống như các phương thức khác sửa đổi đường dẫn hiện tại, phương thức này không trực tiếp hiển thị bất kỳ thứ gì. Để vẽ hình chữ nhật bo tròn lên canvas, bạn có thể sử dụng các phương thức{{domxref("CanvasRenderingContext2D.fill", "fill()")}}hoặc{{domxref("CanvasRenderingContext2D.stroke", "stroke()")}}.
+Like other methods that modify the current path, this method does not directly render anything.
+To draw the rounded rectangle onto a canvas, you can use the {{domxref("CanvasRenderingContext2D.fill", "fill()")}} or {{domxref("CanvasRenderingContext2D.stroke", "stroke()")}} methods.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 roundRect(x, y, width, height, radii)
 ```
 
-### Tham số
+### Parameters
 
 - `x`
-  - : Tọa độ trục x của điểm bắt đầu của hình chữ nhật, tính bằng pixel.
+  - : The x-axis coordinate of the rectangle's starting point, in pixels.
 - `y`
-  - : Tọa độ trục y của điểm bắt đầu của hình chữ nhật, tính bằng pixel.
+  - : The y-axis coordinate of the rectangle's starting point, in pixels.
 - `width`
-  - : Chiều rộng của hình chữ nhật. Giá trị dương ở bên phải và âm ở bên trái.
+  - : The rectangle's width. Positive values are to the right, and negative to the left.
 - `height`
-  - : Chiều cao của hình chữ nhật. Giá trị dương giảm, giá trị âm tăng.
+  - : The rectangle's height. Positive values are down, and negative are up.
 - `radii`
-  - : Một số hoặc danh sách xác định bán kính của cung tròn được sử dụng cho các góc của hình chữ nhật.
-    Số lượng và thứ tự của hàm bán kính giống như thuộc tính CSS{{cssxref("border-radius")}}khi`width`và`height`là _dương_: -`all-corners`-`[all-corners]`-`[top-left-and-bottom-right, top-right-and-bottom-left]`-`[top-left, top-right-and-bottom-left, bottom-right]`-`[top-left, top-right, bottom-right, bottom-left]`
+  - : A number or list specifying the radii of the circular arc to be used for the corners of the rectangle.
+    The number and order of the radii function in the same way as the {{cssxref("border-radius")}} CSS property when `width` and `height` are _positive_:
+    - `all-corners`
+    - `[all-corners]`
+    - `[top-left-and-bottom-right, top-right-and-bottom-left]`
+    - `[top-left, top-right-and-bottom-left, bottom-right]`
+    - `[top-left, top-right, bottom-right, bottom-left]`
 
-Nếu`width`là _âm_ thì hình chữ nhật tròn được lật theo chiều ngang, do đó các giá trị bán kính thường áp dụng cho các góc bên trái sẽ được sử dụng ở bên phải và ngược lại. Tương tự, khi`height`âm, hình tròn được lật theo chiều dọc. Bán kính đã chỉ định có thể được chia tỷ lệ (giảm) nếu bất kỳ cạnh nào ngắn hơn bán kính tổng hợp của các đỉnh ở hai đầu.
+    If `width` is _negative_ the rounded rectangle is flipped horizontally, so the radius values that normally apply to the left corners are used on the right and vice versa.
+    Similarly, when `height` is negative, the rounded rect is flipped vertically.
+    The specified radii may be scaled (reduced) if any of the edges are shorter than the combined radius of the vertices on either end.
 
-Tham số`radii`cũng có thể là một phiên bản{{domxref("DOMPoint")}}hoặc{{domxref("DOMPointReadOnly")}}hoặc một đối tượng chứa cùng thuộc tính (`{x: 0, y: 0}`) hoặc danh sách các đối tượng như vậy hoặc danh sách trộn các số và các đối tượng như vậy.
+    The `radii` parameter can also be a {{domxref("DOMPoint")}} or {{domxref("DOMPointReadOnly")}} instance, or an object containing the same properties (`{x: 0, y: 0}`), or a list of such objects, or a list mixing numbers and such objects.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-### Ngoại lệ
+### Exceptions
 
 - {{jsxref("RangeError")}}
-  - : Nếu`radii`là danh sách có 0 hoặc nhiều hơn 4 phần tử hoặc nếu một trong các giá trị của nó là số âm.
+  - : If `radii` is a list that has zero or more than four elements, or if one of its values is a negative number.
 
-## Ví dụ
+## Examples
 
-### Vẽ hình chữ nhật
+### Drawing rectangles
 
-Ví dụ này tạo một số đường dẫn hình chữ nhật được làm tròn bằng phương pháp`roundRect()`. Các đường dẫn sau đó được hiển thị bằng phương thức`stroke()`.
+This example creates a number of rounded rectangular paths using the `roundRect()` method.
+The paths are then rendered using the `stroke()` method.
 
 #### HTML
 
@@ -61,14 +70,16 @@ Ví dụ này tạo một số đường dẫn hình chữ nhật được làm 
 
 #### JavaScript
 
-Đầu tiên chúng ta tạo một bối cảnh để vẽ các hình chữ nhật bo tròn.
+First we create a context for drawing our rounded rectangles.
 
 ```js
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 ```
 
-Mã bên dưới vẽ hai hình chữ nhật, cả hai đều bắt đầu từ điểm (10, 20) và có chiều rộng là 150 và chiều cao là 100. Hình chữ nhật đầu tiên được vẽ bằng màu đỏ và chỉ định bán kính bằng 0 cho tất cả các góc bằng cách sử dụng một số làm đối số. Phần thứ hai được vẽ bằng màu xanh lam và chỉ định bán kính 40px làm một phần tử trong danh sách.
+The code below draws two rectangles, both starting from the point (10, 20) and with a width of 150 and a height of 100.
+The first rectangle is drawn in red and specifies a zero radius for all the corners using a number as an argument.
+The second is drawn in blue, and specifies a 40px radius as a single element in a list.
 
 ```js
 // Rounded rectangle with zero radius (specified as a number)
@@ -84,7 +95,7 @@ ctx.roundRect(10, 20, 150, 100, [40]);
 ctx.stroke();
 ```
 
-Bên dưới hình chữ nhật trước, chúng ta vẽ một hình chữ nhật khác màu cam chỉ định giá trị bán kính của các góc đối diện.
+Below the previous rectangle we draw another in orange that specifies the values of the radii of opposite corners.
 
 ```js
 // Rounded rectangle with 2 different radii
@@ -94,7 +105,8 @@ ctx.roundRect(10, 150, 150, 100, [10, 40]);
 ctx.stroke();
 ```
 
-Cuối cùng, chúng ta vẽ hai hình chữ nhật bo tròn có bốn giá trị bán kính và cùng điểm bắt đầu. Sự khác biệt ở đây là hình thứ hai được vẽ với chiều rộng âm.
+Finally, we draw two rounded rectangles that have four values for the radii and the same starting point.
+The difference here is that the second is drawn with a negative width.
 
 ```js
 // Rounded rectangle with four different radii
@@ -110,23 +122,24 @@ ctx.roundRect(400, 150, -200, 100, [0, 30, 50, 60]);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
-Kết quả được hiển thị dưới đây. Đối với hai hình chữ nhật ở bên phải, hãy lưu ý cách vẽ hình chữ nhật phía dưới với chiều rộng âm và cách này lật hình chữ nhật theo chiều ngang.
+The result is shown below.
+For the two rectangles on the right, note how the bottom rectangle is drawn with a negative width, and how this flips the rectangle horizontally.
 
 {{ EmbedLiveSample('Drawing_a_rectangle', 700, 300) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.rect()")}}
 - {{domxref("CanvasRenderingContext2D.fillRect")}}
 - {{domxref("CanvasRenderingContext2D.strokeRect()")}}

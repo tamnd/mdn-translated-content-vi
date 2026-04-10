@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: thuộc tính fillStyle"
-short-title: điền kiểu
+title: "CanvasRenderingContext2D: fillStyle property"
+short-title: fillStyle
 slug: Web/API/CanvasRenderingContext2D/fillStyle
 page-type: web-api-instance-property
 browser-compat: api.CanvasRenderingContext2D.fillStyle
@@ -8,24 +8,27 @@ browser-compat: api.CanvasRenderingContext2D.fillStyle
 
 {{APIRef("Canvas API")}}
 
-Thuộc tính **`CanvasRenderingContext2D.fillStyle`** của [Canvas 2D API](/en-US/docs/Web/API/Canvas_API) chỉ định màu sắc, độ dốc hoặc mẫu để sử dụng các hình dạng bên trong. Kiểu mặc định là`black`.
+The
+**`CanvasRenderingContext2D.fillStyle`**
+property of the [Canvas 2D API](/en-US/docs/Web/API/Canvas_API) specifies the
+color, gradient, or pattern to use inside shapes. The default style is `black`.
 
-> [!LƯU Ý]
-> Để biết thêm ví dụ về kiểu tô màu và nét vẽ, hãy xem [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) trong [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
+> [!NOTE]
+> For more examples of fill and stroke styles, see [Applying styles and color](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors) in the [Canvas tutorial](/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-## Giá trị
+## Value
 
-Một trong những điều sau đây:
+One of the following:
 
-- Một chuỗi được phân tích cú pháp dưới dạng giá trị CSS {{cssxref("&lt;color&gt;")}}.
-- Đối tượng {{domxref("CanvasGradient")}}(gradient tuyến tính hoặc hướng tâm).
-- Đối tượng {{domxref("CanvasPattern")}}(hình ảnh lặp lại).
+- A string parsed as CSS {{cssxref("&lt;color&gt;")}} value.
+- A {{domxref("CanvasGradient")}} object (a linear or radial gradient).
+- A {{domxref("CanvasPattern")}} object (a repeating image).
 
-## Ví dụ
+## Examples
 
-### Thay đổi màu tô của hình dạng
+### Changing the fill color of a shape
 
-Ví dụ này áp dụng màu tô màu xanh lam cho hình chữ nhật.
+This example applies a blue fill color to a rectangle.
 
 #### HTML
 
@@ -43,13 +46,17 @@ ctx.fillStyle = "blue";
 ctx.fillRect(10, 10, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Changing_the_fill_color_of_a_shape', 700, 160) }}
 
-### Tạo nhiều màu tô bằng vòng lặp
+### Creating multiple fill colors using loops
 
-Trong ví dụ này, chúng tôi sử dụng hai vòng lặp `for`để vẽ một lưới các hình chữ nhật, mỗi lưới có một màu tô khác nhau. Để đạt được điều này, chúng tôi sử dụng hai biến`i`và`j` để tạo màu RGB duy nhất cho mỗi hình vuông và chỉ sửa đổi giá trị màu đỏ và xanh lục. (Kênh màu xanh lam có giá trị cố định.) Bằng cách sửa đổi các kênh, bạn có thể tạo tất cả các loại bảng màu.
+In this example, we use two `for` loops to draw a grid of rectangles, each
+having a different fill color. To achieve this, we use the two variables `i`
+and `j` to generate a unique RGB color for each square, and only modify the
+red and green values. (The blue channel has a fixed value.) By modifying the channels,
+you can generate all kinds of palettes.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -70,21 +77,22 @@ for (let i = 0; i < 6; i++) {
 }
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("Creating_multiple_fill_colors_using_loops", "", "160")}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-### Ghi chú dành riêng cho WebKit/Blink
+### WebKit/Blink-specific note
 
-Trong các trình duyệt dựa trên WebKit và Blink, phương thức không chuẩn và không được dùng nữa `ctx.setFillColor()` được triển khai cùng với thuộc tính này.
+In WebKit- and Blink-based browsers, the non-standard and deprecated method
+`ctx.setFillColor()` is implemented in addition to this property.
 
 ```js
 setFillColor(color, /* (optional) */ alpha);
@@ -93,9 +101,11 @@ setFillColor(r, g, b, a);
 setFillColor(c, m, y, k, a);
 ```
 
-## Xem thêm
+## See also
 
 - [Canvas API](/en-US/docs/Web/API/Canvas_API)
-- Giao diện xác định thuộc tính này: {{domxref("CanvasRenderingContext2D")}}
-- Các giá trị được sử dụng bởi thuộc tính này:
-- {{cssxref("&lt;color&gt;")}} Kiểu dữ liệu CSS - đối tượng {{domxref("CanvasGradient")}}- đối tượng {{domxref("CanvasPattern")}}
+- The interface defining this property: {{domxref("CanvasRenderingContext2D")}}
+- Values used by this property:
+  - {{cssxref("&lt;color&gt;")}} CSS data type
+  - {{domxref("CanvasGradient")}} object
+  - {{domxref("CanvasPattern")}} object

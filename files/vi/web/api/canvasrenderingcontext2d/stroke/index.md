@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức Stroke()"
-short-title: đột quỵ()
+title: "CanvasRenderingContext2D: stroke() method"
+short-title: stroke()
 slug: Web/API/CanvasRenderingContext2D/stroke
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.stroke
@@ -8,33 +8,39 @@ browser-compat: api.CanvasRenderingContext2D.stroke
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.stroke()`** của các nét vẽ API Canvas 2D (phác thảo) đường dẫn hiện tại hoặc đường dẫn đã cho với kiểu nét vẽ hiện tại.
+The
+**`CanvasRenderingContext2D.stroke()`**
+method of the Canvas 2D API strokes (outlines) the current or given path with the
+current stroke style.
 
-Các nét được căn chỉnh về giữa đường path; nói cách khác, một nửa nét được vẽ ở mặt trong và một nửa ở mặt ngoài.
+Strokes are aligned to the center of a path; in other words, half of the stroke is
+drawn on the inner side, and half on the outer side.
 
-Nét vẽ được vẽ bằng cách sử dụng[non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule), có nghĩa là các giao điểm của đường dẫn vẫn sẽ được lấp đầy.
+The stroke is drawn using the [non-zero winding rule](https://en.wikipedia.org/wiki/Nonzero-rule), which
+means that path intersections will still get filled.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 stroke()
 stroke(path)
 ```
 
-### Tham số
+### Parameters
 
 - `path`
-  - : Đường dẫn{{domxref("Path2D")}}đến đột quỵ.
+  - : A {{domxref("Path2D")}} path to stroke.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Một hình chữ nhật có nét vẽ đơn giản
+### A simple stroked rectangle
 
-Ví dụ này tạo một hình chữ nhật bằng phương thức`rect()`, sau đó vẽ nó vào khung vẽ bằng cách sử dụng`stroke()`.
+This example creates a rectangle using the `rect()` method, and then draws
+it to the canvas using `stroke()`.
 
 #### HTML
 
@@ -51,13 +57,15 @@ ctx.rect(10, 10, 150, 100);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('A_simple_stroked_rectangle', 700, 180) }}
 
-### Vẽ lại đường dẫn
+### Re-stroking paths
 
-Thông thường, bạn sẽ muốn gọi{{domxref("CanvasRenderingContext2D.beginPath()", "beginPath()")}}cho mỗi thứ mới mà bạn muốn vuốt ve. Nếu không, các đường dẫn phụ trước đó sẽ vẫn là một phần của đường dẫn hiện tại và được thêm vào mỗi khi bạn gọi phương thức`stroke()`. Tuy nhiên, trong một số trường hợp, đây có thể là hiệu quả mong muốn.
+Typically, you'll want to call {{domxref("CanvasRenderingContext2D.beginPath()", "beginPath()")}} for each new thing you want to stroke.
+If you don't, the previous sub-paths will remain part of the current path, and get stroked every time you call the `stroke()` method.
+In some cases, however, this may be the desired effect.
 
 #### HTML
 
@@ -67,7 +75,8 @@ Thông thường, bạn sẽ muốn gọi{{domxref("CanvasRenderingContext2D.beg
 
 #### JavaScript
 
-Mã này vuốt đường dẫn đầu tiên ba lần, đường dẫn thứ hai hai lần và đường dẫn thứ ba chỉ một lần.
+This code strokes the first path three times, the second path two times, and the third
+path only once.
 
 ```js
 const canvas = document.getElementById("canvas");
@@ -95,13 +104,16 @@ ctx.lineTo(280, 140);
 ctx.stroke();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Re-stroking_paths', 700, 180) }}
 
-### Vuốt ve và làm đầy
+### Stroking and filling
 
-Nếu bạn muốn vừa đột quỵ vừa điền vào một đường path, thứ tự bạn thực hiện những hành động này sẽ quyết định kết quả. Trong ví dụ này, hình vuông bên trái được vẽ bằng nét vẽ ở trên cùng của phần tô. Hình vuông bên phải được vẽ bằng phần tô màu ở trên cùng của nét vẽ.
+If you want to both stroke and fill a path, the order in which you perform these
+actions will determine the result. In this example, the square on the left is drawn with
+the stroke on top of the fill. The square on the right is drawn with the fill on top of
+the stroke.
 
 #### HTML
 
@@ -131,18 +143,18 @@ ctx.stroke();
 ctx.fill();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Stroking_and_filling', 700, 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}

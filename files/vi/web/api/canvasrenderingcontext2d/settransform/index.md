@@ -1,5 +1,5 @@
 ---
-title: "CanvasRenderingContext2D: phương thức setTransform()"
+title: "CanvasRenderingContext2D: setTransform() method"
 short-title: setTransform()
 slug: Web/API/CanvasRenderingContext2D/setTransform
 page-type: web-api-instance-method
@@ -8,57 +8,57 @@ browser-compat: api.CanvasRenderingContext2D.setTransform
 
 {{APIRef("Canvas API")}}
 
-Phương thức **`CanvasRenderingContext2D.setTransform()`** của API Canvas 2D đặt lại (ghi đè) phép biến đổi hiện tại thành ma trận nhận dạng, sau đó gọi một phép biến đổi được mô tả bằng các đối số của phương thức này. Điều này cho phép bạn chia tỷ lệ, xoay, dịch (di chuyển) và nghiêng ngữ cảnh.
+The **`CanvasRenderingContext2D.setTransform()`** method of the Canvas 2D API resets (overrides) the current transformation to the identity matrix, and then invokes a transformation described by the arguments of this method. This lets you scale, rotate, translate (move), and skew the context.
 
-> [!LƯU Ý]
-> Xem thêm phương pháp{{domxref("CanvasRenderingContext2D.transform()", "transform()")}}; thay vì ghi đè ma trận biến đổi hiện tại, nó
-> nhân nó với một số đã cho.
+> [!NOTE]
+> See also the {{domxref("CanvasRenderingContext2D.transform()", "transform()")}} method; instead of overriding the current transform matrix, it
+> multiplies it with a given one.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 setTransform(a, b, c, d, e, f)
 setTransform(matrix)
 ```
 
-Ma trận chuyển đổi được mô tả bởi: <math><semantics><mrow><mo>[</mo><mtable columnsalign="center center center" rowpacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd><mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd ><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation Encoding="TeX">\left[ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics></math>.
+The transformation matrix is described by: <math><semantics><mrow><mo>[</mo><mtable columnalign="center center center" rowspacing="0.5ex"><mtr><mtd><mi>a</mi></mtd><mtd><mi>c</mi></mtd><mtd><mi>e</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>d</mi></mtd><mtd><mi>f</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><annotation encoding="TeX">\left[ \begin{array}{ccc} a & c & e \\ b & d & f \\ 0 & 0 & 1 \end{array} \right]</annotation></semantics></math>.
 
-Ma trận biến đổi này được nhân lên ở bên trái của vectơ cột biểu thị từng điểm được vẽ trên khung vẽ, để tạo ra tọa độ cuối cùng được sử dụng trên khung vẽ.
+This transformation matrix gets multiplied on the left of a column vector representing each point being drawn on the canvas, to produce the final coordinate used on the canvas.
 
-### Tham số
+### Parameters
 
-`setTransform()` chấp nhận hai loại tham số. Loại cũ hơn bao gồm một số tham số biểu thị các thành phần riêng lẻ của ma trận biến đổi cần đặt:
+`setTransform()` accepts two types of parameters. The older type consists of several parameters representing the individual components of the transformation matrix to set:
 
 - `a` (`m11`)
-  - : Ô ở hàng đầu tiên và cột đầu tiên của ma trận.
+  - : The cell in the first row and first column of the matrix.
 - `b` (`m12`)
-  - : Ô ở hàng thứ hai và cột đầu tiên của ma trận.
+  - : The cell in the second row and first column of the matrix.
 - `c` (`m21`)
-  - : Ô ở hàng đầu tiên và cột thứ hai của ma trận.
+  - : The cell in the first row and second column of the matrix.
 - `d` (`m22`)
-  - : Ô ở hàng thứ hai và cột thứ hai của ma trận.
+  - : The cell in the second row and second column of the matrix.
 - `e` (`m41`)
-  - : Ô ở hàng đầu tiên và cột thứ ba của ma trận.
+  - : The cell in the first row and third column of the matrix.
 - `f` (`m42`)
-  - : Ô ở hàng thứ hai và cột thứ ba của ma trận.
+  - : The cell in the second row and third column of the matrix.
 
-Ngoài ra, bạn có thể truyền một tham số duy nhất là một đối tượng chứa các giá trị ở trên làm thuộc tính. Tên tham số là các khóa thuộc tính và nếu cả hai tên đồng nghĩa đều xuất hiện, ví dụ `m11` và `a`, thì chúng phải có cùng giá trị số; nếu không, {{jsxref("TypeError")}} sẽ bị ném ra. Dạng đối tượng cho phép bỏ qua một số tham số: `a` và `d` mặc định là `1`, còn các tham số khác mặc định là `0`.
+Alternatively, you can pass a single parameter which is an object containing the values above as properties. The parameter names are the property keys, and if two synonymous names are both present (e.g., `m11` and `a`), they must be the same number value, or a {{jsxref("TypeError")}} will be thrown. Using the object form allows omitting some parameters — `a` and `d` default to `1`, while the rest default to `0`.
 
-Nếu một điểm ban đầu có tọa độ `(x, y)`, thì sau khi biến đổi nó sẽ có tọa độ `(ax + cy + e, bx + dy + f)`. Điều này có nghĩa là:
+If a point originally had coordinates <math><semantics><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="TeX">(x, y)</annotation></semantics></math>, then after the transformation it will have coordinates <math><semantics><mrow><mo>(</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>c</mi><mi>y</mi><mo>+</mo><mi>e</mi><mo>,</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi><mo>+</mo><mi>f</mi><mo>)</mo></mrow><annotation encoding="TeX">(ax + cy + e, bx + dy + f)</annotation></semantics></math>. This means:
 
-- `e` và `f` kiểm soát việc dịch theo chiều ngang và chiều dọc của ngữ cảnh.
-- Khi `b` và `c` là `0`, `a` và `d` sẽ kiểm soát tỷ lệ theo chiều ngang và chiều dọc của ngữ cảnh.
-- Khi `a` và `d` là `1`, `b` và `c` kiểm soát độ lệch ngang và dọc của ngữ cảnh.
+- `e` and `f` control the horizontal and vertical translation of the context.
+- When `b` and `c` are `0`, `a` and `d` control the horizontal and vertical scaling of the context.
+- When `a` and `d` are `1`, `b` and `c` control the horizontal and vertical skewing of the context.
 
-### Giá trị trả về
+### Return value
 
-Không có ({{jsxref("undefined")}}).
+None ({{jsxref("undefined")}}).
 
-## Ví dụ
+## Examples
 
-### Nghiêng một hình dạng
+### Skewing a shape
 
-Ví dụ này nghiêng một hình chữ nhật theo cả chiều dọc (`.2`) và chiều ngang (`.8`). Tỷ lệ và dịch thuật không thay đổi.
+This example skews a rectangle both vertically (`.2`) and horizontally (`.8`). Scaling and translation remain unchanged.
 
 #### HTML
 
@@ -76,15 +76,15 @@ ctx.setTransform(1, 0.2, 0.8, 1, 0, 0);
 ctx.fillRect(0, 0, 100, 100);
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Skewing_a_shape', 700, 180) }}
 
-### Truy xuất và truyền đối tượng DOMMatrix
+### Retrieving and passing a DOMMatrix object
 
-Trong ví dụ sau, chúng ta có hai phần tử{{htmlelement("canvas")}}. Chúng tôi áp dụng một phép biến đổi cho ngữ cảnh của bối cảnh đầu tiên bằng cách sử dụng loại`setTransform()`đầu tiên và vẽ một hình vuông trên đó, sau đó truy xuất ma trận từ nó bằng cách sử dụng{{domxref("CanvasRenderingContext2D.getTransform()")}}.
+In the following example, we have two {{htmlelement("canvas")}} elements. We apply a transform to the first one's context using the first type of `setTransform()` and draw a square on it, then retrieve the matrix from it using {{domxref("CanvasRenderingContext2D.getTransform()")}}.
 
-Sau đó, chúng tôi áp dụng trực tiếp ma trận được truy xuất vào ngữ cảnh canvas thứ hai bằng cách chuyển trực tiếp đối tượng`DOMMatrix`đến`setTransform()`(tức là loại thứ hai) và vẽ một vòng tròn trên đó.
+We then apply the retrieved matrix directly to the second canvas context by passing the `DOMMatrix` object directly to `setTransform()` (i.e., the second type), and draw a circle on it.
 
 #### HTML
 
@@ -122,19 +122,19 @@ ctx2.arc(50, 50, 50, 0, 2 * Math.PI);
 ctx2.fill();
 ```
 
-#### Kết quả
+#### Result
 
 {{ EmbedLiveSample('Retrieving_and_passing_a_DOMMatrix_object', "100%", 180) }}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
-- Giao diện xác định phương thức này:{{domxref("CanvasRenderingContext2D")}}
+- The interface defining this method: {{domxref("CanvasRenderingContext2D")}}
 - {{domxref("CanvasRenderingContext2D.transform()")}}

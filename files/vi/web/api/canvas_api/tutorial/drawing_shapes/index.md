@@ -1,39 +1,39 @@
 ---
-title: Vẽ hình dạng bằng canvas
+title: Vẽ hình dạng với canvas
 slug: Web/API/Canvas_API/Tutorial/Drawing_shapes
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Basic_usage", "Web/API/Canvas_API/Tutorial/Applying_styles_and_colors")}}
 
-Bây giờ chúng ta đã thiết lập [môi trường canvas](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) của mình, chúng ta có thể tìm hiểu chi tiết về cách vẽ trên canvas. Đến cuối bài viết này, bạn sẽ học cách vẽ hình chữ nhật, hình tam giác, đường thẳng, hình cung và đường cong, làm quen với một số hình dạng cơ bản. Làm việc với các đường dẫn là điều cần thiết khi vẽ các đối tượng lên canvas và chúng ta sẽ xem cách thực hiện điều đó.
+Now that we have set up our [canvas environment](/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage), we can get into the details of how to draw on the canvas. By the end of this article, you will have learned how to draw rectangles, triangles, lines, arcs and curves, providing familiarity with some of the basic shapes. Working with paths is essential when drawing objects onto the canvas and we will see how that can be done.
 
-## Lưới
+## The grid
 
-Trước khi có thể bắt đầu vẽ, chúng ta cần nói về lưới canvas hoặc **không gian tọa độ**. Bộ xương HTML của chúng tôi từ trang trước có phần tử canvas rộng 150 pixel và cao 150 pixel.
+Before we can start drawing, we need to talk about the canvas grid or **coordinate space**. Our HTML skeleton from the previous page had a canvas element 150 pixels wide and 150 pixels high.
 
-![Lưới canvas có hình vuông màu xanh lam thể hiện tọa độ và trục.](canvas_default_grid.png)
+![Canvas grid with a blue square demonstrating coordinates and axes.](canvas_default_grid.png)
 
-Thông thường 1 đơn vị trong lưới tương ứng với 1 pixel trên canvas. Điểm gốc của lưới này được định vị ở góc _trên cùng bên trái_ tại tọa độ (0,0). Tất cả các phần tử được đặt tương ứng với điểm gốc này. Vì vậy, vị trí của góc trên cùng bên trái của hình vuông màu xanh lam sẽ trở thành x pixel từ bên trái và y pixel từ trên cùng, tại tọa độ (x, y). Ở phần sau của hướng dẫn này, chúng ta sẽ xem cách chúng ta có thể dịch điểm gốc sang một vị trí khác, xoay lưới và thậm chí chia tỷ lệ cho nó, nhưng bây giờ chúng ta sẽ giữ nguyên mặc định.
+Normally 1 unit in the grid corresponds to 1 pixel on the canvas. The origin of this grid is positioned in the _top left_ corner at coordinate (0,0). All elements are placed relative to this origin. So the position of the top left corner of the blue square becomes x pixels from the left and y pixels from the top, at coordinate (x,y). Later in this tutorial we'll see how we can translate the origin to a different position, rotate the grid and even scale it, but for now we'll stick to the default.
 
-## Vẽ hình chữ nhật
+## Drawing rectangles
 
-Không giống như {{Glossary("SVG")}}, {{HTMLElement("canvas")}} chỉ hỗ trợ hai hình dạng nguyên thủy: hình chữ nhật và đường dẫn (danh sách các điểm được kết nối bằng đường thẳng). Tất cả các hình dạng khác phải được tạo bằng cách kết hợp một hoặc nhiều đường dẫn. May mắn thay, chúng tôi có nhiều chức năng vẽ đường dẫn giúp bạn có thể tạo ra các hình dạng rất phức tạp.
+Unlike {{Glossary("SVG")}}, {{HTMLElement("canvas")}} only supports two primitive shapes: rectangles and paths (lists of points connected by lines). All other shapes must be created by combining one or more paths. Luckily, we have an assortment of path drawing functions which make it possible to compose very complex shapes.
 
-Đầu tiên chúng ta hãy nhìn vào hình chữ nhật. Có ba hàm vẽ hình chữ nhật trên canvas:
+First let's look at the rectangle. There are three functions that draw rectangles on the canvas:
 
 - {{domxref("CanvasRenderingContext2D.fillRect", "fillRect(x, y, width, height)")}}
-  - : Vẽ một hình chữ nhật đầy.
+  - : Draws a filled rectangle.
 - {{domxref("CanvasRenderingContext2D.strokeRect", "strokeRect(x, y, width, height)")}}
-  - : Vẽ đường viền hình chữ nhật.
+  - : Draws a rectangular outline.
 - {{domxref("CanvasRenderingContext2D.clearRect", "clearRect(x, y, width, height)")}}
-  - : Xóa vùng hình chữ nhật được chỉ định, làm cho nó hoàn toàn trong suốt.
+  - : Clears the specified rectangular area, making it fully transparent.
 
-Mỗi hàm trong số ba hàm này đều có cùng tham số. `x` và `y` chỉ định vị trí trên canvas (so với điểm gốc) của góc trên cùng bên trái của hình chữ nhật. `width` và `height` cung cấp kích thước của hình chữ nhật.
+Each of these three functions takes the same parameters. `x` and `y` specify the position on the canvas (relative to the origin) of the top-left corner of the rectangle. `width` and `height` provide the rectangle's size.
 
-Dưới đây là chức năng `draw()` từ trang trước, nhưng hiện tại nó đang sử dụng ba chức năng này.
+Below is the `draw()` function from the previous page, but now it is making use of these three functions.
 
-### Ví dụ về hình chữ nhật
+### Rectangular shape example
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -54,19 +54,19 @@ function draw() {
 draw();
 ```
 
-Đầu ra của ví dụ này được hiển thị dưới đây.
+This example's output is shown below.
 
 {{EmbedLiveSample("Rectangular_shape_example", "", "160")}}
 
-Hàm `fillRect()` vẽ một hình vuông lớn màu đen 100 pixel mỗi cạnh. Sau đó, hàm `clearRect()` sẽ xóa một hình vuông 60x60 pixel ở giữa, sau đó `strokeRect()` được gọi để tạo đường viền hình chữ nhật 50x50 pixel bên trong hình vuông đã xóa (_conceptually_ 50x50; trên thực tế, nó là 52x52, như phần tiếp theo sẽ giải thích).
+The `fillRect()` function draws a large black square 100 pixels on each side. The `clearRect()` function then erases a 60x60 pixel square from the center, and then `strokeRect()` is called to create a rectangular outline 50x50 pixels within the cleared square (_conceptually_ 50x50; in reality it's 52x52, as the next section will explain).
 
-Trong các trang sắp tới, chúng ta sẽ thấy hai phương pháp thay thế cho `clearRect()` và chúng ta cũng sẽ xem cách thay đổi màu sắc và kiểu nét của các hình dạng được hiển thị.
+In upcoming pages we'll see two alternative methods for `clearRect()`, and we'll also see how to change the color and stroke style of the rendered shapes.
 
-Không giống như các hàm đường dẫn mà chúng ta sẽ thấy trong phần tiếp theo, cả ba hàm hình chữ nhật đều vẽ ngay lập tức vào canvas.
+Unlike the path functions we'll see in the next section, all three rectangle functions draw immediately to the canvas.
 
-## Thấy viền mờ?
+## Seeing blurry edges?
 
-Trong ví dụ về hình chữ nhật ở trên và trong tất cả các ví dụ sắp tới, bạn có thể nhận thấy rằng các cạnh của hình có thể mờ hơn so với các hình tương đương được vẽ bằng SVG hoặc CSS. Điều này không phải do API canvas không có khả năng vẽ các cạnh sắc nét mà là do cách lưới canvas ánh xạ tới các pixel thực tế trên màn hình và trong một số trường hợp nhất định, do cách trình duyệt chia tỷ lệ canvas. Nếu ví dụ trên chưa đủ rõ ràng, hãy phóng to canvas bằng CSS:
+In the rectangle example above, and in all the examples to come, you may notice that the shapes' edges may appear blurrier than the equivalent shapes drawn with SVG or CSS. This is not because the canvas API is incapable of drawing sharp edges, but rather because of the way the canvas grid maps to the actual pixels on the screen, and also, in certain cases, because of how the browser scales the canvas. If the above example is not apparent enough, let's enlarge the canvas using CSS:
 
 ```html live-sample___seeing_blurry_edges live-sample___seeing_blurry_edges_2 live-sample___seeing_blurry_edges_3
 <canvas id="canvas" width="15" height="15"></canvas>
@@ -94,7 +94,7 @@ draw();
 
 {{EmbedLiveSample("Seeing blurry edges", "", "350")}}
 
-Trong ví dụ này, chúng tôi tạo canvas thực sự nhỏ (15x15), nhưng sau đó sử dụng CSS để chia tỷ lệ lên tới 300x300 pixel. Kết quả là mỗi pixel canvas hiện được biểu thị bằng một khối pixel CSS 20x20. Chúng ta vẽ một hình chữ nhật có nét từ (2,2) đến (12,12) và một hình chữ nhật được tô từ (7,7) đến (8,8). Nó có vẻ _thực sự_ mờ. Điều này là do theo mặc định, khi trình duyệt chia tỷ lệ hình ảnh raster, nó sẽ sử dụng thuật toán làm mịn để nội suy các pixel phụ. Điều này rất tốt cho các bức ảnh hoặc đồ họa canvas có các cạnh cong, nhưng không quá tuyệt vời cho các hình dạng có cạnh thẳng. Để khắc phục điều này, chúng ta có thể đặt {{cssxref("image-rendering")}} thành `pixelated`:
+In this example, we create our canvas really small (15x15), but then use CSS to scale it up to 300x300 pixels. As a result, each canvas pixel is now represented by a 20x20 block of CSS pixels. We draw a stroked rectangle from (2,2) to (12,12) and a filled rectangle from (7,7) to (8,8). It appears _really_ blurry. This is because by default, when the browser scales raster images, it uses a smoothing algorithm to interpolate the extra pixels. This is great for photographs or canvas graphics with curly edges, but not so great for straight-edged shapes. To fix this, we can set {{cssxref("image-rendering")}} to `pixelated`:
 
 ```css live-sample___seeing_blurry_edges_2 live-sample___seeing_blurry_edges_3
 #canvas {
@@ -104,25 +104,25 @@ Trong ví dụ này, chúng tôi tạo canvas thực sự nhỏ (15x15), nhưng 
 
 {{EmbedLiveSample("Seeing blurry edges 2", "", "350")}}
 
-Bây giờ, khi trình duyệt chia tỷ lệ canvas, nó sẽ bảo toàn pixel của bản gốc nhiều nhất có thể.
+Now, when the browser scales the canvas, it preserves the pixelation of the original as much as possible.
 
 > [!NOTE]
-> `image-rendering: pixelated` không phải là không có vấn đề về kỹ thuật bảo quản cạnh sắc nét. Khi các pixel CSS không thẳng hàng với các pixel của thiết bị (nếu {{domxref("Window/devicePixelRatio", "devicePixelRatio")}} không phải là số nguyên), một số pixel nhất định có thể được vẽ lớn hơn các pixel khác, dẫn đến giao diện không đồng nhất. Tuy nhiên, đây không phải là một vấn đề dễ giải quyết vì không thể lấp đầy chính xác các pixel của thiết bị khi các pixel CSS không thể ánh xạ chính xác tới chúng.
+> `image-rendering: pixelated` is not without its problems as a crisp-edge-preservation technique. When CSS pixels don't align with device pixels (if the {{domxref("Window/devicePixelRatio", "devicePixelRatio")}} is not an integer), certain pixels may be drawn larger than others, resulting in a non-uniform appearance. This is not an easy problem to solve, however, because it is impossible to fill device pixels precisely when the CSS pixels cannot accurately map to them.
 
-Nhưng bây giờ, một vấn đề khác trở nên rõ ràng, một vấn đề mà bạn thực sự có thể quan sát thấy trong ví dụ hình chữ nhật ban đầu: hình chữ nhật có nét không chỉ rộng 2 pixel thay vì 1 mà còn xuất hiện màu xám thay vì màu đen mặc định. Điều này là do cách tọa độ được hiểu là ranh giới hình dạng.
+But now another issue becomes apparent, one that you can actually also observe in the original rectangle example: the stroked rectangle is not only 2 pixels wide instead of 1, but also appears gray rather than the default black. This is because of how the coordinates are interpreted as shape boundaries.
 
-Nếu bạn nhìn lại sơ đồ [grid](#the_grid) ở trên, bạn có thể thấy rằng các tọa độ như `2` hoặc `12` không xác định một pixel mà là cạnh giữa hai pixel. Trong các hình ảnh bên dưới, lưới đại diện cho lưới tọa độ canvas. Các ô vuông giữa các đường lưới là các pixel thực tế trên màn hình. Trong ảnh lưới đầu tiên bên dưới, một hình chữ nhật từ (2,1) đến (5,5) được tô đầy. Toàn bộ khu vực giữa chúng (màu đỏ nhạt) nằm trên ranh giới pixel, do đó hình chữ nhật được lấp đầy sẽ có các cạnh sắc nét.
+If you look at the [grid](#the_grid) diagram above again, you can see that coordinates like `2` or `12` do not identify a pixel, but rather the edge between two pixels. In the images below, the grid represents the canvas coordinate grid. The squares between grid lines are actual on-screen pixels. In the first grid image below, a rectangle from (2,1) to (5,5) is filled. The entire area between them (light red) falls on pixel boundaries, so the resulting filled rectangle will have crisp edges.
 
-![Ba lưới tọa độ. Các đường lưới là các pixel thực tế trên màn hình. Góc trên cùng bên trái của mỗi lưới được dán nhãn (0,0). Trong lưới đầu tiên, một hình chữ nhật từ (2,1) đến (5,5) được tô màu đỏ nhạt. Trong lưới thứ hai, (3,1) đến (3,5) được nối bằng đường màu xanh hoàng gia dày 1 pixel. Đường màu xanh hoàng gia nằm ở giữa một đường lưới, kéo dài từ 2,5 đến 3,5 trên truy cập x, nằm ở giữa các pixel ở hai bên của đường biểu đồ, với nền màu xanh nhạt ở hai bên kéo dài từ 2 đến 4 trên truy cập x. Để tránh phần mở rộng mờ màu xanh lam nhạt của đường trong lưới tọa độ thứ hai, đường dẫn trong, lưới tọa độ thứ ba có màu xanh hoàng gia từ đường (3,5,1) đến (3,5,5). Chiều rộng đường 1 pixel sẽ lấp đầy hoàn toàn và chính xác một đường dọc pixel đơn.](canvas-grid.png)
+![Three coordinate grids. The grid lines are actual pixels on the screen. The top left corner of each grid is labeled (0,0). In the first grid, a rectangle from (2,1) to (5,5) is filled in light-red color. In the second grid, (3,1) to (3,5) is joined with a 1-pixel thick royal blue line. The royal-blue line is centered on a grid line, extends from 2.5 to 3.5 on the x access, halfway into the pixels on either side of the graph line, with a light blue background on either side extending from 2 to 4 on the x-access. To avoid the light blue blur extension of the line in the second coordinate grid, the path in, the third coordinate grid is a royal-blue from line (3.5,1) to (3.5,5). The 1 pixel line width ends up completely and precisely filling a single pixel vertical line.](canvas-grid.png)
 
-Nếu bạn xem xét một đường dẫn từ (3,1) đến (3,5) có độ dày đường thẳng là `1.0`, bạn sẽ gặp phải tình huống trong hình ảnh thứ hai. Vùng thực tế cần lấp đầy (màu xanh đậm) chỉ mở rộng một nửa số pixel ở hai bên của đường dẫn. Một giá trị gần đúng của điều này phải được hiển thị, có nghĩa là những pixel đó chỉ được tô bóng một phần và dẫn đến toàn bộ khu vực (xanh nhạt và xanh đậm) được tô bằng màu chỉ tối bằng một nửa màu nét vẽ thực tế. Đây là những gì xảy ra với đường chiều rộng `1.0` trong lệnh gọi `strokeRect()` trong ví dụ hình chữ nhật ở trên.
+If you consider a path from (3,1) to (3,5) with a line thickness of `1.0`, you end up with the situation in the second image. The actual area to be filled (dark blue) only extends halfway into the pixels on either side of the path. An approximation of this has to be rendered, which means that those pixels being only partially shaded, and results in the entire area (the light blue and dark blue) being filled in with a color only half as dark as the actual stroke color. This is what happens with the `1.0` width line in the `strokeRect()` call in the rectangle example above.
 
-Để khắc phục điều này, bạn phải rất chính xác trong việc tạo đường dẫn của mình. Biết rằng đường chiều rộng `1.0` sẽ kéo dài nửa đơn vị sang hai bên của đường dẫn, việc tạo đường dẫn từ _centers_ pixel dẫn đến tình huống trong hình ảnh thứ ba—chiều rộng đường `1.0` kết thúc hoàn toàn và lấp đầy chính xác một đường dọc pixel đơn.
+To fix this, you have to be very precise in your path creation. Knowing that a `1.0` width line will extend half a unit to either side of the path, creating the path from _centers_ of pixels results in the situation in the third image—the `1.0` line width ends up completely and precisely filling a single pixel vertical line.
 
 > [!NOTE]
-> Xin lưu ý rằng trong ví dụ về đường thẳng đứng của chúng tôi, vị trí Y vẫn tham chiếu vị trí đường lưới số nguyên—nếu không, chúng tôi sẽ thấy các pixel có độ che phủ một nửa ở các điểm cuối.
+> Be aware that in our vertical line example, the Y position still referenced an integer grid line position—if it hadn't, we would see pixels with half coverage at the endpoints.
 
-Vì vậy, đây là lý do tại sao chúng tôi đã nói trước đó rằng lệnh gọi `strokeRect(50, 50, 50, 50)` trong ví dụ hình chữ nhật có _về mặt khái niệm_ 50x50, nhưng trên thực tế nó là 52x52. Vùng được lấp đầy thực tế cho đường viền bắt đầu từ (49,5, 49,5) và kết thúc ở (100,5, 100,5) và do các pixel được lấp đầy một phần nên vùng được lấp đầy thực sự là từ (49,49) đến (101.101), tức là 52x52 và các cạnh rộng 2 pixel. Để có được đường viền cố định rộng 1 pixel có kích thước chính xác là 50x50, bạn cần _thu nhỏ_ hình chữ nhật theo độ dày của đường viền (1px) và di chuyển nó đi một nửa độ dày (0,5px):
+So this is why we said earlier that the `strokeRect(50, 50, 50, 50)` call in the rectangle example was _conceptually_ 50x50, but in reality it is 52x52. The actual filled region for the outline starts at (49.5, 49.5) and ends at (100.5, 100.5), and because of the partially filled pixels, the actually filled area is from (49,49) to (101,101), which is 52x52, and the edges are 2-pixel wide. To get a solid 1-pixel wide outline that is exactly 50x50, you would need to _shrink_ the rectangle by the thickness of the outline (1px), and move it by half the thickness (0.5px):
 
 ```js live-sample___seeing_blurry_edges_3
 function draw() {
@@ -135,11 +135,11 @@ function draw() {
 
 {{EmbedLiveSample("Seeing blurry edges 3", "", "350")}}
 
-Đối với các dòng có chiều rộng chẵn, mỗi nửa kết thúc bằng một lượng pixel nguyên, do đó bạn muốn có một đường dẫn nằm giữa các pixel (nghĩa là (3,1) đến (3,5)), thay vì đi xuống giữa các pixel.
+For even-width lines, each half ends up being an integer amount of pixels, so you want a path that is between pixels (that is, (3,1) to (3,5)), instead of down the middle of pixels.
 
-Mặc dù hơi khó khăn khi ban đầu làm việc với đồ họa 2D có thể mở rộng, nhưng việc chú ý đến lưới pixel và vị trí của các đường dẫn sẽ đảm bảo rằng bản vẽ của bạn sẽ trông chính xác bất kể tỷ lệ hoặc bất kỳ phép biến đổi nào khác có liên quan. Đường thẳng đứng có chiều rộng 1,0 được vẽ ở đúng vị trí sẽ trở thành đường 2 pixel sắc nét khi được tăng tỷ lệ lên 2 và sẽ xuất hiện ở đúng vị trí.
+While slightly painful when initially working with scalable 2D graphics, paying attention to the pixel grid and the position of paths ensures that your drawings will look correct regardless of scaling or any other transformations involved. A 1.0-width vertical line drawn at the correct position will become a crisp 2-pixel line when scaled up by 2, and will appear at the correct position.
 
-Hiện tượng pixel được lấp đầy một phần này cũng mở rộng sang các hình dạng không thẳng hàng với lưới pixel. Ví dụ: hãy xem xét một hình chữ nhật xoay (bạn sẽ tìm hiểu về cách vẽ nó trong phần tiếp theo). Để xem nó trông như thế nào khi có và không có `image-rendering: pixelated`, chúng tôi có hai canvas cạnh nhau và canvas thứ ba được vẽ ở tỷ lệ đầy đủ, với các đường lưới:
+This phenomenon of partially filled pixels also extends to shapes that don't align to the pixel grid. For example, consider a rotated rectangle (you'll learn about drawing it in the next section). To see what it's like with and without `image-rendering: pixelated`, we have two canvases side by side, and a third one drawn at full scale, with grid lines:
 
 ```html hidden live-sample___seeing_blurry_edges_4
 <canvas id="canvas1" width="12" height="12"></canvas>
@@ -213,44 +213,44 @@ drawFullScale();
 
 {{EmbedLiveSample("Seeing blurry edges 4", "", "350")}}
 
-Nếu việc chia tỷ lệ _up_ một hình ảnh làm cho nó trông mờ hơn dự định, thì việc chia tỷ lệ _down_ một hình ảnh sẽ làm cho nó trông _sắc nét hơn_. Ví dụ: nếu bạn muốn canvas xuất hiện ở dạng 300x150 pixel trên màn hình, bạn có thể tạo canvas ở kích thước 600x300 pixel rồi sử dụng CSS để thu nhỏ kích thước đó. Điều này đặc biệt hữu ích trên màn hình có độ phân giải cao (chẳng hạn như màn hình Retina của Apple), trong đó pixel CSS được biểu thị bằng nhiều pixel màn hình, vì vậy nếu bạn vẽ một cách trung thực canvas 300x150 pixel, nó sẽ không có cùng độ phân giải pixel như các thành phần khác trên trang.
+If scaling _up_ an image makes it appear blurrier than intended, then scaling _down_ an image would make it appear _sharper_. For example, if you want a canvas to appear as 300x150 pixels on the screen, you can create it as 600x300 pixels and then use CSS to scale it down. This is especially useful on high-DPI screens (such as Apple's Retina displays) where a CSS pixel is represented by multiple screen pixels, so if you faithfully paint a 300x150 pixel canvas, it will not have the same pixel resolution as other elements on the page.
 
-## Vẽ đường dẫn
+## Drawing paths
 
-Bây giờ chúng ta hãy nhìn vào các đường dẫn. Đường dẫn là một danh sách các điểm, được kết nối bởi các đoạn đường có thể có hình dạng khác nhau, cong hoặc không cong, có chiều rộng khác nhau và màu sắc khác nhau. Một đường dẫn hoặc thậm chí một đường dẫn phụ có thể bị đóng. Để tạo hình bằng đường dẫn, chúng tôi thực hiện một số bước bổ sung:
+Now let's look at paths. A path is a list of points, connected by segments of lines that can be of different shapes, curved or not, of different width and of different color. A path, or even a subpath, can be closed. To make shapes using paths, we take some extra steps:
 
-1. Đầu tiên, bạn tạo đường dẫn.
-2. Sau đó bạn sử dụng [lệnh vẽ](/en-US/docs/Web/API/CanvasRenderingContext2D#paths) để vẽ vào đường path.
-3. Khi đường dẫn đã được tạo, bạn có thể vuốt hoặc tô màu đường dẫn để hiển thị nó.
+1. First, you create the path.
+2. Then you use [drawing commands](/en-US/docs/Web/API/CanvasRenderingContext2D#paths) to draw into the path.
+3. Once the path has been created, you can stroke or fill the path to render it.
 
-Dưới đây là các chức năng được sử dụng để thực hiện các bước này:
+Here are the functions used to perform these steps:
 
 - {{domxref("CanvasRenderingContext2D.beginPath", "beginPath()")}}
-  - : Tạo một đường dẫn mới. Sau khi được tạo, các lệnh vẽ trong tương lai sẽ được hướng vào đường dẫn và được sử dụng để xây dựng đường dẫn lên trên.
-- [Phương thức đường dẫn](/en-US/docs/Web/API/CanvasRenderingContext2D#paths)
-  - : Phương thức thiết lập đường dẫn khác nhau cho các đối tượng.
+  - : Creates a new path. Once created, future drawing commands are directed into the path and used to build the path up.
+- [Path methods](/en-US/docs/Web/API/CanvasRenderingContext2D#paths)
+  - : Methods to set different paths for objects.
 - {{domxref("CanvasRenderingContext2D.closePath", "closePath()")}}
-  - : Thêm một đường thẳng vào đường dẫn, đi đến điểm bắt đầu của đường dẫn phụ hiện tại.
+  - : Adds a straight line to the path, going to the start of the current sub-path.
 - {{domxref("CanvasRenderingContext2D.stroke", "stroke()")}}
-  - : Vẽ hình bằng cách vuốt đường viền của nó.
+  - : Draws the shape by stroking its outline.
 - {{domxref("CanvasRenderingContext2D.fill", "fill()")}}
-  - : Vẽ một hình khối bằng cách lấp đầy vùng nội dung của đường dẫn.
+  - : Draws a solid shape by filling the path's content area.
 
-Bước đầu tiên để tạo đường dẫn là gọi `beginPath()`. Bên trong, các đường dẫn được lưu trữ dưới dạng danh sách các đường dẫn phụ (đường thẳng, vòng cung, v.v.) cùng nhau tạo thành một hình dạng. Mỗi khi phương thức này được gọi, danh sách sẽ được đặt lại và chúng ta có thể bắt đầu vẽ các hình dạng mới.
-
-> [!NOTE]
-> Khi đường dẫn hiện tại trống, chẳng hạn như ngay sau khi gọi `beginPath()` hoặc trên canvas mới được tạo, lệnh xây dựng đường dẫn đầu tiên luôn được coi là `moveTo()`, bất kể nó thực sự là gì. Vì lý do đó, bạn hầu như luôn muốn đặt cụ thể vị trí bắt đầu của mình sau khi đặt lại đường dẫn.
-
-Bước thứ hai là gọi các phương thức thực sự chỉ định các đường dẫn được vẽ. Chúng ta sẽ sớm thấy những điều này.
-
-Bước thứ ba và là bước tùy chọn là gọi `closePath()`. Phương thức này cố gắng đóng hình bằng cách vẽ một đường thẳng từ điểm hiện tại đến điểm bắt đầu. Nếu hình đã được đóng hoặc chỉ có một điểm trong danh sách thì hàm này sẽ không thực hiện gì.
+The first step to create a path is to call the `beginPath()`. Internally, paths are stored as a list of sub-paths (lines, arcs, etc.) which together form a shape. Every time this method is called, the list is reset and we can start drawing new shapes.
 
 > [!NOTE]
-> Khi bạn gọi `fill()`, mọi hình dạng đang mở sẽ tự động đóng lại, do đó bạn không cần phải gọi `closePath()`. Đây **không** là trường hợp khi bạn gọi `stroke()`.
+> When the current path is empty, such as immediately after calling `beginPath()`, or on a newly created canvas, the first path construction command is always treated as a `moveTo()`, regardless of what it actually is. For that reason, you will almost always want to specifically set your starting position after resetting a path.
 
-### Vẽ hình tam giác
+The second step is calling the methods that actually specify the paths to be drawn. We'll see these shortly.
 
-Ví dụ: mã để vẽ một hình tam giác sẽ trông giống như sau:
+The third, and an optional step, is to call `closePath()`. This method tries to close the shape by drawing a straight line from the current point to the start. If the shape has already been closed or there's only one point in the list, this function does nothing.
+
+> [!NOTE]
+> When you call `fill()`, any open shapes are closed automatically, so you don't have to call `closePath()`. This is **not** the case when you call `stroke()`.
+
+### Drawing a triangle
+
+For example, the code for drawing a triangle would look something like this:
 
 ```html hidden
 <canvas id="canvas" width="100" height="100"></canvas>
@@ -273,20 +273,20 @@ function draw() {
 draw();
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("Drawing_a_triangle", "", "110")}}
 
-### Di chuyển bút
+### Moving the pen
 
-Một hàm rất hữu ích, thực ra không vẽ bất cứ thứ gì mà trở thành một phần của danh sách đường dẫn được mô tả ở trên, là hàm `moveTo()`. Bạn có thể nghĩ tốt nhất về điều này như nhấc một cây bút hoặc bút chì từ một vị trí trên một tờ giấy và đặt nó lên vị trí tiếp theo.
+One very useful function, which doesn't actually draw anything but becomes part of the path list described above, is the `moveTo()` function. You can probably best think of this as lifting a pen or pencil from one spot on a piece of paper and placing it on the next.
 
 - {{domxref("CanvasRenderingContext2D.moveTo", "moveTo(x, y)")}}
-  - : Di chuyển bút đến tọa độ được chỉ định bởi `x` và `y`.
+  - : Moves the pen to the coordinates specified by `x` and `y`.
 
-Khi canvas được khởi tạo hoặc `beginPath()` được gọi, bạn thường muốn sử dụng hàm `moveTo()` để đặt điểm bắt đầu ở một nơi khác. Chúng ta cũng có thể sử dụng `moveTo()` để vẽ các đường dẫn không được kết nối. Hãy nhìn vào khuôn mặt cười dưới đây.
+When the canvas is initialized or `beginPath()` is called, you typically will want to use the `moveTo()` function to place the starting point somewhere else. We could also use `moveTo()` to draw unconnected paths. Take a look at the smiley face below.
 
-Để tự mình thử điều này, bạn có thể sử dụng đoạn mã bên dưới. Chỉ cần dán nó vào hàm `draw()` mà chúng ta đã thấy trước đó.
+To try this for yourself, you can use the code snippet below. Just paste it into the `draw()` function we saw earlier.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -313,25 +313,25 @@ function draw() {
 draw();
 ```
 
-Kết quả trông như thế này:
+The result looks like this:
 
 {{EmbedLiveSample("Moving_the_pen", "", "160")}}
 
-Nếu bạn muốn xem các đường kết nối, bạn có thể xóa các đường gọi `moveTo()`.
+If you'd like to see the connecting lines, you can remove the lines that call `moveTo()`.
 
 > [!NOTE]
-> Để tìm hiểu thêm về chức năng `arc()`, hãy xem phần [Arcs](#arcs) bên dưới.
+> To learn more about the `arc()` function, see the [Arcs](#arcs) section below.
 
-### dòng
+### Lines
 
-Để vẽ các đường thẳng, hãy sử dụng phương pháp `lineTo()`.
+For drawing straight lines, use the `lineTo()` method.
 
 - {{domxref("CanvasRenderingContext2D.lineTo", "lineTo(x, y)")}}
-  - : Vẽ một đường thẳng từ vị trí vẽ hiện tại đến vị trí được chỉ định bởi `x` và `y`.
+  - : Draws a line from the current drawing position to the position specified by `x` and `y`.
 
-Phương thức này nhận hai đối số, `x` và `y`, là tọa độ của điểm cuối của đường. Điểm bắt đầu phụ thuộc vào các đường dẫn đã vẽ trước đó, trong đó điểm cuối của đường dẫn trước là điểm bắt đầu cho đường dẫn tiếp theo, v.v. Điểm bắt đầu cũng có thể được thay đổi bằng cách sử dụng phương pháp `moveTo()`.
+This method takes two arguments, `x` and `y`, which are the coordinates of the line's end point. The starting point is dependent on previously drawn paths, where the end point of the previous path is the starting point for the following, etc. The starting point can also be changed by using the `moveTo()` method.
 
-Ví dụ dưới đây vẽ hai hình tam giác, một hình đầy và một hình có đường viền.
+The example below draws two triangles, one filled and one outlined.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -363,36 +363,36 @@ function draw() {
 draw();
 ```
 
-Việc này bắt đầu bằng cách gọi `beginPath()` để bắt đầu một đường dẫn hình dạng mới. Sau đó chúng tôi sử dụng phương pháp `moveTo()` để di chuyển điểm bắt đầu đến vị trí mong muốn. Bên dưới vẽ hai đường thẳng tạo thành hai cạnh của tam giác.
+This starts by calling `beginPath()` to start a new shape path. We then use the `moveTo()` method to move the starting point to the desired position. Below this, two lines are drawn which make up two sides of the triangle.
 
 {{EmbedLiveSample("Lines", "", "160")}}
 
-Bạn sẽ nhận thấy sự khác biệt giữa hình tam giác đầy màu sắc và hình tam giác có nét vẽ. Điều này, như đã đề cập ở trên, bởi vì các hình dạng sẽ tự động được đóng lại khi đường dẫn được lấp đầy chứ không phải khi chúng được vuốt. Nếu chúng ta bỏ `closePath()` cho hình tam giác có nét thì chỉ có hai đường thẳng được vẽ chứ không phải là một hình tam giác hoàn chỉnh.
+You'll notice the difference between the filled and stroked triangle. This is, as mentioned above, because shapes are automatically closed when a path is filled, but not when they are stroked. If we left out the `closePath()` for the stroked triangle, only two lines would have been drawn, not a complete triangle.
 
-### Vòng cung
+### Arcs
 
-Để vẽ vòng cung hoặc vòng tròn, chúng tôi sử dụng phương pháp `arc()` hoặc `arcTo()`.
+To draw arcs or circles, we use the `arc()` or `arcTo()` methods.
 
 - {{domxref("CanvasRenderingContext2D.arc", "arc(x, y, radius, startAngle, endAngle, counterclockwise)")}}
-  - : Vẽ một cung có tâm tại vị trí _(x, y)_ với bán kính _r_ bắt đầu tại _startAngle_ và kết thúc tại _endAngle_ đi theo hướng cho trước được chỉ định bởi _ngược chiều kim đồng hồ_ (mặc định theo chiều kim đồng hồ).
+  - : Draws an arc which is centered at _(x, y)_ position with radius _r_ starting at _startAngle_ and ending at _endAngle_ going in the given direction indicated by _counterclockwise_ (defaulting to clockwise).
 - {{domxref("CanvasRenderingContext2D.arcTo", "arcTo(x1, y1, x2, y2, radius)")}}
-  - : Vẽ một cung tròn với các điểm điều khiển và bán kính cho trước, nối với điểm trước đó bằng một đường thẳng.
+  - : Draws an arc with the given control points and radius, connected to the previous point by a straight line.
 
-Chúng ta hãy xem xét chi tiết hơn về phương pháp `arc`, phương pháp này có sáu tham số: `x` và `y` là tọa độ tâm của đường tròn mà cung sẽ được vẽ trên đó. `radius` là tự giải thích. Các tham số `startAngle` và `endAngle` xác định điểm bắt đầu và điểm kết thúc của cung tính bằng radian, dọc theo đường cong của đường tròn. Chúng được đo từ trục x. Tham số `counterclockwise` là một giá trị Boolean mà khi `true` vẽ cung ngược chiều kim đồng hồ; mặt khác, cung được vẽ theo chiều kim đồng hồ.
-
-> [!NOTE]
-> Các góc trong hàm `arc` được đo bằng radian, không phải độ. Để chuyển đổi độ sang radian, bạn có thể sử dụng biểu thức JavaScript sau: `radians = (Math.PI/180)*degrees`.
-
-Ví dụ sau đây phức tạp hơn một chút so với những ví dụ chúng ta đã thấy ở trên. Nó vẽ 12 cung khác nhau, tất cả đều có góc và màu tô khác nhau.
-
-Hai vòng lặp [`for`](/en-US/docs/Web/JavaScript/Reference/Statements/for) dùng để lặp qua các hàng và cột của cung tròn. Đối với mỗi cung, chúng ta bắt đầu một đường dẫn mới bằng cách gọi `beginPath()`. Trong mã, mỗi tham số cho cung đều có một biến để làm rõ ràng, nhưng bạn không nhất thiết phải làm điều đó trong đời thực.
-
-Tọa độ `x` và `y` phải đủ rõ ràng. `radius` và `startAngle` đã được sửa. `endAngle` bắt đầu ở 180 độ (nửa vòng tròn) ở cột đầu tiên và tăng dần theo từng bước 90 độ, đạt đến đỉnh điểm là một vòng tròn hoàn chỉnh ở cột cuối cùng.
-
-Câu lệnh cho tham số `clockwise` dẫn đến hàng thứ nhất và thứ ba được vẽ dưới dạng vòng cung theo chiều kim đồng hồ và hàng thứ hai và thứ tư dưới dạng vòng cung ngược chiều kim đồng hồ. Cuối cùng, câu lệnh `if` tạo các cung tròn được vuốt ở nửa trên và các cung được lấp đầy ở nửa dưới.
+Let's have a more detailed look at the `arc` method, which takes six parameters: `x` and `y` are the coordinates of the center of the circle on which the arc should be drawn. `radius` is self-explanatory. The `startAngle` and `endAngle` parameters define the start and end points of the arc in radians, along the curve of the circle. These are measured from the x axis. The `counterclockwise` parameter is a Boolean value which, when `true`, draws the arc counterclockwise; otherwise, the arc is drawn clockwise.
 
 > [!NOTE]
-> Ví dụ này yêu cầu canvas lớn hơn một chút so với các canvas khác trên trang này: 150 x 200 pixel.
+> Angles in the `arc` function are measured in radians, not degrees. To convert degrees to radians you can use the following JavaScript expression: `radians = (Math.PI/180)*degrees`.
+
+The following example is a little more complex than the ones we've seen above. It draws 12 different arcs all with different angles and fills.
+
+The two [`for` loops](/en-US/docs/Web/JavaScript/Reference/Statements/for) are for looping through the rows and columns of arcs. For each arc, we start a new path by calling `beginPath()`. In the code, each of the parameters for the arc is in a variable for clarity, but you wouldn't necessarily do that in real life.
+
+The `x` and `y` coordinates should be clear enough. `radius` and `startAngle` are fixed. The `endAngle` starts at 180 degrees (half a circle) in the first column and is increased by steps of 90 degrees, culminating in a complete circle in the last column.
+
+The statement for the `clockwise` parameter results in the first and third row being drawn as clockwise arcs and the second and fourth row as counterclockwise arcs. Finally, the `if` statement makes the top half stroked arcs and the bottom half filled arcs.
+
+> [!NOTE]
+> This example requires a slightly larger canvas than the others on this page: 150 x 200 pixels.
 
 ```html hidden
 <canvas id="canvas" width="150" height="200"></canvas>
@@ -431,27 +431,27 @@ draw();
 
 {{EmbedLiveSample("Arcs", "", "210")}}
 
-### Đường cong Bezier và bậc hai
+### Bezier and quadratic curves
 
-Loại đường dẫn tiếp theo có sẵn là [Bézier Curves](/en-US/docs/Glossary/Bezier_curve), có sẵn ở cả dạng bậc ba và bậc hai. Chúng thường được sử dụng để vẽ các hình dạng hữu cơ phức tạp.
+The next type of paths available are [Bézier curves](/en-US/docs/Glossary/Bezier_curve), available in both cubic and quadratic varieties. These are generally used to draw complex organic shapes.
 
 - {{domxref("CanvasRenderingContext2D.quadraticCurveTo", "quadraticCurveTo(cp1x, cp1y, x, y)")}}
-  - : Vẽ đường cong Bézier bậc hai từ vị trí bút hiện tại đến điểm cuối được chỉ định bởi `x` và `y`, sử dụng điểm điều khiển được chỉ định bởi `cp1x` và `cp1y`.
+  - : Draws a quadratic Bézier curve from the current pen position to the end point specified by `x` and `y`, using the control point specified by `cp1x` and `cp1y`.
 - {{domxref("CanvasRenderingContext2D.bezierCurveTo", "bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)")}}
-  - : Vẽ đường cong Bézier hình khối từ vị trí bút hiện tại đến điểm cuối được chỉ định bởi `x` và `y`, sử dụng các điểm kiểm soát được chỉ định bởi (`cp1x`, `cp1y`) và (`cp2x`, `cp2y`).
+  - : Draws a cubic Bézier curve from the current pen position to the end point specified by `x` and `y`, using the control points specified by (`cp1x`, `cp1y`) and (`cp2x`, `cp2y`).
 
-Sự khác biệt giữa những điều này là đường cong Bézier bậc hai có điểm bắt đầu và điểm kết thúc (các chấm màu xanh) và chỉ một **điểm kiểm soát** (được biểu thị bằng dấu chấm màu đỏ) trong khi đường cong Bézier bậc ba sử dụng hai điểm kiểm soát.
-![So sánh đường cong bậc hai và Bezier.](canvas_curves.png)
+The difference between these is that a quadratic Bézier curve has a start and an end point (blue dots) and just one **control point** (indicated by the red dot) while a cubic Bézier curve uses two control points.
+![Quadratic and Bezier curve comparison.](canvas_curves.png)
 
-Các tham số `x` và `y` trong cả hai phương pháp này đều là tọa độ của điểm cuối. `cp1x` và `cp1y` là tọa độ của điểm điều khiển thứ nhất, `cp2x` và `cp2y` là tọa độ của điểm điều khiển thứ hai.
+The `x` and `y` parameters in both of these methods are the coordinates of the end point. `cp1x` and `cp1y` are the coordinates of the first control point, and `cp2x` and `cp2y` are the coordinates of the second control point.
 
-Việc sử dụng đường cong Bézier bậc hai và bậc ba có thể khá khó khăn vì không giống như phần mềm vẽ vector như Adobe Illustrator, chúng ta không có phản hồi trực quan về những gì chúng ta đang làm. Điều này làm cho việc vẽ các hình dạng phức tạp trở nên khá khó khăn. Trong ví dụ sau, chúng ta sẽ vẽ một số hình dạng hữu cơ đơn giản, nhưng nếu bạn có thời gian và trên hết là sự kiên nhẫn, bạn có thể tạo ra những hình dạng phức tạp hơn nhiều.
+Using quadratic and cubic Bézier curves can be quite challenging, because unlike vector drawing software like Adobe Illustrator, we don't have direct visual feedback as to what we're doing. This makes it pretty hard to draw complex shapes. In the following example, we'll be drawing some simple organic shapes, but if you have the time and, most of all, the patience, much more complex shapes can be created.
 
-Không có gì quá khó khăn trong những ví dụ này. Trong cả hai trường hợp, chúng ta thấy một loạt các đường cong được vẽ và cuối cùng tạo thành một hình dạng hoàn chỉnh.
+There's nothing very difficult in these examples. In both cases we see a succession of curves being drawn which finally result in a complete shape.
 
-#### Đường cong Bezier bậc hai
+#### Quadratic Bezier curves
 
-Ví dụ này sử dụng nhiều đường cong Bézier bậc hai để hiển thị một bong bóng lời thoại.
+This example uses multiple quadratic Bézier curves to render a speech balloon.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -481,9 +481,9 @@ draw();
 
 {{EmbedLiveSample("Quadratic_Bezier_curves", "", "160")}}
 
-#### Đường cong khối Bezier
+#### Cubic Bezier curves
 
-Ví dụ này vẽ một trái tim bằng cách sử dụng các đường cong Bézier hình khối.
+This example draws a heart using cubic Bézier curves.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -513,18 +513,18 @@ draw();
 
 {{EmbedLiveSample("Cubic_Bezier_curves", "", "160")}}
 
-### Hình chữ nhật
+### Rectangles
 
-Ngoài ba phương pháp chúng ta đã thấy trong [Vẽ hình chữ nhật](#drawing_rectangles), vẽ các hình chữ nhật trực tiếp lên canvas, còn có phương pháp `rect()`, thêm đường dẫn hình chữ nhật vào đường dẫn hiện đang mở.
+In addition to the three methods we saw in [Drawing rectangles](#drawing_rectangles), which draw rectangular shapes directly to the canvas, there's also the `rect()` method, which adds a rectangular path to a currently open path.
 
 - {{domxref("CanvasRenderingContext2D.rect", "rect(x, y, width, height)")}}
-  - : Vẽ một hình chữ nhật có góc trên bên trái được xác định bởi (`x`, `y`) với `width` và `height` được chỉ định.
+  - : Draws a rectangle whose top-left corner is specified by (`x`, `y`) with the specified `width` and `height`.
 
-Trước khi phương thức này được thực thi, phương thức `moveTo()` được gọi tự động với các tham số (x,y). Nói cách khác, vị trí bút hiện tại sẽ tự động được đặt lại về tọa độ mặc định.
+Before this method is executed, the `moveTo()` method is automatically called with the parameters (x,y). In other words, the current pen position is automatically reset to the default coordinates.
 
-### Tạo sự kết hợp
+### Making combinations
 
-Cho đến nay, mỗi ví dụ trên trang này chỉ sử dụng một loại hàm đường dẫn cho mỗi hình. Tuy nhiên, không có giới hạn về số lượng hoặc loại đường dẫn bạn có thể sử dụng để tạo hình. Vì vậy, trong ví dụ cuối cùng này, hãy kết hợp tất cả các hàm đường dẫn để tạo thành một tập hợp các nhân vật trò chơi rất nổi tiếng.
+So far, each example on this page has used only one type of path function per shape. However, there's no limitation to the number or types of paths you can use to create a shape. So in this final example, let's combine all of the path functions to make a set of very famous game characters.
 
 ```html hidden
 <canvas id="canvas" width="200" height="185"></canvas>
@@ -614,17 +614,17 @@ function roundedRect(ctx, x, y, width, height, radius) {
 draw();
 ```
 
-Hình ảnh kết quả trông như thế này:
+The resulting image looks like this:
 
 {{EmbedLiveSample("Making_combinations", "", "200")}}
 
-Chúng ta sẽ không đi sâu vào vấn đề này một cách chi tiết vì nó thực sự đơn giản một cách đáng ngạc nhiên. Điều quan trọng nhất cần lưu ý là việc sử dụng thuộc tính `fillStyle` trong bối cảnh vẽ và việc sử dụng hàm tiện ích (trong trường hợp này là `roundedRect()`). Việc sử dụng các hàm tiện ích cho các phần vẽ mà bạn thường thực hiện có thể rất hữu ích và giảm số lượng mã bạn cần cũng như độ phức tạp của nó.
+We won't go over this in detail, since it's actually surprisingly simple. The most important things to note are the use of the `fillStyle` property on the drawing context, and the use of a utility function (in this case `roundedRect()`). Using utility functions for bits of drawing you do often can be very helpful and reduce the amount of code you need, as well as its complexity.
 
-Chúng ta sẽ xem xét chi tiết hơn về `fillStyle` ở phần sau của hướng dẫn này. Ở đây, tất cả những gì chúng ta đang làm là sử dụng nó để thay đổi màu tô cho các đường dẫn từ màu mặc định là đen sang trắng, sau đó quay lại.
+We'll take another look at `fillStyle`, in more detail, later in this tutorial. Here, all we're doing is using it to change the fill color for paths from the default color of black to white, and then back again.
 
-### Hình dạng có lỗ
+### Shapes with holes
 
-Để vẽ một hình có lỗ bên trong, chúng ta cần vẽ lỗ theo các hướng đồng hồ khác nhau khi vẽ hình bên ngoài. Chúng ta vẽ hình bên ngoài theo chiều kim đồng hồ và hình bên trong ngược chiều kim đồng hồ hoặc hình bên ngoài ngược chiều kim đồng hồ và hình bên trong theo chiều kim đồng hồ.
+To draw a shape with a hole in it, we need to draw the hole in different clock directions as we draw the outer shape. We either draw the outer shape clockwise and the inner shape anticlockwise or the outer shape anticlockwise and the inner shape clockwise.
 
 ```html hidden
 <canvas id="canvas" width="150" height="150"></canvas>
@@ -657,15 +657,15 @@ draw();
 
 {{EmbedLiveSample("Shapes_with_holes", "", "160")}}
 
-Trong ví dụ trên, hình tam giác bên ngoài đi theo chiều kim đồng hồ (di chuyển đến góc trên cùng bên trái, sau đó vẽ một đường thẳng đến góc trên bên phải và kết thúc ở dưới cùng) và hình tam giác bên trong đi ngược chiều kim đồng hồ (di chuyển lên trên cùng, sau đó vẽ một đường đến góc dưới cùng bên trái và kết thúc ở dưới cùng bên phải).
+In the example above, the outer triangle goes clockwise (move to the top-left corner, then draw a line to the top-right corner, and finish at the bottom) and the inner triangle goes anticlockwise (move to the top, then line to the bottom-left corner, and finish at the bottom-right).
 
-## Đối tượng Path2D
+## Path2D objects
 
-Như chúng ta đã thấy trong ví dụ trước, có thể có một loạt đường dẫn và lệnh vẽ để vẽ các đối tượng lên canvas của bạn. Để đơn giản hóa mã và cải thiện hiệu suất, đối tượng {{domxref("Path2D")}}, có sẵn trong các phiên bản trình duyệt gần đây, cho phép bạn lưu vào bộ đệm hoặc ghi lại các lệnh vẽ này. Bạn có thể phát lại đường đi của mình một cách nhanh chóng.
-Hãy xem cách chúng ta có thể xây dựng một đối tượng `Path2D`:
+As we have seen in the last example, there can be a series of paths and drawing commands to draw objects onto your canvas. To simplify the code and to improve performance, the {{domxref("Path2D")}} object, available in recent versions of browsers, lets you cache or record these drawing commands. You are able to play back your paths quickly.
+Let's see how we can construct a `Path2D` object:
 
 - {{domxref("Path2D.Path2D", "Path2D()")}}
-  - : Hàm tạo **`Path2D()`** trả về một đối tượng `Path2D` mới được khởi tạo, tùy chọn với một đường dẫn khác làm đối số (tạo một bản sao) hoặc tùy chọn với một chuỗi bao gồm [dữ liệu SVG path](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths).
+  - : The **`Path2D()`** constructor returns a newly instantiated `Path2D` object, optionally with another path as an argument (creates a copy), or optionally with a string consisting of [SVG path](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths) data.
 
 ```js
 new Path2D(); // empty path object
@@ -673,16 +673,16 @@ new Path2D(path); // copy from another Path2D object
 new Path2D(d); // path from SVG path data
 ```
 
-Tất cả [các phương thức đường dẫn](/en-US/docs/Web/API/CanvasRenderingContext2D#paths) như `moveTo`, `rect`, `arc` hoặc `quadraticCurveTo`, v.v., mà chúng ta đã biết ở trên, đều có sẵn trên các đối tượng `Path2D`.
+All [path methods](/en-US/docs/Web/API/CanvasRenderingContext2D#paths) like `moveTo`, `rect`, `arc` or `quadraticCurveTo`, etc., which we got to know above, are available on `Path2D` objects.
 
-API `Path2D` cũng bổ sung thêm cách kết hợp các đường dẫn bằng phương pháp `addPath`. Điều này có thể hữu ích khi bạn muốn xây dựng các đối tượng từ một số thành phần chẳng hạn.
+The `Path2D` API also adds a way to combine paths using the `addPath` method. This can be useful when you want to build objects from several components, for example.
 
 - {{domxref("Path2D.addPath", "Path2D.addPath(path [, transform])")}}
-  - : Thêm đường dẫn vào đường dẫn hiện tại bằng ma trận chuyển đổi tùy chọn.
+  - : Adds a path to the current path with an optional transformation matrix.
 
-### Ví dụ về Path2D
+### Path2D example
 
-Trong ví dụ này, chúng ta tạo một hình chữ nhật và một hình tròn. Cả hai đều được lưu trữ dưới dạng đối tượng `Path2D` để có thể sử dụng sau này. Với API `Path2D` mới, một số phương thức đã được cập nhật để tùy chọn chấp nhận đối tượng `Path2D` để sử dụng thay vì đường dẫn hiện tại. Ví dụ: ở đây, `stroke` và `fill` được sử dụng với đối số đường dẫn để vẽ cả hai đối tượng lên canvas.
+In this example, we are creating a rectangle and a circle. Both are stored as a `Path2D` object, so that they are available for later usage. With the new `Path2D` API, several methods got updated to optionally accept a `Path2D` object to use instead of the current path. Here, `stroke` and `fill` are used with a path argument to draw both objects onto the canvas, for example.
 
 ```html hidden
 <canvas id="canvas" width="130" height="100"></canvas>
@@ -710,11 +710,11 @@ draw();
 
 {{EmbedLiveSample("Path2D_example", "", "110")}}
 
-### Sử dụng đường dẫn SVG
+### Using SVG paths
 
-Một tính năng mạnh mẽ khác của API `Path2D` canvas mới là sử dụng [dữ liệu đường dẫn SVG](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths) để khởi tạo các đường dẫn trên canvas của bạn. Điều này có thể cho phép bạn chuyển dữ liệu đường dẫn và sử dụng lại chúng trong cả SVG và canvas.
+Another powerful feature of the new canvas `Path2D` API is using [SVG path data](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths) to initialize paths on your canvas. This might allow you to pass around path data and re-use them in both, SVG and canvas.
 
-Đường đi sẽ di chuyển đến điểm (`M10 10`) rồi di chuyển theo chiều ngang 80 điểm sang phải (`h 80`), sau đó xuống 80 điểm (`v 80`), sau đó 80 điểm sang trái (`h -80`), rồi quay lại điểm bắt đầu (`z`). Bạn có thể xem ví dụ này trên trang [`Path2D` constructor](/en-US/docs/Web/API/Path2D/Path2D#using_svg_paths).
+The path will move to point (`M10 10`) and then move horizontally 80 points to the right (`h 80`), then 80 points down (`v 80`), then 80 points to the left (`h -80`), and then back to the start (`z`). You can see this example on the [`Path2D` constructor](/en-US/docs/Web/API/Path2D/Path2D#using_svg_paths) page.
 
 ```js
 const p = new Path2D("M10 10 h 80 v 80 h -80 Z");

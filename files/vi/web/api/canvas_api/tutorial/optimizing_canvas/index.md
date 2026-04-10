@@ -6,15 +6,15 @@ page-type: guide
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas", "Web/API/Canvas_API/Tutorial/Finale")}}
 
-Phần tử {{HTMLElement("canvas")}} là một trong những công cụ được sử dụng rộng rãi nhất để hiển thị đồ họa 2D trên web. Tuy nhiên, khi các trang web và ứng dụng đẩy API Canvas đến giới hạn, hiệu suất sẽ bắt đầu bị ảnh hưởng. Bài viết này cung cấp các đề xuất để tối ưu hóa việc sử dụng phần tử canvas nhằm đảm bảo đồ họa của bạn hoạt động tốt.
+The {{HTMLElement("canvas")}} element is one of the most widely used tools for rendering 2D graphics on the web. However, when websites and apps push the Canvas API to its limits, performance begins to suffer. This article provides suggestions for optimizing your use of the canvas element to ensure that your graphics perform well.
 
-## Mẹo về hiệu suất
+## Performance tips
 
-Sau đây là tập hợp các mẹo để cải thiện hiệu suất canvas.
+The following is a collection of tips to improve canvas performance.
 
-### Kết xuất trước các đối tượng gốc tương tự hoặc các đối tượng lặp lại trên canvas ngoài màn hình
+### Pre-render similar primitives or repeating objects on an offscreen canvas
 
-Nếu bạn thấy mình lặp lại một số thao tác vẽ giống nhau trên mỗi khung hình hoạt ảnh, hãy cân nhắc việc chuyển chúng sang canvas ngoài màn hình. Sau đó, bạn có thể hiển thị hình ảnh ngoài màn hình cho canvas chính của mình thường xuyên nếu cần mà không cần lặp lại các bước cần thiết để tạo hình ảnh đó ngay từ đầu.
+If you find yourself repeating some of the same drawing operations on each animation frame, consider offloading them to an offscreen canvas. You can then render the offscreen image to your primary canvas as often as needed, without unnecessarily repeating the steps needed to generate it in the first place.
 
 ```js
 myCanvas.offscreenCanvas = document.createElement("canvas");
@@ -24,25 +24,25 @@ myCanvas.offscreenCanvas.height = myCanvas.height;
 myCanvas.getContext("2d").drawImage(myCanvas.offScreenCanvas, 0, 0);
 ```
 
-### Tránh tọa độ dấu phẩy động và thay vào đó hãy sử dụng số nguyên
+### Avoid floating-point coordinates and use integers instead
 
-Kết xuất pixel phụ xảy ra khi bạn kết xuất các đối tượng trên canvas mà không có toàn bộ giá trị.
+Sub-pixel rendering occurs when you render objects on a canvas without whole values.
 
 ```js
 ctx.drawImage(myImage, 0.3, 0.5);
 ```
 
-Điều này buộc trình duyệt phải thực hiện các phép tính bổ sung để tạo hiệu ứng khử răng cưa. Để tránh điều này, hãy đảm bảo làm tròn tất cả tọa độ được sử dụng trong lệnh gọi đến {{domxref("CanvasRenderingContext2D.drawImage", "drawImage()")}} bằng cách sử dụng {{jsxref("Math.floor()")}} chẳng hạn.
+This forces the browser to do extra calculations to create the anti-aliasing effect. To avoid this, make sure to round all co-ordinates used in calls to {{domxref("CanvasRenderingContext2D.drawImage", "drawImage()")}} using {{jsxref("Math.floor()")}}, for example.
 
-### Không chia tỷ lệ hình ảnh trong `drawImage`
+### Don't scale images in `drawImage`
 
-Lưu vào bộ nhớ đệm các kích thước hình ảnh khác nhau của bạn trên canvas ngoài màn hình khi tải thay vì liên tục chia tỷ lệ chúng trong {{domxref("CanvasRenderingContext2D.drawImage", "drawImage()")}}.
+Cache various sizes of your images on an offscreen canvas when loading as opposed to constantly scaling them in {{domxref("CanvasRenderingContext2D.drawImage", "drawImage()")}}.
 
-### Sử dụng nhiều canvas nhiều lớp cho những cảnh phức tạp
+### Use multiple layered canvases for complex scenes
 
-Trong ứng dụng của mình, bạn có thể thấy rằng một số đối tượng cần phải di chuyển hoặc thay đổi thường xuyên, trong khi những đối tượng khác vẫn tương đối tĩnh. Một cách tối ưu hóa có thể có trong tình huống này là xếp lớp các mục của bạn bằng cách sử dụng nhiều phần tử `<canvas>`.
+In your application, you may find that some objects need to move or change frequently, while others remain relatively static. A possible optimization in this situation is to layer your items using multiple `<canvas>` elements.
 
-Ví dụ: giả sử bạn có một trò chơi có giao diện người dùng ở trên cùng, hành động chơi trò chơi ở giữa và nền tĩnh ở phía dưới. Trong trường hợp này, bạn có thể chia trò chơi của mình thành ba lớp `<canvas>`. Giao diện người dùng sẽ chỉ thay đổi khi người dùng nhập, lớp trò chơi sẽ thay đổi theo mỗi khung hình mới và nền nhìn chung sẽ không thay đổi.
+For example, let's say you have a game with a UI on top, the gameplay action in the middle, and a static background on the bottom. In this case, you could split your game into three `<canvas>` layers. The UI would change only upon user input, the gameplay layer would change with every new frame, and the background would remain generally unchanged.
 
 ```html
 <div id="stage">
@@ -74,13 +74,13 @@ canvas {
 }
 ```
 
-### Sử dụng CSS đơn giản cho hình nền lớn
+### Use plain CSS for large background images
 
-Nếu bạn có hình nền tĩnh, bạn có thể vẽ nó lên phần tử {{HTMLElement("div")}} đơn giản bằng cách sử dụng thuộc tính CSS {{cssxref("background")}} và đặt nó dưới canvas. Điều này sẽ phủ nhận sự cần thiết phải hiển thị nền cho canvas trên mỗi tích tắc.
+If you have a static background image, you can draw it onto a plain {{HTMLElement("div")}} element using the CSS {{cssxref("background")}} property and position it under the canvas. This will negate the need to render the background to the canvas on every tick.
 
-### Chia tỷ lệ canvas bằng cách sử dụng các biến đổi CSS
+### Scaling canvas using CSS transforms
 
-[Biến đổi CSS](/en-US/docs/Web/CSS/Guides/Transforms/Using) nhanh hơn vì chúng sử dụng GPU. Trường hợp tốt nhất là không chia tỷ lệ canvas hoặc có canvas nhỏ hơn và tăng tỷ lệ thay vì canvas lớn hơn và thu nhỏ lại.
+[CSS transforms](/en-US/docs/Web/CSS/Guides/Transforms/Using) are faster since they use the GPU. The best case is to not scale the canvas, or have a smaller canvas and scale up rather than a bigger canvas and scale down.
 
 ```js
 const scaleX = window.innerWidth / canvas.width;
@@ -93,17 +93,17 @@ stage.style.transformOrigin = "0 0"; // Scale from top left
 stage.style.transform = `scale(${scaleToFit})`;
 ```
 
-### Tắt tính minh bạch
+### Turn off transparency
 
-Nếu ứng dụng của bạn sử dụng canvas và không cần phông nền trong suốt, hãy đặt tùy chọn `alpha` thành `false` khi tạo ngữ cảnh vẽ bằng {{domxref("HTMLCanvasElement.getContext()")}}. Thông tin này có thể được trình duyệt sử dụng nội bộ để tối ưu hóa kết xuất.
+If your application uses canvas and doesn't need a transparent backdrop, set the `alpha` option to `false` when creating a drawing context with {{domxref("HTMLCanvasElement.getContext()")}}. This information can be used internally by the browser to optimize rendering.
 
 ```js
 const ctx = canvas.getContext("2d", { alpha: false });
 ```
 
-### Chia tỷ lệ cho màn hình có độ phân giải cao
+### Scaling for high resolution displays
 
-Bạn có thể thấy rằng các mục canvas xuất hiện mờ trên màn hình có độ phân giải cao hơn. Mặc dù có thể tồn tại nhiều giải pháp, bước đơn giản đầu tiên là tăng giảm kích thước canvas lên và xuống đồng thời, sử dụng các thuộc tính, kiểu dáng và tỷ lệ ngữ cảnh của canvas.
+You may find that canvas items appear blurry on higher-resolution displays. While many solutions may exist, a simple first step is to scale the canvas size up and down simultaneously, using its attributes, styling, and its context's scale.
 
 ```js
 // Get the DPR and size of the canvas
@@ -122,15 +122,15 @@ canvas.style.width = `${rect.width}px`;
 canvas.style.height = `${rect.height}px`;
 ```
 
-### Các mẹo khác
+### More tips
 
-- Các cuộc gọi canvas hàng loạt cùng nhau. Ví dụ: vẽ một đường đa tuyến thay vì nhiều đường riêng biệt.
-- Tránh những thay đổi trạng thái canvas không cần thiết.
-- Render màn hình chỉ có sự khác biệt chứ không phải trạng thái mới hoàn toàn.
-- Tránh thuộc tính {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}} bất cứ khi nào có thể.
-- Tránh [hiển thị văn bản](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text) bất cứ khi nào có thể.
-- Hãy thử các cách khác nhau để xóa canvas ({{domxref("CanvasRenderingContext2D.clearRect", "clearRect()")}} so với {{domxref("CanvasRenderingContext2D.fillRect", "fillRect()")}} so với thay đổi kích thước canvas).
-- Với hình ảnh động, hãy sử dụng {{domxref("Window.requestAnimationFrame()")}} thay vì {{domxref("Window.setInterval", "setInterval()")}}.
-- Hãy cẩn thận với các thư viện vật lý nặng.
+- Batch canvas calls together. For example, draw a polyline instead of multiple separate lines.
+- Avoid unnecessary canvas state changes.
+- Render screen differences only, not the whole new state.
+- Avoid the {{domxref("CanvasRenderingContext2D.shadowBlur", "shadowBlur")}} property whenever possible.
+- Avoid [text rendering](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text) whenever possible.
+- Try different ways to clear the canvas ({{domxref("CanvasRenderingContext2D.clearRect", "clearRect()")}} vs. {{domxref("CanvasRenderingContext2D.fillRect", "fillRect()")}} vs. resizing the canvas).
+- With animations, use {{domxref("Window.requestAnimationFrame()")}} instead of {{domxref("Window.setInterval", "setInterval()")}}.
+- Be careful with heavy physics libraries.
 
 {{PreviousNext("Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas", "Web/API/Canvas_API/Tutorial/Finale")}}

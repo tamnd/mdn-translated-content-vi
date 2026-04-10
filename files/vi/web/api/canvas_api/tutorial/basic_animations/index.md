@@ -1,53 +1,53 @@
 ---
-title: Hoạt ảnh cơ bản
+title: Hoạt hình cơ bản
 slug: Web/API/Canvas_API/Tutorial/Basic_animations
 page-type: guide
 ---
 
 {{DefaultAPISidebar("Canvas API")}} {{PreviousNext("Web/API/Canvas_API/Tutorial/Compositing", "Web/API/Canvas_API/Tutorial/Advanced_animations")}}
 
-Vì chúng tôi đang sử dụng JavaScript để kiểm soát các phần tử {{HTMLElement("canvas")}} nên việc tạo hoạt ảnh (tương tác) cũng rất dễ dàng. Trong chương trình này, chúng tôi sẽ xem xét cách thực hiện một số hoạt động cơ bản.
+Since we're using JavaScript to control {{HTMLElement("canvas")}} elements, it's also very easy to make (interactive) animations. In this chapter we will take a look at how to do some basic animations.
 
-Có chế độ tối đa nhất có thể là khi một hình ảnh được vẽ, nó sẽ được giữ nguyên như vậy. Nếu chúng ta cần chuyển nó, chúng ta phải vẽ lại nó và mọi thứ được vẽ trước đó. Phải mất rất nhiều thời gian để vẽ lại các khung phức tạp và hiệu suất phụ thuộc nhiều vào tốc độ của máy tính đang chạy.
+Probably the biggest limitation is, that once a shape gets drawn, it stays that way. If we need to move it we have to redraw it and everything that was drawn before it. It takes a lot of time to redraw complex frames and the performance depends highly on the speed of the computer it's running on.
 
-## Các bước hoạt động cơ bản
+## Basic animation steps
 
-Đây là bước bạn cần thực hiện để vẽ khung:
+These are the steps you need to take to draw a frame:
 
-1. **Xóa khung**
-   Trừ khi bạn sẽ vẽ đầy đủ các dạng hình vẽ (ví dụ: hình nền), bạn cần xóa tất cả các dạng đã được vẽ trước đó. Cách dễ dàng nhất để thực hiện công việc này là sử dụng phương pháp {{domxref("CanvasRenderingContext2D.clearRect", "clearRect()")}}.
-2. **Lưu trạng thái**
-   Nếu bạn đang thay đổi bất kỳ cài đặt nào (chẳng hạn như loại, chuyển đổi, v.v.) ảnh hưởng đến canvas trạng thái và bạn muốn đảm bảo trạng thái ban đầu được sử dụng mỗi khi khung được vẽ, bạn cần lưu trạng thái ban đầu đó.
-3. **Vẽ dưới dạng hoạt ảnh**
-   Bước mà bạn thực hiện hiển thị khung hình thực tế.
-4. **Khôi phục trạng thái**
-   Nếu bạn đã lưu trạng thái, vui lòng khôi phục nó trước khi vẽ khung mới.
+1. **Clear the canvas**
+   Unless the shapes you'll be drawing fill the complete canvas (for instance a backdrop image), you need to clear any shapes that have been drawn previously. The easiest way to do this is using the {{domxref("CanvasRenderingContext2D.clearRect", "clearRect()")}} method.
+2. **Save the canvas state**
+   If you're changing any setting (such as styles, transformations, etc.) which affect the canvas state and you want to make sure the original state is used each time a frame is drawn, you need to save that original state.
+3. **Draw animated shapes**
+   The step where you do the actual frame rendering.
+4. **Restore the canvas state**
+   If you've saved the state, restore it before drawing a new frame.
 
-## Kiểm soát hoạt động
+## Controlling an animation
 
-Các dạng hình ảnh được vẽ vào canvas bằng cách sử dụng canvas phương thức trực tiếp tiếp theo hoặc bằng cách gọi các tùy chỉnh hàm. Trong trường hợp bình thường, chúng tôi chỉ tìm thấy những kết quả này xuất hiện trên khung vẽ khi thực hiện xong lệnh. Ví dụ: không thể tạo ảnh hoạt động trong vòng lặp `for`.
+Shapes are drawn to the canvas by using the canvas methods directly or by calling custom functions. In normal circumstances, we only see these results appear on the canvas when the script finishes executing. For instance, it isn't possible to do an animation from within a `for` loop.
 
-Điều đó có nghĩa là họ cần một cách để thực hiện các chức năng vẽ của mình trong một khoảng thời gian. Có hai cách để điều khiển hoạt động như thế này.
+That means we need a way to execute our drawing functions over a period of time. There are two ways to control an animation like this.
 
-### Cập nhật lịch trình
+### Scheduled updates
 
-Đầu tiên là các chức năng {{domxref("Window.setInterval", "setInterval()")}}, {{domxref("Window.setTimeout", "setTimeout()")}} và {{domxref("Window.requestAnimationFrame", "requestAnimationFrame()")}}, có thể được sử dụng để gọi một chức năng cụ thể trong một khoảng thời gian nhất định.
+First there's the {{domxref("Window.setInterval", "setInterval()")}}, {{domxref("Window.setTimeout", "setTimeout()")}}, and {{domxref("Window.requestAnimationFrame", "requestAnimationFrame()")}} functions, which can be used to call a specific function over a set period of time.
 
 - {{domxref("Window.setInterval", "setInterval()")}}
-  - : Bắt đầu thực hiện các chức năng liên tục được chỉ định bởi `function` mỗi mili giây `delay`.
+  - : Starts repeatedly executing the function specified by `function` every `delay` milliseconds.
 - {{domxref("Window.setTimeout", "setTimeout()")}}
-  - : Thực thi chức năng `function` được định nghĩa chỉ trong `delay` mili giây.
+  - : Executes the function specified by `function` in `delay` milliseconds.
 - {{domxref("Window.requestAnimationFrame", "requestAnimationFrame()")}}
-  - : Trình duyệt biết rằng bạn muốn thực hiện hoạt động và yêu cầu trình duyệt yêu cầu gọi một chức năng được chỉ định để cập nhật hoạt động trước lần sơn lại tiếp theo.
+  - : Tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint.
 
-Nếu bạn không muốn bất kỳ tương tác nào của người dùng, bạn có thể sử dụng hàm `setInterval()` để thực thi mã hóa được cung cấp nhiều lần. Nếu muốn tạo trò chơi, chúng tôi có thể sử dụng các bàn phím hoặc chuột của các sự kiện để điều khiển hoạt động và sử dụng `setTimeout()`. Bằng cách cài đặt trình nghe bằng {{domxref("EventTarget.addEventListener", "addEventListener()")}}, chúng tôi nắm bắt được mọi hoạt động tương tác của người dùng và thực hiện các chức năng hoạt động của hình ảnh.
+If you don't want any user interaction you can use the `setInterval()` function, which repeatedly executes the supplied code. If we wanted to make a game, we could use keyboard or mouse events to control the animation and use `setTimeout()`. By setting listeners using {{domxref("EventTarget.addEventListener", "addEventListener()")}}, we catch any user interaction and execute our animation functions.
 
 > [!NOTE]
-> Trong các ví dụ bên dưới, chúng tôi sẽ sử dụng phương pháp {{domxref("Window.requestAnimationFrame()")}} để điều khiển hoạt động. Phương thức `requestAnimationFrame` cung cấp một cách tạo hình ảnh mượt mà và hiệu quả hơn bằng cách gọi khung hoạt động khi hệ thống sẵn sàng vẽ khung. Số lần gọi lại thường là 60 lần/giây và có thể giảm xuống thấp hơn khi chạy ở nền tab. Để biết thêm thông tin về hoạt động vòng lặp, đặc biệt dành cho trò chơi, hãy xem bài viết [Giải thích trò chơi điện tử](/en-US/docs/Games/Anatomy) trong [Khu vực phát triển trò chơi](/en-US/docs/Games) của chúng tôi.
+> In the examples below, we'll use the {{domxref("Window.requestAnimationFrame()")}} method to control the animation. The `requestAnimationFrame` method provides a smoother and more efficient way for animating by calling the animation frame when the system is ready to paint the frame. The number of callbacks is usually 60 times per second and may be reduced to a lower rate when running in background tabs. For more information about the animation loop, especially for games, see the article [Anatomy of a video game](/en-US/docs/Games/Anatomy) in our [Game development zone](/en-US/docs/Games).
 
-## Một hệ mặt trời hoạt ảnh
+## An animated solar system
 
-Ví dụ này mô phỏng một mô hình nhỏ của hệ mặt trời của chúng ta.
+This example animates a small model of our solar system.
 
 ### HTML
 
@@ -113,13 +113,13 @@ function draw() {
 init();
 ```
 
-### Kết quả
+### Result
 
 {{EmbedLiveSample("An_animated_solar_system", "310", "340")}}
 
-## Một đồng hồ hoạt ảnh
+## An animated clock
 
-Ví dụ: đây vẽ một đồng hồ hoạt ảnh, hiển thị thời gian hiện tại của bạn.
+This example draws an animated clock, showing your current time.
 
 ### HTML
 
@@ -237,21 +237,21 @@ function clock() {
 window.requestAnimationFrame(clock);
 ```
 
-### Kết quả
+### Result
 
 > [!NOTE]
-> Mặc dù cập nhật chỉ hồ sơ mỗi giây một lần nhưng hình ảnh được cập nhật ở tốc độ 60 khung hình mỗi giây (hoặc ở tốc độ làm mới màn hình của trình duyệt web của bạn).
-> Để hiển thị đồng hồ với kim giây quét, hãy thay thế `const sec` định nghĩa ở trên bằng phiên bản đã được nhận xét.
+> Although the clock updates only once every second, the animated image is updated at 60 frames per second (or at the display refresh rate of your web browser).
+> To display the clock with a sweeping second hand, replace the definition of `const sec` above with the version that has been commented out.
 
 {{EmbedLiveSample("An_animated_clock", "180", "200")}}
 
-## Một bức tranh toàn cảnh lặp lại
+## A looping panorama
 
-Trong ví dụ này, ảnh toàn cảnh được cuộn từ trái sang phải. Chúng tôi đang sử dụng [hình ảnh về Công viên Quốc gia Yosemite](https://commons.wikimedia.org/wiki/File:Capitan_Meadows,_Yosemite_National_Park.jpg) mà chúng tôi lấy từ Wikipedia, nhưng bạn có thể sử dụng bất kỳ hình ảnh nào lớn hơn khung vẽ.
+In this example, a panorama is scrolled left-to-right. We're using [an image of Yosemite National Park](https://commons.wikimedia.org/wiki/File:Capitan_Meadows,_Yosemite_National_Park.jpg) we took from Wikipedia, but you could use any image that's larger than the canvas.
 
 ### HTML
 
-Bao HTML bao gồm {{HTMLElement("canvas")}} trong đó hình ảnh được cuộn. Lưu ý rằng chiều rộng và chiều cao được chỉ định ở đây phải khớp với giá trị của biến `canvasXSize` và `canvasYSize` trong JavaScript mã hóa.
+The HTML includes the {{HTMLElement("canvas")}} in which the image is scrolled. Note that the width and height specified here must match the values of the `canvasXSize` and `canvasYSize` variables in the JavaScript code.
 
 ```html
 <canvas id="canvas" width="800" height="200"
@@ -342,11 +342,11 @@ function draw() {
 }
 ```
 
-### Kết quả
+### Result
 
 {{EmbedLiveSample("A_looping_panorama", "830", "250")}}
 
-## Chuột theo hình ảnh động
+## Mouse following animation
 
 ### HTML
 
@@ -469,13 +469,13 @@ function anim() {
 }
 ```
 
-### Kết quả
+### Result
 
 {{EmbedLiveSample("Mouse_following_animation", "500", "500")}}
 
-## Các ví dụ khác
+## Other examples
 
-- [Hình ảnh động nâng cao](/en-US/docs/Web/API/Canvas_API/Tutorial/Advanced_animations)
-  - : Chúng ta sẽ xem xét một số kỹ thuật hoạt ảnh và vật lý nâng cao trong chương trình tiếp theo.
+- [Advanced animations](/en-US/docs/Web/API/Canvas_API/Tutorial/Advanced_animations)
+  - : We will have a look at some advanced animation techniques and physics in the next chapter.
 
 {{PreviousNext("Web/API/Canvas_API/Tutorial/Compositing", "Web/API/Canvas_API/Tutorial/Advanced_animations")}}

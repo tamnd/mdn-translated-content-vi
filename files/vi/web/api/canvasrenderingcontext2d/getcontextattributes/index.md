@@ -1,6 +1,6 @@
 ---
-title: "CanvasRenderingContext2D: phương thức getContextAttribut()"
-short-title: getContextAttribut()
+title: "CanvasRenderingContext2D: getContextAttributes() method"
+short-title: getContextAttributes()
 slug: Web/API/CanvasRenderingContext2D/getContextAttributes
 page-type: web-api-instance-method
 browser-compat: api.CanvasRenderingContext2D.getContextAttributes
@@ -8,39 +8,44 @@ browser-compat: api.CanvasRenderingContext2D.getContextAttributes
 
 {{APIRef("WebGL")}}
 
-Phương thức **`CanvasRenderingContext2D.getContextAttributes()`** trả về một đối tượng chứa các thuộc tính được ngữ cảnh sử dụng.
+The **`CanvasRenderingContext2D.getContextAttributes()`** method returns an object that contains attributes used by the context.
 
-Lưu ý rằng các thuộc tính ngữ cảnh có thể được yêu cầu khi tạo ngữ cảnh với [`HTMLCanvasElement.getContext()`](/en-US/docs/Web/API/HTMLCanvasElement/getContext), nhưng các thuộc tính được hỗ trợ và sử dụng thực sự có thể khác nhau.
+Note that context attributes may be requested when creating the context with [`HTMLCanvasElement.getContext()`](/en-US/docs/Web/API/HTMLCanvasElement/getContext), but the attributes that are actually supported and used may differ.
 
-## Cú pháp
+## Syntax
 
 ```js-nolint
 getContextAttributes()
 ```
 
-### Tham số
+### Parameters
 
-Không có.
+None.
 
-### Giá trị trả về
+### Return value
 
-Đối tượng `CanvasRenderingContext2DSettings` chứa các tham số ngữ cảnh thực tế. Nó có các thành viên sau:
+A `CanvasRenderingContext2DSettings` object that contains the actual context parameters.
+It has the following members:
 
-- `alpha`{{optional_inline}}
-- : Boolean cho biết canvas có chứa kênh alpha hay không.
-  Nếu `false`, phông nền luôn mờ đục, điều này có thể tăng tốc độ vẽ nội dung và hình ảnh trong suốt.
-- `colorSpace`{{optional_inline}}
-- : Cho biết không gian màu của bối cảnh hiển thị. Các giá trị có thể là: -`srgb`: biểu thị [sRGB color space](https://en.wikipedia.org/wiki/SRGB)-`display-p3`: biểu thị [display-p3 color space](https://en.wikipedia.org/wiki/DCI-P3)
-- `colorType`{{optional_inline}}
-- : Cho biết loại màu của bối cảnh hiển thị. Các giá trị có thể là: -`"unorm8"`biểu thị các kênh màu thành các giá trị không dấu 8 bit. Đây là giá trị mặc định. -`"float16"` biểu thị các kênh màu thành các giá trị dấu phẩy động 16-bit.
-- `desynchronized`{{optional_inline}}
-- : Boolean chỉ ra tác nhân người dùng đã giảm độ trễ bằng cách giải đồng bộ hóa chu trình vẽ canvas khỏi vòng lặp sự kiện.
-- `willReadFrequently`{{optional_inline}}
-- : Boolean cho biết canvas này có sử dụng khả năng tăng tốc phần mềm (thay vì tăng tốc phần cứng) để hỗ trợ các hoạt động đọc lại thường xuyên thông qua {{domxref("CanvasRenderingContext2D.getImageData", "getImageData()")}} hay không.
+- `alpha` {{optional_inline}}
+  - : A Boolean indicating if the canvas contains an alpha channel.
+    If `false`, the backdrop is always opaque, which can speed up drawing of transparent content and images.
+- `colorSpace` {{optional_inline}}
+  - : Indicates the color space of the rendering context. Possible values are:
+    - `srgb`: denotes the [sRGB color space](https://en.wikipedia.org/wiki/SRGB)
+    - `display-p3`: denotes the [display-p3 color space](https://en.wikipedia.org/wiki/DCI-P3)
+- `colorType` {{optional_inline}}
+  - : Indicates the color type of the rendering context. Possible values are:
+    - `"unorm8"` denotes the color channels to 8 bit unsigned values. This is the default value.
+    - `"float16"` denotes the color channels to 16-bit floating-point values.
+- `desynchronized` {{optional_inline}}
+  - : A Boolean indicating the user agent reduced the latency by desynchronizing the canvas paint cycle from the event loop.
+- `willReadFrequently` {{optional_inline}}
+  - : A Boolean indicating whether or not this canvas uses software acceleration (instead of hardware acceleration) to support frequent read-back operations via {{domxref("CanvasRenderingContext2D.getImageData", "getImageData()")}}.
 
-## Ví dụ
+## Examples
 
-Ví dụ này cho thấy cách bạn có thể chỉ định các thuộc tính ngữ cảnh khi tạo ngữ cảnh canvas, sau đó gọi `getContextAttributes()` để đọc lại các tham số thực tế mà trình duyệt đã sử dụng.
+This example shows how you can specify context attributes when creating a canvas context, and then call `getContextAttributes()` to read back the actual parameters that the browser used.
 
 ```html hidden
 <pre id="log"></pre>
@@ -53,14 +58,14 @@ function log(text) {
 }
 ```
 
-Đầu tiên chúng ta tạo ngữ cảnh bằng cách sử dụng [`HTMLCanvasElement.getContext()`](/en-US/docs/Web/API/HTMLCanvasElement/getContext), chỉ xác định một thuộc tính ngữ cảnh.
+First we create a context using [`HTMLCanvasElement.getContext()`](/en-US/docs/Web/API/HTMLCanvasElement/getContext), specifying just one context attribute.
 
 ```js
 let canvas = document.createElement("canvas");
 let ctx = canvas.getContext("2d", { alpha: false });
 ```
 
-Nếu phương thức `getContextAttributes()` được hỗ trợ, chúng tôi sẽ sử dụng nó để đọc lại các thuộc tính thực tế được trình duyệt sử dụng (bao gồm cả những thuộc tính chúng tôi đã chỉ định rõ ràng):
+If the `getContextAttributes()` method is supported, we use it to read back the actual attributes used by the browser (including those we explicitly specified):
 
 ```js
 if (ctx.getContextAttributes) {
@@ -71,19 +76,19 @@ if (ctx.getContextAttributes) {
 }
 ```
 
-Tùy thuộc vào các thuộc tính được trình duyệt hỗ trợ, nhật ký bên dưới sẽ hiển thị một chuỗi trông giống như:`{alpha: false, colorSpace: 'srgb', desynchronized: false, willReadFrequently: false}`
+Depending on the attributes supported by the browser, the log below should display a string that looks something like: `{alpha: false, colorSpace: 'srgb', desynchronized: false, willReadFrequently: false}`
 
 {{EmbedLiveSample('Examples','100%','50')}}
 
-## Thông số kỹ thuật
+## Specifications
 
 {{Specifications}}
 
-## Tương thích trình duyệt
+## Browser compatibility
 
 {{Compat}}
 
-## Xem thêm
+## See also
 
 - [`HTMLCanvasElement.getContext()`](/en-US/docs/Web/API/HTMLCanvasElement/getContext)
 - [`WebGLRenderingContext.getContextAttributes()`](/en-US/docs/Web/API/WebGLRenderingContext/getContextAttributes)
