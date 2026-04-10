@@ -51,7 +51,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [x] api/web_storage_api (2 trang)
 - [x] api/storage (7 trang)
-- [ ] api/storageevent (8 trang)
+- [x] api/storageevent (8 trang)
 - [x] api/storagemanager (5 trang)
 - [ ] api/indexeddb_api (4 trang)
 - [ ] api/idbdatabase (10 trang)
