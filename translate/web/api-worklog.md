@@ -280,7 +280,7 @@ Reviewed pages:
 
 Rechecked the `AudioDecoder` family against the English source after the previous verification. The Vietnamese pages remain aligned, and no page-level edits were necessary.
 
-## Batch 28
+## Batch 31
 
 Checked the `AudioParam` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
 
@@ -317,3 +317,26 @@ Reviewed pages:
 10. `Web/API/AudioListener/upX`
 11. `Web/API/AudioListener/upY`
 12. `Web/API/AudioListener/upZ`
+
+## Batch 28
+
+Checked the `AudioProcessingEvent` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
+
+Reviewed pages:
+
+1. `Web/API/AudioProcessingEvent`
+2. `Web/API/AudioProcessingEvent/AudioProcessingEvent`
+3. `Web/API/AudioProcessingEvent/inputBuffer`
+4. `Web/API/AudioProcessingEvent/outputBuffer`
+5. `Web/API/AudioProcessingEvent/playbackTime`
+
+## Batch 31
+
+Checked the `AudioScheduledSourceNode` family against the English source. The Vietnamese pages for this family are already present and aligned, so no page-level changes were needed in this batch.
+
+Reviewed pages:
+
+1. `Web/API/AudioScheduledSourceNode`
+2. `Web/API/AudioScheduledSourceNode/start`
+3. `Web/API/AudioScheduledSourceNode/stop`
+4. `Web/API/AudioScheduledSourceNode/ended_event`
