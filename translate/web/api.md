@@ -60,7 +60,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/idbtransaction (12 trang)
 - [ ] api/idbindex (16 trang)
 - [x] api/idbkeyrange (10 trang)
-- [ ] api/idbcursor (11 trang)
+- [x] api/idbcursor (11 trang)
 - [x] api/idbrequest (8 trang)
 - [x] api/cachestorage (6 trang)
 - [ ] api/cache (8 trang)
