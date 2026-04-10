@@ -33,7 +33,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Fetch / XHR / Mạng [ưu tiên cao]
 
-- [ ] api/fetch_api (3 trang)
+- [x] api/fetch_api (3 trang)
 - [ ] api/request (26 trang)
 - [ ] api/response (21 trang)
 - [ ] api/headers (12 trang)

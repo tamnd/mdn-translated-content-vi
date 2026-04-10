@@ -23,11 +23,11 @@ Khi đã nhận được một {{DOMxRef("Response")}}, sẽ có nhiều phươn
 
 Bạn có thể tạo trực tiếp một yêu cầu và phản hồi bằng các bộ khởi tạo {{DOMxRef("Request.Request", "Request()")}} và {{DOMxRef("Response.Response", "Response()")}}, nhưng việc này không thường được thực hiện trực tiếp. Thay vào đó, các đối tượng này thường được tạo ra như kết quả của những hành động API khác, ví dụ {{DOMxRef("FetchEvent.respondWith()")}} từ service worker.
 
-Tìm hiểu thêm về cách dùng các tính năng của Fetch API trong [Dùng Fetch](/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+Tìm hiểu thêm về cách dùng các tính năng của Fetch API trong [Sử dụng Fetch API](/en-US/docs/Web/API/Fetch_API/Using_Fetch).
 
 ### Deferred Fetch
 
-API {{domxref("Window/fetchLater", "fetchLater()")}} cho phép nhà phát triển yêu cầu một _deferred fetch_, tức một yêu cầu truy xuất có thể được gửi sau một khoảng thời gian xác định, hoặc khi trang bị đóng hay điều hướng đi nơi khác. Xem [Dùng Deferred Fetch](/en-US/docs/Web/API/Fetch_API/Using_Deferred_Fetch).
+API {{domxref("Window/fetchLater", "fetchLater()")}} cho phép nhà phát triển yêu cầu một _deferred fetch_, tức một yêu cầu truy xuất có thể được gửi sau một khoảng thời gian xác định, hoặc khi trang bị đóng hay điều hướng đi nơi khác. Xem [Sử dụng Deferred Fetch](/en-US/docs/Web/API/Fetch_API/Using_Deferred_Fetch).
 
 ## Giao diện
 
@@ -46,7 +46,7 @@ API {{domxref("Window/fetchLater", "fetchLater()")}} cho phép nhà phát triể
 - {{DOMxRef("Response")}}
   - : Biểu diễn phản hồi cho một yêu cầu.
 
-## Header HTTP
+## Tiêu đề HTTP
 
 - {{HTTPHeader("Permissions-Policy/deferred-fetch", "deferred-fetch")}}
   - : Kiểm soát [hạn mức cấp cao nhất](/en-US/docs/Web/API/Fetch_API/Using_Deferred_Fetch#quotas) cho API `fetchLater()`.
