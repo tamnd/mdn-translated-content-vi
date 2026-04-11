@@ -265,7 +265,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Mật mã
 
-- [ ] api/web_crypto_api (2 trang)
+- [x] api/web_crypto_api (2 trang)
 - [x] api/crypto (4 trang)
 - [x] api/subtlecrypto (13 trang)
 - [x] api/cryptokey (5 trang)
@@ -307,7 +307,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/barcode_detection_api (1 trang)
 - [x] api/eyedropper_api (1 trang)
 - [x] api/local_font_access_api (1 trang)
-- [ ] api/web_speech_api (2 trang)
+- [x] api/web_speech_api (2 trang)
 - [x] api/speechrecognition (25 trang)
 - [ ] api/speechsynthesis (10 trang)
 - [x] api/web_midi_api (1 trang)
@@ -319,9 +319,9 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/webvr_api (4 trang)
 - [ ] api/web_animations_api (5 trang)
 - [x] api/animation (25 trang)
-- [ ] api/reporting_api (1 trang)
+- [x] api/reporting_api (1 trang)
 - [x] api/fedcm_api (3 trang)
 - [x] api/web_bluetooth_api (1 trang)
-- [ ] api/web_nfc_api (1 trang)
+- [x] api/web_nfc_api (1 trang)
 - [x] api/trusted_types_api (1 trang)
 - [ ] _(các giao diện `api/_` còn lại)\_\*
