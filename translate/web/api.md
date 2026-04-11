@@ -7,7 +7,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## DOM cốt lõi [ưu tiên cao]
 
-- [ ] api/document (147 trang)
+- [x] api/document (147 trang)
 - [ ] api/element (215 trang)
 - [x] api/node (31 trang)
 - [ ] api/window (158 trang)
@@ -70,7 +70,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Phần tử HTML (giao diện DOM) [ưu tiên cao]
 
-- [ ] api/htmlinputelement (65 trang)
+- [x] api/htmlinputelement (65 trang)
 - [ ] api/htmlmediaelement (72 trang)
 - [ ] api/htmlformelement (22 trang)
 - [ ] api/htmlcanvaselement (14 trang)
@@ -78,26 +78,26 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/htmlvideoelement (14 trang)
 - [ ] api/htmlselectelement (26 trang)
 - [ ] api/htmltextareaelement (33 trang)
-- [ ] api/htmlanchorelement (25 trang)
+- [x] api/htmlanchorelement (25 trang)
 - [ ] api/htmlscriptelement (16 trang)
-- [ ] api/htmllinkelement (18 trang)
-- [ ] api/htmliframeelement (20 trang)
+- [x] api/htmllinkelement (18 trang)
+- [x] api/htmliframeelement (20 trang)
 - [ ] api/htmltableelement (24 trang)
 - [ ] api/htmlbuttonelement (23 trang)
 - [ ] api/htmlareaelement (23 trang)
 - [ ] api/htmloutputelement (15 trang)
-- [ ] api/htmlfieldsetelement (12 trang)
-- [ ] api/htmldialogElement (10 trang)
+- [x] api/htmlfieldsetelement (12 trang)
+- [x] api/htmldialogElement (10 trang)
 - [ ] _(các giao diện `html_` còn lại)\_\*
 
 ## Canvas / Đồ họa 2D [ưu tiên cao]
 
-- [ ] api/canvas_api (15 trang)
-- [ ] api/canvasrenderingcontext2d (74 trang)
-- [ ] api/imagedata (7 trang)
-- [ ] api/path2d (3 trang)
-- [ ] api/canvasgradient (2 trang)
-- [ ] api/canvaspattern (2 trang)
+- [x] api/canvas_api (15 trang)
+- [x] api/canvasrenderingcontext2d (74 trang)
+- [x] api/imagedata (7 trang)
+- [x] api/path2d (3 trang)
+- [x] api/canvasgradient (2 trang)
+- [x] api/canvaspattern (2 trang)
 - [ ] api/offscreencanvas (9 trang)
 - [ ] api/imagebitmap (4 trang)
 
@@ -137,7 +137,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/inputevent (7 trang)
 - [x] api/compositionevent (5 trang)
 - [x] api/wheelevent (6 trang)
-- [ ] api/focusevent (3 trang)
+- [x] api/focusevent (3 trang)
 - [ ] api/dragevent (3 trang)
 - [x] api/clipboardevent (3 trang)
 - [x] api/clipboard (6 trang)
