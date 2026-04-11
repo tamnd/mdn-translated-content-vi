@@ -7,7 +7,7 @@ browser-compat: api.HTMLAreaElement
 
 {{APIRef("HTML DOM")}}
 
-Giao diện **`HTMLAreaElement`** cung cấp các thuộc tính và phương thức đặc biệt (bổ sung cho giao diện {{domxref("HTMLElement")}} thông thường mà nó kế thừa) để thao tác bố cục và cách trình bày của các phần tử {{HtmlElement("area")}}.
+Giao diện **`HTMLAreaElement`** cung cấp các thuộc tính và phương thức đặc biệt (bổ sung cho giao diện {{domxref("HTMLElement")}} thông thường mà nó kế thừa) để thao tác bố cục và cách trình bày của các phần tử {{htmlelement("area")}}.
 
 {{InheritanceDiagram}}
 

@@ -8,13 +8,13 @@ browser-compat: api.performance
 
 {{APIRef("Performance API")}}
 
-The **`performance`** property of the {{domxref("Window")}} interface returns a {{domxref("Performance")}} object, which can be used to gather performance information about code running in the window's scope.
+Thuộc tính **`performance`** của giao diện {{domxref("Window")}} trả về một đối tượng {{domxref("Performance")}}, có thể dùng để thu thập thông tin hiệu năng về mã đang chạy trong phạm vi của cửa sổ.
 
-Performance entries are per context. If you create a mark on the main thread (or other worker), you cannot see it in a worker thread, and vice versa.
+Các performance entry là theo từng ngữ cảnh. Nếu bạn tạo một mark trên luồng chính (hoặc một worker khác), bạn sẽ không thấy nó trong một worker thread, và ngược lại.
 
 ## Giá trị
 
-A {{domxref("Performance")}} object offering access to performance and timing-related information about code running in the window's scope.
+Một đối tượng {{domxref("Performance")}} cung cấp quyền truy cập vào thông tin liên quan đến hiệu năng và thời gian của mã đang chạy trong phạm vi của cửa sổ.
 
 ## Đặc tả kỹ thuật
 
