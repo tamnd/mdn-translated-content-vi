@@ -7,8 +7,7 @@ browser-compat:
   - api.WebGL2RenderingContext
 ---
 
-{{DefaultAPISidebar("WebGL")}}{{AvailableInWorkers}}
-
+{{DefaultAPISidebar("WebGL")}}{{AvailableInWorkers}}orkers}}
 **WebGL** (Web Graphics Library) là một API JavaScript dùng để kết xuất đồ họa 3D và 2D tương tác hiệu năng cao trong bất kỳ trình duyệt web tương thích nào mà không cần dùng plug-in. WebGL làm được điều đó bằng cách giới thiệu một API tuân thủ chặt chẽ OpenGL ES 2.0, có thể dùng trong các phần tử HTML {{HTMLElement("canvas")}}. Sự tương thích này giúp API tận dụng được khả năng tăng tốc đồ họa phần cứng do thiết bị của người dùng cung cấp.
 
 Hỗ trợ WebGL có sẵn trong tất cả các trình duyệt hiện đại (xem các [bảng tương thích](#browser_compatibility) bên dưới); tuy nhiên, thiết bị của người dùng cũng phải có phần cứng hỗ trợ các tính năng này.
@@ -46,8 +45,7 @@ Phần tử {{HTMLElement("canvas")}} cũng được [Canvas API](/en-US/docs/We
 - {{domxref("EXT_color_buffer_float")}}
 - {{domxref("EXT_color_buffer_half_float")}}
 - {{domxref("EXT_disjoint_timer_query")}}
-- {{domxref("EXT_float_blend")}} {{experimental_inline}}
-- {{domxref("EXT_frag_depth")}}
+- {{domxref("EXT_float_blend")}} {{experimental_inline}}nline}}- {{domxref("EXT_frag_depth")}}
 - {{domxref("EXT_shader_texture_lod")}}
 - {{domxref("EXT_sRGB")}}
 - {{domxref("EXT_texture_compression_bptc")}}

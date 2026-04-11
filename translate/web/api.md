@@ -245,7 +245,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## WebGL / WebGPU
 
-- [ ] api/webgl_api (34 trang)
+- [x] api/webgl_api (34 trang)
 - [ ] api/webglrenderingcontext (118 trang)
 - [x] api/webgl2renderingcontext (74 trang)
 - [x] api/webgpu_api (1 trang)
