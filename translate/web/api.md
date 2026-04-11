@@ -194,15 +194,15 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/media_capture_and_streams_api (3 trang)
 - [x] api/media_source_extensions_api (3 trang)
 - [x] api/mediasource (17 trang)
-- [ ] api/sourcebuffer (21 trang)
+- [x] api/sourcebuffer (21 trang)
 - [ ] api/htmlmediaelement — xem nhóm Phần tử HTML ở trên
 - [ ] _(các giao diện âm thanh/video còn lại)_
 
 ## WebRTC
 
-- [ ] api/webrtc_api (21 trang)
+- [x] api/webrtc_api (21 trang)
 - [ ] api/rtcpeerconnection (49 trang)
-- [ ] api/rtcdatachannel (22 trang)
+- [x] api/rtcdatachannel (22 trang)
 - [x] api/rtcicecandidate (17 trang)
 - [x] api/rtcsessiondescription (5 trang)
 - [x] api/rtcrtpsender (11 trang)
