@@ -149,6 +149,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/serial (3 trang)
 - [x] api/hid (5 trang)
 - [x] api/webhid_api (1 trang)
+- [x] api/web_bluetooth_api (1 trang)
+- [x] api/web_nfc_api (1 trang)
 
 ## API điều hướng và lịch sử
 
@@ -166,6 +168,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/pushmanager (9 trang)
 - [x] api/pushsubscription (8 trang)
 - [x] api/pushmessagedata (6 trang)
+- [x] api/reporting_api (1 trang)
 
 ## Intersection / Resize / Mutation Observer
 
@@ -292,8 +295,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/broadcast_channel_api (1 trang)
 - [x] api/channel_messaging_api (2 trang)
 - [x] api/battery_status_api (1 trang)
-- [ ] api/network_information_api (1 trang)
-- [ ] api/page_visibility_api (1 trang)
+- [x] api/network_information_api (1 trang)
+- [x] api/page_visibility_api (1 trang)
 - [ ] api/fullscreen_api (2 trang)
 - [ ] api/picture-in-picture_api (1 trang)
 - [ ] api/screen_capture_api (4 trang)
@@ -302,8 +305,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/web_share_api (1 trang)
 - [x] api/contact_picker_api (1 trang)
 - [x] api/barcode_detection_api (1 trang)
-- [ ] api/eyedropper_api (1 trang)
-- [ ] api/local_font_access_api (1 trang)
+- [x] api/eyedropper_api (1 trang)
+- [x] api/local_font_access_api (1 trang)
 - [ ] api/web_speech_api (2 trang)
 - [x] api/speechrecognition (25 trang)
 - [ ] api/speechsynthesis (10 trang)
