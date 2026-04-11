@@ -259,8 +259,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/web_components (4 trang)
 - [ ] api/customelementregistry (8 trang)
 - [x] api/shadowroot (21 trang) — xem DOM cốt lõi
-- [ ] api/htmlslotelement (6 trang)
-- [ ] api/htmltemplateelement (7 trang)
+- [x] api/htmlslotelement (6 trang)
+- [x] api/htmltemplateelement (7 trang)
 - [ ] api/elementinternals (64 trang)
 
 ## Mật mã
