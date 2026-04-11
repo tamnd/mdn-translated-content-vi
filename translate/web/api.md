@@ -224,9 +224,9 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## Hiệu năng
 
 - [x] api/performance_api (9 trang)
-- [ ] api/performance (20 trang)
+- [x] api/performance (20 trang)
 - [x] api/performanceentry (6 trang)
-- [ ] api/performanceresourcetiming (26 trang)
+- [x] api/performanceresourcetiming (26 trang)
 - [x] api/performancenavigationtiming (15 trang)
 - [x] api/performanceobserver (6 trang)
 - [ ] _(các giao diện `performance_` còn lại)\_\*
