@@ -307,7 +307,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/web_speech_api (2 trang)
 - [x] api/speechrecognition (25 trang)
 - [ ] api/speechsynthesis (10 trang)
-- [ ] api/web_midi_api (1 trang)
+- [x] api/web_midi_api (1 trang)
 - [ ] api/usb (5 trang)
 - [ ] api/serial (3 trang)
 - [ ] api/hid (5 trang)
