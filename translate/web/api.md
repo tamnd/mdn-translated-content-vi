@@ -71,7 +71,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## Phần tử HTML (giao diện DOM) [ưu tiên cao]
 
 - [x] api/htmlinputelement (65 trang)
-- [ ] api/htmlmediaelement (72 trang)
+- [x] api/htmlmediaelement (72 trang)
 - [ ] api/htmlformelement (22 trang)
 - [x] api/htmlcanvaselement (14 trang)
 - [x] api/htmlimageelement (29 trang)
