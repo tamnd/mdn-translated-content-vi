@@ -213,7 +213,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Mô hình đối tượng CSS (CSSOM)
 
-- [ ] api/css_object_model (7 trang)
+- [x] api/css_object_model (7 trang)
 - [x] api/cssstyledeclaration (11 trang)
 - [x] api/cssstylerule (4 trang)
 - [x] api/cssstylesheet (11 trang)
@@ -257,7 +257,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## Web Components
 
 - [x] api/web_components (4 trang)
-- [ ] api/customelementregistry (8 trang)
+- [x] api/customelementregistry (8 trang)
 - [x] api/shadowroot (21 trang) — xem DOM cốt lõi
 - [x] api/htmlslotelement (6 trang)
 - [x] api/htmltemplateelement (7 trang)
