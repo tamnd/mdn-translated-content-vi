@@ -278,7 +278,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Linh tinh (ưu tiên thấp)
 
-- [ ] api/navigator (76 trang)
+- [x] api/navigator (76 trang)
 - [x] api/screen (15 trang)
 - [x] api/console (23 trang)
 - [x] api/console_api (1 trang)
