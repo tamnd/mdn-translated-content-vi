@@ -6,7 +6,7 @@ page-type: web-api-instance-property
 browser-compat: api.URL.host
 ---
 
-{{ApiRef("URL API")}} {{AvailableInWorkers}}
+{{APIRef("URL API")}} {{AvailableInWorkers}}
 
 Thuộc tính **`host`** của giao diện {{domxref("URL")}} là một chuỗi chứa host, tức là {{domxref("URL.hostname", "hostname")}}, và sau đó, nếu {{glossary("port")}} của URL không rỗng, một `":"`, theo sau là {{domxref("URL.port", "port")}} của URL. Nếu URL không có `hostname`, thuộc tính này chứa chuỗi rỗng, `""`.
 

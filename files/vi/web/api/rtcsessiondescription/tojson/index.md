@@ -32,7 +32,7 @@ Một đối tượng {{jsxref("JSON")}} chứa các thuộc tính sau:
 ## Ví dụ
 
 ```js
-// sd là một RTCSessionDescriptor
+// sd là một RTCSessionDescription
 
 alert(JSON.stringify(sd)); // Lệnh này gọi phương thức toJSON() đằng sau hậu trường.
 ```

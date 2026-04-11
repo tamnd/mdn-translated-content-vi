@@ -204,7 +204,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/rtcpeerconnection (49 trang)
 - [ ] api/rtcdatachannel (22 trang)
 - [ ] api/rtcicecandidate (17 trang)
-- [ ] api/rtcsessiondescription (5 trang)
+- [x] api/rtcsessiondescription (5 trang)
 - [x] api/rtcrtpsender (11 trang)
 - [ ] api/rtcrtpreceiver (10 trang)
 - [ ] api/rtcrtptransceiver (9 trang)
