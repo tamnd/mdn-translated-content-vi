@@ -24,10 +24,10 @@ Ví dụ sau minh họa cách bật hoặc tắt khả năng kéo của phần t
 const draggableElement = document.querySelector(".draggable-element");
 const notDraggableElement = document.querySelector(".not-draggable-element");
 
-// enable the target element's ability to drag
+// Bật khả năng kéo của phần tử mục tiêu
 draggableElement.draggable = true;
 
-// disable the target element's ability to drag
+// Tắt khả năng kéo của phần tử mục tiêu
 notDraggableElement.draggable = false;
 ```
 

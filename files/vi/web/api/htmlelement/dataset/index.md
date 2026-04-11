@@ -99,17 +99,17 @@ const el = document.querySelector("#user");
 
 // set a data attribute
 el.dataset.dateOfBirth = "1960-10-03";
-// Result on JS: el.dataset.dateOfBirth === '1960-10-03'
-// Result on HTML: <div id="user" data-id="1234567890" data-user="carinaanand" data-date-of-birth="1960-10-03">Carina Anand</div>
+// Kết quả trên JS: el.dataset.dateOfBirth === '1960-10-03'
+// Kết quả trên HTML: <div id="user" data-id="1234567890" data-user="carinaanand" data-date-of-birth="1960-10-03">Carina Anand</div>
 
 delete el.dataset.dateOfBirth;
-// Result on JS: el.dataset.dateOfBirth === undefined
-// Result on HTML: <div id="user" data-id="1234567890" data-user="carinaanand">Carina Anand</div>
+// Kết quả trên JS: el.dataset.dateOfBirth === undefined
+// Kết quả trên HTML: <div id="user" data-id="1234567890" data-user="carinaanand">Carina Anand</div>
 
 if (el.dataset.someDataAttr === undefined) {
   el.dataset.someDataAttr = "mydata";
-  // Result on JS: 'someDataAttr' in el.dataset === true
-  // Result on HTML: <div id="user" data-id="1234567890" data-user="carinaanand" data-some-data-attr="mydata">Carina Anand</div>
+  // Kết quả trên JS: 'someDataAttr' in el.dataset === true
+  // Kết quả trên HTML: <div id="user" data-id="1234567890" data-user="carinaanand" data-some-data-attr="mydata">Carina Anand</div>
 }
 ```
 

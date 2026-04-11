@@ -36,7 +36,7 @@ const popover = document.getElementById("mypopover");
 
 popover.addEventListener("command", (event) => {
   if (event.command === "show-popover") {
-    console.log("Popover is about to be shown");
+    console.log("Popover sắp được hiển thị");
   }
 });
 ```

@@ -34,7 +34,7 @@ btn.onclick = () => {
 
 ### Kết quả
 
-{{ EmbedLiveSample('Example') }}
+{{EmbedLiveSample('Example')}}
 
 ## Đặc tả kỹ thuật
 

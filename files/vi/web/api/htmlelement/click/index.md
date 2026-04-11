@@ -48,7 +48,7 @@ checkbox.addEventListener("mouseover", () => {
 });
 
 checkbox.addEventListener("click", () => {
-  console.log("click event occurred");
+  console.log("Sự kiện click đã xảy ra");
 });
 ```
 

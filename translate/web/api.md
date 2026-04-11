@@ -77,7 +77,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/htmlimageelement (29 trang)
 - [x] api/htmlvideoelement (14 trang)
 - [x] api/htmlselectelement (26 trang)
-- [ ] api/htmltextareaelement (33 trang)
+- [x] api/htmltextareaelement (33 trang)
 - [x] api/htmlanchorelement (25 trang)
 - [x] api/htmlscriptelement (16 trang)
 - [x] api/htmllinkelement (18 trang)

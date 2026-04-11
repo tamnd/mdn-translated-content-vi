@@ -32,7 +32,7 @@ Ví dụ này cho thấy cách bạn có thể bật và tắt tự động sử
 Lưu ý rằng nếu tự động sửa lỗi được hỗ trợ, nó sẽ được bật theo mặc định.
 
 ```html
-<button id="toggleAutocorrect">Unknown</button>
+<button id="toggleAutocorrect">Chưa rõ</button>
 <input type="search" id="searchinput" />
 ```
 
@@ -68,7 +68,7 @@ const toggleButton = document.querySelector("button");
 const searchInput = document.querySelector("#searchinput");
 
 function setButtonText() {
-  toggleButton.textContent = searchInput.autocorrect ? "Enabled" : "Disabled";
+  toggleButton.textContent = searchInput.autocorrect ? "Đã bật" : "Đã tắt";
   log(`autocorrect: ${searchInput.autocorrect}`);
 }
 
@@ -82,7 +82,7 @@ if (`autocorrect` in HTMLElement.prototype) {
 } else {
   toggleButton.hidden = true;
   searchInput.hidden = true;
-  log("autocorrect not supported");
+  log("autocorrect không được hỗ trợ");
 }
 ```
 

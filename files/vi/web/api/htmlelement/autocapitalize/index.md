@@ -35,17 +35,17 @@ Một chuỗi thể hiện hành vi viết hoa của phần tử đối với đ
 Ví dụ sau cho thấy cách kiểm soát hành vi viết hoa đối với đầu vào từ người dùng thông qua script:
 
 ```html
-<div>Current capitalization behavior is: <span id="ac-label"></span></div>
+<div>Hành vi viết hoa hiện tại là: <span id="ac-label"></span></div>
 <div id="ac-element" contenteditable="true" autocapitalize="default">
-  input here
+  nhập vào đây
 </div>
 <select id="ac-controller" type="checkbox" checked>
-  <option value="default">default</option>
-  <option value="none">none</option>
-  <option value="sentences">sentences</option>
-  <option value="words">words</option>
-  <option value="characters">characters</option></select
->Select the capitalization behavior
+  <option value="default">mặc định</option>
+  <option value="none">không</option>
+  <option value="sentences">câu</option>
+  <option value="words">từ</option>
+  <option value="characters">ký tự</option></select
+>Chọn hành vi viết hoa
 ```
 
 ```js
