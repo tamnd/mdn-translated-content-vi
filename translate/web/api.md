@@ -116,7 +116,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/serviceworkerregistration (19 trang)
 - [x] api/serviceworkerglobalscope (25 trang)
 - [x] api/scheduler (3 trang)
-- [ ] api/prioritized_task_scheduling_api (1 trang)
+- [x] api/prioritized_task_scheduling_api (1 trang)
 
 ## API Streams
 
@@ -138,7 +138,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/compositionevent (5 trang)
 - [x] api/wheelevent (6 trang)
 - [x] api/focusevent (3 trang)
-- [ ] api/dragevent (3 trang)
+- [x] api/dragevent (3 trang)
 - [x] api/clipboardevent (3 trang)
 - [x] api/clipboard (6 trang)
 - [x] api/clipboard_api (1 trang)
@@ -191,7 +191,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/mediastream (13 trang)
 - [x] api/mediastreamtrack (17 trang)
 - [ ] api/mediarecorder (20 trang)
-- [ ] api/media_capture_and_streams_api (3 trang)
+- [x] api/media_capture_and_streams_api (3 trang)
 - [x] api/media_source_extensions_api (3 trang)
 - [ ] api/mediasource (17 trang)
 - [ ] api/sourcebuffer (21 trang)
@@ -215,7 +215,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [ ] api/css_object_model (7 trang)
 - [x] api/cssstyledeclaration (11 trang)
-- [ ] api/cssstylerule (4 trang)
+- [x] api/cssstylerule (4 trang)
 - [x] api/cssstylesheet (11 trang)
 - [ ] api/cssrule (5 trang)
 - [x] api/css (7 trang)
@@ -248,7 +248,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/webgl_api (34 trang)
 - [ ] api/webglrenderingcontext (118 trang)
 - [x] api/webgl2renderingcontext (74 trang)
-- [ ] api/webgpu_api (1 trang)
+- [x] api/webgpu_api (1 trang)
 - [ ] api/gpu (4 trang)
 - [ ] api/gpudevice (26 trang)
 - [ ] api/gpucommandencoder (15 trang)
@@ -286,7 +286,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/textencoder (5 trang)
 - [x] api/textdecoder (6 trang)
 - [x] api/formdata (11 trang)
-- [ ] api/url_api (2 trang)
+- [x] api/url_api (2 trang)
 - [x] api/urlpattern (13 trang)
 - [x] api/credential_management_api (2 trang)
 - [x] api/gamepad_api (2 trang)
