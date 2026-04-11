@@ -206,7 +206,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/rtcicecandidate (17 trang)
 - [x] api/rtcsessiondescription (5 trang)
 - [x] api/rtcrtpsender (11 trang)
-- [ ] api/rtcrtpreceiver (10 trang)
+- [x] api/rtcrtpreceiver (10 trang)
 - [x] api/rtcrtptransceiver (9 trang)
 - [x] api/rtcstatsreport (9 trang)
 - [ ] _(các giao diện `rtc_` còn lại)\_\*
@@ -309,7 +309,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/local_font_access_api (1 trang)
 - [x] api/web_speech_api (2 trang)
 - [x] api/speechrecognition (25 trang)
-- [ ] api/speechsynthesis (10 trang)
+- [x] api/speechsynthesis (10 trang)
 - [x] api/web_midi_api (1 trang)
 - [ ] api/usb (5 trang)
 - [ ] api/serial (3 trang)

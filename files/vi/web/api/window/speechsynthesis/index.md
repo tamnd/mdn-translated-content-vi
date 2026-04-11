@@ -8,18 +8,18 @@ browser-compat: api.Window.speechSynthesis
 
 {{APIRef("Web Speech API")}}
 
-The `speechSynthesis` read-only property of the Window object returns a {{domxref("SpeechSynthesis")}} object, which is the entry point into using [Web Speech API](/en-US/docs/Web/API/Web_Speech_API) speech synthesis functionality.
+Thuộc tính chỉ đọc `speechSynthesis` của đối tượng Window trả về một đối tượng {{domxref("SpeechSynthesis")}}, đây là điểm vào để dùng chức năng tổng hợp giọng nói của [Web Speech API](/en-US/docs/Web/API/Web_Speech_API).
 
 ## Giá trị
 
-A {{domxref("SpeechSynthesis")}} object.
+Một đối tượng {{domxref("SpeechSynthesis")}}.
 
 ## Ví dụ
 
-In our basic [Speech synthesizer demo](https://github.com/mdn/dom-examples/tree/main/web-speech-api/speak-easy-synthesis), we first grab a reference to the SpeechSynthesis controller using `window.speechSynthesis`.
-After defining some necessary variables, we retrieve a list of the voices available using {{domxref("SpeechSynthesis.getVoices()")}} and populate a select menu with them so the user can choose what voice they want.
+Trong [Speech synthesizer demo](https://github.com/mdn/dom-examples/tree/main/web-speech-api/speak-easy-synthesis) cơ bản của chúng ta, trước tiên chúng ta lấy tham chiếu tới bộ điều khiển SpeechSynthesis bằng `window.speechSynthesis`.
+Sau khi định nghĩa một số biến cần thiết, chúng ta lấy danh sách các voice có sẵn bằng {{domxref("SpeechSynthesis.getVoices()")}} và điền vào một menu chọn để người dùng có thể chọn voice họ muốn.
 
-Inside the `inputForm.onsubmit` handler, we stop the form submitting with [preventDefault()](/en-US/docs/Web/API/Event/preventDefault), create a new {{domxref("SpeechSynthesisUtterance")}} instance containing the text from the text {{htmlelement("input")}}, set the utterance's voice to the voice selected in the {{htmlelement("select")}} element, and start the utterance speaking via the {{domxref("SpeechSynthesis.speak()")}} method.
+Bên trong trình xử lý `inputForm.onsubmit`, chúng ta chặn việc gửi form bằng [preventDefault()](/en-US/docs/Web/API/Event/preventDefault), tạo một thể hiện {{domxref("SpeechSynthesisUtterance")}} mới chứa văn bản từ {{htmlelement("input")}}, đặt voice của utterance thành voice được chọn trong phần tử {{htmlelement("select")}}, và bắt đầu phát utterance qua phương thức {{domxref("SpeechSynthesis.speak()")}}.
 
 ```js
 const synth = window.speechSynthesis;
