@@ -321,7 +321,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/animation (25 trang)
 - [ ] api/reporting_api (1 trang)
 - [x] api/fedcm_api (3 trang)
-- [ ] api/web_bluetooth_api (1 trang)
+- [x] api/web_bluetooth_api (1 trang)
 - [ ] api/web_nfc_api (1 trang)
 - [x] api/trusted_types_api (1 trang)
 - [ ] _(các giao diện `api/_` còn lại)\_\*
