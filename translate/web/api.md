@@ -109,7 +109,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/workernavigator (26 trang)
 - [x] api/sharedworker (4 trang)
 - [x] api/sharedworkerglobalscope (4 trang)
-- [ ] api/dedicatedworkerglobalscope (9 trang)
+- [x] api/dedicatedworkerglobalscope (9 trang)
 - [x] api/serviceworker (6 trang)
 - [x] api/service_worker_api (2 trang)
 - [x] api/serviceworkercontainer (10 trang)
