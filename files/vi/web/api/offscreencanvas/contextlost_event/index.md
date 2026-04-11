@@ -1,5 +1,5 @@
 ---
-title: OffscreenCanvas: contextlost event
+title: "OffscreenCanvas: contextlost event"
 slug: Web/API/OffscreenCanvas/contextlost_event
 page-type: web-api-event
 browser-compat: api.OffscreenCanvas.contextlost_event

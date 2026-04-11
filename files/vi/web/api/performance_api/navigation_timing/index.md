@@ -4,8 +4,6 @@ slug: Web/API/Performance_API/Navigation_timing
 page-type: guide
 ---
 
-# Navigation timing
-
 ## Tổng quan
 
 Navigation timing cho phép đo thời gian điều hướng và tải tài liệu.

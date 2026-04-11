@@ -4,8 +4,6 @@ slug: Web/API/Performance_API/High_precision_timing
 page-type: guide
 ---
 
-# Đo thời gian độ chính xác cao
-
 ## Tổng quan
 
 Mốc thời gian độ chính xác cao cho phép đo các khoảng thời gian ngắn với độ ổn định tốt hơn so với các giá trị thời gian truyền thống.

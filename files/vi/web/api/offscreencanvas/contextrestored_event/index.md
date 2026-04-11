@@ -1,5 +1,5 @@
 ---
-title: OffscreenCanvas: contextrestored event
+title: "OffscreenCanvas: contextrestored event"
 slug: Web/API/OffscreenCanvas/contextrestored_event
 page-type: web-api-event
 browser-compat: api.OffscreenCanvas.contextrestored_event
