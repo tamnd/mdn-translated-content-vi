@@ -99,7 +99,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/canvasgradient (2 trang)
 - [x] api/canvaspattern (2 trang)
 - [ ] api/offscreencanvas (9 trang)
-- [ ] api/imagebitmap (4 trang)
+- [x] api/imagebitmap (4 trang)
 
 ## Worker và lập lịch
 
@@ -108,7 +108,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/workerglobalscope (34 trang)
 - [ ] api/workernavigator (26 trang)
 - [x] api/sharedworker (4 trang)
-- [ ] api/sharedworkerglobalscope (4 trang)
+- [x] api/sharedworkerglobalscope (4 trang)
 - [ ] api/dedicatedworkerglobalscope (9 trang)
 - [x] api/serviceworker (6 trang)
 - [x] api/service_worker_api (2 trang)
@@ -217,7 +217,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/cssstyledeclaration (11 trang)
 - [x] api/cssstylerule (4 trang)
 - [x] api/cssstylesheet (11 trang)
-- [ ] api/cssrule (5 trang)
+- [x] api/cssrule (5 trang)
 - [x] api/css (7 trang)
 - [ ] _(các giao diện `css_` còn lại)\_\*
 
@@ -256,7 +256,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Web Components
 
-- [ ] api/web_components (4 trang)
+- [x] api/web_components (4 trang)
 - [ ] api/customelementregistry (8 trang)
 - [x] api/shadowroot (21 trang) — xem DOM cốt lõi
 - [ ] api/htmlslotelement (6 trang)
