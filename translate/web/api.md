@@ -79,7 +79,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/htmlselectelement (26 trang)
 - [ ] api/htmltextareaelement (33 trang)
 - [x] api/htmlanchorelement (25 trang)
-- [ ] api/htmlscriptelement (16 trang)
+- [x] api/htmlscriptelement (16 trang)
 - [x] api/htmllinkelement (18 trang)
 - [x] api/htmliframeelement (20 trang)
 - [ ] api/htmltableelement (24 trang)
@@ -155,7 +155,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## API điều hướng và lịch sử
 
 - [x] api/navigation_api (1 trang)
-- [ ] api/navigation (17 trang)
+- [x] api/navigation (17 trang)
 - [ ] api/navigateevent (15 trang)
 - [x] api/navigationhistoryentry (8 trang)
 - [x] api/history_api (2 trang)
@@ -193,7 +193,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/mediarecorder (20 trang)
 - [x] api/media_capture_and_streams_api (3 trang)
 - [x] api/media_source_extensions_api (3 trang)
-- [ ] api/mediasource (17 trang)
+- [x] api/mediasource (17 trang)
 - [ ] api/sourcebuffer (21 trang)
 - [ ] api/htmlmediaelement — xem nhóm Phần tử HTML ở trên
 - [ ] _(các giao diện âm thanh/video còn lại)_
