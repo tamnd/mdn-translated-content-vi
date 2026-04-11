@@ -73,9 +73,9 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/htmlinputelement (65 trang)
 - [ ] api/htmlmediaelement (72 trang)
 - [ ] api/htmlformelement (22 trang)
-- [ ] api/htmlcanvaselement (14 trang)
+- [x] api/htmlcanvaselement (14 trang)
 - [ ] api/htmlimageelement (29 trang)
-- [ ] api/htmlvideoelement (14 trang)
+- [x] api/htmlvideoelement (14 trang)
 - [ ] api/htmlselectelement (26 trang)
 - [ ] api/htmltextareaelement (33 trang)
 - [x] api/htmlanchorelement (25 trang)
@@ -182,7 +182,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Media và âm thanh / video
 
-- [ ] api/web_audio_api (11 trang)
+- [x] api/web_audio_api (11 trang)
 - [x] api/audiocontext (15 trang)
 - [x] api/baseaudiocontext (27 trang)
 - [x] api/analysernode (11 trang)
@@ -273,8 +273,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## Thanh toán
 
 - [x] api/payment_request_api (4 trang)
-- [ ] api/paymentrequest (14 trang)
-- [ ] api/paymentresponse (13 trang)
+- [x] api/paymentrequest (14 trang)
+- [x] api/paymentresponse (13 trang)
 
 ## Linh tinh (ưu tiên thấp)
 
