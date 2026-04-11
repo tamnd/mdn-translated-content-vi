@@ -98,7 +98,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/path2d (3 trang)
 - [x] api/canvasgradient (2 trang)
 - [x] api/canvaspattern (2 trang)
-- [ ] api/offscreencanvas (9 trang)
+- [x] api/offscreencanvas (9 trang)
 - [x] api/imagebitmap (4 trang)
 
 ## Worker và lập lịch
@@ -207,8 +207,8 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/rtcsessiondescription (5 trang)
 - [x] api/rtcrtpsender (11 trang)
 - [ ] api/rtcrtpreceiver (10 trang)
-- [ ] api/rtcrtptransceiver (9 trang)
-- [ ] api/rtcstatsreport (9 trang)
+- [x] api/rtcrtptransceiver (9 trang)
+- [x] api/rtcstatsreport (9 trang)
 - [ ] _(các giao diện `rtc_` còn lại)\_\*
 
 ## Mô hình đối tượng CSS (CSSOM)
@@ -223,7 +223,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Hiệu năng
 
-- [ ] api/performance_api (9 trang)
+- [x] api/performance_api (9 trang)
 - [ ] api/performance (20 trang)
 - [x] api/performanceentry (6 trang)
 - [ ] api/performanceresourcetiming (26 trang)
