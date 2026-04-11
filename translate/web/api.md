@@ -157,7 +157,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/navigation_api (1 trang)
 - [ ] api/navigation (17 trang)
 - [ ] api/navigateevent (15 trang)
-- [ ] api/navigationhistoryentry (8 trang)
+- [x] api/navigationhistoryentry (8 trang)
 - [x] api/history_api (2 trang)
 
 ## Thông báo và Push
@@ -317,7 +317,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/webhid_api (1 trang)
 - [ ] api/webxr_device_api (16 trang)
 - [ ] api/webvr_api (4 trang)
-- [ ] api/web_animations_api (5 trang)
+- [x] api/web_animations_api (5 trang)
 - [x] api/animation (25 trang)
 - [x] api/reporting_api (1 trang)
 - [x] api/fedcm_api (3 trang)
