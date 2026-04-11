@@ -106,7 +106,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/web_workers_api (5 trang)
 - [x] api/worker (7 trang)
 - [x] api/workerglobalscope (34 trang)
-- [ ] api/workernavigator (26 trang)
+- [x] api/workernavigator (26 trang)
 - [x] api/sharedworker (4 trang)
 - [x] api/sharedworkerglobalscope (4 trang)
 - [x] api/dedicatedworkerglobalscope (9 trang)
@@ -250,7 +250,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/webgl2renderingcontext (74 trang)
 - [x] api/webgpu_api (1 trang)
 - [x] api/gpu (4 trang)
-- [ ] api/gpudevice (26 trang)
+- [x] api/gpudevice (26 trang)
 - [x] api/gpucommandencoder (15 trang)
 - [ ] _(các giao diện `webgl_`/`gpu*` còn lại)*\_
 
