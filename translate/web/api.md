@@ -74,7 +74,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/htmlmediaelement (72 trang)
 - [ ] api/htmlformelement (22 trang)
 - [x] api/htmlcanvaselement (14 trang)
-- [ ] api/htmlimageelement (29 trang)
+- [x] api/htmlimageelement (29 trang)
 - [x] api/htmlvideoelement (14 trang)
 - [x] api/htmlselectelement (26 trang)
 - [ ] api/htmltextareaelement (33 trang)
@@ -131,7 +131,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## Sự kiện và nhập liệu
 
 - [x] api/keyboardevent (16 trang)
-- [ ] api/mouseevent (29 trang)
+- [x] api/mouseevent (29 trang)
 - [x] api/pointerevent (17 trang)
 - [x] api/touchevent (9 trang)
 - [x] api/inputevent (7 trang)
