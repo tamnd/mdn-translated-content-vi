@@ -7,15 +7,15 @@ browser-compat: api.GPU
 
 {{DefaultAPISidebar("WebGPU API")}}{{securecontext_header}}
 
-**WebGPU API** cho phép nhà phát triển web sử dụng GPU (Graphics Processing Unit) của hệ thống bên dưới để thực hiện các phép tính hiệu năng cao và vẽ các hình ảnh phức tạp có thể được hiển thị trong trình duyệt.
+**WebGPU API** cho phép các nhà phát triển web sử dụng GPU (Graphics Processing Unit) của hệ thống bên dưới để thực hiện các phép tính hiệu năng cao và vẽ các hình ảnh phức tạp có thể hiển thị trong trình duyệt.
 
-WebGPU là phiên bản kế nhiệm của {{domxref("WebGL_API", "WebGL", "", "nocode")}}, cung cấp khả năng tương thích tốt hơn với các GPU hiện đại, hỗ trợ tính toán GPU đa mục đích, thao tác nhanh hơn, và truy cập vào các tính năng GPU nâng cao hơn.
+WebGPU là phiên bản kế nhiệm của {{domxref("WebGL_API", "WebGL", "", "nocode")}}, mang lại khả năng tương thích tốt hơn với các GPU hiện đại, hỗ trợ tính toán GPU đa mục đích, thao tác nhanh hơn, và truy cập vào nhiều tính năng GPU nâng cao hơn.
 
 ## Khái niệm và cách dùng
 
-Có thể nói rằng {{domxref("WebGL_API", "WebGL", "", "nocode")}} đã tạo ra bước ngoặt cho web về mặt khả năng đồ họa khi lần đầu xuất hiện vào khoảng năm 2011. WebGL là một bản chuyển đổi sang JavaScript của thư viện đồ họa [OpenGL ES 2.0](https://registry.khronos.org/OpenGL-Refpages/es2.0/), cho phép các trang web truyền trực tiếp các phép tính kết xuất tới GPU của thiết bị để xử lý ở tốc độ rất cao, rồi hiển thị kết quả bên trong một phần tử {{htmlelement("canvas")}}.
+Có thể nói {{domxref("WebGL_API", "WebGL", "", "nocode")}} đã tạo ra bước ngoặt cho web về mặt khả năng đồ họa khi lần đầu xuất hiện vào khoảng năm 2011. WebGL là một bản chuyển đổi sang JavaScript của thư viện đồ họa [OpenGL ES 2.0](https://registry.khronos.org/OpenGL-Refpages/es2.0/), cho phép các trang web gửi trực tiếp các phép tính kết xuất tới GPU của thiết bị để xử lý ở tốc độ rất cao, rồi hiển thị kết quả bên trong một phần tử {{htmlelement("canvas")}}.
 
-WebGL và ngôn ngữ [GLSL](<https://wikis.khronos.org/opengl/Core_Language_(GLSL)>) dùng để viết mã shader của WebGL rất phức tạp, nên đã có nhiều thư viện WebGL được tạo ra để việc viết ứng dụng WebGL dễ hơn: Các ví dụ phổ biến gồm [Three.js](https://threejs.org/), [Babylon.js](https://www.babylonjs.com/), và [PlayCanvas](https://playcanvas.com/). Các nhà phát triển đã dùng những công cụ này để xây dựng trò chơi 3D nhập vai trên web, video âm nhạc, công cụ huấn luyện và mô hình hóa, trải nghiệm VR và AR, cùng nhiều thứ khác.
+WebGL và ngôn ngữ [GLSL](<https://wikis.khronos.org/opengl/Core_Language_(GLSL)>) dùng để viết shader cho WebGL khá phức tạp, nên đã có nhiều thư viện WebGL được tạo ra để việc viết ứng dụng WebGL dễ hơn. Các ví dụ phổ biến gồm [Three.js](https://threejs.org/), [Babylon.js](https://www.babylonjs.com/), và [PlayCanvas](https://playcanvas.com/). Các nhà phát triển đã dùng những công cụ này để xây dựng trò chơi 3D nhập vai trên web, video âm nhạc, công cụ huấn luyện và mô hình hóa, trải nghiệm VR và AR, cùng nhiều thứ khác.
 
 Tuy nhiên, WebGL có một số vấn đề nền tảng cần được giải quyết:
 
@@ -23,7 +23,7 @@ Tuy nhiên, WebGL có một số vấn đề nền tảng cần được giải 
 - WebGL hoàn toàn xoay quanh trường hợp sử dụng vẽ đồ họa và kết xuất chúng lên canvas. Nó không xử lý tốt các phép tính GPGPU (general-purpose GPU). Các phép tính GPGPU ngày càng trở nên quan trọng hơn cho nhiều trường hợp sử dụng khác nhau, ví dụ như những trường hợp dựa trên mô hình máy học.
 - Ứng dụng đồ họa 3D ngày càng đòi hỏi cao hơn, cả về số lượng đối tượng cần được hiển thị đồng thời lẫn việc sử dụng các tính năng kết xuất mới.
 
-WebGPU giải quyết những vấn đề này bằng một kiến trúc đa mục đích cập nhật, tương thích với các API GPU hiện đại, và mang cảm giác "web" hơn. Nó hỗ trợ kết xuất đồ họa, nhưng cũng có hỗ trợ hạng nhất cho các phép tính GPGPU. Việc kết xuất từng đối tượng riêng lẻ rẻ hơn đáng kể ở phía CPU, và nó hỗ trợ các tính năng kết xuất GPU hiện đại như hạt dựa trên compute và các bộ lọc hậu xử lý như hiệu ứng màu sắc, làm sắc nét, và mô phỏng độ sâu trường ảnh. Ngoài ra, nó có thể xử lý các phép tính đắt đỏ như culling và biến đổi mô hình có xương trực tiếp trên GPU.
+WebGPU giải quyết những vấn đề này bằng một kiến trúc đa mục đích hiện đại, tương thích với các API GPU hiện đại, và mang cảm giác "web" hơn. Nó hỗ trợ kết xuất đồ họa, nhưng cũng có hỗ trợ hạng nhất cho các phép tính GPGPU. Việc kết xuất từng đối tượng riêng lẻ rẻ hơn đáng kể ở phía CPU, và nó hỗ trợ các tính năng kết xuất GPU hiện đại như hạt dựa trên compute và các bộ lọc hậu xử lý như hiệu ứng màu sắc, làm sắc nét, và mô phỏng độ sâu trường ảnh. Ngoài ra, nó có thể xử lý các phép tính tốn kém như culling và biến đổi mô hình có xương trực tiếp trên GPU.
 
 ## Mô hình tổng quát
 
@@ -49,7 +49,7 @@ Một logical device - được đại diện bởi một thực thể {{domxref
 
 1. Thuộc tính {{domxref("Navigator.gpu")}} (hoặc {{domxref("WorkerNavigator.gpu")}} nếu bạn dùng chức năng WebGPU bên trong worker) trả về đối tượng {{domxref("GPU")}} cho ngữ cảnh hiện tại.
 2. Bạn truy cập một adapter thông qua phương thức {{domxref("GPU.requestAdapter", "GPU.requestAdapter()")}}. Phương thức này nhận một đối tượng thiết lập tùy chọn cho phép bạn yêu cầu, ví dụ, adapter hiệu năng cao hoặc tiết kiệm năng lượng. Nếu không cung cấp, thiết bị sẽ cấp quyền truy cập vào adapter mặc định, đủ tốt cho hầu hết mục đích.
-3. Có thể yêu cầu một device thông qua {{domxref("GPUAdapter.requestDevice()")}}. Phương thức này cũng nhận một đối tượng tùy chọn (được gọi là descriptor), có thể dùng để chỉ định chính xác các tính năng và giới hạn mà bạn muốn logical device có. Nếu không cung cấp, device được cấp sẽ có một thông số đa mục đích hợp lý, đủ tốt cho hầu hết mục đích.
+3. Có thể yêu cầu một device thông qua {{domxref("GPUAdapter.requestDevice()")}}. Phương thức này cũng nhận một đối tượng tùy chọn (được gọi là descriptor), có thể dùng để chỉ định chính xác các tính năng và giới hạn mà bạn muốn logical device có. Nếu không cung cấp, device được cấp sẽ có một cấu hình đa mục đích hợp lý, đủ tốt cho hầu hết mục đích.
 
 Kết hợp điều này với một số kiểm tra phát hiện tính năng, quá trình trên có thể được thực hiện như sau:
 
@@ -70,51 +70,18 @@ async function init() {
   }
 
   const device = await adapter.requestDevice();
-
   // …
 }
 ```
 
-## Pipelines và shader: Cấu trúc ứng dụng WebGPU
+## Tạo shader
 
-Pipeline là một cấu trúc logic chứa các giai đoạn có thể lập trình, được hoàn tất để thực hiện công việc của chương trình. WebGPU hiện có thể xử lý hai loại pipeline:
-
-- Render pipeline kết xuất đồ họa, thường vào một phần tử {{htmlelement("canvas")}}, nhưng cũng có thể kết xuất đồ họa offscreen. Nó có hai giai đoạn chính:
-  - Giai đoạn vertex, trong đó một vertex shader lấy dữ liệu định vị được đưa vào GPU và dùng nó để đặt vị trí cho một loạt vertex trong không gian 3D bằng cách áp dụng các hiệu ứng như xoay, tịnh tiến hoặc phối cảnh. Sau đó các vertex được ghép thành các primitive như tam giác (khối xây dựng cơ bản của đồ họa đã kết xuất) và được GPU raster hóa để xác định mỗi primitive sẽ bao phủ những pixel nào trên canvas vẽ.
-
-  - Giai đoạn fragment, trong đó một fragment shader tính màu cho từng pixel được các primitive do vertex shader tạo ra bao phủ. Các phép tính này thường dùng đầu vào như hình ảnh (ở dạng texture) cung cấp chi tiết bề mặt và vị trí cũng như màu sắc của các nguồn sáng ảo.
-
-- Compute pipeline dành cho tính toán tổng quát. Một compute pipeline chứa một giai đoạn compute duy nhất trong đó một compute shader nhận dữ liệu tổng quát, xử lý song song trên một số workgroup đã chỉ định, rồi trả kết quả trong một hoặc nhiều buffer. Các buffer có thể chứa bất kỳ kiểu dữ liệu nào.
-
-Các shader được nhắc đến ở trên là các tập lệnh được GPU xử lý. Shader của WebGPU được viết bằng một ngôn ngữ cấp thấp giống Rust có tên [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/) (WGSL).
-
-Có nhiều cách khác nhau để bạn có thể kiến trúc một ứng dụng WebGPU, nhưng quá trình thường sẽ bao gồm các bước sau:
-
-1. [Tạo module shader](#create_shader_modules): Viết mã shader của bạn bằng WGSL và đóng gói nó vào một hoặc nhiều module shader.
-2. [Lấy và cấu hình canvas context](#get_and_configure_the_canvas_context): Lấy context `webgpu` của một phần tử `<canvas>` và cấu hình nó để nhận thông tin về đồ họa cần kết xuất từ logical device GPU của bạn. Bước này không cần thiết nếu ứng dụng của bạn không có đầu ra đồ họa, chẳng hạn như ứng dụng chỉ dùng compute pipeline.
-3. [Tạo các tài nguyên chứa dữ liệu của bạn](#create_a_buffer_and_write_our_triangle_data_into_it): Dữ liệu mà bạn muốn các pipeline xử lý cần được lưu trong GPU buffer hoặc texture để ứng dụng có thể truy cập.
-4. [Tạo pipeline](#define_and_create_the_render_pipeline): Xác định các pipeline descriptor mô tả chi tiết pipeline mong muốn, bao gồm cấu trúc dữ liệu, bindings, shader, và resource layout cần thiết, rồi tạo pipeline từ chúng. Các demo cơ bản của chúng tôi chỉ chứa một pipeline duy nhất, nhưng ứng dụng không tầm thường thường sẽ có nhiều pipeline cho các mục đích khác nhau.
-5. [Chạy một lượt compute/rendering](#running_a_rendering_pass): Việc này bao gồm một số bước con:
-   1. Tạo một command encoder có thể mã hóa một tập lệnh để gửi tới GPU thực thi.
-   2. Tạo một pass encoder object trên đó các lệnh compute/render được phát ra.
-   3. Chạy các lệnh để chỉ định pipeline nào sẽ dùng, buffer(s) nào sẽ lấy dữ liệu cần thiết từ đâu, cần thực hiện bao nhiêu thao tác vẽ (trong trường hợp render pipeline), v.v.
-   4. Hoàn tất danh sách lệnh và đóng gói nó trong một command buffer.
-   5. Gửi command buffer lên GPU thông qua command queue của logical device.
-
-Trong các phần dưới đây, chúng ta sẽ xem xét một demo render pipeline cơ bản, để bạn có thể khám phá nó đòi hỏi những gì. Sau đó, chúng ta cũng sẽ xem xét một ví dụ [basic compute pipeline](#basic_compute_pipeline), tìm hiểu nó khác render pipeline như thế nào.
-
-## Render pipeline cơ bản
-
-Trong [basic render demo](https://mdn.github.io/dom-examples/webgpu-render-demo/) của chúng tôi, chúng ta cho một phần tử `<canvas>` nền xanh lam đặc và vẽ một tam giác lên đó.
-
-### Tạo module shader
-
-Chúng ta đang dùng đoạn mã shader sau. Giai đoạn vertex shader (`@vertex` block) nhận một khối dữ liệu chứa vị trí và màu, đặt vertex theo vị trí được cho, nội suy màu, rồi chuyển dữ liệu sang giai đoạn fragment shader. Giai đoạn fragment shader (`@fragment` block) nhận dữ liệu từ giai đoạn vertex shader và tô màu vertex theo màu được cung cấp.
+Mã chương trình shader trong WebGPU được viết bằng WGSL (WebGPU Shading Language). Mã shader có thể được chèn vào tài liệu dưới dạng một template literal và sau đó được truyền tới WebGPU để biên dịch, như trong ví dụ này:
 
 ```js
 const shaders = `
 struct VertexOut {
-  @builtin(position) position : vec4f,
+  @builtin(position) position: vec4f,
   @location(0) color : vec4f
 }
 
@@ -239,18 +206,3 @@ const pipelineDescriptor = {
     module: shaderModule,
     entryPoint: "fragment_main",
 ```
-
-Do phần còn lại của trang gốc rất dài, bản dịch này tập trung vào phần giới thiệu và các khái niệm cốt lõi của landing page.
-
-## Thông số kỹ thuật
-
-{{Specifications}}
-
-## Tương thích trình duyệt
-
-{{Compat}}
-
-## Xem thêm
-
-- [WebGPU API](/en-US/docs/Web/API/WebGPU_API)
-- [WebGPU Fundamentals](https://webgpufundamentals.org/)

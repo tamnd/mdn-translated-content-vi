@@ -249,7 +249,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/webglrenderingcontext (118 trang)
 - [x] api/webgl2renderingcontext (74 trang)
 - [x] api/webgpu_api (1 trang)
-- [ ] api/gpu (4 trang)
+- [x] api/gpu (4 trang)
 - [ ] api/gpudevice (26 trang)
 - [ ] api/gpucommandencoder (15 trang)
 - [ ] _(các giao diện `webgl_`/`gpu*` còn lại)*\_
@@ -272,7 +272,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 ## Thanh toán
 
-- [ ] api/payment_request_api (4 trang)
+- [x] api/payment_request_api (4 trang)
 - [ ] api/paymentrequest (14 trang)
 - [ ] api/paymentresponse (13 trang)
 
