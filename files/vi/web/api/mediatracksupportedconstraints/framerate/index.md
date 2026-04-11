@@ -12,7 +12,7 @@ Thuộc tính **`frameRate`** của từ điển {{domxref("MediaTrackSupportedC
 
 Nếu ràng buộc không được hỗ trợ, nó không được đưa vào danh sách, vì vậy giá trị này sẽ không bao giờ là `false`.
 
-Ràng buộc `frameRate` có thể được sử dụng để thiết lập giới hạn trên và dưới chấp nhận được về tốc độ khung hình video cho một rãnh video mới, hoặc để chỉ định tốc độ khung hình chính xác phải được cung cấp để yêu cầu thành công. Kiểm tra giá trị của thuộc tính này cho phép bạn xác định xem user agent có cho phép ràng buộc cấu hình rãnh video theo tốc độ khung hình hay không. Xem [ví dụ](#ví dụ) để biết cách sử dụng.
+Ràng buộc `frameRate` có thể được sử dụng để thiết lập giới hạn trên và dưới chấp nhận được về tốc độ khung hình video cho một rãnh video mới, hoặc để chỉ định tốc độ khung hình chính xác phải được cung cấp để yêu cầu thành công. Kiểm tra giá trị của thuộc tính này cho phép bạn xác định xem user agent có cho phép ràng buộc cấu hình rãnh video theo tốc độ khung hình hay không. Xem phần [ví dụ](#ví-dụ) để biết cách sử dụng.
 
 ## Giá trị
 
