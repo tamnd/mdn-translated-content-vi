@@ -132,7 +132,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [x] api/keyboardevent (16 trang)
 - [ ] api/mouseevent (29 trang)
-- [ ] api/pointerevent (17 trang)
+- [x] api/pointerevent (17 trang)
 - [x] api/touchevent (9 trang)
 - [x] api/inputevent (7 trang)
 - [x] api/compositionevent (5 trang)
@@ -315,7 +315,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/serial (3 trang)
 - [ ] api/hid (5 trang)
 - [ ] api/webhid_api (1 trang)
-- [ ] api/webxr_device_api (16 trang)
+- [x] api/webxr_device_api (16 trang)
 - [ ] api/webvr_api (4 trang)
 - [x] api/web_animations_api (5 trang)
 - [x] api/animation (25 trang)
