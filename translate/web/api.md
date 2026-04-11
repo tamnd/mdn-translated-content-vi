@@ -85,7 +85,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/htmltableelement (24 trang)
 - [ ] api/htmlbuttonelement (23 trang)
 - [ ] api/htmlareaelement (23 trang)
-- [ ] api/htmloutputelement (15 trang)
+- [x] api/htmloutputelement (15 trang)
 - [x] api/htmlfieldsetelement (12 trang)
 - [x] api/htmldialogElement (10 trang)
 - [ ] _(các giao diện `html_` còn lại)\_\*
@@ -156,7 +156,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [x] api/navigation_api (1 trang)
 - [x] api/navigation (17 trang)
-- [ ] api/navigateevent (15 trang)
+- [x] api/navigateevent (15 trang)
 - [x] api/navigationhistoryentry (8 trang)
 - [x] api/history_api (2 trang)
 
@@ -227,7 +227,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [ ] api/performance (20 trang)
 - [x] api/performanceentry (6 trang)
 - [ ] api/performanceresourcetiming (26 trang)
-- [ ] api/performancenavigationtiming (15 trang)
+- [x] api/performancenavigationtiming (15 trang)
 - [x] api/performanceobserver (6 trang)
 - [ ] _(các giao diện `performance_` còn lại)\_\*
 
@@ -251,7 +251,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/webgpu_api (1 trang)
 - [x] api/gpu (4 trang)
 - [ ] api/gpudevice (26 trang)
-- [ ] api/gpucommandencoder (15 trang)
+- [x] api/gpucommandencoder (15 trang)
 - [ ] _(các giao diện `webgl_`/`gpu*` còn lại)*\_
 
 ## Web Components
