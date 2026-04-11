@@ -1,7 +1,7 @@
 ---
 title: Thực hành tốt nhất
 slug: Web/API/Web_Audio_API/Best_practices
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.AudioContext
 ---
 

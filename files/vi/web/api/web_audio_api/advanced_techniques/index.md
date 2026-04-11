@@ -1,7 +1,7 @@
 ---
 title: Kỹ thuật nâng cao
 slug: Web/API/Web_Audio_API/Advanced_techniques
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.AudioContext
 ---
 

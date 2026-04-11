@@ -1,7 +1,7 @@
 ---
 title: Simple synth
 slug: Web/API/Web_Audio_API/Simple_synth
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.AudioContext
 ---
 

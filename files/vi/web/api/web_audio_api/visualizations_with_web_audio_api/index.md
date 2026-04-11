@@ -1,7 +1,7 @@
 ---
 title: Trực quan hóa với Web Audio API
 slug: Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.AnalyserNode
 ---
 

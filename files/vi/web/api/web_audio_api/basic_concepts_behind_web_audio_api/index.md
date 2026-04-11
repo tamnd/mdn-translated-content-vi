@@ -1,7 +1,7 @@
 ---
 title: Các khái niệm cơ bản đằng sau Web Audio API
 slug: Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.AudioContext
 ---
 

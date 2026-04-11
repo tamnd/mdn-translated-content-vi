@@ -1,7 +1,7 @@
 ---
 title: Sử dụng Web Audio API
 slug: Web/API/Web_Audio_API/Using_Web_Audio_API
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.AudioContext
 ---
 

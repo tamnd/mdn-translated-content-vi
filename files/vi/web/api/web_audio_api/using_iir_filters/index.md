@@ -1,7 +1,7 @@
 ---
 title: Sử dụng IIR filters
 slug: Web/API/Web_Audio_API/Using_IIR_filters
-page-type: web-api-guide
+page-type: guide
 browser-compat: api.IIRFilterNode
 ---
 
