@@ -14,7 +14,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/eventtarget (5 trang)
 - [x] api/event (22 trang)
 - [x] api/documentfragment (13 trang)
-- [ ] api/htmlelement (57 trang)
+- [x] api/htmlelement (57 trang)
 - [x] api/nodelist (7 trang)
 - [x] api/htmlcollection (4 trang)
 - [x] api/shadowroot (21 trang)
@@ -201,7 +201,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 ## WebRTC
 
 - [x] api/webrtc_api (21 trang)
-- [ ] api/rtcpeerconnection (49 trang)
+- [x] api/rtcpeerconnection (49 trang)
 - [x] api/rtcdatachannel (22 trang)
 - [x] api/rtcicecandidate (17 trang)
 - [x] api/rtcsessiondescription (5 trang)
