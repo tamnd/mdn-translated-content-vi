@@ -187,7 +187,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 - [x] api/baseaudiocontext (27 trang)
 - [x] api/analysernode (11 trang)
 - [x] api/audiobuffer (9 trang)
-- [ ] api/mediadevices (7 trang)
+- [x] api/mediadevices (7 trang)
 - [x] api/mediastream (13 trang)
 - [x] api/mediastreamtrack (17 trang)
 - [ ] api/mediarecorder (20 trang)
@@ -225,7 +225,7 @@ Dịch theo từng đợt. Bắt đầu với các nhóm được đánh dấu *
 
 - [ ] api/performance_api (9 trang)
 - [ ] api/performance (20 trang)
-- [ ] api/performanceentry (6 trang)
+- [x] api/performanceentry (6 trang)
 - [ ] api/performanceresourcetiming (26 trang)
 - [ ] api/performancenavigationtiming (15 trang)
 - [x] api/performanceobserver (6 trang)
