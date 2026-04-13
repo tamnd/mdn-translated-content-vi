@@ -1,0 +1,50 @@
+---
+title: "LaunchParams: targetURL property"
+short-title: targetURL
+slug: Web/API/LaunchParams/targetURL
+page-type: web-api-instance-property
+status:
+  - experimental
+browser-compat: api.LaunchParams.targetURL
+---
+
+{{APIRef("Launch Handler API")}}{{SeeCompatTable}}
+
+Thuộc tính chỉ đọc **`targetURL`** của giao diện {{domxref("LaunchParams")}} trả về URL đích của lần khởi chạy ứng dụng web liên quan.
+
+## Giá trị
+
+Một chuỗi.
+
+## Ví dụ
+
+```js
+if ("launchQueue" in window) {
+  window.launchQueue.setConsumer((launchParams) => {
+    if (launchParams.targetURL) {
+      const params = new URL(launchParams.targetURL).searchParams;
+
+      // Assuming a music player app that gets a track passed to it to be played
+      const track = params.get("track");
+      if (track) {
+        audio.src = track;
+        title.textContent = new URL(track).pathname.slice(1);
+        audio.play();
+      }
+    }
+  });
+}
+```
+
+## Thông số kỹ thuật
+
+{{Specifications}}
+
+## Tương thích trình duyệt
+
+{{Compat}}
+
+## Xem thêm
+
+- [Launch Handler API: Control how your app is launched](https://developer.chrome.com/docs/web-platform/launch-handler/)
+- {{domxref("Window.launchQueue")}}

@@ -1,0 +1,63 @@
+---
+title: "GPURenderPassEncoder: phương thức popDebugGroup()"
+short-title: popDebugGroup()
+slug: Web/API/GPURenderPassEncoder/popDebugGroup
+page-type: web-api-instance-method
+browser-compat: api.GPURenderPassEncoder.popDebugGroup
+---
+
+{{APIRef("WebGPU API")}}{{SecureContext_Header}}{{AvailableInWorkers}}
+
+Phương thức **`popDebugGroup()`** của giao diện {{domxref("GPURenderPassEncoder")}} kết thúc một nhóm gỡ lỗi của lần thực thi kết xuất, nhóm này được bắt đầu bằng lệnh gọi {{domxref("GPURenderPassEncoder.pushDebugGroup", "pushDebugGroup()")}}.
+
+Phương thức này có thể được dùng cho mục đích thu thập dữ liệu telemetry, hoặc có thể được sử dụng trong các thông báo {{domxref("GPUError")}}, công cụ phát triển trình duyệt, hoặc các dịch vụ khác trong tương lai để hỗ trợ gỡ lỗi.
+
+## Cú pháp
+
+```js-nolint
+popDebugGroup()
+```
+
+### Tham số
+
+Không có.
+
+### Giá trị trả về
+
+Không có ({{jsxref("Undefined")}}).
+
+### Xác thực
+
+Các tiêu chí sau phải được đáp ứng khi gọi **`popDebugGroup()`**, nếu không {{domxref("GPUValidationError")}} sẽ được tạo ra và {{domxref("GPURenderPassEncoder")}} sẽ không hợp lệ:
+
+- Ngăn xếp gỡ lỗi của bộ mã hóa lần thực thi kết xuất không trống (tức là ít nhất một nhóm gỡ lỗi lần thực thi kết xuất đã được bắt đầu trước đó bằng {{domxref("GPURenderPassEncoder.pushDebugGroup", "pushDebugGroup()")}}).
+
+## Ví dụ
+
+```js
+// …
+
+const passEncoder = commandEncoder.beginRenderPass(renderPassDescriptor);
+
+passEncoder.pushDebugGroup("my_group_marker"); // Start labeled debug group
+
+passEncoder.setPipeline(renderPipeline);
+passEncoder.setVertexBuffer(0, vertexBuffer);
+passEncoder.draw(3);
+
+passEncoder.popDebugGroup();
+
+// …
+```
+
+## Thông số kỹ thuật
+
+{{Specifications}}
+
+## Tương thích trình duyệt
+
+{{Compat}}
+
+## Xem thêm
+
+- [WebGPU API](/en-US/docs/Web/API/WebGPU_API)

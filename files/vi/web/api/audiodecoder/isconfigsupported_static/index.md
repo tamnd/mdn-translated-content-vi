@@ -1,0 +1,69 @@
+---
+title: "AudioDecoder: phương thức tĩnh isConfigSupported()"
+short-title: isConfigSupported()
+slug: Web/API/AudioDecoder/isConfigSupported_static
+page-type: web-api-static-method
+browser-compat: api.AudioDecoder.isConfigSupported_static
+---
+
+{{APIRef("WebCodecs API")}}{{SecureContext_Header}}{{AvailableInWorkers("window_and_dedicated")}}
+
+Phương thức tĩnh **`isConfigSupported()`** của giao diện {{domxref("AudioDecoder")}} kiểm tra xem cấu hình được cung cấp có được hỗ trợ hay không (tức là liệu các đối tượng {{domxref("AudioDecoder")}} có thể được cấu hình thành công bằng cấu hình đó hay không).
+
+## Cú pháp
+
+```js-nolint
+AudioDecoder.isConfigSupported(config)
+```
+
+### Tham số
+
+- `config`
+  - : Đối tượng dictionary được {{domxref("AudioDecoder.configure")}} chấp nhận
+
+### Giá trị trả về
+
+Một {{jsxref("Promise")}} được hoàn tất với một đối tượng chứa các thành viên sau:
+
+- `supported`
+  - : Một giá trị boolean là `true` nếu cấu hình đã cho được bộ giải mã hỗ trợ.
+- `config`
+  - : Một bản sao của cấu hình đã cho với tất cả các trường mà bộ giải mã nhận diện được.
+
+### Ngoại lệ
+
+- {{jsxref("TypeError")}}
+  - : Được ném ra nếu `config` được cung cấp không hợp lệ; tức là thiếu các giá trị bắt buộc (chẳng hạn trường `codec` rỗng) hoặc có các giá trị không hợp lệ (chẳng hạn `sampleRate` âm).
+
+## Ví dụ
+
+Ví dụ sau kiểm tra xem trình duyệt có hỗ trợ một số codec âm thanh hay không.
+
+```js
+const codecs = ["mp4a.40.2", "mp3", "alaw", "ulaw"];
+const configs = [];
+for (const codec of codecs) {
+  configs.push({
+    codec,
+    sampleRate: 48000,
+    numberOfChannels: 1,
+    not_supported_field: 123,
+  });
+}
+for (const config of configs) {
+  const support = await AudioDecoder.isConfigSupported(config);
+  console.log(
+    `AudioDecoder's config ${JSON.stringify(support.config)} support: ${
+      support.supported
+    }`,
+  );
+}
+```
+
+## Thông số kỹ thuật
+
+{{Specifications}}
+
+## Khả năng tương thích trình duyệt
+
+{{Compat}}

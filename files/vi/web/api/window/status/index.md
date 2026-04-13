@@ -1,0 +1,29 @@
+---
+title: "Window: thuộc tính status"
+short-title: status
+slug: Web/API/Window/status
+page-type: web-api-instance-property
+status:
+  - deprecated
+browser-compat: api.Window.status
+---
+
+{{APIRef}}{{Deprecated_Header}}
+
+The **`status`** property of the
+{{domxref("Window")}} interface was originally intended to set the text in the status
+bar at the bottom of the browser window. However, the HTML standard now requires
+setting `window.status` to have no effect on the text displayed in the
+status bar.
+
+## Giá trị
+
+A string.
+
+## Đặc tả kỹ thuật
+
+{{Specifications}}
+
+## Tính tương thích trên trình duyệt
+
+{{Compat}}
